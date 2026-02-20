@@ -26,7 +26,7 @@ mkdir -p "$PUBLIC_DIR"
 echo "==> Running Emacs org-publish..."
 emacs --batch \
       --load "$SCRIPT_DIR/publish.el" \
-      --eval "(org-publish \"rn-all\" t)"
+      --eval "(pw/build-all)"
 
 echo ""
 echo "==> Build complete. Output in: $PUBLIC_DIR"

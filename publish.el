@@ -220,4 +220,60 @@
                                "rn-notes-images" "rn-journal-images" "rn-toplevel-images"
                                "rn-assets"))))
 
-(message "publish.el loaded — run (org-publish \"rn-all\" t) to build.")
+;;; Index page generation --------------------------------------------------
+
+(defun pw/write-index (title out-file css-path links-alist)
+  "Write a simple HTML index page to OUT-FILE."
+  (make-directory (file-name-directory out-file) t)
+  (with-temp-buffer
+    (insert "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
+            "<meta charset=\"utf-8\"/>\n"
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n"
+            (format "<title>%s</title>\n" title)
+            (format "<link rel=\"stylesheet\" type=\"text/css\" href=\"%s\"/>\n" css-path)
+            "</head>\n<body>\n<div id=\"content\">\n"
+            (format "<h1 class=\"title\">%s</h1>\n" title)
+            "<ul>\n"
+            (mapconcat (lambda (link)
+                         (format "  <li><a href=\"%s\">%s</a></li>\n"
+                                 (car link) (cdr link)))
+                       links-alist "")
+            "</ul>\n</div>\n</body>\n</html>\n")
+    (write-file out-file)))
+
+(defun pw/generate-notes-index ()
+  "Generate public/notes/index.html — alphabetical list of all notes."
+  (message "Generating notes index...")
+  (let* ((notes-dir (expand-file-name "Notes" pw/notes-src-dir))
+         (files (sort (directory-files notes-dir nil "\\.org\\'") #'string-lessp))
+         (links (mapcar (lambda (f)
+                          (cons (concat (file-name-base f) ".html")
+                                (pw/file-title (expand-file-name f notes-dir))))
+                        files)))
+    (pw/write-index "Notes"
+                    (expand-file-name "notes/index.html" pw/output-dir)
+                    "/style.css"
+                    links)))
+
+(defun pw/generate-journal-index ()
+  "Generate public/journal/index.html — chronological list of all journal files."
+  (message "Generating journal index...")
+  (let* ((journal-dir (expand-file-name "Journal" pw/notes-src-dir))
+         (files (sort (directory-files-recursively journal-dir "\\.org\\'") #'string-lessp))
+         (links (mapcar (lambda (f)
+                          (let* ((rel (file-relative-name f journal-dir))
+                                 (url (concat (file-name-sans-extension rel) ".html")))
+                            (cons url (pw/file-title f))))
+                        files)))
+    (pw/write-index "Journal"
+                    (expand-file-name "journal/index.html" pw/output-dir)
+                    "/style.css"
+                    links)))
+
+(defun pw/build-all ()
+  "Publish everything and generate section index pages."
+  (org-publish "rn-all" t)
+  (pw/generate-notes-index)
+  (pw/generate-journal-index))
+
+(message "publish.el loaded — run (pw/build-all) to build.")

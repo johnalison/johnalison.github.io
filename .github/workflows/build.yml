@@ -47,7 +47,7 @@ jobs:
       - name: Build site
         run: |
           mkdir -p public
-          emacs --batch --load publish.el --eval "(org-publish \"rn-all\" t)"
+          emacs --batch --load publish.el --eval "(pw/build-all)"
 
       # ── 6. Deploy public/ to GitHub Pages ─────────────────────────────────
       - name: Deploy to GitHub Pages

@@ -14,22 +14,31 @@ jobs:
       - name: Checkout NotesWebpage
         uses: actions/checkout@v4
 
-      # ── 2. Clone RoamNotes using a Personal Access Token ───────────────────
-      - name: Clone RoamNotes
+      # ── 2. Set up SSH key directly (avoids ssh-add / libcrypto issues) ─────
+      - name: Set up SSH key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.ROAMNOTES_SSH_KEY }}
         run: |
-          git clone https://x-access-token:${{ secrets.ROAMNOTES_PAT }}@github.com/johnalison/RoamNotes.git RoamNotes
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 
-      # ── 3. Install Emacs ───────────────────────────────────────────────────
+      # ── 3. Clone RoamNotes ─────────────────────────────────────────────────
+      - name: Clone RoamNotes
+        run: git clone git@github.com:johnalison/RoamNotes.git RoamNotes
+
+      # ── 4. Install Emacs ───────────────────────────────────────────────────
       - name: Install Emacs
         run: sudo apt-get update && sudo apt-get install -y emacs-nox
 
-      # ── 4. Run the build script (runs org-publish, skips clone step) ───────
+      # ── 5. Build site ──────────────────────────────────────────────────────
       - name: Build site
         run: |
           mkdir -p public
           emacs --batch --load publish.el --eval "(org-publish \"rn-all\" t)"
 
-      # ── 5. Deploy public/ to GitHub Pages ─────────────────────────────────
+      # ── 6. Deploy public/ to GitHub Pages ─────────────────────────────────
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

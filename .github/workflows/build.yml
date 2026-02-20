@@ -14,13 +14,13 @@ jobs:
       - name: Checkout NotesWebpage
         uses: actions/checkout@v4
 
-      # ── 2. Set up SSH key directly (avoids ssh-add / libcrypto issues) ─────
+      # ── 2. Set up SSH key directly (key stored as base64 to preserve newlines)
       - name: Set up SSH key
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.ROAMNOTES_SSH_KEY }}
+          SSH_PRIVATE_KEY_B64: ${{ secrets.ROAMNOTES_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          echo "$SSH_PRIVATE_KEY_B64" | base64 -d > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 

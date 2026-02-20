@@ -14,20 +14,20 @@ jobs:
       - name: Checkout NotesWebpage
         uses: actions/checkout@v4
 
-      # ── 2. Set up SSH so we can clone the private RoamNotes repo ───────────
-      # Add your private SSH key as a repository secret named ROAMNOTES_SSH_KEY
-      - name: Set up SSH agent
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.ROAMNOTES_SSH_KEY }}
+      # ── 2. Clone RoamNotes using a Personal Access Token ───────────────────
+      - name: Clone RoamNotes
+        run: |
+          git clone https://x-access-token:${{ secrets.ROAMNOTES_PAT }}@github.com/johnalison/RoamNotes.git RoamNotes
 
       # ── 3. Install Emacs ───────────────────────────────────────────────────
       - name: Install Emacs
         run: sudo apt-get update && sudo apt-get install -y emacs-nox
 
-      # ── 4. Run the build script (clones RoamNotes + runs org-publish) ──────
+      # ── 4. Run the build script (runs org-publish, skips clone step) ───────
       - name: Build site
-        run: bash build.sh
+        run: |
+          mkdir -p public
+          emacs --batch --load publish.el --eval "(org-publish \"rn-all\" t)"
 
       # ── 5. Deploy public/ to GitHub Pages ─────────────────────────────────
       - name: Deploy to GitHub Pages

@@ -1,0 +1,37 @@
+name: Build and Deploy Notes Website
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:          # allows manual trigger from GitHub UI
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Check out this repo (NotesWebpage) ──────────────────────────────
+      - name: Checkout NotesWebpage
+        uses: actions/checkout@v4
+
+      # ── 2. Set up SSH so we can clone the private RoamNotes repo ───────────
+      # Add your private SSH key as a repository secret named ROAMNOTES_SSH_KEY
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.ROAMNOTES_SSH_KEY }}
+
+      # ── 3. Install Emacs ───────────────────────────────────────────────────
+      - name: Install Emacs
+        run: sudo apt-get update && sudo apt-get install -y emacs-nox
+
+      # ── 4. Run the build script (clones RoamNotes + runs org-publish) ──────
+      - name: Build site
+        run: bash build.sh
+
+      # ── 5. Deploy public/ to GitHub Pages ─────────────────────────────────
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

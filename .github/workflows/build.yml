@@ -24,7 +24,16 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 
-      # ── 3. Clone RoamNotes ─────────────────────────────────────────────────
+      # ── 3. Verify SSH key file looks correct ───────────────────────────────
+      - name: Verify SSH key
+        run: |
+          echo "Key file size (bytes): $(wc -c < ~/.ssh/id_ed25519)"
+          echo "Line count: $(wc -l < ~/.ssh/id_ed25519)"
+          echo "First line: $(head -1 ~/.ssh/id_ed25519)"
+          echo "Last line:  $(tail -1 ~/.ssh/id_ed25519)"
+          ssh -T git@github.com || true
+
+      # ── 4. Clone RoamNotes ─────────────────────────────────────────────────
       - name: Clone RoamNotes
         run: git clone git@github.com:johnalison/RoamNotes.git RoamNotes
 

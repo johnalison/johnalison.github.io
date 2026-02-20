@@ -207,10 +207,10 @@
          :publishing-function  org-publish-attachment
          :recursive            nil)
 
-        ;; Static assets (CSS, JS, etc.)
+        ;; Static assets (CSS, JS, HTML, etc.)
         ("rn-assets"
          :base-directory       ,(expand-file-name "assets" pw/base-dir)
-         :base-extension       "css\\|js\\|ico"
+         :base-extension       "css\\|js\\|ico\\|html"
          :publishing-directory ,pw/output-dir
          :publishing-function  org-publish-attachment
          :recursive            t)

@@ -76,12 +76,12 @@
      ;; Notes/foo.org  ->  public/notes/foo.html
      ((string-prefix-p "Notes/" rel)
       (expand-file-name (concat (file-name-base org-file) ".html")
-                        (expand-file-name "notes" pw/output-dir)))
+                        (expand-file-name "Notes" pw/output-dir)))
      ;; Journal/path/to/foo.org  ->  public/journal/path/to/foo.html
      ((string-prefix-p "Journal/" rel)
       (let ((journal-rel (substring rel (length "Journal/"))))
         (expand-file-name (concat (file-name-sans-extension journal-rel) ".html")
-                          (expand-file-name "journal" pw/output-dir))))
+                          (expand-file-name "Journal" pw/output-dir))))
      ;; Top-level foo.org  ->  public/foo.html
      (t (expand-file-name (concat (file-name-base org-file) ".html")
                           pw/output-dir)))))
@@ -145,7 +145,7 @@
         ("rn-notes"
          :base-directory       ,(expand-file-name "Notes" pw/notes-src-dir)
          :base-extension       "org"
-         :publishing-directory ,(expand-file-name "notes" pw/output-dir)
+         :publishing-directory ,(expand-file-name "Notes" pw/output-dir)
          :publishing-function  pw/html-publish-with-backlinks
          :recursive            nil
          :with-author          nil
@@ -159,7 +159,7 @@
         ("rn-journal"
          :base-directory       ,(expand-file-name "Journal" pw/notes-src-dir)
          :base-extension       "org"
-         :publishing-directory ,(expand-file-name "journal" pw/output-dir)
+         :publishing-directory ,(expand-file-name "Journal" pw/output-dir)
          :publishing-function  pw/html-publish-with-backlinks
          :recursive            t
          :with-author          nil
@@ -187,7 +187,7 @@
         ("rn-journal-images"
          :base-directory       ,(expand-file-name "Journal" pw/notes-src-dir)
          :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
-         :publishing-directory ,(expand-file-name "journal" pw/output-dir)
+         :publishing-directory ,(expand-file-name "Journal" pw/output-dir)
          :publishing-function  org-publish-attachment
          :recursive            t)
 
@@ -195,7 +195,7 @@
         ("rn-notes-images"
          :base-directory       ,(expand-file-name "Notes" pw/notes-src-dir)
          :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
-         :publishing-directory ,(expand-file-name "notes" pw/output-dir)
+         :publishing-directory ,(expand-file-name "Notes" pw/output-dir)
          :publishing-function  org-publish-attachment
          :recursive            t)
 
@@ -251,7 +251,7 @@
                                 (pw/file-title (expand-file-name f notes-dir))))
                         files)))
     (pw/write-index "Notes"
-                    (expand-file-name "notes/index.html" pw/output-dir)
+                    (expand-file-name "Notes/index.html" pw/output-dir)
                     "/style.css"
                     links)))
 
@@ -259,7 +259,7 @@
   "Generate public/journal/index.html with current month at top, then year sections."
   (message "Generating journal index...")
   (let* ((journal-dir  (expand-file-name "Journal" pw/notes-src-dir))
-         (out-file     (expand-file-name "journal/index.html" pw/output-dir))
+         (out-file     (expand-file-name "Journal/index.html" pw/output-dir))
          (cur-year     (format-time-string "%Y"))
          (cur-month-re (format "/%s/%s" cur-year (format-time-string "%m-")))
          ;; All files newest-first

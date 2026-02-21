@@ -7,6 +7,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // ── 0. Tag body with page-type class for CSS targeting ─────────────────
+  if (/\/Journal\//.test(window.location.pathname)) {
+    document.body.classList.add('journal-page');
+  }
+
   // ── 1. Fix org separator rows into proper thead/tbody ──────────────────
   document.querySelectorAll('table').forEach(function (table) {
     var rows = Array.from(table.querySelectorAll('tr'));

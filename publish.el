@@ -233,12 +233,13 @@
             (format "<link rel=\"stylesheet\" type=\"text/css\" href=\"%s\"/>\n" css-path)
             "</head>\n<body>\n<div id=\"content\">\n"
             (format "<h1 class=\"title\">%s</h1>\n" title)
-            "<ul>\n"
+            ;;"<ul>\n"
             (mapconcat (lambda (link)
-                         (format "  <li><a href=\"%s\">%s</a></li>\n"
+                         (format "  <h2><a href=\"%s\">%s</a></h2>\n"
                                  (car link) (cdr link)))
                        links-alist "")
-            "</ul>\n</div>\n</body>\n</html>\n")
+            "</div>\n</body>\n</html>\n")
+            ;;"</ul>\n</div>\n</body>\n</html>\n")
     (write-file out-file)))
 
 (defun pw/generate-notes-index ()
@@ -260,16 +261,25 @@
   (message "Generating journal index...")
   (let* ((notes-dir (expand-file-name "Notes" pw/notes-src-dir))
          (out-file  (expand-file-name "Journal/index.html" pw/output-dir))
-         ;; Find year notes: files matching YYYY-TIMESTAMP.org, sorted descending
          (year-files (sort (directory-files notes-dir t "^20[0-9]\\{2\\}-[0-9]+\\.org$")
-                           (lambda (a b) (string> a b))))
-         (links (mapcar (lambda (f)
-                          (let* ((base (file-name-base f))
-                                 (year (substring base 0 4))
-                                 (url  (concat "/Notes/" base ".html")))
-                            (cons url year)))
-                        year-files)))
-    (pw/write-index "Journal" out-file "/style.css" links)))
+                           (lambda (a b) (string> a b)))))
+    (make-directory (file-name-directory out-file) t)
+    (with-temp-buffer
+      (insert "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
+              "<meta charset=\"utf-8\"/>\n"
+              "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n"
+              "<title>Journal</title>\n"
+              "<link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\"/>\n"
+              "</head>\n<body>\n<div id=\"content\">\n"
+              "<h1 class=\"title\">Journal</h1>\n"
+              (mapconcat (lambda (f)
+                           (let* ((base (file-name-base f))
+                                  (year (substring base 0 4))
+                                  (url  (concat "/Notes/" base ".html")))
+                             (format "  <h2><a href=\"%s\">%s</a></h2>\n" url year)))
+                         year-files "")
+              "</div>\n</body>\n</html>\n")
+      (write-file out-file))))
 
 (defun pw/build-all ()
   "Publish everything and generate section index pages."

@@ -2,8 +2,12 @@
 // org-mode journal tables use "| --- | --- |" as a header separator, which
 // org-publish exports as a plain <td> row instead of a <thead> boundary.
 // This script detects those rows and rebuilds the table with proper thead/tbody.
+// It also links the first-column day numbers on monthly note pages to the
+// corresponding daily journal entry.
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  // ── 1. Fix org separator rows into proper thead/tbody ──────────────────
   document.querySelectorAll('table').forEach(function (table) {
     var rows = Array.from(table.querySelectorAll('tr'));
 
@@ -48,4 +52,46 @@ document.addEventListener('DOMContentLoaded', function () {
     table.appendChild(thead);
     table.appendChild(tbody);
   });
+
+  // ── 2. Link day-number cells to daily journal entries ──────────────────
+  // Runs only on monthly note pages, e.g. /Notes/january_2026-TIMESTAMP.html
+  (function () {
+    var m = window.location.pathname.match(/\/Notes\/([a-z]+)_(\d{4})-\d+\.html$/);
+    if (!m) return;
+
+    var monthNames = ['january','february','march','april','may','june',
+                      'july','august','september','october','november','december'];
+    var monthIdx = monthNames.indexOf(m[1]);
+    if (monthIdx === -1) return;
+
+    var year     = parseInt(m[2], 10);
+    var monthCap = m[1].charAt(0).toUpperCase() + m[1].slice(1); // "January"
+    var monthMM  = String(monthIdx + 1).padStart(2, '0');        // "01"
+    var dayNames = ['Sunday','Monday','Tuesday','Wednesday',
+                    'Thursday','Friday','Saturday'];
+
+    document.querySelectorAll('tbody tr').forEach(function (row) {
+      var firstCell = row.querySelector('td:first-child');
+      if (!firstCell) return;
+      var text = firstCell.textContent.trim();
+      var dayMatch = text.match(/^(\d+)/);
+      if (!dayMatch) return;
+      var day = parseInt(dayMatch[1], 10);
+
+      var date = new Date(year, monthIdx, day);
+      if (date.getMonth() !== monthIdx) return; // invalid date, skip
+
+      var dayName = dayNames[date.getDay()];
+      var dayDD   = String(day).padStart(2, '0');
+      var href    = '/Journal/' + year + '/' + monthMM + '-' + monthCap + '/' +
+                    dayDD + '-' + monthCap + '-' + year + '-' + dayName + '.html';
+
+      var a = document.createElement('a');
+      a.href = href;
+      a.textContent = text;
+      firstCell.textContent = '';
+      firstCell.appendChild(a);
+    });
+  })();
+
 });

@@ -135,8 +135,8 @@ p.verse {
 /* ── Tables ─────────────────────────────────────────────────────────────── */
 table {
   border-collapse: collapse;
-  width: 100%;
-  margin: 1.25rem 0;
+  width: 100vw;
+  margin: 1.25rem calc(-50vw + 50%);
   font-size: 0.93rem;
 }
 th, td {

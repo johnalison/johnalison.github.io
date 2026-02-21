@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
     monthIdx = monthNames.indexOf(m[1]);
     year     = parseInt(m[2], 10);
   } else {
-    m = path.match(/\/Journal\/([A-Za-z]+)\s*(\d{4})\.html$/);
+    // Matches /Journal/May2025.html  AND  /Journal/2024/July 2024.html
+    m = path.match(/\/Journal\/(?:\d{4}\/)?([A-Za-z]+)\s*(\d{4})\.html$/);
     if (m) {
       monthIdx = monthNames.indexOf(m[1].toLowerCase());
       year     = parseInt(m[2], 10);

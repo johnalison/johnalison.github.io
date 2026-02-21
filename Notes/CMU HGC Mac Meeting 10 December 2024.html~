@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 10 December 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 10 December 2024</h1>
+
+
+<div id="outline-container-org6e9f29b" class="outline-2">
+<h2 id="org6e9f29b">News</h2>
+<div class="outline-text-2" id="text-org6e9f29b">
+<ul class="org-ul">
+<li>Ornella / Josh</li>
+<li>KRIA coming "soon"</li>
+<li>Barney forgot to give us labels</li>
+<li>Nural shipped chiller</li>
+</ul>
+<p>
+<a href="https://www.fedex.com/fedextrack/?trknbr=9604772553&amp;trkqual=~9604772553~FDFR">https://www.fedex.com/fedextrack/?trknbr=9604772553&amp;trkqual=~9604772553~FDFR</a>
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orge1de9a7" class="outline-2">
+<h2 id="orge1de9a7">Action Items</h2>
+<div class="outline-text-2" id="text-orge1de9a7">
+<ul class="org-ul">
+<li>transfer tape</li>
+<li>Get Bags Vacuum sealed ?</li>
+<li class="off"><code>[&#xa0;]</code> need dry air and HV for MMTS</li>
+<li class="off"><code>[&#xa0;]</code> Shipping DB NOT usable</li>
+<li>Ping Wes re xmax</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9ac6468" class="outline-2">
+<h2 id="org9ac6468">Jessica</h2>
+<div class="outline-text-2" id="text-org9ac6468">
+<ul class="org-ul">
+<li>Bonder low test pulls &#x2026; will calibrate bonder</li>
+<li>MiniGantry broken cable</li>
+<li>Wednesday - Friday</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org11e18a7" class="outline-2">
+<h2 id="org11e18a7">Jonas</h2>
+<div class="outline-text-2" id="text-org11e18a7">
+<ul class="org-ul">
+<li>Tested 18 hexaboards&#x2026; all good</li>
+<li>Baseplates look good.</li>
+<li>Workflow</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org25cc2e5" class="outline-2">
+<h2 id="org25cc2e5">Sindhu</h2>
+<div class="outline-text-2" id="text-org25cc2e5">
+<ul class="org-ul">
+<li>database computer down</li>
+<li>Postgres vulnerability</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org65dc7e2" class="outline-2">
+<h2 id="org65dc7e2">Andrew</h2>
+<div class="outline-text-2" id="text-org65dc7e2">
+<ul class="org-ul">
+<li>Testing working now (no 1/2 chip problems)</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org50c571f" class="outline-2">
+<h2 id="org50c571f">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org44a157a" class="outline-2">
+<h2 id="org44a157a">Links:</h2>
+<div class="outline-text-2" id="text-org44a157a">
+<p>
+<a href="CMU HGC Mac Meeting 3 December 2024.html#ID-3300D5B3-0D91-4115-8117-F1E1EA80FA64">CMU HGC Mac Meeting 3 December 2024</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+<p>
+202412101204
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

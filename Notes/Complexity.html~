@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Complexity</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Complexity</h1>
+
+<div id="outline-container-org72cb7b5" class="outline-2">
+<h2 id="org72cb7b5">Theory</h2>
+<div class="outline-text-2" id="text-org72cb7b5">
+<ul class="org-ul">
+<li>Complex systems</li>
+<li>Emergence</li>
+<li>Chaos theory</li>
+<li>Nonlinear dynamics</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org45076de" class="outline-2">
+<h2 id="org45076de">Applications</h2>
+<div class="outline-text-2" id="text-org45076de">
+<ul class="org-ul">
+<li>Physics</li>
+<li>Biology</li>
+<li>Economics</li>
+<li>Social systems</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6ed7e9c" class="outline-2">
+<h2 id="org6ed7e9c">Tools</h2>
+<div class="outline-text-2" id="text-org6ed7e9c">
+<ul class="org-ul">
+<li>Mathematical models</li>
+<li>Computer simulations</li>
+<li>Network analysis</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5a75339" class="outline-2">
+<h2 id="org5a75339">Resources</h2>
+<div class="outline-text-2" id="text-org5a75339">
+<ul class="org-ul">
+<li>Books</li>
+<li>Papers</li>
+<li>Online courses</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8fd9b07" class="outline-2">
+<h2 id="org8fd9b07">Notes</h2>
+<div class="outline-text-2" id="text-org8fd9b07">
+<ul class="org-ul">
+<li>Created as a placeholder for future content</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

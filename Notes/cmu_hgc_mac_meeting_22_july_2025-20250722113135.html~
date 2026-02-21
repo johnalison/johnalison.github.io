@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 22 July 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 22 July 2025</h1>
+
+
+
+<div id="outline-container-org97764c2" class="outline-2">
+<h2 id="org97764c2">News:</h2>
+<div class="outline-text-2" id="text-org97764c2">
+<ul class="org-ul">
+<li>Josh is leaving!</li>
+<li>Hexabords shipping</li>
+<li><b>FMS</b> Meeting</li>
+<li>EHS inspection saftey July 23rd</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7453ea2" class="outline-2">
+<h2 id="org7453ea2">Action</h2>
+<div class="outline-text-2" id="text-org7453ea2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Leakage current per cell</li>
+<li class="on"><code>[X]</code> Ordering tape and boxes</li>
+<li class="off"><code>[&#xa0;]</code> Crates ?</li>
+<li class="on"><code>[X]</code> MMTS</li>
+<li class="off"><code>[&#xa0;]</code> Ask Al to purchase the liscence</li>
+<li class="on"><code>[X]</code> DB full ?
+(How much data correspond to each module)
+(Backup Raid)</li>
+<li class="off"><code>[&#xa0;]</code> 76/130 hexaboards tested (All good)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9480ea2" class="outline-2">
+<h2 id="org9480ea2">Jessica</h2>
+<div class="outline-text-2" id="text-org9480ea2">
+<ul class="org-ul">
+<li>BIg item last four modules not great electronically</li>
+<li>Hexaboards OK</li>
+<li>Sensors OK</li>
+<li>IHEP?</li>
+<li>4x 200 vs 4 x300 ? CuT v3b</li>
+<li>3 CuT v3c</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org246393b" class="outline-2">
+<h2 id="org246393b">Guillia</h2>
+<div class="outline-text-2" id="text-org246393b">
+<ul class="org-ul">
+<li>Updates for minigantry</li>
+<li>Program works. Fine tuning configuration</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbc71a8d" class="outline-2">
+<h2 id="orgbc71a8d">Jim</h2>
+<div class="outline-text-2" id="text-orgbc71a8d">
+<ul class="org-ul">
+<li>EHS tomorrow at 10am</li>
+<li>Training on the gantry going well</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org39df2cd" class="outline-2">
+<h2 id="org39df2cd">Jasques</h2>
+<div class="outline-text-2" id="text-org39df2cd">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc8d5a6a" class="outline-2">
+<h2 id="orgc8d5a6a">Manami</h2>
+<div class="outline-text-2" id="text-orgc8d5a6a">
+<ul class="org-ul">
+<li>Not much</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org965d508" class="outline-2">
+<h2 id="org965d508">Joyce</h2>
+<div class="outline-text-2" id="text-org965d508">
+<ul class="org-ul">
+<li>Missing a batch of sensors&#x2026; 23</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org73ff03f" class="outline-2">
+<h2 id="org73ff03f">Joy</h2>
+<div class="outline-text-2" id="text-org73ff03f">
+<ul class="org-ul">
+<li>Updates to OGP codes</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7a29bdf" class="outline-2">
+<h2 id="org7a29bdf">Rain</h2>
+</div>
+
+<div id="outline-container-orgd98e312" class="outline-2">
+<h2 id="orgd98e312">Carter</h2>
+<div class="outline-text-2" id="text-orgd98e312">
+<ul class="org-ul">
+<li>Kria's burning</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0c48b12" class="outline-2">
+<h2 id="org0c48b12">Andrew</h2>
+<div class="outline-text-2" id="text-org0c48b12">
+<ul class="org-ul">
+<li>Fan wires</li>
+<li>Leakages compensation test</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeb0ab8c" class="outline-2">
+<h2 id="orgeb0ab8c">Josh</h2>
+<div class="outline-text-2" id="text-orgeb0ab8c">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5af7b88" class="outline-2">
+<h2 id="org5af7b88">Sindhu</h2>
+<div class="outline-text-2" id="text-org5af7b88">
+<ul class="org-ul">
+<li>Can upload testing data for the modules</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org635d050" class="outline-2">
+<h2 id="org635d050">Pritam</h2>
+<div class="outline-text-2" id="text-org635d050">
+<ul class="org-ul">
+<li>Shipping containers</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org92590a3" class="outline-2">
+<h2 id="org92590a3">-</h2>
+</div>
+</div>
+</body>
+</html>

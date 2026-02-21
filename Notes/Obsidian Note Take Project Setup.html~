@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Obsidian Note Take Project Setup</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Obsidian Note Take Project Setup</h1>
+
+
+<div id="outline-container-orgd8b78ca" class="outline-2">
+<h2 id="orgd8b78ca">Steps Taken</h2>
+<div class="outline-text-2" id="text-orgd8b78ca">
+<ol class="org-ol">
+<li>Installed Claude desktop application</li>
+<li>Installed required dependencies: <code>brew install uv</code></li>
+<li>Installed the MCP-Obsidian integration:
+<ul class="org-ul">
+<li>GitHub repo: <a href="https://github.com/MarkusPfundstein/mcp-obsidian">https://github.com/MarkusPfundstein/mcp-obsidian</a></li>
+</ul></li>
+<li>Installed Obsidian plugin "Local REST API" to enable Claude to interact with Obsidian</li>
+<li>Edited Claude configuration to work with Obsidian</li>
+<li>Created a separate Claude project called "Obsidian Note Taker"</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8e97566" class="outline-2">
+<h2 id="org8e97566">Project Instructions</h2>
+<div class="outline-text-2" id="text-org8e97566">
+<p>
+The following instructions were set for the Obsidian Note Taker project:
+</p>
+<ul class="org-ul">
+<li>Use MCP tools as much as possible to help with note-taking</li>
+<li>Be concise in responses</li>
+<li>Create new notes in the 0-inbox folder</li>
+<li>Always link to new files from the daily note with a brief description of contents</li>
+<li>The daily notes are located in the Journal File.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org65f6799" class="outline-2">
+<h2 id="org65f6799">Verification</h2>
+<div class="outline-text-2" id="text-org65f6799">
+<p>
+Successfully tested that Claude could interact with Obsidian and save chat output directly to the vault.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdde5a42" class="outline-2">
+<h2 id="orgdde5a42">Plugins Used</h2>
+<div class="outline-text-2" id="text-orgdde5a42">
+<ul class="org-ul">
+<li>Local REST API (required for Claude MCP integration)</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

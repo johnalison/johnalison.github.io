@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:23 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>03 May 2025 Saturday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">03 May 2025 Saturday</h1>
+
+
+<div id="outline-container-orge53aaff" class="outline-2">
+<h2 id="orge53aaff">Up at 8</h2>
+</div>
+
+<div id="outline-container-orga0a42cc" class="outline-2">
+<h2 id="orga0a42cc">Working ORG Mode</h2>
+<div class="outline-text-2" id="text-orga0a42cc">
+<p>
+<a href="https://systemcrafters.net/emacs-from-scratch/organize-your-life-with-org-mode/">System Crafters Organize your life with org mode</a>
+</p>
+<ul class="org-ul">
+<li>How to insert date <code>org-time-stamp</code></li>
+<li>Wrap a text in "=" to show in vertbatim mode</li>
+<li>org refile <code>C-v C-w</code></li>
+<li>Capture templates</li>
+<li>Ideas for metric buffers ?</li>
+</ul>
+<p>
+(&gt;&gt;)  <a href="../../../Notes/org_roam_tips-20250503175045.html#ID-7391CD68-2E3C-4FB0-B1E2-5BDAC7CCF2B9">Org-Roam-Tips</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4b127dd" class="outline-2">
+<h2 id="org4b127dd">Testing How to create and Manage Windows</h2>
+<div class="outline-text-2" id="text-org4b127dd">
+<p>
+<a href="https://systemcrafters.net/emacs-tips/managing-multiple-windows/">System Crafters: creating and managing windows</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25b558e" class="outline-2">
+<h2 id="org25b558e">Starting on ORG mode</h2>
+<div class="outline-text-2" id="text-org25b558e">
+<p>
+<a href="https://systemcrafters.net/build-a-second-brain-in-emacs/getting-started-with-org-roam/">System Crafters: Build a second brain</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8225bdf" class="outline-2">
+<h2 id="org8225bdf">Keep a Journal in Emacs with Org Roam</h2>
+<div class="outline-text-2" id="text-org8225bdf">
+<p>
+<a href="https://systemcrafters.net/build-a-second-brain-in-emacs/keep-a-journal/">System Crafters: Keeping a Jounral</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga6fef19" class="outline-2">
+<h2 id="orga6fef19">Testing out <code>org-roam-dailies-capture-today</code></h2>
+</div>
+
+
+<div id="outline-container-org60db27a" class="outline-2">
+<h2 id="org60db27a">Migrating ObsidianNotes</h2>
+</div>
+
+
+<div id="outline-container-org16b8802" class="outline-2">
+<h2 id="org16b8802"><a href="../../../Notes/org_roam_tips-20250503175045.html#ID-7391CD68-2E3C-4FB0-B1E2-5BDAC7CCF2B9">Org-Roam-Tips</a></h2>
+<div class="outline-text-2" id="text-org16b8802">
+<ul class="org-ul">
+<li>Got "s-d" bound to goto todays daily</li>
+<li>Can go to data by binding to <code>org-roam-dailies-goto-date</code></li>
+<li>Setting up good defaults bindings</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org60a7b8d" class="outline-2">
+<h2 id="org60a7b8d">Some <a href="../../../Notes/theroadtoserfdom-20250503233832.html#ID-78ED6B2C-6704-451C-9AB0-AD1B9D8E59E8">TheRoadToSerfdom</a></h2>
+</div>
+
+<div id="outline-container-orgd296fab" class="outline-2">
+<h2 id="orgd296fab">How to migrate TODO from dailies ?</h2>
+<div class="outline-text-2" id="text-orgd296fab">
+<p>
+A: Dont put them in the dailies!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50deb3d" class="outline-2">
+<h2 id="org50deb3d">Debugging the creation of todays daily</h2>
+<div class="outline-text-2" id="text-org50deb3d">
+<p>
+when the file doesnt exit, need to run the template
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

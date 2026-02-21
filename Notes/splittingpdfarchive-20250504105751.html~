@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SplittingPDFArchive</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">SplittingPDFArchive</h1>
+<ul class="org-ul">
+<li>00-05-00:  All years and all jet multiplicities (old notCanJet<sub>sel</sub> def)</li>
+<li>00-05-01:  bug fix combined jet flavor definition</li>
+<li>00-06-00: 18 with fix all jet mutliplicites (updated nonCanJet def )</li>
+<li>00-06-01: 18 new groupings (not cleaning ISR)</li>
+<li>00-06-02: All years / new groupings</li>
+<li>00-07-00: All years / Xb/Yj groupings (21 total)</li>
+<li>00-07-01:       ''        Tuning ranges</li>
+<li>00-07-02:    like 00-07-01, but with ttbar subtraction</li>
+<li>00-07-03:    like 00-07-02, but split by year</li>
+<li>00-08-00:    like 00-07-02, with <b><b>JEC/JER</b></b> on data. Includes run3 data&#x2026; wrong btagging/calibration in run2</li>
+<li>00-08-01:     like 00-08-00 but run3 with right btagging bRegCorr still unclear&#x2026;</li>
+<li>00-08-02.     like 00-08-01 but with lower pt selected jets (30 GeV) for Run3</li>
+<li>00-08-03:     like 00-08-02 but with new Run3 jet calibration</li>
+<li>00-09-00:     but with rhoA and rhoB pdfs to update the declustered jet masses</li>
+<li>00-09-01:     like 00-09-00 but with fixed Run3 calibration</li>
+<li>00-09-02:     like 00-09-01 but with rotated mass corrections</li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 4 November 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 4 November 2025</h1>
+
+<div id="outline-container-orgff03eaa" class="outline-2">
+<h2 id="orgff03eaa">News</h2>
+<div class="outline-text-2" id="text-orgff03eaa">
+<ul class="org-ul">
+<li>Joy in Nevada</li>
+<li>Tape coming tomorrow. ~70%</li>
+<li>hexaboard 104 v3d&#x2026; yet to be assigned to CMU</li>
+<li>7 krias and 4 multiplexers</li>
+<li>IT windows 10 version LTSC  &#x2026; TBC</li>
+<li>Thermal Chamber installed</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge5034a4" class="outline-2">
+<h2 id="orge5034a4">Action</h2>
+<div class="outline-text-2" id="text-orge5034a4">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Hexaboard Boxes back to Dave?</li>
+<li class="off"><code>[&#xa0;]</code> Save data on offsets</li>
+<li class="on"><code>[X]</code> Order the 2nd crate?</li>
+<li class="off"><code>[&#xa0;]</code> Alabama GUI ?</li>
+<li class="off"><code>[&#xa0;]</code> Ping Zoltan</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org22c6add" class="outline-2">
+<h2 id="org22c6add">Jessica</h2>
+<div class="outline-text-2" id="text-org22c6add">
+<ul class="org-ul">
+<li>No baseplates</li>
+<li>Fiducial finding working really well</li>
+<li>Test out new gluing</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgad091c0" class="outline-2">
+<h2 id="orgad091c0">Jacques</h2>
+<div class="outline-text-2" id="text-orgad091c0">
+<ul class="org-ul">
+<li>Helping Andrew on leakage current teststand</li>
+<li>Wes</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5c35de5" class="outline-2">
+<h2 id="org5c35de5">Jim</h2>
+<div class="outline-text-2" id="text-org5c35de5">
+<ul class="org-ul">
+<li>MMTS thermal chamber</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge9b5316" class="outline-2">
+<h2 id="orge9b5316">Arvind</h2>
+<div class="outline-text-2" id="text-orge9b5316">
+<ul class="org-ul">
+<li>Working on ssh tunnels to lxplus</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org38d64c1" class="outline-2">
+<h2 id="org38d64c1">Christian</h2>
+<div class="outline-text-2" id="text-org38d64c1">
+<ul class="org-ul">
+<li>More furnature</li>
+<li>Will work on the DB and the PC</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org169965d" class="outline-2">
+<h2 id="org169965d">Manfred</h2>
+<div class="outline-text-2" id="text-org169965d">
+<ul class="org-ul">
+<li>Thinking through the Workflow</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgdbf42bc" class="outline-2">
+<h2 id="orgdbf42bc">Andrew</h2>
+<div class="outline-text-2" id="text-orgdbf42bc">
+<ul class="org-ul">
+<li>Will meet with Wes and Aiden</li>
+<li>MAC meeting 200um findings</li>
+<li>Progress with leakage current estimation</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb656603" class="outline-2">
+<h2 id="orgb656603">Rain</h2>
+<div class="outline-text-2" id="text-orgb656603">
+<ul class="org-ul">
+<li>testing new hexaboards</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8dae534" class="outline-2">
+<h2 id="org8dae534">Pritam</h2>
+<div class="outline-text-2" id="text-org8dae534">
+<ul class="org-ul">
+<li>MMTS PLC electronics all of the orders have been placed</li>
+<li>CPU has arrived .. working with SAM on the PCL sw &#x2026; all within this week.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbfad5fe" class="outline-2">
+<h2 id="orgbfad5fe">Sindhu</h2>
+<div class="outline-text-2" id="text-orgbfad5fe">
+<ul class="org-ul">
+<li>DB issues</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga61c919" class="outline-2">
+<h2 id="orga61c919">Manami</h2>
+<div class="outline-text-2" id="text-orga61c919">
+<ul class="org-ul">
+<li>working on splitting the xml to the new scheme</li>
+<li>conflicts</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

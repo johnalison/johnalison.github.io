@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PSC Bridges</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">PSC Bridges</h1>
+<p>
+<a href="https://allocations.access-ci.org/">https://allocations.access-ci.org/</a>
+</p>
+
+<div id="outline-container-org48a954a" class="outline-2">
+<h2 id="org48a954a">To run old classifier</h2>
+<div class="outline-text-2" id="text-org48a954a">
+<p>
+conda activate ZZ4bGPU
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgab79fa5" class="outline-2">
+<h2 id="orgab79fa5">Users guide:</h2>
+<div class="outline-text-2" id="text-orgab79fa5">
+<p>
+(<a href="https://www.psc.edu/resources/bridges-2/user-guide/">https://www.psc.edu/resources/bridges-2/user-guide/</a>)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb587da9" class="outline-2">
+<h2 id="orgb587da9">connect:</h2>
+<div class="outline-text-2" id="text-orgb587da9">
+<pre class="example">
+alias PSCBridges2='ssh alison@bridges2.psc.edu'
+
+</pre>
+</div>
+</div>
+
+
+
+<div id="outline-container-org4fbdf14" class="outline-2">
+<h2 id="org4fbdf14">Check jobs</h2>
+<div class="outline-text-2" id="text-org4fbdf14">
+<p>
+squeue -u alison 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org4eafc5a" class="outline-2">
+<h2 id="org4eafc5a">Check quota</h2>
+<div class="outline-text-2" id="text-org4eafc5a">
+<p>
+<code>my_quotas</code>
+</p>
+</div>
+
+<div id="outline-container-orgbdc2288" class="outline-3">
+<h3 id="orgbdc2288">Links:</h3>
+<div class="outline-text-3" id="text-orgbdc2288">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+[BROKEN LINK: PSC]
+</p>
+
+
+<p>
+202407121511
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

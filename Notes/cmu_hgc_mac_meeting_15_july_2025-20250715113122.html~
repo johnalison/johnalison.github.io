@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 15 July 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 15 July 2025</h1>
+
+
+
+<div id="outline-container-org2371de8" class="outline-2">
+<h2 id="org2371de8">News:</h2>
+<div class="outline-text-2" id="text-org2371de8">
+<ul class="org-ul">
+<li>Hexabords shipping</li>
+<li><b>FMS</b> Meeting</li>
+<li>EHS inspection saftey July 23rd</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb9e2924" class="outline-2">
+<h2 id="orgb9e2924">Action</h2>
+<div class="outline-text-2" id="text-orgb9e2924">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Tranfer tape</li>
+<li class="on"><code>[X]</code> Ordering tape and boxes</li>
+<li class="off"><code>[&#xa0;]</code> Crates ?</li>
+<li class="on"><code>[X]</code> MMTS</li>
+<li class="off"><code>[&#xa0;]</code> Ask Al to purchase the liscence</li>
+<li class="on"><code>[X]</code> DB full ?
+(How much data correspond to each module)
+(Backup Raid)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd23e9a7" class="outline-2">
+<h2 id="orgd23e9a7">Jessica</h2>
+<div class="outline-text-2" id="text-orgd23e9a7">
+<ul class="org-ul">
+<li>Built 4 modules
+<ul class="org-ul">
+<li>offsets look good/</li>
+<li>All ohmic</li>
+</ul></li>
+<li>WIll build more on Thursday:  v3b  + preseries + CuT</li>
+<li>Trophy boards (only one good board)</li>
+<li>v3c boards: not shipped well:
+<ul class="org-ul">
+<li>None look bad for now: 42</li>
+</ul></li>
+<li>Jasque will get trained on wirebonder</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8f3fed1" class="outline-2">
+<h2 id="org8f3fed1">Jim</h2>
+<div class="outline-text-2" id="text-org8f3fed1">
+<ul class="org-ul">
+<li>Enjoyed training on Gantry</li>
+<li>Checklist on what we need to enter</li>
+<li>Email to work on shipping containers</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8712b7c" class="outline-2">
+<h2 id="org8712b7c">Josh</h2>
+<div class="outline-text-2" id="text-org8712b7c">
+<ul class="org-ul">
+<li>Detained by CMU authorities</li>
+<li>Next Tuesday or Wednes last day.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org47b7566" class="outline-2">
+<h2 id="org47b7566">Jacques</h2>
+<div class="outline-text-2" id="text-org47b7566">
+<ul class="org-ul">
+<li>Backside encapsulation</li>
+<li>Josh overlooked.</li>
+<li>Organizing the dry air</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbf897ea" class="outline-2">
+<h2 id="orgbf897ea">Sindhu</h2>
+<div class="outline-text-2" id="text-orgbf897ea">
+<ul class="org-ul">
+<li>Updates from DB meeting</li>
+<li>DB loader problems</li>
+<li>only v3c and d to FNAL and CERN</li>
+<li>Stickers rad hard.</li>
+<li>One sensor is missing</li>
+<li>One extra hexaboard</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org827394a" class="outline-2">
+<h2 id="org827394a">Andrew</h2>
+<div class="outline-text-2" id="text-org827394a">
+<ul class="org-ul">
+<li>Testing hexaboards and Modules</li>
+<li>Shipping orders on going</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org961fb80" class="outline-2">
+<h2 id="org961fb80">Josh</h2>
+<div class="outline-text-2" id="text-org961fb80">
+<ul class="org-ul">
+<li>Slides on how to do encapsulation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf3d4ca9" class="outline-2">
+<h2 id="orgf3d4ca9">Carter</h2>
+<div class="outline-text-2" id="text-orgf3d4ca9">
+<ul class="org-ul">
+<li>Few days off</li>
+<li>UGs bug the shipment of sensors in the DB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2a4c070" class="outline-2">
+<h2 id="org2a4c070">Joyce</h2>
+</div>
+</div>
+</body>
+</html>

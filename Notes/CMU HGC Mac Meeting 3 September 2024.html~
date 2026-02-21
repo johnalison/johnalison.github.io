@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 3 September 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 3 September 2024</h1>
+
+<div id="outline-container-org26c74c1" class="outline-2">
+<h2 id="org26c74c1">Action</h2>
+<div class="outline-text-2" id="text-org26c74c1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Get new carrying trays (JS: will do)</li>
+<li class="off"><code>[&#xa0;]</code> Clean lab/change filters soon</li>
+<li class="off"><code>[&#xa0;]</code> UG lab tech ? x 2 ?</li>
+<li class="off"><code>[&#xa0;]</code> Backups on everything</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org56c25a7" class="outline-2">
+<h2 id="org56c25a7">News</h2>
+<div class="outline-text-2" id="text-org56c25a7">
+<ul class="org-ul">
+<li>Kria controller in Oct</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3062665" class="outline-2">
+<h2 id="org3062665">Jessica</h2>
+<div class="outline-text-2" id="text-org3062665">
+<ul class="org-ul">
+<li>Component trays in TechSpark for updates</li>
+<li>Lab cleaning soon</li>
+<li>Dry air cabinet install first</li>
+<li>$600  for dry air setup will accomindate 4(?) cabinets</li>
+<li>Static measurements</li>
+<li>Glue Pattern discussion</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7f92d12" class="outline-2">
+<h2 id="org7f92d12">Sindhu</h2>
+<div class="outline-text-2" id="text-org7f92d12">
+<ul class="org-ul">
+<li>Service account good to go</li>
+<li>DB: new tables for QC: central DB cannot save list type data.. Can do comma separated list of strings</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcd9cca0" class="outline-2">
+<h2 id="orgcd9cca0">Jonas</h2>
+<div class="outline-text-2" id="text-orgcd9cca0">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge691656" class="outline-2">
+<h2 id="orge691656">Pritam</h2>
+<div class="outline-text-2" id="text-orge691656">
+<ul class="org-ul">
+<li>Tested two modules: 5sec wait time.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd01319d" class="outline-2">
+<h2 id="orgd01319d">Andrew</h2>
+<div class="outline-text-2" id="text-orgd01319d">
+<ul class="org-ul">
+<li>IV curve checks</li>
+<li>Shipping foam ordered&#x2026; deliverly date TBD</li>
+<li>How/when to update pc to alma 9</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org47ebc66" class="outline-2">
+<h2 id="org47ebc66">Alesha</h2>
+<div class="outline-text-2" id="text-org47ebc66">
+<ul class="org-ul">
+<li>Encapsulation / New instructions / havent tested</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orge133b56" class="outline-3">
+<h3 id="orge133b56">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org37f4f18" class="outline-3">
+<h3 id="org37f4f18">Links:</h3>
+<div class="outline-text-3" id="text-org37f4f18">
+<p>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+<a href="CMU HGC Mac Meeting 27 August 2024.html#ID-494C4ED4-7E0A-44F5-87C7-F8FB933EE916">CMU HGC Mac Meeting 27 August 2024</a>
+</p>
+
+<p>
+202409031200
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

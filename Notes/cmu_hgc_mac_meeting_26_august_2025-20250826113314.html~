@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 26 August 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 26 August 2025</h1>
+
+<div id="outline-container-org6f518a0" class="outline-2">
+<h2 id="org6f518a0">News</h2>
+<div class="outline-text-2" id="text-org6f518a0">
+<ul class="org-ul">
+<li>Welcome</li>
+<li>Good modules to FNAL</li>
+<li>Bad to UCSB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4156018" class="outline-2">
+<h2 id="org4156018">Action</h2>
+<div class="outline-text-2" id="text-org4156018">
+<ul class="org-ul">
+<li>Assembly trays are done&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf6da484" class="outline-2">
+<h2 id="orgf6da484">Jessica</h2>
+<div class="outline-text-2" id="text-orgf6da484">
+<ul class="org-ul">
+<li>Four good modules last week
+<ul class="org-ul">
+<li>Grade  A IVs</li>
+</ul></li>
+<li>Out of encapsulant.</li>
+<li>Four a day (extra-safe)</li>
+<li>Four / day next</li>
+<li>Next week run of 4/Ti v3</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc277191" class="outline-2">
+<h2 id="orgc277191">Jim</h2>
+<div class="outline-text-2" id="text-orgc277191">
+<ul class="org-ul">
+<li>Arvind looking into the Gantry proceedures</li>
+<li>Ti is different than CuT</li>
+<li>Will create labels</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgdef39a2" class="outline-2">
+<h2 id="orgdef39a2">Jacques</h2>
+<div class="outline-text-2" id="text-orgdef39a2">
+<ul class="org-ul">
+<li>Modules transport box with TechSpark</li>
+<li>Hopefully update next week</li>
+<li>Program on minigantry&#x2026; Updating knotches</li>
+<li>Ramping syringe size</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org47f0eba" class="outline-2">
+<h2 id="org47f0eba">Arvind</h2>
+<div class="outline-text-2" id="text-org47f0eba">
+<ul class="org-ul">
+<li>Under the weather</li>
+<li>Shadowing Jim and Jessica and Jacques</li>
+<li>Learning how to test modules</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org09e438a" class="outline-2">
+<h2 id="org09e438a">Manami</h2>
+<div class="outline-text-2" id="text-org09e438a">
+<ul class="org-ul">
+<li>Uploaded all modules in July and August: 12/128 failed.</li>
+<li>Percent level</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3177006" class="outline-2">
+<h2 id="org3177006">Andrew</h2>
+<div class="outline-text-2" id="text-org3177006">
+<ul class="org-ul">
+<li>Teaching</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org922a389" class="outline-2">
+<h2 id="org922a389">Joy</h2>
+<div class="outline-text-2" id="text-org922a389">
+<ul class="org-ul">
+<li>Working with Jascque for crate shipping</li>
+<li>TIFR dont understand offsets</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgfa0cf26" class="outline-2">
+<h2 id="orgfa0cf26">Sindhu</h2>
+<div class="outline-text-2" id="text-orgfa0cf26">
+<ul class="org-ul">
+<li>Fixed the tempature entry to float</li>
+<li>Updates to LabView</li>
+<li>Sanity Checks on Input Parts in LabView</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org66cd70a" class="outline-2">
+<h2 id="org66cd70a">Christian</h2>
+<div class="outline-text-2" id="text-org66cd70a">
+<ul class="org-ul">
+<li>Starting classes</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org10fda9e" class="outline-2">
+<h2 id="org10fda9e">Pritam</h2>
+<div class="outline-text-2" id="text-org10fda9e">
+<ul class="org-ul">
+<li>Tighetened metal fasteners</li>
+<li>-40C</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

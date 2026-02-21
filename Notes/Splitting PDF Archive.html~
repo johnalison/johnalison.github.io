@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Splitting PDF Archive</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Splitting PDF Archive</h1>
+
+<div id="outline-container-org4f30e02" class="outline-2">
+<h2 id="org4f30e02"><code>00-05-00</code>:  All years and all jet multiplicities (old notCanJet<sub>sel</sub> def)</h2>
+</div>
+<div id="outline-container-org34bafc6" class="outline-2">
+<h2 id="org34bafc6"><code>00-05-01</code>:  bug fix combined jet flavor definition</h2>
+</div>
+<div id="outline-container-orgbdb7db1" class="outline-2">
+<h2 id="orgbdb7db1"><code>00-06-00</code>: 18 with fix all jet mutliplicites (updated nonCanJet def )</h2>
+</div>
+<div id="outline-container-orgb1dda91" class="outline-2">
+<h2 id="orgb1dda91"><code>00-06-01</code>: 18 new groupings (not cleaning ISR)</h2>
+</div>
+<div id="outline-container-org35bae89" class="outline-2">
+<h2 id="org35bae89"><code>00-06-02</code>: All years / new groupings</h2>
+</div>
+<div id="outline-container-org3246b78" class="outline-2">
+<h2 id="org3246b78"><code>00-07-00</code>: All years / Xb/Yj groupings (21 total)</h2>
+</div>
+<div id="outline-container-org37b4665" class="outline-2">
+<h2 id="org37b4665"><code>00-07-01</code>:       ''        Tuning ranges</h2>
+</div>
+<div id="outline-container-orgcaba276" class="outline-2">
+<h2 id="orgcaba276"><code>00-07-02</code>:    like 00-07-01, but with ttbar subtraction</h2>
+</div>
+<div id="outline-container-orgcb781a7" class="outline-2">
+<h2 id="orgcb781a7"><code>00-07-03:</code>    like 00-07-02, but split by year</h2>
+</div>
+<div id="outline-container-org2121558" class="outline-2">
+<h2 id="org2121558">=00-08-00: like 00-07-02, with <b>JEC/JER</b> on data.</h2>
+<div class="outline-text-2" id="text-org2121558">
+<p>
+Includes run3 data&#x2026; wrong btagging/calibration in run2
+</p>
+</div>
+</div>
+<div id="outline-container-org3930890" class="outline-2">
+<h2 id="org3930890"><code>00-08-01</code>:     like 00-08-00 but run3 with right btagging bRegCorr still unclear&#x2026;</h2>
+</div>
+<div id="outline-container-orgfafc866" class="outline-2">
+<h2 id="orgfafc866"><code>00-08-02</code>.     like 00-08-01 but with lower pt selected jets (30 GeV) for Run3</h2>
+</div>
+<div id="outline-container-orgcce9a91" class="outline-2">
+<h2 id="orgcce9a91"><code>00-08-03</code>:     like 00-08-02 but with new Run3 jet calibration</h2>
+</div>
+<div id="outline-container-org07905ca" class="outline-2">
+<h2 id="org07905ca"><code>00-09-00</code>:     but with rhoA and rhoB pdfs to update the declustered jet masses</h2>
+</div>
+<div id="outline-container-org3897b8d" class="outline-2">
+<h2 id="org3897b8d"><code>00-09-01</code>:     like 00-09-00 but with fixed Run3 calibration</h2>
+</div>
+<div id="outline-container-org4a4d2a6" class="outline-2">
+<h2 id="org4a4d2a6"><code>00-09-02</code>:     like 00-09-01 but with rotated mass corrections</h2>
+</div>
+<div id="outline-container-orge118482" class="outline-2">
+<h2 id="orge118482"><code>00-10-00</code>:     Using the new 2025 skims</h2>
+</div>
+<div id="outline-container-orgdf67705" class="outline-2">
+<h2 id="orgdf67705"><code>00-10-01</code>:     Like 00-10-00 but with 20 GeV threshold on jets</h2>
+</div>
+</div>
+</body>
+</html>

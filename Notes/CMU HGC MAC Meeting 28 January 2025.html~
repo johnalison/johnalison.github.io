@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC MAC Meeting 28 January 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC MAC Meeting 28 January 2025</h1>
+
+<div id="outline-container-org43a783c" class="outline-2">
+<h2 id="org43a783c">News</h2>
+<div class="outline-text-2" id="text-org43a783c">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> MP to ping sharon</li>
+<li class="off"><code>[&#xa0;]</code> SHipping DB <a href="https://cmsr-shipment.web.cern.ch/list_of_shippings?search=CMU&amp;sort=date_start&amp;order=&amp;loc=all_loc&amp;opt=to_me&amp;st=received">https://cmsr-shipment.web.cern.ch/list_of_shippings?search=CMU&amp;sort=date_start&amp;order=&amp;loc=all_loc&amp;opt=to_me&amp;st=received</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgedb9579" class="outline-2">
+<h2 id="orgedb9579">Action Items</h2>
+<div class="outline-text-2" id="text-orgedb9579">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Free style comments for failed tests</li>
+<li class="off"><code>[&#xa0;]</code> Module testing: Tutorial / user support</li>
+<li class="off"><code>[&#xa0;]</code> Waiting on sensor trays and tools and hexaboard trays</li>
+<li class="off"><code>[&#xa0;]</code> miniGantry project with UG</li>
+<li class="off"><code>[&#xa0;]</code> Logan clean + humidity sensors</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgeff7f35" class="outline-2">
+<h2 id="orgeff7f35">Jessica</h2>
+<div class="outline-text-2" id="text-orgeff7f35">
+<ul class="org-ul">
+<li>8/8 CuT</li>
+<li>offsets better</li>
+<li>+ 2 CuT</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7e076e7" class="outline-2">
+<h2 id="org7e076e7">Jonas</h2>
+<div class="outline-text-2" id="text-org7e076e7">
+<ul class="org-ul">
+<li>ch95 110 and 111 : problems</li>
+<li>m107:</li>
+<li>Grounded stations</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org341cf89" class="outline-2">
+<h2 id="org341cf89">Manami</h2>
+<div class="outline-text-2" id="text-org341cf89">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org773278a" class="outline-2">
+<h2 id="org773278a">Joy</h2>
+<div class="outline-text-2" id="text-org773278a">
+<ul class="org-ul">
+<li>interfacing to the DB from OGP</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgba1ffdf" class="outline-2">
+<h2 id="orgba1ffdf">Andrew</h2>
+<div class="outline-text-2" id="text-orgba1ffdf">
+<ul class="org-ul">
+<li>Kria is working.</li>
+<li>power needs to be turned on manually via the command line</li>
+<li>documentation page</li>
+<li>Kria almost fully implemented in GUI</li>
+<li>WIll do some humidity test</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4d39bda" class="outline-2">
+<h2 id="org4d39bda">Sindhu</h2>
+<div class="outline-text-2" id="text-org4d39bda">
+<ul class="org-ul">
+<li>Bonder GUI: getting the other geometries</li>
+<li>Lab view updates:</li>
+<li>nBaseplates 2 + 10 CuT : 12 Ti  + 8 Ti /. 34 + 8 = 42</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org367077a" class="outline-2">
+<h2 id="org367077a">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org38f00d3" class="outline-2">
+<h2 id="org38f00d3">Links:</h2>
+<div class="outline-text-2" id="text-org38f00d3">
+<p>
+<a href="CMU HGC MAC Meeting 21 January 2025.html#ID-4025FD37-30CB-4D82-B488-0C7420F7F63D">CMU HGC MAC Meeting 21 January 2025</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+
+<p>
+202501281127
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

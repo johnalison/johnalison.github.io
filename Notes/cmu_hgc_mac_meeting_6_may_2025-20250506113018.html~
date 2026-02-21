@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC MAC Meeting 6 May 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC MAC Meeting 6 May 2025</h1>
+
+
+<div id="outline-container-org3d7098b" class="outline-2">
+<h2 id="org3d7098b">News</h2>
+<div class="outline-text-2" id="text-org3d7098b">
+</div>
+<div id="outline-container-org400367f" class="outline-3">
+<h3 id="org400367f">More Si incoming</h3>
+</div>
+<div id="outline-container-orgf568391" class="outline-3">
+<h3 id="orgf568391">Unistrut: Plan upgraded.</h3>
+</div>
+<div id="outline-container-org006b945" class="outline-3">
+<h3 id="org006b945">Hexaboards:</h3>
+</div>
+<div id="outline-container-org7453525" class="outline-3">
+<h3 id="org7453525">May 9th Ti baseplates</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org674bfca" class="outline-2">
+<h2 id="org674bfca">Action</h2>
+<div class="outline-text-2" id="text-org674bfca">
+</div>
+<div id="outline-container-org5daabeb" class="outline-3">
+<h3 id="org5daabeb">Follow up with FMS re:humidity (Jeff Harris)</h3>
+</div>
+<div id="outline-container-org9dbfb90" class="outline-3">
+<h3 id="org9dbfb90">Order Boxes</h3>
+</div>
+<div id="outline-container-org78fa6cf" class="outline-3">
+<h3 id="org78fa6cf">Order Crates</h3>
+</div>
+<div id="outline-container-orga7d5226" class="outline-3">
+<h3 id="orga7d5226">Order MMTS</h3>
+</div>
+<div id="outline-container-org1f37152" class="outline-3">
+<h3 id="org1f37152">Test the chillers</h3>
+</div>
+<div id="outline-container-orgb93b6eb" class="outline-3">
+<h3 id="orgb93b6eb">Will order Transfer tape</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org4f6cd62" class="outline-2">
+<h2 id="org4f6cd62">Jessica</h2>
+<div class="outline-text-2" id="text-org4f6cd62">
+<p>
+Biasing exercises
+reading in locations
+Some labview changes needed for 4 moduels /run
+Getting 4 modules should be rest of the week
+Need two phase power
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org3171294" class="outline-2">
+<h2 id="org3171294">Jonas</h2>
+<div class="outline-text-2" id="text-org3171294">
+<p>
+Finised sensor ID reader. Works 95% of the time.
+Thansk for the gift!
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5669108" class="outline-2">
+<h2 id="org5669108">Andrew</h2>
+<div class="outline-text-2" id="text-org5669108">
+<p>
+Updating Testing GUI
+Improvign module QC
+$15/set for US foam (vs $26 from China)
+Black foam conductive
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org686727f" class="outline-2">
+<h2 id="org686727f">Josh</h2>
+<div class="outline-text-2" id="text-org686727f">
+<p>
+Encapsulation 
+Plan for taking over the Gantry
+</p>
+</div>
+</div>
+
+<div id="outline-container-org34f345c" class="outline-2">
+<h2 id="org34f345c">Jim</h2>
+<div class="outline-text-2" id="text-org34f345c">
+<p>
+Progress on cleaning up the shop
+Be able to create gcode
+Books are out.
+Getting the rails mounted
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa97230" class="outline-2">
+<h2 id="orgaa97230">Ornella</h2>
+<div class="outline-text-2" id="text-orgaa97230">
+<p>
+Ordering the Unistrut
+Notes
+Desiccants
+Upgraded ordering scheme
+</p>
+</div>
+</div>
+
+<div id="outline-container-org30448a7" class="outline-2">
+<h2 id="org30448a7">Manami</h2>
+<div class="outline-text-2" id="text-org30448a7">
+<p>
+Working on XML
+Bonding CERN DB changed&#x2026;cant upload now
+Discussion about Curing end time
+Pedastool test CERN DB has a problem
+IV testing data
+</p>
+</div>
+</div>
+
+<div id="outline-container-org94d9bfa" class="outline-2">
+<h2 id="org94d9bfa">Sindhu</h2>
+<div class="outline-text-2" id="text-org94d9bfa">
+<p>
+Update module scripts
+Updates to bonder GUI
+Met with Rain on setting up DB uploads
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org97a85cf" class="outline-2">
+<h2 id="org97a85cf">Pritam</h2>
+<div class="outline-text-2" id="text-org97a85cf">
+<p>
+MMTS: Humidity sensor
+Sealing ring?
+Will order the Ethonol 4G for chiller and MMTS
+Ask him. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaba3d2f" class="outline-2">
+<h2 id="orgaba3d2f">Joy</h2>
+<div class="outline-text-2" id="text-orgaba3d2f">
+<p>
+Baseplates Hand caliber
+</p>
+</div>
+<div id="outline-container-org2536a2a" class="outline-3">
+<h3 id="org2536a2a"><span class="todo TODO">TODO</span> Long Baseplate Calibration</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

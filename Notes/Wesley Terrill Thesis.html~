@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wesley Terrill Thesis</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Wesley Terrill Thesis</h1>
+<p>
+<a href="Evolution of Silicon Sensor Technology in Particle Physics.html#ID-A12F8006-5ACC-424D-842B-F3B741EF90BC">Evolution of Silicon Sensor Technology in Particle Physics</a>
+</p>
+
+<div id="outline-container-org40caa97" class="outline-2">
+<h2 id="org40caa97">Looks good</h2>
+<div class="outline-text-2" id="text-org40caa97">
+<ul class="org-ul">
+<li>some missing references</li>
+</ul>
+
+
+
+<p>
+Section 4.3
+</p>
+
+<ul class="org-ul">
+<li>eq. (1.3)	𝐷<sub>μ</sub> ψ = ∂<sub>μ</sub> − i g A<sup>a</sup><sub>μ</sub> t<sup>a</sup> Right‑hand side must act on ψ; current text omits that.</li>
+<li>“Each proton in the LHC ring travels at a rate of 11 kHz”</li>
+</ul>
+
+<p>
+1614 – 1615	“low density (LD) modules utilizing ~ 1 cm² pad‑size sensors.”
+</p>
+
+<p>
+l 1666 The p − n junction can only conduct current when the junction is reversed biased,
+</p>
+</div>
+</div>
+<div id="outline-container-orgc937bd1" class="outline-2">
+<h2 id="orgc937bd1">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org9e2e71c" class="outline-2">
+<h2 id="org9e2e71c">Links:</h2>
+<div class="outline-text-2" id="text-org9e2e71c">
+<p>
+202501121032
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

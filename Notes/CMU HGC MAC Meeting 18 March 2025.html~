@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:16 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC MAC Meeting 18 March 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC MAC Meeting 18 March 2025</h1>
+
+<div id="outline-container-org0a18692" class="outline-2">
+<h2 id="org0a18692">News</h2>
+<div class="outline-text-2" id="text-org0a18692">
+<ul class="org-ul">
+<li>~600 Sensors arrived (no barcodes)</li>
+<li>15 vc3 hexaborads arrived &#x2026; all good.</li>
+<li>Getting 15 CuT baseplates tomorrow</li>
+<li>18 (3 of 6) to CERN?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6e44401" class="outline-2">
+<h2 id="org6e44401">Action</h2>
+<div class="outline-text-2" id="text-org6e44401">
+<ul class="org-ul">
+<li>Have Jonas write up some slides</li>
+<li>Arrange pickup of UCSB tooling</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgee5dc9f" class="outline-2">
+<h2 id="orgee5dc9f">Jessica</h2>
+<div class="outline-text-2" id="text-orgee5dc9f">
+<ul class="org-ul">
+<li>Transfer-tape jig &#x2026; debugging</li>
+<li>Dummy parts: sensors</li>
+<li>v3c modules when we have new tooling.</li>
+<li>Scale up LabView for 4/run</li>
+<li>Waiting on off-bond stand</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4f571dc" class="outline-2">
+<h2 id="org4f571dc">Jonas</h2>
+<div class="outline-text-2" id="text-org4f571dc">
+<ul class="org-ul">
+<li>Transfer Tape</li>
+<li>Tech spark for parts for</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd1eaf40" class="outline-2">
+<h2 id="orgd1eaf40">Josh</h2>
+<div class="outline-text-2" id="text-orgd1eaf40">
+<ul class="org-ul">
+<li>Encapsulation programming</li>
+<li>2nd air pump</li>
+<li>16/day</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org71cfe63" class="outline-2">
+<h2 id="org71cfe63">Sinhdu</h2>
+<div class="outline-text-2" id="text-org71cfe63">
+<ul class="org-ul">
+<li>Reporting bugs with shippment tool</li>
+<li>csv files instead of txt files</li>
+<li>DB woes</li>
+<li>DB with new glue pattern.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org549845c" class="outline-2">
+<h2 id="org549845c">Valentina</h2>
+<div class="outline-text-2" id="text-org549845c">
+<ul class="org-ul">
+<li>Talked with Julia &#x2026; making progress on mini-gantry project</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd2f0a4f" class="outline-2">
+<h2 id="orgd2f0a4f">Pritam</h2>
+<div class="outline-text-2" id="text-orgd2f0a4f">
+<ul class="org-ul">
+<li>MMTS studies</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd7f25d8" class="outline-2">
+<h2 id="orgd7f25d8">Manami</h2>
+<div class="outline-text-2" id="text-orgd7f25d8">
+<ul class="org-ul">
+<li>Jeremy Mans and George Adamov ?? 
+<ul class="org-ul">
+<li>DB issue: 2 DBs dev-DB and production DB</li>
+<li>Trying to use API, enter correct ID.</li>
+<li>Cant upload QC data to production DB.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org08a6f31" class="outline-2">
+<h2 id="org08a6f31">Andrew</h2>
+<div class="outline-text-2" id="text-org08a6f31">
+<ul class="org-ul">
+<li>Shipping things</li>
+<li>Getting the Kria running</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgad4fef6" class="outline-2">
+<h2 id="orgad4fef6">Ornella</h2>
+<div class="outline-text-2" id="text-orgad4fef6">
+<ul class="org-ul">
+<li>CERN accounts  email: Matt Noy</li>
+<li>respirator training</li>
+<li>cleaning</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8cd3164" class="outline-2">
+<h2 id="org8cd3164">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org249abbc" class="outline-2">
+<h2 id="org249abbc">Links:</h2>
+<div class="outline-text-2" id="text-org249abbc">
+<p>
+202503181128
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

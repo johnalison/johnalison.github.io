@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC MAC Meeting 18 February 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC MAC Meeting 18 February 2025</h1>
+
+
+<div id="outline-container-org984a1f3" class="outline-2">
+<h2 id="org984a1f3">News</h2>
+<div class="outline-text-2" id="text-org984a1f3">
+<ul class="org-ul">
+<li>16 modules made /</li>
+<li>building 19-20 today</li>
+<li>HGC week</li>
+<li>Shipping containers</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb9cc5f6" class="outline-2">
+<h2 id="orgb9cc5f6">Action Items</h2>
+<div class="outline-text-2" id="text-orgb9cc5f6">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Free style comments for failed tests</li>
+<li class="off"><code>[&#xa0;]</code> Ping Jeremy re:Hexaboard testing</li>
+<li class="off"><code>[&#xa0;]</code> Module testing: Tutorial / user support</li>
+<li class="off"><code>[&#xa0;]</code> Waiting on sensor trays and tools and hexaboard trays</li>
+<li class="off"><code>[&#xa0;]</code> miniGantry project with UG</li>
+<li class="off"><code>[&#xa0;]</code> Logan clean + humidity sensors</li>
+<li class="off"><code>[&#xa0;]</code> twizzers and humidifiers</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org218099a" class="outline-2">
+<h2 id="org218099a">Jessica</h2>
+<div class="outline-text-2" id="text-org218099a">
+<ul class="org-ul">
+<li>isssue with the camera in module assembly</li>
+<li>FMT 2 at a time</li>
+<li>2 baseplates left</li>
+<li>12 TI</li>
+<li>Building 19-20</li>
+<li>Module assembly</li>
+<li>offbond area in tech spark</li>
+<li>baseplates:</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2a59b25" class="outline-2">
+<h2 id="org2a59b25">Josh</h2>
+<div class="outline-text-2" id="text-org2a59b25">
+<ul class="org-ul">
+<li>Duplicate part in DB</li>
+<li>Learning</li>
+<li>Encapsulation work getting here.</li>
+<li>OGP ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org88b2f0e" class="outline-2">
+<h2 id="org88b2f0e">Ornella</h2>
+<div class="outline-text-2" id="text-org88b2f0e">
+<ul class="org-ul">
+<li>Following Jonas</li>
+<li>Gantry</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgef957bf" class="outline-2">
+<h2 id="orgef957bf">Andrew</h2>
+<div class="outline-text-2" id="text-orgef957bf">
+<ul class="org-ul">
+<li>shipping cases: $1600</li>
+<li>ordering one</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgde5e00e" class="outline-2">
+<h2 id="orgde5e00e">Pritam</h2>
+<div class="outline-text-2" id="text-orgde5e00e">
+<ul class="org-ul">
+<li>Jessica and jonas about chiller.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org08ced3e" class="outline-2">
+<h2 id="org08ced3e">Sindhu</h2>
+<div class="outline-text-2" id="text-org08ced3e">
+<ul class="org-ul">
+<li>spreadsheet</li>
+<li>36 total module 18 RocA and 18 rocB</li>
+<li>Can upload to the central DB (Not the production DB)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org50f859d" class="outline-2">
+<h2 id="org50f859d">Manami</h2>
+<div class="outline-text-2" id="text-org50f859d">
+<ul class="org-ul">
+<li>exporting funcitons</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org920278d" class="outline-2">
+<h2 id="org920278d">Jessica</h2>
+</div>
+
+
+<div id="outline-container-org8f7e9fc" class="outline-2">
+<h2 id="org8f7e9fc">Jonas</h2>
+</div>
+
+
+
+<div id="outline-container-org248ec87" class="outline-2">
+<h2 id="org248ec87">Josh</h2>
+</div>
+
+
+<div id="outline-container-org6cf4638" class="outline-2">
+<h2 id="org6cf4638">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org6d51016" class="outline-2">
+<h2 id="org6d51016">Links:</h2>
+<div class="outline-text-2" id="text-org6d51016">
+<p>
+<a href="CMU HGC MAC Meeting 11 February 2025.html#ID-12B0B152-3C08-429D-997C-3A5AC2A8A67F">CMU HGC MAC Meeting 11 February 2025</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+
+
+<p>
+202502181114
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

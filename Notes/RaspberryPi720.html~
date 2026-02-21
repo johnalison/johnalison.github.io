@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-21 Sat 05:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RaspberryPi720</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">RaspberryPi720</h1>
+
+
+
+<div id="outline-container-orgb363b01" class="outline-2">
+<h2 id="orgb363b01">connecting to pi via ss</h2>
+<div class="outline-text-2" id="text-orgb363b01">
+<p>
+I setup a <a href="Static IP for Raspberry Pi.html#ID-323E74F6-0DE7-4CE8-9122-37E44AF7A985">Static IP for Raspberry Pi</a>
+</p>
+
+<p>
+Can connect with
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">ssh pi@192.168.4.38 
+
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash">ssh pi@192.168.4.38 -p 2222
+
+</pre>
+</div>
+
+<p>
+pwd: 720Copeland
+</p>
+</div>
+
+
+
+
+<div id="outline-container-orgd1555cd" class="outline-3">
+<h3 id="orgd1555cd">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org75a1ed7" class="outline-3">
+<h3 id="org75a1ed7">Links:</h3>
+<div class="outline-text-3" id="text-org75a1ed7">
+<p>
+202407181910
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

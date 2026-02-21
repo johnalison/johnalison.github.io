@@ -256,76 +256,20 @@
                     links)))
 
 (defun pw/generate-journal-index ()
-  "Generate public/journal/index.html with current month at top, then year sections."
+  "Generate public/Journal/index.html linking to the per-year notes in Notes/."
   (message "Generating journal index...")
-  (let* ((journal-dir  (expand-file-name "Journal" pw/notes-src-dir))
-         (out-file     (expand-file-name "Journal/index.html" pw/output-dir))
-         (cur-year     (format-time-string "%Y"))
-         (cur-month-re (format "/%s/%s" cur-year (format-time-string "%m-")))
-         ;; All files newest-first
-         (all-files (sort (directory-files-recursively journal-dir "\\.org\\'") #'string>))
-         ;; Bucket files: year-string -> list-of-paths  (use alist for Emacs compat)
-         (year-alist '())
-         (other-files '()))
-
-    (dolist (f all-files)
-      (let ((rel (file-relative-name f journal-dir)))
-        (if (string-match "^\\([0-9]\\{4\\}\\)/" rel)
-            (let* ((year (match-string 1 rel))
-                   (entry (assoc year year-alist)))
-              (if entry
-                  (setcdr entry (cons f (cdr entry)))
-                (push (list year f) year-alist)))
-          (push f other-files))))
-
-    ;; Years sorted descending
-    (setq year-alist (sort year-alist (lambda (a b) (string> (car a) (car b)))))
-
-    (with-temp-buffer
-      (insert "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n"
-              "<meta charset=\"utf-8\"/>\n"
-              "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>\n"
-              "<title>Journal</title>\n"
-              "<link rel=\"stylesheet\" type=\"text/css\" href=\"/style.css\"/>\n"
-              "</head>\n<body>\n<div id=\"content\">\n"
-              "<h1 class=\"title\">Journal</h1>\n")
-
-      ;; ── Current month at the top ──────────────────────────────────────────
-      (let ((cur-files (seq-filter (lambda (f) (string-match-p cur-month-re f))
-                                   (cdr (assoc cur-year year-alist)))))
-        (when cur-files
-          (insert (format "<h2>%s</h2>\n<ul>\n" (format-time-string "%B %Y")))
-          (dolist (f cur-files)
-            (let* ((rel (file-relative-name f journal-dir))
-                   (url (concat (file-name-sans-extension rel) ".html")))
-              (insert (format "  <li><a href=\"%s\">%s</a></li>\n"
-                              url (pw/file-title f)))))
-          (insert "</ul>\n")))
-
-      ;; ── One section per year ──────────────────────────────────────────────
-      (dolist (year-entry year-alist)
-        (let ((year  (car year-entry))
-              (files (cdr year-entry)))
-          (insert (format "<h2>%s</h2>\n<ul>\n" year))
-          (dolist (f files)
-            (let* ((rel (file-relative-name f journal-dir))
-                   (url (concat (file-name-sans-extension rel) ".html")))
-              (insert (format "  <li><a href=\"%s\">%s</a></li>\n"
-                              url (pw/file-title f)))))
-          (insert "</ul>\n")))
-
-      ;; ── Top-level misc files (FutureLog, BigPictureGoals, etc.) ──────────
-      (when other-files
-        (insert "<h2>Other</h2>\n<ul>\n")
-        (dolist (f (nreverse other-files))
-          (let* ((rel (file-relative-name f journal-dir))
-                 (url (concat (file-name-sans-extension rel) ".html")))
-            (insert (format "  <li><a href=\"%s\">%s</a></li>\n"
-                            url (pw/file-title f)))))
-        (insert "</ul>\n"))
-
-      (insert "</div>\n</body>\n</html>\n")
-      (write-file out-file))))
+  (let* ((notes-dir (expand-file-name "Notes" pw/notes-src-dir))
+         (out-file  (expand-file-name "Journal/index.html" pw/output-dir))
+         ;; Find year notes: files matching YYYY-TIMESTAMP.org, sorted descending
+         (year-files (sort (directory-files notes-dir t "^20[0-9]\\{2\\}-[0-9]+\\.org$")
+                           (lambda (a b) (string> a b))))
+         (links (mapcar (lambda (f)
+                          (let* ((base (file-name-base f))
+                                 (year (substring base 0 4))
+                                 (url  (concat "/Notes/" base ".html")))
+                            (cons url year)))
+                        year-files)))
+    (pw/write-index "Journal" out-file "/style.css" links)))
 
 (defun pw/build-all ()
   "Publish everything and generate section index pages."

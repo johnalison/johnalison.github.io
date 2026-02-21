@@ -87,44 +87,96 @@
                           pw/output-dir)))))
 
 (defun pw/html-publish-with-backlinks (plist filename pub-dir)
-  "Publish FILENAME to HTML then append a backlinks section if any exist."
+  "Publish FILENAME to HTML, then inject day-nav and backlinks."
   ;; 1. Normal HTML export
   (org-html-publish-to-html plist filename pub-dir)
-  ;; 2. Extract this file's own ID
-  (let* ((file-id
+  (let* ((out-file (expand-file-name
+                    (concat (file-name-base filename) ".html")
+                    pub-dir))
+         (out-dir (file-name-directory out-file)))
+    ;; 2. Prev/next navigation for journal files
+    (let ((nav-pair (gethash filename pw/journal-nav-index)))
+      (when nav-pair
+        (let* ((prev-org (car nav-pair))
+               (next-org (cdr nav-pair))
+               (prev-url (and prev-org
+                              (file-relative-name
+                               (pw/org-file-to-html-abs-path prev-org)
+                               out-dir)))
+               (next-url (and next-org
+                              (file-relative-name
+                               (pw/org-file-to-html-abs-path next-org)
+                               out-dir)))
+               (nav-html
+                (concat "<nav class=\"day-nav\">\n"
+                        (if prev-url
+                            (format "  <a href=\"%s\">&#8592; Previous</a>\n" prev-url)
+                          "  <span></span>\n")
+                        (if next-url
+                            (format "  <a href=\"%s\">Next &#8594;</a>\n" next-url)
+                          "  <span></span>\n")
+                        "</nav>\n")))
           (with-temp-buffer
-            (insert-file-contents filename nil 1 500)
-            (when (re-search-forward "^:ID:\\s-+\\(\\S-+\\)" nil t)
-              (upcase (string-trim (match-string 1))))))
-         (backlinkers (and file-id
-                           (gethash file-id pw/backlinks-index))))
-    ;; 3. If there are backlinks, inject them before </body>
-    (when backlinkers
-      (let* ((out-file (expand-file-name
-                        (concat (file-name-base filename) ".html")
-                        pub-dir))
-             (out-dir (file-name-directory out-file))
-             (items (mapconcat
-                     (lambda (src)
-                       (format "  <li><a href=\"%s\">%s</a></li>\n"
-                               (file-relative-name
-                                (pw/org-file-to-html-abs-path (car src))
-                                out-dir)
-                               (cdr src)))
-                     backlinkers ""))
-             (html (concat "<div class=\"backlinks\">\n"
-                           "<h2>Backlinks</h2>\n"
-                           "<ul>\n" items "</ul>\n"
-                           "</div>\n")))
-        (with-temp-buffer
-          (insert-file-contents out-file)
-          (goto-char (point-max))
-          (when (search-backward "</body>" nil t)
-            (insert html))
-          (write-file out-file))))))
+            (insert-file-contents out-file)
+            (goto-char (point-min))
+            (when (search-forward "<h1 class=\"title\"" nil t)
+              (beginning-of-line)
+              (insert nav-html))
+            (write-file out-file)))))
+    ;; 3. Backlinks
+    (let* ((file-id
+            (with-temp-buffer
+              (insert-file-contents filename nil 1 500)
+              (when (re-search-forward "^:ID:\\s-+\\(\\S-+\\)" nil t)
+                (upcase (string-trim (match-string 1))))))
+           (backlinkers (and file-id (gethash file-id pw/backlinks-index))))
+      (when backlinkers
+        (let* ((items (mapconcat
+                       (lambda (src)
+                         (format "  <li><a href=\"%s\">%s</a></li>\n"
+                                 (file-relative-name
+                                  (pw/org-file-to-html-abs-path (car src))
+                                  out-dir)
+                                 (cdr src)))
+                       backlinkers ""))
+               (html (concat "<div class=\"backlinks\">\n"
+                             "<h2>Backlinks</h2>\n"
+                             "<ul>\n" items "</ul>\n"
+                             "</div>\n")))
+          (with-temp-buffer
+            (insert-file-contents out-file)
+            (goto-char (point-max))
+            (when (search-backward "</body>" nil t)
+              (insert html))
+            (write-file out-file)))))))
 
-;; Build the index once before any publishing begins
+;;; Journal navigation index -----------------------------------------------
+;; Build a sorted list of all journal org files so each page knows its
+;; previous and next neighbour (alphabetical path order = chronological).
+
+(defvar pw/journal-nav-index (make-hash-table :test 'equal)
+  "Maps journal org-file path to (prev-path . next-path).")
+
+(defun pw/build-journal-nav-index ()
+  "Populate `pw/journal-nav-index' with prev/next for every journal file."
+  (message "Building journal navigation index...")
+  (clrhash pw/journal-nav-index)
+  (let* ((journal-dir (expand-file-name "Journal" pw/notes-src-dir))
+         (files (sort (directory-files-recursively journal-dir "\\.org\\'")
+                      #'string-lessp))
+         (vec (vconcat files))
+         (len (length vec)))
+    (dotimes (i len)
+      (let ((f (aref vec i)))
+        (puthash f
+                 (cons (and (> i 0)        (aref vec (1- i)))
+                       (and (< (1+ i) len) (aref vec (1+ i))))
+                 pw/journal-nav-index)))
+    (message "Journal nav index built (%d entries)." len)))
+
+;; Build both indexes once before any publishing begins
 (pw/build-backlinks-index)
+(pw/build-journal-nav-index)
 
 ;;; HTML head snippet -------------------------------------------------------
 ;; Using root-relative path so it works at any nesting depth.

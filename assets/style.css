@@ -239,6 +239,28 @@ div.outline-2, div.outline-3, div.outline-4 {
   color: var(--muted);
 }
 
+/* ── Day navigation ─────────────────────────────────────────────────────── */
+nav.day-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.88rem;
+}
+
+nav.day-nav a {
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2em 0.75em;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+nav.day-nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ── Backlinks ──────────────────────────────────────────────────────────── */
 .backlinks {
   margin-top: 4rem;

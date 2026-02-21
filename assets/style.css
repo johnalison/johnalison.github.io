@@ -135,15 +135,15 @@ p.verse {
 /* ── Tables ─────────────────────────────────────────────────────────────── */
 table {
   border-collapse: collapse;
-  width: 100vw;
-  margin: 1.25rem calc(-50vw + 50%);
+  width: 100%;
+  margin: 1.25rem 0;
   font-size: 0.93rem;
 }
 
-/* Daily journal entries: keep tables within the content column */
-body.journal-page table {
-  width: 100%;
-  margin: 1.25rem 0;
+/* Monthly note pages: expand tables to full viewport width */
+body.monthly-page table {
+  width: 100vw;
+  margin: 1.25rem calc(-50vw + 50%);
 }
 th, td {
   border: 1px solid var(--border);

@@ -8,8 +8,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   // ── 0. Tag body with page-type class for CSS targeting ─────────────────
-  if (/\/Journal\//.test(window.location.pathname)) {
-    document.body.classList.add('journal-page');
+  if (/\/Notes\/[a-z]+_\d{4}-/.test(window.location.pathname)) {
+    document.body.classList.add('monthly-page');
   }
 
   // ── 1. Fix org separator rows into proper thead/tbody ──────────────────

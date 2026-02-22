@@ -34,6 +34,12 @@
 ;; are rendered as plain text with a warning annotation.
 (setq org-export-with-broken-links 'mark)
 
+;;; mu4e link handling ------------------------------------------------------
+;; [[mu4e:msgid:...][Description]] links are Emacs email links meaningless
+;; on the web. Export them as plain description text (or nothing if absent).
+(org-link-set-parameters "mu4e"
+  :export (lambda (_path desc _backend) (or desc "")))
+
 ;;; Backlinks index --------------------------------------------------------
 ;; Build a reverse map: target-UUID -> list of (source-org-path . title)
 ;; so each page can display which other notes link to it.

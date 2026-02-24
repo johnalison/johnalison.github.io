@@ -4,6 +4,8 @@ on:
   push:
     branches: [master]
   workflow_dispatch:          # allows manual trigger from GitHub UI
+  schedule:
+    - cron: '0 4 * * *'      # daily at 4:00 AM UTC
 
 jobs:
   build-and-deploy:

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>09 September 2025 Tuesday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="08-September-2025-Monday.html">&#8592; Previous</a>
+  <a href="10-September-2025-Wednesday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">09 September 2025 Tuesday</h1>
+
+<div id="outline-container-org105b039" class="outline-2">
+<h2 id="org105b039">Time Block</h2>
+<div class="outline-text-2" id="text-org105b039">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Setup</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">coffea4bees updates</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">coffea4bees updates</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">coffea4bees updates</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">bbreww updates</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">bbreww updates</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">more barista</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">MAC Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">MAC Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">coffeea plotting</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">MPL</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">MPL</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">MPL (Mans Meeting)</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">MPL (Mans Meeting)</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">MPL (Mans Meeting)</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">MPL (Mans Meeting)</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b>  8 
+<b>DW:</b>  3
+<b>OT:</b> 2
+<b>No ex</b>
+</p>
+</div>
+
+<div id="outline-container-org9333e6e" class="outline-3">
+<h3 id="org9333e6e">The One Thing:</h3>
+<div class="outline-text-3" id="text-org9333e6e">
+<p>
+Fix coffea4b plots in head
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgd2538d7" class="outline-2">
+<h2 id="orgd2538d7">Up at 7</h2>
+</div>
+
+
+<div id="outline-container-orgc63bdda" class="outline-2">
+<h2 id="orgc63bdda">Selling Crypto</h2>
+</div>
+
+
+<div id="outline-container-org30299cc" class="outline-2">
+<h2 id="org30299cc">M to school</h2>
+</div>
+
+
+<div id="outline-container-org857b97d" class="outline-2">
+<h2 id="org857b97d">Work by 9</h2>
+</div>
+
+
+<div id="outline-container-orgb8cf865" class="outline-2">
+<h2 id="orgb8cf865">I am probably under-valuing reading papers, vs books.</h2>
+<div class="outline-text-2" id="text-orgb8cf865">
+<ul class="org-ul">
+<li>How to do better here ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf3b4efa" class="outline-2">
+<h2 id="orgf3b4efa">Fixing coffea4bees plotting</h2>
+<div class="outline-text-2" id="text-orgf3b4efa">
+<ul class="org-ul">
+<li>Have it working locally</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org14c51b6" class="outline-2">
+<h2 id="org14c51b6">Updating bbreww</h2>
+</div>
+
+
+<div id="outline-container-org6fd0e40" class="outline-2">
+<h2 id="org6fd0e40">Need to fix CI in <a href="../../../Notes/4b code base.html#ID-07C5B981-2757-443B-89CF-D57206DBFD03">4b code base</a></h2>
+<div class="outline-text-2" id="text-org6fd0e40">
+<ul class="org-ul">
+<li>See logs above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org43ee2e3" class="outline-2">
+<h2 id="org43ee2e3"><a href="../../../Notes/cmu_hgc_mac_meeting_9_september_2025-20250909122210.html#ID-A80A2270-03ED-4D6F-94A2-9AD4C845FC6D">CMU HGC Mac Meeting 9 September 2025</a></h2>
+</div>
+
+
+<div id="outline-container-org2b2d78b" class="outline-2">
+<h2 id="org2b2d78b">More work on barista/coffea/bbreww</h2>
+</div>
+
+
+<div id="outline-container-org8b1bc74" class="outline-2">
+<h2 id="org8b1bc74">MPL</h2>
+<div class="outline-text-2" id="text-org8b1bc74">
+<ul class="org-ul">
+<li>Lecture for first hour</li>
+<li>Blew fuses in Zeeman</li>
+<li>Raman peaks not in the right spot&#x2026; need to understand</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0c5f4a1" class="outline-2">
+<h2 id="org0c5f4a1"><a href="../../../Notes/hgc_management_meeting-20250505104424.html#ID-A4EDAC61-16F3-484B-B564-3C5B68FFD498">HGC Management Meeting</a></h2>
+<div class="outline-text-2" id="text-org0c5f4a1">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9d55eaa" class="outline-2">
+<h2 id="org9d55eaa">Home with M</h2>
+</div>
+
+
+<div id="outline-container-org7938199" class="outline-2">
+<h2 id="org7938199">Reading</h2>
+</div>
+
+
+<div id="outline-container-org72a2044" class="outline-2">
+<h2 id="org72a2044">Renewed prescription.</h2>
+<div class="outline-text-2" id="text-org72a2044">
+<ul class="org-ul">
+<li>Caremark website has my Rx card</li>
+<li>To CVS to pick it up</li>
+<li>$0</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

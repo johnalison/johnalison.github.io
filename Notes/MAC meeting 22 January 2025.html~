@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC meeting 22 January 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">MAC meeting 22 January 2025</h1>
+<p>
+<a href="https://indico.cern.ch/event/1505576/">https://indico.cern.ch/event/1505576/</a>
+</p>
+<div id="outline-container-org884f88e" class="outline-2">
+<h2 id="org884f88e">Rough calendar for 2025</h2>
+<div class="outline-text-2" id="text-org884f88e">
+<ul class="org-ul">
+<li>New calendar</li>
+<li>Finish with hexabords: qualify tooling</li>
+<li>ASICs limit the hexaboard production</li>
+<li>ROC3C sometimes gets blocked by SEU. (Will know more in Feb.)</li>
+<li>New hexaboards in April
+<ul class="org-ul">
+<li>~100/month from (5 months) April - August</li>
+</ul></li>
+<li>September - December 200 / month</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1ec55cc" class="outline-2">
+<h2 id="org1ec55cc">Tooling Update</h2>
+<div class="outline-text-2" id="text-org1ec55cc">
+<ul class="org-ul">
+<li>Order 3 (sensor trays) recieved Dec</li>
+<li>Orders 4-7 (sensor PUT / Gantry Tool holder) Est delivery Feb 24</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5044419" class="outline-2">
+<h2 id="org5044419">DB Updates</h2>
+<div class="outline-text-2" id="text-org5044419">
+<ul class="org-ul">
+<li>Slides from Sindhu and Manami</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6505144" class="outline-2">
+<h2 id="org6505144">CMU</h2>
+<div class="outline-text-2" id="text-org6505144">
+<ul class="org-ul">
+<li>Chiller / Two new technicians</li>
+<li>Assembling 2 modules / day for one weeek
+<ul class="org-ul">
+<li>Assembled 6 modules (all look good)</li>
+<li>Change expired wire / calibrate bond force</li>
+<li>Test stand GUI crashing</li>
+<li>Workflow is good.</li>
+<li>Need new tooling to get to 4 / day (~ mid March)</li>
+</ul></li>
+<li>Almost Finished UCSB action items</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9c708fb" class="outline-2">
+<h2 id="org9c708fb">Follow-ups</h2>
+</div>
+</div>
+</body>
+</html>

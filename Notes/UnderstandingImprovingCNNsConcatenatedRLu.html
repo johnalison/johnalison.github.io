@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UnderstandingImprovingCNNsConcatenatedRLu</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">UnderstandingImprovingCNNsConcatenatedRLu</h1>
+<p>
+Understanding and Improving Convolutional Neural Networks via Concatenated Rectified Linear Units
+<a href="https://arxiv.org/pdf/1603.05201.pdf">https://arxiv.org/pdf/1603.05201.pdf</a>
+</p>
+
+<ul class="org-ul">
+<li>we first examine existing CNN models and observe an intriguing property that the filters in the lower layers form pairs</li>
+
+<li>we propose a novel, simple yet effective activation scheme called concatenated ReLU</li>
+
+<li>CNNs tend to learn highly (negatively-)correlated pairs of filters for the first few convolution layers.
+Lower convolution layers of AlexNet learn redundant filters to extract both positive and negative phase information of an input signal</li>
+
+<li>CReLU: activation scheme preserves both positive and negative phase information while enforcing non-saturated non-linearity</li>
+
+<li>We demonstrate that simply replacing ReLU with CReLU for the lower convolution layers of an existing state-of-the-art CNN architecture yields a substantial improvement in classification performance.
+CReLU allows to attain notable parameter reduction without sacrificing classification performance when applied appropriately.</li>
+
+<li><p>
+Rectified Linear Unit (ReLU), zero out negative values and produces sparse activation.
+So, if both the positive phase and negative phase along a specific direction participate in representing the input space, the network then needs to learn two linearly dependent filters of both phases.
+</p>
+
+<p>
+Despite ReLU erasing negative linear responses, the first few convolution layers of a deep CNN manage to capture both negative and positive phase information through learning pairs or groups of negatively correlated filters.
+ This conjecture implies that there exists a redundancy among the filters from the lower convolution layers.
+</p></li>
+
+<li>We design a method to explicitly allow both positive and negative activation, then we will be able to alleviate the redundancy among convolution filters caused by ReLU non-linearity and make more efficient use of the trainable parameters</li>
+
+<li>Therefore, besides the performance boost, another significance of CReLU activation scheme is in designing more parameterefficient deep neural networks</li>
+</ul>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="papers.html">Papers</a></li>
+</ul>
+</div>
+</body>
+</html>

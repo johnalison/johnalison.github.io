@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>X-&gt;HY-&gt;4b HIG-20-012</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">X-&gt;HY-&gt;4b HIG-20-012</h1>
+<p>
+<a href="file:///home/runner/Downloads/HIG-20-012-paper-v14.pdf">CWR Paper Draft X-&gt;YH-&gt;4b</a>
+</p>
+
+<ul class="org-ul">
+<li>4b: 4 medium</li>
+<li>3b: 3 medium + 1 loose and not medium (only a factor of 2 difference)</li>
+<li>Jet-pairing min-rHH and other</li>
+<li>SR - VR and CR defined using 1D mHH</li>
+<li>In Figure 3, the bkg. model uncertianties are significantly (factor 2-3) larger that the data statistical uncertianties.</li>
+</ul>
+<p>
+If most (95%) of the background uncertianties are from the statistical uncertianties on the 3b dataset (which is 2x larger than the 4b dataset) shouldn't the bkg. model uncertanties be smaller than the data uncertianties ?
+</p>
+
+<p>
+Im guessing the same comment applies to Figure 2. What are the background uncertianties that are included in the VR (fig2) ? 
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ZettelKasten Index</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ZettelKasten Index</h1>
+
+
+<div id="outline-container-org1ef0bba" class="outline-2">
+<h2 id="org1ef0bba"><a href="Wisdom-index.html#ID-C1A07305-D6D0-4C92-BEB3-7C03FF02F31A">Wisdom</a></h2>
+<div class="outline-text-2" id="text-org1ef0bba">
+</div>
+<div id="outline-container-org8178c80" class="outline-3">
+<h3 id="org8178c80"><a href="Lists.html#ID-024049A2-C8BB-4B2C-BD0D-7B6F4E409E6F">Lists</a></h3>
+</div>
+
+<div id="outline-container-org2d0b810" class="outline-3">
+<h3 id="org2d0b810"><a href="Books.html#ID-4BB82D4F-B0C2-448D-B751-8196826BA754">Books</a></h3>
+</div>
+
+<div id="outline-container-orgf632330" class="outline-3">
+<h3 id="orgf632330"><a href="Blogs.html#ID-8721B888-8F08-49C5-BD17-6D1F6FC31B59">Blogs</a></h3>
+</div>
+
+<div id="outline-container-orgf162835" class="outline-3">
+<h3 id="orgf162835"><a href="talks-20251110085103.html#ID-526A0513-C2C6-4AE1-B3E9-2CA60647F180">Talks</a></h3>
+</div>
+
+<div id="outline-container-org690d09f" class="outline-3">
+<h3 id="org690d09f"><a href="papers.html#ID-890A289A-F84F-4CD1-B56D-D6159605C2EC">Papers</a></h3>
+</div>
+
+<div id="outline-container-org1b81fc2" class="outline-3">
+<h3 id="org1b81fc2"><a href="output-20251116095742.html#ID-0AEFF1B1-C640-46B3-B350-D1D58AF2CF01">Output</a></h3>
+</div>
+</div>
+
+
+<div id="outline-container-orgc7e45d2" class="outline-2">
+<h2 id="orgc7e45d2"><a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a></h2>
+</div>
+
+<div id="outline-container-org1a58736" class="outline-2">
+<h2 id="org1a58736"><a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a></h2>
+</div>
+
+
+<div id="outline-container-org136f9f7" class="outline-2">
+<h2 id="org136f9f7">Particle Physics</h2>
+<div class="outline-text-2" id="text-org136f9f7">
+<p>
+<a href="Naive Limit Combination.html#ID-0C3C066A-ECFA-448A-AB45-ED0BFAB46339">Naive Limit Combination</a>
+</p>
+
+<p>
+<a href="Spurious-Signal.html#ID-872853E2-ADC1-49A0-840C-C0142D8A4ED5">Spurious-Signal</a>
+</p>
+
+<p>
+<a href="Dark Matter and Missing Momentum.html#ID-51243B64-7B56-4415-B3CC-1692DAFF2A32">Dark Matter and Missing Momentum</a>
+</p>
+
+<p>
+<a href="Higgs Potential Algebra.html#ID-7D5F8243-C169-45E9-898A-182C6EEF5E44">Higgs Potential Algebra</a>
+</p>
+
+<p>
+<a href="charge_tagger-20251105084623.html#ID-93406920-D9E3-45F6-8906-9B2D11BA2993">Charge Tagger</a>
+</p>
+
+<p>
+<a href="higgs_couplings_and_bsm-20251029101334.html#ID-0B0962F8-A7E7-4D5A-BC00-250E56231E35">Higgs couplings and BSM</a>
+</p>
+
+<p>
+<a href="bbtautau_why_the_had_had_channel_is_best-20251103093137.html#ID-9B7A0401-B972-4A2D-B6A4-94C049D9E772">bbtautau: Why the had-had channel is best</a>
+</p>
+</div>
+
+<div id="outline-container-org96f5595" class="outline-3">
+<h3 id="org96f5595">Synthetic Datasets</h3>
+<div class="outline-text-3" id="text-org96f5595">
+<ul class="org-ul">
+<li><a href="Proxy-datasets-critical-for-data-driven-systematics.html#ID-7C2A44B6-4C25-46BB-8FD2-A0DB15E3A443">Proxy-datasets-critical-for-data-driven-systematics</a></li>
+<li><a href="Synthetic-data-sets-via-hemisphere-mixing.html#ID-151BE736-0795-4305-87A1-A065C35822D0">Synthetic-data-sets-via-hemisphere-mixing</a></li>
+<li><a href="problemswithhemispheremixing-20250504111619.html#ID-D570BA9A-4AA2-4336-9688-7E5A2FEA0076">ProblemsWithHemisphereMixing</a></li>
+<li><a href="hemispheremixing-20250504111513.html#ID-27209C81-3ED8-4721-B0F6-57FC9FA9BB40">Hemisphere-mixing</a></li>
+<li><a href="hemispheremixingandisf_fsr-20250504111418.html#ID-443F4BB1-778F-4E7C-9CAA-45FA9176185B">HemisphereMixingAndISF-FSR</a></li>
+<li><a href="jetdeclusteringalgorithm-20250504110934.html#ID-81F11099-A998-406F-AEFD-1B626D15ADC9">Jet DeClustering Algorithm</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd79108b" class="outline-3">
+<h3 id="orgd79108b">Potential Analyses</h3>
+<div class="outline-text-3" id="text-orgd79108b">
+<p>
+<a href="H-bb-vs-cc-using-photons.html#ID-2394E00E-87B6-4243-86D8-F45ABB3B5CCD">H-bb-vs-cc-using-photons</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgd9d8959" class="outline-2">
+<h2 id="orgd9d8959">Data Science</h2>
+<div class="outline-text-2" id="text-orgd9d8959">
+<p>
+<a href="PCA and Autoencoder.html#ID-7EA91FCC-EFF2-430A-8F14-3B49F11A5829">PCA and Autoencoder</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7daa833" class="outline-2">
+<h2 id="org7daa833">Leadership: a skill that can be taught and learned</h2>
+<div class="outline-text-2" id="text-org7daa833">
+<p>
+<a href="Leadership-Easy-First-Steps.html#ID-04E18ED5-D281-4E12-8F45-56A7A9ADEF83">Leadership-Easy-First-Steps</a>
+</p>
+
+<p>
+<a href="Detaching-As-Core-Leadership-Skill.html#ID-789DA18E-8B3D-446B-804E-FA759769321C">Detaching-As-Core-Leadership-Skill</a>
+</p>
+
+<p>
+<a href="How-to-Detach.html#ID-AE22790E-1DAD-433F-9A09-3F382BA5930A">How-to-Detach</a>
+</p>
+
+<p>
+<a href="Lack-of-free-will-as-a-hack-to-detach.html#ID-3804F06F-292B-4060-B7DA-9CB119CA7A58">Lack-of-free-will-as-a-hack-to-detach</a>
+</p>
+
+<p>
+<a href="Giving-them-a-job-they-can-do.html#ID-FC5B4214-17A0-4528-827C-61A951A1FEDB">Giving-them-a-job-they-can-do</a>
+</p>
+
+<p>
+<a href="Third-party-praise.html#ID-F7041CAF-240C-44BD-A118-E069541BCED1">Third-party-praise</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd55f742" class="outline-2">
+<h2 id="orgd55f742">Innovation</h2>
+<div class="outline-text-2" id="text-orgd55f742">
+<p>
+<a href="Breadth-vs-depth-Inputs-and-Outputs.html#ID-74D30BB1-3958-4172-B6DF-47293F07B507">Breadth-vs-depth-Inputs-and-Outputs</a>
+</p>
+
+<p>
+<a href="Teachers-vs-Experts.html#ID-6265D1A7-2ECA-4AD4-94DB-38BBDC4AC3C5">Teachers-vs-Experts</a>
+</p>
+
+<p>
+(Learning as creativity)
+</p>
+
+<p>
+<a href="Genius-One-Idea-plus-dogged-persuit.html#ID-12CB65F5-5CE4-461B-B636-D6AD341213F0">Genius-One-Idea-plus-dogged-persuit</a>
+</p>
+
+<p>
+<a href="It helps to write stuff down.html#ID-ECBFA3B1-39BA-4993-BF3D-5F431A94B1B9">It helps to write stuff down</a>
+</p>
+
+<p>
+<a href="AdjacentPossible.html#ID-18D697C0-6D56-418A-8C94-76DF5D4DB68C">AdjacentPossible</a>
+</p>
+
+<p>
+<a href="Innovation Comes From Knowing More.html#ID-22170761-8C69-4483-A6C4-4A90C45F7ECD">Innovation Comes From Knowing More</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org02a1a2e" class="outline-2">
+<h2 id="org02a1a2e">Determinism</h2>
+<div class="outline-text-2" id="text-org02a1a2e">
+<p>
+<a href="Determinism-Map-vs-Territory.html#ID-DFD174EE-CB39-4FD6-9601-4D23856E19BC">Determinism-Map-vs-Territory</a>
+</p>
+
+<p>
+<a href="Proving-the-word-deterministic.html#ID-594E4578-B6FD-443A-BF34-9063051C68CB">Proving-the-word-deterministic</a>
+</p>
+
+<p>
+<a href="chaos-determinism-and-real-numbers.html#ID-04ED6EC4-570E-4324-AD0C-B2CCA51AAAB2">chaos-determinism-and-real-numbers</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org0c2961d" class="outline-2">
+<h2 id="org0c2961d">Crypto</h2>
+<div class="outline-text-2" id="text-org0c2961d">
+<p>
+<a href="Problem-with-market-cap.html#ID-3FB10B32-BE4E-47F1-A568-BB2C2461538E">Problem-with-market-cap</a>
+</p>
+
+<p>
+<a href="CryptoBottomLine.html#ID-4CA3FEAF-57C8-4F71-AAE3-424EFF1D82DD">CryptoBottomLine</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc3d3930" class="outline-2">
+<h2 id="orgc3d3930">Productivity</h2>
+<div class="outline-text-2" id="text-orgc3d3930">
+<p>
+<a href="Most-of-what-we-do-is-unnecessary.html#ID-B76F7502-FF14-415A-A21D-F5A887D9340D">Most-of-what-we-do-is-unnecessary</a>
+</p>
+
+<p>
+<a href="Writing-for-yourself-vs-for-readers.html#ID-01B335FA-514A-43CE-B09E-460B9B203C6F">Writing-for-yourself-vs-for-readers</a>
+</p>
+
+<p>
+<a href="When in Doubt Draft Emails.html#ID-BBD48AE9-EA68-4359-84B1-BA5B40C2F02F">When in Doubt Draft Emails</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org005b523" class="outline-2">
+<h2 id="org005b523">Libertarianism</h2>
+<div class="outline-text-2" id="text-org005b523">
+<p>
+<a href="Libertarianism.html#ID-C9483C7C-4CC4-44F5-A431-7245DDBC16E1">Libertarianism</a>
+</p>
+</div>
+
+<div id="outline-container-orgc6e9957" class="outline-3">
+<h3 id="orgc6e9957">Why Libertarianism</h3>
+<div class="outline-text-3" id="text-orgc6e9957">
+<ul class="org-ul">
+<li><a href="Libertarianism-is-bottom-up.html#ID-DC6FE356-6E8C-4A1A-98E2-974F2FB74751">Libertarianism-is-bottom-up</a></li>
+<li><a href="top_down_societal_organization_is_impossible-20250504184545.html#ID-36567F70-9712-4A69-BE32-CD0CCCE692BC">Top down societal organization is impossible</a></li>
+<li><a href="Libertarianism follows from common sense morality.html#ID-600B0041-42C7-4235-B0C0-D41287907503">Libertarianism follows from common sense morality</a></li>
+<li><a href="libertarianism_optimal_under_uncertianty-20250504184938.html#ID-6B5BC664-D502-424C-B104-603374B88A7C">Libertarianism-optimal-under-uncertianty</a></li>
+<li><a href="Libertarianism-more-effective-in-complicated-societies.html#ID-8F4CF02A-5CA1-4A10-9578-0797F2566FD0">Libertarianism-more-effective-in-complicated-societies</a></li>
+<li><a href="Role of Government in Free Market economy.html#ID-2F666745-A000-40F7-9C4C-0B272593FC87">Role of Government in Free Market economy</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfdc623f" class="outline-3">
+<h3 id="orgfdc623f">Consequences</h3>
+<div class="outline-text-3" id="text-orgfdc623f">
+<p>
+<a href="Libertarianism implies a strong bias against taxpayer support for anything.html#ID-2C2ABE9A-F943-4587-958F-FF4E7860A96A">Libertarianism implies a strong bias against taxpayer support for anything</a> 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb5b6c48" class="outline-3">
+<h3 id="orgb5b6c48">Arguments in Favor</h3>
+<div class="outline-text-3" id="text-orgb5b6c48">
+<p>
+<a href="Governments as monopolies.html#ID-C9808E9F-AA46-4A7F-B48D-A80D43A8DB4F">Governments as monopolies</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f7f805" class="outline-3">
+<h3 id="org7f7f805">History</h3>
+<div class="outline-text-3" id="text-org7f7f805">
+<p>
+<a href="democratic_party_libertarianism_beginnings_and_quick_ends-20250504183420.html#ID-5193CB18-CDE5-41D2-AD09-7CB4071FAFB5">Democratic Party - Libertarianism beginnings and quick ends</a>
+<a href="Socialist movement undermined libertarian strategy.html#ID-A8965AF3-FC42-4913-A7E8-B90F6389506A">Socialist movement undermined libertarian strategy</a>
+</p>
+
+<p>
+<a href="Utilitarianism Often uses statism as a Means to an End.html#ID-CF9ED9AA-E5BA-4483-83F0-66192553FC7E">Utilitarianism Often uses statism as a Means to an End</a>
+</p>
+
+<p>
+<a href="Utilitarians are not radicals.html#ID-81DD0518-8C76-46E3-B87F-A6EFF5ED55D0">Utilitarians are not radicals</a>
+</p>
+
+<p>
+<a href="Limited-government conservatives are impractical utopians.html#ID-7EE0C1EC-0A41-4151-8AE2-C9C0A38BFE75">Limited-government conservatives are impractical utopians</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org95e5bb8" class="outline-2">
+<h2 id="org95e5bb8">Free Markets</h2>
+<div class="outline-text-2" id="text-org95e5bb8">
+<p>
+<a href="Marginal Value Sets Prices Not Total Value.html#ID-8FF5BF26-210C-46AE-A9FA-C5AF1A4E52A0">Marginal Value Sets Prices Not Total Value</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org46919a2" class="outline-2">
+<h2 id="org46919a2">Free Will</h2>
+<div class="outline-text-2" id="text-org46919a2">
+<p>
+<a href="Free-Will-Lens-As-Mental-Model.html#ID-F43CF9C1-2400-4F48-861C-68572B667354">Free-Will-Lens-As-Mental-Model</a>
+</p>
+
+<p>
+<a href="How-to-define-good-action-if-no-free-will.html#ID-F0C57238-3DD2-43AE-97DB-5893A998BB12">How-to-define-good-action-if-no-free-will</a>
+<a href="Evidence That Free Will is an Illusion.html#ID-32F7A315-BB63-4933-827D-FF8BD58E90D3">
+Evidence That Free Will is an Illusion</a>
+</p>
+
+<p>
+<a href="Free will incompatible with determinism and not determinism.html#ID-A8A89117-4D75-4C66-BE5C-A9E729CCC907">Free will incompatible with determinism and not determinism</a>
+</p>
+
+<p>
+<a href="Free will is similar to collapse of the wave function..html#ID-8C48DDF6-91E2-4DB0-9704-A1002DB45CC2">Free will is similar to collapse of the wave function.</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgdafcc26" class="outline-2">
+<h2 id="orgdafcc26">LifeLong Learning</h2>
+<div class="outline-text-2" id="text-orgdafcc26">
+<p>
+<a href="Having children as education.html#ID-55592A3D-CBBC-479E-9B37-07F10FFDCCB1">Having children as education</a>
+<a href="Education is mostly signaling.html#ID-D17F9023-D236-421F-B7F7-3FF2A837C65F">Education is mostly signaling</a>
+<a href="Educations position in society is robust against technological advances.html#ID-412171CB-80C3-4601-965E-0C9FE1277863">Educations position in society is robust against technological advances</a>
+<a href="Teaching.html#ID-4769DA5E-CE32-4535-9E5B-FE4A27FBE674">Teaching</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1b4b8f4" class="outline-2">
+<h2 id="org1b4b8f4">Meditation</h2>
+<div class="outline-text-2" id="text-org1b4b8f4">
+<p>
+<a href="Potential of Insight.html#ID-2747E414-35E6-4BAC-AB31-F7E4F4CAF8FC">Potential of Insight</a>
+<a href="We are a point of view, not a separate thing.html#ID-CEB86AF8-C9F1-4BBE-A83C-58C18922FEE0">
+We are a point of view, not a separate thing</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org3c0c507" class="outline-2">
+<h2 id="org3c0c507">Politics</h2>
+<div class="outline-text-2" id="text-org3c0c507">
+<p>
+<a href="How Political Ideology is Formed.html#ID-1B160BF8-77A0-4ECD-AC8F-12421FDD6B1D">How Political Ideology is Formed</a>
+</p>
+
+<p>
+<a href="Left-wing political myths currently much more dangerous than corresponding right-wing myths.html#ID-0AAD90CE-5079-4AB7-8420-E62D5B059CFD">Left-wing political myths currently much more dangerous than corresponding right-wing myths</a>
+</p>
+
+<p>
+<a href="Diminishing Returns in Politics.html#ID-35EB9238-5882-43DF-8705-5A35F8E97E3F">Diminishing Returns in Politics</a>
+</p>
+
+<p>
+<a href="Problems with Limits on Government Power.html#ID-B0D083AD-12F1-47F2-A0AF-C8BEB4A94B94">Problems with Limits on Government Power</a>
+</p>
+<ul class="org-ul">
+<li><a href="Government's bad incentives.html#ID-2B00A82B-AC36-44AE-8942-C033BD8FFA24">Government's bad incentives</a></li>
+<li><a href="Choice in Anarchy vs Democracy.html#ID-FC0237FC-A1D3-4B00-9484-5C5BEF4FA6BB">Choice in Anarchy vs Democracy</a></li>
+</ul>
+
+<p>
+<a href="Sustainable Growth is a Moral Imperative.html#ID-611E4620-7151-42E1-8A83-BCAC84A0F8D1">Sustainable Growth is a Moral Imperative</a>
+</p>
+<ul class="org-ul">
+<li><a href="Intuitively wrong to discount future over long time frames.html#ID-7A0D44D8-E910-4F6C-B1A5-6EC50719A46C">Intuitively wrong to discount future over long time frames</a></li>
+</ul>
+
+<p>
+<a href="Faith needs to play a key role in ethics and political science.html#ID-97C08B6C-E656-4F8A-BFCA-D1FBB3A6C858">Faith needs to play a key role in ethics and political science</a>
+<a href="Constraints on wealth redistribution..html#ID-EA1FEF34-C01A-4472-8EB0-609A71392362">Constraints on wealth redistribution.</a>
+</p>
+
+<p>
+<a href="Public schools foster inequality.html#ID-1E6CFAA7-D2B6-4566-8759-3C6398220D31">Public schools foster inequality</a>
+</p>
+
+<p>
+<a href="socialism_attempts_to_marry_benefits_of_libertarianism_with_state_power-20250504184433.html#ID-CE1D8D7C-983E-4E3F-B0B8-049765A97223">Socialism attempts to marry benefits of libertarianism with state power</a>
+</p>
+
+<p>
+<a href="The experiment of a written constitution to limit government has failed..html#ID-C0B76905-D3DE-4A9D-B42B-FA47C24F92B5">The experiment of a written constitution to limit government has failed.</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c22e92" class="outline-2">
+<h2 id="org2c22e92">Science</h2>
+<div class="outline-text-2" id="text-org2c22e92">
+<p>
+<a href="can_science_account_for_its_effectiveness-20251115151648.html#ID-FD5CCA43-DE0C-40FA-8A08-618A5934E74A">Can science account for its effectiveness ?</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org91778a2" class="outline-2">
+<h2 id="org91778a2">Philosophy</h2>
+<div class="outline-text-2" id="text-org91778a2">
+<p>
+<a href="Benefit of Philosophy to Other Disciplines.html#ID-B5017D8E-4F4D-42E4-89A5-80AB0F95D4AE">Benefit of Philosophy to Other Disciplines</a>
+</p>
+
+<p>
+<a href="Determining truth of assumptions makes philosophy hard.html#ID-4110D505-E7B6-4A75-AEE8-E4A7822EC68B">Determining truth of assumptions makes philosophy hard</a>
+</p>
+
+<p>
+<a href="Ground truth believe systems on which to base philosophy.html#ID-B7FCD5AD-863E-416B-BF7F-4BEE1A4F3A4D">Ground truth believe systems on which to base philosophy</a>
+</p>
+
+<p>
+<a href="Radical skepticism is a means of probing intuitions.html#ID-D00EF398-EB56-4628-8799-0B64D8A861F4">Radical skepticism is a means of probing intuitions</a>
+</p>
+
+<p>
+<a href="Radical skepticism not excluded but not supported.html#ID-4B2EA75C-D5F1-425B-B818-D7325337816D">Radical skepticism not excluded but not supported</a>
+</p>
+
+<p>
+<a href="Radical uncertainty of long-term consequences of our actions.html#ID-50E3CF04-A5BA-4217-B7BF-245D1F52D8B2">Radical uncertainty of long-term consequences of our actions</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2f9caee" class="outline-2">
+<h2 id="org2f9caee">Humans are special</h2>
+<div class="outline-text-2" id="text-org2f9caee">
+<p>
+<a href="fermi_paradox_as_evidence_for_privileged_role_of_human_existence-20251115141804.html#ID-9D755522-BCEB-457C-B596-0C84A50DA71B">Fermi paradox as evidence for privileged role of human existence</a>
+</p>
+
+<p>
+<a href="consciousness_seems_supernatural-20251115143055.html#ID-AD72A92A-49D1-40D2-A032-F39CC6307E52">Consciousness seems supernatural</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

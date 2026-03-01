@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NormalizingFlowsTutorial</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">NormalizingFlowsTutorial</h1>
+<p>
+Title: Normalizing Flows Tutorial
+Source:, Part 1: Distributions and Determinants) <a href="https://blog.evjang.com/2018/01/nf1.html">https://blog.evjang.com/2018/01/nf1.html</a>
+</p>
+
+
+<ul class="org-ul">
+<li>determinants:  are nothing more than the amount (and direction) of volume distortion of a linear transformation
+The determinants of a matrix is the are the local, linearized rate of volume change of the lineare transformation that matrix represents</li>
+
+<li>If you have a non-linear transformation need a Jacobian.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>This means that normalizing flows can be used as a drop-in replacement for variational posteriors in a VAE (as an alternative to a Gaussian).
+<a href="DontUnderstand.html#ID-8C9D0E1F-2G3H-4I5J-6K7L-8M9N0O1P2Q3R">DontUnderstand</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Can chain any number of bijectors together, much like we chain layers together in a neural network.
+This is construct is known as a “normalizing flow”.</li>
+
+<li>If a bijector has tunable parameters (with respect to bijector.log<sub>prob</sub>), then the bijector can actually be learned to transform our base distribution to suit arbitrary densities.</li>
+
+<li>Can train with maximum likelihood estimation: maximizes the log-probablity of the training points (in the base varible ?)</li>
+
+<li>Autoregressive Models are Normalizing Flows: makes the rather bold inductive bias that the ordering of variables are such that your earlier variables don’t depend on later variables.</li>
+</ul>
+
+<p>
+<a href="NormalizingFlows.html#ID-4B15A7F6-CCF8-4401-B929-884CAD6CF0D1">NormalizingFlows</a>
+</p>
+</div>
+</body>
+</html>

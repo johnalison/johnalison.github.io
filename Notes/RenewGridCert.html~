@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RenewGridCert</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">RenewGridCert</h1>
+
+<div id="outline-container-org7f76509" class="outline-2">
+<h2 id="org7f76509">How to renew the grid certificante</h2>
+<div class="outline-text-2" id="text-org7f76509">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<p>
+From the email:
+</p>
+
+<p>
+"The Grid User certificate issued to CERN\johnda will expire in 7 days, on 09/08/2019.
+</p>
+
+<p>
+Certificate details:
+</p>
+
+<p>
+Serial number:	2a638ff000000006b35c
+Distinguished name:	CN=John Alison, CN=664447, CN=johnda, OU=Users, OU=Organic Units, DC=cern, DC=ch"
+</p>
+
+
+<p>
+Steps:
+</p>
+<ol class="org-ol">
+<li>Go to <a href="https://ca.cern.ch/ca/">https://ca.cern.ch/ca/</a>.</li>
+<li>Click "New Grid User Certificate"</li>
+<li>put in pwd ( XD3Ehht7YhxLmp7g2BhKVb )</li>
+<li>download certificante</li>
+<li>got myCertificate.p12</li>
+</ol>
+
+<p>
+Now follow instructions here: 
+<a href="https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookStartingGrid#ObtainingCert">https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookStartingGrid#ObtainingCert</a>
+</p>
+
+<ol class="org-ol">
+<li>move the file to the globus directory</li>
+<li>remove old cert and key:    
+<code>rm usercert.pem =
+    =rm userkey.pem</code></li>
+
+<li><code>openssl pkcs12 -in myCertificate.p12 -clcerts -nokeys -out usercert.pem</code>
+[Have to give password]</li>
+
+<li><code>openssl pkcs12 -in myCertificate.p12 -nocerts -out userkey.pem</code>
+Have to give cert pwd
+Then create/veriffiy PEM pasa phrase (asd&#x2026;)</li>
+
+<li>&gt; <code>chmod 400 userkey.pem</code>
+&gt; <code>chmod 400 usercert.pem</code></li>
+</ol>
+
+
+<ol class="org-ol">
+<li>Copy them to lxplus, LPC, and falcon.</li>
+
+<li>then open Mac Keychain Access App
+(Got this by searching spotlight for keychain access)</li>
+
+<li>Drag and drop myCertificate.p12 to file list under tab "My Certificates"</li>
+
+<li>then clicked on the new entry (get info) and set it to always trust</li>
+
+<li>I then deleted the certificiate that was going to expire.</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

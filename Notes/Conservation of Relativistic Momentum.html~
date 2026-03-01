@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conservation of Relativistic Momentum</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Conservation of Relativistic Momentum</h1>
+<p>
+We are looking for coefficients c(m, b) which multiply velocity such that the linear sum is conserved before and after an elastic collision.  A function of the particle mass and speed \(\beta\) is basically the only thing it can be subject to depending only on the current state of the particle. ie: being local in space (not dependent on properties of other particle) and time (not dependent on the future state of the particle)
+</p>
+
+<p>
+QM provides a deep reason why we expect to be classically conserved quantities
+</p>
+
+<p>
+Dual descriptions: inside vs boundaries&#x2026; will focus here on the boundaries
+</p>
+
+<div id="outline-container-org4dfce82" class="outline-2">
+<h2 id="org4dfce82">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orga72ead3" class="outline-2">
+<h2 id="orga72ead3">Links:</h2>
+<div class="outline-text-2" id="text-orga72ead3">
+<p>
+<a href="Relativity.html#ID-2CE04763-E3BB-484D-909E-7A09E97EDF73">Relativity</a>
+</p>
+
+
+<p>
+202502130846
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

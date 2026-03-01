@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SearchForSoftUnclusteredEnergyPatternsCMS</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">SearchForSoftUnclusteredEnergyPatternsCMS</h1>
+
+<div id="outline-container-org5868698" class="outline-2">
+<h2 id="org5868698">Search for soft unclustered energy patterns in proton-proton collisions at 13 TeV</h2>
+<div class="outline-text-2" id="text-org5868698">
+<p>
+<a href="https://cds.cern.ch/record/2887631?ln=en">https://cds.cern.ch/record/2887631?ln=en</a>
+</p>
+
+<ul class="org-ul">
+<li>soft unclustered energy patterns (SUEPs): characterized by a large multiplicity of low-momentum, diffuse, charged particles in the final state.</li>
+
+<li>The model that motivates this search [7] produces a high multiplicity of low-momentum, isotropically distributed particles, described as soft unclustered energy patterns (SUEPs)</li>
+
+<li>Events are required to pass a hadronic trigger with a threshold of HT &gt; 900 (1050) GeV</li>
+
+<li>Why veto leptons ? Is the Associated production channel being analyzed?</li>
+
+<li>How efficient is the selection of the highest 2 pt jets  for SUEPs ?
+<ul class="org-ul">
+<li>What is the eff of the selection 74-77</li>
+</ul></li>
+</ul>
+<p>
+<a href="CMS.html#ID-D0F94G67-9C3F-5E39-0G0D-F9G2588766EB">CMS</a></p>
+</div>
+</div>
+</div>
+</body>
+</html>

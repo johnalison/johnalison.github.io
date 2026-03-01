@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DOE Review Li Zepeng</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">DOE Review Li Zepeng</h1>
+<p>
+(<b>Due Date:</b> 03/19/2025)
+Proposal Title: Machine Learning in Front-End Electronics for Nuclear Physics Experiments
+</p>
+
+<div id="outline-container-orgc68c0de" class="outline-2">
+<h2 id="orgc68c0de">Notes:</h2>
+<div class="outline-text-2" id="text-orgc68c0de">
+<p>
+Not clear why ML is needed in Neutrinoless Double Beta Decay
+</p>
+
+<p>
+For EIC and Pioneer:
+Data reduction during acquisition includes zero- and noise suppression, binning of data into given time windows or clock cycles, feature reconstruction, and data compression. ML-based algorithms deployed on-chip or in the front-end on an FPGA offer an opportunity for real-time processing of raw data from fast timing detectors, including the selection of signals from noise and hit reconstructing using both spatial and timing information.
+</p>
+
+<ul class="org-ul">
+<li>Fast real-time energy and position reconstruction and particle identification will be critical for the future Barium-tagging upgrade in nEXO.</li>
+
+<li>The use of prototype detectors offers a unique opportunity to address the challenges of deploying ML algorithms on FPGA in nuclear physics experiments.</li>
+<li>As part of this proposal, multiple prototype systems will provide high-quality, real-world datasets for developing and evaluating ML-based readout systems while also serving as a platform for hands-on training for students and postdoctoral researchers.</li>
+<li><p>
+Development of  4D Tracking prototype detector in two years, and only assigning primary manpower at the beginning of Year 1 &#x2013; seems unrealistic
+</p>
+
+<p>
+3 postdocs + 5 GSRs
+</p></li>
+</ul>
+
+<p>
+#### 1. Scientific and/or Technical Merit of the Project
+- What is the scientific innovation of the proposed research?
+</p>
+<ul class="org-ul">
+<li>What is the likelihood of achieving valuable results?</li>
+<li> How might the results of the proposed work impact the direction, progress, and thinking in relevant scientific fields of research?</li>
+<li>How does the proposed work compare with other efforts in its field, both in terms of scientific and/or technical merit and originality?</li>
+<li> Does the application specify at least one scientific hypothesis motivating the proposed work? Is the investigation of the specified hypothesis or hypotheses scientifically valuable?</li>
+<li> Is the Data Management Plan suitable for the proposed research? To what extent does it support the validation of research results? To what extent will research products, including data, be made available and reusable to advance the field of research?</li>
+</ul>
+
+
+<p>
+The primary scientific innovation of the proposed research is developing machine learning techniques to be deployed on front-end detector electronics for real-time event reconstruction. The proposal aims to enhance event selection and reconstruction precision for major neutrino experiments (nEXO, KamLAND2-Zen) and experiments using 4D tracking (EIC, PIONEER).
+</p>
+
+<p>
+The likelihood of achieving valuable results is high given the team's interdisciplinary expertise, preliminary experience with ML-FPGA (hls4ml, CGRA4ML), and access to relevant testbeds (e.g., NuDot, LXe TPC, KamLAND2-Zen).  However, the development of a 4D Tracking prototype detector in two years, and only assigning primary manpower at the beginning of Year 1 &#x2013; seems unrealistic.
+</p>
+
+
+<p>
+The proposed work could demonstrate the practicality and value of ML techniques in the front-end electronics. By establishing proof-of-concept systems/frameworks (CGRA4ML, Versal AI Engine), this proposal could lead the community toward more widespread adoption of these techniques.
+</p>
+
+<p>
+The proposed work aligns with community priorities outlined by the NSAC Long Range Plan. I would not say that it is particularly original. A lot of groups are working on making the front end electronics smarter &#x2013; an obvious goal &#x2013;  and many are trying with ML.  However after reading the proposal its still not clear to me that ML is the right way to make the electronics smarter. 
+</p>
+
+<p>
+The proposal is well-motivated scientifically and the goals are valuable.
+</p>
+
+<p>
+The Data Management Plan is suitable. There is not much detail about how data will be made available and usable to the wider community. 
+</p>
+
+
+
+
+<p>
+#### 2. Appropriateness of the Proposed Method or Approach
+</p>
+
+<ul class="org-ul">
+<li>How logical and feasible are the research approaches?</li>
+<li>Does the proposed research employ innovative concepts or methods?</li>
+<li>Can the approach proposed concretely contribute to our understanding of the validity of the specified scientific hypothesis or hypotheses?</li>
+<li>Are the conceptual framework, methods, and analyses well justified, adequately developed, and likely to lead to scientifically valid conclusions?</li>
+<li>Does the applicant recognize significant potential problems and consider alternative strategies?</li>
+<li>Is the proposed research aligned with the published program priorities identified or incorporated by reference in Section I of this FOA?</li>
+<li>Does the proposed plan to recruit and retain students and early-stage investigators provide sufficient mentorship?</li>
+</ul>
+
+<p>
+Making front-end electronics smarter is a logical and feasible goal. The proposal did not make the case that ML is right way to achieve this goal. 
+</p>
+
+<p>
+Again, I would not say that using ML is particularly innovative these days. I think the idea of deploying these in existing or near-term prototypes is unique. 
+</p>
+
+<p>
+Making the front-end electronics smarter will improve our understanding of important science.
+In most cases the proposal does not quantify how much will be gained, but the science goals are clearly important.
+</p>
+
+<p>
+The methods are adequately developed, but not particularly well justified. 
+</p>
+
+<p>
+Potential problems are considered and mitigation plans are discussed. 
+</p>
+
+<p>
+The proposed research is well-aligned with program priorities.
+</p>
+
+<p>
+Sufficient mentorship is foreseen. The group is relatively large and experienced. 
+</p>
+
+<p>
+#### 3. Competency of Applicant’s Personnel and Adequacy of Proposed Resources
+</p>
+<ul class="org-ul">
+<li>How well qualified is the research team to carry out the proposed research?</li>
+<li>Is the lead institution proposing to perform a greater portion of the scientific and technical work than any other team member?</li>
+<li>Are the research environment and facilities adequate for performing the research?</li>
+<li>Does the proposed work take advantage of unique facilities and capabilities?</li>
+</ul>
+
+<p>
+The team is qualified and well-suited for the proposed work. The investigators have  expertise in ML applications to nuclear physics (nEXO, KamLAND-Zen, JUNO), silicon sensor technologies (AC-LGADs), FPGA-based hardware development, and electronics integration.  PI Li has played a key role in applying ML techniques to both EXO-200 and nEXO.
+</p>
+
+
+<p>
+The lead institution is University of Hawaii at Manoa. They are proposing to perform the majority of the work. 
+</p>
+
+<p>
+The team has access to multiple specialized testbeds and detector prototypes (NuDot at UD, LXe TPC at Stanford, KamLAND2-Zen), advanced FPGA platforms (Virtex Ultrascale+, RFSoC boards, Versal AI Engine), and collaboration with experienced partners (Nalu Scientific, national laboratories). The infrastructure and collaborative environment provided by participating institutions appear robust and suitable for achieving the proposed research objectives.
+</p>
+
+
+
+<p>
+#### 4. Reasonableness and Appropriateness of the Proposed Budget 
+</p>
+<ul class="org-ul">
+<li>Are the proposed budget and staffing levels adequate to carry out the proposed research?</li>
+<li>Is the budget reasonable and appropriate for the scope?</li>
+<li>If consultant costs are included, are the overall consultant costs are in line with the EPSCoR mission and how will the skills, expertise or capabilities provided by the consultant will be transferred in a sustainable manner to the applicant institution?</li>
+</ul>
+
+<p>
+This is an two year project with ambitious goals. Fun
+</p>
+
+<p>
+They planning to hire three postdocs and five GSRs and hire out electronics engeneer over a two-year period and are requesting ~1.5 M / year. The salaries seem appropriate. 
+</p>
+
+<p>
+There is significant request for equipment namely "A simulator and readout board to simulate 4D tracking detector signal for ML-based readout system development in Year 1" for  $205,000.
+</p>
+
+
+
+<p>
+#### 5.Synergism Among the PIs in a Program and the Programmatic Focus of a Multi-PI Effort 
+</p>
+<ul class="org-ul">
+<li>How does the application exhibit a coherent focus on one energy-related research area bringing together multiple researchers?</li>
+<li>What aspects of the management plan will support coordination of multiple investigators working on a common theme including performance milestones and a timetable for achieving project goals and deliverables?</li>
+</ul>
+
+<p>
+The proposal addresses a wide range of different, loosely related physics-topic. However the proposed is tied together through the research tasks—shared ML algorithms, hardware frameworks, and validation methods.
+</p>
+
+<p>
+The management plan does not discuss coordination of multiple investigators. Not sure its needed given the diverse tasks suggested. 
+</p>
+
+<p>
+#### 6. The Likelihood of Success of the Implementation Grant
+</p>
+
+<ul class="org-ul">
+<li> How well does the application couple with opportunities within the jurisdiction(s) to develop and utilize the scientific and technological resources that reside in the research universities and the jurisdiction’s industrial or economic resources?</li>
+<li>How does the application adequately present the opportunities for enhanced academic research and development competitiveness and if appropriate, industrial or economic competitiveness, for the jurisdiction, including plans for the acquisition of sustained non- EPSCoR support?</li>
+<li>What plans does the applicant have to make (or has the applicant made) competitive faculty hires and retained outstanding faculty within the scope of the implementation award? Does the applicant have a plan to attract (or has the applicant hired) outstanding graduate students and post docs?</li>
+<li>What plans do the applicant have to develop (or have they developed) as part of the implementation grant unique infrastructure capabilities that are critical to the advancement of science or technology? Alternatively, are they planning to or making unique contributions to DOE oriented capabilities (e.g., building or developing unique capabilities for a DOE experiment or facility)?</li>
+<li>What plans do the applicant have to (or are the grantees on track to) achieve a sustainable leadership position in their discipline(s)?</li>
+<li>What plans do the applicant have to (or are the grantees effectively) leveraging DOE funding and capabilities with local and regional resources? Are there commitments from the applicant’s jurisdiction, institution or from private sources to assist in this leveraging?_</li>
+</ul>
+
+<p>
+The application leverages and couples scientific and technological resources within the EPSCoR jurisdictions (Hawaii and Delaware) by directly engaging the region’s leading R1 universities (UHM and UD) and partnering with local high-tech industry (Nalu Scientific in Hawaii).
+</p>
+
+<p>
+There is a plan to attract and hire 3 postdocs and 5 graduate student.  The explicit integration of workforce development programs, curriculum enhancements, and industry collaboration will help with growth of local scientific and technological resources.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb220218" class="outline-2">
+<h2 id="orgb220218">Overall Summary of the Proposal</h2>
+<div class="outline-text-2" id="text-orgb220218">
+<p>
+An overall score is requested to accompany the summary section.
+</p>
+
+<p>
+Overall I would encourage funding (3 or 4).  Making the front end smarter is a good idea. The case was not strongly made in the proposal how much this change will drive the science or that ML is the right way to do it, but this type of work should be pursued.  
+</p>
+
+<p>
+The group is integrated with important and well-aligned experiments and a track record of success doing the type of work proposed. The plan is ambitious, in some cases probably overly so, but I think it should be funded.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org0ec88aa" class="outline-2">
+<h2 id="org0ec88aa">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgca6d1d9" class="outline-2">
+<h2 id="orgca6d1d9">Links:</h2>
+<div class="outline-text-2" id="text-orgca6d1d9">
+<p>
+202503021349
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2025/03-March/16-March-2025-Sunday.html">16 March 2025 Sunday</a></li>
+  <li><a href="../Journal/2025/03-March/15-March-2025-Saturday.html">15 March 2025 Saturday</a></li>
+  <li><a href="../Journal/2025/03-March/13-March-2025-Thursday.html">13 March 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/03-March/12-March-2025-Wednesday.html">12 March 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/03-March/11-March-2025-Tuesday.html">11 March 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/03-March/07-March-2025-Friday.html">7 March 2025 Friday</a></li>
+  <li><a href="../Journal/2025/03-March/04-March-2025-Tuesday.html">4 March 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/03-March/03-March-2025-Monday.html">3 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/01-March-2025-Saturday.html">1 March 2025 Saturday</a></li>
+  <li><a href="../Journal/2025/02-February/28-February-2025-Friday.html">28 February 2025 Friday</a></li>
+  <li><a href="../Journal/2025/02-February/26-February-2025-Wednesday.html">26 February 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/02-February/24-February-2025-Monday.html">24 February 2025 Monday</a></li>
+  <li><a href="../Journal/2025/02-February/21-February-2025-Friday.html">21 February 2025 Friday</a></li>
+</ul>
+</div>
+</body>
+</html>

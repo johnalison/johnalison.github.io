@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>python-Unittests-tips</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">python-Unittests-tips</h1>
+<p>
+Can run just one test case at a time with:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">python -m unittest jet_clustering.tests.test_clustering.clusteringTestCase.test_synthetic_datasets_bbjjets
+
+</pre>
+</div>
+
+
+
+
+<div id="outline-container-orgc98ed93" class="outline-2">
+<h2 id="orgc98ed93">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org1153487" class="outline-2">
+<h2 id="org1153487">Links:</h2>
+<div class="outline-text-2" id="text-org1153487">
+<p>
+<a href="python-20260222144810.html#ID-D96A2921-19C8-424B-A9C3-FF5D1F589CA8">python</a>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

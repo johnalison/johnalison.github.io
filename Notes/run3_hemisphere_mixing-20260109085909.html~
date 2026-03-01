@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Run3 Hemisphere Mixing</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Run3 Hemisphere Mixing</h1>
+
+<div id="outline-container-org1a17d66" class="outline-2">
+<h2 id="org1a17d66">Presentations</h2>
+<div class="outline-text-2" id="text-org1a17d66">
+</div>
+<div id="outline-container-orgcc61216" class="outline-3">
+<h3 id="orgcc61216"><a href="../Journal/2026/01-January/22-January-2026-Thursday.html#ID-581A41D2-6BBD-4A95-BEF0-E43CF229F784">22 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgcc61216">
+<p>
+<a href="https://indico.cern.ch/event/1639802/#b-654452-run-2run-3-non-resona">https://indico.cern.ch/event/1639802/#b-654452-run-2run-3-non-resona</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcb7ab0f" class="outline-3">
+<h3 id="orgcb7ab0f"><a href="../Journal/2026/02-February/26-February-2026-Thursday.html#ID-AA8BF4B2-D7DE-44D6-8683-D638A084A75B">26 February 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgcb7ab0f">
+<p>
+<a href="https://indico.cern.ch/event/1655563/">https://indico.cern.ch/event/1655563/</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org42cb1e9" class="outline-2">
+<h2 id="org42cb1e9">Plans</h2>
+<div class="outline-text-2" id="text-org42cb1e9">
+</div>
+<div id="outline-container-org0fe8d0f" class="outline-3">
+<h3 id="org0fe8d0f">v1 with TT Subtraction</h3>
+<div class="outline-text-3" id="text-org0fe8d0f">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> remake classifier inputs with correct trigger weights ?</li>
+<li class="on"><code>[X]</code> refit JCM</li>
+<li class="on"><code>[X]</code> refit FvT</li>
+<li class="on"><code>[X]</code> Test the weights</li>
+<li class="on"><code>[X]</code> hemispheres subtracting 4b ttbar
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Make yaml "datatsets" file  (by hand)</li>
+<li class="on"><code>[X]</code> run the study script</li>
+</ul></li>
+<li class="on"><code>[X]</code> mixing hemispheressubtracting 3b ttbar
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Update datasets</li>
+<li class="on"><code>[X]</code> Run Study scipt to get Jet mutliptlicities</li>
+</ul></li>
+<li><del>[ ] refit mixed data JCM</del></li>
+<li class="on"><code>[X]</code> subsample mixed data</li>
+<li class="on"><code>[X]</code> Need the make ttbar 4b PS</li>
+<li class="on"><code>[X]</code> Analyze</li>
+<li class="on"><code>[X]</code> Plots</li>
+<li class="off"><code>[&#xa0;]</code> Mail</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf8afb2a" class="outline-3">
+<h3 id="orgf8afb2a">v0 with out TT subtraction</h3>
+<div class="outline-text-3" id="text-orgf8afb2a">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> I need the JCM for Run3!!!</li>
+<li class="on"><code>[X]</code> Study mixed data</li>
+<li class="on"><code>[X]</code> Split mixed data</li>
+<li class="on"><code>[X]</code> Analysze</li>
+<li class="on"><code>[X]</code> Plots</li>
+<li class="on"><code>[X]</code> Mail</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org586e1ee" class="outline-2">
+<h2 id="org586e1ee">Logs</h2>
+<div class="outline-text-2" id="text-org586e1ee">
+</div>
+<div id="outline-container-org093d09d" class="outline-3">
+<h3 id="org093d09d"><a href="../Journal/2026/02-February/25-February-2026-Wednesday.html#ID-0BF3E3C8-132A-48A5-8565-875F7979197A">25 February 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org093d09d">
+<ul class="org-ul">
+<li>Making slides</li>
+<li>Nominal plots
+<code>python -i coffea4bees/plots/iPlot.py         coffea4bees/Run3_hemisphere_mixing/allRun3Data_wSvB.coffea -m coffea4bees/plots/metadata/plotsAll_ttbarWeights.yml</code>  
+
+<ul class="org-ul">
+<li><p>
+TTBar Studies
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">python -i coffea4bees/plots/iPlot.py --combine  coffea4bees/Run3TriggerSFs/trigWeight_TTbar_wHLT.coffea coffea4bees/Run3TriggerSFs/trigWeight_data.coffea -m coffea4bees/plots/metadata/plotsAll_TTCR_3b.yml
+
+python -i coffea4bees/plots/iPlot.py --combine  coffea4bees/Run3TriggerSFs/trigWeight_TTbar_wHLT.coffea coffea4bees/Run3TriggerSFs/trigWeight_data.coffea -m coffea4bees/plots/metadata/plotsAll_TTCR_4b.yml
+
+plot("trigEm_ll.pt4",region=sum,yscale="linear",cut="passElMu",norm=0,rebin=1,doratio=1,year="Run3")
+plot("trigEm_ll.calojetht",region=sum,yscale="linear",cut="passElMu",norm=0,rebin=1,doratio=1,year="Run3")
+</pre>
+</div></li>
+</ul></li>
+
+<li><p>
+Mixed notTT vs mixed
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">
+python -i coffea4bees/plots/iPlot.py --combine coffea4bees/Run3_hemisphere_mixing/allRun3Data_wSvB.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_ttSub.coffea        -m coffea4bees/plots/metadata/plotMixedVsData.yaml 
+
+</pre>
+</div></li>
+
+<li><p>
+Mixed noTT vs mixed vs Pz
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">
+python -i coffea4bees/plots/iPlot.py --combine coffea4bees/Run3_hemisphere_mixing/allRun3Data_wSvB.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_ttSub.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_pz_new.coffea        -m coffea4bees/plots/metadata/plotMixedVsPzVsData.yaml
+
+</pre>
+</div></li>
+</ul>
+
+
+<div class="org-src-container">
+<pre class="src src-shell">
+python -i coffea4bees/plots/iPlot.py --combine coffea4bees/Run3_hemisphere_mixing/allRun3Data_wSvB.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_ttSub.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_pz_new.coffea        -m coffea4bees/plots/metadata/plotMixedVsPzVsData.yaml
+
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Runing with SvB with out JCM weight.. fails a bunch of times b/c memeory</li>
+<li>Remove non-MA SvB hists &#x2026; running on cmslpc331</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org449b142" class="outline-3">
+<h3 id="org449b142"><a href="../Journal/2026/02-February/23-February-2026-Monday.html#ID-54BE58EA-3ADB-44B3-9EEB-C91104A76898">23 February 2026 Monday</a></h3>
+<div class="outline-text-3" id="text-org449b142">
+<ul class="org-ul">
+<li>Making plots
+<code>python -i coffea4bees/plots/iPlot.py --combine coffea4bees/Run3_hemisphere_mixing/allRun3Data_wSvB.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_pz_new.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_noTT_full.coffea       -m coffea4bees/plots/metadata/plotsMixedNew.yml</code></li>
+</ul>
+
+<p>
+and event better including the synthetic datasets
+</p>
+
+<p>
+<code>python -i coffea4bees/plots/iPlot.py --combine coffea4bees/Run3_hemisphere_mixing/allRun3Data_wSvB.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_pz_new.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3.coffea coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_noTT_full.coffea coffea4bees/Run3_hemisphere_mixing/synthetic_data_Run3_2025_SvB.coffea       -m coffea4bees/plots/metadata/plotsMixedNew.yml</code>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">plot("SvB_MA.ps_zz_fine",region=sum,yscale="log",cut="passPreSel",norm=0,rebin=8,doratio=1,year="Run3",process=["data","mix_v0","mix_noTT_v0","mix_pz_v0","syn_v0"])
+
+</pre>
+</div>
+<ul class="org-ul">
+<li>Merging</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org29e3eac" class="outline-3">
+<h3 id="org29e3eac"><a href="../Journal/2026/02-February/19-February-2026-Thursday.html#ID-78040D0D-C959-4697-8974-562F1A9343A5">19 February 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org29e3eac">
+<ul class="org-ul">
+<li>Making datasets with pz boosted hemispheres</li>
+<li>Running study study.</li>
+<li><p>
+Seeing smaller distances!
+</p>
+
+<div id="org7538689" class="figure">
+<p><img src="Logs/2026-02-19_09-14-11_screenshot.png" alt="2026-02-19_09-14-11_screenshot.png" />
+</p>
+</div></li>
+<li>However the norm is way off&#x2026; debugging cutflows &#x2026; is this a trigger thing?.. no</li>
+<li>Looks like the eta distribution is way off.</li>
+<li>Problem in the transformations ?&#x2026; yes they were only valid for m~0</li>
+<li>Generalizing for m&gt;0 &#x2026; remaking datasets</li>
+<li>Looks better &#x2026; nJets still different&#x2026; will press on</li>
+<li>Refitting JCM
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py  -o output/mixeddata_study/jcm_for_subsampling_Run3_noTT_pz --combine_input_files  -i output/weights_trigger_analysis/trigWeight_TTbar_wHLT.coffea output/weights_trigger_analysis/trigWeight_data.coffea output/mixeddata_study/study_mixed_datasets_all_Run3_noTT_pz.coffea     -c passPreSel -r SB         --jcm_config coffea4bees/analysis/jcm_tools/metadata/mixeddata_all_config_Run3.yml</code></li>
+<li>Splitting the mixed data&#x2026; Actually looks pretty good&#x2026;</li>
+<li>Running the SvB</li>
+<li><p>
+Pz-boosts looks better yet!
+</p>
+
+<div id="org9e14a33" class="figure">
+<p><img src="Logs/2026-02-19_20-12-05_screenshot.png" alt="2026-02-19_20-12-05_screenshot.png" />
+</p>
+</div></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7b2c58c" class="outline-3">
+<h3 id="org7b2c58c"><a href="../Journal/2026/02-February/18-February-2026-Wednesday.html#ID-C29E438E-5BDD-4FB1-82BB-5ED763B3CBA9">18 February 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org7b2c58c">
+<p>
+Trying to add the pZ boost with claude code
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1177ccf" class="outline-3">
+<h3 id="org1177ccf">prompt</h3>
+<div class="outline-text-3" id="text-org1177ccf">
+<p>
+Big Picture: I have a workflow to make synthetic data for the HH-&gt;4b
+analysis using hemisphere mixing. The idea is that the 4b background
+events come about from an underlying 2-&gt;2 gluon scattering. In which
+case the two "halves" of an event (the hemispheres) are essentially
+independent. The "hemisphere mixing" then tries to reproduce the
+overall characteristics of the background events by splitting each
+event into hemispheres, and then swapping out the hemispheres from the
+initial event with precomputed hemispheres in a "hemisphere library"
+Ideally the mixing proceedure will preserve the overall background
+kinematics, but suppress the HH-&gt;4b signal. The signal events have
+correlated structure (the higgs masses) between the hemispheres.
+</p>
+
+<p>
+More details: The frist step of proceedure makes the hemisphere
+library. Here 4b events are selected, split into hemispheres and
+stored as root files. The code that does this is
+coffea4bees/analysis/processors/processor<sub>make</sub><sub>hemi</sub><sub>library.py</sub> and an
+example script that steers the code can be found in
+coffea4bees/scripts/mixeddata-cluster-Run3.sh
+</p>
+
+<p>
+The second major step then processes 3b and does the hemisphere-level
+swapping. (There are couple of minor steps to process the hemiphere
+libraries before hand, which we can discuss later) The code that does
+this is coffea4bees/skimmer/processor/make<sub>mixed</sub><sub>data.py</sub> an example of
+how this is steered is in
+/coffea4bees/scripts/mixeddata-make-dataset-Run3.sh
+</p>
+
+<p>
+Ok now more toward the heart of the new change &#x2026; The question is how
+do we figure out which hemispheres in the hemisphere library to swap
+with the hemisphere in the 3b events? The replacement hemispheres are
+found using nearest neighbors defined with "hemisphere summary
+variables". For each hemisphere 4 hemisphere summary variables are
+computed: the combined p<sub>z</sub> vector of all jets in the hemisphere, two
+projections of the combined p<sub>T</sub> vector (perpendicular to and parallel
+to the thrust axis) and the combined mass of all jets in the
+hemisphere. We then find the hemisphere in the library (which has the
+same jet multiplcity) that is closest to the target hemisphere
+assuming Euclidian distance. 
+</p>
+
+<p>
+Now for the change I would like to make. Currently, hemispheres that have
+different p<sub>z</sub> are penalized in the distance computation. However they
+are simply related by a Lorentz boost along z. So what I would like to
+do is look up the nearest neighbors using only the p<sub>T</sub> projections
+and the combined mass. Once we have the matching hemisphere we would
+then boost the jets in the matching hemisphere such that the combined
+p<sub>z</sub> of matching hemisphere matches that of the target hemisphere.
+This should effectively allow us to effectively increase the
+statistics of the hemisphere library b/c matches are no longer
+punished for having different p<sub>z</sub>. The p<sub>z</sub> difference is corrected
+after the match with a simple Lorentz boost. Does that make sense?
+</p>
+
+<p>
+An important point: I'd like to keep the option of doing it as we are
+now so we can run it both ways and see the overall impact on the
+quality of the synthetic datasets from this change.
+</p>
+
+<p>
+Ok can you make a high-level plan on the strategy for the changes
+needed? Once we have that we can move to a detailed technical
+implementation. I guess we dont need to change the hemisphere making,
+just change the way they are loaded in kDtrees during the event
+mixing.
+</p>
+
+<p>
+I would like the option of
+doing the lookup
+</p>
+
+<p>
+all the hemipheres to the Pz = 0 frame. The other three variables are invariant to this boost.
+</p>
+
+
+<p>
+The code is in coffea4bees/hemisphere<sub>mixing</sub>. The current setup make hemiphere 
+</p>
+
+<p>
+ boost<sub>vec</sub><sub>z</sub> = ak.zip(
+         {"x": 0, "y": 0, "z": clustered<sub>splittings.boostvec.z</sub>},
+         with<sub>name</sub>="ThreeVector",
+         behavior=vector.behavior
+     )
+clustered<sub>splittings.part</sub><sub>A.boost</sub>(-boost<sub>vec</sub><sub>z</sub>)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org182c474" class="outline-3">
+<h3 id="org182c474">More</h3>
+<div class="outline-text-3" id="text-org182c474">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Check the CI ?</li>
+<li class="on"><code>[X]</code> Check the new code runs</li>
+<li>Making new mixed data set with the boosts</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga84fe2d" class="outline-3">
+<h3 id="orga84fe2d"><a href="../Journal/2026/02-February/17-February-2026-Tuesday.html#ID-237CE34F-2DE3-4F44-9D9D-142A67242195">17 February 2026 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orga84fe2d">
+<ul class="org-ul">
+<li>Doing the ttbar subsampling</li>
+<li>Debugging&#x2026; updating the sub<sub>sampling</sub> code&#x2026;. add a CI ?</li>
+<li>Got the local version running</li>
+<li>committing changes&#x2026;</li>
+<li>Running all on condor</li>
+<li class="on"><code>[X]</code> datasets</li>
+<li class="on"><code>[X]</code> Compare to ttbar</li>
+</ul>
+
+<p>
+(below mixed data v1 is just ttbar PSdata)
+</p>
+
+<div id="orgc4bc728" class="figure">
+<p><img src="Logs/2026-02-17_11-50-51_screenshot.png" alt="2026-02-17_11-50-51_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Now running on the mixed including the ttbar PSdata</li>
+<li>Making SvB friend trees for data</li>
+<li>Setup script and running
+<code>./run_container source coffea4bees/scripts/SvB-friendtree-Run3.sh</code></li>
+<li>Made friend trees</li>
+<li>compared mixed w/tT and no tT treatment</li>
+<li>add dastaset of <code>mixed_noTT_4b</code></li>
+<li>Make plots with SvB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc163eb1" class="outline-3">
+<h3 id="orgc163eb1"><a href="../Journal/2026/02-February/16-February-2026-Monday.html#ID-E8E90083-F221-4E87-A9DF-75C8493EE5B2">16 February 2026 Monday</a></h3>
+<div class="outline-text-3" id="text-orgc163eb1">
+<ul class="org-ul">
+<li>Analyzing the mixed data splits</li>
+<li class="on"><code>[X]</code> Compare with Multijet</li>
+<li>Mixed data normalization too Low !!!</li>
+<li>Problem in analyze&#x2026; The study data looks ~right &#x2026; but is inconsistent with the analysze output&#x2026;</li>
+<li>Check on options?</li>
+<li>mixeddata<sub>all</sub><sub>2022</sub><sub>EE</sub>
+study :  v0 = 603392 /  all = 8858538
+splits:   v0    603392.0 / all 8858538.0
+analysze  presel /all 603392/603392</li>
+<li>Looking by year 2022<sub>*</sub> OK .. .2023<sub>BPix</sub> OK &#x2026; problem in preBPIx</li>
+<li>2023<sub>preBPix</sub>
+study       639988 /  9720561
+splits:      639988.0 / 9720561.0
+analysze  136918 / 136918</li>
+<li>Problem in the analyse ? &#x2026; Missing HLT trigger bits &#x2026; Not sure whats going on here.</li>
+<li>Fixed when running without cutting on HLT</li>
+<li>pushing to head&#x2026; fixing CI</li>
+<li>Starting to setup TTbar PS skimming&#x2026; will finish tomorrow</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9444f11" class="outline-3">
+<h3 id="org9444f11"><a href="../Journal/2026/02-February/14-February-2026-Saturday.html#ID-FBB3EAA9-CC98-4927-9A81-310A4405A0E3">14 February 2026 Saturday</a></h3>
+<div class="outline-text-3" id="text-org9444f11">
+<ul class="org-ul">
+<li>Making yml file</li>
+<li>There are now a lot more files because I didnt do the clustering from the 4b skims, but from the full data files</li>
+<li><code>./run_container python coffea4bees/hemisphere_mixing/study_hemispheres.py --hemifiles coffea4bees/skimmer/metadata/hemisphere_library_Run3.yml --year 2022_EE 2022_preEE 2023_BPix 2023_preBPix --threshold 1000 --out coffea4bees/hemisphere_mixing/hemi_plots_Run3</code></li>
+<li><p>
+New vs old hemis
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Item</th>
+<th scope="col" class="org-left">New</th>
+<th scope="col" class="org-left">Old</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">nHemis</td>
+<td class="org-left">1198016</td>
+<td class="org-left">1275974</td>
+</tr>
+
+<tr>
+<td class="org-left">time</td>
+<td class="org-left">1m39.098s</td>
+<td class="org-left">0m18.952s</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+I will remake with the fourTag skims to run &#x2026; No I cant b/c the FvT is not evaluated for them
+</p></li>
+
+<li>Getting the mixed data going in the test job&#x2026; number of changes&#x2026;</li>
+<li>Now remaking all the mixed data&#x2026; Finished</li>
+<li><code>20,583 events/s total (69615572/3382.2631816864014)</code></li>
+<li>Ran Study hemisphere script&#x2026; looks good</li>
+<li>I Dont think I need to refit the JCM b/c now the jet mult should be right&#x2026; <code>I dont think tihs is true be of 3bTT</code></li>
+<li>In first pass can compare Multijet with mixed<sub>noTT</sub></li>
+<li>Found that the normalization is off.. need to make the JCM for resample afterall</li>
+<li><code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py  -o output/mixeddata_study/jcm_for_subsampling_Run3_noTT --combine_input_files  -i output/weights_trigger_analysis/trigWeight_TTbar_wHLT.coffea output/weights_trigger_analysis/trigWeight_data.coffea output/mixeddata_study/study_mixed_datasets_all_Run3_noTT.coffea     -c passPreSel -r SB         --jcm_config coffea4bees/analysis/jcm_tools/metadata/mixeddata_all_config_Run3.yml</code></li>
+<li>split the mixed data</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org59dd870" class="outline-3">
+<h3 id="org59dd870"><a href="../Journal/2026/02-February/13-February-2026-Friday.html#ID-3963E211-BA4B-43EB-9B74-C2F7EF9837A5">13 February 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-org59dd870">
+<ul class="org-ul">
+<li>AK: fix for the prescale issue..works!</li>
+<li>resize errors ! &#x2026; need passHLT only in ttbar selection not the  3b ttbar selection !</li>
+<li>Running on gpu2 &#x2026; in TMUX!</li>
+<li>Train runs!</li>
+<li>There is an error in analyze&#x2026;fixed&#x2026;string conversion</li>
+<li>Running evaluate&#x2026;bugs.. now fixed</li>
+<li>Running on data with the new FvT weights&#x2026; ERRORS&#x2026;Chat AK: need to move to master</li>
+<li>Update to master.. now evaluate OK</li>
+<li>Now the FvT friend trees work!</li>
+<li>Running all in condor 4GBs &#x2026; spilling some to disk &#x2026; should increase&#x2026; now trying with 5GB&#x2026; finished</li>
+<li>FvT looks OK</li>
+<li>Running TTbar MC with new JCM to validate trigger weights &#x2026; finished</li>
+<li>t3 looks good</li>
+</ul>
+
+<div id="orgc3b9cac" class="figure">
+<p><img src="Logs/2026-02-13_21-25-14_screenshot.png" alt="2026-02-13_21-25-14_screenshot.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>t4 looks good</li>
+</ul>
+
+<div id="org08493c6" class="figure">
+<p><img src="Logs/2026-02-13_21-24-42_screenshot.png" alt="2026-02-13_21-24-42_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li><code>processor_make_hemi_library.py</code> moving to ttbar subtraction with FvT</li>
+<li>Working&#x2026;</li>
+<li>Now making all the 4b hemisphere with the ttbar subtraction</li>
+<li>Finsished &#x2026; results in <code>/store/user/jda102/XX4b/hemiLib_noTT</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org06c48ba" class="outline-3">
+<h3 id="org06c48ba"><a href="../Journal/2026/02-February/12-February-2026-Thursday.html#ID-0067DFEA-B38F-414A-8DE0-DCA1D18F3AD0">12 February 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org06c48ba">
+<ul class="org-ul">
+<li>Updating JCM to float 4b-tt</li>
+<li>Looks much Better !</li>
+</ul>
+
+<div id="org42ecd66" class="figure">
+<p><img src="Logs/2026-02-12_14-06-09_screenshot.png" alt="2026-02-12_14-06-09_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Now what should I actually do witht the TTbar component in the synthetic data ?</li>
+<li>However the d is really pulled&#x2026; not sure I want to use this after all</li>
+<li>Next steps&#x2026; see abvoe</li>
+<li>Removing the TT classifer inputs&#x2026;</li>
+<li>remaking classifier inputs&#x2026;
+<ul class="org-ul">
+<li>Running
+<ul class="org-ul">
+<li class="on"><code>[X]</code> TTTo2L2Nu &#x2026; one job fils&#x2026; trying again with more mem&#x2026; looks worse&#x2026; trying with less memory&#x2026;wow! much better&#x2026; was using too much</li>
+<li class="on"><code>[X]</code> TTToLep and Had together&#x2026; Double Wow! def using less mem per job is the way to go here</li>
+</ul></li>
+</ul></li>
+<li>Combined outputs to Run3 json file&#x2026; copied to metadata</li>
+<li>Fitting JCM&#x2026; "v2"
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py -o coffea4bees/analysis/weights/JCM/Run3 -c passPreSel -r SB --combine_input_files -i output/weights_trigger_analysis/trigWeight_TTbar_wHLT.coffea output/weights_trigger_analysis/trigWeight_data.coffea  -w v2</code></li>
+<li>Setting up FvT round2
+<ul class="org-ul">
+<li>Update JCM/ input files / adding passHLT selection to ttbar</li>
+<li><p>
+Running on cmslpcgpu2
+</p>
+<pre class="example">
+
+&gt; ./run_container classifier 
+Singularity&gt; export WFS="src/classifier/config/workflows/HH4b_Run3/FvT"
+Singularity&gt; source ${WFS}/run.sh 
+
+</pre></li>
+<li>Seeing strage errors with the TTbar PS&#x2026;</li>
+<li>reverted to not use passHLT&#x2026; still there&#x2026;</li>
+<li>Now only the inputs changed&#x2026;classifier inputs&#x2026;</li>
+<li>Seems to be a problem with the presaling
+<ul class="org-ul">
+<li>Turning for the PS for the moment&#x2026;now running</li>
+<li class="on"><code>[X]</code> Try Anikets example  <code>source  src/classifier/config/workflows/HH4b_2024_v2/FvT/run.sh</code></li>
+<li>Same issue!&#x2026; <code>Turned out to be a problem with change in uproot... fixed later</code></li>
+</ul></li>
+</ul></li>
+<li>Mega work debugging FvT and making inputs</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6948ed6" class="outline-3">
+<h3 id="org6948ed6"><a href="../Journal/2026/02-February/11-February-2026-Wednesday.html#ID-DB35AA12-F84D-4A37-9630-33624AEA1974">11 February 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org6948ed6">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Test 3b and 4b ttbar wieghts
+<ul class="org-ul">
+<li>weight 3b data to 3b and 4b ttbar</li>
+<li>compare to</li>
+</ul></li>
+<li class="on"><code>[X]</code> Plots with ttbar weights</li>
+<li>[&gt;&gt; ] Cut flow with ttbar weigts
+<ul class="org-ul">
+<li>Adding option to plots ttbar from data using weights.</li>
+</ul></li>
+<li>needed to use <code>processor.accumulate</code>  to combine plots from differnt process&#x2026;works!</li>
+<li>Running on all data
+<code>41,770 events/s total (69615572/1666.649035692215)</code> ~30min</li>
+<li>Modeling of t3 looks OK but t4 looks off&#x2026; weird&#x2026; Not running with correct JCM!</li>
+<li>Re-running&#x2026; Looks good!
+<ul class="org-ul">
+<li><p>
+<code>python -i coffea4bees/plots/iPlot.py         coffea4bees/Run3_hemisphere_mixing/allRun3Data_wTTWeights2.coffea -m coffea4bees/plots/metadata/plotsAll_ttbarWeights.yml</code> 
+</p>
+
+
+<div id="orgcd77c22" class="figure">
+<p><img src="Logs/2026-02-11_15-49-55_screenshot.png" alt="2026-02-11_15-49-55_screenshot.png" />
+</p>
+</div></li>
+</ul></li>
+<li><p>
+Four tag ttbar modelling now looks good
+</p>
+
+<div id="orgd400527" class="figure">
+<p><img src="Logs/2026-02-11_16-10-56_screenshot.png" alt="2026-02-11_16-10-56_screenshot.png" />
+</p>
+</div></li>
+<li>t3 still off&#x2026; I Assume its b/c Im running the ttbar MC with the wrong JCM
+<ul class="org-ul">
+<li>would rerun.. but then I changed the trigger weights treatment in the mean time.</li>
+</ul></li>
+<li>Will now work on understanding JCM fit&#x2026; THen redo FvT with update trigger SF and JCM</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd711859" class="outline-3">
+<h3 id="orgd711859"><a href="../Journal/2026/02-February/08-February-2026-Sunday.html#ID-4CA7C2F6-0005-487C-9DA2-78CF3CF08F9A">08 February 2026 Sunday</a></h3>
+<div class="outline-text-3" id="text-orgd711859">
+<ul class="org-ul">
+<li>Ran all data (evaluating SvB &#x2026;) 
+<code>8,764 events/s total (69615572/7943.311356544495)</code>
+= 2.2 hrs</li>
+<li class="on"><code>[X]</code> Weight data by 3b and 4b ttbar weights in same job</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgddeb02a" class="outline-3">
+<h3 id="orgddeb02a"><a href="../Journal/2026/02-February/07-February-2026-Saturday.html#ID-66DC7AD5-6FB0-4531-AFAE-00511EA86CFF">07 February 2026 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgddeb02a">
+<ul class="org-ul">
+<li>Updating the dataset paths in the evaluate step</li>
+<li>Running the evaluate step</li>
+</ul>
+
+<p>
+[02/07/26 10:02:13] [   main] INFO     Evaluated 3 models in 0:54:11.332619                                                                                                         evaluate.py:103
+[02/07/26 10:08:27] [   main] INFO     Completed 1 analysis in 0:06:13.453446                                                                                                          analyze.py:81
+                                [   main] INFO     Total run time: 1:01:06.192183                                                                                                                            main.py:309
+</p>
+<ul class="org-ul">
+<li>Testing the FvT output &#x2026; looks OK</li>
+<li>Running full job with data and tTbar &#x2026; fails !</li>
+<li>Running dataonly</li>
+<li>Looks like the FvT output file only has the results for data  
+<ul class="org-ul">
+<li>They are!&#x2026; Takes to long to output the 3tag tT&#x2026; If I want it for 4b TTbar skim</li>
+</ul></li>
+<li>Test Trigger SF + passHLT bit for MC&#x2026; works !</li>
+</ul>
+
+<div id="org910811e" class="figure">
+<p><img src="Logs/2026-02-07_19-34-56_screenshot.png" alt="2026-02-07_19-34-56_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Remade JCM&#x2026; still not great&#x2026;</li>
+</ul>
+<p>
+<img src="Logs/2026-02-07_19-35-49_screenshot.png" alt="2026-02-07_19-35-49_screenshot.png" />
+ &#x2026; but better than before  
+</p>
+<ul class="org-ul">
+<li>Probably not worth remaking the classifier inputs until this is significantly better</li>
+<li class="on"><code>[X]</code> Should vett the TTBar 3b and 4b weights</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6200174" class="outline-3">
+<h3 id="org6200174"><a href="../Journal/2026/02-February/06-February-2026-Friday.html#ID-7B5289DF-0FC7-4CAF-B4AE-63AB7D61EE9F">06 February 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-org6200174">
+<ul class="org-ul">
+<li>running the classifier</li>
+<li>Fix the dataset metadata yml file</li>
+<li>Seeing an error on rogue
+<code>ERROR    Failed to read root://cmseos.fnal.gov//store/user/jda102/XX4b/Run3ClassiferInputs/TTToSemiLeptonic_2023_preBPix/HCR_input.chunk111.root</code>
+confirmed I can read the file "by hand" with root in the combine  shell&#x2026;</li>
+<li>Trying again&#x2026; same failure&#x2026; Aniket reports this is a known issue on rogue need to update some software to allow for longer timeout time</li>
+<li>Aniket suggests to try gpu2 on lpc</li>
+</ul>
+<pre class="example">
+alias cmslpcgpu2='ssh -XY jda102@cmslpcgpu2.fnal.gov'
+</pre>
+<ul class="org-ul">
+<li>Now getting Error from mass region&#x2026; Seem like the timeouts are not a problem here.</li>
+<li>Have to change the massregion definitions</li>
+<li>Now Running !!!</li>
+</ul>
+<p>
+<a href="https://gitlab.cern.ch/cms-cmu/barista/-/blob/documentation/docs/classifier/backend.md?ref_type=heads">https://gitlab.cern.ch/cms-cmu/barista/-/blob/documentation/docs/classifier/backend.md?ref_type=heads</a>
+</p>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> For ttbar MC we are using the MC efficeincy directly&#x2026; Marina seems to be cutting on the passHLT and applying the SF</li>
+<li>FvT Tringing finsihed</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-bash">
+Training: run 20 epochs in 3:05:44.198942
+Training: run 20 epochs in 3:06:44.336339
+Training: run 20 epochs in 3:08:07.103907
+Finetuning: run 1 epochs in 0:03:11.986272
+Saving model to  root://cmseos.fnal.gov//store/user/jda102/HH4b_Run3/classifier/FvT/model_FvT__kfolds_3__offset_1__seed_kfold-FvT-random-0__bbc14666-0563-4cf9-8fe5-19bf64c0f62b.pkl
+
+</pre>
+</div>
+<ul class="org-ul">
+<li>The Analyze step worked!</li>
+<li>The evaluate step failed (b/c I didnt update the datasets)&#x2026;.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf68b5b7" class="outline-3">
+<h3 id="orgf68b5b7"><a href="../Journal/2026/02-February/05-February-2026-Thursday.html#ID-D57D85FE-831B-4547-85DE-E48027235520">05 February 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgf68b5b7">
+<ul class="org-ul">
+<li>Re running the making of hte classifier inputs
+<ul class="org-ul">
+<li>Starting with <code>TTTo2L2Nu</code>..Did SemiLeptonic &#x2026;</li>
+<li>Finished TTbar .. fighting with data&#x2026; did 2022.. .running 2023&#x2026; now finished 2023</li>
+</ul></li>
+<li><code>./run_container python -m src.friendtrees.merge_friend_meta -i output/classifier_inputs_Run3/classifier_inputs_*json -o output/classifier_inputs_Run3/classifier_inputs_Run3.json</code></li>
+<li>Looking into fitting FvT</li>
+<li><a href="https://barista.docs.cern.ch/classifier/">https://barista.docs.cern.ch/classifier/</a></li>
+<li>Updating code on falcon</li>
+<li>In barista &#x2026; running
+<code>apptainer exec     -B .:/srv     --nv     --pwd /srv     docker://chuyuanliu/heptools:ml     bash --init-file /entrypoint.sh</code></li>
+<li>Works !</li>
+<li>running the pyml.py &#x2026; tab complettion not working &#x2026; probably problem with folder structure     &#x2026; Aniket shows me fix</li>
+<li>Setting up workflow in barista</li>
+<li class="on"><code>[X]</code> Need JCM</li>
+</ul>
+<p>
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py -o coffea4bees/analysis/weights/JCM/Run3/ -c passPreSel -r SB --combine_input_files -i output/weights_trigger_analysis/trigWeight_TTbar.coffea output/analysis_test_Run3/allRun3Data.coffea  -w v0</code>
+</p>
+<ul class="org-ul">
+<li><p>
+Try to run
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">./run_container classifier
+ Singularity&gt; export WFS="src/classifier/config/workflows/HH4b_Run3"
+ source ${WFS}/FvT/run.sh
+</pre>
+</div></li>
+<li>Think there is a problem with the dataset file&#x2026; need the old style yamls</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd8da621" class="outline-3">
+<h3 id="orgd8da621"><a href="../Journal/2026/02-February/04-February-2026-Wednesday.html#ID-E046E496-29BF-45F0-BC84-1FF1D831ED41">04 February 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgd8da621">
+<ul class="org-ul">
+<li>Should we be subtracting 3b ttbar with SvB weights or FvT weights?
+<ul class="org-ul">
+<li>Probably FvT weights!</li>
+</ul></li>
+<li class="on"><code>[X]</code> Compare subtraction weights FvT vs SvB for 4b and 3b</li>
+<li>Comparing tt<sub>vs</sub><sub>mj</sub> weights for SvB and FvT.
+Look good for 4tag but 3tag is sytematically different!</li>
+</ul>
+
+<div id="org92039db" class="figure">
+<p><img src="Logs/2026-02-04_14-33-46_screenshot.png" alt="2026-02-04_14-33-46_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Moved ttbar subtraction to use the FvT 3b (option to use 4b)</li>
+<li>Making classifier inputs
+<ul class="org-ul">
+<li>Tried     <code>chunksize: 10000</code> , was giving 22k jobs now do <code>chunksize: 100000</code></li>
+<li>Job failures.. trying data only&#x2026; still fails&#x2026;</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb97e9ae" class="outline-3">
+<h3 id="orgb97e9ae"><a href="../Journal/2026/02-February/02-February-2026-Monday.html#ID-42125F89-C91A-4FB0-B19D-F22959CF26D0">02 February 2026 Monday</a></h3>
+<div class="outline-text-3" id="text-orgb97e9ae">
+<ul class="org-ul">
+<li>Fit JCM .. figure out what I need for DvT training.</li>
+<li><code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py -o output/mixeddata_study/jcm_for_subsampling_Run3_wTT -c passPreSel -r SB --combine_input_files -i output/weights_trigger_analysis/trigWeight_TTbar.coffea output/analysis_test_Run3/allRun3Data.coffea</code></li>
+<li><p>
+JCM looks off
+</p>
+
+<div id="org2252553" class="figure">
+<p><img src="Logs/2026-02-02_10-31-55_screenshot.png" alt="2026-02-02_10-31-55_screenshot.png" />
+</p>
+</div></li>
+<li>Should look into plots with no JCM weights</li>
+<li>Starting to update <code>analysis-test-Run3.sh</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org675ce50" class="outline-3">
+<h3 id="org675ce50"><a href="../Journal/2026/01-January/25-January-2026-Sunday.html#ID-90280555-5DC8-44CA-97A7-4BEE7E2339C1">25 January 2026 Sunday</a></h3>
+<div class="outline-text-3" id="text-org675ce50">
+<ul class="org-ul">
+<li>merged with head fixes from AE</li>
+<li>Failures in CI</li>
+<li>Testing locally  
+<code>source coffea4bees/scripts/run-local-ci.sh  mixeddata-analyze-cutflow</code></li>
+<li>Fixed!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9c63c83" class="outline-3">
+<h3 id="org9c63c83"><a href="../Journal/2026/01-January/22-January-2026-Thursday.html#ID-581A41D2-6BBD-4A95-BEF0-E43CF229F784">22 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org9c63c83">
+<ul class="org-ul">
+<li><p>
+Merge Master
+</p>
+<ul class="org-ul">
+<li>CI Fails&#x2026; running locally
+<code>source coffea4bees/scripts/run-local-ci.sh analysis-cutflow-Run3</code>
+works when reverting to old loose&#x2026;Updating numbers.
+<code>./run_container source coffea4bees/scripts/analysis-cutflow-Run3.sh --output-base  CI_output</code>
+<code>cp CI_output/analysis_cutflow_Run3/test_dump_cutflow.yml coffea4bees/analysis/tests/known_Counts_Run3.yml</code></li>
+</ul>
+<ul class="org-ul">
+<li>Seeing weird failure in SvB frend tree.. think this is one for AE&#x2026; sent mail.</li>
+<li>Looking into CI failure of old mixing.
+<code>source coffea4bees/scripts/run-local-ci.sh analysis-mixed-cutflow</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org75d48b5" class="outline-3">
+<h3 id="org75d48b5"><a href="../Journal/2026/01-January/21-January-2026-Wednesday.html#ID-E1FDF77B-8D60-4240-9E8F-081AA5615641">21 January 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org75d48b5">
+<ul class="org-ul">
+<li>Found that I am not processing all the files in datasets yaml &#x2026; The number of chuncks increased!</li>
+<li>Rerunnign analysis&#x2026; FIXED !!!!</li>
+<li>Now running with SvB&#x2026; Done</li>
+<li>Sent mail with prelimiary "v0" mixed datasets</li>
+<li>Running Run3 fourTag data with SvB&#x2026; Looks DAMN GOOD!!!!</li>
+</ul>
+
+<div id="orgbc7899d" class="figure">
+<p><img src="Logs/2026-01-21_12-24-51_screenshot.png" alt="2026-01-21_12-24-51_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Time to clean up and push</li>
+<li>Making plots for slides tomorrow</li>
+<li><code>python -i coffea4bees/plots/iPlot.py --combine     coffea4bees/Run3_hemisphere_mixing/histMixedDataRun3_new2.coffea coffea4bees/Run3_hemisphere_mixing/allRun3Data_fourTag.coffea coffea4bees/Run3_hemisphere_mixing/synthetic_data_Run3_2025.coffea    -m coffea4bees/plots/metadata/plotMixedVsData.yaml</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6347f68" class="outline-3">
+<h3 id="org6347f68"><a href="../Journal/2026/01-January/20-January-2026-Tuesday.html#ID-B2A2A498-9021-4524-ACF9-DF8732C75041">20 January 2026 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org6347f68">
+<ul class="org-ul">
+<li>Checking new JCM</li>
+<li>Normalization still off in Run3 splitting !</li>
+<li>Looks like splitting command failed&#x2026; Rerunning
+<code>./run_container source coffea4bees/scripts/mixeddata-split-dataset-Run3.sh</code></li>
+<li>split data JCM still off!</li>
+<li>Looks OK in the study processor</li>
+<li>The JCM from the study processor looks like the correct weights are being applied</li>
+<li>Making separate mixeddatra-split-Run3 dataset</li>
+</ul>
+
+<p>
+In the skimmer
+</p>
+
+<pre class="example">
+ixeddata_all_2022_EE::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight was [0.0383, 0.0383, 0.105, 0.0383, 0.0383, 0.105, 0.0383, 0.135, 0.0383, 0.0732] 
+
+mixeddata_all_2022_EE::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight is now [0.0406, 0.0406, 0.111, 0.0406, 0.0406, 0.111, 0.0406, 0.111, 0.0406, 0.0774] 
+
+mixeddata_all_2022_EE::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight was [0.0383, 0.0732, 0.0732, 0.0732, 0.0383, 0.162, 0.105, 0.0732, 0.0383, 0.0383] 
+
+mixeddata_all_2022_EE::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight is now [0.0406, 0.0774, 0.0774, 0.0774, 0.0406, 0.17, 0.0774, 0.0774, 0.0406, 0.0406] 
+
+mixeddata_all_2022_EE::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight was [0.0732, 0.0383, 0.105, 0.0383, 0.0732, 0.0383, 0.0383, 0.0383, 0.135, 0.0732] 
+
+mixeddata_all_2022_EE::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight is now [0.0774, 0.0406, 0.111, 0.0406, 0.0774, 0.0406, 0.0406, 0.0406, 0.142, 0.0774] 
+</pre>
+
+<p>
+In the study
+</p>
+
+<pre class="example">
+mixeddata_all_2023_preBPix::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight was [0.21, 0.0732, 0.0732, 0.0383, 0.105, 0.0383, 0.0732, 0.105, 0.0732, 0.0383] 
+
+mixeddata_all_2023_preBPix::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight is now [0.196, 0.0774, 0.0774, 0.0406, 0.111, 0.0406, 0.0774, 0.111, 0.0774, 0.0406] 
+
+mixeddata_all_2023_preBPix::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight was [0.0383, 0.0732, 0.105, 0.0383, 0.0383, 0.0732, 0.0732, 0.105, 0.0732, 0.0383] 
+
+mixeddata_all_2023_preBPix::     0:100000 &gt;&gt;&gt;  event.pseudoTagWeight is now [0.0406, 0.0774, 0.111, 0.0406, 0.0406, 0.0774, 0.0406, 0.111, 0.0774, 0.0406] 
+</pre>
+
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Compare splitting what what shoudl be from the study processor &#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb8abd89" class="outline-3">
+<h3 id="orgb8abd89"><a href="../Journal/2026/01-January/16-January-2026-Friday.html#ID-6FCCE3A2-FF75-4054-9D26-A2771EDA67D1">16 January 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-orgb8abd89">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Fit new JCM</li>
+<li class="on"><code>[X]</code> Split (v0 - v2)</li>
+<li class="off"><code>[&#xa0;]</code> Plots</li>
+<li class="off"><code>[&#xa0;]</code> Mails</li>
+<li class="off"><code>[&#xa0;]</code> Clean code</li>
+<li>Fitting new JCMf (make a config for mixed data with no TT)
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py  -o output/mixeddata_study/jcm_for_subsampling_Run3 -c passPreSel -r SB --combine_input_files -i output/analysis_test_Run3/allRun3Data.coffea   output/mixeddata_study//study_mixed_datasets_all_Run3.coffea    -jcm_config coffea4bees/analysis/jcm_tools/metadata/mixeddata_all_config_noTT.yml -m coffea4bees/plots/metadata/plotsJCM_noTT.yml</code></li>
+<li>Moved to <code>coffea4bees/skimmer/metadata/jetCombinatoricModel_for_mixed_Run3_splitting.txt</code></li>
+<li>Splitting the mixed data
+<code>./run_container source coffea4bees/scripts/mixeddata-split-dataset-Run3.sh</code></li>
+<li>Adding split datasets to metadata file</li>
+<li>Running analysis (w/o SvB)
+<code>./run_container source coffea4bees/scripts/mixeddata-analyze-Run3.sh</code></li>
+<li>Making plots&#x2026; Looks like the I used the wrong JCM&#x2026;</li>
+<li>Resplitting</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgead2451" class="outline-3">
+<h3 id="orgead2451"><a href="../Journal/2026/01-January/15-January-2026-Thursday.html#ID-5E552D49-5095-4F97-9F87-3DFDDC62E213">15 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgead2451">
+<ul class="org-ul">
+<li>Checking new Loose2</li>
+<li>Tightening the LooseWP&#x2026; Replace the L value with the average of L and M
+<ul class="org-ul">
+<li>v0 (Loose) Before: 23709032.0  (threeTag passPreSel)
+<ul class="org-ul">
+<li>v1 (L+M /2)        :     8025974.0</li>
+<li>v2 (2L + M) / 3      10268888.0
+=&gt; a muQCD of 14.21</li>
+</ul></li>
+</ul></li>
+<li><p>
+Remaking JCM weights
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py  -o output/analysis_test_Run3/jcm_for_Run3_noTT -c passPreSel -r SB  -i output/analysis_test_Run3/allRun3Data.coffea    --jcm_config coffea4bees/analysis/jcm_tools/metadata/noTT_config.yml -m coffea4bees/plots/metadata/plotsJCM_noTT.yml</code>
+</p>
+<ul class="org-ul">
+<li>Looks decent:</li>
+</ul>
+
+<div id="orgac73d16" class="figure">
+<p><img src="Logs/2026-01-15_09-26-32_screenshot.png" alt="2026-01-15_09-26-32_screenshot.png" />
+</p>
+</div></li>
+<li>copy to <code>coffea4bees/skimmer/metadata/jetCombinatoricModel_for_mixed_Run3.txt</code></li>
+<li>Making all mixed data
+<code>./run_container source coffea4bees/scripts/mixeddata-make-dataset-Run3-all.sh</code></li>
+<li>Failed: distributed.scheduler.KilledWorker: Attempted to run task 'HemiMixer-2092627aecaa11fa213e0504d0f56025' on 4 different workers, but all those workers died while running it. The last worker that attempt to run the task was tcp://131.225.207.249:10000. Inspecting worker logs is often a good next step to diagnose fwhat went wrong. For more information see <a href="https://distributed.dask.org/en/stable/killed.html">https://distributed.dask.org/en/stable/killed.html</a>.</li>
+<li>Trying locally
+File "/srv/coffea4bees/hemisphere<sub>mixing</sub>/mixing<sub>helpers.py</sub>", line 625, in replace<sub>hemis</sub><sub>load</sub><sub>kdTrees</sub>
+  match<sub>dist</sub>, match<sub>idx</sub> = kd<sub>tree.query</sub>(subset<sub>hemis</sub><sub>points</sub>, k=1)
+File "<sub>ckdtree.pyx</sub>", line 798, in scipy.spatial.<sub>ckdtree.cKDTree.query</sub></li>
+</ul>
+<p>
+ValueError: 'x' must be finite, check for nan or inf values
+</p>
+<ul class="org-ul">
+<li>Finding errors from nans in the hemis being mixed&#x2026; now filtering them out</li>
+<li>Re-running on condor&#x2026; still fails</li>
+<li>Trying locally &#x2026; seems OK</li>
+<li>Will try one era at a time on condor
+<ul class="org-ul">
+<li>2023<sub>preBPix</sub>&#x2026; died &#x2026; Trying locally.. Fails&#x2026; looks like running out of mem</li>
+</ul></li>
+<li>Trying condor again with 6GB condor mem&#x2026; seems OK got a wierd fill missing error&#x2026; will run again
+<code>Turns out this was the magic bullet!</code></li>
+<li>running 2023<sub>BPix</sub>&#x2026; Runs fine&#x2026;
+<code>15,789 events/s total (14224083/900.8916823863983)</code></li>
+<li>Profiler shows lots used in the
+<code>if not (hasattr(p4, "px") and hasattr(p4, "py")):</code> calls.</li>
+<li>Commenting out checking again</li>
+<li>Running 2022 in one go&#x2026;All good
+<code>34,265 events/s total (28706572/837.7758021354675)</code></li>
+<li>Rerunning 2023<sub>preBPix</sub>&#x2026; Now all good
+<code>33,315 events/s total (26684917/800.9806606769562)</code></li>
+<li>Add mixeddata<sub>all</sub> to the datasets file <code>datasets_HH4b_Run3_2025_Run3_skims.yml</code></li>
+<li>Running the study hemispheres&#x2026; crashed.. b/c trying to run the jet calibration!   
+Hacked with synthetic data flag for now&#x2026;
+ Runs</li>
+<li>Need to fit the JCM
+<code>python -i coffea4bees/plots/iPlot.py --combine   coffea4bees/Run3_hemisphere_mixing/study_mixed_datasets_all_Run3.coffea coffea4bees/Run3_hemisphere_mixing/allRun3Data_NewLoose2.coffea   -m coffea4bees/plots/metadata/plotsMixedNew.yml</code></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org7fffb29" class="outline-3">
+<h3 id="org7fffb29"><a href="../Journal/2026/01-January/14-January-2026-Wednesday.html#ID-CB2D6EA2-AED5-4C16-9BEF-D2FCE3D7F8DF">14 January 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org7fffb29">
+<ul class="org-ul">
+<li><del>[ ] Draft Mail re:trigger SFs</del> <code>Talked to Sindhu and AE</code></li>
+<li>Updateing printCutflow  tools to understand Run3 skims</li>
+<li>Adding TwoTag to the cutflow</li>
+<li>The Run3 skims are almost all threeTag</li>
+<li class="off"><code>[&#xa0;]</code> How do the Run3 yeilds compare to the Run2 Yeilds?</li>
+<li>plotting 4tag nJet vs 3tag
+plot("selJets<sub>noJCM.n</sub>",region="SB",yscale="linear",norm=1,rebin=1,doratio=1,process=["data","Multijet"])</li>
+<li>Will try to fit JCM without ttbar</li>
+</ul>
+<p>
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py  -o output/analysis_test_Run3/jcm_for_Run3_noTT -c passPreSel -r SB  -i output/analysis_test_Run3/allRun3Data.coffea    --jcm_config coffea4bees/analysis/jcm_tools/metadata/noTT_config.yml -m coffea4bees/plots/metadata/plotsJCM_noTT.yml</code>
+</p>
+<ul class="org-ul">
+<li>Need to update loose WP numbers&#x2026; to have JCM closer to 15</li>
+<li>Tightening the LooseWP&#x2026; Replace the L value with the average of L and M
+<ul class="org-ul">
+<li>Before: 23709032.0  (threeTag passPreSel)
+<ul class="org-ul">
+<li>After:     8025974.0
+now about 11x four tag data&#x2026; should tighten it</li>
+</ul></li>
+</ul></li>
+<li>Re running all the Run3 data (condor) &#x2026; Looks like I am computing SvB&#x2026;. Should speed it up by turning this off &#x2026; Killed jobs</li>
+<li>Testing times in test job  
+w/SvB:  <code>295 events/s total (13998/47.519678592681885)</code>
+no SvB:  <code>465 events/s total (13998/30.101012706756592)</code></li>
+<li>Rerunning    
+23,685 events/s total (69615572/2939.2139101028442)</li>
+<li>Loosening the loos to (2xL + T )/ 3</li>
+<li>Rerunning&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4272131" class="outline-3">
+<h3 id="org4272131"><a href="../Journal/2026/01-January/13-January-2026-Tuesday.html#ID-31816E71-FBC8-40C3-A554-1BC0AF56C5A9">13 January 2026 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org4272131">
+<ul class="org-ul">
+<li>Looking into    <a href="Run-3 4b skims.html#ID-1624929A-3B77-46EB-8AA5-8F5DB0C2EC3E">Run-3 4b skims</a></li>
+<li><code>datasets_HH4b_Run3_2025_Run3_skims.yml</code> is the skim after the cutflow challenge should use the data in there.</li>
+<li>Will start with no-TTbar option</li>
+<li><code>./run_container source coffea4bees/scripts/analysis-runAll-Run3.sh</code></li>
+</ul>
+<ul class="org-ul">
+<li>runnong on condor
+cmslpc318</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge9ec12d" class="outline-3">
+<h3 id="orge9ec12d"><a href="../Journal/2026/01-January/12-January-2026-Monday.html#ID-743CF07E-5031-4291-848B-619663BC2256">12 January 2026 Monday</a></h3>
+<div class="outline-text-3" id="text-orge9ec12d">
+<ul class="org-ul">
+<li>Fix issue with local index (needed to specificy axis=1)</li>
+<li>Finding nans in hemisphere library &#x2026; debugging</li>
+<li>Combined mass is nan for (0,1,1)</li>
+<li>Added filter for nans (was only one hemisphere!) when making the hemistatistics..</li>
+<li>Fixed!</li>
+<li>Mixing all Run3 on condor&#x2026; runs  5,125 events/s total (2032637/396.6471109390259)</li>
+<li class="on"><code>[X]</code> Run2 mixing now broken</li>
+<li>Fixed logic for which jet branches need to be kept in Run3</li>
+<li>Re-Running Run3 Mixing &#x2026; done</li>
+<li>Seeing very few 4b mixed events &#x2026; ITs b/c Im running on the 4b skimms!</li>
+<li>Need full Run3 dasta</li>
+<li>What to do about the ttbar ?
+Think in hte first pass I should try to ignore it.. Fit no-tt JCM</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org46507ef" class="outline-3">
+<h3 id="org46507ef"><a href="../Journal/2026/01-January/09-January-2026-Friday.html#ID-F0B56019-A911-4181-B950-D299CA20DFD9">09 January 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-org46507ef">
+<ul class="org-ul">
+<li>Starting!!!!!</li>
+<li>Think I will first do it with out ttbar subtraction.. Should be fast</li>
+<li>Updateing code to master&#x2026; clean branches</li>
+<li><a href="run3syntheticdata-20250504105620.html#ID-F186D2D0-4B38-4EBC-9B0D-4995A8771982">Run3 Synthetic Data</a>
+<ul class="org-ul">
+<li>SEtting up Run3 clustering script
+<code>./run_container source coffea4bees/scripts/mixeddata-cluster-Run3.sh</code></li>
+</ul></li>
+<li>Error with some jet fields&#x2026; Need to thin &#x2026; fixed..</li>
+<li>Test job now runs</li>
+<li>Running all 22+23 data    
+<code>./run_container source coffea4bees/scripts/mixeddata-cluster-Run3-all.sh</code></li>
+<li>Making hemi<sub>stats</sub>
+<code>./run_container python coffea4bees/hemisphere_mixing/study_hemispheres.py --hemifiles coffea4bees/skimmer/metadata/hemisphere_library_Run3.yml --year 2022_EE 2022_preEE 2023_BPix 2023_preBPix --threshold 1000 --out coffea4bees/hemisphere_mixing/hemi_plots_Run3</code></li>
+<li>Starting the mixing &#x2026; Seeing strange error&#x2026; TBC</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

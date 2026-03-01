@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Setup Gmail in Emacs</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Setup Gmail in Emacs</h1>
+<p>
+<a href="https://github.com/kidd/org-gcal.el">https://github.com/kidd/org-gcal.el</a>
+</p>
+
+<ul class="org-ul">
+<li>ID: 57759006028-j8fafbn9prevdvjihbrf7hslpf0g09aa.apps.googleusercontent.com</li>
+</ul>
+<ul class="org-ul">
+<li>Secret: XXXX</li>
+<li>johnda102@gmail.com</li>
+<li>Unsalling gpg
+<code>brew install gnupg</code></li>
+</ul>
+<p>
+<code>gpg --gen-key</code>
+asd&#x2026;
+<a href="https://gist.github.com/koshatul/2427643668d4e89c0086f297f9ed2130">https://gist.github.com/koshatul/2427643668d4e89c0086f297f9ed2130</a>
+</p>
+<ul class="org-ul">
+<li>GOT IT GOING!!!!</li>
+</ul>
+</div>
+</body>
+</html>

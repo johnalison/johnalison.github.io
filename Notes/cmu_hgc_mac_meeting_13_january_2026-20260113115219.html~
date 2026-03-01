@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 13 January 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 13 January 2026</h1>
+
+
+<div id="outline-container-orgaea44c9" class="outline-2">
+<h2 id="orgaea44c9">News</h2>
+<div class="outline-text-2" id="text-orgaea44c9">
+<ul class="org-ul">
+<li>8 /day for 2 days</li>
+<li>12/day OK 16 is feasible</li>
+<li>Capacitors fall off.</li>
+<li>Corner grading in the GUI: now  72% -&gt; 97%</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2e3e775" class="outline-2">
+<h2 id="org2e3e775">Action</h2>
+<div class="outline-text-2" id="text-org2e3e775">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Save data on offsets</li>
+<li class="on"><code>[X]</code> Order the 2nd crate?</li>
+<li class="off"><code>[&#xa0;]</code> Alabama GUI ?</li>
+<li class="off"><code>[&#xa0;]</code> Hire another tech</li>
+<li class="off"><code>[&#xa0;]</code> Add v3d to graphana</li>
+<li class="off"><code>[&#xa0;]</code> Ask about a Si data in management meeting</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orged56f51" class="outline-2">
+<h2 id="orged56f51">Jessica</h2>
+<div class="outline-text-2" id="text-orged56f51">
+<ul class="org-ul">
+<li>2 sets of tools</li>
+<li>Got another shelving unit</li>
+<li>LabView fiducial finding 100% / Hexaboard ~50%, need to add backup</li>
+<li>2nd set of tooling debugging</li>
+<li>Start assembling tomorrow</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org66c2931" class="outline-2">
+<h2 id="org66c2931">Andrew</h2>
+<div class="outline-text-2" id="text-org66c2931">
+<ul class="org-ul">
+<li>Corner grading</li>
+<li>Has per cell leakage current measurements</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9b90d94" class="outline-2">
+<h2 id="org9b90d94">Sindhu</h2>
+<div class="outline-text-2" id="text-org9b90d94">
+<ul class="org-ul">
+<li>Few items:
+<ul class="org-ul">
+<li>bugs on bonder GUI</li>
+<li>trophy board in cmsr</li>
+<li>one hexaboard missing&#x2026;</li>
+<li>Optimizing pedastool tables</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org170429b" class="outline-2">
+<h2 id="org170429b">Rain</h2>
+<div class="outline-text-2" id="text-org170429b">
+<ul class="org-ul">
+<li>Dasboard with offsets</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8a5f28a" class="outline-2">
+<h2 id="org8a5f28a">Jacques</h2>
+<div class="outline-text-2" id="text-org8a5f28a">
+<ul class="org-ul">
+<li>Encapsulation has been smooth</li>
+<li>Julias camera programming working very nicely</li>
+<li>Starting to bond</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc2dd14f" class="outline-2">
+<h2 id="orgc2dd14f">Jim</h2>
+<div class="outline-text-2" id="text-orgc2dd14f">
+<ul class="org-ul">
+<li>Working on leak testing the fridge</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org60e4655" class="outline-2">
+<h2 id="org60e4655">Pritam</h2>
+<div class="outline-text-2" id="text-org60e4655">
+<ul class="org-ul">
+<li>back on the 16th</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org786b78f" class="outline-2">
+<h2 id="org786b78f">Arvind</h2>
+<div class="outline-text-2" id="text-org786b78f">
+<ul class="org-ul">
+<li>LAck of rack</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org569fece" class="outline-2">
+<h2 id="org569fece">Manami</h2>
+<div class="outline-text-2" id="text-org569fece">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

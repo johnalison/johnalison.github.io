@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>UCSB Modules per Month</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">UCSB Modules per Month</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Month</td>
+<td class="org-left">Geometry</td>
+<td class="org-left">Resolution</td>
+<td class="org-left">Baseplate</td>
+<td class="org-right">Sensor Thickness</td>
+<td class="org-left">ROC Version</td>
+<td class="org-right">Count</td>
+</tr>
+
+<tr>
+<td class="org-left">-----</td>
+<td class="org-left">--------</td>
+<td class="org-left">----------</td>
+<td class="org-left">---------</td>
+<td class="org-right">----------------</td>
+<td class="org-left">-----------</td>
+<td class="org-right">-----</td>
+</tr>
+
+<tr>
+<td class="org-left">12/24</td>
+<td class="org-left">Full</td>
+<td class="org-left">HD</td>
+<td class="org-left">CuW</td>
+<td class="org-right">120</td>
+<td class="org-left">HGCROCV3b-2</td>
+<td class="org-right">2</td>
+</tr>
+
+<tr>
+<td class="org-left">1/25</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">2/25</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">3/25</td>
+<td class="org-left">Full</td>
+<td class="org-left">HD</td>
+<td class="org-left">Titanium</td>
+<td class="org-right">120</td>
+<td class="org-left">HGCROCV3b-4</td>
+<td class="org-right">14</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<div id="outline-container-org1a54876" class="outline-2">
+<h2 id="org1a54876">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org543b2a2" class="outline-2">
+<h2 id="org543b2a2">Links:</h2>
+<div class="outline-text-2" id="text-org543b2a2">
+<p>
+202504011029
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org53e2f72" class="outline-2">
+<h2 id="org53e2f72">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgea5bc40" class="outline-2">
+<h2 id="orgea5bc40">Links:</h2>
+<div class="outline-text-2" id="text-orgea5bc40">
+<p>
+202504011040
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

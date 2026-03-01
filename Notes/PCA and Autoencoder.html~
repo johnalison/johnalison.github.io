@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PCA and Autoencoder</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">PCA and Autoencoder</h1>
+<p>
+Can think of an autoencoder as a nonlinear extension of Principal Component Analysis (PCA). 
+An autoencoder with a single hidden layer, a linear activation function, and MSE loss reduces to an PCA. The number of neurons in the single hidden layer determines the number of principal components.
+</p>
+
+
+<div id="outline-container-org36a211c" class="outline-2">
+<h2 id="org36a211c">Follow-ups</h2>
+<div class="outline-text-2" id="text-org36a211c">
+<ul class="org-ul">
+<li>PCA article reccomended by Saxon: <a href="https://www.mit.edu/~gari/teaching/6.555/LECTURE_NOTES/ch15_bss.pdf">https://www.mit.edu/~gari/teaching/6.555/LECTURE_NOTES/ch15_bss.pdf</a></li>
+<li>Autoencoders, Unsupervised Learning, and Deep Architectures
+<ul class="org-ul">
+<li><a href="https://proceedings.mlr.press/v27/baldi12a.html">https://proceedings.mlr.press/v27/baldi12a.html</a></li>
+<li><a href="https://proceedings.mlr.press/v27/baldi12a/baldi12a.pdf">https://proceedings.mlr.press/v27/baldi12a/baldi12a.pdf</a></li>
+</ul></li>
+<li>Neural networks and principal component analysis: Learning from examples without local minima  <a href="https://www.sciencedirect.com/science/article/pii/0893608089900142">https://www.sciencedirect.com/science/article/pii/0893608089900142</a></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

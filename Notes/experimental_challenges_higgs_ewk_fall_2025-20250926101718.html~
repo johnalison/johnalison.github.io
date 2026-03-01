@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Experimental Challenges Higgs EWK Fall 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Experimental Challenges Higgs EWK Fall 2025</h1>
+
+
+<div id="outline-container-orgd24aed6" class="outline-2">
+<h2 id="orgd24aed6">Transcrips</h2>
+<div class="outline-text-2" id="text-orgd24aed6">
+<ul class="org-ul">
+<li><b>Intro</b>: Its great to be here. I want to thaink the organizers for teh
+invitation. They have asked me to give a summary of the field to set
+the stage for the rest of the week. So I will give what I think are
+the big open questions, hot topics and the important experimental
+challegnes. This will be from an experimentalists POV and of course
+I cannot be exhaustive in this introduciton, but will highlihgt
+things that I think are particularly important. I will try to
+exagruate my positions to make the talk more interesting</li>
+</ul>
+
+<p>
+<b>s1</b>: The first big hot topic is this conference. I get the sense,
+  especially these days, that most conferences are somewhat overrated
+  rated. They tend to have broad surveys from the experiments that are
+  more of PR statements than anything else. Thats not the case for
+  this conferences. I have seen alot of familiar faces here and a lot
+  young faces. Whats nice about this conference is that because its so
+  focused, you tend to get the people who actually do the analyses So
+  while most conferences are somewaht overrated, I would say Higgs is
+  underrated.
+</p>
+
+<p>
+Organizers did a good job putting together an exciting program, and
+ so the plot of my talk is just to follow the program I will say
+ somehting about HIggs perceision measurements, BSM higgs, Di-Higgs
+ and something about the future of the Higgs program
+</p>
+
+<p>
+<b>s2</b> Ok coming first to HIggs precision measuremnts. Coupling
+measurements is the major part of the program. The Sensitivity is
+dominated by the "Big 5" ZZ, WW, gg. bb, and, tau tau There is not so
+much to say here, Experimentally we know what we are doing, these
+measurements have been done for over 10 yearss, we have achieved
+O(10%) percisions
+</p>
+
+<p>
+If there is an experimental challeges it is in sustaining momentum.
+These measurements used to be the marques analyses within the
+collaboration, wth the best people working on them. Now, I get the
+sense that its hard to attract students and postdocs to them. This is
+somehing we need to do a better job doing within the collaborations.
+Saying this here is Like preaching to the choir&#x2026; This is what this
+conference series is all about. But we need to remind our collqueses
+and students and this is really the front lines. In many models this
+is where we will see the deviation first in bb or ZZ.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org42d8bf6" class="outline-2">
+<h2 id="org42d8bf6">HIggs 2025</h2>
+<div class="outline-text-2" id="text-org42d8bf6">
+<p>
+<a href="https://indico.cern.ch/event/1532417/overview">https://indico.cern.ch/event/1532417/overview</a>
+</p>
+
+<p>
+Higgs@Capri <a href="https://agenda.infn.it/event/45337/timetable/#all">https://agenda.infn.it/event/45337/timetable/#all</a>
+Higgs 2024: <a href="https://indico.cern.ch/event/1391236/timetable/">https://indico.cern.ch/event/1391236/timetable/</a>
+Higgs Hunting <a href="https://indico.ijclab.in2p3.fr/event/11484/timetable/#20250715.detailed">https://indico.ijclab.in2p3.fr/event/11484/timetable/#20250715.detailed</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4b567e0" class="outline-2">
+<h2 id="org4b567e0">Docs</h2>
+<div class="outline-text-2" id="text-org4b567e0">
+<p>
+CMS week:
+<a href="https://indico.cern.ch/event/1582945/contributions/6671279/subcontributions/571401/attachments/3144772/5582642/document.pdf">https://indico.cern.ch/event/1582945/contributions/6671279/subcontributions/571401/attachments/3144772/5582642/document.pdf</a>
+</p>
+
+<p>
+LHCC:
+<a href="https://indico.cern.ch/category/3427/">https://indico.cern.ch/category/3427/</a>
+Latest: <a href="https://indico.cern.ch/event/1571894/">https://indico.cern.ch/event/1571894/</a>
+</p>
+
+<p>
+Atlas Btagging:
+<a href="https://atlas.cern/Updates/Briefing/GN2-Jet-Flavour-Tagging">https://atlas.cern/Updates/Briefing/GN2-Jet-Flavour-Tagging</a>
+(Scaling laws)
+</p>
+
+<p>
+Higgs Couplings 2014:
+<a href="https://indico.cern.ch/event/297759/timetable/?view=nicecompact">https://indico.cern.ch/event/297759/timetable/?view=nicecompact</a>
+</p>
+
+<p>
+New CMS projections:
+<a href="https://cds.cern.ch/record/2945502/files/2510.07527.pdf">https://cds.cern.ch/record/2945502/files/2510.07527.pdf</a>
+</p>
+
+<p>
+ATLAS+CMS projections:
+<a href="https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-25-002/index.html">https://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-25-002/index.html</a>
+</p>
+
+<p>
+Higgs at FCC-ee
+<a href="https://indico.cern.ch/event/1202105/contributions/5396822/attachments/2660458/4609012/Higgs_Physics_FCC_deBlas.pdf">https://indico.cern.ch/event/1202105/contributions/5396822/attachments/2660458/4609012/Higgs_Physics_FCC_deBlas.pdf</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1e3c4fa" class="outline-2">
+<h2 id="org1e3c4fa">Ideas:</h2>
+<div class="outline-text-2" id="text-org1e3c4fa">
+<p>
+Why am I giving this talk ?
+    Mel Fest 
+    Blame Mel
+</p>
+
+<p>
+Overrated / Underrated ?
+</p>
+
+<p>
+Higgs couplings is a great conference
+</p>
+<ul class="org-ul">
+<li>lot of young people / older familar faces</li>
+<li>b/c focused tend to really get the peopel</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4a513a4" class="outline-2">
+<h2 id="org4a513a4">Charge:</h2>
+<div class="outline-text-2" id="text-org4a513a4">
+<p>
+As you know, this year’s edition of the Higgs Conference is taking place at Brown from October
+27th to 31st. To frame the scientific program, we would like to have an experimental opening
+talk on the current big questions and hot topics on Higgs &amp; EWK physics. This talk would not be
+directly on behalf of ATLAS and CMS, but it should be the view of the challenges we currently
+have from an experimentalist's point of view. We would like to ask you if you would be willing to
+present this talk. We certainly would like you to be on board. Please let us know as soon as
+possible. 
+</p>
+
+<p>
+More:
+</p>
+
+<p>
+We were thinking of something relative short. Would 15-20 mins do? We can adjust, but the spirit was of having something to the point on the big questions without the detail which in principle would be then tackled by the conference it self (one can always dream big).
+</p>
+
+<p>
+No, there should not be a corresponding theory talk, at least for now.
+</p>
+
+<p>
+To mirror your talk we are looking for two similar talks at closing (experiment and theory) for the upcoming next steps given what was presented during the conference.
+</p>
+
+<p>
+Arely and Loukas may correct me if I said something outside of what we were thinking or if I forgot something.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2ebfd72" class="outline-2">
+<h2 id="org2ebfd72">Formulation</h2>
+<div class="outline-text-2" id="text-org2ebfd72">
+<p>
+Hot topics
+Open questions 
+Challenges
+</p>
+</div>
+
+<div id="outline-container-orga1038e8" class="outline-3">
+<h3 id="orga1038e8">H Precision (Ww/ZZgg/tt/bb)</h3>
+<div class="outline-text-3" id="text-orga1038e8">
+<ul class="org-ul">
+<li>know what we are doing</li>
+<li>Challenge is sustaingin momentum</li>
+<li>Measurements -&gt; Differential</li>
+</ul>
+
+<p>
+ATLAS Nature Paper:
+<a href="https://arxiv.org/pdf/2404.05498">https://arxiv.org/pdf/2404.05498</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf51236" class="outline-3">
+<h3 id="orgdf51236">H Discovery</h3>
+<div class="outline-text-3" id="text-orgdf51236">
+<ul class="org-ul">
+<li>Current Fontier ttH / Zg / mumu</li>
+<li>Horizon term cc / HH</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgba7999a" class="outline-2">
+<h2 id="orgba7999a">Trigger</h2>
+</div>
+
+
+<div id="outline-container-org6486761" class="outline-2">
+<h2 id="org6486761">Challenges Finish Upgrades!</h2>
+</div>
+
+
+<div id="outline-container-orgd3f6e4d" class="outline-2">
+<h2 id="orgd3f6e4d">Sustain rate of progress</h2>
+</div>
+
+<div id="outline-container-org9fdc5f6" class="outline-2">
+<h2 id="org9fdc5f6">H</h2>
+</div>
+
+<div id="outline-container-orgd182a8f" class="outline-2">
+<h2 id="orgd182a8f">HH History</h2>
+<div class="outline-text-2" id="text-orgd182a8f">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org498f8cc" class="outline-2">
+<h2 id="org498f8cc">HHH</h2>
+</div>
+
+
+<div id="outline-container-orgdf16953" class="outline-2">
+<h2 id="orgdf16953">Precision</h2>
+<div class="outline-text-2" id="text-orgdf16953">
+<p>
+mW / mTop
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6204d29" class="outline-2">
+<h2 id="org6204d29">How will AI/ML imporve this</h2>
+<div class="outline-text-2" id="text-org6204d29">
+<ul class="org-ul">
+<li>Automate work</li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAM Variance January 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CAM Variance January 2026</h1>
+
+
+
+<div id="outline-container-org4b38159" class="outline-2">
+<h2 id="org4b38159">402.04.04.04 CE - Standard Module Assembly Site 2</h2>
+<div class="outline-text-2" id="text-org4b38159">
+<p>
+There is a cumulative schedule variance of -$682k in the cost account
+402.04.04.04 CE - Standard Module Assembly Site 2 (CMU). The variance
+is from the assembly and testing of the first 48% of modules and the
+associated cleanroom consumables.
+</p>
+
+<p>
+This variance is expected, primarily due to missing input parts
+(baseplates). CMU has received baseplates has resumed production in
+December and January. Shipment of the CuT baseplates from IHEP are
+still awaiting setup of the proper import/export protocol through
+Fermilab procurement. CMU is demonstrating the 12 modules / day
+protocol now. 
+</p>
+
+<p>
+There is a cumulative cost variance of -$515k in cost account
+402.04.04.04 CE - Standard Module Assembly Site 2. This is expected
+and is consistent with the cumulative schedule variance discussed
+below. Schedule delays, due to missing input parts, have caused cost
+variance resulting from labor costs not earning value.
+</p>
+</div>
+
+
+<div id="outline-container-org0d6ad29" class="outline-3">
+<h3 id="org0d6ad29">Impact</h3>
+<div class="outline-text-3" id="text-org0d6ad29">
+<p>
+The activities contributing to this variance are due to upstream
+delays in receiving input components needed for the final module test
+stands, resulting in completion later than scheduled. Once the
+components become available, the value will be earned, and it should
+not impact the overall schedule.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8acec02" class="outline-2">
+<h2 id="org8acec02">402.04.04.05 CE - Module Assembly at UCSB</h2>
+<div class="outline-text-2" id="text-org8acec02">
+<p>
+There is a cumulative schedule variance of -$812k in cost account
+402.04.04.05 CE - Module Assembly at UCSB. The variance has two
+components: most (90%) is due to the assembly, testing, and shipping
+of full-size equivalent odd-sized modules (1-48%); the remainder is
+for supporting production at other assembly sites. This past month
+UCSB produced modules with 16/day protocol. 
+</p>
+
+
+<p>
+There is a cumulative cost variance of -$1155k in cost account
+402.04.04.05 CE - Module Assembly at UCSB. This is expected and is
+consistent with the cumulative schedule variance discussed above.
+Schedule delays, due to missing input parts, have caused cost variance
+resulting from labor costs not earning value.
+</p>
+</div>
+
+
+
+<div id="outline-container-org519b709" class="outline-3">
+<h3 id="org519b709">Current</h3>
+<div class="outline-text-3" id="text-org519b709">
+<p>
+There is a current cost variance of -569k which is the result of a
+lump accruals (666k) reflecting a lump sum of several months of labor
+for module assembly at UCSB (Task: 402.44.501791 MSSERVICE MS
+Subcontracts)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1a10426" class="outline-3">
+<h3 id="org1a10426">Impact</h3>
+<div class="outline-text-3" id="text-org1a10426">
+<p>
+The activities contributing to this variance are due to upstream
+delays in receiving input components needed for the final module test
+stands, resulting in completion later than scheduled. Input components
+are now becoming available and value is starting to be earned; it
+should not impact the overall schedule.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

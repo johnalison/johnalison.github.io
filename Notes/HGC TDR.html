@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HGC TDR</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">HGC TDR</h1>
+<p>
+<a href="https://cds.cern.ch/record/2293646/files/CMS-TDR-019.pdf">https://cds.cern.ch/record/2293646/files/CMS-TDR-019.pdf</a>
+</p>
+
+<p>
+Highest dose: 
+</p>
+<ul class="org-ul">
+<li>2 MGy</li>
+<li>SiPMs get 3 kGy</li>
+</ul>
+
+
+
+<div id="org6229f73" class="figure">
+<p><img src="2026-02-26_22-39-32_screenshot.png" alt="2026-02-26_22-39-32_screenshot.png" />
+</p>
+</div>
+
+
+
+<ul class="org-ul">
+<li>In order to keep the radiation-induced energy equivalent of electronics noise sufficiently low, SiPMs also have to be operated at around −30 ◦C. Hence the whole calorimeter will be operated at −30 ◦C. Will be cooled with two-phase C02.</li>
+<li>Thin SI active layers 100-300 µm. 300, 200, and 120 µm, in regions of increasing fluence</li>
+<li>EM 28 layers a depth of approximately 26 X0 and 1.7 λ
+<ul class="org-ul">
+<li>14 layers of these (60') cassettes  provide the full 28 sampling layers.</li>
+</ul></li>
+<li>The absorber in the hadronic compartment consists of 12 planes of 35 mm thick SS plates followed by another 12 SS planes with a thickness of 68 mm
+<ul class="org-ul">
+<li>Between these absorber plates sit silicon modules and scintillator tileboards mounted on 6 mm thick copper cooling plates to form 30 ◦ wide cassettes.</li>
+</ul></li>
+<li>total calorimeter thickness, perpendicular to the layers, of 10.7 λ, including the CE-E and the neutron moderator layer in front of the calorimeter</li>
+</ul>
+
+
+
+<div id="org5287153" class="figure">
+<p><img src="2026-02-26_22-40-08_screenshot.png" alt="2026-02-26_22-40-08_screenshot.png" />
+</p>
+</div>
+
+
+<div id="outline-container-org5c81fdf" class="outline-2">
+<h2 id="org5c81fdf">Sensors</h2>
+<div class="outline-text-2" id="text-org5c81fdf">
+<p>
+Thin: 
+The sensor leakage current increases linearly with fluence, resulting in increased noise and, combined with the very high bias voltages, leads to substantial power dissipation within the sensors themselves. These ob- servations motivated the investigation of sensors thinner than the 300 μm typically used so far,
+</p>
+
+<p>
+Fleunce is dominated by neutrons
+</p>
+
+<p>
+Ncells / Wafer = 3 (diamonds) x 4 (rows) x 4 (cols) x 4 (cells) = 192 (LD).   (Cell Area 1.18 cm2)
+              3 (diamonds) x 4 (rows) x 4 (cols) x 9 (cells) = 432 (LD).   (Cell Area 0.52 cm2)
+               (But they have the same number of trigger inputs)
+</p>
+
+
+
+<div id="org3f8554d" class="figure">
+<p><img src="Sensors/2026-02-26_22-41-03_screenshot.png" alt="2026-02-26_22-41-03_screenshot.png" />
+</p>
+</div>
+
+
+<p>
+200 and 300 µm are LD
+120 is the HD
+</p>
+
+<p>
+Two cells per readout chip are segmented to include calibration pads with smaller size and correspondingly lower capacitance and noise.
+</p>
+
+
+
+<div id="org3d11903" class="figure">
+<p><img src="Sensors/2026-02-26_22-40-40_screenshot.png" alt="2026-02-26_22-40-40_screenshot.png" />
+</p>
+</div>
+
+
+<p>
+the region |η| &gt; 2.4 is covered exclusively by silicon sensors. An added advantage is that this also enables a good efficiency for muon identification in this region, where the ME1/1 chambers are not available.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe6d98c" class="outline-2">
+<h2 id="orgfe6d98c">Trigger:</h2>
+<div class="outline-text-2" id="text-orgfe6d98c">
+<ul class="org-ul">
+<li>uses only every other layer</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4a5775b" class="outline-2">
+<h2 id="org4a5775b">Tiles</h2>
+<div class="outline-text-2" id="text-org4a5775b">
+<p>
+While the dark current of SiPMs is quite low for unirradiated devices, it rises significantly after irradiation, as is common for silicon devices.
+</p>
+
+<p>
+The ∆φ angular size of the cells is chosen to provide an even matching to the 5-degree cells of the barrel hadron calorimeter and to keep the size of the scintillator cell similar in physical size to the silicon trigger cells (sums of four 1 cm2 cells) at the boundary between the scintillator and silicon.
+</p>
+
+<p>
+To match the geometry of the CMS endcap, the scintillator cells will be arranged in an r, φ grid. As a result, the cells nearer the beam line will be significantly smaller (4 cm2) than those at the outer edge (32cm2).
+</p>
+
+<p>
+The area instrumented with scintillator is subdivided into tile-modules, which form annular segments of up to 40 × 50 cm2 in area. Each tile-module is a stack consist- ing of a tileboard and the scintillator tiles.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd775159" class="outline-2">
+<h2 id="orgd775159">Electronics</h2>
+<div class="outline-text-2" id="text-orgd775159">
+<p>
+EM has stringent requirements:
+</p>
+<ul class="org-ul">
+<li>16 bits, to be able, at the lower end, to measure the MIP in the silicon sensors and, at the higher end, to record high-energy deposits from electromagnetic showers at shower maximum.</li>
+<li>low noise</li>
+<li>- integral linearity better than 1% over the full range;</li>
+<li>timing with precision better than 100 ps</li>
+<li>fast shaping time (peaking-time .20ns) to minimize the out-of-time pileup:</li>
+<li>on-detector digitization and data processing for zero suppression, for linearization and summing of the trigger data;</li>
+<li>maximum latency of 36 bunch crossings for the trigger primitives at the output of the detector</li>
+<li>buffering of the data to accommodate the 12.5 μs latency of the L1 trigger;</li>
+<li>high-speed readout links to interface with the 10 Gb/s low power GBT (LpGBT)serialiser</li>
+<li>low power</li>
+<li>compensation for leakeage current</li>
+<li>high-rad resistance</li>
+</ul>
+</div>
+
+<div id="outline-container-org12c5038" class="outline-3">
+<h3 id="org12c5038">HGCROC:</h3>
+<div class="outline-text-3" id="text-org12c5038">
+<ul class="org-ul">
+<li>measures the charge and the time of arrival at 40 MHz frequency.</li>
+</ul>
+<ul class="org-ul">
+<li>Charge is measured in two ways:
+<ul class="org-ul">
+<li>10b ADC for small charges upto ~150 fC</li>
+<li>ToT for larger charges above 50 fC with 12b TDC up to 10 pC</li>
+</ul></li>
+</ul>
+
+<p>
+The ToT front-end results in dead time for sensor cells with signals larger than than 250 fC.The length of the dead time depends on the signal size, and extends to 250 ns for a cell with 10 pC deposited.
+</p>
+
+<p>
+The HGCROC comprises 78 channels (72 reading out standard cells, 2 reading out calibration cells, and 4 channels not connected to any sensor cells for common-mode noise estimation)
+</p>
+
+<p>
+The power consumption of the HGCROC is estimated to be ≈14 mW per channel.
+</p>
+</div>
+</div>
+<div id="outline-container-orgce68aae" class="outline-3">
+<h3 id="orgce68aae">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org5af9709" class="outline-3">
+<h3 id="org5af9709">Links:</h3>
+<div class="outline-text-3" id="text-org5af9709">
+<p>
+202408151707
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

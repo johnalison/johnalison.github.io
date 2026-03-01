@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU 4b Chats</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU 4b Chats</h1>
+
+<div id="outline-container-org71a5b2d" class="outline-2">
+<h2 id="org71a5b2d"><a href="run3_hemisphere_mixing-20260109085909.html#ID-D6E069B2-B80F-4FC2-A261-109BD9D47815">02 February 2026 Monday</a></h2>
+<div class="outline-text-2" id="text-org71a5b2d">
+<ul class="org-ul">
+<li>AE: JCM woes</li>
+<li>CL: updating the container and docs for the classifier</li>
+<li>SM: Skimming ttbar</li>
+<li>LZ: going to merge master and look into runing on PF cands</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org091ed48" class="outline-2">
+<h2 id="org091ed48"><a href="../Journal/2026/01-January/26-January-2026-Monday.html#ID-8220D944-F912-4495-8E39-8CCE1685B4E3">26 January 2026 Monday</a></h2>
+<div class="outline-text-2" id="text-org091ed48">
+<ul class="org-ul">
+<li>Lei Zhao: Presentation of Boosted Synthetic</li>
+<li>SM: Went over her skimmer 1k lines long
+TTBar / Data skims : 4-jets / 2-jet + lepton</li>
+<li>AE: Working low pT anlaysis</li>
+<li>CL: Going to do some classifier docs</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgf6938e7" class="outline-2">
+<h2 id="orgf6938e7"><a href="../Journal/2025/11-November/10-November-2025-Monday.html#ID-0E36DABE-7D58-4BEF-A97D-66155B9AC9F2">10 November 2025 Monday</a></h2>
+<div class="outline-text-2" id="text-orgf6938e7">
+<ul class="org-ul">
+<li>AE: Starting to think about Low pt again</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org248f958" class="outline-2">
+<h2 id="org248f958"><a href="../Journal/2025/10-October/20-October-2025-Monday.html#ID-593C2438-CE14-4C22-A351-4B0349196135">20 October 2025 Monday</a></h2>
+<div class="outline-text-2" id="text-org248f958">
+<ul class="org-ul">
+<li>AE: finding problems with anamolously large weights</li>
+<li>SM: Looking into the trigger turn ons.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org949fe07" class="outline-2">
+<h2 id="org949fe07"><a href="../Journal/2025/10-October/13-October-2025-Monday.html#ID-4A500EF0-F728-47C8-8259-DC97A9E93E7A">13 October 2025 Monday</a></h2>
+<div class="outline-text-2" id="text-org949fe07">
+<p>
+AE: VBF puzzle. expecting 103 but see 75, think its because of change in systematic corelation
+       AE to give approval talk on Friday
+SM: Run3 HH4b SvB looks very different from Run2 HH4b. Need to compare
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgdf28e70" class="outline-2">
+<h2 id="orgdf28e70"><a href="../Journal/2025/10-October/06-October-2025-Monday.html#ID-88BA104A-4049-46A3-9185-E6D0E7BF2A58">06 October 2025 Monday</a></h2>
+<div class="outline-text-2" id="text-orgdf28e70">
+<p>
+AE: Close to having the VBF results
+SM: Has skims
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2924d72" class="outline-2">
+<h2 id="org2924d72"><a href="../Journal/2025/09-September/29-September-2025-Monday.html#ID-2DEE5BC9-7DC8-48A9-AB26-78DD44204FE6">29 September 2025 Monday</a></h2>
+<div class="outline-text-2" id="text-org2924d72">
+<ul class="org-ul">
+<li>VBF samples done&#x2026;</li>
+<li>Low pt the next step</li>
+<li>Sindhu to start with the trigger studies</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0052a65" class="outline-2">
+<h2 id="org0052a65"><a href="../Journal/2025/09-September/22-September-2025-Monday.html#ID-43109EE8-6DF2-4474-AA64-222EA459761A">22 September 2025 Monday</a></h2>
+<div class="outline-text-2" id="text-org0052a65">
+<ul class="org-ul">
+<li>Need AUX material captions</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5018211" class="outline-2">
+<h2 id="org5018211"><a href="../Journal/2025/05-May/30-May-2025-Friday.html#ID-85F8A980-7B09-4F5D-AE36-BCD38F6B390C">30 May 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-org5018211">
+<ul class="org-ul">
+<li>AE: redoing boosted skims / Low pt</li>
+<li>JA: Synthetic data</li>
+<li>CL: Not much &#x2026; will send documentation</li>
+<li>SM: Working on closure will make an SvB cut</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd5f217b" class="outline-2">
+<h2 id="orgd5f217b"><a href="../Journal/2025/05-May/02-May-2025-Friday.html#ID-074F5120-BA02-475D-9D89-EA017081347D">02 May 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-orgd5f217b">
+<ul class="org-ul">
+<li>SM: NEEDS TO MAKE SLIDES!!!!</li>
+<li>AE: understanding JCM code</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcf3c530" class="outline-2">
+<h2 id="orgcf3c530"><a href="../Journal/2025/04-April/18-April-2025-Friday.html#ID-76AF4685-D152-441F-9729-F9D17612F92C">18 April 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-orgcf3c530">
+<ul class="org-ul">
+<li>JA: working Cut flow</li>
+<li>AE: Starting low pt</li>
+<li>CL: Getting FvT and SvB running on new skims</li>
+<li>SM: working double peak</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbd9a3c7" class="outline-2">
+<h2 id="orgbd9a3c7"><a href="../Journal/2025/04-April/11-April-2025-Friday.html#ID-CDAA4234-8BE6-4F9D-A4E5-B5B40371E417">11 April 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-orgbd9a3c7">
+<ul class="org-ul">
+<li>AE Debugging skims</li>
+<li>Send thesis</li>
+<li>JA:  Bootstrapping looks good / on to cutflow debugging</li>
+<li>SM: Still not getting it</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdcb5259" class="outline-2">
+<h2 id="orgdcb5259"><a href="../Journal/2025/03-March/28-March-2025-Friday.html#ID-59B61F28-D367-C543-973A-BAE3E5337BB0">28 March 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-orgdcb5259">
+<ul class="org-ul">
+<li>AE: low pt selection</li>
+<li>SM: memory errors</li>
+<li>CL: not much</li>
+<li>JA: new AN and synthetic data</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org950ef9b" class="outline-2">
+<h2 id="org950ef9b"><a href="../Journal/2025/02-February/28-February-2025-Friday.html#ID-A3A25744-A62A-4615-B1A7-A3F82892F52B">28 February 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-org950ef9b">
+<ul class="org-ul">
+<li>Virtual</li>
+<li>JA: working on the closure test with the Run2 synthetic dataset, making the Run 3 synthetic dataset, and answering the L2 comments.
+ - The Run2 synthetic closure looks pretty good now, Im still seeing some large FvT weights. Not clear where they are coming from. Chuyan, can you point to me where the event selection is done for the FvT training code ?
+ - The Run3 synthetic data looks good on our side, but Marina still sees big data vs syn-data differences. Im going to debug this with her.
+ - The L2 comments are mostly done. We still need the 2D plots (ΔR vs mass / and nViews vs Mass) &#x2013; which I think AE is working on &#x2013; and the Acc X Eff pltos which I am working on. Seems like the trigger weights are not being applied in the cut flow currently, </li>
+<li>AE: Finally, fixed the binning on SvB., I now have to rerun everything (including the boosted combination), but the CERN REANA cluster has been very busy lately. I am figuring it out where to run the jobs and once they are done I need to update all the plots in the AN.
+<ul class="org-ul">
+<li>I need to do a new processor for the 2D plots, and the validation plots with the dileptonic ttbar selection. I am currently working on it.</li>
+<li>On the CMU REANA side, I deployed REANA in our rogue02 and I have been testing it with the test workflows. Everything seems in place, but now I have to figure it out how to include CVFMS, users, accounts, storage area for processing jobs, etc. If I figure it out on time, I might try to run our analysis workflow there. Fingers crossed.</li>
+</ul></li>
+<li>CL:  I am mainly improving the friend tree code to make it easier to use with new coffea and adding a dask-style configuration for the new processor and base classes.</li>
+<li>SM:  reran the analysis with different jet pairings to see if it has an effect on the double peak. I'm rerunning that with just the hh region and its complement in the passDijetMass space. Also ran it with m4j cuts. Apart from that, I've been polishing up some of my slides and creating a writeup in prep for B2G.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga0ab01b" class="outline-2">
+<h2 id="orga0ab01b"><a href="../Journal/2025/02-February/21-February-2025-Friday.html#ID-FDFB2E66-4394-414C-BDC0-FADB00DE1804">21 February 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-orga0ab01b">
+<ul class="org-ul">
+<li>JA: working synthetic data and L2 plots</li>
+<li>AE: rebinning to get the signal flat / will look into redoing 2D plots</li>
+<li>CL: making plots from classifier friend trees</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89d6db0" class="outline-2">
+<h2 id="org89d6db0"><a href="../Journal/2025/02-February/14-February-2025-Friday.html#ID-3CFA9D40-C3A9-4EDF-8813-743C7177E998">14 February 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-org89d6db0">
+<ul class="org-ul">
+<li>AE to make the signal distribution flat,  finishing L2 comments</li>
+<li>JA: needs to debug Synthetic data phase space</li>
+<li>CL: finishing background fits</li>
+<li>SM: putting slides together</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org04e00c8" class="outline-2">
+<h2 id="org04e00c8"><a href="../Journal/2025/02-February/07-February-2025-Friday.html#ID-FE4790E8-4C52-4112-A550-EC2779A3A81C">7 February 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-org04e00c8">
+<ul class="org-ul">
+<li>AE working comments</li>
+<li>CL: fitting new background method</li>
+<li>SM: not much</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org16b0b2d" class="outline-2">
+<h2 id="org16b0b2d"><a href="../Journal/2025/01-January/31-January-2025-Friday.html#ID-17C8A95D-ABFF-48F2-8722-8122214AAA03">31 January 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-org16b0b2d">
+<ul class="org-ul">
+<li>CL some nice SvB Studies &#x2026; Working on new background fit</li>
+<li>AE: Still dont understand klambda fits&#x2026;&lt;font color=red&gt; NOW SOLVED!!! &lt;/font&gt;</li>
+<li>JA: will make 15x synthetic data and try to run the closure</li>
+<li>Will get instructions on friend trees from AE and fitting FvT from CL</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3d77e10" class="outline-2">
+<h2 id="org3d77e10"><a href="../Journal/2025/01-January/24-January-2025-Friday.html#ID-A2500AA2-2FBE-4885-B0E2-BD27AAEF911A">24 January 2025 Friday</a></h2>
+<div class="outline-text-2" id="text-org3d77e10">
+<ul class="org-ul">
+<li>SvB gains from adding other signal k<sub>l</sub> points looks real but small.</li>
+<li>Will check stat only&#x2026; if promising compute systematics</li>
+<li>In parallel CL, will refit FvT x 15 kfolds.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org304fe92" class="outline-2">
+<h2 id="org304fe92"><a href="../Journal/2024/12-December/06-December-2024-Friday.html#ID-F7AFEFEB-AD01-4629-B713-ADFC41A08F39">6 December 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org304fe92">
+<ul class="org-ul">
+<li>AE:  will make friend trees</li>
+<li>AE: updating the AN</li>
+<li>AE: ZZ and ZH fits</li>
+<li>AE: mixed data instead of data for v4.</li>
+<li>JA: Add CL stuff</li>
+<li>CL: More classifier FvT variations</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org92c5376" class="outline-2">
+<h2 id="org92c5376"><a href="../Journal/2024/11-November/22-November-2024-Friday.html#ID-8FFCA55D-CD74-4D38-A544-CB95544A7F13">22 November 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org92c5376">
+<ul class="org-ul">
+<li>Debugging with CL</li>
+<li>FOUND THE pseudoJet Bug !! Very subtle.. see daily log above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8c19ba9" class="outline-2">
+<h2 id="org8c19ba9"><a href="../Journal/2024/11-November/08-November-2024-Friday.html#ID-F25E727B-F619-4107-866D-A17B475724A9">8 November 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org8c19ba9">
+<ul class="org-ul">
+<li>Lots of progress&#x2026; no Sindhu
+[&gt;&gt;] Add ZZ/ZH studies to slides</li>
+<li><a href="HH4b Run2 check consistency of years.html#ID-8CBBF402-5954-4333-ADF9-D32A28979C14">HH4b Run2 check consistency of years</a></li>
+<li>CL good progress on classifier studies: 20 min with data and ttbar</li>
+<li>AE has varible binning fits going</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org78c73a0" class="outline-2">
+<h2 id="org78c73a0"><a href="../Journal/2024/11-November/01-November-2024-Friday.html#ID-18700773-0AC0-496B-A3B7-95A12A8BBDCC">1 November 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org78c73a0">
+<ul class="org-ul">
+<li>Discussed answers to conveeners questions</li>
+<li>Talk in two weeks.
+[&gt;&gt;] John to prepare answers comments
+[&gt;&gt;] CL to send new SvB files .pkl to AE</li>
+<li>CL added singularity instructions to README</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7181172" class="outline-2">
+<h2 id="org7181172"><a href="../Journal/2024/10-October/25-October-2024-Friday.html#ID-A500C044-C3A5-4788-BB8C-A75F489309D3">25 October 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org7181172">
+<ul class="org-ul">
+<li>JA
+<ul class="org-ul">
+<li>send the pickle file with ZZ in the SB</li>
+<li><a href="Setting up Falcon.html#ID-8EDAF592-E453-448F-A0E2-1792F31D33B8">Setting up Falcon</a></li>
+</ul></li>
+<li>AE: 
+<ul class="org-ul">
+<li>Debug limit change: trigger weights</li>
+<li>Low pt: hours to make histograms double</li>
+</ul></li>
+<li>CL: 
+<ul class="org-ul">
+<li>Finished classifier code</li>
+<li>FvT with and without JCM</li>
+<li>Send falcon instructions + data location</li>
+</ul></li>
+<li>SM: 
+<ul class="org-ul">
+<li>Will start putting slides together</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga115b16" class="outline-2">
+<h2 id="orga115b16"><a href="../Journal/2024/09-September/27-September-2024-Friday.html#ID-B0169258-7FFD-492D-B861-6EDF63FB9633">27 September 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-orga115b16">
+<ul class="org-ul">
+<li>CL: Classifier bug: cache sharing clashes.</li>
+<li>AE: close on low pt</li>
+<li>SM: debugging double peak</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org926de35" class="outline-2">
+<h2 id="org926de35"><a href="../Journal/2024/09-September/20-September-2024-Friday.html#ID-4C1D56AF-FB28-4E66-8EC5-5EAD41601C88">20 September 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org926de35">
+<ul class="org-ul">
+<li>AE: Will look into low pt:  3b data with JCM fit to signal in low Pt
+Marina has Run-3 ntuples to try 
+Processor with simple run-3 selection</li>
+<li>CL: debugging the evaluation
+Plot tools and documentation 
+Evaluation code 
+Normalization issue</li>
+<li>JA: Look into boosted synthretic data
+Run-3 skims</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0303c3d" class="outline-2">
+<h2 id="org0303c3d">SM: looking into mhh double peaks</h2>
+</div>
+
+<div id="outline-container-org36eae36" class="outline-2">
+<h2 id="org36eae36"><a href="../Journal/2024/09-September/13-September-2024-Friday.html#ID-B8059191-3CDB-47B0-BE7D-1C80D1C8186B">13 September 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org36eae36">
+<ul class="org-ul">
+<li>SM: Sculpting likely due to nJet and trigger. Will pursue new regions</li>
+<li>CH : Plotting tool / MC samples have the wrong normalization: AE to debug.
+Evaluation part of the classifier.</li>
+<li>AE: Finishing skims. Once finished will pursue low pt</li>
+<li>JA: Building to FvT fits</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org39a9af2" class="outline-2">
+<h2 id="org39a9af2"><a href="../Journal/2024/09-September/06-September-2024-Friday.html#ID-5FAD9871-2844-4D70-A3D7-FDEAF4BB8D48">6 September 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org39a9af2">
+<ul class="org-ul">
+<li><p>
+CL:
+Most parts of the kappa scan plots work fine except for the stacked hists (I am using another plot library so it works in a little bit different way). I am trying to figure it out and I need to resolve some conflicts before merge. I noticed some hists e.g. nPVs, nPVGood, &#x2026; are using Regular axis, maybe Integer axis works better which can be achieved by replacing 
+</p>
+
+<p>
+(101, -0.5, 100.5, (name, label)) with (0, 101, (name, label)).
+</p>
+
+<p>
+I also started testing the evaluation code, but it is not ready yet.
+</p></li>
+
+<li>AE: Has new skims, will make friend trees with trig weights and ttbar reco</li>
+
+<li>JA: Pushing on synthetic datasets.  Need to think about residual mismodelling</li>
+
+<li>SM: Not much progress&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4284b7a" class="outline-2">
+<h2 id="org4284b7a"><a href="../Journal/2024/08-August/30-August-2024-Friday.html#ID-B343CC00-969C-4043-82B6-9258DF7B5BF9">30 August 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org4284b7a">
+<ul class="org-ul">
+<li>AE: trigger troubles &#x2026; JA look into converting c++ to python</li>
+
+<li>SM: Working on X→HH code going. Will look into new scheme for regions</li>
+
+<li>CL: Debugging K<sub>l</sub> scan and writting out of the classifier weights</li>
+
+<li>JA: will look into converting c++ to python</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org34f7621" class="outline-2">
+<h2 id="org34f7621"><a href="../Journal/2024/08-August/23-August-2024-Friday.html#ID-0DFA5C86-A542-4BF9-9E00-53D61632178E">23 August 2024 Friday</a></h2>
+<div class="outline-text-2" id="text-org34f7621">
+<ul class="org-ul">
+<li>No sindhu</li>
+<li>JA: Long discussion of JetDeclustering</li>
+<li>AE:  getting low pt going</li>
+<li>CL working on kl fits ?</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

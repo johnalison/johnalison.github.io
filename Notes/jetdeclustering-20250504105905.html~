@@ -1,0 +1,1825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JetDeClustering</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">JetDeClustering</h1>
+<p>
+Getting the new mixing going
+<a href="jetdeclusteringalgorithm-20250504110934.html#ID-81F11099-A998-406F-AEFD-1B626D15ADC9">JetDeClusteringAlgorithm</a>
+</p>
+
+
+<div id="outline-container-org7d7121b" class="outline-2">
+<h2 id="org7d7121b">Documentation:</h2>
+<div class="outline-text-2" id="text-org7d7121b">
+<p>
+[1st presentation in
+H→bb] <a href="https://indico.cern.ch/event/1429006/#31-run-2-hh4b-hemisphere-metho">https://indico.cern.ch/event/1429006/#31-run-2-hh4b-hemisphere-metho</a>
+</p>
+
+<p>
+(<a href="https://indico.cern.ch/event/1429006/contributions/6030942/attachments/2889527/5065145/SyntheticDataSetsFromJetSplitting.pdf">https://indico.cern.ch/event/1429006/contributions/6030942/attachments/2889527/5065145/SyntheticDataSetsFromJetSplitting.pdf</a>)
+</p>
+<ul class="org-ul">
+<li>Presents the overall idea and the 4b + 0j in 2018 data</li>
+</ul>
+<p>
+[2nd presentation in H→bb](<a href="https://indico.cern.ch/event/1451193/#b-579849-higgs-to-bb">https://indico.cern.ch/event/1451193/#b-579849-higgs-to-bb</a>)
+</p>
+<ul class="org-ul">
+<li>Extension to full Run2 dataset</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgcc6aee0" class="outline-2">
+<h2 id="orgcc6aee0">To Do</h2>
+<div class="outline-text-2" id="text-orgcc6aee0">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Quantify variation among synthetic datasets</li>
+<li>Implement jet mass corrections for final jet pt</li>
+<li class="off"><code>[&#xa0;]</code> Use inverse rho corrections when making pdfs
+<ul class="org-ul">
+<li>ie: recompute jet mass in px = p frame</li>
+<li>correct for pt dependence (through rho) when making the initial pdfs</li>
+</ul></li>
+<li>Try Run-2 synthetic data with lower pt Cut</li>
+<li class="off"><code>[&#xa0;]</code> Compare mixed to synthetic to threeTag</li>
+<li class="off"><code>[&#xa0;]</code> Run-3
+<ul class="org-ul">
+<li>Clustering Test job Running</li>
+<li>Templates by year</li>
+<li>Synthetirc data Test job running</li>
+<li>Plots</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Boosted</li>
+<li class="off"><code>[&#xa0;]</code> Check re-clustering
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Check bj-bj to make sure they can be recovered</li>
+<li class="off"><code>[&#xa0;]</code> pdfs by pt</li>
+<li class="off"><code>[&#xa0;]</code> Compare combined mass</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Read <a href="Do graph neural networks learn traditional jet substructure?.html#ID-E820E312-070C-4635-B324-CBCAD19FCF58">Do graph neural networks learn traditional jet substructure?</a></li>
+<li class="off"><code>[&#xa0;]</code> <a href="ResamplingBug.html#ID-6BB2F160-A0E5-4880-9CA4-5D5F8D786547">ResamplingBug</a></li>
+<li class="off"><code>[&#xa0;]</code> Propagate selJet flag.. then check to make sure pt&gt;40 ect.</li>
+<li class="off"><code>[&#xa0;]</code> Check to make sure that the lepton veto wont kill synthetic jets</li>
+<li class="off"><code>[&#xa0;]</code> cutflow for UL16 nominal vs making synthetic data (eg: all events pass jetMult in synthetic data&#x2026;)</li>
+<li>Make datasets with different seeds. 1/15</li>
+<li class="off"><code>[&#xa0;]</code> Maybe synthetic data with re-weight dR(close) vs dR(other) mass plane ?</li>
+<li class="off"><code>[&#xa0;]</code> Think about how the coordinate changes affect the jet mass
+<a href="https://arxiv.org/pdf/1511.05190">https://arxiv.org/pdf/1511.05190</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org25ccda0" class="outline-2">
+<h2 id="org25ccda0">Ideas:</h2>
+</div>
+<div id="outline-container-org29fae50" class="outline-2">
+<h2 id="org29fae50"><a href="decluster3b.html#ID-A7AEB5D2-402E-4939-9248-C2D22ACAF3D2">decluster3b</a></h2>
+</div>
+<div id="outline-container-orge31d882" class="outline-2">
+<h2 id="orge31d882"><a href="mlforsplittingfunctions-20250504111208.html#ID-2A48C96B-FB7E-4E63-8D38-42958BDEFEF4">MLForSplittingFunctions</a></h2>
+</div>
+<div id="outline-container-org1ac98c7" class="outline-2">
+<h2 id="org1ac98c7">Run on boosted ? [Sub-jet code](<a href="https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/processors/TaggerInference.py#L63-L66">https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/processors/TaggerInference.py#L63-L66</a>)</h2>
+</div>
+<div id="outline-container-org5cd8e5d" class="outline-2">
+<h2 id="org5cd8e5d">(Not the way to go&#x2026; <a href="Recursive Splitting Types.html#ID-33C9CD10-C89C-414D-9B80-11E33560C9C4">Recursive Splitting Types</a>)</h2>
+</div>
+<div id="outline-container-org5481288" class="outline-2">
+<h2 id="org5481288"><a href="Group Splittings Based on Multiplicity.html#ID-7BA9C230-555F-4741-AB46-48CE03D76D13">Group Splittings Based on Multiplicity</a></h2>
+</div>
+<div id="outline-container-org0d27616" class="outline-2">
+<h2 id="org0d27616"><a href="Mass of jets is not invariant.html#ID-9177DBEE-F5EE-4A17-AE70-D568760C5399">Mass of jets is not invariant</a></h2>
+</div>
+
+<div id="outline-container-orgd4269e2" class="outline-2">
+<h2 id="orgd4269e2">Thinking about improving the synthetic data through reweighting</h2>
+<div class="outline-text-2" id="text-orgd4269e2">
+<ul class="org-ul">
+<li>Maybe synthetic data with re-weight dR(close) vs dR(other) mass plane.</li>
+<li>Try 1D distributions first ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc2e4ad4" class="outline-2">
+<h2 id="orgc2e4ad4">Work:</h2>
+<div class="outline-text-2" id="text-orgc2e4ad4">
+<p>
+<a href="script to compare the splittings.html#ID-2EE1F773-2BDF-4393-B66B-F229B3626BB8">script to compare the splittings</a>
+<a href="Script to check reclustered splittings.html#ID-6A7B9CD2-08A7-4713-B472-3AE30CEAEA9F">Script to check reclustered splittings</a>
+<a href="Script to compare synthetic and nominal datasets.html#ID-C3AD9F93-B3AF-4922-A4B4-528F0ECC4533">Script to compare synthetic and nominal datasets</a>
+</p>
+
+<p>
+<a href="Synthetic Data Closure.html#ID-2BBEFB37-264B-4A37-B35D-CEA253614BE2">Synthetic Data Closure</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org135a62e" class="outline-2">
+<h2 id="org135a62e">Performance</h2>
+<div class="outline-text-2" id="text-org135a62e">
+</div>
+<div id="outline-container-org138a6b3" class="outline-3">
+<h3 id="org138a6b3">decluster and cluster</h3>
+<div class="outline-text-3" id="text-org138a6b3">
+<ul class="org-ul">
+<li><b><b>32m30.007s</b></b>. 25 July 2024</li>
+<li><b><b>33m20.966s</b></b> 30 July 2024</li>
+</ul>
+<p>
+- <b><b>56m22.760s</b></b> 2 Aug 4b+2j
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org31116ef" class="outline-3">
+<h3 id="org31116ef">Just clustering:</h3>
+<div class="outline-text-3" id="text-org31116ef">
+<ul class="org-ul">
+<li>4b+2j: <b><b>28m46.523s</b></b></li>
+<li>4b+ Xj (all splittings / trimmed histograms) <b><b>37m0.066s</b></b>. 
+2018 using all non b-jets  <b><b>46m30.667s</b></b></li>
+<li>4b+Xj all years: <b><b>83m53.974s</b></b>
+<b><b>101m24.461s</b></b> 8 Aug 2024
+<b><b>108m52.381s</b></b> 16 Aug with correct jet def</li>
+<li>Signal 1 worker: <b><b>196m47.039s</b></b></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5e2ac0c" class="outline-3">
+<h3 id="org5e2ac0c">Synthetic Datasets</h3>
+<div class="outline-text-3" id="text-org5e2ac0c">
+<ul class="org-ul">
+<li>Inclusive in jet multiplicity (rerunning SvB) <b><b>38m1.994s</b></b></li>
+<li>inclusive in jet multiplicity and all years <b><b>88m46.643s</b></b></li>
+<li>inclusive in jet multiplicty all years, correct jet def: <b><b>114m0.018s</b></b></li>
+<li>with 00-07-01 PDFs <b><b>116m39.358s</b></b></li>
+<li>with 00-07-02 PDFs and dR fix&#x2026;**117m16.100s**</li>
+<li>with 00-07-02 PDFs and retry at 8 &#x2026; <b><b>121m1.577s</b></b></li>
+<li>Above after changes for CI <b><b>117m19.837s</b></b></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org969a046" class="outline-2">
+<h2 id="org969a046">Making Datasets</h2>
+<div class="outline-text-2" id="text-org969a046">
+<ul class="org-ul">
+<li>with 00-07-02 PDFs and retry at 8 &#x2026; <b><b>86m56.847s</b></b></li>
+<li>Above using ttbar subtraction: <b><b>79m44.445s</b></b></li>
+<li><b><b>125m7.120s</b></b></li>
+<li>HH Signal 2 workers <b><b>real    82m51.408s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4ce843a" class="outline-2">
+<h2 id="org4ce843a">Processing Synthetic Datasets</h2>
+<div class="outline-text-2" id="text-org4ce843a">
+<ul class="org-ul">
+<li>with TTbar subtraction: <b><b>2m23.418s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd0e4db3" class="outline-2">
+<h2 id="orgd0e4db3">Splittings PDFs:</h2>
+<div class="outline-text-2" id="text-orgd0e4db3">
+<p>
+<a href="Splitting PDF Archive.html#ID-ACA7BE21-E10D-42BB-AB59-F3400F9F1686">Splitting PDF Archive</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org14c5ba8" class="outline-2">
+<h2 id="org14c5ba8">Daily Logs</h2>
+<div class="outline-text-2" id="text-org14c5ba8">
+</div>
+<div id="outline-container-org678d164" class="outline-3">
+<h3 id="org678d164"><a href="../Journal/2026/01-January/31-January-2026-Saturday.html#ID-ECBC0500-689A-4CEA-AC57-6EDEAAD9F8F7">31 January 2026 Saturday</a></h3>
+<div class="outline-text-3" id="text-org678d164">
+<ul class="org-ul">
+<li>Cleaning up code</li>
+<li><a href="Declustering Algebra.html#ID-227DDDFA-C136-4666-9E40-0A76E4032C9B">Declustering Algebra</a></li>
+<li>Mega clean up&#x2026; with Claude&#x2026; feels so good&#x2026; CIs are key</li>
+<li>CI pased merged</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgdaee630" class="outline-3">
+<h3 id="orgdaee630"><a href="../Journal/2025/03-March/30-March-2025-Sunday.html#ID-6A03D71C-4A9C-DB21-CA91-C59EB966FA4D">30 March 2025 Sunday</a></h3>
+<div class="outline-text-3" id="text-orgdaee630">
+<ul class="org-ul">
+<li>Start bootstrapping studies</li>
+<li>Adding SvB event, run, LB to the output</li>
+<li>Tests look as expected&#x2026;</li>
+<li>Running all on <b><b>cmslpc334</b></b></li>
+<li>Done !</li>
+<li>[&gt;&gt;] Script to compute variances</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7d5d78c" class="outline-3">
+<h3 id="org7d5d78c"><a href="../Journal/2025/03-March/05-March-2025-Wednesday.html#ID-D31CAF5F-088E-7038-A049-422A97DEB38B">5 March 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org7d5d78c">
+<ul class="org-ul">
+<li>on <b><b>cmslpc304</b></b></li>
+<li>Making hists for v9</li>
+<li>Basically no change wrt v8&#x2026; kind of odd</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb690e52" class="outline-3">
+<h3 id="orgb690e52"><a href="../Journal/2025/03-March/04-March-2025-Tuesday.html#ID-7D1A502B-C4ED-54FD-213B-4BEA610EB10A">4 March 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgb690e52">
+<ul class="org-ul">
+<li>Updating pdfs on <b><b>cmslpc341</b></b></li>
+<li>testing
+`python -m unittest jet<sub>clustering.tests.test</sub><sub>clustering.clusteringTestCase.test</sub><sub>declustering</sub><sub>bbjjets</sub>`</li>
+<li>Working through logic to get rotations right</li>
+<li>[&gt;&gt;] Add comments in the code</li>
+<li>Making pdfs
+<ul class="org-ul">
+<li><code>python runner.py -o synthetic_datasets_Run3_wRotatedMass.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix  -op output/synthetic_dataset_cluster  -m metadata/datasets_HH4b_Run3_fourTag_v3.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml --condor</code></li>
+</ul></li>
+<li>Making 00-09-02 PDFs <a href="Splitting PDF Archive.html#ID-ACA7BE21-E10D-42BB-AB59-F3400F9F1686">Splitting PDF Archive</a></li>
+<li>`python  jet<sub>clustering</sub>/make<sub>jet</sub><sub>splitting</sub><sub>PDFs.py</sub> output/synthetic<sub>dataset</sub><sub>cluster</sub>/synthetic<sub>datasets</sub><sub>Run3</sub><sub>wRotatedMass.coffea</sub>  &#x2013;years Run3   &#x2013;out jet<sub>clustering</sub>/jet-splitting-PDFs-00-09-02</li>
+<li>Making v9 with  00-09-02 PDFs on <b><b>cmslpc341</b></b></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3bed967" class="outline-3">
+<h3 id="org3bed967"><a href="../Journal/2025/02-February/24-February-2025-Monday.html#ID-29869433-CD05-404F-983E-D389082DE785">24 February 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org3bed967">
+<p>
+Synthetic dataset presentations with new pdfs
+</p>
+<ul class="org-ul">
+<li>`python  jet<sub>clustering</sub>/compare<sub>datasets.py</sub>  output/synthetic<sub>data</sub><sub>Run3</sub><sub>v6</sub><sub>new</sub><sub>seedXXX.coffea</sub>   &#x2013;out analysis/plots<sub>synthetic</sub><sub>datasets</sub><sub>all</sub><sub>00</sub>-09-00 -m plots/metadata/plotsSyntheticVsData2.yml &#x2013;year Run3`</li>
+<li>`make jetclustering<sub>slides</sub><sub>Run3</sub> TEXFILENAME=SyntheticDatasets-00-09-00 NEW<sub>DIR</sub>=analysis\\/plots<sub>synthetic</sub><sub>datasets</sub><sub>all</sub><sub>00</sub>-09-00`</li>
+<li>`python  jet<sub>clustering</sub>/compare<sub>datasets.py</sub>  output/synthetic<sub>dataset</sub><sub>analyze</sub><sub>all</sub>/synthetic<sub>data</sub><sub>RunII</sub><sub>seedXXX.coffea</sub>    &#x2013;out analysis/plots<sub>synthetic</sub><sub>datasets</sub><sub>all</sub><sub>00</sub>-09-00 -m plots/metadata/plotsSyntheticVsData2.yml &#x2013;year Run2`</li>
+<li>`make jetclustering<sub>slides</sub><sub>RunII</sub> TEXFILENAME=SyntheticDatasets-00-09-00 NEW<sub>DIR</sub>=analysis\\/plots<sub>synthetic</sub><sub>datasets</sub><sub>all</sub><sub>00</sub>-09-00`</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd51e38f" class="outline-3">
+<h3 id="orgd51e38f"><a href="../Journal/2025/02-February/22-February-2025-Saturday.html#ID-CC550E23-A319-4FDB-87EA-5F826DA6C853">22 February 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgd51e38f">
+<ul class="org-ul">
+<li>Run3 pdfs with rho corrections
+<ul class="org-ul">
+<li>`python  jet<sub>clustering</sub>/make<sub>jet</sub><sub>splitting</sub><sub>PDFs.py</sub> output/synthetic<sub>dataset</sub><sub>cluster</sub>/synthetic<sub>datasets</sub><sub>Run3.coffea</sub>  &#x2013;years Run3   &#x2013;out jet<sub>clustering</sub>/jet-splitting-PDFs-00-09-00`</li>
+</ul></li>
+<li>Updating the CI</li>
+<li>Adding Snakemake config for Run3 synthetic datasets</li>
+<li>MERGED!!!!</li>
+<li>[xx] Try rejecting events that fail the kinematic thresholds from the output synthetic datasets ?
+<ul class="org-ul">
+<li>Better to keep them and know they are below threshold</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb8b1a9b" class="outline-3">
+<h3 id="orgb8b1a9b"><a href="../Journal/2025/02-February/21-February-2025-Friday.html#ID-FDFB2E66-4394-414C-BDC0-FADB00DE1804">21 February 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgb8b1a9b">
+<ul class="org-ul">
+<li>[&gt;&gt;] Run3 pdfs with rho corrections</li>
+<li>[&lt;&lt;] Correct for pt dependence (through rho) when making the initial pdfs</li>
+<li>Running on <b><b>cmslpc347</b></b></li>
+<li>Making Run3 pdfs&#x2026; finished in 11068.29407286644s = 3hours
+<ul class="org-ul">
+<li>`python runner.py -o synthetic<sub>datasets</sub><sub>Run3.coffea</sub> -d data  -p analysis/processors/processor<sub>cluster</sub><sub>4b.py</sub> -y 2022<sub>EE</sub> 2022<sub>preEE</sub> 2023<sub>BPix</sub> 2023<sub>preBPix</sub>  -op output/synthetic<sub>dataset</sub><sub>cluster</sub>  -m metadata/datasets<sub>HH4b</sub><sub>Run3</sub><sub>fourTag</sub><sub>v3.yml</sub> -c analysis/metadata/cluster<sub>4b</sub><sub>noTTSubtraction.yml</sub> &#x2013;condor`</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org6e29026" class="outline-3">
+<h3 id="org6e29026"><a href="../Journal/2025/02-February/17-February-2025-Monday.html#ID-0598E3B1-2555-4B73-83BA-6C38FE7E91DB">17 February 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org6e29026">
+<ul class="org-ul">
+<li>Added rhoA and B vs pt</li>
+<li>re-Making the pdfs on <b><b>cmslpc345</b></b></li>
+<li>Job ran out of memory&#x2026; rerunning after killing stalled jobs and removing detailed histograms</li>
+<li>Reordered daily logs</li>
+<li>Adding rhoA and rhoB pdfs</li>
+<li>Making pdfs 00-09-00: including rhoA and rhoB pdfs
+<ul class="org-ul">
+<li>`python  jet<sub>clustering</sub>/make<sub>jet</sub><sub>splitting</sub><sub>PDFs.py</sub> output/synthetic<sub>dataset</sub><sub>cluster</sub>/synthetic<sub>datasets</sub><sub>Run2.coffea</sub>  &#x2013;years RunII   &#x2013;out jet<sub>clustering</sub>/jet-splitting-PDFs-00-09-00`</li>
+</ul></li>
+<li>Only do rho corrections for simple jets ? &#x2026; yes !</li>
+<li>Remaking rhoX templates with better ranges</li>
+<li>Adding the updated mass&#x2026; testing with
+<ul class="org-ul">
+<li>`python -m unittest jet<sub>clustering.tests.test</sub><sub>clustering.clusteringTestCase.test</sub><sub>synthetic</sub><sub>datasets</sub><sub>bbjjets</sub>`</li>
+</ul></li>
+<li>Adding logic to update the mass for only "single jets"&#x2026; seems to be working !</li>
+<li>finalizing jet-splitting-PDFs-00-09-00 with updated rho range.</li>
+<li>Doing declustering on **cmslpc312
+<ul class="org-ul">
+<li>`source .ci-workflows/synthetic-dataset-make-dataset-all.sh `</li>
+</ul></li>
+<li>Done .. in <b><b>57m22.355s</b></b> made "v2" RunII synthetic data</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgb9e5635" class="outline-3">
+<h3 id="orgb9e5635"><a href="../Journal/2025/02-February/16-February-2025-Sunday.html#ID-691D907B-2C33-4DBE-929E-A23CA4DCDA2E">16 February 2025 Sunday</a></h3>
+<div class="outline-text-3" id="text-orgb9e5635">
+<ul class="org-ul">
+<li>[&gt;&gt;] Implement the rho corrections and try again.</li>
+<li>Making the pdfs on <b><b>cmslpc345</b></b>&#x2026; **6664.398930549622**s = 2 hours</li>
+<li>` python runner.py  -o synthetic<sub>datasets</sub><sub>Run2.coffea</sub> -d data  -p analysis/processors/processor<sub>cluster</sub><sub>4b.py</sub> -y UL17 UL18 UL16<sub>preVFP</sub> UL16<sub>postVFP</sub>  -op output/synthetic<sub>dataset</sub><sub>cluster</sub> -m metadata/datasets<sub>HH4b.yml</sub> -c analysis/metadata/cluster<sub>4b.yml</sub>`</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9d00539" class="outline-3">
+<h3 id="org9d00539"><a href="../Journal/2025/02-February/12-February-2025-Wednesday.html#ID-628BDF15-4CFA-482F-8613-A6EB7DAABE87">12 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org9d00539">
+<p>
+Thinking about the rho corrections
+</p>
+<ul class="org-ul">
+<li>Need rho pdfs</li>
+<li>Can update the mass in `def decluster<sub>combined</sub><sub>jets</sub>` in `declustering.py`</li>
+<li>[&gt;&gt;] Need to make pdfs</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc6dec4c" class="outline-3">
+<h3 id="orgc6dec4c"><a href="../Journal/2025/01-January/02-January-2025-Thursday.html#ID-81BAFCBF-7D4F-4FFC-AD3D-45A78C8CA002">2 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgc6dec4c">
+<ul class="org-ul">
+<li>Plots for RunII 30 GeV 
+`py jet<sub>clustering</sub>/compare<sub>datasets.py</sub> hists/synthetic<sub>data</sub><sub>RunII</sub><sub>30GeV</sub><sub>noOverride</sub><sub>seedXXX.coffea</sub> &#x2013;out analysis/plots<sub>synthetic</sub><sub>datasets</sub><sub>all</sub><sub>00</sub>-08-02-RunII<sub>30GeV</sub><sub>noOverride</sub> -m analysis/metadata/plotsSyntheticVsData2.yml`</li>
+<li>Make slides
+`make jetclustering<sub>slides</sub><sub>RunII</sub> TEXFILENAME=SyntheticDatasets-00-08-02<sub>RunII</sub><sub>30GeV</sub><sub>noOverride</sub> NEW<sub>DIR</sub>=analysis\\/plots<sub>synthetic</sub><sub>datasets</sub><sub>all</sub><sub>00</sub>-08-02-RunII<sub>30GeV</sub><sub>noOverride</sub> /Library/Developer/CommandLineTools/usr/bin/make jetclustering<sub>slides</sub><sub>year</sub> YEAR=RunII`</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1f2a191" class="outline-3">
+<h3 id="org1f2a191"><a href="../Journal/2024/10-October/03-October-2024-Thursday.html#ID-746ED24E-9D4C-43C8-A32B-201699789B7F">3 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org1f2a191">
+<ul class="org-ul">
+<li>Running on the 2 mixed samples</li>
+<li>v1 looks much better than v0&#x2026; rerunning v0.</li>
+<li>v0 looks the same as before&#x2026; making a v2</li>
+<li>v2 looks like v1.  Deleted v0 and remaking&#x2026; updated seed as 53x(seed+13).. on <b><b>cmslpc321</b></b></li>
+<li>Seeing that the mixed histograms counts dont match the cutflows !
+<ul class="org-ul">
+<li>Data is OK</li>
+<li><b><b>fixed the issue!</b></b>  Cannot repeat filenames in the datasets.. All the PS data was being counted in v0 (fixed by making copies of the PS data with different file name)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3a0e111" class="outline-3">
+<h3 id="org3a0e111"><a href="../Journal/2024/10-October/02-October-2024-Wednesday.html#ID-DCEBD512-A4DC-477B-AA50-F787153ECFBE">2 October 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org3a0e111">
+<ul class="org-ul">
+<li>make hists w/PS and hT RW.. not clear the RW does much</li>
+<li>update topReconstruction&#x2026; merging</li>
+<li>Making another dataset (seed1)</li>
+<li>I think I finished this for now&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc211f8b" class="outline-3">
+<h3 id="orgc211f8b"><a href="../Journal/2024/10-October/01-October-2024-Tuesday.html#ID-D5DCA12F-0A2C-4F26-8FF9-E2F9D9603C65">1 October 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgc211f8b">
+<ul class="org-ul">
+<li>Rerunning the jet clustering</li>
+<li>reweight hT by year ? 
+<ul class="org-ul">
+<li>do this without PSdata and subtracting ttbar&#x2026;DONE</li>
+<li>Need option for skipping PS data&#x2026;Just commented out files</li>
+<li>Need to make ratios&#x2026; DONE</li>
+<li>Adding code to apply weights&#x2026; DONE</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb8f4595" class="outline-3">
+<h3 id="orgb8f4595"><a href="../Journal/2024/09-September/30-September-2024-Monday.html#ID-8F830B50-5825-4DF0-A0CF-446878A8AE3B">30 September 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-orgb8f4595">
+<ul class="org-ul">
+<li>Added selJets<sub>no</sub><sub>bRegCorr</sub> for btag SFs</li>
+<li>Fixing CI</li>
+<li>[&gt;&gt;] Split compare<sub>datasets</sub> by year</li>
+<li>Debugging cut flow. errors from jit&#x2026; added Exception handling</li>
+<li>Weird cut flow problems&#x2026;MEGA debug</li>
+<li>Turns out a problem with overwriting bRegCor factors.</li>
+<li>More CI debugging&#x2026; MERGED ! Subtle copying bug.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgadbec24" class="outline-3">
+<h3 id="orgadbec24"><a href="../Journal/2024/09-September/27-September-2024-Friday.html#ID-B0169258-7FFD-492D-B861-6EDF63FB9633">27 September 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-orgadbec24">
+<ul class="org-ul">
+<li>Running on synthetic datasets 00-08-00</li>
+<li>Running Reclusterings on <b><b>cmslpc304</b></b>
+[&gt;] Split compare<sub>datasets</sub> by year</li>
+<li>why is the selJet pt biased ?
+<ul class="org-ul">
+<li>bRegCorr not applied to tagged or selJets (only cands)</li>
+<li>Updated code &#x2026; synthetic data now looks closer</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8a1f4ea" class="outline-3">
+<h3 id="org8a1f4ea"><a href="../Journal/2024/09-September/26-September-2024-Thursday.html#ID-892A8AE8-182D-4D78-81D6-E868D76555E2">26 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org8a1f4ea">
+<ul class="org-ul">
+<li>Getting the check reclustering script going.</li>
+<li>Update plots.py to handle 2d histograms with multiple input files</li>
+<li>Making slides of data vs reclustered for all the pdfs</li>
+<li>Make pdfs of the splittings separately by year 00-07-03</li>
+<li>Make clustering hists (noTT) on <b><b>cmslpc304</b></b> with JEC/JER  00-08-00
+<ul class="org-ul">
+<li>Remaking synthetic datasets with 00-08-00 on <b><b>cmslpc304</b></b></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc670dce" class="outline-3">
+<h3 id="orgc670dce"><a href="../Journal/2024/09-September/25-September-2024-Wednesday.html#ID-AA8A9D39-BB6F-40CB-BEEF-598A4236DA19">25 September 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgc670dce">
+<ul class="org-ul">
+<li>Testing declustering time with fourTag data on <b><b>cmslpc340</b></b>&#x2026;. had to turn off ttbar subtraction&#x2026; with 10x lower chunksize</li>
+<li>clustering data (noTT subtraction) on 340&#x2026; 112 m</li>
+<li>clustering with fourTag data &#x2026; crashed.</li>
+<li>clustering synthetic data&#x2026; ran out of memory&#x2026; running w/2 workers on <b><b>cmslpc342</b></b>&#x2026; too long&#x2026; trying 4 workers chunksize 10<sub>000</sub>&#x2026; looks like its working&#x2026;works <b><b>107m59.205s</b></b></li>
+<li>Cleaning up options for processors (factorized into helper function)&#x2026; DONE</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org48ab882" class="outline-3">
+<h3 id="org48ab882"><a href="../Journal/2024/09-September/24-September-2024-Tuesday.html#ID-4A124408-C88F-401B-883E-9B4F0723D2B1">24 September 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org48ab882">
+<ul class="org-ul">
+<li>Fine tuned histogram ranges</li>
+<li>Adding four tag skimmer</li>
+<li>Getting fourtag skimmer running
+<ul class="org-ul">
+<li>Need to update pico output name&#x2026;DONE</li>
+</ul></li>
+<li>running 4b skims on <b><b>cmslpc316</b></b>&#x2026; done</li>
+<li>Trying to run on the skims&#x2026;**3m31.086s**. ! (doing SvB and top reco)</li>
+<li>With 3b data this is &#x2026;. infinite! Fails to run!</li>
+<li>Update plots and slides comparing synthetic vs data</li>
+<li>Testing declustering time with fourTag data on <b><b>cmslpc340</b></b>&#x2026;. had to turn off ttbar subtraction&#x2026; crashed b/c memory</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0840c19" class="outline-3">
+<h3 id="org0840c19"><a href="../Journal/2024/09-September/23-September-2024-Monday.html#ID-789A27FA-0EDC-4335-9531-C15235BA9CC7">23 September 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org0840c19">
+<ul class="org-ul">
+<li>Add year list option to plotting
+[&gt;] Remake plottting to be more flexible re:hist structure ? 
+[&lt;] PDF by year. Probably want an option of grouping them by year&#x2026;</li>
+<li>Benchmark current status of synthetic data
+<ul class="org-ul">
+<li>Updated script to process new syn<sub>vX</sub> running: 
+<a href="Script to compare synthetic and nominal datasets.html#ID-C3AD9F93-B3AF-4922-A4B4-528F0ECC4533">Script to compare synthetic and nominal datasets</a></li>
+<li>Adding ttbar plots to the nominal background samples&#x2026; running out of memory with "fast" reco&#x2026; trying "slow".
+<ul class="org-ul">
+<li>(use histAll ? &#x2026; No doesnt have top<sub>cands</sub>..) Maybe not worth it&#x2026;</li>
+</ul></li>
+</ul></li>
+<li>Starting to fine tune hist ranges&#x2026;</li>
+</ul>
+<p>
+[&gt;] Worth skimming four tag data ?
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfcd63b5" class="outline-3">
+<h3 id="orgfcd63b5"><a href="../Journal/2024/09-September/19-September-2024-Thursday.html#ID-B3E569D4-C737-4656-82F0-6EC1418530A3">19 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgfcd63b5">
+<ul class="org-ul">
+<li>Made nominal data (w/o TT) on <b><b>cmslpc343</b></b></li>
+<li>Made nominal data wTT on <b><b>cmslpc343</b></b></li>
+<li class="off"><code>[&#xa0;]</code> <code>~Script to make synthetic dataset yml (add PSDAta)~</code>
+<ul class="org-ul">
+<li>Will follow whats done with the mixed data instead</li>
+</ul></li>
+<li>Script to make synthetirc datasets with different seeds
+[&lt;] Make datasets with different seeds. 1/15</li>
+<li>Making Synthetic data set seed0 on <b><b>cmslpc343</b></b></li>
+<li>Writing synthetic data output to EOS</li>
+<li>Adding SvB with out FvT weights for plotting.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgad169d4" class="outline-3">
+<h3 id="orgad169d4"><a href="../Journal/2024/09-September/18-September-2024-Wednesday.html#ID-6A2A9E56-0D7D-4BA0-991F-70425962A3D4">18 September 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgad169d4">
+<p>
+Pushed sub-sampling working
+</p>
+<ul class="org-ul">
+<li>Remaking subsample&#x2026; output on EOS&#x2026; Done</li>
+<li>Testing all synthetic data + TT PSdata</li>
+<li>debugging running PS with isSynthetic flag&#x2026;working</li>
+<li>Adding PS data to synthetic dataset via metadata file.</li>
+<li>Made synthetic datasets with and without PSData TT</li>
+<li>Making nominal data (w/o TT) on <b><b>cmslpc343</b></b>&#x2026;. works</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge3c1e47" class="outline-3">
+<h3 id="orge3c1e47"><a href="../Journal/2024/09-September/17-September-2024-Tuesday.html#ID-F704EE0C-BAC9-4CF0-82C5-AE82B68A8D07">17 September 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orge3c1e47">
+<ul class="org-ul">
+<li><a href="Debugging PSdata.html#ID-57549755-2026-47DD-876A-8704623AC42E">Debugging PSdata</a> code have three tag events in `-e UL16<sub>postVFP</sub>  -p ps<sub>data</sub><sub>TTToHadronic</sub>`
+&#x2013;&gt; Solved. B/c of the MC jet calibration
+<ul class="org-ul">
+<li>Should replace jet four vector with calibrated fourvector in psdata
+<ul class="org-ul">
+<li>Done</li>
+</ul></li>
+<li>Need to push</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb61b397" class="outline-3">
+<h3 id="orgb61b397"><a href="../Journal/2024/09-September/16-September-2024-Monday.html#ID-F86C7725-8973-49EF-A1D0-B3D439B2AB53">16 September 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-orgb61b397">
+<ul class="org-ul">
+<li>Add option to script to make `ps<sub>data</sub>` prefix to data</li>
+</ul>
+<p>
+[&lt;] Why are there tag events in the TT PSData ? 
+</p>
+<ul class="org-ul">
+<li>Validated the PSdata</li>
+</ul>
+<p>
+[&lt;] Compare synthetic + PS data data to data 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org62cea31" class="outline-3">
+<h3 id="org62cea31"><a href="../Journal/2024/09-September/14-September-2024-Saturday.html#ID-BC76ED1A-C6CB-4429-957C-0BCCA39B222F">14 September 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-org62cea31">
+<ul class="org-ul">
+<li>Fixing the flags.</li>
+<li>Looks like the cluster code was running the jet calibration ! (should be off)</li>
+<li>Fixing the CI</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6c994c2" class="outline-3">
+<h3 id="org6c994c2"><a href="../Journal/2024/09-September/13-September-2024-Friday.html#ID-B8059191-3CDB-47B0-BE7D-1C80D1C8186B">13 September 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org6c994c2">
+<ul class="org-ul">
+<li>Testing flags for 
+<ul class="org-ul">
+<li>Synthetic data</li>
+<li>PSData</li>
+<li>Mixed data</li>
+<li>TTForMixed</li>
+<li>3bForMixed</li>
+<li>Data</li>
+<li>MC</li>
+</ul></li>
+<li>Committed first version with weights going.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6a534b1" class="outline-3">
+<h3 id="org6a534b1"><a href="../Journal/2024/09-September/12-September-2024-Thursday.html#ID-47B2CB77-47B0-463F-9F38-5D8811AD62F1">12 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org6a534b1">
+<ul class="org-ul">
+<li>Analyzing seed 0&#x2026; looks good. not sure If im seeing as much variation as I would expect. 
+<ul class="org-ul">
+<li>Q: how to test?</li>
+</ul></li>
+<li>Getting the PSData running</li>
+<li>Will move isMixed / isDataForMixed / ect to more granular flags and config via yaml files</li>
+<li>Step one: Granular flags &#x2026; Synthetic data OK / PS Data OK /</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org27ce492" class="outline-3">
+<h3 id="org27ce492"><a href="../Journal/2024/09-September/11-September-2024-Wednesday.html#ID-544CCCFC-D881-4885-B4DC-A9EFB88AF5C5">11 September 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org27ce492">
+<ul class="org-ul">
+<li>Local merge</li>
+<li>Push/merge</li>
+<li>Rerunning all synthetic datasets on <b><b>cmslpc343</b></b>&#x2026; <b><b>117m19.837s</b></b></li>
+<li>Finish draft of MC subsampler</li>
+<li>Move order of MC corrections for declustering (should only affect signal cutflow)</li>
+<li>Got subsampler working</li>
+<li>Full dataset (TTbar all year) &#x2026; <b><b>11m38.034s</b></b></li>
+<li>More clean up to DeCluster code</li>
+<li>Remaking synthetic datasets with seed0 &#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org97c74a2" class="outline-3">
+<h3 id="org97c74a2"><a href="../Journal/2024/09-September/10-September-2024-Tuesday.html#ID-0531D856-496D-471A-AA94-E36CF8254D5B">10 September 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org97c74a2">
+<ul class="org-ul">
+<li>Debugging cutflow.  Input events are the same.  Some of the declustered Jet Pts are different.</li>
+<li>wrote helper function to output debug info</li>
+<li>All of the input pt are the same!!</li>
+<li>All of the clustered pts are the same!!</li>
+<li>Maybe the splittings are not ordered ???</li>
+<li>The declustered jet pt are Different!&#x2026; problem was with rounding</li>
+<li>Fixed with rounding the eta, phi and pt values!</li>
+<li>Checking cutflow</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4ead2a4" class="outline-3">
+<h3 id="org4ead2a4"><a href="../Journal/2024/09-September/09-September-2024-Monday.html#ID-16FB9397-F48B-4F74-9B4C-F0102CE2E0A9">9 September 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org4ead2a4">
+<ul class="org-ul">
+<li>Make data presentation with outputs from new code</li>
+<li>Remaking data inputs on <b><b>cmslpc348</b></b></li>
+<li>Start code for ttbar PSdata</li>
+<li>Add cut flow CI test for analyze test
+<ul class="org-ul">
+<li>Problem with seeds in candidate jet selection</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc80a9fb" class="outline-3">
+<h3 id="orgc80a9fb"><a href="../Journal/2024/09-September/08-September-2024-Sunday.html#ID-CFAB3EF1-F2F1-44BB-A878-9D24C902EC1F">8 September 2024 Sunday</a></h3>
+<div class="outline-text-3" id="text-orgc80a9fb">
+<ul class="org-ul">
+<li>Trying to propagate sumw when skimming picos correctly</li>
+<li>Testing on 304&#x2026; works !!!</li>
+<li>pushing</li>
+<li>Will clean up old declustering code</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf911b36" class="outline-3">
+<h3 id="orgf911b36"><a href="../Journal/2024/09-September/07-September-2024-Saturday.html#ID-75BF801F-E55F-4347-8C45-D9E2AEC04904">7 September 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgf911b36">
+<ul class="org-ul">
+<li>MC weights seem off&#x2026;. debugging</li>
+<li>Found problem when apply<sub>FvT</sub> flag set to false</li>
+<li>Weights now within factor of 2</li>
+<li>Debugging cutflows&#x2026; rerunning without ttbar veto 
+[&lt;] Why is the cutflow for UL16 off (eg: all events pass jetMult in synthetic data&#x2026;)</li>
+<li>UL17 off b/c of problem propogating the sumw weights</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc2bf8df" class="outline-3">
+<h3 id="orgc2bf8df"><a href="../Journal/2024/09-September/06-September-2024-Friday.html#ID-5FAD9871-2844-4D70-A3D7-FDEAF4BB8D48">6 September 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-orgc2bf8df">
+<ul class="org-ul">
+<li>cleaning code, pushed</li>
+<li>Verify new declustering on signal
+<ul class="org-ul">
+<li>On Sunday</li>
+</ul></li>
+<li>Automated the overwriting of auxiliary jet branches &#x2026; Needed for MC/data differences</li>
+<li>How to remove branches from skims? 
+<ul class="org-ul">
+<li>A: skip<sub>branches</sub> in config</li>
+<li>Can this be done dynamically ?  think so&#x2026;.yes DONE</li>
+</ul></li>
+<li>Running the HH declustering &#x2026; failed b/c memory ?</li>
+<li>Testing in tmux 335..out of memory&#x2026; Retrying <b><b>cmslpc304</b></b> with 2 workers &#x2026; works <b><b>real    82m51.408s</b></b></li>
+<li>save sumw2 from input metadata 
+<ul class="org-ul">
+<li>Done&#x2026;is actually now being added when subjobs, need to just write it at end</li>
+</ul></li>
+<li>What about trig weights? 
+<ul class="org-ul">
+<li>Added trig weights to output file</li>
+</ul></li>
+<li>Need to propagate the btagging weights&#x2026; Done</li>
+<li>Added CI for analyzing the synthetic datasets&#x2026; Need to fix&#x2026;.Done</li>
+<li>Making signal synthetic datasets on  <b><b>cmslpc304</b></b>&#x2026; ran in <b><b>82m15.656s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org93d6b3e" class="outline-3">
+<h3 id="org93d6b3e"><a href="../Journal/2024/09-September/05-September-2024-Thursday.html#ID-311B0821-4121-4480-B616-068BA4E33E42">5 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org93d6b3e">
+<ul class="org-ul">
+<li>Try dictionary the do floats.. fails.</li>
+<li>Might be able to do arrays ?  &#x2026; Nope</li>
+<li>Going to strings</li>
+<li>Implemented the propogation of btagging scores via strings</li>
+<li>Testing on <b><b>346</b></b>&#x2026; ran**120m3.708s**</li>
+<li>Running analyzer</li>
+<li>TTbar subtraction for nominal</li>
+<li>bTag weights now look good&#x2026; but dont make much of a difference.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org63c0e94" class="outline-3">
+<h3 id="org63c0e94"><a href="../Journal/2024/09-September/04-September-2024-Wednesday.html#ID-30DB7742-50CC-4F64-BAE0-1768A49B0482">4 September 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org63c0e94">
+<ul class="org-ul">
+<li>cleaning up code</li>
+<li>Clean dumpTestVectors functions</li>
+<li>Now propagating the btagging scores !! (need to validate)</li>
+<li>Testing on <b><b>cmslpc307</b></b> &#x2026; crashes with  <b><b>RuntimeError: FIXME: handle UnionArray with more than</b></b> <b><b>127</b></b> <b><b>contents</b></b>
+<ul class="org-ul">
+<li>Might have to use strings instead of tuples&#x2026;</li>
+</ul></li>
+<li>Have test script that reproduces the problem&#x2026;sent mail to CL/AE</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org387458c" class="outline-3">
+<h3 id="org387458c"><a href="../Journal/2024/09-September/03-September-2024-Tuesday.html#ID-7510EBEF-5FA5-4A38-B98F-D732E59885D0">3 September 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org387458c">
+<ul class="org-ul">
+<li>remaking inputs with ttbar subtraction on <b><b>cmslpc338</b></b></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6c4aca5" class="outline-3">
+<h3 id="org6c4aca5"><a href="../Journal/2024/08-August/30-August-2024-Friday.html#ID-B343CC00-969C-4043-82B6-9258DF7B5BF9">30 August 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org6c4aca5">
+<ul class="org-ul">
+<li>Testing running on synthetic datasets</li>
+<li>Running on 304</li>
+<li>Finding errors during skimming:</li>
+</ul>
+<p>
+```yaml
+  data<sub>UL16</sub><sub>postVFPG</sub>:
+     count: 877903.0
+     cutFlowFourTag:
+       all: 487725.0
+```
+</p>
+<ul class="org-ul">
+<li>Test if error from picosize = 10 x chunksize (running with both <b><b>100000</b></b>) <b><b>87m59.704s</b></b>
+.. See the same issue</li>
+<li>Now running without max<sub>chunks</sub> = 5&#x2026; Seems to fix the problem!</li>
+<li>Running all years without max<sub>chunks</sub></li>
+<li>Explains why I wasn't seeing all the expected 93 subjobs !</li>
+<li>All good now!</li>
+<li>Cleaning up! .. Need to update systematics cutflow test and analysis-cutflow-job</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc2f5e9e" class="outline-3">
+<h3 id="orgc2f5e9e"><a href="../Journal/2024/08-August/29-August-2024-Thursday.html#ID-48BAF83C-B348-44B6-90C7-38F3446813F9">29 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgc2f5e9e">
+<ul class="org-ul">
+<li>Trying to process picos
+[&lt; ] Randseed via command line</li>
+<li>Update file name based on rand seed</li>
+<li>Remaking input data (left off some 2016 files) &#x2026; <b><b>79m44.445s</b></b></li>
+<li><p>
+Yaml errors from 
+</p>
+<ul class="org-ul">
+<li>- !!python/tuple</li>
+</ul>
+<ul class="org-ul">
+<li>0</li>
+<li>103893</li>
+</ul>
+<ul class="org-ul">
+<li>!!python/tuple
+<ul class="org-ul">
+<li>103893</li>
+<li>207786</li>
+</ul></li>
+<li>!!python/tuple
+<ul class="org-ul">
+<li>207786</li>
+<li>311677</li>
+</ul></li>
+</ul>
+<p>
+[&lt;] Script to create synthetric datasets yaml
+</p>
+<ul class="org-ul">
+<li>Need to merge with existing dataset script to get (at least the data info)</li>
+</ul></li>
+<li>Testing running 
+<ul class="org-ul">
+<li>Running work!</li>
+<li>Need to validate wrt to previous
+<ul class="org-ul">
+<li>Flags for synthetic data</li>
+<li>Keep process "data" for now&#x2026; Update after debugged</li>
+</ul></li>
+</ul></li>
+<li>Start with cutflow!!</li>
+<li>Adding passTTBar to cutFlow</li>
+<li>Running on 304</li>
+<li>Was using the wrong jet calibration on the data.  Rerunning the JetDeclustering (no ttbar subtraction)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org207efc3" class="outline-3">
+<h3 id="org207efc3"><a href="../Journal/2024/08-August/28-August-2024-Wednesday.html#ID-6CF1FDCB-1C7A-41A5-8E94-64D2FC2A23F7">28 August 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org207efc3">
+<ul class="org-ul">
+<li>Added ttbar subtraction to <b><b>Declusterer</b></b></li>
+<li>Added hook for input random number seed</li>
+<li>Added random number seed to output file name</li>
+<li>Added <a href="Reproducible Random Numbers.html#ID-A5EACCA0-D343-49BF-81D1-896E48498156">Reproducible Random Numbers</a> for the ttbar subtraction</li>
+<li>Remaking picos on Running <b><b>cmslpc346</b></b>&#x2026; <b><b>72m35.376s</b></b></li>
+<li>Now on to processing them!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org621c63f" class="outline-3">
+<h3 id="org621c63f"><a href="../Journal/2024/08-August/27-August-2024-Tuesday.html#ID-BC173C0B-6E03-4332-AAA4-B7CF329729D2">27 August 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org621c63f">
+<ul class="org-ul">
+<li>Debugging making of synthetic datasets
+<ul class="org-ul">
+<li>Testing on <b><b>cmslpc306</b></b></li>
+</ul></li>
+<li>Got draft working (problem was jet<sub>flavor</sub> as string)
+<ul class="org-ul">
+<li>Trying with unsigned 8-bit encoding&#x2026; also fails</li>
+</ul></li>
+<li>Pushing first draft of make dataset script</li>
+<li>To Do
+[&gt;] Add random number seed input
+[&gt;] Add random number seed to output file name</li>
+<li>Now running on <b><b>cmslpc337</b></b>. data2018 took <b><b>30m9.774s</b></b></li>
+<li>Running not with full Run-2</li>
+<li>Pushed first version:</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9369ea8" class="outline-3">
+<h3 id="org9369ea8"><a href="../Journal/2024/08-August/26-August-2024-Monday.html#ID-73C2954A-DAC9-4CA3-BE6E-2CE5B83B6D41">26 August 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org9369ea8">
+<ul class="org-ul">
+<li>Starting to look into making synthetic datasets</li>
+<li>Skimmer test job <b><b>source .ci-workflows/skimmer-test-job.sh</b></b>  failing locally.</li>
+<li>Trying without &#x2013;dask&#x2026; works without dask!</li>
+<li>Questions:
+<ul class="org-ul">
+<li>How to turn off chunking ? Crank up picoSize ? &#x2026; fails if picoSize 10x</li>
+<li>Now 10x pico size works ! only one output file&#x2026; GOOD</li>
+</ul></li>
+<li>To Do
+<ul class="org-ul">
+<li>Turn off unneeded branches (eg: ZHSR, SB&#x2026;)</li>
+</ul></li>
+<li>Got first dummy draft working&#x2026; now fails when declustering</li>
+<li>Testing on <b><b>cmslpc306</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbb327be" class="outline-3">
+<h3 id="orgbb327be"><a href="../Journal/2024/08-August/24-August-2024-Saturday.html#ID-F1BDA9ED-26F0-4D80-A9FD-FFA394F12BFF">24 August 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgbb327be">
+<ul class="org-ul">
+<li>Fix for random numbers.</li>
+<li>Trying on <b><b>cmslpc337</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgae54d29" class="outline-3">
+<h3 id="orgae54d29"><a href="../Journal/2024/08-August/23-August-2024-Friday.html#ID-0DFA5C86-A542-4BF9-9E00-53D61632178E">23 August 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-orgae54d29">
+<ul class="org-ul">
+<li>Checked dR results.  Working !  Looks like random numbers are not</li>
+<li>Trying again with old random number set up</li>
+<li>dR looks good now!</li>
+<li>Need to fix random numbers (probably add more than just pt)</li>
+<li>Send slides around</li>
+<li>Trying with max retries set to 8&#x2026;**121m1.577s**</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org78c13db" class="outline-3">
+<h3 id="org78c13db"><a href="../Journal/2024/08-August/22-August-2024-Thursday.html#ID-90F2731A-7196-4BC6-80D1-2403C6DE8B79">22 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org78c13db">
+<ul class="org-ul">
+<li>Back to trying to fix ΔR&#x2026;</li>
+<li>Found a way to mask and write the jets</li>
+<li>Starting to impement consistent random numbers
+<ul class="org-ul">
+<li>Looking into code</li>
+</ul></li>
+<li>think I finally got the global dR working !!!!!</li>
+<li>Fixed a bug in the eta check of one of the bs</li>
+<li>Deculstering on <b><b>cmslpc305</b></b>&#x2026;failed.. now on <b><b>cmslpc340</b></b>&#x2026; <b><b>117m16.100s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6585408" class="outline-3">
+<h3 id="org6585408"><a href="../Journal/2024/08-August/20-August-2024-Tuesday.html#ID-22433AA0-A4E9-4F80-8926-02255F9E8B9E">20 August 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org6585408">
+<ul class="org-ul">
+<li>Adding ttbar subtraction &#x2026; troubles adding a cut to selev
+<ul class="org-ul">
+<li>Figured it out, a la binding in processor<sub>HH4b</sub></li>
+<li>Need to read in old SvB&#x2026; do ttbar veto&#x2026; DONE</li>
+<li>Then calculate new SvB &#x2026; DONE</li>
+<li>Need to test</li>
+</ul></li>
+<li>Added ttbar subtraction to clustering processor</li>
+<li>running clustering on <b><b>cmslpc328</b></b>  will make pdfs 00-07-02</li>
+<li>running the declustering on 328 &#x2026; <b><b>109m46.045s</b></b></li>
+<li>Made plots with ttbar subtraction&#x2026; not</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge165756" class="outline-3">
+<h3 id="orge165756"><a href="../Journal/2024/08-August/19-August-2024-Monday.html#ID-DB5A7B65-142B-4C01-8F2F-B5492ABD41E0">19 August 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-orge165756">
+<p>
+update presentations with hT and top reco
+</p>
+<ul class="org-ul">
+<li>Adding a fix (?) for jet selection (int to bools) for the hT calculation 
+<ul class="org-ul">
+<li>Did indeed fix the hT Calculation</li>
+</ul></li>
+<li>Running on <b><b>cmslpc333</b></b></li>
+<li>randomize assignment of deepJet scores to fix (?) top reconstruction.
+<ul class="org-ul">
+<li>Did indeed fix the top reconstruction!  Next to tt<sub>vs</sub><sub>mj</sub>!</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0bcb7cb" class="outline-3">
+<h3 id="org0bcb7cb"><a href="../Journal/2024/08-August/18-August-2024-Sunday.html#ID-9A54D9BB-B7E3-4D28-BCDF-D0E4AF9E8AF8">18 August 2024 Sunday</a></h3>
+<div class="outline-text-3" id="text-org0bcb7cb">
+<ul class="org-ul">
+<li>declustering all years w/slow top Can reconstruction: <b><b>123m41.618s</b></b> with 4 workers</li>
+<li>Added hT hists and compute properly in declustered jets</li>
+<li>setup top reconstruction to used declustered jets</li>
+<li>running again &#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org548ed1b" class="outline-3">
+<h3 id="org548ed1b"><a href="../Journal/2024/08-August/17-August-2024-Saturday.html#ID-95DA7D11-9E6E-41C2-BB38-273221F65F49">17 August 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-org548ed1b">
+<ul class="org-ul">
+<li>Adding tt<sub>vs</sub><sub>mj</sub></li>
+<li>Turning on top reco ("fast") for declustering</li>
+<li>running on <b><b>cmslpc306</b></b> &#x2026; cannot connect &#x2026; looks like ran out of memory</li>
+<li>re running on <b><b>cmslpc337</b></b> &#x2026; ran out of memory&#x2026; Try with 2 workers on 337</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd5372a4" class="outline-3">
+<h3 id="orgd5372a4"><a href="../Journal/2024/08-August/16-August-2024-Friday.html#ID-5A005609-8E70-4AAC-A504-2051A3645D04">16 August 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-orgd5372a4">
+<ul class="org-ul">
+<li>Add hist to count the number of clustered jets</li>
+<li>Add more PDF ranges</li>
+<li>Running clustering on <b><b>cmslpc306</b></b>&#x2026;.**108m52.381s**</li>
+<li>Fine tuning pdfs</li>
+<li>Made pdf set 00-07-01 with the ranges tuned</li>
+<li>Running the declustering&#x2026; done <b><b>116m39.358s</b></b></li>
+<li>clustered data looks great!</li>
+<li>Declustering signal on <b><b>cmslpc306</b></b>&#x2026; <b><b>196m47.039s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb237d34" class="outline-3">
+<h3 id="orgb237d34"><a href="../Journal/2024/08-August/14-August-2024-Wednesday.html#ID-6D19F965-AC9F-441A-A7E1-2977357C87AD">14 August 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgb237d34">
+<p>
+Declustering signal on <b><b>cmslpc308</b></b> w/ 2 workers failed&#x2026; 1 worked failed :( 
+</p>
+<ul class="org-ul">
+<li>running now with 1 on <b><b>cmslpc333</b></b>.. Ran</li>
+<li>Adding plots to slides</li>
+<li>Sent first draft of slides to CMU group</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1a39d3e" class="outline-3">
+<h3 id="org1a39d3e"><a href="../Journal/2024/08-August/13-August-2024-Tuesday.html#ID-01E7679B-40B1-471A-8628-8C8BDD857C72">13 August 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org1a39d3e">
+<ul class="org-ul">
+<li>Declustering all on <b><b>cmslpc308</b></b> finished in <b><b>109m23.402s</b></b></li>
+<li>Iterating on Slides</li>
+<li>Idea for <a href="Recursive Splitting Types.html#ID-33C9CD10-C89C-414D-9B80-11E33560C9C4">Recursive Splitting Types</a></li>
+<li>Implemented new splitting scheme&#x2026; 
+<ul class="org-ul">
+<li>only 55 splitting types before groupings</li>
+<li>after groupings got it down to 21</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org1531e88" class="outline-2">
+<h2 id="org1531e88">Rerunning clustering with new splitting scheme</h2>
+</div>
+<div id="outline-container-org410dd96" class="outline-2">
+<h2 id="org410dd96">Making new PDFs 00-07-00</h2>
+</div>
+<div id="outline-container-org553407f" class="outline-2">
+<h2 id="org553407f">Running Declustering with new PDFs</h2>
+<div class="outline-text-2" id="text-org553407f">
+<ul class="org-ul">
+<li>Looks good</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org66157d8" class="outline-2">
+<h2 id="org66157d8">Declustering signal on <b><b>cmslpc308</b></b> &#x2026; trying 2 workers</h2>
+<div class="outline-text-2" id="text-org66157d8">
+</div>
+<div id="outline-container-org375813f" class="outline-3">
+<h3 id="org375813f"><a href="../Journal/2024/08-August/12-August-2024-Monday.html#ID-4378A824-344F-4E4F-B0AB-73A7ABD3C95F">12 August 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org375813f">
+<ul class="org-ul">
+<li>Update declustering to use new groupings</li>
+<li>Declustering  2018 on&#x2026;**cmslpc313** &#x2026;crashed ? &#x2026; now on <b><b>cmslpc308</b></b></li>
+<li>Now running all years&#x2026;**114m0.018s**</li>
+<li>Declustering the signal on <b><b>cmslpc308</b></b>&#x2026; failed.. running with 1 worker!</li>
+<li>Data and Signal declustering look good!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org38ac4a5" class="outline-3">
+<h3 id="org38ac4a5"><a href="../Journal/2024/08-August/10-August-2024-Saturday.html#ID-8814E019-E113-4EF9-8042-D2351359241A">10 August 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-org38ac4a5">
+<ul class="org-ul">
+<li>Making PDFs with all year, new jet multiplicity</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org580e2d8" class="outline-3">
+<h3 id="org580e2d8"><a href="../Journal/2024/08-August/09-August-2024-Friday.html#ID-77C5592A-D86B-4C64-AF84-5EC00BB5BC95">9 August 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org580e2d8">
+<ul class="org-ul">
+<li>Fixed the extra jet treatment for clustering.</li>
+<li>Re:clustering Run2 on <b><b>cmslpc328</b></b> &#x2026; fails
+<ul class="org-ul">
+<li>Rerunning 18 only &#x2026; works <b><b>46m30.667s</b></b></li>
+</ul></li>
+<li>Fixed the extra jet treatment for declustering</li>
+<li>making PDFs 18 with new jet def &#x2026; 00-06-00
+<ul class="org-ul">
+<li><b><b>155</b></b> splittings!</li>
+</ul></li>
+<li>Scheme to combine splittings.
+<ul class="org-ul">
+<li>1st version of code to do groupings 155 -&gt; 49</li>
+</ul></li>
+<li>Start implementing jet splitting names in the clustering.</li>
+<li>Running clustering with splitting categories all years on <b><b>cmslpc310</b></b> &#x2026; failed out of memory
+<ul class="org-ul">
+<li>Trying just 18 again&#x2026;works&#x2026;**47m44.662s**</li>
+<li>PDFs with new grouping&#x2026; 00-06-01</li>
+</ul></li>
+<li>Took out jet ISR cleaning &#x2026; might need to put it back!
+<ul class="org-ul">
+<li>PDFs with new groupings</li>
+</ul></li>
+<li>Added back the ISR cleaning</li>
+<li>Trying all years again <b><b>cmslpc310</b></b>.. works <b><b>110m3.378s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org642f19c" class="outline-3">
+<h3 id="org642f19c"><a href="../Journal/2024/08-August/08-August-2024-Thursday.html#ID-01047EF1-EA74-40C4-B133-F99CF5755013">8 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org642f19c">
+<ul class="org-ul">
+<li>Debugging `(bj)((jj)b)` splittings
+<ul class="org-ul">
+<li>ERROR in combine particle logic &#x2026; FIXED.</li>
+</ul></li>
+<li>Speed up tests by loading the ymal in init</li>
+<li>Making plot of clustering multiplicities</li>
+<li>Remaking the clustering inputs on <b><b>cmslpc314</b></b>&#x2026;.**101m24.461s**</li>
+<li>remade the PDFs 89-&gt;79 different splitting types</li>
+<li>Made function (and test) to calculate splitting summaries</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org881664c" class="outline-3">
+<h3 id="org881664c"><a href="../Journal/2024/08-August/07-August-2024-Wednesday.html#ID-FA7C0DF1-425A-4EC0-80C1-7C8E7666DF37">7 August 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org881664c">
+<p>
+Following up on signal crash when running all years (out of memory) during the synthetic datasets&#x2026; 
+</p>
+<ul class="org-ul">
+<li>2018 signal runs on OK &#x2026;  <b><b>cmslpc331</b></b> in <b><b>26m19.781s</b></b></li>
+<li>Testing 2017 signal works ..  <b><b>26m53.926s</b></b></li>
+<li>Testing 2016 see ERROR on <b><b>UL16<sub>preVFP</sub></b></b> &#x2026; debugging
+<ul class="org-ul">
+<li>-&gt; problem with too small "XXXXXX" string</li>
+</ul></li>
+<li>Now all UL16 runs in  18m36.627s</li>
+<li>Running all signal samples together runs out of memory&#x2026; trying with 3 workers&#x2026;fails
+<ul class="org-ul">
+<li>Trying with 2 workers.. works !  <b><b>72m27.918s</b></b></li>
+</ul></li>
+<li>Making the nominal signal for all years..</li>
+<li>data and signal all years looks good!</li>
+<li>Added CI to make the clustering histograms and the PDFs</li>
+<li>Found the slow down of the testing was do to all the pdf in 00-05-00 vs 00-03-00 !</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfe154a8" class="outline-3">
+<h3 id="orgfe154a8"><a href="../Journal/2024/08-August/06-August-2024-Tuesday.html#ID-3916DA0B-785A-44A9-A3B0-F49037786D98">6 August 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgfe154a8">
+<ul class="org-ul">
+<li>Signal all years crashes b/c splitting not in the data</li>
+<li>Hack for missing input splittings (use the last one)</li>
+<li>Re-running HH4b declustering for all years &#x2026; fails
+<ul class="org-ul">
+<li>Seeing splitting `((bj)`  /  `(((jj)j)j)((bj)` / `40`</li>
+<li>Found Errors, was overflow in "XXXX" replacement (need better fix longterm)</li>
+</ul></li>
+<li>Re-running HH4b declustering for all years &#x2026;  now memory leak somewhere! ?
+<ul class="org-ul">
+<li>===&gt; No, turns out much slower with 00-05-00</li>
+</ul></li>
+<li>Updating slides with new declustering</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org636cef3" class="outline-3">
+<h3 id="org636cef3"><a href="../Journal/2024/08-August/05-August-2024-Monday.html#ID-236D61DD-8647-4098-AA7D-5D17FB2E3FDE">5 August 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org636cef3">
+<ul class="org-ul">
+<li>Cant run jobs&#x2026; can do test jobs!</li>
+<li>Try to optimize with <a href="Numba.html#ID-D1984C45-0AB0-49E1-9C2F-B4338AA5DD29">Numba</a>&#x2026; Not much improvement</li>
+<li>Added a profiler to the test job&#x2026; not clear where we can gain</li>
+<li>EOS back!</li>
+<li>Made PDFs for inclusive jet multiplicities: <b><b>jet-splitting-PDFs-00-04-00</b></b></li>
+<li>Running all clustering to check detailed plots</li>
+<li>inclusive Declustering test job works !  with old 00-03-00 pdf</li>
+<li>inclusive Declustering w/ 00-04-00 pdfs  &#x2026; works fine</li>
+<li>inclusive declustering full 18 sample&#x2026;  works with 00-04-00 !</li>
+<li>Bug when making inputs for 00-04-00 (random comb jet flavor order) &#x2026; remaking</li>
+<li>Declustered data look good !</li>
+<li>Declustered signal looks GOOD !!</li>
+<li>Scaling up clustering to all years running on <b><b>cmslpc329</b></b>&#x2026; 84mins</li>
+<li>Making PDFs from all years  00-05-00</li>
+<li>Scaling up declustering to all years running on <b><b>cmslpc329</b></b>&#x2026;**88m46.643s**</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org116533f" class="outline-3">
+<h3 id="org116533f"><a href="../Journal/2024/08-August/04-August-2024-Sunday.html#ID-07F9CE5F-5D7E-4E33-93CA-723DD8AB6157">4 August 2024 Sunday</a></h3>
+<div class="outline-text-3" id="text-org116533f">
+<ul class="org-ul">
+<li>running all clustering functions on <b><b>cmslpc329</b></b></li>
+<li>update <b><b>make<sub>jet</sub><sub>splitting</sub><sub>PDFs.py</sub></b></b> to automatically plot all splittings with some rought logic as to which histograms to use</li>
+<li>Failure of test script&#x2026;Seems like data not available at LPC</li>
+</ul>
+<p>
+```bash
+OSError: XRootD error: [ERROR] Operation expired                                 
+in file root://cmseos.fnal.gov//store/user/algomez/XX4b/20231115/data2018D/picoAOD.root
+```
+</p>
+<ul class="org-ul">
+<li>`&gt; xrdcp root://cmseos.fnal.gov//store/user/algomez/XX4b/20231115/data2018D/picoAOD.root .` fails</li>
+<li>So does `eosls /store/user/algomez/XX4b/20231115/data2018D/`</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfa0dc8d" class="outline-3">
+<h3 id="orgfa0dc8d"><a href="../Journal/2024/08-August/03-August-2024-Saturday.html#ID-54B8F519-176E-4DB4-8A54-1170F958998D">3 August 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgfa0dc8d">
+<ul class="org-ul">
+<li>cluster all jets run with 4 workers after</li>
+</ul>
+<ul class="org-ul">
+<li>Added logic to only plot splittings that are part of non-ISR splittings
+<ul class="org-ul">
+<li>Had 144 splittings types before &#x2014;&gt; now 66</li>
+</ul></li>
+<li>Added details clustering plots</li>
+<li>update <b><b>make<sub>jet</sub><sub>splitting</sub><sub>PDFs.py</sub></b></b> to only expect basic clustering plots</li>
+<li><p>
+new script (<b><b>jet<sub>splitting</sub><sub>study.py</sub></b></b> ) to process detailed plots
+</p>
+
+<p>
+** <a href="../Journal/2024/08-August/02-August-2024-Friday.html#ID-2EBFB628-028E-461C-9750-EFCB745A55DA">2 August 2024 Friday</a> (Evening Session)
+tried clustering with upto 8 jets &#x2026; No problem on test job!
+</p></li>
+<li>tried clustering with no nJet limit &#x2026;No problem on test job!</li>
+<li>Running all clustering on <b><b>cmslpc329</b></b>
+<ul class="org-ul">
+<li>ran our of memory with 4 workers&#x2026; trying 3 (also failed) &#x2026; trying 2</li>
+<li>Problem was too many histograms (reduced) now trying 2 workers &#x2026; WORKs</li>
+<li>Now trying again with 4 &#x2026; Works !</li>
+</ul></li>
+<li>Added recursive function to get all the sub-splittings from a given splitting.. will us to reduce the number of splittings I need to plot.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcdec07e" class="outline-3">
+<h3 id="orgcdec07e"><a href="../Journal/2024/08-August/02-August-2024-Friday.html#ID-2EBFB628-028E-461C-9750-EFCB745A55DA">2 August 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-orgcdec07e">
+<ul class="org-ul">
+<li>Made <b><b>make<sub>jet</sub><sub>splitting</sub><sub>PDFs.py</sub></b></b> robust against changing cuts in the histogram file.</li>
+<li>Cleaned configuration of splittings: needed when many varieties</li>
+<li>make input pdfs for 4b + 0,1,2j : <b><b>jet-splitting-PDFs-00-03-00</b></b></li>
+<li>Start working on iterative ISR declustering
+<ul class="org-ul">
+<li>Got it going &#x2026; Easier than I thought.</li>
+</ul></li>
+<li>Check the reclustered splittings.
+<ul class="org-ul">
+<li>Running out of Memory..trying with 2 cores</li>
+<li>Fixed, problem was not the n<sub>cores</sub> but there was another stopped job</li>
+<li>tmux on <b><b>cmslpc312</b></b></li>
+</ul></li>
+<li>Now try to do the declustering with 4b+0,1,2j&#x2026;
+<ul class="org-ul">
+<li>problem with 5 bjets&#x2026; fixed: bug in the min dR ISR-jet to splitting</li>
+<li>tmux on <b><b>cmslpc329</b></b></li>
+<li>Looks DAMN GOOD !!!!  Both data and signal ! LETS GO!!!</li>
+<li>Think its time to go in steps of +2 jets..</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb4cb7e1" class="outline-3">
+<h3 id="orgb4cb7e1"><a href="../Journal/2024/08-August/01-August-2024-Thursday.html#ID-C810DB4E-CAC1-463A-84BB-AB3F46C5D8C7">1 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgb4cb7e1">
+<ul class="org-ul">
+<li>fix children<sub>jet</sub><sub>flavors</sub> to deal with (XX)Y combinations</li>
+<li>Added unittest</li>
+<li>simplified ISR definition (anything splitting that doesnt have bs on both sides is ISR)</li>
+<li>debugging particle order</li>
+<li>Adding nice unit test to verify (FINDING BUGS!!!!)</li>
+<li>Cleaning the parentheses form the children jet flavors</li>
+<li>Now need recursive clean<sub>ISR</sub>
+`['bb', '(bb)(jj)'] -&gt; with ISR cleaning ['bb', 'bb', 'jj']</li>
+<li>clustering test job failing ! 
+<ul class="org-ul">
+<li>Runs in debug&#x2026; think im running out of memory !!!</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4ec6041" class="outline-3">
+<h3 id="org4ec6041"><a href="../Journal/2024/07-July/31-July-2024-Wednesday.html#ID-6040E2D3-BE44-4AAD-B54C-AAC7575238D8">31 July 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org4ec6041">
+<ul class="org-ul">
+<li>got cleanISR to be able to clean more than one type</li>
+<li>Weird s -&gt; str(s) changes (maybe b/c the container changed?)</li>
+<li>made signal plots for new mixing scheme (LOOKS DAMN GOOD!!!!)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8cfaa34" class="outline-3">
+<h3 id="org8cfaa34"><a href="../Journal/2024/07-July/30-July-2024-Tuesday.html#ID-68C0474A-1931-4BB3-B5C2-33B3000B9FA0">30 July 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org8cfaa34">
+<ul class="org-ul">
+<li>Adding plots comparing the input jets to the declustered jets</li>
+<li>Adding b(bj) test to the jet<sub>clustering</sub> test script.</li>
+<li>Found the b(bj) bug!</li>
+<li>was not assigning jet<sub>flavor</sub> correctly when declustering.</li>
+<li>More 4b: Comparing the synthetic data sets in different jet bins.</li>
+<li>test for cleanISR</li>
+<li>will clean bj splittings.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5c611e9" class="outline-3">
+<h3 id="org5c611e9"><a href="../Journal/2024/07-July/29-July-2024-Monday.html#ID-D3673A21-EB05-4C2A-A89A-83928814F061">29 July 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org5c611e9">
+<ul class="org-ul">
+<li>LPC very slow today&#x2026; trying another node 330  (was 334)</li>
+<li>Debugging b(bj) splittings</li>
+<li>Testing the PDFs vs pt</li>
+<li>Writting out jet<sub>splitting</sub> inputs for Berman</li>
+<li>Sent Berman input data for splittings<sub>bb</sub></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb18b893" class="outline-3">
+<h3 id="orgb18b893"><a href="../Journal/2024/07-July/25-July-2024-Thursday.html#ID-4E7A2B1F-3000-4981-A557-B107D06F5FC2">25 July 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgb18b893">
+<ul class="org-ul">
+<li>Will test the vs pt pdfs</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org30c00d6" class="outline-3">
+<h3 id="org30c00d6"><a href="../Journal/2024/07-July/22-July-2024-Monday.html#ID-A40072F4-75A8-4070-A2AF-5B8D11A65589">22 July 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org30c00d6">
+<ul class="org-ul">
+<li>Working the <a href="script to compare the splittings.html#ID-2EE1F773-2BDF-4393-B66B-F229B3626BB8">script to compare the splittings</a></li>
+<li>Working <a href="Script to check reclustered splittings.html#ID-6A7B9CD2-08A7-4713-B472-3AE30CEAEA9F">Script to check reclustered splittings</a></li>
+<li>Need to understand <a href="ResamplingBug.html#ID-6BB2F160-A0E5-4880-9CA4-5D5F8D786547">ResamplingBug</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2093996" class="outline-3">
+<h3 id="org2093996">28 June 2024</h3>
+<div class="outline-text-3" id="text-org2093996">
+<ul class="org-ul">
+<li>Got PDFs for all splittings</li>
+<li>ISR removal ( - [&gt;&gt;] recursive )</li>
+<li>Got 5j code running !</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0e0ce19" class="outline-3">
+<h3 id="org0e0ce19">27 June 2024</h3>
+<div class="outline-text-3" id="text-org0e0ce19">
+<ul class="org-ul">
+<li>Stop clustering when trying to combine &gt;2 bs</li>
+<li>[&gt;&gt;]  Clean ISR (eg: j(bb) -&gt; j + (bb))</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2245532" class="outline-3">
+<h3 id="org2245532">25 June 2024</h3>
+<div class="outline-text-3" id="text-org2245532">
+<ul class="org-ul">
+<li>Pt orderings</li>
+<li>cleaned up code</li>
+<li>Added plots</li>
+<li>slides ~done</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org99a4798" class="outline-3">
+<h3 id="org99a4798">22 June 2024</h3>
+<div class="outline-text-3" id="text-org99a4798">
+<ul class="org-ul">
+<li>Add clustering test to CI</li>
+<li>Add PDFs (nes folder)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org57d7328" class="outline-3">
+<h3 id="org57d7328">21 June 2024</h3>
+<div class="outline-text-3" id="text-org57d7328">
+<ul class="org-ul">
+<li>Pt dependence not such big improvement</li>
+<li>checking η-dependence</li>
+<li>Recluster declustered jets</li>
+<li>[&lt;&lt;] ML for jet splitting lookup?</li>
+<li>Bug in setting m-&gt; 0</li>
+<li>Adding clustering of declustered jets</li>
+<li>Now have a solid baseline !!!</li>
+<li>Next is pushing on slides.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org15442a3" class="outline-3">
+<h3 id="org15442a3">20 June 2024</h3>
+<div class="outline-text-3" id="text-org15442a3">
+<ul class="org-ul">
+<li>Try to cluster the Declustered jets
+<ul class="org-ul">
+<li>See where the residual differences are?</li>
+</ul></li>
+<li>Getting 2D sampling going!</li>
+<li>Make PDFs vs PT &#x2026; will try this next</li>
+<li>Getting plots vs pt going</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgce9de85" class="outline-3">
+<h3 id="orgce9de85">19 June 2024</h3>
+<div class="outline-text-3" id="text-orgce9de85">
+<ul class="org-ul">
+<li>Getting the declustering processor going!</li>
+<li>Need to speed it up</li>
+<li>Error in φ, need to rotate to jet φ</li>
+<li>[&lt;&lt;] Add test of all declustering</li>
+<li>Asymmetric lead phi</li>
+<li>make plot script</li>
+<li>fixed phi error</li>
+<li>plots nominal vs declustered!</li>
+<li>Fixed asymmetric Δφ</li>
+<li>made plot script</li>
+<li>cleaned up PDF making</li>
+<li>Added loop to retry failing η adn pT</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc58a37a" class="outline-3">
+<h3 id="orgc58a37a">18 June 2024</h3>
+<div class="outline-text-3" id="text-orgc58a37a">
+<ul class="org-ul">
+<li>b* clustering make sure g<sub>bb</sub> is {A or B}&#x2026;B</li>
+<li>Set g<sub>bb</sub> m-&gt;0 in b*</li>
+<li>Lots of <a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">Jet DeClustering</a></li>
+<li>understood z<sub>A</sub> (g<sub>bb</sub> vs b*)</li>
+<li>[&gt;&gt;] propogate flavor when declustering</li>
+<li>replace b* jets w/original</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6e1f2ed" class="outline-3">
+<h3 id="org6e1f2ed">17 June 2024</h3>
+<div class="outline-text-3" id="text-org6e1f2ed">
+<ul class="org-ul">
+<li>test 1d Sampling</li>
+<li>[&gt;&gt;] test 2d sampling</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org29ee1b3" class="outline-3">
+<h3 id="org29ee1b3">14 June 2024</h3>
+<div class="outline-text-3" id="text-org29ee1b3">
+<ul class="org-ul">
+<li>Adding hists</li>
+<li>Tried to speed it up &#x2026; no luck</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf3da6ba" class="outline-3">
+<h3 id="orgf3da6ba">13 June 2024</h3>
+<div class="outline-text-3" id="text-orgf3da6ba">
+<ul class="org-ul">
+<li>Lots of good work</li>
+<li>SOLID PROGRESS!!!</li>
+<li>This will work</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf523580" class="outline-3">
+<h3 id="orgf523580">11 June 2024</h3>
+<div class="outline-text-3" id="text-orgf523580">
+<ul class="org-ul">
+<li>Have clustering alg! &#x2026; validated</li>
+<li>[&gt;&gt;] Hists</li>
+<li>[&gt;&gt;] Sampling</li>
+<li>[&gt;&gt;] unclustering alg</li>
+<li>[&gt;&gt;] event ΔR checks</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge16d7ec" class="outline-3">
+<h3 id="orge16d7ec">7 June 2024</h3>
+<div class="outline-text-3" id="text-orge16d7ec">
+<ul class="org-ul">
+<li>Check for mass correlations</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb91e3b5" class="outline-3">
+<h3 id="orgb91e3b5">3 June 2024</h3>
+<div class="outline-text-3" id="text-orgb91e3b5">
+<ul class="org-ul">
+<li>cluster w/R? or until g→bb&#x2026; will do until g→bb</li>
+<li>py ? / old c++ / new c++ &#x2026; will do py</li>
+<li>Read "Lund Jet Plane"</li>
+<li>Set up skeleton</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org9a798c4" class="outline-2">
+<h2 id="org9a798c4">Archive:</h2>
+<div class="outline-text-2" id="text-org9a798c4">
+</div>
+<div id="outline-container-org52a87da" class="outline-3">
+<h3 id="org52a87da">Plan</h3>
+<div class="outline-text-3" id="text-org52a87da">
+<ul class="org-ul">
+<li>4b + 0j</li>
+<li>4b + 1j</li>
+<li>4b + 2j</li>
+<li>4b + Xj</li>
+<li>Scale years clustering</li>
+<li>Scale years declustering
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> PDFs by year ?</li>
+</ul></li>
+<li>use all non-b jets
+<ul class="org-ul">
+<li>pt/eta cuts only on the b-jets</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e0f9f5" class="outline-3">
+<h3 id="org5e0f9f5">To Do:</h3>
+<div class="outline-text-3" id="text-org5e0f9f5">
+<ul class="org-ul">
+<li>Compare synthetic vs nominal
+<ul class="org-ul">
+<li>4b + 0j</li>
+<li>4b + 1j</li>
+<li>4b + 2j</li>
+<li>4b + Xj</li>
+</ul></li>
+<li>Run jet multiplicities together / Plots separate</li>
+<li>Recursive ISR removal (Needed for 4b + &gt;1j)
+<ul class="org-ul">
+<li>`['bb', '(bb)(jj)'] -&gt; with ISR cleaning ['bb', 'bb', 'jj']</li>
+</ul></li>
+<li>Script to compare cluster vs reclusterd</li>
+<li>scripts to compare splitting functions</li>
+<li class="off"><code>[&#xa0;]</code> <code>~Script to compare splitting functions in jet multiplicities~</code></li>
+<li class="off"><code>[&#xa0;]</code> ~~Write out picos with clustered jets (write CI)</li>
+<li>CI for code to make the clustering histograms</li>
+<li>Fix the extra jet treatment (for now copy jets &lt; 40 and add new jets)
+<ul class="org-ul">
+<li>Or just do splitting for all jets &gt; 20 GeV</li>
+<li>update recursion to only check if bjet pt &gt; 40 GeV</li>
+</ul></li>
+<li>Add a dR AB &gt; 0.4 check</li>
+<li><a href="bj pt mismodeling.html#ID-316A9296-890B-4CE3-917B-8784532BB719">bj pt mismodeling</a></li>
+<li>Do mass based on jet flavor ?  (mA vs mB in pt bins?)</li>
+<li>use jet<sub>flavor</sub> when declustering (eg: part<sub>A</sub> is b in bj / or has the larger combination ect)</li>
+<li>fix mB in b(bj)</li>
+<li><a href="6 jet clean ISR bugs.html#ID-4A67CD26-DD99-402B-BAEC-E16BEA46CB73">6 jet clean ISR bugs</a></li>
+<li>ISR is everything but (b+x) + (b+x) splittings!!!!</li>
+<li>Test script crashing b/c of memory
+<ul class="org-ul">
+<li>When max 2 extra jets / Running with 1 worker fixes it</li>
+<li>Now think this was b/c I was making too many hists! / back to 4 workers</li>
+<li>Swap memory -&gt; 0 / Maybe faster using 2 workers ? A: no it doesnt!</li>
+</ul></li>
+<li>Reduce memory!
+<ul class="org-ul">
+<li>Remove unneeded histograms</li>
+<li>Only write out splittings we need</li>
+</ul></li>
+<li>Add back detailed splittting hists
+<ul class="org-ul">
+<li>option to turn them on/off</li>
+</ul></li>
+<li>PDF script to only rely on trimmed histograms
+<ul class="org-ul">
+<li>separate study<sub>splitting</sub><sub>fuctions</sub> from make<sub>PDFs</sub></li>
+<li>plot the splitting type multiplicity</li>
+</ul></li>
+<li>Seeing types
+<ul class="org-ul">
+<li>`(bj)((jj)b)` and `((jj)b)(bj)`</li>
+</ul></li>
+<li>Update presentation with inclusive sample and all years
+<ul class="org-ul">
+<li><a href="Dressed Bjets.html#ID-C360A0DD-109D-4AD0-92F0-A7E9F47BD3A9">Dressed Bjets</a></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> ~~Proper Protection from missing splitting ?</li>
+<li>pdflatex for dataset comparisions</li>
+<li>Group rare splitting types to reduce total numbers / speed
+<ul class="org-ul">
+<li>Function to get splitting summary statistics</li>
+<li>Update declustering to get splitting name from jet<sub>flavor</sub></li>
+</ul></li>
+<li>Add other jets to presentation</li>
+<li>Regroup splittings (&lt;10)</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Check ΔRs (HARD!)</li>
+<li>Fix random numbers</li>
+<li>Fix jet<sub>flavor</sub> == "b" Hacks</li>
+<li>[ x] ~~<a href="clean splittings during clustering.html#ID-E1F8BDBC-813E-4A11-A504-838F47719B3B">clean splittings during clustering</a>, so only plot those actually used</li>
+<li>Compute fractions of dressed b splittings: 2g-&gt;bb vs g-&gt;bb + b + b</li>
+<li>Template Fixes
+<ul class="org-ul">
+<li>Script to plot all the 1D marginals for all the splittings</li>
+<li>Option for mA<sub>vl</sub> and mB<sub>vl</sub></li>
+</ul></li>
+<li>Add top candidate making to declustered data</li>
+<li>How are there any b-jets with m &gt; 50 GeV ? (given the template cut off)
+==&gt; A: Form the (bb) + b + b + X  events</li>
+<li>Add hists of ptt / (ptt + pmj)
+<ul class="org-ul">
+<li>try this as DvT</li>
+</ul></li>
+<li>Add hT hist</li>
+<li>Recalc HT</li>
+<li>Random number for BTagging (sorting fucking up top reconstruction ?)
+A: Yes ! it was.  now fixed</li>
+<li>Is there a problem with jet phis ?  Why discontinuous ?
+<ul class="org-ul">
+<li>THink its Ok, added histograms with larger range</li>
+</ul></li>
+<li>Add sanity check for number of sel jets</li>
+
+<li>Compare splittings by year
+<ul class="org-ul">
+<li>Cluster PDFs by year. (Probably want an option of grouping them by year&#x2026;)</li>
+<li>check performance</li>
+</ul></li>
+<li>Write out picos with the synthetic datasets jet
+<ul class="org-ul">
+<li>Add random number seed input</li>
+<li>Add random number seed to output file name</li>
+<li>Test processor HH4b on output files</li>
+<li>Add CI</li>
+<li>Randseed via command line
+<ul class="org-ul">
+<li>Separate script that creates input files and submits jobs</li>
+</ul></li>
+<li>Yaml errors from skimming output</li>
+<li>Script to create synthetric datasets yaml
+<ul class="org-ul">
+<li>Need to merge with existing dataset script to get (at least the data info)</li>
+</ul></li>
+<li>Output picos to EOS</li>
+</ul></li>
+<li><a href="bj pt mismodeling.html#ID-316A9296-890B-4CE3-917B-8784532BB719">bj pt mismodeling</a></li>
+<li><a href="bj splitting mismodelings.html#ID-25D23651-A31B-43BA-BA09-43BB7FD76C8A">bj splitting mismodelings</a></li>
+<li>What happens to pt overflows in the clustering ?
+<ul class="org-ul">
+<li>Gets the overflow</li>
+</ul></li>
+<li>TTbar Subtractions/ Additions
+<ul class="org-ul">
+<li>Subtract ttbar from Templates</li>
+<li>Subtract ttbar from Input data being clustered</li>
+<li>Then add back non declustered TTbar
+<ul class="org-ul">
+<li>Compare ttbar subtracted + PSdata to nominal</li>
+</ul></li>
+<li>Or compare to ttbar subtracted data ?</li>
+</ul></li>
+<li>Skimmer to make sub-sampled TTbar datasets
+<ul class="org-ul">
+<li>Why is there tag in the TT PSData ?</li>
+<li>Compare synthetic + PS data data to data</li>
+</ul></li>
+<li>Propagate Btagging scores ?
+<ul class="org-ul">
+<li>Migrate to strings</li>
+</ul></li>
+<li>Money plots
+<ul class="org-ul">
+<li>3b no FvT vs Data vs Synthetic Data</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> ~~run clustering on ttbar MC ?</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+<div id="outline-container-org874819c" class="outline-3">
+<h3 id="org874819c">Template Fixes</h3>
+<div class="outline-text-3" id="text-org874819c">
+<ul class="org-ul">
+<li>mA<sub>vs</sub><sub>pT</sub> -&gt; 100 bins</li>
+<li>b(bj) mB -&gt; mB<sub>l</sub></li>
+</ul>
+
+
+
+<p>
+<a href="clusterrun3data-20250504110521.html#ID-B984F510-171C-4200-BB2E-D1DA6C78B1A3">ClusterRun3Data</a>
+</p>
+
+<p>
+<a href="CMS.html#ID-D0F94G67-9C3F-5E39-0G0D-F9G2588766EB">CMS</a>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+<a href="ABCDMethod.html#ID-EF44A777-CF05-4EA0-9B90-41EAADEB45BD">ABCDMethod</a>
+<a href="jetdeclusteringalgorithm-20250504110934.html#ID-81F11099-A998-406F-AEFD-1B626D15ADC9">Jet DeClustering Algorithm</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tables-in-Markdown</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Tables-in-Markdown</h1>
+<p>
+<a href="https://www.codecademy.com/resources/docs/markdown/tables">https://www.codecademy.com/resources/docs/markdown/tables</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-md">| 9   |                  |
+| --- | ---------------- |
+|     |                  |
+| 10  |                  |
+|     |                  |
+| 11  | HGC              |
+|     | HGC              |
+| 12  | HEP Lunch        |
+|     | HEP Lunch        |
+| 1   | Teachers program |
+|     | Teachers program |
+| 2   | Teachers program |
+|     | Stats chat       |
+| 3   | Stats chat       |
+|     | Anika            |
+| 4   |                  |
+|     |                  |
+
+</pre>
+</div>
+
+<p>
+eg: 
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">---</td>
+<td class="org-left">----------------</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">HGC</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HGC</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">HEP Lunch</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HEP Lunch</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Teachers program</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Teachers program</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Teachers program</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Stats chat</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Stats chat</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Anika</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+<div id="outline-container-org6dda2f9" class="outline-2">
+<h2 id="org6dda2f9">Links:</h2>
+<div class="outline-text-2" id="text-org6dda2f9">
+<p>
+202407181126
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

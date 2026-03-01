@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>4b code base</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">4b code base</h1>
+<ul class="org-ul">
+<li>added processed lumi section</li>
+<li>updating skip colections and (removing HLT branches)</li>
+<li class="off"><code>[&#xa0;]</code> Remake plotting to be more flexible re:hist structure ?</li>
+<li>Script to check process lumi section agaist json</li>
+<li>Reduce histograms Do we need the "other" tag list item ? / other regions ? passPreSel cut ?</li>
+<li class="off"><code>[&#xa0;]</code> RunII and Run3 options to sum over the proper years</li>
+<li>Histograms to cutflow</li>
+<li>Matplotlib ".py"</li>
+<li class="off"><code>[&#xa0;]</code> clean JCM code</li>
+<li class="off"><code>[&#xa0;]</code> Why is canJet Phi 0-pi ?</li>
+<li class="off"><code>[&#xa0;]</code> Code to make cutflow eff plots</li>
+<li class="off"><code>[&#xa0;]</code> Debug variable binning function
+<ul class="org-ul">
+<li>Dont draw ration points when no data</li>
+</ul></li>
+</ul>
+
+<div id="outline-container-orgb454dbb" class="outline-2">
+<h2 id="orgb454dbb">Logs</h2>
+<div class="outline-text-2" id="text-orgb454dbb">
+</div>
+<div id="outline-container-org7a19d96" class="outline-3">
+<h3 id="org7a19d96"><a href="../Journal/2025/09-September/09-September-2025-Tuesday.html#ID-9F7336A7-8733-4FB5-B31F-C53C38A1A422">09 September 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org7a19d96">
+<ul class="org-ul">
+<li><code>./run_container source coffea4bees/scripts/analysis-test.sh</code></li>
+<li><code>./run_container source coffea4bees/scripts/analysis-signals-test.sh</code></li>
+<li><code>./run_container source coffea4bees/scripts/analysis-merge-test-job.sh</code></li>
+<li><code>./run_container source coffea4bees/scripts/analysis-plot.sh</code></li>
+<li>Debugging</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2761d76" class="outline-3">
+<h3 id="org2761d76"><a href="../Journal/2025/09-September/08-September-2025-Monday.html#ID-A0787A96-1723-4359-BD89-5F3688A1F937">08 September 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org2761d76">
+<ul class="org-ul">
+<li>Setup code <code>new_master</code></li>
+<li>Running CIs</li>
+<li>Making plots&#x2026; But I dont think the tag is being used</li>
+<li><code>Now fixed tag</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9413f5d" class="outline-3">
+<h3 id="org9413f5d"><a href="../Journal/2025/03-March/30-March-2025-Sunday.html#ID-6A03D71C-4A9C-DB21-CA91-C59EB966FA4D">30 March 2025 Sunday</a></h3>
+<div class="outline-text-3" id="text-org9413f5d">
+<ul class="org-ul">
+<li>Testing 2d plots</li>
+<li>Fixing CI</li>
+<li>Merging with master</li>
+<li>clean up interface</li>
+<li>Split making the dict and plotting</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9aef279" class="outline-3">
+<h3 id="org9aef279"><a href="../Journal/2025/03-March/28-March-2025-Friday.html#ID-59B61F28-D367-C543-973A-BAE3E5337BB0">28 March 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org9aef279">
+<ul class="org-ul">
+<li>Working 2d plots</li>
+<li>Merged the 2d and 1d helper functions</li>
+<li>Got the ratio going !!!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org29a3149" class="outline-3">
+<h3 id="org29a3149"><a href="../Journal/2025/03-March/24-March-2025-Monday.html#ID-80574853-B081-B826-601F-4DCDF08B1F4F">24 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org29a3149">
+<ul class="org-ul">
+<li>Roc Plots</li>
+<li>Bug fix phh</li>
+<li>rerunning signal samples</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb41cdbf" class="outline-3">
+<h3 id="orgb41cdbf"><a href="../Journal/2025/03-March/21-March-2025-Friday.html#ID-701CEA48-2BDF-0215-6CE6-32B54F31EA43">21 March 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgb41cdbf">
+<ul class="org-ul">
+<li>Working Roc Plots</li>
+<li>Run to make phh plots (SR and HH region)</li>
+<li>Added kl reweighting function</li>
+<li>Spikes from one of the variances of the signal sample&#x2026; need to request nominal</li>
+<li>GOT kl-rw working!!!</li>
+<li>Added new hists (phh and phh<sub>hh</sub>)</li>
+<li>Running all signals on <b>cmslpc322</b></li>
+<li>lots of errors&#x2026; fixing</li>
+<li>Running on condor
+<ul class="org-ul">
+<li>=source scripts/analysis-testAll-job.sh =</li>
+<li>some ZZ4b file transfer failed</li>
+<li>resubmit</li>
+</ul></li>
+<li>Signal finished</li>
+<li>Finally finished backgrounds too</li>
+<li>p(HH) seems even better than p(S) !!!</li>
+<li>mailed AE</li>
+<li>push code</li>
+<li>Add to AN
+<ul class="org-ul">
+<li>&lt;font color=red&gt; On Saturday, on Saturday &#x2026; on Saturday &lt;/font&gt;</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf1a2a9d" class="outline-3">
+<h3 id="orgf1a2a9d"><a href="../Journal/2025/03-March/20-March-2025-Thursday.html#ID-7CC6A534-772D-555C-BDB4-6A0786E71479">20 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgf1a2a9d">
+<ul class="org-ul">
+<li>Working Roc Plots</li>
+<li>got one curve at a time.</li>
+<li>Got multiple curves going</li>
+<li>Need to plot from different files</li>
+<li><code>python plots/makeRocPlot.py hists/histAll_20250304_a100c66.coffea hists/histAll_signals_cHHHX_20250304_a100c66.coffea --outputFolder roc_curves</code></li>
+<li>[&gt;&gt;] Run to make phh plots (SR and HH region)</li>
+<li>Curves for different k-lambdas</li>
+<li>Found spikes in kl = 2.45 sample</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org34531f3" class="outline-3">
+<h3 id="org34531f3">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgec277fd" class="outline-3">
+<h3 id="orgec277fd">Links:</h3>
+<div class="outline-text-3" id="text-orgec277fd">
+<p>
+202410110913
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

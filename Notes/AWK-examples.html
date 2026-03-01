@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AWK-examples</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">AWK-examples</h1>
+<p>
+<a href="AWK.html#ID-BDA3EC63-F4D3-4467-B0CA-4229353B243D">AWK</a>. <a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<div id="outline-container-org8a44900" class="outline-2">
+<h2 id="org8a44900">Grep</h2>
+<div class="outline-text-2" id="text-org8a44900">
+<p>
+cat log<sub>runAddFvTToScratchOneOffset</sub>|awk '<i>Aver</i>'
+awk '<i>rchi2</i> || <i>Training</i> || <i>Vali</i> {print $0}' ZZ4b/nTupleAnalysis/pytorchModels/3bDvTMix4bDvT.v0.nf12FvT<sub>HCR</sub>+attention<sub>12</sub><sub>np2076</sub><sub>lr0.01</sub><sub>epochs20</sub><sub>offset0.log</sub> 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0851ca8" class="outline-2">
+<h2 id="org0851ca8">Grep with watch</h2>
+<div class="outline-text-2" id="text-org0851ca8">
+<p>
+watch "awk '<i>Training</i> || <i>Vali</i> {print \$0}'" ZZ4b/nTupleAnalysis/pytorchModels/3bDvTMix4bDvT.v1.nf12FvT<sub>HCR</sub>+attention<sub>12</sub><sub>np2076</sub><sub>lr0.01</sub><sub>epochs20</sub><sub>offset0.log</sub> 
+</p>
+
+<p>
+As an aside, it's easy to test your understanding of regular expressions interactively: the program
+$1 ~ $2
+lets you type in a string and a regular expression; it echoes the line back if the string matches the regular expression.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgcb41c11" class="outline-2">
+<h2 id="orgcb41c11">Display a block of text with AWK</h2>
+<div class="outline-text-2" id="text-orgcb41c11">
+<p>
+awk ‘/start<sub>pattern</sub>/,/stop<sub>pattern</sub>/’ file.txt
+</p>
+
+<p>
+eg: 
+cat log<sub>runAddFvTToScratchOneOffset</sub>|awk '<i>Aver</i>,/.pkl/'
+</p>
+
+<p>
+<code>awk '/ files:/,/lumis_processed/' skimmer/metadata/picoaod_datasets_declustered_data_Run3_v3_seed0.yml</code>
+</p>
+</div>
+</div>
+<div id="outline-container-org72543b4" class="outline-2">
+<h2 id="org72543b4">replace</h2>
+<div class="outline-text-2" id="text-org72543b4">
+<p>
+ls |awk '<i>Extended</i> {printf("mv %s ",$0); gsub("Extended","",$0); print $0}'
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org3bd6cb4" class="outline-2">
+<h2 id="org3bd6cb4">System within AWK</h2>
+<div class="outline-text-2" id="text-org3bd6cb4">
+<p>
+ls /home/scratch/jalison//closureTests/ULTrig/*/*nf8* | awk  '{ s=$0; gsub("nf8.h5","nf8<sub>offset0.h5</sub>"); d=$0; system(" mv "s" "d)  } '
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org38aad30" class="outline-2">
+<h2 id="org38aad30">Graph</h2>
+<div class="outline-text-2" id="text-org38aad30">
+<p>
+printf "width 100\n height 30 \n label x-axis  " | cat trafficDeathsTEST - |awk  -f graph.awk
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1960369" class="outline-2">
+<h2 id="org1960369">AWK resubmitting failed condor jobs</h2>
+<div class="outline-text-2" id="text-org1960369">
+<p>
+ls -lrt logs/ |grep OT<sub>emd</sub> |grep log|grep "Sep 13"| awk '{gsub(".log",".jdl"); cmd = "condor<sub>submit</sub> " $9; print cmd; system(cmd) }'
+</p>
+</div>
+</div>
+
+<div id="outline-container-org073c6db" class="outline-2">
+<h2 id="org073c6db">Pipe AWK output into bash loop</h2>
+<div class="outline-text-2" id="text-org073c6db">
+<p>
+for i in <code>grep  parallel logs/OT_emd_mat_2018_Nominal_SBToSR_nJet*stdout | grep -v FERM |awk '{gsub(":python","");gsub("stdout","jdl");gsub("logs/","");print $1};'</code>; do  condor<sub>submit</sub> $i; done
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

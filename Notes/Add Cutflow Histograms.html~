@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Add Cutflow Histograms</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Add Cutflow Histograms</h1>
+
+
+
+<div id="outline-container-org9adcf2b" class="outline-2">
+<h2 id="org9adcf2b">Logs</h2>
+<div class="outline-text-2" id="text-org9adcf2b">
+</div>
+<div id="outline-container-org54103ce" class="outline-3">
+<h3 id="org54103ce"><a href="../Journal/2025/02-February/27-February-2025-Thursday.html#ID-649D18B4-0AAF-49D1-B5A4-63A8892C954D">27 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org54103ce">
+<ul class="org-ul">
+<li>Problem with Trig SF not being applied
+<ul class="org-ul">
+<li>Reported to AE</li>
+</ul></li>
+<li>[&gt;&gt;] close AccXEff plots with <a href="Add Cutflow Histograms.html#ID-D5A13532-1D9B-456A-9E0B-2FF8B06C017B">Add Cutflow Histograms</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3f76d10" class="outline-3">
+<h3 id="org3f76d10"><a href="../Journal/2025/02-February/03-February-2025-Monday.html#ID-AB30A0FA-F0DD-4FEF-BEC9-2D1CA920D8E3">3 February 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org3f76d10">
+<ul class="org-ul">
+<li>Merging cut on status for genParticles.</li>
+<li>Maybe this is why the gaussian kernel failed before&#x2026; YES!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org36f7587" class="outline-3">
+<h3 id="org36f7587"><a href="../Journal/2025/01-January/28-January-2025-Tuesday.html#ID-69B26A3C-1B41-4663-B99D-C40D8AF0E330">28 January 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org36f7587">
+<ul class="org-ul">
+<li>Running the signal</li>
+<li><code>python runner.py  -o signal.coffea -d ZZ4b ZH4b ggZH4b GluGluToHHTo4B_cHHH1 -p analysis/processors/processor_HH4b.py -y UL18  -op output/analysis_test_job -m metadata/datasets_HH4b.yml</code></li>
+<li>truth 4b there for ZZ and ZH&#x2026;.checking ZH</li>
+<li>Found that with out a cut on status Im getting more than 4 bjets</li>
+<li>Only the HH4b has the status in the genParticles &#x2026; need to rerun on nano</li>
+<li>= python runner.py -t  -o signal.coffea -d ZZ4b ZH4b ggZH4b GluGluToHHTo4B<sub>cHHH1</sub>  -p analysis/processors/processor<sub>HH4b.py</sub> -y UL18  -op output/analysis<sub>test</sub><sub>job</sub> -m metadata/datasets<sub>HH4b.yml</sub> -c analysis/metadata/HH4b<sub>nano.yml</sub> =</li>
+<li>Running on <b>cmslpc339</b></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4ab33a4" class="outline-3">
+<h3 id="org4ab33a4"><a href="../Journal/2024/11-November/26-November-2024-Tuesday.html#ID-0B96439D-31B8-40E6-8F43-B9FE41D77F11">26 November 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org4ab33a4">
+<ul class="org-ul">
+<li>move truth function to <code>helpers/truth_tools</code></li>
+<li>`python runner.py -t -o test.coffea -d ZH4b ZZ4b GluGluToHHTo4B<sub>cHHH1</sub> -p analysis/processors/processor<sub>HH4b.py</sub> -y UL18  -op $OUTPUT<sub>DIR</sub> -m $DATASETS</li>
+<li>added truth<sub>v4b</sub> to event&#x2026; adding histogram</li>
+<li>added a first pass of histograms</li>
+<li>pushed first version
+[&gt;&gt;] Code to make plots</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgdfa02c5" class="outline-2">
+<h2 id="orgdfa02c5">Follow-ups</h2>
+<div class="outline-text-2" id="text-orgdfa02c5">
+<p>
+<a href="4b code base.html#ID-07C5B981-2757-443B-89CF-D57206DBFD03">4b code base</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1cf3ede" class="outline-2">
+<h2 id="org1cf3ede">Links:</h2>
+<div class="outline-text-2" id="text-org1cf3ede">
+<p>
+202502251121
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

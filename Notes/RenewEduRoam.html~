@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RenewEduRoam</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">RenewEduRoam</h1>
+
+<div id="outline-container-org74178cc" class="outline-2">
+<h2 id="org74178cc">How to renew eduRoam</h2>
+<div class="outline-text-2" id="text-org74178cc">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<p>
+Dear John Alison,
+</p>
+
+<p>
+The EduRoam certificate issued to CERN\johnda will expire in 30 days, on 13/12/2020.
+</p>
+
+<p>
+Certificate details:
+</p>
+
+<p>
+Serial number:	7d501e1a00010001066a
+Distinguished name:	CN=johnda-eduroam@cern.ch
+</p>
+
+
+<ul class="org-ul">
+<li>To request a new certificate, please go to CERN Certification Authority Site: <a href="https://ca.cern.ch/ca/">https://ca.cern.ch/ca/</a>.</li>
+<li>I clicked on "New EduRoam Certificate"</li>
+<li>I clicked on Configure EduRoam; It downloaded a file</li>
+<li>I opened the file.  (Got an warning to check my profile in settings)</li>
+<li>Open system preferences &gt; Privacy &amp; security &gt; Profiles</li>
+<li>opened the profile and clicked install</li>
+<li>opened keychain access, found eduroam under login/My certificates.</li>
+<li>Marked the new certificates as always trust: right-click getinfo &gt; trust &gt; Always trust</li>
+</ul>
+
+
+
+<p>
+Older version
+</p>
+
+<ul class="org-ul">
+<li>To request a new certificate, please go to CERN Certification Authority Site: <a href="https://ca.cern.ch/ca/">https://ca.cern.ch/ca/</a>.</li>
+<li>I clicked on "New EduRoam Certificate"</li>
+<li>I clicked on Configure EduRoam: It downloaded a file</li>
+<li>I opened the file.</li>
+<li>Asked to Intall eduroam: I did it</li>
+<li>Went into keychain and marked the new certificate as always trusted.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3405fe7" class="outline-2">
+<h2 id="org3405fe7">Logs</h2>
+<div class="outline-text-2" id="text-org3405fe7">
+</div>
+<div id="outline-container-orgccbee86" class="outline-3">
+<h3 id="orgccbee86"><a href="../Journal/2026/01-January/09-January-2026-Friday.html#ID-F0B56019-A911-4181-B950-D299CA20DFD9">09 January 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-orgccbee86">
+<ul class="org-ul">
+<li>The EduRoam certificate issued to CERN\johnda will expire in 7 days, on 16/01/2026.</li>
+</ul>
+
+<p>
+Certificate details:
+</p>
+
+<p>
+Serial number:  5a0001ac1cf3850cc2b664890d00020001ac1c  
+Distinguished name:  CN=johnda-eduroam@cern.ch  
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

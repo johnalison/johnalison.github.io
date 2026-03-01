@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC Meeting 16 July 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">MAC Meeting 16 July 2025</h1>
+
+<div id="outline-container-org6079f31" class="outline-2">
+<h2 id="org6079f31">Action</h2>
+<div class="outline-text-2" id="text-org6079f31">
+<p>
+Marchello: comments on how to debug the bad IV behaviour
+      leakage current compensation calibration
+Detailed optical inpection of corrision 
+</p>
+
+
+<p>
+<a href="https://indico.cern.ch/event/1569163/">https://indico.cern.ch/event/1569163/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf03025e" class="outline-2">
+<h2 id="orgf03025e">IHEP</h2>
+<div class="outline-text-2" id="text-orgf03025e">
+</div>
+<div id="outline-container-org7f0927e" class="outline-3">
+<h3 id="org7f0927e">Built a buch of v3b with pre-series sensors 4/run</h3>
+</div>
+<div id="outline-container-org2a25bc6" class="outline-3">
+<h3 id="org2a25bc6">Also see problems with IV</h3>
+</div>
+</div>
+
+<div id="outline-container-org96839b3" class="outline-2">
+<h2 id="org96839b3">CMU</h2>
+<div class="outline-text-2" id="text-org96839b3">
+</div>
+<div id="outline-container-org69ed763" class="outline-3">
+<h3 id="org69ed763">One working Trophy board&#x2026; Now a critical need (500 at CERN this week)</h3>
+<div class="outline-text-3" id="text-org69ed763">
+<p>
+** Send N in a couple of weeks
+</p>
+</div>
+</div>
+<div id="outline-container-org66df08c" class="outline-3">
+<h3 id="org66df08c">Using old inventory to train new personell</h3>
+<div class="outline-text-3" id="text-org66df08c">
+<p>
+<b>* Building 4 modules at a time
+*</b> Offsets good/ IV not
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3d8fbf0" class="outline-2">
+<h2 id="org3d8fbf0">UCSB</h2>
+<div class="outline-text-2" id="text-org3d8fbf0">
+</div>
+<div id="outline-container-org1497ba4" class="outline-3">
+<h3 id="org1497ba4">Loncoln replacing Susane</h3>
+</div>
+<div id="outline-container-org9b04761" class="outline-3">
+<h3 id="org9b04761">Wrestling with shipping</h3>
+<div class="outline-text-3" id="text-org9b04761">
+<p>
+Waiting for components in customs
+</p>
+</div>
+</div>
+<div id="outline-container-orga2ec022" class="outline-3">
+<h3 id="orga2ec022">Themal cycling studies</h3>
+</div>
+<div id="outline-container-org816d43e" class="outline-3">
+<h3 id="org816d43e">No module production in July</h3>
+</div>
+<div id="outline-container-org6a3e674" class="outline-3">
+<h3 id="org6a3e674">Shipping modules to FNAL (11 HD Full T / 3 LD R /  1 DB top)</h3>
+</div>
+<div id="outline-container-org4ffdcd7" class="outline-3">
+<h3 id="org4ffdcd7">"Broker Select Option"</h3>
+</div>
+<div id="outline-container-orgff91d15" class="outline-3">
+<h3 id="orgff91d15">Three new kria controllers.</h3>
+</div>
+
+<div id="outline-container-orge35fd0f" class="outline-3">
+<h3 id="orge35fd0f">How BSO Works</h3>
+<div class="outline-text-3" id="text-orge35fd0f">
+<p>
+When you don't select the Broker Select Option (BSO), FedEx international shipping services automatically default to broker-inclusive, meaning that FedEx serves as the shipment's customs broker. However, the BSO allows you to specify and use a specific customs broker other than FedEx 
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgad62a48" class="outline-2">
+<h2 id="orgad62a48">Status of component shipments</h2>
+<div class="outline-text-2" id="text-orgad62a48">
+<p>
+CuW Baseplates from IHEP becoming available
+100 NTU, 100 UCSB, 200 CMU, 200 TTU, 500 IHEP, hold 100 TIFR
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge9b21b5" class="outline-2">
+<h2 id="orge9b21b5">Module reception testing at CAFs</h2>
+</div>
+</div>
+</body>
+</html>

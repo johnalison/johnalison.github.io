@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zeeman Effect</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Zeeman Effect</h1>
+<p>
+Learn about atomic structure, Energy level of electrons in complex atoms. 
+</p>
+
+<p>
+Zeeman effect was one of the first proofs that the energy levels in an atom can be influenced by a strong external magnetic field. 
+</p>
+
+<p>
+Story starts 1896, Zeeman using best optical equipment at spectral lines, Found that the energy levels would shift and split. Took a long time to figure out what was going on.
+</p>
+
+<p>
+Electrons are orbiting nucleus (orbital angular momentum) they also have intrinsic magnetic moment (like little bar magnets). Combination of spin and orbital angular momentum control the interaction of these "atomic currents" with external magnetic fields, which gives rise to the shifting energy levels. 
+</p>
+
+<p>
+<b>Goal</b>: Make you own measurement of a fundamental property of atoms: magnetic moment of the electron: "Bohr Magnetron".  
+</p>
+
+<p>
+Using optical elements: 
+</p>
+<ul class="org-ul">
+<li>Source electric discharge tube (Cadmium: 2 es in outer structure)</li>
+<li>Electromagnet: power</li>
+<li>Hall probe (to measure the B-field)</li>
+<li>Light is manipulated: lens / filters</li>
+<li>Fabry-Perot interferometer: two parallel mirrors, sensitive to small shifts in wavelength</li>
+<li>Video camera -&gt; monitor &#x2013;&gt; Bullseye pattern</li>
+<li>Changes in pattern with field on</li>
+</ul>
+
+
+
+
+<div id="outline-container-orgfc77e35" class="outline-2">
+<h2 id="orgfc77e35">Links:</h2>
+<div class="outline-text-2" id="text-orgfc77e35">
+<p>
+<a href="MPL.html#ID-FC35DC98-A2A5-42F2-A440-42F751A8472E">MPL</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

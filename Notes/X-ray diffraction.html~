@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>X-ray diffraction</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">X-ray diffraction</h1>
+<p>
+One of our condensed matter physics experiments
+</p>
+
+<p>
+<b>Goal</b>: Determine the lattice constant and the crystal symmetry of several different solid state materials all of which have some type of cubic symmetry. 
+</p>
+
+<p>
+Simplest: "simple cube" atoms in the eight corners of a cube.
+Other more complicated possibilities: 
+</p>
+<ul class="org-ul">
+<li>"Body center" 8 + 1 atoms (one more in the center)</li>
+<li>"Face centered" 8 + 6 (one more in the center of each face)</li>
+</ul>
+
+<p>
+With x-ray diffraction can determine the separation between planes ("lattice constant") as well as the specific type of crystal symmetry
+</p>
+
+<p>
+Interesting thing happens when you have a non-monatomic lattice
+</p>
+<ul class="org-ul">
+<li>eg: salt NaCl CsCl when the ions alternate in an interesting way</li>
+</ul>
+
+<p>
+Take a powdered sample
+</p>
+<ul class="org-ul">
+<li>Detector,</li>
+<li>Count the number of scattered x-rays as a function of angle</li>
+<li>Brag law (which you will learn about during this experiment)</li>
+</ul>
+
+<p>
+Requires some specific radiation safety training
+</p>
+
+
+<div id="outline-container-org9e7b48f" class="outline-2">
+<h2 id="org9e7b48f">Links:</h2>
+<div class="outline-text-2" id="text-org9e7b48f">
+<p>
+<a href="MPL.html#ID-FC35DC98-A2A5-42F2-A440-42F751A8472E">MPL</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

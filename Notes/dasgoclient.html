@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>dasgoclient</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">dasgoclient</h1>
+<p>
+Can run from vanilla LPC 
+</p>
+
+<p>
+See 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">dasgoclient --examples
+
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash">dasgoclient --query="run,lumi dataset=/ParkingHH/Run2023D-22Sep2023_v1-v1/NANOAOD" -json
+dasgoclient --query="run dataset=/ParkingHH/Run2023D-22Sep2023_v1-v1/NANOAOD"
+dasgoclient --query="lumi dataset=/ParkingHH/Run2023D-22Sep2023_v1-v1/NANOAOD"
+dasgoclient --query="summary dataset=/ParkingHH/Run2023D-22Sep2023_v1-v1/NANOAOD" -json &gt; python/skimmer/metadata/das_summary_ParkingHH_Run2023D-22Sep2023_v1-v1_NANOAOD.json
+
+</pre>
+</div>
+
+
+<div id="outline-container-org11ca879" class="outline-2">
+<h2 id="org11ca879">DAS</h2>
+<div class="outline-text-2" id="text-org11ca879">
+<p>
+Get the dataset from the file name
+</p>
+
+<pre class="example">
+dasgoclient -query="dataset file=/store/mc/RunIIAutumn18NanoAODv5/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/NANOAODSIM/Nano1June2019_102X_upgrade2018_realistic_v19-v1/250000/14933F79-95FB-354D-A917-E19B5C005037.root"
+
+</pre>
+
+<p>
+Get the parent file from a file name
+</p>
+
+<pre class="example">
+dasgoclient -query="parent file=/store/mc/RunIIAutumn18NanoAODv5/TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8/NANOAODSIM/Nano1June2019_102X_upgrade2018_realistic_v19-v1/250000/14933F79-95FB-354D-A917-E19B5C005037.root"
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgb1b6009" class="outline-2">
+<h2 id="orgb1b6009">To dump python</h2>
+<div class="outline-text-2" id="text-orgb1b6009">
+<div class="org-src-container">
+<pre class="src src-python">process.dumpPython() 
+
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org416bb58" class="outline-2">
+<h2 id="org416bb58">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgb4a5d0e" class="outline-2">
+<h2 id="orgb4a5d0e">Links:</h2>
+<div class="outline-text-2" id="text-orgb4a5d0e">
+<p>
+<a href="CMS.html#ID-D0F94G67-9C3F-5E39-0G0D-F9G2588766EB">CMS</a>
+<a href="#org11ca879">DAS</a>
+</p>
+
+
+<p>
+202410111546
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="boostedsyntheticdata-20250504112414.html">Boosted Synthetic Data</a></li>
+  <li><a href="Run-3 4b skims.html">Run-3 4b skims</a></li>
+  <li><a href="CMSSWNotes.html">CMSSWNotes</a></li>
+</ul>
+</div>
+</body>
+</html>

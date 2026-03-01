@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Static IP for Raspberry Pi</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Static IP for Raspberry Pi</h1>
+<p>
+Following instructions here:
+[Give Your Raspberry Pi a Static IP Address](<a href="https://blog.richardkeller.net/how-to-give-your-raspberry-pi-a-static-ip-address-so-that-you-can-access-it-from-anywhere-2/">https://blog.richardkeller.net/how-to-give-your-raspberry-pi-a-static-ip-address-so-that-you-can-access-it-from-anywhere-2/</a>)
+</p>
+
+
+<div id="outline-container-org0ded69a" class="outline-2">
+<h2 id="org0ded69a">First connect pi to network and find its dynamically assigned IP address.</h2>
+<div class="outline-text-2" id="text-org0ded69a">
+<p>
+I did it from the eero app, can also get a list of all the devices connected to the local network by running the following command on the MAC terminal
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">arp -a
+
+</pre>
+</div>
+
+<p>
+once you have the current ip connect to the pi eg:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">ssh pi@192.168.0.7
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org345602b" class="outline-2">
+<h2 id="org345602b">Edit /etc/dhcpcd.conf</h2>
+<div class="outline-text-2" id="text-org345602b">
+<p>
+Uncomment the following lines.  I then set the static ip<sub>address</sub> (in the 2nd line below) to be the one that was dynamically assigned.
+#+BEGIN<sub>SRC</sub> bash
+</p>
+</div>
+</div>
+<div id="outline-container-orgab43092" class="outline-2">
+<h2 id="orgab43092">Example static IP configuration:</h2>
+<div class="outline-text-2" id="text-orgab43092">
+<p>
+interface eth0
+static ip<sub>address</sub>=192.168.4.38/24
+static ip6<sub>address</sub>=fd51:42f8:caae:d92e::ff/64
+static routers=192.168.0.1
+static domain<sub>name</sub><sub>servers</sub>=192.168.0.1 8.8.8.8 fd51:42f8:caae:d92e::1
+</p>
+
+
+<p>
+#+END<sub>SRC</sub>
+</p>
+
+<p>
+Restart the raspberry pi
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">sudo reboot
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org34c08b8" class="outline-2">
+<h2 id="org34c08b8">Setup up port fowarding</h2>
+<div class="outline-text-2" id="text-org34c08b8">
+<p>
+I was able to do this on the eero app.
+</p>
+
+<p>
+Set the port range to: 222-2222
+Use both TCP &amp; UDP
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb6e5716" class="outline-2">
+<h2 id="orgb6e5716">Edit /etc/ssh/sshd<sub>config</sub></h2>
+<div class="outline-text-2" id="text-orgb6e5716">
+<p>
+Adding the line 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">Port 2222
+
+</pre>
+</div>
+<p>
+save the file and reload with
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">service ssh reload
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1d24e70" class="outline-2">
+<h2 id="org1d24e70">Get your public IP</h2>
+<div class="outline-text-2" id="text-org1d24e70">
+<p>
+<a href="https://www.whatsmyip.org/">https://www.whatsmyip.org/</a>
+mine is: 24.3.217.26
+</p>
+</div>
+<div id="outline-container-org1a4a90c" class="outline-3">
+<h3 id="org1a4a90c">Links:</h3>
+<div class="outline-text-3" id="text-org1a4a90c">
+<p>
+<a href="RaspberryPi720.html#ID-1A7EF259-6459-4A9B-8DF0-8BD57BE9DBD9">RaspberryPi720</a>
+</p>
+
+
+<p>
+202407201059
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="RaspberryPi720.html">RaspberryPi720</a></li>
+  <li><a href="../Journal/2024/07-July/20-July-2024-Saturday.html">20 July 2024 Saturday</a></li>
+</ul>
+</div>
+</body>
+</html>

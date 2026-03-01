@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AdvantagesOfJetDeClustering</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">AdvantagesOfJetDeClustering</h1>
+<p>
+Jet (de)clustering is similar in spirit to hemisphere mixing, but some potential improvements
+</p>
+<ol class="org-ol">
+<li>Scrambling the substructure is done through sampling the PDFs templates instead of directly reusing jets in other observed events.  This leads to a big statistical gain from factorizing the <a href="splittingtemplates-20250504111010.html#ID-84055C72-DBD2-4091-B41C-D85A63AF9A1B">SplittingTemplates</a>.</li>
+<li>The algorithm has better scaling with dataset size. Goes like O(N) not O(N<sup>2</sup>),  from the nested loops over hemisphere for each event.</li>
+<li>It is less ad-hoc: there is no need to define a metric between hemispheres.</li>
+<li>Better treatment of the additional jet activity <a href="isr_fsr_jet_discernmentinjetdeclustering-20250504111327.html#ID-4818B79E-AA18-4820-8817-73CEF3441616">ISR-FSR-jet-DiscernmentInJetDeClustering</a>.  Can decluster iteratively with splitting functions (can be done separately for g→bb and b→bg splittings see:[[<a href="btagsasaquarkgluontag-20250504111118.html#ID-8CBCCBAA-E746-470B-93DA-CE0E76525D57">BTagsAsAQuarkGluonTag</a>)</li>
+<li>Can also potentially be applied in the boosted regime by (de)clustering the constituent sub-jets directly.</li>
+</ol>
+
+
+
+<p>
+<a href="jetdeclusteringalgorithm-20250504110934.html#ID-81F11099-A998-406F-AEFD-1B626D15ADC9">JetDeClusteringAlgorithm</a>
+</p>
+
+
+<p>
+202407151628
+</p>
+</div>
+</body>
+</html>

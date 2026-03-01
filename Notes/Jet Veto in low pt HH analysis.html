@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jet Veto in low pt HH analysis</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Jet Veto in low pt HH analysis</h1>
+<p>
+In the low pt analysis we will veto events that would be in the nominal 4b region. This is straightforward for four-tag events; if there are four or more high-pt tagged jets, veto the event.
+</p>
+
+<p>
+An interesting question is how to do this for three-tag events. What fraction of the three-tag events should be vetoed because they are likely to extrapolate into the nominal four-tag region? We can estimate this using the nominal JCM. The JCM allows us to model the b-tagged distribution from the three tag events. We can emulate the four-tag veto by vetoing three-tag events that have four or more pseudo-tag jets.  An even better way is to just weight the three-tag events by the probability that they give fewer than four for high-pt pseudo-tagged jets.
+</p>
+
+<div id="outline-container-orgbdbc78f" class="outline-2">
+<h2 id="orgbdbc78f">In practice AE is using 3-tight for the 3tag low pt region</h2>
+<div class="outline-text-2" id="text-orgbdbc78f">
+<p>
+There are really 3 subsets of the 3tag region
+</p>
+<ul class="org-ul">
+<li>The three tag that extrapolates to the 4tag</li>
+<li>The low-pt-fourtag</li>
+<li>The low-pt-three tag</li>
+<li>The low-pt three tag that extrapolate to teh low-pt-fourtag</li>
+</ul>
+
+<p>
+Should do (1-JCM<sub>nom</sub>) x JCM<sub>lowpt</sub>&#x2026; <code>I now think this is not right</code>, should just use one JCM of the low pt jets .. the JCM corrects the bias of the jet multiplicity in the 3tag selection.. this is only there for the low pt jets
+</p>
+
+<p>
+<a href="Low Pt HH4b.html#ID-CC79588D-4B0C-4EED-AB0E-2C1586B76E10">Low Pt HH4b</a>
+<a href="HH4b.html#ID-63F88P8-5PQ6-8TT8-3T23-T19T305102PQ">HH4b</a>
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="Low Pt HH4b.html">Low Pt HH4b</a></li>
+  <li><a href="../Journal/2026/02-February/03-February-2026-Tuesday.html">03 February 2026 Tuesday</a></li>
+  <li><a href="../Journal/2024/09-September/24-September-2024-Tuesday.html">24 September 2024 Tuesday</a></li>
+</ul>
+</div>
+</body>
+</html>

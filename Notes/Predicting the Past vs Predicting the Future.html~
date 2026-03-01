@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Predicting the Past vs Predicting the Future</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Predicting the Past vs Predicting the Future</h1>
+<p>
+Predicting the past (of macroscopic systems) is usually much harder than predicting their future.  To predict the future you can straightforwardly use the laws of physics + statistical mechanics, entropy will increase etc.  This fails in the past because of the low entropy initial condition. The time reversed prediction of the law of physics + statistical mechanics implies, incorrectly, that entropy will increase toward the past.  To accurately predict the past you need records of what it was like. You cannot simply run the equations of motion + statistical physics backwards. Statistical mechanics would never predict that a glass of chilled water actually had a chunk of frozen ice in it in the past, but often of course was precisely the case.
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BitWardenCISetup</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">BitWardenCISetup</h1>
+
+<div id="outline-container-org6017830" class="outline-2">
+<h2 id="org6017830">Initial install</h2>
+<div class="outline-text-2" id="text-org6017830">
+<p>
+<code>==brew install bitwarden-cli==</code>
+</p>
+
+<p>
+ <code>&gt;bw login</code>
+<code>Email address: johnda102@gmail.com</code>
+<code>Master password: [hidden]</code>
+`Two-step login code: [press yubikey]'
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2fb0bc3" class="outline-2">
+<h2 id="org2fb0bc3">Reactivating CI</h2>
+<div class="outline-text-2" id="text-org2fb0bc3">
+<p>
+Ran:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">
+&gt; bw login
+&gt; Email address: johnda102@gmail.com
+&gt; Master password: [hidden]
+&gt; Two-step login code: cccccbctiudrerdjbrigbbkjkhddehbhtkfkilkkudfn
+    (Pressed the yubikey for the two-step login)
+
+</pre>
+</div>
+
+<p>
+Response:   
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">
+To unlock your vault, set your session key to the `BW_SESSION` environment variable. ex:
+$ export BW_SESSION="xnJMjNXmQxeKfWUKeLipmz5ul1ec+3Hk6Gk6bA9qDd9pxa20SuCHHym2QQLasMLFKw4CJ+NakUOq+berfJTJwg=="
+&gt; $env:BW_SESSION="xnJMjNXmQxeKfWUKeLipmz5ul1ec+3Hk6Gk6bA9qDd9pxa20SuCHHym2QQLasMLFKw4CJ+NakUOq+berfJTJwg=="
+
+You can also pass the session key to any command with the `--session` option. ex:
+$ bw list items --session xnJMjNXmQxeKfWUKeLipmz5ul1ec+3Hk6Gk6bA9qDd9pxa20SuCHHym2QQLasMLFKw4CJ+NakUOq+berfJTJwg==
+
+</pre>
+</div>
+
+<p>
+I did
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">&gt; export BW_SESSION="xnJMjNXmQxeKfWUKeLipmz5ul1ec+3Hk6Gk6bA9qDd9pxa20SuCHHym2QQLasMLFKw4CJ+NakUOq+berfJTJwg=="
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-orgcbfce1f" class="outline-3">
+<h3 id="orgcbfce1f">Links:</h3>
+<div class="outline-text-3" id="text-orgcbfce1f">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+<a href="BitWarden.html#ID-29F3CE0F-71A5-45A9-9668-086B2ED6849C">BitWarden</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

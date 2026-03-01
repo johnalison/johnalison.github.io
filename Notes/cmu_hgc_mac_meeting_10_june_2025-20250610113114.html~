@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 10 June 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 10 June 2025</h1>
+
+
+<div id="outline-container-orgfd23e85" class="outline-2">
+<h2 id="orgfd23e85">News</h2>
+<div class="outline-text-2" id="text-orgfd23e85">
+<ul class="org-ul">
+<li>Injuries reported ASAP</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org87e7837" class="outline-2">
+<h2 id="org87e7837">Action</h2>
+<div class="outline-text-2" id="text-org87e7837">
+<ul class="org-ul">
+<li>Transfer tape ? &#x2026; Seth putting them in the system</li>
+<li>Waiting on power from FMS&#x2026;</li>
+<li>Humidity ? Units $1600</li>
+</ul>
+</div>
+
+<div id="outline-container-orgb10723a" class="outline-3">
+<h3 id="orgb10723a">Follow up: with FMS re:humidity (Jeff Harris)</h3>
+</div>
+<div id="outline-container-orgf7fc0ce" class="outline-3">
+<h3 id="orgf7fc0ce">Order Boxes?</h3>
+</div>
+<div id="outline-container-orga53292d" class="outline-3">
+<h3 id="orga53292d">Order Crates?</h3>
+</div>
+<div id="outline-container-orga029d3a" class="outline-3">
+<h3 id="orga029d3a">Order MMTS&#x2026;</h3>
+</div>
+<div id="outline-container-org75d983e" class="outline-3">
+<h3 id="org75d983e">Test the chillers</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org23377e5" class="outline-2">
+<h2 id="org23377e5">Jessica</h2>
+<div class="outline-text-2" id="text-org23377e5">
+<ul class="org-ul">
+<li>Zip line is working well</li>
+<li>Pick and place biasing</li>
+<li>Start dummies on Monday</li>
+<li>Helping Julia with Mini gantry raspberry Pi</li>
+<li>Finish the rest of the week with v3b</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org57fe3cb" class="outline-2">
+<h2 id="org57fe3cb">Josh</h2>
+<div class="outline-text-2" id="text-org57fe3cb">
+<ul class="org-ul">
+<li>Going through encapsulation with Jasque</li>
+<li>Testing relays with Jessica and Julia</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org840a615" class="outline-2">
+<h2 id="org840a615">Julia</h2>
+<div class="outline-text-2" id="text-org840a615">
+<ul class="org-ul">
+<li>Working on raspberry pi</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgad5666b" class="outline-2">
+<h2 id="orgad5666b">Jim</h2>
+<div class="outline-text-2" id="text-orgad5666b">
+<ul class="org-ul">
+<li>Finished with mounting the air dryer</li>
+<li>Working Pick and place</li>
+<li>Thinking about packing</li>
+<li>Shop clean up is complete</li>
+<li>Disable the remote</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc02e281" class="outline-2">
+<h2 id="orgc02e281">Jacques</h2>
+<div class="outline-text-2" id="text-orgc02e281">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org51804a9" class="outline-2">
+<h2 id="org51804a9">Joyce</h2>
+<div class="outline-text-2" id="text-org51804a9">
+<ul class="org-ul">
+<li>Keitheley 2470</li>
+<li>Workig with Rain on Grafana</li>
+<li>Carter 1 and 2</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org488b385" class="outline-2">
+<h2 id="org488b385">Rain</h2>
+<div class="outline-text-2" id="text-org488b385">
+<ul class="org-ul">
+<li>Config</li>
+<li>Module quality summary</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8bb06f4" class="outline-2">
+<h2 id="org8bb06f4">Andrew</h2>
+<div class="outline-text-2" id="text-org8bb06f4">
+<ul class="org-ul">
+<li>Shipping meeting update</li>
+<li>Checking the foam sets</li>
+<li>Work on testing stuff</li>
+<li>Work on the crate</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0a26de3" class="outline-2">
+<h2 id="org0a26de3">Carter</h2>
+<div class="outline-text-2" id="text-org0a26de3">
+<ul class="org-ul">
+<li>Checking foam sizes</li>
+<li>Store foam sets</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2167cdd" class="outline-2">
+<h2 id="org2167cdd">Manami</h2>
+<div class="outline-text-2" id="text-org2167cdd">
+<ul class="org-ul">
+<li>Updates to bonder GUI</li>
+<li>Ludvine and George about IV data</li>
+<li>Enviromental data: Humidity and Temp</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org99468a0" class="outline-2">
+<h2 id="org99468a0">Joy</h2>
+<div class="outline-text-2" id="text-org99468a0">
+<ul class="org-ul">
+<li>Shipping stuff: Foam $220</li>
+<li>skidmates</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb27a7ed" class="outline-2">
+<h2 id="orgb27a7ed">Sindhu</h2>
+<div class="outline-text-2" id="text-orgb27a7ed">
+<ul class="org-ul">
+<li>Jeremy how to store bias voltage for electrical tests</li>
+<li>How to host</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3a98063" class="outline-2">
+<h2 id="org3a98063">Pritam</h2>
+<div class="outline-text-2" id="text-org3a98063">
+<ul class="org-ul">
+<li>More parts have arrived</li>
+<li>Purchasing now</li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

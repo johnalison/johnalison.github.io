@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs tricks</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Emacs tricks</h1>
+
+
+<div id="outline-container-org7ff7ecc" class="outline-2">
+<h2 id="org7ff7ecc">Elisp</h2>
+<div class="outline-text-2" id="text-org7ff7ecc">
+<p>
+C-x C-e to execute a line of code (cursor needs to be at the end of the line)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaab01b8" class="outline-2">
+<h2 id="orgaab01b8">Due Dates</h2>
+<div class="outline-text-2" id="text-orgaab01b8">
+<p>
+To add a due date to a task in org-mode, position your cursor on the task heading and use:
+C-c C-d (which runs org-deadline)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1faf86b" class="outline-2">
+<h2 id="org1faf86b">Getting a code block</h2>
+<div class="outline-text-2" id="text-org1faf86b">
+<p>
+Use <code>C-c C-,</code> (or M-x org-insert-structure-template)
+or <code>&lt;s [tab]</code>
+</p>
+
+
+<pre class="example" id="org3c97ee6">
+Type C-c C-,
+Type s for source block
+Enter the language (e.g., shell, python, emacs-lisp)
+</pre>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org41a4666" class="outline-2">
+<h2 id="org41a4666">Built-in Buffer List:</h2>
+<div class="outline-text-2" id="text-org41a4666">
+<p>
+<code>C-x C-b</code> - Opens the buffer list in a separate window
+In the buffer list, you can:
+</p>
+
+<p>
+<code>d</code> - Mark buffer for deletion
+<code>x</code> - Execute deletions
+<code>RET</code> or <code>f</code> - Switch to buffer
+<code>o</code> - Open buffer in other window
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5573a95" class="outline-2">
+<h2 id="org5573a95">Quick gptsend <code>C-c g</code></h2>
+<div class="outline-text-2" id="text-org5573a95">
+<p>
+This gives you a quick <code>C-c g</code> binding that's less likely
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfb0df65" class="outline-2">
+<h2 id="orgfb0df65">To have one line paragraph</h2>
+<div class="outline-text-2" id="text-orgfb0df65">
+<p>
+For the current buffer only:
+<code>M-x =set-fill-column</code> RET 80 RET
+Or use the key binding:
+<code>C-x f 80 RET</code>
+set it to 10000
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org6c07bd1" class="outline-2">
+<h2 id="org6c07bd1">TRAMS: Remote work</h2>
+<div class="outline-text-2" id="text-org6c07bd1">
+<ul class="org-ul">
+<li>playing around with sshfs&#x2026; not working</li>
+<li>Trying emacs TRAMP:</li>
+</ul>
+<p>
+<code>/ssh:jda102@cmslpc-el9.fnal.gov:/uscms/home/jda102/nobackup/HH4b/Run3/coffea4bees/</code>
+</p>
+<ul class="org-ul">
+<li>works great!!</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org94ed7c9" class="outline-2">
+<h2 id="org94ed7c9">obsidian</h2>
+<div class="outline-text-2" id="text-org94ed7c9">
+<p>
+C-c d - open daily 
+C-c o - follow link at point
+C-c b - follow backlinks
+C-c n - open new note
+C-c j - jump to an existing note
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org44e27d7" class="outline-2">
+<h2 id="org44e27d7">Links:</h2>
+<div class="outline-text-2" id="text-org44e27d7">
+<p>
+<a href="emacs-20260227235639.html#ID-63E5D3C3-4969-4358-B03E-C8FD820607BB">Emacs</a>
+<a href="emacs-file-search.html#ID-330C2815-B2D3-4244-BFAE-8E4F88C35DE0">emacs-file-search</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

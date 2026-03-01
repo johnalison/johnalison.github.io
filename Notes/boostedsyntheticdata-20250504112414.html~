@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Boosted Synthetic Data</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Boosted Synthetic Data</h1>
+
+<div id="outline-container-orgf22b665" class="outline-2">
+<h2 id="orgf22b665">PFNano</h2>
+<div class="outline-text-2" id="text-orgf22b665">
+<p>
+Mail Re: PFNano samples for Run3
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2f99677" class="outline-2">
+<h2 id="org2f99677">Planning</h2>
+<div class="outline-text-2" id="text-org2f99677">
+<ul class="org-ul">
+<li>Start with softdrop mass
+<ul class="org-ul">
+<li>Verified Can recover the soft-drop mass from the leading two subjets.</li>
+<li>Now do Jet(De)Clustering based on the sub-jets
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> show can recover the data</li>
+<li class="off"><code>[&#xa0;]</code> Smear out the signal</li>
+<li class="off"><code>[&#xa0;]</code> Present in Hbb</li>
+</ul></li>
+<li>Setup for running on mini</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Start with Run2 signal</li>
+<li>skim nano
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Start with four-vectors to Chance&#x2026; Can talk to <a href="tonyboyle-20250504112618.html#ID-A3F6CCC3-0CDA-465F-90C4-01A3D210E3DB">TonyBoyle</a> about setup</li>
+<li class="on"><code>[X]</code> Can we recover soft-drop mass from leading two subjets ?</li>
+</ul></li>
+<li>script to plot mass in coffea code</li>
+</ul>
+
+<p>
+Looks like the Boosted Synthetic Data is actually going to be harder than I thought
+</p>
+<ul class="org-ul">
+<li>Need to reclacluate m<sub>regressed</sub> mass</li>
+<li>Need to recalculate PNet scores</li>
+<li>First try it with m-soft drop&#x2026; Let Chance do it.</li>
+</ul>
+
+<p>
+<a href="Chance Lavoie.html#ID-4CA4A83F-699E-4290-91C8-56AFDB128522">Chance Lavoie</a>
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1fef25c" class="outline-2">
+<h2 id="org1fef25c">Log</h2>
+<div class="outline-text-2" id="text-org1fef25c">
+</div>
+<div id="outline-container-org585a508" class="outline-3">
+<h3 id="org585a508"><a href="../Journal/2025/10-October/07-October-2025-Tuesday.html#ID-9F846786-1E32-41E5-BD2D-68E2CD164CC3">07 October 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org585a508">
+<ul class="org-ul">
+<li>Migrating to barista
+<code>git clone ssh://git@gitlab.cern.ch:7999/cms-cmu/barista.git</code>
+<code>cd barista</code>
+<code>git clone ssh://git@gitlab.cern.ch:7999/cms-cmu/coffea4bees.git</code></li>
+<li>Checkout   BoostedSynthetic Branch</li>
+<li>Merged with master
+<code>./run_container python runner.py -p coffea4bees/analysis/processors/processor_synthetic_boosted_PFcands.py -m coffea4bees/metadata/datasets_HH4b_2024_v2_boosted.yml -y 2022_EE -d data -c coffea4bees/analysis/metadata/HH4b_Run3_PFNano.yml -t -op coffea4bees/output -o test_PFCands.coffea</code></li>
+<li>Fixed&#x2026;</li>
+<li>Pushed PR fails</li>
+<li><code>./run_container python runner.py      -o test_synthetic_data.coffea -d  data synthetic_data synthetic_GluGluToHHTo4B_cHHH1 GluGluToHHTo4B_cHHH1  -p coffea4bees/analysis/processors/processor_synthetic_boosted.py -y UL18   -op output -m coffea4bees/metadata/datasets_HH4b_2024_v2_boosted.yml</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0d8c949" class="outline-3">
+<h3 id="org0d8c949"><a href="../Journal/2025/08-August/29-August-2025-Friday.html#ID-DDD0E193-6142-4634-8003-1656B3975EA0">29 August 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org0d8c949">
+<ul class="org-ul">
+<li>Need to update coffea4b code on falcon</li>
+<li>Merged with head.</li>
+<li>Now running from coffea4bs folder  
+<code>./run_container python runner.py -p python/analysis/processors/processor_synthetic_boosted_PFcands.py -m python/metadata/datasets_HH4b_2024_v2_boosted.yml -y 2022_EE -d data -c python/analysis/metadata/HH4b_Run3_PFNano.yml -t</code></li>
+<li>Minor changes&#x2026; pushed</li>
+<li>Testing subjets
+<code>./run_container python runner.py      -o test_synthetic_data.coffea -d  data synthetic_data synthetic_GluGluToHHTo4B_cHHH1 GluGluToHHTo4B_cHHH1  -p python/analysis/processors/processor_synthetic_boosted.py -y UL18   -op output -m python/metadata/datasets_HH4b_2024_v2_boosted.yml</code></li>
+<li>Tried plotting all the pf cands&#x2026; Similar error&#x2026; pinged CL</li>
+<li>CL repushed&#x2026; Working now</li>
+<li>Adding pf cand hists</li>
+<li>pushed&#x2026; Mailed Lei</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org202a444" class="outline-3">
+<h3 id="org202a444"><a href="../Journal/2025/08-August/07-August-2025-Thursday.html#ID-21E90116-2A1D-4484-9A7C-CB4872AB2CBB">07 August 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org202a444">
+<ul class="org-ul">
+<li>Figured out how to add PFCands to subjets&#x2026;</li>
+<li>Now can't plot them&#x2026; Need to ping CL</li>
+<li>Indeed looks like I need to ak.flatten</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb6c9a6e" class="outline-3">
+<h3 id="orgb6c9a6e"><a href="../Journal/2025/08-August/06-August-2025-Wednesday.html#ID-1BEDB4A3-5116-4C94-99CF-0D1DD6278FF7">06 August 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgb6c9a6e">
+<ul class="org-ul">
+<li>Working through subjet histograms</li>
+<li>Got it working&#x2026; sent mail to Chance</li>
+<li>Updating PFCand processor</li>
+<li>Playing with PFCands&#x2026; sent mail to Lei</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9484d03" class="outline-3">
+<h3 id="org9484d03"><a href="../Journal/2025/08-August/05-August-2025-Tuesday.html#ID-60F48A5B-54FD-4F74-ABB2-D8BE4DDE0275">05 August 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org9484d03">
+<ul class="org-ul">
+<li><p>
+Results with the new synthetic dataset
+</p>
+
+<div id="org2875c47" class="figure">
+<p><img src="Running_on__[[id:A735E218-3029-452D-A06C-0FB172DE398E][Boosted_Synthetic_Data]]/2025-08-05_10-50-47_screenshot.png" alt="2025-08-05_10-50-47_screenshot.png" />
+</p>
+</div></li>
+<li>Pushed changes</li>
+<li class="on"><code>[X]</code> Adding some hists</li>
+<li class="on"><code>[X]</code> Send mails</li>
+<li>Trying to add hists&#x2026;I think I need to copy WCandHists&#x2026; <code>yes this turns out to be what I need</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org84fdac1" class="outline-3">
+<h3 id="org84fdac1"><a href="../Journal/2025/07-July/31-July-2025-Thursday.html#ID-E1CF837B-4BC7-4E90-AE0A-6C62AAFAD90A">31 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org84fdac1">
+<ul class="org-ul">
+<li>Cleaning up code</li>
+<li class="on"><code>[X]</code> Update the deClusterer</li>
+<li>Remaking the pdfs for all three splitting types</li>
+<li>Fixes to the deClusterer to allow some types of combined jets to be ignored.
+Need that in the boosted case because I am not declustering <code>(bj)</code> jets</li>
+<li>Remaking the synthetic data</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgddc15c5" class="outline-3">
+<h3 id="orgddc15c5"><a href="../Journal/2025/07-July/30-July-2025-Wednesday.html#ID-231925DE-0900-46A7-9E67-E7435AD21B4B">30 July 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgddc15c5">
+<ul class="org-ul">
+<li>Updating synthetic dataset splitting based on tau21</li>
+<li>tau21 is small declare b+j</li>
+<li>Adding seprate splitting for bj (meaning low tau21 and b)</li>
+<li>Have to get sorting right.. Done</li>
+<li>Making new pdfs</li>
+<li><code>./run_container python  jet_clustering/make_jet_splitting_PDFs.py output/test_synthetic_data_HH4b.coffea  --years UL18   --out jet_clustering/jet-splitting-PDFs-boosted-00-03-00 --doBoosted</code></li>
+<li>Will need to update the declustering code to not split <code>(bj)</code> when doing the boosted</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2b391a4" class="outline-3">
+<h3 id="org2b391a4"><a href="../Journal/2025/07-July/29-July-2025-Tuesday.html#ID-3DE9E875-1D7E-40BB-B213-B076B76788D7">29 July 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org2b391a4">
+<ul class="org-ul">
+<li>Think what I want to do is preserve the graph such that elements that get deClustered are pseudojets with no-substructure (tau21 ~ 1).</li>
+<li>The synthetic data would then undo the splitting at the nodes, preserveing pT and direction of the combined jet (ala resolved)</li>
+<li>The underlying PF candidates would just "go along for the ride" with the fourvectors modified to match the synthetic pseudojet
+(eta and phi shifted and pt scaled)</li>
+</ul>
+
+<div id="org9c2721b" class="figure">
+<p><img src="Chat_AE:re_boosted_synthetic/2025-07-29_13-51-48_screenshot.png" alt="2025-07-29_13-51-48_screenshot.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Need to think if this is really worth the trouble&#x2026; Probably yes for Lei</li>
+<li>Think I really want to do this in C++ on miniAOD&#x2026;or should we try on python first?</li>
+<li class="on"><code>[X]</code> clean code: try ak.zip (ala helpers/canditates<sub>selection.py</sub></li>
+<li class="on"><code>[X]</code> plot properties of the subjets</li>
+<li>Try to cluster sub-jets based on a cut on tau21</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgab865b0" class="outline-3">
+<h3 id="orgab865b0"><a href="../Journal/2025/07-July/28-July-2025-Monday.html#ID-5699C8F0-750A-4241-935A-4D47A4FCA261">28 July 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgab865b0">
+<ul class="org-ul">
+<li>Looking into PFCandidates
+<ul class="org-ul">
+<li><code>./run_container python runner.py -p analysis/processors/processor_synthetic_boosted_PFcands.py -m metadata/datasets_HH4b_2024_v2_boosted.yml -y 2022_EE -d data -c analysis/metadata/HH4b_Run3_PFNano.yml -t</code></li>
+</ul></li>
+<li>Getting the PFCands and starting to plot them</li>
+<li>Starting to add PFCand plots</li>
+<li>Not clear how to do synthetic data&#x2026; probably dont want to use PFCands&#x2026;subjets from kt clustering?</li>
+<li>Need to think about about how to decluster "PFCands"</li>
+<li>Probably want to preserve the sub-jet topology</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9d32f0e" class="outline-3">
+<h3 id="org9d32f0e"><a href="../Journal/2025/07-July/25-July-2025-Friday.html#ID-6891C8C1-D6F6-4D75-A83D-D343084FEDA9">25 July 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org9d32f0e">
+<ul class="org-ul">
+<li>Add Xbb cut on fatjet 2?
+<ul class="org-ul">
+<li>Adding plots of Xbb&#x2026; Not cutting on Xbb</li>
+</ul></li>
+<li>Adding a cut on Xbb for both jets.</li>
+<li>Will remake pdfs.</li>
+<li><code>./run_container python  jet_clustering/make_jet_splitting_PDFs.py output/test_synthetic_data_HH4b.coffea  --years UL18   --out jet_clustering/jet-splitting-PDFs-boosted-00-02-00 --doBoosted</code></li>
+<li>Making synthetic data</li>
+</ul>
+
+
+<div id="orgd2f88c3" class="figure">
+<p><img src="[[id:A735E218-3029-452D-A06C-0FB172DE398E][Boosted_Synthetic_Data]]/2025-07-25_12-06-42_screenshot.png" alt="2025-07-25_12-06-42_screenshot.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Try 40 GeV mass cut on the declustering ?</li>
+<li>Did the declustering at 40 GeV.. qualitatively the same</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org84a7c46" class="outline-3">
+<h3 id="org84a7c46"><a href="../Journal/2025/07-July/18-July-2025-Friday.html#ID-BBE47038-08A0-4AF6-BEAC-60B446279F91">18 July 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org84a7c46">
+<ul class="org-ul">
+<li>Check soft-drop parameters (pt<sub>B</sub>/ pt? ).</li>
+<li>Trying &#x2026; Seems OK</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga2e1615" class="outline-3">
+<h3 id="orga2e1615"><a href="../Journal/2025/07-July/17-July-2025-Thursday.html#ID-66A4D1CC-60B8-4B15-9C28-69EEDF899F9A">17 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orga2e1615">
+<ul class="org-ul">
+<li>Adding midMass selection</li>
+<li>Chat AE re:subjets
+<ul class="org-ul">
+<li class="on"><code>[X]</code> mA vs mB plots: DONE: indeed there are big correlations between the subjet masses</li>
+<li class="on"><code>[X]</code> nConstituents ? No, but we do have tauX variables</li>
+<li>Two types of subjets (high and low mass)</li>
+<li>Looked into tau21, there are lot of tau21 ~ 0 events in the low mass region.</li>
+<li>Probably best to just cut at 50 GeV</li>
+<li>Added 50 GeV mass cut</li>
+<li>Make pdfs:
+<code>./run_container python  jet_clustering/make_jet_splitting_PDFs.py output/test_synthetic_data.coffea  --years UL18   --out jet_clustering/jet-splitting-PDFs-boosted-00-01-00 --doBoosted</code></li>
+</ul></li>
+<li>Updated <code>make_declustered_data_boosted_4b.py</code> to cut on the combined subjet pts and the subjet masses</li>
+<li>Making new synthetic data&#x2026; done</li>
+<li>Running data and HH4b
+<code>./run_container python runner.py      -o test_synthetic_data.coffea -d  data synthetic_data synthetic_GluGluToHHTo4B_cHHH1 GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_synthetic_boosted.py -y UL18   -op output -m metadata/datasets_HH4b_2024_v2_boosted.yml</code></li>
+<li>Looks much better!</li>
+</ul>
+
+
+<div id="org663c129" class="figure">
+<p><img src="[[id:A735E218-3029-452D-A06C-0FB172DE398E][Boosted_Synthetic_Data]]/2025-07-17_16-41-55_screenshot.png" alt="2025-07-17_16-41-55_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Still not perfect .. Maybe a threshold effect ?</li>
+<li>Will try to relax the mass</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org47b4696" class="outline-3">
+<h3 id="org47b4696"><a href="../Journal/2025/07-July/14-July-2025-Monday.html#ID-B44801CE-8677-4BEB-B9B4-4B1DFFF171A6">14 July 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org47b4696">
+<ul class="org-ul">
+<li>zA less than 0.5 for data</li>
+<li>Move sorting for making synthetic data</li>
+<li>Think the problem could be that fatJet four-vector is not the sum of the sub-jet fourvectors&#x2026;.</li>
+<li>Setting the splitting pt fourvector to be just the sum of the two subjets</li>
+<li>Making new input pdfs
+<code>./run_container python  jet_clustering/make_jet_splitting_PDFs.py output/test_synthetic_data.coffea  --years UL18   --out jet_clustering/jet-splitting-PDFs-boosted-00-00-05 --doBoosted</code></li>
+<li>Update <code>make_declustered_data_boosted_4b</code> to use the sum of the subjet fourvectors</li>
+<li>Remaking synthetic data</li>
+<li>pts look better.  Seeing weird overflows&#x2026; Should check if its from the nans&#x2026;</li>
+<li>Adding pt-cut on the combined subjet fourvector</li>
+<li>Maybe need rhoB vs theta ?</li>
+<li>Check subjet masses if sub-jets are massless</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org22b8bf5" class="outline-3">
+<h3 id="org22b8bf5"><a href="../Journal/2025/07-July/10-July-2025-Thursday.html#ID-338FC11E-DBC1-43EA-BAFC-FEE08B0F30BA">10 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org22b8bf5">
+<ul class="org-ul">
+<li>Making PDFs with more thetaA bins: updated binnings
+<ul class="org-ul">
+<li><code>jet-splitting-PDFs-boosted-00-00-02</code>
+<code>./run_container python  jet_clustering/make_jet_splitting_PDFs.py output/test_synthetic_data.coffea  --years UL18   --out jet_clustering/jet-splitting-PDFs-boosted-00-00-02 --doBoosted</code></li>
+</ul></li>
+<li>Re-Making the synthetic data</li>
+
+<li>thetaA now much better&#x2026; But the masses is qualitatively unchanged.</li>
+<li>Going to try to fix ptB now&#x2026; adding more bins to rhoA and rhoB
+<ul class="org-ul">
+<li><code>jet-splitting-PDFs-boosted-00-00-03</code></li>
+<li>related to sorting ?</li>
+</ul></li>
+<li>Problems with subjet pt ordering after declustering..</li>
+<li>Doing a pt sort on the subjets before clustering</li>
+<li>Trying with more pt bins 3-&gt;6&#x2026;
+<code>jet_clustering/jet-splitting-PDFs-boosted-00-00-04</code></li>
+<li>Re-made the synthetic data</li>
+<li>Now seeing the zA templates look wierd in data.  Should not have values below 0.5 &#x2026;?
+<code>This was b/c I was using fatJet pt, not sum-subjet Pts</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org69dc911" class="outline-3">
+<h3 id="org69dc911"><a href="../Journal/2025/07-July/09-July-2025-Wednesday.html#ID-99BBF684-6EC9-448B-8013-D2C1F8F7CF2E">09 July 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org69dc911">
+<ul class="org-ul">
+<li>Think my problem is the resolution on thetaA??
+<code>... turns out it wasnt.</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge32096f" class="outline-3">
+<h3 id="orge32096f"><a href="../Journal/2025/07-July/08-July-2025-Tuesday.html#ID-7C7AA8AC-ABAF-43B6-94C2-7D944F66CC4A">08 July 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orge32096f">
+<ul class="org-ul">
+<li>Getting the ranges working on 2d histograms</li>
+<li>Adding low mass selection</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgfb7398c" class="outline-3">
+<h3 id="orgfb7398c"><a href="../Journal/2025/07-July/07-July-2025-Monday.html#ID-2E436722-A407-4E13-B0A7-76B82D7D3D75">07 July 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgfb7398c">
+<ul class="org-ul">
+<li>Need to fix sub-jet &lt;&#x2014;&gt; fat-jet matching</li>
+<li class="on"><code>[X]</code> Add dR check to spot mismatches</li>
+<li>dR checks in data OK</li>
+<li>Synthetic data has many mismatches</li>
+<li>Now ordering output synthetic subjets by subJetIdx0 and 1</li>
+<li>Test seems to fix problem.</li>
+<li>Remaking all synthetic data</li>
+<li>Much closer
+<code>Found 113 bad matches in 60127 events</code></li>
+<li>Residual errors from <code>nan</code> s</li>
+<li>Making 2d Raitios !!!</li>
+<li>Need to look at more 2d pltos</li>
+<li>Is it a problem with the 1st theta bin ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbe3f819" class="outline-3">
+<h3 id="orgbe3f819"><a href="../Journal/2025/06-June/26-June-2025-Thursday.html#ID-7FD9CBD7-2BFC-43DB-9985-91C73980AE68">26 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgbe3f819">
+<ul class="org-ul">
+<li>Mades pdf with <code>zA_l_mA_l_mB_l</code></li>
+<li>Remaking synthetic data with new pdfs</li>
+<li class="on"><code>[X]</code> Why am I seeing splitting fractions with zA = 0 in the synthetic data?
+<ul class="org-ul">
+<li>A: subjets are matched to the wrong fat jet</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Fix subjet matching
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Use dR check to spot problems</li>
+<li class="off"><code>[&#xa0;]</code> Implement solution</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6f8b76b" class="outline-3">
+<h3 id="org6f8b76b"><a href="../Journal/2025/06-June/25-June-2025-Wednesday.html#ID-AFE6C5AC-7D50-473E-87DE-7BACB2A55586">25 June 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org6f8b76b">
+<ul class="org-ul">
+<li>Can run on signal
+<code>./run_container python runner.py    -o test_synthetic_signal.coffea -d GluGluToHHTo4B_cHHH1 synthetic_GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_synthetic_boosted.py -y UL18   -op output -m metadata/datasets_HH4b_2024_v2_boosted.yml</code></li>
+<li>Added soft drop mass and subjet mass plots</li>
+<li>plot with
+<code>python -i plots/iPlot.py SyntheticBoostedTests/test_synthetic_signal.coffea -m plots/metadata/plotsSyntheticBoosted.yml</code></li>
+</ul>
+
+<p>
+got the synthetic data running
+</p>
+
+<div id="orgf9245a8" class="figure">
+<p><img src="file:///home/runner/RoamNotes/images/[[id:A735E218-3029-452D-A06C-0FB172DE398E][Boosted_Synthetic_Data]]/2025-06-25_16-29-32_screenshot.png" alt="2025-06-25_16-29-32_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Looks like the pt-threshold is too high in the synthetic jets&#x2026; I actually think its the delta R cut.</li>
+<li>Remove the dr cut, now looks like:</li>
+</ul>
+
+
+<div id="org35d5991" class="figure">
+<p><img src="file:///home/runner/RoamNotes/images/[[id:A735E218-3029-452D-A06C-0FB172DE398E][Boosted_Synthetic_Data]]/2025-06-25_22-34-50_screenshot.png" alt="2025-06-25_22-34-50_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Need to use zA<sub>l</sub> not zA for sampling pdf</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7f5a817" class="outline-3">
+<h3 id="org7f5a817"><a href="../Journal/2025/06-June/24-June-2025-Tuesday.html#ID-92A7F62A-C081-4B9A-BC4D-173BC60CD932">24 June 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org7f5a817">
+<ul class="org-ul">
+<li>Back to understanding data vs synthetic data differences&#x2026;</li>
+<li>Looks like I had most of the synthetic datasets commented out&#x2026;INDEED!! fixed</li>
+<li>Mail to Chance and Lei</li>
+<li>Signal failing with
+<code>./run_container python runner.py  -o test_signal_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_synthetic_boosted.py -y UL18  -op output -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+<li>Was cutting on the lumimask in MC&#x2026; killing all the events</li>
+<li>Now have the declustering running on signal</li>
+<li>Running all events</li>
+<li>Strange errors during merging from boosted taus&#x2026; resolved by removing boosted taus in <code>python/skimmer/metadata/declustering_boosted.yml</code></li>
+<li>Making plots</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6f3176c" class="outline-3">
+<h3 id="org6f3176c"><a href="../Journal/2025/06-June/23-June-2025-Monday.html#ID-EE26CC57-DC14-4752-B5E7-739152D7FADF">23 June 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org6f3176c">
+<ul class="org-ul">
+<li>Synthetic dataset fails &#x2026;</li>
+<li>Remaking with new nSubJets cuts</li>
+<li>Running
+<code>./run_container python runner.py   -o test_synthetic_data.coffea -d synthetic_data  -p analysis/processors/processor_synthetic_boosted.py -y UL18 -e A  -op output -m metadata/datasets_HH4b_2024_v2_boosted.yml</code>
+Still see errors!</li>
+<li>Data OK</li>
+<li>Did not update the skimmer processor with the new cut&#x2026; trying agian&#x2026;</li>
+<li>Test job fails&#x2026;</li>
+<li>Problem when more than four subjets in the orignal data, but the selected jets point to not the first 4&#x2026;</li>
+<li>Removed by hand for now</li>
+<li>Big difference in event yields between data and synthetic data.
+<code>python -i plots/iPlot.py SyntheticBoostedTests/test_synthetic_data.coffea -m plots/metadata/plotsSyntheticVsData2.yml</code></li>
+<li>Adding cutflow</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org289f926" class="outline-3">
+<h3 id="org289f926"><a href="../Journal/2025/06-June/20-June-2025-Friday.html#ID-35932784-51E0-4742-A620-B02955466F19">20 June 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org289f926">
+<ul class="org-ul">
+<li>Ordered subjets based on fat jet index</li>
+<li>Made synthetic data for the whole dataset:</li>
+<li><code>./run_container source scripts/synthetic-dataset-make-dataset-boosted-all.sh</code></li>
+<li>Need to update to master to get container to mount the scratch directory</li>
+<li>Merged with origin master</li>
+<li>Running synthetic data
+<code>./run_container python runner.py   -o test_synthetic_data.coffea -d synthetic_data  -p analysis/processors/processor_synthetic_boosted.py -y UL18 -e A  -op output -m metadata/datasets_HH4b_2024_v2_boosted.yml</code></li>
+<li>Found "Nones" really coming from fat jets with only one subjet
+Added the proper cut on nSubjets == 2</li>
+<li>Update <code>make_jet_splitting_PDFs.py</code> to run on boosed and nominal</li>
+<li>For boosted run with
+<code>./run_container python  jet_clustering/make_jet_splitting_PDFs.py output/test_data.coffea  --years UL18   --out jet_clustering/jet-splitting-PDFs-boosted-00-00-01-test --doBoosted</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5290a21" class="outline-3">
+<h3 id="org5290a21"><a href="../Journal/2025/06-June/18-June-2025-Wednesday.html#ID-832FD425-931A-48AF-997F-A285E0243248">18 June 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org5290a21">
+<ul class="org-ul">
+<li>Debugging &#x2026;</li>
+<li>Problem from size of the float
+<code>&lt;class 'numpy.float32'&gt;</code> vs <code>&lt;class 'numpy.float64'&gt;=</code></li>
+<li>Fixed&#x2026;More problems&#x2026; Seem to all be fixed&#x2026;</li>
+<li>Updating Subjets&#x2026; Adding fatjet index as btag score</li>
+<li>Need to sort on btag ID</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org82ff244" class="outline-3">
+<h3 id="org82ff244"><a href="../Journal/2025/06-June/17-June-2025-Tuesday.html#ID-27907856-0A5B-43CC-9BF7-851DB41A1636">17 June 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org82ff244">
+<ul class="org-ul">
+<li>Moving to splitting name <code>1b0j/1b0j</code></li>
+<li>Setting up the Boosted Synthetic data creation</li>
+<li class="off"><code>[&#xa0;]</code> skip<sub>collections</sub> ?</li>
+<li class="off"><code>[&#xa0;]</code> skip<sub>branches</sub> ?</li>
+<li><code>./run_container source scripts/synthetic-dataset-make-dataset-boosted.sh</code></li>
+<li>Checking root file with:</li>
+<li><code>./run_container combine root  output/synthetic_dataset_make_dataset/data_UL18A/picoAOD_seed5.root</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0fe63dc" class="outline-3">
+<h3 id="org0fe63dc"><a href="../Journal/2025/06-June/13-June-2025-Friday.html#ID-7955B145-DF6C-419E-A8C2-7DA9B7DBBCE4">13 June 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org0fe63dc">
+<ul class="org-ul">
+<li>Chat Chance and Lei</li>
+<li>Chance Fixed problem of the failed boosts</li>
+<li><code>./run_container python  jet_clustering/make_jet_splitting_PDFs.py output/test_data.coffea  --years Run2   --out jet_clustering/jet-splitting-PDFs-boosted-00-00-01</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2262bbf" class="outline-3">
+<h3 id="org2262bbf"><a href="../Journal/2025/06-June/06-June-2025-Friday.html#ID-2DF76617-A5E6-47EA-B4E3-B39AF7EF4F39">06 June 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org2262bbf">
+<ul class="org-ul">
+<li>Getting the processor running on data
+<code>./run_container python runner.py -t  -o test_data_nano.coffea -d data  -p analysis/processors/processor_synthetic_boosted.py -y UL18  -op output -m metadata/datasets_HH4b_2024_v2_boosted.yml</code></li>
+<li>Almost there&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf85436f" class="outline-3">
+<h3 id="orgf85436f"><a href="../Journal/2025/05-May/29-May-2025-Thursday.html#ID-5C744739-8519-4666-8260-9DF5EE3C971D">29 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgf85436f">
+<ul class="org-ul">
+<li>Trying to get my grid certificate to work on rogue
+<ul class="org-ul">
+<li><p>
+From AE
+Just run: <code>voms-proxy-init --valid 168:00</code> and it should work.
+</p>
+
+<p>
+Then I test opening a file like this and it worked:
+ <code>./run_container combine root -lroot://cmseos.fnal.gov//eos/uscms//store/mc/RunIISummer20UL18NanoAODv9/GluGluToHHTo4B_cHHH1_TuneCP5_PSWeights_13TeV-powheg-pythia8/NANOAODSIM/106X_upgrade2018_realistic_v16_L1v1-v1/2810000/EE3712DC-9DAB-694E-A446-0B43C5590D58.root</code>
+</p></li>
+</ul></li>
+
+<li>Running
+<code>./run_container python runner.py  -o test_signal_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_synthetic_boosted.py -y UL18  -op output -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+
+<li>Chance can run locally with:
+<code>./run_container python runner.py  -o test_signal_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_synthetic_boosted.py -y UL18  -op output -m metadata/datasets_HH4b_2024_v2_boosted.yml</code></li>
+
+<li>Got it going&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgdcac355" class="outline-3">
+<h3 id="orgdcac355"><a href="../Journal/2025/05-May/28-May-2025-Wednesday.html#ID-F3FE3164-526A-4488-AE5B-AA3D6C474366">28 May 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgdcac355">
+<ul class="org-ul">
+<li>Zoom call with <a href="Chance Lavoie.html#ID-4CA4A83F-699E-4290-91C8-56AFDB128522">Chance Lavoie</a></li>
+<li>Ran boosted test command on rogue01
+<code>./run_container python runner.py -p analysis/processors/processor_synthetic_boosted.py -m metadata/datasets_HH4b_2024_v2_boosted.yml -d data -y UL18 -op output/ -o test.coffea</code></li>
+<li>Added better histogramming</li>
+<li>Tried to add subJets&#x2026;</li>
+<li>Debugging subjets on LPC with:
+<code>python runner.py  -o signal_BoostedHH4b_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_boosted_HH4b.py -y UL18  -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+<li>Subjets are missing in new skims &#x2026;</li>
+<li>AE to make new inputs</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1fc9637" class="outline-3">
+<h3 id="org1fc9637"><a href="../Journal/2025/03-March/09-March-2025-Sunday.html#ID-8AB85C82-E090-70BD-D61A-0ADCE143EFAE">9 March 2025 Sunday</a></h3>
+<div class="outline-text-3" id="text-org1fc9637">
+<ul class="org-ul">
+<li>Running UL18A on condor &#x2026; cmslpc317
+<code>python runner.py   -o data_boosted_nano.coffea -d data  -p analysis/processors/processor_boosted_HH4b.py -y UL18 -e A  -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml --condor</code></li>
+<li>&#x2026; Fails&#x2026; Trying era C</li>
+<li>Runs</li>
+<li>Sub-Jet masses reconstruct the soft-jet masses well also in data!</li>
+<li>[&gt;&gt;] Skim data (no Trigger)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb0e070b" class="outline-3">
+<h3 id="orgb0e070b"><a href="../Journal/2025/03-March/08-March-2025-Saturday.html#ID-FE43AB19-6F5D-7BE9-6C88-23F4953485FD">8 March 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgb0e070b">
+<ul class="org-ul">
+<li>Lots more progress&#x2026;. Trying data</li>
+<li><b><b>cmslpc314</b></b>..</li>
+<li>Running on data&#x2026; Looks like triggers are not applied
+<ul class="org-ul">
+<li><code>python runner.py   -o data_boosted_nano.coffea -d data  -p analysis/processors/processor_boosted_HH4b.py -y UL18  -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3e3968d" class="outline-3">
+<h3 id="org3e3968d"><a href="../Journal/2025/03-March/06-March-2025-Thursday.html#ID-0194C295-2872-D0F2-2A2E-D3F588811AD8">6 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org3e3968d">
+<ul class="org-ul">
+<li>filter boosted fourvectors</li>
+<li>Nanos failing on rucio&#x2026; Nano not avilible on LPC, needed to add MIT
+<ul class="org-ul">
+<li><a href="dasgoclient.html#ID-98EEAEF6-8684-4D6B-B4F0-B677592D5593">dasgoclient</a></li>
+</ul></li>
+<li>NanoAOD content <a href="https://cms-nanoaod-integration.web.cern.ch/autoDoc/">https://cms-nanoaod-integration.web.cern.ch/autoDoc/</a></li>
+<li>Testing with
+<ul class="org-ul">
+<li><code>python runner.py -t  -o signal_HH4b_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_boosted_HH4b.py -y UL18  -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+</ul></li>
+<li>Added function to write boosted output</li>
+<li>Running on all UL18
+<ul class="org-ul">
+<li><code>python runner.py  -o signal_BoostedHH4b_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_boosted_HH4b.py -y UL18  -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+</ul></li>
+<li>Example script for reading the output
+<ul class="org-ul">
+<li><code>python analysis/readBoostedSyntheticEvents.py output/analysis_test_job/signal_BoostedHH4b_nano.coffea</code></li>
+</ul></li>
+<li>Sent mail to Chance</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgaa76730" class="outline-2">
+<h2 id="orgaa76730">N-subjettiness</h2>
+<div class="outline-text-2" id="text-orgaa76730">
+<p>
+<b><b>τ1,τ2,τ3,τ4</b></b>: These variables measure how well a jet can be described by 1, 2, 3, or 4 subjets, respectively. Lower values indicate a better fit to the corresponding number of subjets.
+</p>
+
+<ul class="org-ul">
+<li><b><b>τ21= frac{&tau;<sub>2</sub>}{&tau;<sub>1</sub>}</b></b>
+Measures how much more the jet looks like a 2-prong structure compared to a 1-prong structure.</li>
+
+<li><b><b>τ32=\frac{\tau_3}{\tau_2}</b></b>
+Measures how much more the jet resembles a 3-prong structure compared to a 2-prong structure.</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgd8cd6af" class="outline-4">
+<h4 id="orgd8cd6af">Interpretation:</h4>
+<div class="outline-text-4" id="text-orgd8cd6af">
+<ul class="org-ul">
+<li><b><b>2-prong jets</b></b> (e.g., boosted W/Z bosons or Higgs to bb) usually have:
+
+<ul class="org-ul">
+<li><b>*Low τ21&tau;<sub>21</sub>τ21​*</b>: because adding a second subjet significantly improves the description.</li>
+<li><b>*High τ32&tau;<sub>32</sub>τ32​*</b>: since a third subjet adds little benefit.</li>
+</ul></li>
+<li><b><b>3-prong jets</b></b> (e.g., boosted top quarks) generally show:
+
+<ul class="org-ul">
+<li><b>*Low τ32&tau;<sub>32</sub>τ32​*</b>: because adding a third subjet significantly improves jet description.</li>
+<li>Moderate-to-higher τ21&tau;<sub>21</sub>τ21​, since going from one subjet to two subjets is helpful, but the clearer signal is at three subjets.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgde016c1" class="outline-2">
+<h2 id="orgde016c1">Instructions for Rogue</h2>
+<div class="outline-text-2" id="text-orgde016c1">
+<p>
+Here are the instructions to run the processor for the boosted
+synthetic datasets:
+</p>
+
+<p>
+Setting Up Your Analysis Environment
+</p>
+
+<p>
+Here's a step-by-step guide to setting up your analysis environment on
+our computing cluster:
+</p>
+
+<p>
+Cluster Account Setup:
+</p>
+
+<p>
+You'll need an account on our computing cluster. Follow the
+instructions here to create one:
+<a href="https://cms-cmu.docs.cern.ch/computing/computing/">https://cms-cmu.docs.cern.ch/computing/computing/</a>
+</p>
+
+<p>
+Cluster Login:
+</p>
+
+<p>
+Once you have an account, log in to the cluster. If you haven't
+modified your SSH configuration file (.ssh/config) as suggested in the
+website, use one of the following commands in your terminal:
+</p>
+
+<p>
+<code>ssh -XY &lt;your_username&gt;@falcon.phys.cmu.edu</code>
+<code>ssh -XY &lt;your_username&gt;@rogue01</code>
+</p>
+
+<p>
+Replace &lt;your<sub>username</sub>&gt; with your actual username on the cluster. The
+-XY flags enable X11 forwarding, which might be needed for certain
+applications.
+</p>
+
+<p>
+Repository Cloning:
+</p>
+
+<p>
+Create a work directory to store your analysis files:
+</p>
+
+<p>
+<code>mkdir work</code>
+<code>cd work</code>
+</p>
+
+<p>
+Clone the coffea4bees repository from GitHub:
+</p>
+
+<p>
+<code>git clone https://github.com/alefisico/coffea4bees.git</code>
+</p>
+
+<p>
+Navigate to the python directory within the cloned repository:
+</p>
+
+<p>
+<code>cd coffea4bees/python/</code>
+</p>
+
+<p>
+Software Overview:
+</p>
+
+<p>
+coffea: We use coffea (version 0.7.23) for data analysis. Refer to the
+documentation for this specific version:
+<a href="https://coffea-hep.readthedocs.io/en/v0.7.23/">https://coffea-hep.readthedocs.io/en/v0.7.23/</a>. Important: Do not use
+the latest coffea version's documentation.
+</p>
+
+<p>
+coffea4bees: This repository provides the necessary tools and scripts
+for your analysis. Key components include:
+</p>
+
+<p>
+runner.py: The main script (located in the python/ directory) for
+running your analysis "processors".
+</p>
+
+<p>
+processor<sub>synthetic</sub><sub>boosted.py</sub>: A template processor (in
+python/analysis/processors/) that you'll modify to define your
+specific analysis. This is where you'll specify what data you want to
+analyze and what calculations to perform.
+</p>
+
+<p>
+datasets<sub>HH4b</sub><sub>2024</sub><sub>v2</sub><sub>boosted.yml</sub>: This file (in python/metadata/)
+contains information about the data files you'll be working with.
+You'll primarily be using the "data" dataset, specifically for the
+"UL18" year. (The dataset is further divided into "eras," but this is
+not essential for your immediate work. We can discuss eras later if
+needed.)
+</p>
+
+<p>
+run<sub>container</sub>: A script in the python/ directory that runs your
+analysis within a pre-configured container. This container includes
+coffea and other required software, ensuring a consistent environment.
+Always use this script to execute your analysis.
+</p>
+
+<p>
+Running Your Analysis:
+</p>
+
+<p>
+Execute your analysis using the run<sub>container</sub> script from the python/ directory:
+</p>
+
+<p>
+./run<sub>container</sub> python runner.py -p
+analysis/processors/processor<sub>synthetic</sub><sub>boosted.py</sub> -m
+metadata/datasets<sub>HH4b</sub><sub>2024</sub><sub>v2</sub><sub>boosted.yml</sub> -d data -y UL18 -op output/
+-o test.coffea
+</p>
+
+<p>
+Command Breakdown:
+</p>
+
+<p>
+./run<sub>container</sub>: Executes the container script.
+</p>
+
+<p>
+python runner.py: Runs the runner.py script within the container.
+</p>
+
+<p>
+-p analysis/processors/processor<sub>synthetic</sub><sub>boosted.py</sub>: Specifies the
+path to your processor script.
+</p>
+
+<p>
+-m metadata/datasets<sub>HH4b</sub><sub>2024</sub><sub>v2</sub><sub>boosted.yml</sub>: Specifies the metadata file.
+</p>
+
+<p>
+-d data: Selects the "data" dataset.
+</p>
+
+<p>
+-y UL18: Specifies the "UL18" data-taking year.
+</p>
+
+<p>
+-op output/: Sets the output directory to output/. This directory will
+be created if it doesn't exist.
+</p>
+
+<p>
+-o test.coffea: Names the output file test.coffea.
+</p>
+
+<p>
+Output Location:
+</p>
+
+<p>
+The results of your analysis will be saved in a file named test.coffea
+within the output/ directory.
+</p>
+
+<p>
+Let me know if you have any questions
+cheers,
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1f461f7" class="outline-2">
+<h2 id="org1f461f7">1st Mail</h2>
+<div class="outline-text-2" id="text-org1f461f7">
+<p>
+Hi Chance
+</p>
+
+<p>
+You can find that data here:  
+<a href="https://cernbox.cern.ch/s/n9ZGaTYl8jVtL9g">https://cernbox.cern.ch/s/n9ZGaTYl8jVtL9g</a>  
+</p>
+
+<p>
+The file is for HH-&gt;4b signal and has the following variables:  
+</p>
+<ul class="org-ul">
+<li>'event'</li>
+<li>'run'</li>
+<li>'FatJet<sub>*</sub>'</li>
+<li>'SubJet<sub>*</sub>'</li>
+</ul>
+
+<p>
+(We can talk about this more in person when you have time&#x2026;)  
+Each event has two "FatJets", you can think of these as the reconstructed Higgs bosons.  
+Each FatJet has a four-vector (pt, eta, phi, mass) and a bunch of other variables.  
+Each FatJet has two "SubJets". The SubJets also have four-vectors and a bunch of other variables.  
+</p>
+
+<p>
+I would start by playing around with the data. An example of how to load the file in python is here:  
+<a href="https://cernbox.cern.ch/s/ucAc3Nr2ZaA78wU">https://cernbox.cern.ch/s/ucAc3Nr2ZaA78wU</a>  
+You will need to install coffea (and will probably also want numpy and akward) in your python environment. 
+</p>
+
+<p>
+(Tony Boyle, another undergrad working with me has done this and can help if needed&#x2026; ChatGPT also knows things&#x2026;)  
+</p>
+
+<p>
+A good first exercise is to compare the mass of the FatJets to the mass computed from the constituent SubJet four-vectors. These should be fairly close, though probably not exact. You will want to be able to make plots (histograms) of the masses.  
+</p>
+
+<p>
+Make sense?  
+</p>
+
+<p>
+Let me know if you have any problems accessing the files and what is a good time to meet to chat about this in more detail.  
+</p>
+
+<p>
+john
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

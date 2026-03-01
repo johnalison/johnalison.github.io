@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC MAC Meeting 8 April 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC MAC Meeting 8 April 2025</h1>
+
+<div id="outline-container-org566193a" class="outline-2">
+<h2 id="org566193a">News</h2>
+<div class="outline-text-2" id="text-org566193a">
+<ul class="org-ul">
+<li>Tooling coming in&#x2026;.</li>
+<li>Made all 14/15 good v3c</li>
+<li>New tooling v3b CuT</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org51cc81a" class="outline-2">
+<h2 id="org51cc81a">Action</h2>
+<div class="outline-text-2" id="text-org51cc81a">
+<ul class="org-ul">
+<li>Arrange pickup of UCSB tooling</li>
+<li class="off"><code>[&#xa0;]</code> Follow up with FMS re:humidity (Jeff Harris)</li>
+<li class="off"><code>[&#xa0;]</code> Order transfer tape &#x2026;</li>
+<li class="off"><code>[&#xa0;]</code> I just wanted to urge all of you to test your Juloabo chillers as soon as you are able to.  During the initial tests at TTU, Vladimir found out that our chiller needed repairs despite being brand new.  So, we are sending it back after consulting with Julabo.  Luckily we still had the shipping crate.  So, please test it and make sure it works properly.  Vladimir can give you more info if you need it.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1eb77f8" class="outline-2">
+<h2 id="org1eb77f8">Jessica</h2>
+<div class="outline-text-2" id="text-org1eb77f8">
+<ul class="org-ul">
+<li>14/15 grade B or better&#x2026;</li>
+<li>Rotational offsets should be revisited</li>
+<li>Figuring out dry air in single module test stand</li>
+<li>adding mounting to gantry</li>
+<li>auto particulate counter &#x2026; on burner</li>
+<li>Started notes for tomorrow</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb43fe74" class="outline-2">
+<h2 id="orgb43fe74">Josh</h2>
+<div class="outline-text-2" id="text-orgb43fe74">
+<ul class="org-ul">
+<li>Getting 2nd encapsulation station going</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org48b4772" class="outline-2">
+<h2 id="org48b4772">Jonas</h2>
+<div class="outline-text-2" id="text-org48b4772">
+<ul class="org-ul">
+<li>Dry air shelving / Gantry mounting</li>
+<li>scratch pad pictures -&gt; digits</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5b00db9" class="outline-2">
+<h2 id="org5b00db9">Ornella</h2>
+<div class="outline-text-2" id="text-org5b00db9">
+<ul class="org-ul">
+<li>Protocol for module assembly</li>
+<li>make place in the dry air cabinets</li>
+<li>Understanding the workflow</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf4efa01" class="outline-2">
+<h2 id="orgf4efa01">Andrew</h2>
+<div class="outline-text-2" id="text-orgf4efa01">
+<ul class="org-ul">
+<li>Tests</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0e5bf60" class="outline-2">
+<h2 id="org0e5bf60">Manami</h2>
+<div class="outline-text-2" id="text-org0e5bf60">
+<ul class="org-ul">
+<li>intr DB working</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6e7f40b" class="outline-2">
+<h2 id="org6e7f40b">Sindhu</h2>
+<div class="outline-text-2" id="text-org6e7f40b">
+<ul class="org-ul">
+<li>Joe asked for slides for annual review talk</li>
+<li>hickup with reusing parts&#x2026; add warning</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org74506da" class="outline-2">
+<h2 id="org74506da">Plan from Jessica:</h2>
+<div class="outline-text-2" id="text-org74506da">
+<ul class="org-ul">
+<li>All 15 V3c modules are assembled. CM0116 needs to be tested today. Josh or Jonas can get this started this morning.
+
+<ul class="org-ul">
+<li>Something we noticed last week with the dry air solenoid that is the wiring appears to be loose. Andrew has stated previously that the dry air doesn't always turn on when it's supposed to, but now that we have a pretty good lead on where to isolate this problem, I will take a look at this. If the dry air doesn't come on immediately, jiggle the wires a little bit.</li>
+</ul></li>
+
+<li>Tooling - Logan works on this
+
+<ul class="org-ul">
+<li>Done:
+
+<ul class="org-ul">
+<li>Carrying trays are all clean and ready for use.</li>
+<li>Hexaboard trays need backlighting but are otherwise ready.</li>
+<li>Hexaboard PUTs are ready, including feet.</li>
+<li>Gantry vacuum bases - done and ready for use. I am waiting for a picture from UCSB for standard LD Full setup on the gantry.</li>
+</ul></li>
+
+<li>To do:
+
+<ul class="org-ul">
+<li>Sensor trays - I snapped a screw on the backside of one last week and will have TechSpark remove it this morning. Logan can work on the other. We are low on 1/16" ID barbed tees and will place an order today.</li>
+<li>Tool holder tray - the blocks will come from the sensor PUTs, but we can install the posts. No tubing on this tray.</li>
+<li>Sensor PUTs - coming soon, Logan can work on the PUT feet. I will check blanking plugs inventory.</li>
+<li>Install OGP blocks.</li>
+</ul></li>
+</ul></li>
+
+<li>Gantry mounts for ionizer and E-stop - Jonas working on this, could give to an undergrad to work on.</li>
+<li>Cable support on gantry camera - Sometimes the camera cable shifts and causes a bad connection. Jonas is familiar with this and will work on it.</li>
+<li>automatic particulate counter - I will work on this when I can do as much as I can with tooling without the sensor PUTs and tool holder blocks.</li>
+<li>Notes for Wednesday - I will start these today. It will include a summary of our 15 V3c modules as well as our plan for scaling up tooling and programs.</li>
+<li>UCSB visit action items
+<ul class="org-ul">
+<li>Unistrut support to avoid vacuum tubing tripping hazards - Ornella is working on this, I will also attempt to email Eric for PNs for the drop ceiling rods</li>
+<li>permanent offbond area - TechSpark should be done with my offbond tower soon</li>
+<li>mini gantry camera - Guilia is working on this</li>
+</ul></li>
+
+<li>Dry air cabinet shelving - Jonas can ask Logan for help on this.</li>
+<li>Multiple module transport box - Josh working on this</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5d7940f" class="outline-2">
+<h2 id="org5d7940f">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org0b594c0" class="outline-2">
+<h2 id="org0b594c0">Links:</h2>
+<div class="outline-text-2" id="text-org0b594c0">
+<p>
+202504071040
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

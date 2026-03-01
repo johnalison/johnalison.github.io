@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OptimalTransport</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">OptimalTransport</h1>
+
+
+<div id="outline-container-org13425cc" class="outline-2">
+<h2 id="org13425cc">Published Paper:</h2>
+<div class="outline-text-2" id="text-org13425cc">
+<p>
+<a href="https://arxiv.org/abs/2208.02807">https://arxiv.org/abs/2208.02807</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d1e915" class="outline-2">
+<h2 id="org1d1e915">Talks</h2>
+<div class="outline-text-2" id="text-org1d1e915">
+<p>
+Larry: PHYSTAT seminar: Optimal Transport With Applications to Background Modeling
+<a href="https://indico.cern.ch/event/968985/">https://indico.cern.ch/event/968985/</a>
+</p>
+
+<p>
+Tudor: Transfer Learning for data-driven background modelling: Optimal Transport v Classifier Extrapolation
+<a href="https://indico.cern.ch/event/1051224/timetable/">https://indico.cern.ch/event/1051224/timetable/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org3abd008" class="outline-2">
+<h2 id="org3abd008">Ideas</h2>
+<div class="outline-text-2" id="text-org3abd008">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Synthetic Events ? (from Barycenters ? ) &#x2013;&gt; Probably no</li>
+<li>Run on data)
+<ul class="org-ul">
+<li>doest look great :</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Add LoT
+<ul class="org-ul">
+<li><a href="https://arxiv.org/abs/2008.08604">https://arxiv.org/abs/2008.08604</a></li>
+</ul></li>
+<li>Split code dependences</li>
+<li>Condor for fitting OT</li>
+<li class="off"><code>[&#xa0;]</code> ~~TT for toy study</li>
+<li class="off"><code>[&#xa0;]</code> sub-space OT</li>
+<li>Alternative Metrics ?</li>
+<li class="off"><code>[&#xa0;]</code> Speed up LOT</li>
+<li class="off"><code>[&#xa0;]</code> Compare weights OT vs FvT</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org775e847" class="outline-2">
+<h2 id="org775e847">Documentation</h2>
+<div class="outline-text-2" id="text-org775e847">
+<ul class="org-ul">
+<li>[Intro Slides From Tudor](<a href="https://cmu.box.com/s/lf4gqz9r449lyufn95kkqt39sjqhyn5s">https://cmu.box.com/s/lf4gqz9r449lyufn95kkqt39sjqhyn5s</a>)</li>
+<li>[More Intro Slides From Tudor](<a href="https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/slides.pdf">https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/slides.pdf</a>)</li>
+<li>[Intro Slides From John](<a href="https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/hh4bStatsIssues.pdf">https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/hh4bStatsIssues.pdf</a>)</li>
+<li>[Paper draft![](<a href="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfqjCu2wNCxAPryQG_3Wo84DgOMPhc4sF1Bwp9tRAUsXuSVjvOch2cVxDpheds4LRqd9SzWx_mIuWXHT6ZEoVJi58rL6QKs9YU--Ij7vMQ0lSmWPZncXBsmRWv5hmxUajKWG15FdFdkhBjRyKl7gGuUJ2I?key=w8GO1OtFjISvs04p9rJ_jA">https://lh7-rt.googleusercontent.com/docsz/AD_4nXfqjCu2wNCxAPryQG_3Wo84DgOMPhc4sF1Bwp9tRAUsXuSVjvOch2cVxDpheds4LRqd9SzWx_mIuWXHT6ZEoVJi58rL6QKs9YU--Ij7vMQ0lSmWPZncXBsmRWv5hmxUajKWG15FdFdkhBjRyKl7gGuUJ2I?key=w8GO1OtFjISvs04p9rJ_jA</a>)](<a href="https://github.com/tmanole/paper4b">https://github.com/tmanole/paper4b</a>)     [(Compiled Draft)](<a href="https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/manuscript.pdf">https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/manuscript.pdf</a>)</li>
+<li>[Optimizing EMD Metric](<a href="https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/OptimizingEMDMetric.pdf">https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/OptimizingEMDMetric.pdf</a>)</li>
+<li>[<a href="https://github.com/tmanole/toy4b">https://github.com/tmanole/toy4b</a>](<a href="https://github.com/tmanole/toy4b">https://github.com/tmanole/toy4b</a>)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7fbb5c3" class="outline-2">
+<h2 id="org7fbb5c3">References</h2>
+<div class="outline-text-2" id="text-org7fbb5c3">
+<ul class="org-ul">
+<li>[Metric Space of Collider Events![](<a href="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQ4USUe79kC2JL4I2aQ2ivYYTZG1Nmr2f-JxAS9z4gwJxTvyae_hdr7gJ-L6CKbQfNJNBd4mvQ5s020zgWLI1Zu8sWLTBDivGJwkuVxcqjlzPnek5L5X-T5jbitUGo7cuIAjZfrfHUsGFc9Q8jeAKQLw?key=w8GO1OtFjISvs04p9rJ_jA">https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQ4USUe79kC2JL4I2aQ2ivYYTZG1Nmr2f-JxAS9z4gwJxTvyae_hdr7gJ-L6CKbQfNJNBd4mvQ5s020zgWLI1Zu8sWLTBDivGJwkuVxcqjlzPnek5L5X-T5jbitUGo7cuIAjZfrfHUsGFc9Q8jeAKQLw?key=w8GO1OtFjISvs04p9rJ_jA</a>)](<a href="https://arxiv.org/abs/1902.02346">https://arxiv.org/abs/1902.02346</a>)</li>
+<li>[Slides from Larry![](<a href="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5FPxaKOcIbCvXNZQvjfp3YpAdn4oA7lk7YRspxhqSJUUx6ftMaa31_hppbN0WS2B9EJVuJ7_Tcwshx-fOAHc9YzzF-8xaTPYlErfsfKqlC8ddsvMMv52qaVBk7SnVJnhx6uVwkGlmVg4OsP2VUnCGjQ?key=w8GO1OtFjISvs04p9rJ_jA">https://lh7-rt.googleusercontent.com/docsz/AD_4nXd5FPxaKOcIbCvXNZQvjfp3YpAdn4oA7lk7YRspxhqSJUUx6ftMaa31_hppbN0WS2B9EJVuJ7_Tcwshx-fOAHc9YzzF-8xaTPYlErfsfKqlC8ddsvMMv52qaVBk7SnVJnhx6uVwkGlmVg4OsP2VUnCGjQ?key=w8GO1OtFjISvs04p9rJ_jA</a>)](<a href="https://indico.cern.ch/event/855348/contributions/3598293/attachments/1945956/3228596/Larry-Talk.pdf">https://indico.cern.ch/event/855348/contributions/3598293/attachments/1945956/3228596/Larry-Talk.pdf</a>)</li>
+<li>[Patrick’s Thesis![](<a href="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdqiSBvlXS6I95wvM_TSwX0iyyWp64M5zK2TzFArXWKaeotmqD_xHsZPyHLtB-csEcwx6yX0tASbRw0MODi5Ola_hOAkuthXeH__LJGtXdJzrTI_LNrzdl-ko9VX3g_0fX2A0NuKy4ppE94okPGUnCJYA?key=w8GO1OtFjISvs04p9rJ_jA">https://lh7-rt.googleusercontent.com/docsz/AD_4nXdqiSBvlXS6I95wvM_TSwX0iyyWp64M5zK2TzFArXWKaeotmqD_xHsZPyHLtB-csEcwx6yX0tASbRw0MODi5Ola_hOAkuthXeH__LJGtXdJzrTI_LNrzdl-ko9VX3g_0fX2A0NuKy4ppE94okPGUnCJYA?key=w8GO1OtFjISvs04p9rJ_jA</a>)](<a href="http://cds.cern.ch/record/2644551?ln=en">http://cds.cern.ch/record/2644551?ln=en</a>)</li>
+<li>[CMS Support Note](<a href="https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/AN-19-254_temp.pdf">https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/AN-19-254_temp.pdf</a>)</li>
+<li>[Exploring Space of Jets![](<a href="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfRoI_EJY59ZZVkjWxzxVOC-QfXIX1PGjHFvRsr8pz5Wbhuw_25bMBHKL4JJPWtEDHW2VoxqSpk3h0xkmbn1aXPYajWvwiYk3nGtBn_uLlu9UV0LfQR7nhz7T-0eVtOf-LtLMmar6Z_Y0-BsioL-5OarLI?key=w8GO1OtFjISvs04p9rJ_jA">https://lh7-rt.googleusercontent.com/docsz/AD_4nXfRoI_EJY59ZZVkjWxzxVOC-QfXIX1PGjHFvRsr8pz5Wbhuw_25bMBHKL4JJPWtEDHW2VoxqSpk3h0xkmbn1aXPYajWvwiYk3nGtBn_uLlu9UV0LfQR7nhz7T-0eVtOf-LtLMmar6Z_Y0-BsioL-5OarLI?key=w8GO1OtFjISvs04p9rJ_jA</a>)](<a href="https://arxiv.org/pdf/1908.08542.pdf">https://arxiv.org/pdf/1908.08542.pdf</a>)</li>
+<li>[Comparing AUCs](<a href="https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/2531595.pdf">https://twiki.cern.ch/twiki/pub/Main/OptimalTransport/2531595.pdf</a>) ([R Implementation](<a href="https://cran.r-project.org/web/packages/pROC/index.html">https://cran.r-project.org/web/packages/pROC/index.html</a>))</li>
+<li>[Computational Optimal Transport Book](<a href="https://arxiv.org/pdf/1803.00567.pdf">https://arxiv.org/pdf/1803.00567.pdf</a>)</li>
+</ul>
+
+
+<p>
+**
+</p>
+</div>
+</div>
+<div id="outline-container-org7c9e8a2" class="outline-2">
+<h2 id="org7c9e8a2">Links</h2>
+<div class="outline-text-2" id="text-org7c9e8a2">
+<p>
+<a href="OptimalTransport.html#ID-A347C3E1-596D-4933-868E-241F0DFEDAA1">OptimalTransport</a>
+<a href="ABCDMethod.html#ID-EF44A777-CF05-4EA0-9B90-41EAADEB45BD">ABCDMethod</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

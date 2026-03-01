@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 11 November 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 11 November 2025</h1>
+
+
+
+<div id="outline-container-org8390676" class="outline-2">
+<h2 id="org8390676">News</h2>
+<div class="outline-text-2" id="text-org8390676">
+<ul class="org-ul">
+<li>Birthdays: Jessica and Jim 11th / Manami 16th</li>
+<li>Ti Baseplates coming</li>
+<li>Got Tape coming tomorrow. ~70%</li>
+<li>hexaboard 104 v3d&#x2026; yet to be assigned to CMU</li>
+<li>IT windows 10 version LTSC  &#x2026; TBC</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8b07b9b" class="outline-2">
+<h2 id="org8b07b9b">Action</h2>
+<div class="outline-text-2" id="text-org8b07b9b">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Hexaboard Boxes back to Dave?</li>
+<li class="off"><code>[&#xa0;]</code> Save data on offsets</li>
+<li class="on"><code>[X]</code> Order the 2nd crate?</li>
+<li class="off"><code>[&#xa0;]</code> Alabama GUI ?</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org7b7c208" class="outline-2">
+<h2 id="org7b7c208">Test Old Modules</h2>
+</div>
+
+<div id="outline-container-org1c23190" class="outline-2">
+<h2 id="org1c23190">Retest all Ti Modules</h2>
+</div>
+
+<div id="outline-container-org8f5729e" class="outline-2">
+<h2 id="org8f5729e">CERN DB undertransition changes to XML</h2>
+</div>
+
+<div id="outline-container-orgbf057ee" class="outline-2">
+<h2 id="orgbf057ee">Jessica</h2>
+<div class="outline-text-2" id="text-orgbf057ee">
+<ul class="org-ul">
+<li>Expect baseplates</li>
+<li>Test some modules</li>
+<li>Auto fiducial finding</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5951794" class="outline-2">
+<h2 id="org5951794">Jasques</h2>
+<div class="outline-text-2" id="text-org5951794">
+<ul class="org-ul">
+<li>Hepling andrew with GUI: leakage current per cell</li>
+<li>pedastool - input daq - pedastool</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org01b1ab5" class="outline-2">
+<h2 id="org01b1ab5">Jim</h2>
+<div class="outline-text-2" id="text-org01b1ab5">
+<ul class="org-ul">
+<li>Waiting on plumbing</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org56ec391" class="outline-2">
+<h2 id="org56ec391">Christian</h2>
+<div class="outline-text-2" id="text-org56ec391">
+<ul class="org-ul">
+<li>computer setup and DB working</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfa7c9e6" class="outline-2">
+<h2 id="orgfa7c9e6">Manami</h2>
+</div>
+
+<div id="outline-container-org460bf5f" class="outline-2">
+<h2 id="org460bf5f">Andrew</h2>
+</div>
+</div>
+</body>
+</html>

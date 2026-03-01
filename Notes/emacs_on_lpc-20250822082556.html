@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>emacs on lpc</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">emacs on lpc</h1>
+<ul class="org-ul">
+<li>git clone git@github.com:johnalison/dotfiles.git</li>
+<li>Tangled Emacs.org on lpc</li>
+<li>soft linked init.el to .emacs</li>
+<li>open emacs&#x2026; lots of straight installs</li>
+<li>Errors in magit</li>
+<li>deleted .emacs.d directory and now trying again.</li>
+<li>Problem is disk space&#x2026; moving .emacs.d to nobackup</li>
+<li>Mainly solved &#x2026; but lots still broken</li>
+<li>Looks like need to upgrade emacs</li>
+<li><p>
+Installling emacs&#x2026;
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">
+# deps you'll need on the system (already present on many HPC boxes):
+# gcc/g++, make, ncurses, gnutls, libX11 (optional), libjpeg/libpng (optional), libgccjit (for native-comp), tree-sitter, jansson (JSON)
+
+mkdir -p "$HOME/opt/src" &amp;&amp; cd "$HOME/opt/src"
+
+# Download a release tarball (swap VERSION for what you want, e.g., 30.1 or 29.4)
+wget https://ftp.gnu.org/gnu/emacs/emacs-VERSION.tar.xz
+tar xf emacs-VERSION.tar.xz
+cd emacs-VERSION
+
+# Configure to install into ~/.local (no sudo); terminal-only build is simplest
+./configure \
+    --prefix="$HOME/.local" \
+    --with-modules \
+    --with-tree-sitter \
+    --with-json \
+    --without-x
+
+# If you *do* have libgccjit and want native compilation, add:
+#   --with-native-compilation
+# If you *don’t* have gnutls, you can add --without-gnutls (but ELPA/MELPA TLS will suffer)
+
+make -j"$(nproc)"
+make install
+
+</pre>
+</div></li>
+</ul>
+
+<p>
+did:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">./configure   --prefix="$HOME/.local"   --with-modules   --with-tree-sitter   --with-json   --without-x  --with-gnutls=ifavailable --with-tree-sitter=ifavailable
+</pre>
+</div>
+
+<ul class="org-ul">
+<li>Otherwise looks good&#x2026;</li>
+<li>more problems with emacs init&#x2026;fixed in dotfiles</li>
+<li>installing <a href="emacs_copilot-20250708073701.html#ID-58454915-5181-4AC0-A757-1F5265DF472C">emacs copilot</a>  server following the instructions there</li>
+</ul>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2025/08-August/21-August-2025-Thursday.html">21 August 2025 Thursday</a></li>
+</ul>
+</div>
+</body>
+</html>

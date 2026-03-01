@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Derivation of M SV Corrected</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Derivation of M SV Corrected</h1>
+<p>
+If SV is reconstructed and \(\vec{p}_{\rm{SV}}\) i snot aligned w/the displacement its a sign that there were missing particles. 
+</p>
+
+<p>
+Can correct for the "minimal" amount of missing particle pass such that \(\vec{p}_{\rm{SV}} \propto \hat{d}\)  
+where \(\hat{d}\) is the the displacement vector. 
+</p>
+
+<p>
+Let \(\hat{x}\) along align with \(\hat{d}\) 
+</p>
+
+<p>
+\[
+p = \begin{pmatrix} p \cos \theta \\ p \sin \theta \end{pmatrix}
+\]
+</p>
+
+<p>
+Easy way and the Hard way
+</p>
+
+<div id="outline-container-orgef93d50" class="outline-2">
+<h2 id="orgef93d50">Hard Way</h2>
+<div class="outline-text-2" id="text-orgef93d50">
+<p>
+Define 
+</p>
+
+<p>
+\[
+\vec{p}_{\rm{miss}} = \begin{pmatrix} c \\ - p \sin \theta \end{pmatrix}
+\]
+Where c is the parameter to be found.  Then calculate \(M_{\rm{comb}}^2(c)\)  (assuming the missing particle is massless) and find c that minimizes \(M_{\rm{comb}}^2(c)\) (Lots of algrebra&#x2026;)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgac7ff7d" class="outline-2">
+<h2 id="orgac7ff7d">Easy way</h2>
+<div class="outline-text-2" id="text-orgac7ff7d">
+<p>
+Boost to MC frame. For minimim mass SV the missing \(\vec{p}\) is opposite the \(\vec{p}\) 
+</p>
+
+<p>
+In CM frame.  
+\(\vec{p} = P \sin \theta\)  and
+\(\vec{p}_{\rm{miss}} = - P \sin \theta\)  
+</p>
+
+<p>
+In CM frame, \(E_{\rm{comb}} = M_{\rm{comb}} = E_{reco} + E_{miss} = \sqrt{M_{SV} + P^2 \sin^2\theta} + P \sin \theta\)
+</p>
+</div>
+
+
+
+
+
+
+<div id="outline-container-org9cec36a" class="outline-3">
+<h3 id="org9cec36a">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgd74673a" class="outline-3">
+<h3 id="orgd74673a">Links:</h3>
+<div class="outline-text-3" id="text-orgd74673a">
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+</p>
+
+
+<p>
+202408310955
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HGC MAC Meeting 11 September 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">HGC MAC Meeting 11 September 2024</h1>
+<p>
+<a href="https://indico.cern.ch/event/1454139/">https://indico.cern.ch/event/1454139/</a>
+</p>
+
+<div id="outline-container-orgab26eb5" class="outline-2">
+<h2 id="orgab26eb5">Pre-Production Planning (Alethea)</h2>
+<div class="outline-text-2" id="text-orgab26eb5">
+<ul class="org-ul">
+<li>Wrapping up preseries</li>
+<li>UCSB build 5 LD right for irradiation campaign</li>
+<li>CMU done with pre-series</li>
+
+<li>Waiting for hexaboards hope for Nov.  Limit by ROC availability</li>
+<li>Calendar 
+<ul class="org-ul">
+<li>Nov: 2 modules /day x week (one gantry tray).</li>
+<li>Dec: 4/day x week (one gantry tray)</li>
+<li>Jan-Feb recieve tooling and multi-module test stands</li>
+<li>March: 4 /day for 4 days</li>
+<li>April:    8 /day for 4 days</li>
+<li>May:   12 /day for 4 days 	-</li>
+</ul></li>
+</ul>
+
+<p>
+(What does preproduction mean ? Could go on the detector&#x2026; 3b chips.. number produced still less than the number of spares)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfa49bcd" class="outline-2">
+<h2 id="orgfa49bcd">ESD susceptibility of Hexaboards (Fakri)</h2>
+<div class="outline-text-2" id="text-orgfa49bcd">
+<ul class="org-ul">
+<li>confirmed source of dead half chip is due to ESD damage</li>
+<li>Capacitance of silicon 47 pF</li>
+<li>Maybe apply a shunt during assembly?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf49483b" class="outline-2">
+<h2 id="orgf49483b">Glue/Encapsulation studies (Chiara)</h2>
+<div class="outline-text-2" id="text-orgf49483b">
+<ul class="org-ul">
+<li>first a module with no epoxy on the perimeter has been built and thermal cycled</li>
+<li>All the modules built with the new glue/tape pattern do not show noisy channels identified during assembling procedure</li>
+<li>Covering CM capacitor with encapsulate helps protecting chips against failures - This should be done before getting hexaboard to MACs since is time consuming</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdbd5556" class="outline-2">
+<h2 id="orgdbd5556">Engineering update (Suzzane)</h2>
+<div class="outline-text-2" id="text-orgdbd5556">
+<ul class="org-ul">
+<li>US MAC Assembly tooling order: Xometry ~16 days</li>
+<li>(Asia MACs Xometry also ?)</li>
+</ul>
+
+<p>
+Had to leave. requested recording.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1da6abe" class="outline-2">
+<h2 id="org1da6abe">Laminated Baseplate Pre-Production  (Markus)</h2>
+<div class="outline-text-2" id="text-org1da6abe">
+<ul class="org-ul">
+<li>Stresses minimal for Titanium</li>
+<li>Baseplate production needs to stay ahead of MAC pre-production ramp up schedule</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org893cd60" class="outline-2">
+<h2 id="org893cd60">Local Database Ecosystem (Sindhu)</h2>
+<div class="outline-text-2" id="text-org893cd60">
+<ul class="org-ul">
+<li>Nice introduction&#x2026; Need to watch video</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5630140" class="outline-2">
+<h2 id="org5630140">TTU MAC Updates</h2>
+<div class="outline-text-2" id="text-org5630140">
+<ul class="org-ul">
+<li>Assembled another pre-series module: BP-Si: Transfer Tape Si-Hex: Hybrid Tape</li>
+<li>IV breakdown at 400V</li>
+<li>Exercising  local and global databases</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orged1e3c6" class="outline-3">
+<h3 id="orged1e3c6">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org142673a" class="outline-3">
+<h3 id="org142673a">Links:</h3>
+<div class="outline-text-3" id="text-org142673a">
+<p>
+202409111100
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

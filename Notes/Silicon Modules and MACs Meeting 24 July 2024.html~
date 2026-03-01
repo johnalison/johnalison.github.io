@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Silicon Modules and MACs Meeting 24 July 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Silicon Modules and MACs Meeting 24 July 2024</h1>
+<p>
+<a href="https://indico.cern.ch/event/1439523/">https://indico.cern.ch/event/1439523/</a>
+</p>
+
+<p>
+ The main focus will be ESD-induced loss of 50% of channels in HGCROCs. A meeting was held on this subject at CERN last week and we agreed to hold a follow-up meeting on July 24th. Paul Aspell prepared a [summary](<a href="https://indico.cern.ch/event/1436473/contributions/6044799/attachments/2893045/5071864/ESD.pdf">https://indico.cern.ch/event/1436473/contributions/6044799/attachments/2893045/5071864/ESD.pdf</a>) of the issue that you can look over in preparation for this meeting.  
+</p>
+
+<p>
+We would like each MAC to prepare a slide or two from their records covering cases of having seen 1/2 chip losses in hexaboards and modules going back as far in time as possible. Please try to include information about what was done with the hexaboard or module before the issue was seen.  
+</p>
+
+<p>
+For modules being built soon, Rong-Shyang prepared a [document](<a href="https://docs.google.com/document/d/17d-srYzMhzHcfaJUh_QdVGQBLdzKwAE3e4Dl8biNCqE/edit?usp=sharing">https://docs.google.com/document/d/17d-srYzMhzHcfaJUh_QdVGQBLdzKwAE3e4Dl8biNCqE/edit?usp=sharing</a>) on ESD protection that MACs can reasonably be able to use. It also discusses some additional testing that is needed, for the time being, to help track exactly at what step in hexaboard/module handling/processing the 1/2 chip losses may occur.
+</p>
+
+<div id="outline-container-org544a4c4" class="outline-2">
+<h2 id="org544a4c4">CMU looks good</h2>
+<div class="outline-text-2" id="text-org544a4c4">
+<p>
+Nice documentation of what we do and not very many damaged modules!
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd109dbf" class="outline-2">
+<h2 id="orgd109dbf">Can test for common mode failure by checking resistance to ground.</h2>
+<div class="outline-text-2" id="text-orgd109dbf">
+<p>
+good: ~O(150k ohms)  bad: ~O(20 ohms)
+</p>
+</div>
+
+
+
+<div id="outline-container-orge86a049" class="outline-3">
+<h3 id="orge86a049">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgaab027f" class="outline-3">
+<h3 id="orgaab027f">Links:</h3>
+<div class="outline-text-3" id="text-orgaab027f">
+<p>
+<a href="HGC.html#ID-E1G05H78-0D4G-6F40-1H1E-0AH3699877FC">HGC</a>
+</p>
+
+
+
+<p>
+202407241100
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

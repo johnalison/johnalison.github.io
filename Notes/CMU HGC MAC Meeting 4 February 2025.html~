@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC MAC Meeting 4 February 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC MAC Meeting 4 February 2025</h1>
+
+<div id="outline-container-orga121154" class="outline-2">
+<h2 id="orga121154">News</h2>
+<div class="outline-text-2" id="text-orga121154">
+<ul class="org-ul">
+<li>Josh Arrives</li>
+<li>Ornella start date 10th</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0bcc803" class="outline-2">
+<h2 id="org0bcc803">Action Items</h2>
+<div class="outline-text-2" id="text-org0bcc803">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Free style comments for failed tests</li>
+<li class="off"><code>[&#xa0;]</code> Ping Jeremy re:Hexaboard testing</li>
+<li class="off"><code>[&#xa0;]</code> Module testing: Tutorial / user support</li>
+<li class="off"><code>[&#xa0;]</code> Waiting on sensor trays and tools and hexaboard trays</li>
+<li class="off"><code>[&#xa0;]</code> miniGantry project with UG</li>
+<li class="off"><code>[&#xa0;]</code> Logan clean + humidity sensors</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb5d6e69" class="outline-2">
+<h2 id="orgb5d6e69">Jessica</h2>
+<div class="outline-text-2" id="text-orgb5d6e69">
+<ul class="org-ul">
+<li>2 more modules last week 10 total.</li>
+<li>off bond area</li>
+<li>Helping TTU</li>
+<li>miniGantry camera mounted (Julia UG?)</li>
+<li>Humidity data to the DB (Logan)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4d21151" class="outline-2">
+<h2 id="org4d21151">Jonas</h2>
+<div class="outline-text-2" id="text-org4d21151">
+<ul class="org-ul">
+<li>48 hexaboard scans ROCs OK now doing LDO</li>
+<li>Need to Buy the coolant</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcd167ba" class="outline-2">
+<h2 id="orgcd167ba">Andrew</h2>
+<div class="outline-text-2" id="text-orgcd167ba">
+<ul class="org-ul">
+<li>10 v3b Rocs.  one dead 1/2 chip. after bonding before encapsulate.</li>
+<li>Will order crate</li>
+<li>Alabama GUI ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfa32eac" class="outline-2">
+<h2 id="orgfa32eac">Sindhu</h2>
+<div class="outline-text-2" id="text-orgfa32eac">
+<ul class="org-ul">
+<li>DB Tools</li>
+<li>IHEP Not using the</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc5e6ca7" class="outline-2">
+<h2 id="orgc5e6ca7">Manami</h2>
+<div class="outline-text-2" id="text-orgc5e6ca7">
+<ul class="org-ul">
+<li>Working on uploading to the central DB</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orge0bc832" class="outline-2">
+<h2 id="orge0bc832">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgdc099e3" class="outline-2">
+<h2 id="orgdc099e3">Links:</h2>
+<div class="outline-text-2" id="text-orgdc099e3">
+<p>
+<a href="CMU HGC MAC Meeting 28 January 2025.html#ID-E7E639AE-F74D-4E30-B821-181EF7A73F14">CMU HGC MAC Meeting 28 January 2025</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+
+<p>
+202502041132
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Computer Directory Setup</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Computer Directory Setup</h1>
+
+
+<div id="outline-container-org647b86b" class="outline-2">
+<h2 id="org647b86b">Top level</h2>
+<div class="outline-text-2" id="text-org647b86b">
+<ul class="org-ul">
+<li><code>dotfiles</code> : config files on git (git@github.com:johnalison/dotfiles.git)</li>
+<li><code>lab</code>: code on git (git@github.com:johnalison/lab.git)</li>
+<li><code>Presentations</code> : all talks (local backup)</li>
+<li><code>RecLetters</code>: rec letter and examples (local backup)</li>
+<li><code>emacs</code></li>
+<li><code>obsidian-notes</code></li>
+<li><code>teaching</code></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge6359fc" class="outline-2">
+<h2 id="orge6359fc">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org3284ef2" class="outline-2">
+<h2 id="org3284ef2">Links:</h2>
+<div class="outline-text-2" id="text-org3284ef2">
+<p>
+<a href="Setup M3 Macbook.html#ID-76F786BC-3223-4E2D-8622-B286804622C0">Setup M3 Macbook</a>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+
+
+<p>
+202411121524
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

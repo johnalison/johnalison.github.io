@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>P2UG Summer 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">P2UG Summer 2025</h1>
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1523635/">https://indico.cern.ch/event/1523635/</a></li>
+</ul>
+
+<div id="outline-container-orgd8582d2" class="outline-2">
+<h2 id="orgd8582d2">Overview</h2>
+</div>
+
+<div id="outline-container-org2994710" class="outline-2">
+<h2 id="org2994710">Electronics</h2>
+</div>
+
+<div id="outline-container-org9bd67cc" class="outline-2">
+<h2 id="org9bd67cc">Modules</h2>
+<div class="outline-text-2" id="text-org9bd67cc">
+<p>
+We are on the critical path
+</p>
+
+<p>
+Baseplates:
+    IIT Madras will make the baseplates
+    Lamination Kaption at KIT
+    Have parts for the ramp-up. 
+</p>
+
+<p>
+Irradiation Tests:
+    Electroical Test / cehck the module deformation
+    3/5 failed electrical tests from running them at too high voltage
+</p>
+
+<p>
+Bonding
+   20' for HD modules
+   If rework need 3x as long
+</p>
+
+<p>
+2/3 of the modules are LD full
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7fe72e5" class="outline-2">
+<h2 id="org7fe72e5">Watched Cassettes in P2UG</h2>
+</div>
+</div>
+</body>
+</html>

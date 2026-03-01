@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ATLAS X-&gt;SH-&gt;bbgg</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ATLAS X-&gt;SH-&gt;bbgg</h1>
+
+<div id="outline-container-org1fd4926" class="outline-2">
+<h2 id="org1fd4926">Summary</h2>
+<div class="outline-text-2" id="text-org1fd4926">
+<p>
+The paper presents a search for a hypothetical scalar boson X decaying
+into another scalar S and a SM Higgs boson in the bb+gamma-gamma
+(bbgg) final state. No significant deviation from the SM expectation
+is observed.
+</p>
+
+<p>
+This search is a natural extension of the important HH-&gt;bbgg search.
+There have been several results in the field targeting the X-&gt;SH
+signature in various final states. The bbgg channel offers unique
+sensitivity in the low-mass region.
+</p>
+
+<p>
+The results presented here are an extension of previously published Run
+2 results (JHEP 11 (2024) 047). The new result has improved analysis
+techniques and adds data taken in 22 and 23. Relative to the previous
+analysis, the object reconstruction, identification, and calibration
+were improved. There was also a reoptimization of the size of the mgg
+SR. This result improves the sensitivity (by ~15&#x2013;75%), where only
+9-30% of improvement is expected from the additional data alone.
+</p>
+
+<p>
+The background is relatively small and can be reliably estimated from
+mgg sidebands.
+</p>
+
+<p>
+My only significant comment is that more figures should be made public
+to aid in presenting the material, e.g.: mgg plots, PNN in the CR and
+distribution of the key PNN inputs: CR, SR and high PNN output. Plots
+of PNN and inputs before and after reweighting.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgacc453f" class="outline-2">
+<h2 id="orgacc453f">General coments/questions</h2>
+<div class="outline-text-2" id="text-orgacc453f">
+</div>
+<div id="outline-container-orgaec43b0" class="outline-3">
+<h3 id="orgaec43b0">Section 5.3 Normalisation factors</h3>
+<div class="outline-text-3" id="text-orgaec43b0">
+<p>
+"These normalisation factors are used to correct the normalisation of
+the γγ+jets background components in the SRs and CRs before the
+likelihood fit described in Section 7. They are then allowed to float
+in the fit."
+</p>
+
+<p>
+Are these normalisation factors constrained in the fit by the CR
+uncertainties? If not, why not? Seems justified. If so, say it here.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1f433a1" class="outline-3">
+<h3 id="org1f433a1">Section 5.3 Residual gg+jets discrepancy</h3>
+<div class="outline-text-3" id="text-org1f433a1">
+<p>
+"After applying those factors, a residual discrepancy between the PNN
+  distributions of the 𝛾𝛾+jets processes in data and simulation is
+  still observed in the CR. This discrepancy is most prominent in the
+  m<sub>bb</sub>*gg and m<sub>b</sub>*gg distributions."
+</p>
+
+<p>
+Confused by the statement that the discrepancy is in the PNN
+distributions. The next sentence you say it is m<sub>bbgg</sub> and m<sub>bgg</sub>,
+which are inputs to the PNN. What PNN distribution shows this
+discrepancy? I guess it's the PNN in the CR, as you can't judge
+background mismodelling in the SR. If so, should say that.
+</p>
+
+<p>
+Why not correct the input gg+jets variables with the event weight
+before training the PNN? I would at least use that as a systematic
+uncertainty. e.g.: how does the change in PNN output with and without
+this re-weighting compare to the change in PNN output with Sherpa vs
+Madgraph, which you use to assess systematic uncertainties?
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org4263c60" class="outline-3">
+<h3 id="org4263c60">Section 7: Cross section discusion</h3>
+<div class="outline-text-3" id="text-org4263c60">
+<p>
+"The signal strength μ is treated as the parameter of interest and is
+defined as the ratio of the observed event rate to the expected event
+rate, where the latter is computed assuming a 13 TeV cross-section
+equal to the observed upper limits from the previous analysis [18],
+and the 13.6 TeV cross-section as introduced in Section 3. The choice
+of the 13 TeV cross-section value is arbitrary, as it does not impact
+the limits or observed significance values."
+</p>
+
+<p>
+The first sentence talks about using both the cross-sections at 13 and
+13.6 TeV. The next sentence then says the choice of using (presumably
+only) the 13 TeV cross-section is arbitrary. Please clarify the text.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf5b1e5e" class="outline-3">
+<h3 id="orgf5b1e5e">Section 7: Track Reconstruction changes</h3>
+<div class="outline-text-3" id="text-orgf5b1e5e">
+<p>
+"Most of them fail to pass the current 2 b-tagged preselection, either
+because a photon is now reconstructed as an electron, or because a jet
+is no longer tagged as a b-jet"
+</p>
+
+<p>
+Sounds like something has also changed in the track reconstruction as
+photons are now being reconstructed as electrons. It would be good to also
+discuss this when talking about changes to the analysis.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcd8cdb0" class="outline-2">
+<h2 id="orgcd8cdb0">Minor:</h2>
+<div class="outline-text-2" id="text-orgcd8cdb0">
+<ul class="org-ul">
+<li>Abstract: "lighter" scale S is confusing. S is not restricted to be
+lighter than the higgs mS: 15-500 I think you mean S is lighter than
+X, but I had to reread to get the point.</li>
+
+<li>For the reader it would nice to have a rough idea of relative
+importance of the different backgrounds before 5.2, where you talk
+about MVA training.</li>
+
+<li>Section 6: It would be good for the reader to have a high-level
+statement about the relative importance of statistical vs systematic
+uncertainties at the beginning; this would help to put this section
+in context. (e.g.: your last sentence of this section "Even for the
+mass point with the largest systematic uncertainty, the results are
+dominated by the statistical uncertainty." should be in the 1st
+paragraph.)</li>
+
+<li>"adjacent bins are iteratively merged until the rightmost bin
+contains at least one expected background event." I was under the
+impression that you needed 3 bins for the assumptions of the profile
+likelihood to be valid.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4c7143d" class="outline-2">
+<h2 id="org4c7143d">Comments:</h2>
+<div class="outline-text-2" id="text-org4c7143d">
+<ul class="org-ul">
+<li>Everyting in a ML, only see ML output  distributionsin the SR and Limits.</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgbffe8ec" class="outline-2">
+<h2 id="orgbffe8ec">My Notes</h2>
+<div class="outline-text-2" id="text-orgbffe8ec">
+<ul class="org-ul">
+<li>S and a lighter scalar S (WHy lighter?)</li>
+<li>H-&gt;gg Run2+22+23</li>
+<li>X: 170 - 1TeV
+S: 15 - 500</li>
+<li>Extension of Run2 results from ATLAS (JHEP 11 (2024) 047
+<ul class="org-ul">
+<li>Preivous:   39 fb to 0.09 fb
+<ul class="org-ul">
+<li>This result:  9 fb to 0.06 fb.
+Factor of ~4 improvment</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org392f5f8" class="outline-2">
+<h2 id="org392f5f8">Whats new?</h2>
+<div class="outline-text-2" id="text-org392f5f8">
+<p>
+22+23 data
+Relative to the previous analysis the object reconstruction, identification and calibration was improved.
+Btagging  
+Improvement of 20%, going up to about 65% at low-mass.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc6e781e" class="outline-2">
+<h2 id="orgc6e781e">Analysis</h2>
+<div class="outline-text-2" id="text-orgc6e781e">
+<ul class="org-ul">
+<li>Dominant background gg+jets data-driven
+Small background form H+jets</li>
+<li>SR: mgg ~ 125</li>
+<li>Sidebands define CR to fix gg+jets normalizaion</li>
+<li>Analysis with Parameterised neural networks (mS and mX)</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

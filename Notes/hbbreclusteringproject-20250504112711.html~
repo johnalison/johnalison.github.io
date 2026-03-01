@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hbb Reclustering</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Hbb Reclustering</h1>
+<p>
+it is interesting that FSR is so important. We have double checked our implementation with the CMS twikis and the Run3 HH group. (Suggests that maybe we can gain by recovering FSR by re-clustering soft jets&#x2026; something for the next iteration! )
+</p>
+
+<p>
+FSR Big impact / ISR not a big deal
+</p>
+
+<p>
+SvB and SvB<sub>MA</sub>
+</p>
+
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Run clustering code on signal and look for 1b1j splittings.</li>
+</ul>
+
+<div id="outline-container-org8a8295d" class="outline-2">
+<h2 id="org8a8295d">Ideas</h2>
+<div class="outline-text-2" id="text-org8a8295d">
+<ul class="org-ul">
+<li>Use dressed bs ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org972203a" class="outline-2">
+<h2 id="org972203a">Plan</h2>
+<div class="outline-text-2" id="text-org972203a">
+<ul class="org-ul">
+<li>Event selection where FSR likely
+<ul class="org-ul">
+<li>leading mass ~125&#x2026; Subleading &lt; 125</li>
+</ul></li>
+<li>Plots
+n(near-by jets)
+pt(nearest)
+dR(nearest)
+m<sub>bb</sub>'  where b' = b+FSR</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd5681cc" class="outline-2">
+<h2 id="orgd5681cc">Plan for undergrad (Sam  <del>Tony Boyle</del>)</h2>
+<div class="outline-text-2" id="text-orgd5681cc">
+<ul class="org-ul">
+<li>Give him signal files with paired b-jets and all unclustered jets.</li>
+<li class="off"><code>[&#xa0;]</code> Make mass resolution plots</li>
+<li class="off"><code>[&#xa0;]</code> Try reclustering</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org408df31" class="outline-2">
+<h2 id="org408df31">Logs</h2>
+<div class="outline-text-2" id="text-org408df31">
+</div>
+<div id="outline-container-orgf32273d" class="outline-3">
+<h3 id="orgf32273d"><a href="../Journal/2025/06-June/06-June-2025-Friday.html#ID-2DF76617-A5E6-47EA-B4E3-B39AF7EF4F39">06 June 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgf32273d">
+<ul class="org-ul">
+<li>Adding flag for reclustering</li>
+<li>Running without clustering</li>
+<li>running cutflow:
+<code>py analysis/printCutFlow.py -i output/analysis_signal_test_job/test_signal_nominal.coffea  -p GluGluToHHTo4B_cHHH1 -e UL18</code></li>
+<li>Seeing that there is a big differnece between the two ! The clustering is doing too much&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org42ce260" class="outline-3">
+<h3 id="org42ce260"><a href="../Journal/2025/06-June/05-June-2025-Thursday.html#ID-1EE37A04-6597-4659-82C3-9F6551ACE44A">05 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org42ce260">
+<ul class="org-ul">
+<li>Idea: run the cluster<sub>bs</sub>, stop merging when trying to merge more than one b</li>
+<li>Run on signal and compare the reconstructed mass before and after reclustering</li>
+<li>Setup script to run systematics to make test vectors
+<code>python -m unittest jet_clustering.tests.test_clustering.clusteringTestCase.test_HbbReclustering_6jets</code></li>
+<li>Running the processor:
+<code>source  scripts/analysis-test-signal.sh</code></li>
+<li>Adding a hook to stop the clustering when trying to merge any bs.</li>
+<li>Added a processor to test clustering.  Will just compare when running with and without clustering on</li>
+<li>updating the btagging scores set the combined to 1.0 (Should probably use the original btag)</li>
+<li>Hacked the selected flag for now</li>
+<li>Got a first version running!</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org8975bff" class="outline-3">
+<h3 id="org8975bff"><a href="../Journal/2025/01-January/27-January-2025-Monday.html#ID-9AEBE732-F6E7-4A98-B6D2-5E857BCE9FCB">27 January 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org8975bff">
+<ul class="org-ul">
+<li>Writing out a python file</li>
+<li><code>python runner.py -t -o test_HH4b.coffea -d GluGluToHHTo4B_cHHH1 -p analysis/processors/processor_HH4b.py -y UL18  -op output/analysis_test_job -m metadata/datasets_HH4b.yml</code></li>
+<li>Writing out other jets down to 15 GeV  (using <code>write_debug_info.add_debug_info_for_Hbb_reclustering</code>)</li>
+<li>make an example reading script</li>
+<li>sent mail to Tony</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org33a32e6" class="outline-2">
+<h2 id="org33a32e6">1st Mail</h2>
+<div class="outline-text-2" id="text-org33a32e6">
+<p>
+Hi Tony
+</p>
+
+<p>
+You can find that data here: 
+<a href="https://cernbox.cern.ch/s/0h0GmTdR5PAHQtx">https://cernbox.cern.ch/s/0h0GmTdR5PAHQtx</a>
+</p>
+
+<p>
+The file is for HH-&gt;4b signal and has the following variables:
+</p>
+<ul class="org-ul">
+<li>'event'</li>
+<li>'run'</li>
+<li>'leadDiJet<sub>mass</sub>'</li>
+<li>'sublDiJet<sub>mass</sub>'</li>
+<li>'leadDiJet<sub>leadJet</sub><sub>(pt,eta,phi,mass)</sub>'</li>
+<li>'leadDiJet<sub>sublJet</sub><sub>(pt,eta,phi,mass)</sub>'</li>
+<li>'sublDiJet<sub>leadJet</sub><sub>(pt,eta,phi,mass)</sub>'</li>
+<li>'sublDiJet<sub>sublJet</sub><sub>(pt,eta,phi,mass)</sub>'</li>
+<li>'otherJet<sub>(pt,eta,phi,mass)</sub>'</li>
+</ul>
+
+<p>
+(We can talk about this more in person when you have time&#x2026;)
+Events are made of "jets", you can think of these as like quarks or gluons. 
+Each jet has a four vector (pt, eta, phi, mass)
+We have an algorithm to identify jets that are likely b-jets and to cluster them into "di-jets", which hopefully represent the Higgs four-vector.
+</p>
+
+<p>
+Each event has two "di-jets" a leading one and a sub-leading one.
+The di-jets in turn are made from two jets a leading jet and a sub-lead jet. 
+So, leadDiJet<sub>sublJet</sub><sub>*</sub> give the four vector from for the subleading jet of the leading dijet. 
+</p>
+
+<p>
+In addition to these four jets, there can be additional jets in the events.  The number of these varies event to event. The four-vectors of these jets are given in otherJet<sub>*</sub>.
+</p>
+
+<p>
+I would start by playing round with the data. An example of how to load the file in python is here:
+<a href="https://cernbox.cern.ch/s/LxRprWSZvOMdBut">https://cernbox.cern.ch/s/LxRprWSZvOMdBut</a>
+You will need to install coffea (and will probably also want numpy and akward) in your python environment.
+</p>
+
+<p>
+A good first exercise is to compute the leading and subleading di-jet masses from the constituent jet four-vectors. These you can compare with the leadDiJet<sub>mass</sub> and sublDiJet<sub>mass</sub> variables.  You will want to be able to make plots (histograms) of the masses. 
+</p>
+
+<p>
+Once you are this point, your mission will be to see if we come up with a criteria to determine if there has been some radiation from one of the b-jets and in these cases to add it back to improve the di-jet mass resolutions. 
+</p>
+
+<p>
+Make sense?
+</p>
+
+<p>
+Let me know if you have any problems accessing the files and what is a good time to meet to chat about this in more detail. 
+</p>
+
+<p>
+john
+</p>
+
+
+
+
+<p>
+<a href="undergradprojects-20250504112326.html#ID-E2000B57-B139-4A71-85C7-9C7EDBC3E418">UndergradProjects</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

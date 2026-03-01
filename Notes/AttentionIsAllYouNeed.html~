@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AttentionIsAllYouNeed</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">AttentionIsAllYouNeed</h1>
+<p>
+<a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a>
+</p>
+
+<ul class="org-ul">
+<li>We propose a new simple network architecture, the Transformer, based soley on attention mechanisms, despensing with recurrance and convolution.
+These models sare superior in quality and are more parallelizzable and requrie significantly less time to train.</li>
+
+<li>The inherently sequential nature of recurrent models precludes parallelization within training examples.</li>
+
+<li>Attention mechanisms allow modeling of dependencies without regard to thier distance in the input or output sequence.</li>
+
+<li>Multi-headed attention mitigates against reduced resolution</li>
+
+<li>An attention function can be described as mapping a query and a set of key-value pairs to an output, where the query, keys, values and outputs are all vectors.
+The output is computed as a weighted sum over the values, where the weight assigned to each value is computed by a compatibility function of the query with teh corresponding key.</li>
+
+<li>In a self-attention layer all of the keys, values, and queries come form the same place.</li>
+</ul>
+</div>
+</body>
+</html>

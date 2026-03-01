@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 23 September 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 23 September 2025</h1>
+
+
+<div id="outline-container-org8956c71" class="outline-2">
+<h2 id="org8956c71">News</h2>
+<div class="outline-text-2" id="text-org8956c71">
+<ul class="org-ul">
+<li>Thermal chambers arriving Oct 8th</li>
+<li>Baseplates.</li>
+<li>Meeting tomorrow</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcf5d33d" class="outline-2">
+<h2 id="orgcf5d33d">Action</h2>
+</div>
+
+
+<div id="outline-container-org2b8e804" class="outline-2">
+<h2 id="org2b8e804">Jessica</h2>
+<div class="outline-text-2" id="text-org2b8e804">
+<ul class="org-ul">
+<li>Surveys and programs work</li>
+<li>Proto modules survey in under 20'</li>
+<li>LabView: tooling check</li>
+<li>Will start adding sensor fiducials</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8fb8d33" class="outline-2">
+<h2 id="org8fb8d33">Jim</h2>
+<div class="outline-text-2" id="text-org8fb8d33">
+<ul class="org-ul">
+<li>1/2 done with amprige evaluation</li>
+<li>Over 200 amps / 120 or 240 V</li>
+<li>Service</li>
+<li>E-waste coming</li>
+<li>Penthouse access</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org803c8e2" class="outline-2">
+<h2 id="org803c8e2">Jacques</h2>
+<div class="outline-text-2" id="text-org803c8e2">
+<ul class="org-ul">
+<li>No major updates</li>
+<li>MiniGantry parts for ramp up</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb8f417f" class="outline-2">
+<h2 id="orgb8f417f">Manami</h2>
+<div class="outline-text-2" id="text-orgb8f417f">
+<ul class="org-ul">
+<li>Mass uploaded (Built at cern) can upload many xmls at once</li>
+<li>Will rely on mass uploader</li>
+<li>Work with rain graphana on time on tasks</li>
+<li>Colored cabinets</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7fc813c" class="outline-2">
+<h2 id="org7fc813c">Andrew</h2>
+<div class="outline-text-2" id="text-org7fc813c">
+<ul class="org-ul">
+<li>Boxes.</li>
+<li>Trophy hanging b/c of wrong firmware</li>
+<li>Hanging problem should be solved ?</li>
+<li>Testing side: merge requiest for MMTS</li>
+<li>Noise study (4/6) done this. TTU / UCSB</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgae8afa3" class="outline-2">
+<h2 id="orgae8afa3">Pritam</h2>
+<div class="outline-text-2" id="text-orgae8afa3">
+<ul class="org-ul">
+<li>Oct 8th ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9012f08" class="outline-2">
+<h2 id="org9012f08">Arvind</h2>
+<div class="outline-text-2" id="text-org9012f08">
+<ul class="org-ul">
+<li>Fidicual search update</li>
+<li>Sindhu shows working version of spiraling script</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1746ba4" class="outline-2">
+<h2 id="org1746ba4">Sindhu</h2>
+<div class="outline-text-2" id="text-org1746ba4">
+<ul class="org-ul">
+<li>Rains trigger has been implemented</li>
+<li>scp way is not fool proof.</li>
+<li>mass upload is fool proof</li>
+<li>mass download (?)</li>
+<li>re:Rain IHEP only one computer speaks to database</li>
+<li>Check for wire bonder GUI</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

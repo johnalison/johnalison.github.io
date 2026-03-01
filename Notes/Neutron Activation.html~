@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Neutron Activation</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Neutron Activation</h1>
+<p>
+Atomic spectroscopy incredibly useful! 
+</p>
+<ul class="org-ul">
+<li>fingerprint atom / uncover internal dynamics / ect</li>
+</ul>
+
+<p>
+This experiment is about doing the same thing for the nucleus. 
+Big problem r<sub>Nuc</sub> ~ 1e-5 r<sub>atom</sub>   =&gt; E<sub>n</sub>  ~ 1e5 E<sub>atom</sub>. 
+</p>
+
+<p>
+Atoms activate with light 
+	=&gt; here need nuclear reactor
+Atoms measure spectra with diffraction grating 
+	=&gt; here need specialized equipment to see X-rays/gamma rays
+</p>
+
+<p>
+Ordinary matter activated by neutrons: 
+Excited states decay n → p + (stuff)
+</p>
+
+<p>
+Take non-radioactive material and expose it to neutrons. 
+</p>
+
+<p>
+Place activated material in detectors:
+</p>
+<ul class="org-ul">
+<li>measure energy of γs</li>
+<li>Count how many decays / s</li>
+</ul>
+
+<p>
+~100 elements to play this game with
+Once you learn the technique we wil give you material that is activated, and you tell us what the material is.
+</p>
+
+<p>
+Experimental setup: PMT -&gt; wave forms -&gt; Amplified -&gt; Digitized and analyzed with a computer
+</p>
+
+<div id="outline-container-orgc0cb82c" class="outline-2">
+<h2 id="orgc0cb82c">Links:</h2>
+<div class="outline-text-2" id="text-orgc0cb82c">
+<p>
+<a href="MPL.html#ID-FC35DC98-A2A5-42F2-A440-42F751A8472E">MPL</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chuyuan Liu Letter Fall 25</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chuyuan Liu Letter Fall 25</h1>
+<ul class="org-ul">
+<li>Major contributions to ZZ/ZH -&gt; 4b</li>
+<li>Spun off VHH on his own.</li>
+<li>c++ -&gt; python</li>
+<li>Tracking validator</li>
+</ul>
+
+<div id="outline-container-orgdce4e62" class="outline-2">
+<h2 id="orgdce4e62">Draft</h2>
+<div class="outline-text-2" id="text-orgdce4e62">
+<p>
+Dear Colleagues  
+</p>
+
+<p>
+I am writing to strongly support Chuyuan Liu's application for a
+postdoctoral fellowship at Cornell. Chuyuan is determined and
+independent and exceptionally talented. He is a skilled and creative
+programmer &#x2014; easily the strongest technical member we have at CMU,
+student or postdoc. He has demonstrated the ability to design and
+implement modern machine learning architectures, to develop
+technically demanding codebases, and to independently execute complex
+analyses. His level of initiative and intellectual depth makes him an
+outstanding candidate for this position.
+</p>
+
+<p>
+My group focuses on searches for new physics with di-Higgs (HH)
+production in the 4b final state. Chuyuan has been deeply involved in
+4b analyses since joining in 2020. This channel is particularly
+challenging: it suffers from a combinatorial problem in b-jet
+assignment when forming Higgs boson candidates, and it faces large,
+hard-to-model backgrounds from QCD multi-jet production.
+</p>
+
+
+<p>
+<b>ZZ/ZH -&gt; 4b</b>
+</p>
+
+<p>
+When Chuyuan joined, my group had just begun exploring solutions to
+these problems. He was the only graduate student on the effort,
+working alongside postdoc Patrick Bryant and myself. Our plan was to
+develop and test strategies in the ZZ/ZH → 4b analysis and later apply
+them to HH → 4b. As a junior graduate student, Chuyuan quickly began
+making important contributions—and he has not stopped since.
+</p>
+
+<p>
+To address the combinatorics of b-jet pairing, we developed a custom
+classifier architecture for the 4b final state that simultaneously
+processes all jet pairings. This was a major learning exercise for my
+group both technically—mastering state-of-the-art ML tools—and
+scientifically, as it improved our understanding of the structure of
+the problem. For example, we learned it is a mistake to identify a
+single “best” jet pairing: the pairing optimal for reconstructing
+signal events is often sub-optimal for rejecting background.
+Ultimately, we built a model analogous to a graph neural network with
+an attention mechanism to combine information from all pairings. This
+network became the workhorse of the ZZ/ZH → 4b analysis. It was used
+to define the final discriminating variable, and to derive the
+background model and associated systematic uncertainties Chuyuan
+played a critical role in every aspect of its development, from
+initial prototyping to optimizing the user interface to allow the
+network to be adapted to other analyses.
+</p>
+
+<p>
+The second major challenge in the 4b analysis is assessing systematic
+uncertainties on the data-driven multijet background. The QCD
+background is determined in a signal-free control region using a
+variant of the ABCD method, The background prediction in the signal
+region requires an extrapolation that is a significant source of
+systematic uncertainty. Conventional approaches for assessing this
+extrapolation uncertainty validate the background prediction in a
+third, statistically independent validation region. This strategy can
+address how accurately the background model extrapolates to a
+different region of phase space, but does not directly test the
+extrapolation into the signal region. In addition, it necessarily
+suffers from a lack of statistical power in the phase space with the
+highest signal-to-background ratio; the selection that makes the
+validation region background-dominated depletes the most sensitive
+phase space.
+</p>
+
+
+<p>
+To overcome this, we introduced a new method using synthetic datasets
+obtained through hemisphere mixing. These datasets serve as
+high-fidelity proxies of the 4b background, enabling validation of
+extrapolations directly in the relevant phase space. Once again,
+Chuyuan was deeply involved in developing this technique—from
+debugging early implementations to deriving final systematic
+uncertainties from observed non-closure.
+</p>
+
+<p>
+This work was published in European Physical Journal C, with Chuyuan
+as the only contributing student.
+</p>
+
+
+<p>
+<b>Fully Hadronic VHH -&gt; 4b</b>
+</p>
+
+<p>
+Once the major pieces of the ZZ/ZH analysis were in place, Chuyuan
+approached me about extending our effort to VHH production in the
+fully-hadronic jj+4b final state. I was excited to see his initiative,
+but was initially hesitant. <i>Would he really have time to see this and
+the ZZ/ZH analysis through?</i> <i>Won't the sensitivity be dominated by
+the leptonic V decays?</i> In the end, Chuyuan did the work to convince
+me that this was worth pursuing, but I made him aware that he would
+largely be on his own.
+</p>
+
+
+<p>
+Chuyuan sought out collaboration with Chris Palmer and Chyanit
+Asawatangtrakuldee. Chris and Chyanit's groups would cover the
+leptonic V decay modes and Chuyuan was to be responsible for the
+fully-hadronic final state. Chuyuan then independently ported our
+improvements to this more challenging final state; he adapted the
+graph network to also handle V-&gt;jj decays and validated the synthetic
+dataset in the more complex final state. I followed his work and gave
+him some high-level advice, but Chuyuan led and executed the
+analysis.
+</p>
+
+<p>
+The result was a major success. It was the first VHH result published
+in this final state~\cite{2}. The fully hadronic channel proved to be among the
+most sensitive, and Chuyuan was honored to be the first to present the result publicly
+for at a conference.
+</p>
+
+
+<p>
+<b>Code development</b>
+</p>
+
+<p>
+The ZZ/ZH and VHH analyses were originally carried out in a C++
+framework. Before tackling HH → 4b, Chuyuan pushed our group to
+migrate to a coffea/Python-based framework. This migration required
+new reproducibility tools and yielded major performance gains:
+workflows that previously took an hour and ~200 Condor jobs in C++ now
+run locally on a single LPC node in just 15 minutes.
+</p>
+
+<p>
+Chuyuan also led the adoption of modern software practices—continuous
+integration, unit testing, and systematic result replication. Today,
+our codebase runs over 30 integration checks for every merge request,
+from unit tests of base functions to end-to-end tests of the full
+analysis pipeline. Here again, I was initially reluctant to invest in
+this infrastructure, but it has transformed our productivity and
+collaboration. Thanks to Chuyuan’s leadership, our software is more
+robust, our group more efficient, and our students better prepared for
+careers both within and beyond HEP.
+</p>
+
+
+
+<p>
+<b>HH-&gt;4b</b>
+</p>
+
+<p>
+We are now analyzing HH → 4b, applying the tools first developed for
+ZZ/ZH and extended by Chuyuan in VHH. Our group is part of the
+CMS-wide effort and is responsible for the Run-2 dataset. Our methods
+have been adopted as the baseline strategy for the combined Run-2 +
+Run-3 analysis. Chuyuan is once again playing a key role in advancing
+this result, which is currently undergoing CMS review. A draft for
+submission to Physical Review D is expected later this year.
+</p>
+
+
+<p>
+In summary, Chuyuan has tackled some of the hardest problems in the 4b
+final state, developed novel solutions, and seen them through to
+published physics results. He has repeatedly extended these ideas into
+new contexts, taken intellectual risks, and executed them at a high
+level. Within my group, he already operates at the level of a postdoc.
+I give him my strongest possible recommendation for the Cornell
+fellowship.
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org5c2f241" class="outline-2">
+<h2 id="org5c2f241">Conclusion</h2>
+<div class="outline-text-2" id="text-org5c2f241">
+<p>
+ and he is a crucial member of my group and our community at CMU.
+I would have no hesitation hiring chyuan as a postdoc in my group. 
+</p>
+</div>
+
+
+
+<div id="outline-container-org56a6213" class="outline-3">
+<h3 id="org56a6213">Tracking Validator</h3>
+<div class="outline-text-3" id="text-org56a6213">
+<ul class="org-ul">
+<li>Hands off</li>
+</ul>
+<p>
+Needed a qualifcation task.
+Tracking Upgrades
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

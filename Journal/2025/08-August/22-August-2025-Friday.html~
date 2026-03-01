@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>22 August 2025 Friday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">22 August 2025 Friday</h1>
+
+<div id="outline-container-org7e7a8cb" class="outline-2">
+<h2 id="org7e7a8cb">Time Block</h2>
+<div class="outline-text-2" id="text-org7e7a8cb">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Migrating code</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Migrating code</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">CL. CV and statment</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">MPL Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">Chat AE</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chuyauan Material</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chat Rienhard</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Working out Modules numbers</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Graphana / email</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">bbWW</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">bbWW</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">DOE Chat</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b>  6 
+<b>DW:</b> 4
+<b>OT:</b> 2
+<b>ex</b> 
+</p>
+</div>
+
+<div id="outline-container-org5488c6e" class="outline-3">
+<h3 id="org5488c6e">The One Thing:</h3>
+<div class="outline-text-3" id="text-org5488c6e">
+<p>
+<del>FInish merging head</del>
+Setup bbWW
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8ffeafd" class="outline-2">
+<h2 id="org8ffeafd">Up at 7</h2>
+</div>
+
+
+<div id="outline-container-orgc40ebac" class="outline-2">
+<h2 id="orgc40ebac">T to school.</h2>
+</div>
+
+
+<div id="outline-container-org1791849" class="outline-2">
+<h2 id="org1791849"><a href="../../../Notes/summer_2025-20250530103811.html#ID-2A06170C-BDFB-47DA-A8A6-B5D5BABFCA0D">Summer 2025</a></h2>
+<div class="outline-text-2" id="text-org1791849">
+<p>
+Create <a href="../../../Notes/fall_2025-20250822083702.html#ID-FDD71A43-C3BA-47C8-A2D2-64DD925741DD">Fall 2025</a>&#x2026; actually dont need it until next week
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgbb54256" class="outline-2">
+<h2 id="orgbb54256">Testing new coffea4bs code</h2>
+<div class="outline-text-2" id="text-orgbb54256">
+<ul class="org-ul">
+<li>run from main directory:
+<code>/run_container python runner.py  -o histMixedData.coffea -d    mixeddata  -p python/analysis/processors/processor_HH4b.py -y 2018  -op output/ -m python/metadata/datasets_HH4b.yml -c python/analysis/metadata/HH4b_nottcheck.yml</code></li>
+<li>and the debug script
+<code>./run_container python python/analysis/debugMixedData.py python/output//histMixedData.coffea</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf91ba11" class="outline-2">
+<h2 id="orgf91ba11">Magit <a href="../../../Notes/magit_in_emacs-20250515085504.html#ID-EA9D0E8D-2793-41D5-922A-B94E32768E96">Magit in emacs</a></h2>
+<div class="outline-text-2" id="text-orgf91ba11">
+<ul class="org-ul">
+<li>can delete braches with <code>b k</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2c621de" class="outline-2">
+<h2 id="org2c621de">Update local coffea4bs</h2>
+<div class="outline-text-2" id="text-org2c621de">
+<ul class="org-ul">
+<li>all good</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcbacd65" class="outline-2">
+<h2 id="orgcbacd65">Reviewing <a href="../../../Notes/Chuyuan Liu.html#ID-74C1316E-1FDF-4A1D-BF4F-761E5B333270">Chuyuan Liu</a>  docs</h2>
+</div>
+
+
+<div id="outline-container-org891dd84" class="outline-2">
+<h2 id="org891dd84">Hoops</h2>
+<div class="outline-text-2" id="text-org891dd84">
+<ul class="org-ul">
+<li>5s and 4s</li>
+<li>played OK</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org37c4d6b" class="outline-2">
+<h2 id="org37c4d6b">Chat Reinhard</h2>
+</div>
+
+
+<div id="outline-container-org726358d" class="outline-2">
+<h2 id="org726358d">Ping Roberts re:shipping 8 good Ti3c modules to FNAL</h2>
+</div>
+
+
+<div id="outline-container-org409293a" class="outline-2">
+<h2 id="org409293a">Pinged Sindhu et al re: Graphana</h2>
+</div>
+
+
+<div id="outline-container-org51821d8" class="outline-2">
+<h2 id="org51821d8">Total modules needed for Harry</h2>
+<div class="outline-text-2" id="text-org51821d8">
+<p>
+According to google docs for BOE
+</p>
+
+<p>
+For working modules (not including the testbeam modules) I have 12,780
+</p>
+
+<p>
+CMU:  240 (pre-production) + 3696 (production) = 3936
+TTU:  240 (pre-production) + 3696 (production) = 3936
+UCSB: 159 (Full-size equivalent preproduction) + 234 (Half-size
+equivalent) + 2379 (FSE production) + 2136 (HSE production) = 4908
+Total: 12780
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge344814" class="outline-2">
+<h2 id="orge344814">Setting up <a href="../../../Notes/coffeabbww-20250901202935.html#ID-2233418F-E80D-48D5-9538-87DACED41C6E">coffeabbWW</a></h2>
+<div class="outline-text-2" id="text-orge344814">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf7f4ec5" class="outline-2">
+<h2 id="orgf7f4ec5">DOE chat</h2>
+<div class="outline-text-2" id="text-orgf7f4ec5">
+<ul class="org-ul">
+<li>At page limit&#x2026; need to add ~2 pages</li>
+<li>MP: HGC DQM -&gt; ECAL section</li>
+<li>MP+JA: Integration &amp; Installation toward commissioning 2.4.3</li>
+<li>MP: 4-top</li>
+<li>Physics section: describe what we want to do. ~no background / not a summary of past work</li>
+<li>Try to kill where you can</li>
+<li>Update collaborator list</li>
+<li>Will meet Monday at 2pm</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga32e281" class="outline-2">
+<h2 id="orga32e281">Home with T</h2>
+</div>
+
+
+<div id="outline-container-org6aff796" class="outline-2">
+<h2 id="org6aff796">Dinner</h2>
+</div>
+
+
+<div id="outline-container-org20298fa" class="outline-2">
+<h2 id="org20298fa">Marlo Birthday Celebrations</h2>
+<div class="outline-text-2" id="text-org20298fa">
+
+<div id="org90e4aec" class="figure">
+<p><img src="Marlo_Birthday_Celebrations/2025-08-25_08-21-12_screenshot.png" alt="2025-08-25_08-21-12_screenshot.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org331e46e" class="outline-2">
+<h2 id="org331e46e">Reading</h2>
+</div>
+</div>
+</body>
+</html>

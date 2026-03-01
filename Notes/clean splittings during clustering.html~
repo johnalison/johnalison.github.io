@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>clean splittings during clustering</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">clean splittings during clustering</h1>
+<p>
+Idea here is to not use the ISR splitting when making the templates. 
+</p>
+
+<p>
+eg: only use <code>bj</code> splittings for combination like: `b(bj)
+</p>
+
+<div id="outline-container-orga8d4f59" class="outline-2">
+<h2 id="orga8d4f59">Implementation:</h2>
+<div class="outline-text-2" id="text-orga8d4f59">
+<ul class="org-ul">
+<li>run clean ISR on clustered jets</li>
+<li>filter clustered jets for combined jets</li>
+<li>find matching splitting</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgf572547" class="outline-3">
+<h3 id="orgf572547">Follow-ups</h3>
+<div class="outline-text-3" id="text-orgf572547">
+<ul class="org-ul">
+<li>Should probably compare cleaned templates to all templates, if similar gain stats from using ISR</li>
+<li>Would also want to do the same in the reclustering !</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4304a5b" class="outline-3">
+<h3 id="org4304a5b">Links:</h3>
+<div class="outline-text-3" id="text-org4304a5b">
+<p>
+<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">Jet DeClustering</a>
+</p>
+
+
+<p>
+202408011055
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

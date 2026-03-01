@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Org Babel</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Org Babel</h1>
+<p>
+<a href="https://systemcrafters.net/emacs-from-scratch/configure-everything-with-org-babel/">https://systemcrafters.net/emacs-from-scratch/configure-everything-with-org-babel/</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">x = 10
+y = 20
+print(f"The sum of {x} and {y} is {x+y}")
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><code>C-c C-c</code> Runs the code block</li>
+</ul>
+
+
+<table id="org65acfbf" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">103</td>
+<td class="org-right">20</td>
+<td class="org-right">30</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+<pre class="src src-python">print(f"Values: {data}")
+for value in data[0]:  # data is passed as a list of lists
+    print(f"Value: {value}")
+
+</pre>
+</div>
+
+
+<table id="orgf9ab1f4" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Product</th>
+<th scope="col" class="org-right">Price</th>
+<th scope="col" class="org-right">Quantity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">A</td>
+<td class="org-right">10</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-right">15</td>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-left">C</td>
+<td class="org-right">20</td>
+<td class="org-right">2</td>
+</tr>
+
+<tr>
+<td class="org-left">Dffffffffff</td>
+<td class="org-right">5</td>
+<td class="org-right">8</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+<pre class="src src-python"># Calculate subtotal for each row and sum
+subtotals = []
+total = 0
+
+for row in data[0:]:
+    price = float(row[1])
+    quantity = int(row[2])
+    subtotal = price * quantity
+    subtotals.append(subtotal)
+    total += subtotal
+
+# Return both individual subtotals and the total
+result = "| Product | Price | Quantity | Subtotal |\n"
+result += "|---------+-------+----------+----------|\n"
+
+for i, row in enumerate(data[0:]):
+    result += f"| {row[0]} | {row[1]} | {row[2]} | {subtotals[i]} |\n"
+
+result += f"|---------+-------+----------+----------|\n"
+result += f"| Total | | | {total} |"
+
+return result
+</pre>
+</div>
+
+<div id="outline-container-org6ecdff1" class="outline-2">
+<h2 id="org6ecdff1">org-structure template <code>&lt;</code> + tab complete</h2>
+<div class="outline-text-2" id="text-org6ecdff1">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">
+(message (concat "Hello " "World" " !"))
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2025/05-May/17-May-2025-Saturday.html">17 May 2025 Saturday</a></li>
+</ul>
+</div>
+</body>
+</html>

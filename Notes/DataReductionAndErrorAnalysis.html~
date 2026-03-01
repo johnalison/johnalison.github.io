@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DataReductionAndErrorAnalysis</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">DataReductionAndErrorAnalysis</h1>
+
+<div id="outline-container-org41bf708" class="outline-2">
+<h2 id="org41bf708">Data Reduction and Error Analysis (Bevington and Robinson)</h2>
+<div class="outline-text-2" id="text-org41bf708">
+<ul class="org-ul">
+<li>Great book. Tied a lot of what I already knew together.</li>
+
+<li>Of the many probability distributions that are involved in the analysis of experimental data, three playa fundamental role: the binomial distribution, the Poisson distribution, and the Gaussian distribution.
+Of these, the Gaussian, or normal error, distribution is undoubtedly the most important in statistical analysis of data.
+Practically, it is useful because it seems to describe the distribution of random observations for many experiments, as well as describing the distributions obtained when we try to estimate the parameters of most other probability distributions.</li>
+
+<li>The Poisson distribution represents an approximation to the binomial distribution for the special case where the average number of successes is much smaller than the possible number; that is, when &mu; &lt;&lt; n because p &lt;&lt; 1.</li>
+
+<li>The Gaussian distribution  has the satisfying characteristic that the most probable estimate of the mean &mu; from a random sample of observations is the average of those observations.</li>
+
+<li>As illustrated in Figure 2.5, tangents drawn along a portion of steepest descent of the curve intersect the curve at the e-1/2 points x = &mu; ± &sigma; and intersect the x axis at the points x = &mu; ± 2&sigma;</li>
+
+<li>&Gamma;(FWHM)  = 2.354 &sigma;</li>
+
+<li><p>
+The standard deviation is not defined for the Lorentzian distribution as a consequence of its slowly decreasing behavior for large deviations.
+</p>
+
+<p>
+If we try to measure the sample S.D. it will not converge to a stable value.
+</p></li>
+
+<li>The moral is, be aware and do not trust statistics in the tails of the distributions.</li>
+
+<li>We should be aware that Gaussian probability may not apply to our particular data set, and even an experimental distribution that nominally follows Gaussian statistics is apt to deviate in the tails.
+When the data set is small, there is another consideration.
+Not only the mean, but also our estimate s<sub>&mu;</sub> of the standard error &sigma;<sub>&mu;</sub> may be poorly determined.
+The probabilities that we calculate from the Gaussian distribu- tion take no account of the latter problem.
+In such cases, a better estimate of the probability can be obtained from Student's t distribution.</li>
+
+<li>Generally, a result is considered to be significant only at confidence levels of 95% or better.
+In Gaussian probability, this corresponds to a range of approximately ±2&sigma;'.
+We can observe from Table C.8 that for a sample of only three data points (v = 2), the Student's t probability for 95% confidence corresponds to a range of more than ±4&sigma;.</li>
+
+<li>the true expectation value for X2 is &nu;, where v is the number of degrees of freedom and is equal to the number n of sample frequencies minus the number nc of constraints or parameters that have been calculated from the data to describe the probability function.</li>
+
+<li>Thus, to find x, selected randomly from the probability distribution P(x), we generate a random number r from the uniform distribution and find the value of the limit x that satisfies the integral equation (5.10).</li>
+
+<li><p>
+Our condition, that we neglect uncertainties in x and consider just the uncertainties in y, will be valid only if the uncertainties in y that would be produced by variations in x corresponding to the uncertainties in the measurement of x are much smaller than the uncertainties in the measurement of y.
+This is equivalent, in first order, to the requirement at each measured point that
+</p>
+
+<p>
+&sigma;<sub>x</sub> &times; dy/dx &lt;&lt; &sigma;<sub>y</sub>
+</p></li>
+
+<li>If the standard deviations for the data points are unknown but we can assume that they are all equal, then we can estimate them from the data and the results of our fit.
+we can obtain the common error in our measurements of Y from the fit, although at the expense of any information about the quality of the fit.</li>
+
+<li>it is generally good practice to use orthogonal fitting functions whenever possible to minimize both the correlations between coefficients and the dependence of higher coefficients on the presence of lower ones.</li>
+
+<li>In general, if we fit the functionf(y) rather than y, the uncertainties ai in the measured quantities must be modified by
+&sigma;' = df(y)/dy &sigma;</li>
+
+<li><p>
+We can obtain another useful relation from Equation (8.8) by taking the second derivative of X2 with respect to the parameter aj to obtain
+</p>
+
+<p>
+d<sup>2</sup> X2/da<sup>2</sup> = 2/&sigma;<sup>2</sup>
+</p></li>
+
+<li>Fitting nonlinear functions to data samples sometimes seems to be more of an art than a science.
+In part, this is in the nature of the approximationn process, where the speed of convergence toward a solution may depend upon the choice of the method for finding solutions, the choice of starting values for the parameters: and possibly the choice of the step size.
+To use any of these methods, we first determine starting values, estimates to be used by the fitting routine for initial calculaiton of the function and of chi square.
+For the pure search methods we must also define step sizes, the initial variations of the parameters.
+Neither starting values nor step Sizes, of course are needed in linear fitting.</li>
+
+<li>if the curvature of the X2 hypersurface is used as III EquatIOn (8.37) or (8.2~),the analytical solution is clearly unreliable whenever the curvature becomses negative.
+Symptomatic of this problem is the need to set posItive the diagonal elements a<sub>jj</sub> of the matrix a. so that all curvatures are treated as if they were positive.</li>
+</ul>
+
+
+<p>
+In contrast, the gradient search of Section 8.4 is ideally suited for approaching the minimum from far away, but does not converge rapidly near the minimum.
+Therefore, we need an algonthm that behaves like a gradient search for the first portion of a search. and behaves more like an analytical solution as the search convergs.
+In fact, It can be shown (see Marquardt 1963) that the path directions for gradient and analytical searches are nearly perpendicular to each other, and that the optimum direction IS somewhere between these two vectors.
+</p>
+
+
+<ul class="org-ul">
+<li>Note that the problem of selecting the absolute value of the abscissa corresponding to the ordinate value was not important in the determination of the mean lifetimes in Example 8.1 because lifetimes are determined effectively from differences, rather than absolute values, of the independent variable.
+We must, however, always take care when we plot results of a fit that the curve is not displaced half a bin width from the data.</li>
+
+<li><p>
+Good description of the coorelation coefficent r = sqrt(bb') where b and b' are defined by
+</p>
+
+<p>
+y = bx + a    x = b'y +a'
+</p></li>
+
+<li>This ratio is a measure of how much the additional term has improved the value of the reduced chi-square and should be small when the function with m + 1 terms does not significantly improve the fit over the function with m terms.</li>
+
+<li>p211 Solution to the grad school problem of determining the errors on CMB parameters by fitting the CMB and looking for deltaX2 = 1.
+You need to optimize the NP for all the variations in the NP.
+Need to write this up in the MPL code!</li>
+
+<li>The 1 sigma contour for two prarameters needs to have deltaX2 = 2.3</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Declustering Algebra</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Declustering Algebra</h1>
+<p>
+Start with \(P_{\rm{comb}}^\mu\) :   look up z,  \(\theta_A\),  \(m_A\), and \(m_B\).  \(m_{comb}\) ignored (is this actually true in the boosting ?)
+</p>
+
+<p>
+Boost to \(P_{\rm{comb}}^z = 0\).  Rotate to \(P_{\rm{comb}}^y = 0\).
+</p>
+
+
+<p>
+![BROKEN LINK: DeclusteringAlgebraDrawing.excalidraw|200]
+</p>
+
+<p>
+\[z_A \equiv \frac{|\vec{A}|\cos\theta_A}{P_T^{comb}}\]
+</p>
+
+
+<p>
+\(P_{comb}^\mu = \begin{pmatrix} E^{comb} \\ P_T^{comb} \\ 0 \\ 0 \end{pmatrix}\)  Where (for the moment) we are assuming \(E^{comb} = P_T^{comb}\)
+</p>
+
+<p>
+Now we need to get \(\vec{P}_A\) and \(\vec{P}_B\)   (From now on will just write \(\vec{A}\) and \(\vec{B}\))
+</p>
+
+<p>
+\(\vec{A} = \begin{pmatrix} |\vec{A}|\cos \theta_A \\ 0 \\ -|\vec{A}|\sin \theta_A \end{pmatrix}\)  and  \(\vec{B} = \begin{pmatrix} |\vec{B}|\cos \theta_B \\ 0 \\ +|\vec{A}|\sin \theta_B \end{pmatrix}\)
+</p>
+
+<p>
+So we need \(|\vec{A}|, \theta_A\)  \(|\vec{B}|, \theta_B\) . 
+</p>
+
+<p>
+We will look up \(z_A\) and \(\theta_A\) which fix \(|\vec{A}|\) and \(\theta_A\). Will constrain the other two unknowns from \(\vec{P}_{comb} = \vec{A} + \vec{B}\)
+</p>
+
+<div id="outline-container-org691ee6b" class="outline-2">
+<h2 id="org691ee6b">1) Constraint \(P_{comb}^z = 0\)</h2>
+<div class="outline-text-2" id="text-org691ee6b">
+<p>
+\(|\vec{A}| \sin\theta_A = |\vec{B}|\sin \theta_B\)   or     \(\sin\theta_B = \frac{|\vec{A}|}{|\vec{B}|} \sin \theta_A\)
+</p>
+
+<p>
+(equation A)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f4f5ec" class="outline-2">
+<h2 id="org7f4f5ec">2) Constraint \(P_{comb}^T = P_A^T + P_B^T\)</h2>
+<div class="outline-text-2" id="text-org7f4f5ec">
+<p>
+\[
+P_T^{comb} = |\vec{A}|\cos\theta_A + |\vec{B}|cos\theta_B
+\]
+\[
+= z_A P_T^{comb} + |\vec{B}|cos\theta_B
+\]
+or 
+</p>
+
+<p>
+$$
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\vec{B}</td>
+<td class="org-left">= \frac{(1-z)P<sub>T</sub><sup>comb</sup>}{cos&theta;<sub>B</sub>}</td>
+</tr>
+</tbody>
+</table>
+<p>
+$$
+(equation B)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56267a2" class="outline-2">
+<h2 id="org56267a2">Combining A &amp; B</h2>
+<div class="outline-text-2" id="text-org56267a2">
+<p>
+\[
+\sin\theta_B = \frac{p_T^{comb} z_A}{\cos\theta_A}\frac{\sin\theta_A}{(1-z_A)p_T^{comb}} \cos \theta_B    
+\]
+</p>
+
+<p>
+OR 
+</p>
+
+<p>
+\[
+\tan \theta_B = \frac{z}{1-z} \tan\theta_A
+\]
+</p>
+</div>
+</div>
+<div id="outline-container-org2657f12" class="outline-2">
+<h2 id="org2657f12">Putting it Together</h2>
+<div class="outline-text-2" id="text-org2657f12">
+<p>
+\(\vec{A} = \begin{pmatrix} |\vec{A}|\cos \theta_A \\ 0 \\ -|\vec{A}|\sin \theta_A \end{pmatrix}\)  = \(\begin{pmatrix} z_A P_T^{comb} \\ 0 \\ -z_A P_T^{comb} \tan\theta_A \end{pmatrix}\) because \(|\vec{A}| = \frac{z_A P_T^{comb}}{\cos\theta_A}\)
+</p>
+
+<p>
+and 
+</p>
+
+<p>
+\(\vec{B} = \begin{pmatrix} (1-z_A) P_T^{comb} \\ 0 \\ \frac{(1-z_A)P_T^{comb}}{\cos\theta_B}  \sin\theta_B \end{pmatrix}\) =  \(\begin{pmatrix} (1-z_A) P_T^{comb} \\ 0 \\ (1-z_A)P_T^{comb}  (\frac{z_A}{1-z_A}) \tan\theta_A \end{pmatrix}\)
+</p>
+
+<p>
+now have the new vectors in terms of the looked up variables \(z_A\) and \(\theta_A\).
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org90037fe" class="outline-2">
+<h2 id="org90037fe">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org05e71f2" class="outline-2">
+<h2 id="org05e71f2">Links:</h2>
+<div class="outline-text-2" id="text-org05e71f2">
+<p>
+<a href="Clustering Algebra.html#ID-8DDD6673-D023-4288-BB79-72AD4F1E67F8">Clustering Algebra</a>
+[BROKEN LINK: Splitting Templates]
+<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">Jet DeClustering</a>
+</p>
+
+
+
+<p>
+202410191153
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="jetdeclustering-20250504105905.html">JetDeClustering</a></li>
+  <li><a href="../Journal/2024/10-October/19-October-2024-Saturday.html">19 October 2024 Saturday</a></li>
+</ul>
+</div>
+</body>
+</html>

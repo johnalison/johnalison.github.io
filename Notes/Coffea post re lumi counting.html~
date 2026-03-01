@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coffea post re lumi counting</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Coffea post re lumi counting</h1>
+<p>
+Dear experts, 
+</p>
+
+<p>
+Nubie question: Are there any tools/examples of checking that a coffea job processed all the expected data? 
+</p>
+
+<p>
+eg: 
+</p>
+<ul class="org-ul">
+<li>Something that compares the lumi sections processed to those expected from the golden json ?</li>
+<li>Are there any tools/examples that checks for duplicate events (esp when running many jobs in DASK)</li>
+</ul>
+
+<p>
+Thanks!
+john
+</p>
+
+
+<div id="outline-container-org6a5b7d1" class="outline-2">
+<h2 id="org6a5b7d1">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org6bc4da7" class="outline-2">
+<h2 id="org6bc4da7">Links:</h2>
+<div class="outline-text-2" id="text-org6bc4da7">
+<p>
+202410091113
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

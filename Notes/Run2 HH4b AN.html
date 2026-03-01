@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Run2 HH4b AN</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Run2 HH4b AN</h1>
+<p>
+Official version: <a href="https://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2024/089">https://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2024/089</a>
+Twiki: <a href="https://twiki.cern.ch/twiki/bin/view/CMSPublic/Run2HH4b">https://twiki.cern.ch/twiki/bin/view/CMSPublic/Run2HH4b</a>
+</p>
+
+
+
+<div id="outline-container-org0aa744b" class="outline-2">
+<h2 id="org0aa744b">Figure Updates from L2</h2>
+<div class="outline-text-2" id="text-org0aa744b">
+<ul class="org-ul">
+<li>fig5 plots for the other signal samples.
+<ul class="org-ul">
+<li>Probably need a way of making 2-8 in new code</li>
+</ul></li>
+<li>fig 9 split by year</li>
+<li>1D mass projections of SR and SB</li>
+<li>Add chuyuan's studies in an appendix</li>
+<li class="off"><code>[&#xa0;]</code> Fig. 51 (hemisphere summary variables): for different jet bins</li>
+<li class="off"><code>[&#xa0;]</code> Fig 53: NN vs other hemisphere in the event</li>
+<li>Add regions to fig 69 and 70</li>
+<li>Add SvB for ZZ and ZH in the SR</li>
+<li class="off"><code>[&#xa0;]</code> Add plots on ISR / FSR study</li>
+<li class="off"><code>[&#xa0;]</code> Roc plot p(HH) vs p(signal|HH)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdc2fe67" class="outline-2">
+<h2 id="orgdc2fe67">To do</h2>
+<div class="outline-text-2" id="text-orgdc2fe67">
+<ul class="org-ul">
+<li>L3 comments v2</li>
+<li class="off"><code>[&#xa0;]</code> Need new background model</li>
+<li>Whats wrong with mixed data fits ?
+<ul class="org-ul">
+<li>Repeate Closure with old SvB</li>
+</ul></li>
+<li>What is up with PS FSR ?
+<ul class="org-ul">
+<li><a href="hbbreclusteringproject-20250504112711.html#ID-FA4AE2C2-051E-4BE8-B2D3-028895397F4A">Hbb Reclustering Project</a></li>
+</ul></li>
+</ul>
+
+<p>
+Towards v4
+</p>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Update nominal background for k-folding</li>
+<li>cutflow hists</li>
+<li>Try new SvB classifier for kλ</li>
+<li class="off"><code>[&#xa0;]</code> Redo plots with new JCM ?</li>
+<li class="off"><code>[&#xa0;]</code> Re do FvT fits with new code</li>
+<li class="off"><code>[&#xa0;]</code> Try to Correct bias from ZZ region (?)</li>
+<li>Add to AN
+<ul class="org-ul">
+<li>Add κλ scan</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3d5e569" class="outline-2">
+<h2 id="org3d5e569">Scripts to make plots</h2>
+<div class="outline-text-2" id="text-org3d5e569">
+</div>
+<div id="outline-container-org8f9ad2b" class="outline-3">
+<h3 id="org8f9ad2b"><code>python plots/makePlotsMixedVsDataVs3b.py --comb plots/ANv3/histAll_noFvT.coffea plots/ANv3/histMixedData.coffea  -m plots/metadata/plotMixedVsDataVs3b.yml --out plotsANv3/mixedVsDataVs3b</code></h3>
+</div>
+
+<div id="outline-container-org88e7c9d" class="outline-3">
+<h3 id="org88e7c9d"><code>python analysis/makePlotsAN.py hists/ANv3/histAll.coffea --out hists/ANv3/plots</code></h3>
+</div>
+
+<div id="outline-container-orgc088f14" class="outline-3">
+<h3 id="orgc088f14"><code>python -i analysis/makePlotsAN_noFvT.py hists/ANv3/histAll_noFvT.coffea --out hists/ANv3/plots_noFvT -m analysis/metadata/plotsAllNoFvT.yml</code></h3>
+</div>
+
+<div id="outline-container-orgf70ef52" class="outline-3">
+<h3 id="orgf70ef52"><code>python analysis/makePlotsMixedVsDataVs3b.py --comb hists/ANv3/histAll_noFvT.coffea hists/ANv3/histMixedData.coffea  -m analysis/metadata/plotMixedVsDataVs3b.yml --out hists/ANv3/mixedVsDataVs3b</code></h3>
+</div>
+
+<div id="outline-container-org331b14b" class="outline-3">
+<h3 id="org331b14b"><code>python  analysis/makePlotsAN_noFvT_muQCD.py hists/ANv3/histAll_noFvT.coffea --out hists/ANv3/plots_noFvT_muQCD -m analysis/metadata/plotsAllNoFvT_muQCD.yml</code></h3>
+</div>
+</div>
+
+
+<div id="outline-container-orgd008ca7" class="outline-2">
+<h2 id="orgd008ca7">Unblinded Presentations</h2>
+<div class="outline-text-2" id="text-orgd008ca7">
+<p>
+<a href="https://docs.google.com/presentation/d/1XszKOezUIJ2-k8M8ro13eRHRtoVRnTjvaxxHkuF0O5o/edit?slide=id.g36176a16e83_1_72#slide=id.g36176a16e83_1_72">Stage 1</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/presentation/d/10LCKdfvDRFip-AFgQ8AMwfgNXIrsdbR4MFMmVt_oIbc/edit?slide=id.g336cabfde01_0_71#slide=id.g336cabfde01_0_71">Run 2 Details</a>   /  <a href="https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded/">Run2 Web page</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfbb0691" class="outline-2">
+<h2 id="orgfbb0691">Daily Logs</h2>
+<div class="outline-text-2" id="text-orgfbb0691">
+</div>
+<div id="outline-container-org8a85d59" class="outline-3">
+<h3 id="org8a85d59"><a href="../Journal/2025/10-October/15-October-2025-Wednesday.html#ID-E311A2E1-0A3D-4579-958C-D6532199D96C">15 October 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org8a85d59">
+<p>
+<code>source coffea4bees/scripts/makeplotsForPaper.sh</code>
+Acc plots:
+<code>scp $LPC:/uscms/home/jda102/nobackup/HH4b/Run3/coffea4bees/python/output/analysis_testAll_job/hist_HH.coffea output/analysis_test_job</code>
+<code>python coffea4bees/plots/makeAccxEff.py output/analysis_test_job/signal_HH4b_nano_fixed.coffea output/analysis_test_job/hist_HH.coffea  --output testAccNew</code>
+Relative effs look good&#x2026; But not the totall&#x2026; Need to debug&#x2026;
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org10538a5" class="outline-3">
+<h3 id="org10538a5"><a href="../Journal/2025/10-October/07-October-2025-Tuesday.html#ID-9F846786-1E32-41E5-BD2D-68E2CD164CC3">07 October 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org10538a5">
+<ul class="org-ul">
+<li>Crisis&#x2026; Could not find yamls&#x2026; restored from backup&#x2026;</li>
+<li>Figured out AE put them in archive&#x2026; all good</li>
+<li>Changes for axis<sub>opts</sub></li>
+<li>Adding option to change CMS label</li>
+<li>pushing.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org49a0e28" class="outline-3">
+<h3 id="org49a0e28"><a href="../Journal/2025/07-July/02-July-2025-Wednesday.html#ID-1887A372-62A7-4736-A0BF-67C23913A53F">02 July 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org49a0e28">
+<ul class="org-ul">
+<li>Copy postfit plots  From:</li>
+</ul>
+<p>
+<a href="https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded_wdataUL17B/datacards/">https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded_wdataUL17B/datacards/</a>
+</p>
+<ul class="org-ul">
+<li>Extract the yaml
+<code>- python3 extract_hist_data.py -i plotsForPaper/SvB_MA_postfitplots_prefit_138.C -t plotsForPaper/plot_template_with_signal.yaml -c plotsForPaper/hist_config.yaml -o plotsForPaper/SvB_MA_postfitplots_prefit_138.yaml</code>
+<ul class="org-ul">
+<li><code>python3 extract_hist_data.py -i plotsForPaper/SvB_MA_postfitplots_fit_b_138.C -t plotsForPaper/plot_template_no_signal.yaml -c plotsForPaper/hist_config.yaml -o plotsForPaper/SvB_MA_postfitplots_fit_b_138.yaml</code></li>
+<li><code>python3 extract_hist_data.py -i plotsForPaper/SvB_MA_postfitplots_fit_s_138.C -t plotsForPaper/plot_template_with_signal_stacked.yaml -c plotsForPaper/hist_config.yaml -o plotsForPaper/SvB_MA_postfitplots_fit_s_138.yaml</code></li>
+</ul></li>
+<li>Added to slides</li>
+<li>Committed</li>
+<li>Added to AN repo (not added in latex yet)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge7dc33a" class="outline-3">
+<h3 id="orge7dc33a"><a href="../Journal/2025/06-June/13-June-2025-Friday.html#ID-7955B145-DF6C-419E-A8C2-7DA9B7DBBCE4">13 June 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orge7dc33a">
+<ul class="org-ul">
+<li>working variance plots
+<ul class="org-ul">
+<li><code>python plots/variance_plot_from_yaml.py --input_yaml_files plotsForPaper/0_variance_multijet_ensemble_basis0.yaml   -o plotsForPaper/</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org08dc5c5" class="outline-3">
+<h3 id="org08dc5c5"><a href="../Journal/2025/06-June/12-June-2025-Thursday.html#ID-59B53FCC-CE1F-4B1D-AC00-1081A97CC19B">12 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org08dc5c5">
+<ul class="org-ul">
+<li>Getting the bias plots running&#x2026;
+<code>python3 extract_hist_data.py -i plotsForPaper/1_bias_basis-1.C  -t plotsForPaper/plot_template_bias.yaml -c plotsForPaper/hist_config_bias.yaml -o plotsForPaper/1_bias_basis-1.yaml --NMAX_BINS 47</code>
+<code>python3 extract_hist_data.py -i plotsForPaper/0_variance_multijet_ensemble_basis0.C   -t plotsForPaper/plot_template_variance.yaml -c plotsForPaper/hist_config_variance0.yaml -o plotsForPaper/0_variance_multijet_ensemble_basis0.yaml</code></li>
+<li>pushed</li>
+<li>Added step histograms in ratios</li>
+<li>Added legend in ration frams</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd398cb4" class="outline-3">
+<h3 id="orgd398cb4"><a href="../Journal/2025/06-June/11-June-2025-Wednesday.html#ID-D5A6C8D5-770B-4BBA-9512-CE9950F92633">11 June 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgd398cb4">
+<ul class="org-ul">
+<li>Coding with cursor</li>
+<li>Use template fill in</li>
+<li>Making conversion file with Cursor:
+<code>python3 extract_hist_data.py -i plotsForPaper/SvB_MA_postfitplots_fit_b.C -t plotsForPaper/plot_template_no_signal.yaml -c plotsForPaper/hist_config.yaml -o plotsForPaper/SvB_MA_postfitplots_fit_b.yaml</code>
+<code>python3 extract_hist_data.py -i plotsForPaper/SvB_MA_postfitplots_prefit.C -t plotsForPaper/plot_template_with_signal.yaml -c plotsForPaper/hist_config.yaml -o plotsForPaper/SvB_MA_postfitplots_prefit.yaml</code>
+<code>python3 extract_hist_data.py -i plotsForPaper/SvB_MA_postfitplots_fit_s.C -t plotsForPaper/plot_template_with_signal_stacked.yaml -c plotsForPaper/hist_config.yaml -o plotsForPaper/SvB_MA_postfitplots_fit_s.yaml</code></li>
+<li>Added custom ordering of the legend</li>
+<li>Updated the mixed data plots.</li>
+<li>Added all the plots to the AN.. pushed a new AN</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1e54e25" class="outline-3">
+<h3 id="org1e54e25"><a href="../Journal/2025/06-June/10-June-2025-Tuesday.html#ID-1BDCAD3E-F974-4E12-A699-526072C74B48">10 June 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org1e54e25">
+<ul class="org-ul">
+<li>Working the plots</li>
+<li>Updated legend order and size</li>
+<li>Axis size</li>
+<li>Added aux text&#x2026; Looking good</li>
+<li>Starting to copy the .C files from
+<ul class="org-ul">
+<li><a href="https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded/datacards/">https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded/datacards/</a></li>
+<li><a href="https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded/datacards/plots/">https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded/datacards/plots/</a></li>
+</ul></li>
+<li>Think I should write a python script (with Cursor) to make a yaml file from the .C and then use our plotting tools instead of ROOT.</li>
+<li>Fixed or variable bins for SvB ?&#x2026; Thinking fixed&#x2026;Yes&#x2026; Updated the .yamls</li>
+<li>Figured out how to use reference in yaml files !  Awesome</li>
+<li>Now I dont think the noFvT plots make sense &#x2026;  Yes, you have to use <code>-m plots/metadata/plotsAllNoFvT.yml</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcca889d" class="outline-3">
+<h3 id="orgcca889d"><a href="../Journal/2025/06-June/09-June-2025-Monday.html#ID-A6554CDD-4002-4B2E-BBCD-F4DC38030AC1">09 June 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgcca889d">
+<ul class="org-ul">
+<li><b>Plots list for HH paper</b>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Acc x Eff plots Relative</li>
+<li class="on"><code>[X]</code> Acc x Eff absolute</li>
+<li class="on"><code>[X]</code> SvB<sub>bHH</sub> SB before RW</li>
+<li class="on"><code>[X]</code> SvB<sub>HH</sub> SB after RW</li>
+<li class="on"><code>[X]</code> Mixed vs data vs Mulitjet SB HH</li>
+<li class="on"><code>[X]</code> Mixed vs data vs Mulitjet SR HH</li>
+<li class="on"><code>[X]</code> Vairance study</li>
+<li class="on"><code>[X]</code> Closure study</li>
+<li class="on"><code>[X]</code> SvB S+B fit</li>
+<li class="on"><code>[X]</code> SvB pre-fit</li>
+<li class="on"><code>[X]</code> SvB B fit</li>
+</ul></li>
+
+<li>Plots from <a href="https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded/">https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded/</a></li>
+<li>Updating mixed data summary plots in AN
+<code>python plots/makePlotsMixedVsDataVs3b.py --comb  plots/ANUnblinded/histAll_noFvT.coffea plots/ANUnblinded/histMixedData.coffea -m plots/metadata/plotMixedVsDataVs3b.yml --out plotsANUnblinded/mixedVsDataVs3b</code></li>
+<li>Script to make yamls
+<ul class="org-ul">
+<li><code>py plots/makePlotsPaper.py plots/ANUnblinded/histAll.coffea --out plotsANUnblinded/</code></li>
+</ul></li>
+<li>Script to make pdfs
+<ul class="org-ul">
+<li><code>py plots/plot_from_yaml.py --input_yaml_files plotsForPaper/RunII/passPreSel/fourTag/SB/SvB_MA_ps_hh_logy.yaml plotsForPaper/RunII/passPreSel/fourTag/SB/SvB_MA_noFvT_ps_hh_logy.yaml -o plotsForPaper</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org189fb34" class="outline-3">
+<h3 id="org189fb34"><a href="../Journal/2025/06-June/06-June-2025-Friday.html#ID-2DF76617-A5E6-47EA-B4E3-B39AF7EF4F39">06 June 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org189fb34">
+<ul class="org-ul">
+<li>Trying to update the mixed plots with data in the SR</li>
+<li>Need to make the noFvT histograms (See above for instructions)</li>
+<li>Running on <b>cmslpc330</b>
+<code>python runner.py -d data TTToHadronic TTToSemiLeptonic TTTo2L2Nu ZZ4b ZH4b GluGluToHHTo4B_cHHH1 -c analysis/metadata/HH4b_noFvT.yml   -p analysis/processors/processor_HH4b.py  -y UL17 UL18 UL16_preVFP UL16_postVFP -o histAll_noFvT.coffea -op hists/ --condor</code></li>
+<li>Condor fails.. trying locally&#x2026;Got it to run.. but realized I dont need it after all
+We save SvB<sub>noFvT</sub> in the nominal histograms</li>
+<li>Updated the <code>plots/makePlotsMixedVsDataVs3b.py</code> to use that
+<code>python plots/makePlotsMixedVsDataVs3b.py --comb  plots/ANUnblinded/histAll_noFvT.coffea plots/ANUnblinded/histMixedData.coffea -m plots/metadata/plotMixedVsDataVs3b.yml --out plotsANUnblinded/mixedVsDataVs3b</code></li>
+<li>Plots look good.</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgb51ce6c" class="outline-3">
+<h3 id="orgb51ce6c"><a href="../Journal/2025/03-March/26-March-2025-Wednesday.html#ID-A0622D94-79AA-AE13-4D88-708F6E4D6F84">26 March 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgb51ce6c">
+<ul class="org-ul">
+<li>Added ps vs phh plot</li>
+<li>pushed</li>
+<li>Updated comments</li>
+<li>Wait on AE for TTbar CR before send</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org671be77" class="outline-3">
+<h3 id="org671be77"><a href="../Journal/2025/03-March/17-March-2025-Monday.html#ID-06DD1AA5-DB7E-2E5D-E879-BF970A34A274">17 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org671be77">
+<ul class="org-ul">
+<li>New Acceptance plots</li>
+<li>Remake m4j plots after removing fix for Nones .. in matchBjets∝</li>
+<li><code>python runner.py   -o signal_HH4b_nano_fixed.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_HH4b.py -y UL18 UL17 UL16_preVFP UL16_postVFP   -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+<li><code>python plots/makeAccxEff.py output/analysis_test_job/signal_HH4b_nano_fixed.coffea hist_HH.coffea --output testAccNew</code></li>
+<li>Only half (46%) the events have four matching genJets
+<ul class="org-ul">
+<li>ΔR to 0.4 =&gt; 68%</li>
+<li>ΔR to 10 =&gt; 99%</li>
+</ul></li>
+<li>Fixes the weird mHH distribution that I say earlier !!!!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7997676" class="outline-3">
+<h3 id="org7997676"><a href="../Journal/2025/03-March/15-March-2025-Saturday.html#ID-84599549-73B6-34F2-FEF3-1F4F1DDD4C81">15 March 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-org7997676">
+<ul class="org-ul">
+<li>[&gt;&gt;] ROC plots for various signal points</li>
+<li>Solid first draft</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbe6496a" class="outline-3">
+<h3 id="orgbe6496a"><a href="../Journal/2025/03-March/06-March-2025-Thursday.html#ID-0194C295-2872-D0F2-2A2E-D3F588811AD8">6 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgbe6496a">
+<ul class="org-ul">
+<li>need hemiplots and new data</li>
+<li>Finished L2 comments&#x2026; AE will push to website</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2cc22be" class="outline-3">
+<h3 id="org2cc22be"><a href="../Journal/2025/03-March/03-March-2025-Monday.html#ID-C8C55A2C-0491-1509-2D4E-955CEBDE5791">3 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org2cc22be">
+<ul class="org-ul">
+<li>Check with AE re:template uncertainties</li>
+<li>AE sees limits get worse with flat binning&#x2026;. debugging&#x2026; &lt;font color=red&gt; Fixed &lt;/font&gt;</li>
+<li>Just hemisphere plots lefts to do</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4f00bea" class="outline-3">
+<h3 id="org4f00bea"><a href="../Journal/2025/02-February/28-February-2025-Friday.html#ID-A3A25744-A62A-4615-B1A7-A3F82892F52B">28 February 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org4f00bea">
+<ul class="org-ul">
+<li>truth HH plots before and after genWeight cleaning</li>
+<li>Now have 2018 AccXEff plot looking good!</li>
+<li>Run nano on other  years
+<ul class="org-ul">
+<li><code>python runner.py   -o signal_HH4b_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_HH4b.py -y UL18 UL17 UL16_preVFP UL16_postVFP   -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+</ul></li>
+<li>UL17 crashes.. fix for puID large eta jets&#x2026; now runs</li>
+<li>running on all HH picos (to get trig weights)
+<ul class="org-ul">
+<li><code>python runner.py -o hist_HH.coffea -d GluGluToHHTo4B_cHHH1 -p analysis/processors/processor_HH4b.py -y UL18 UL17 UL16_preVFP UL16_postVFP  -op output/analysis_testAll_job -m metadata/datasets_HH4b_v1p1.yml -c analysis/metadata/HH4b_noFvT.yml</code></li>
+</ul></li>
+<li>Adding all years, plot labels and legends.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb4aeaef" class="outline-3">
+<h3 id="orgb4aeaef"><a href="../Journal/2025/02-February/26-February-2025-Wednesday.html#ID-816BD4C9-3AAF-4FD0-BA9D-3DB0ECA047CE">26 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgb4aeaef">
+<ul class="org-ul">
+<li>[&gt;&gt;] AccXEff plots with <a href="Add Cutflow Histograms.html#ID-D5A13532-1D9B-456A-9E0B-2FF8B06C017B">Add Cutflow Histograms</a></li>
+<li>Debug wrt cutflow</li>
+<li>Need to remove outliers</li>
+<li>Cleaning up cutflow interface</li>
+<li>Lots of progress&#x2026;</li>
+<li>Need two files at once, one with no skimming / one with the trigger weights</li>
+<li>histAll doesnt have cutflow<sub>hists</sub> properly merged</li>
+<li>single signal files from reAna dont have trigger weights applied.</li>
+<li>Added option to read in two files</li>
+<li>Added SF to correct relative norm between the files.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc226c70" class="outline-3">
+<h3 id="orgc226c70"><a href="../Journal/2025/02-February/25-February-2025-Tuesday.html#ID-9ECBA52A-F07F-49CC-92FF-F14498AC1B05">25 February 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgc226c70">
+<ul class="org-ul">
+<li>Updating the coments in markdown &#x2026; much better than twiki!</li>
+<li>[&gt;&gt;] Make efficiency plots with <a href="Add Cutflow Histograms.html#ID-D5A13532-1D9B-456A-9E0B-2FF8B06C017B">Add Cutflow Histograms</a>
+<ul class="org-ul">
+<li><code>python runner.py   -o signal_HH4b_nano.coffea -d GluGluToHHTo4B_cHHH1  -p analysis/processors/processor_HH4b.py -y UL18  -op output/analysis_test_job -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nano.yml</code></li>
+</ul></li>
+<li>Need to add four tag to the cut flow hists</li>
+<li>Update Weights</li>
+<li>Starting script to plot eff
+<ul class="org-ul">
+<li><code>python plots/makeAccxEff.py signal_HH4b_nano.coffea</code></li>
+</ul></li>
+<li>Weights off &#x2026; problem was with trigger weights.</li>
+<li>[&gt;&gt;] Debug wrt cutflow</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbdc8c01" class="outline-3">
+<h3 id="orgbdc8c01"><a href="../Journal/2025/02-February/24-February-2025-Monday.html#ID-29869433-CD05-404F-983E-D389082DE785">24 February 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgbdc8c01">
+<ul class="org-ul">
+<li>Working L2 comments</li>
+<li>Added the ZZ and ZH SR plots (Took them from HIG-22-011)</li>
+<li>Added Chuyuans updated classifier studies to appendix</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3701c5d" class="outline-3">
+<h3 id="org3701c5d"><a href="../Journal/2025/02-February/21-February-2025-Friday.html#ID-FDFB2E66-4394-414C-BDC0-FADB00DE1804">21 February 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org3701c5d">
+<ul class="org-ul">
+<li>Make comparison of 1d projections of masses, added to Twiki</li>
+<li>Need to update <b>makePlotsMixedVsDataVs3b.py</b></li>
+<li>Updated figures 69 and 70 with region names.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7e780f5" class="outline-3">
+<h3 id="org7e780f5"><a href="../Journal/2025/02-February/19-February-2025-Wednesday.html#ID-085B19CD-F94F-4D55-9B2E-E3F99A32B2DB">19 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org7e780f5">
+<ul class="org-ul">
+<li>Some L2 Questions</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgab585de" class="outline-3">
+<h3 id="orgab585de">[BROKEN LINK: 70989FA1-6823-4C54-8292-6C1ACE84162A]</h3>
+<div class="outline-text-3" id="text-orgab585de">
+<ul class="org-ul">
+<li>Update list of figures needed &#x2026; see above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd1b23c6" class="outline-3">
+<h3 id="orgd1b23c6"><a href="../Journal/2025/02-February/11-February-2025-Tuesday.html#ID-5AE90786-AB86-4D5E-B02E-8035601EE62B">11 February 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgd1b23c6">
+<ul class="org-ul">
+<li>Start L2 Questions</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd312ed2" class="outline-3">
+<h3 id="orgd312ed2"><a href="../Journal/2024/11-November/13-November-2024-Wednesday.html#ID-FB4C1034-A4E4-402E-A61E-FE7A868A6430">13 November 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgd312ed2">
+<p>
+[&gt;&gt;] HIstograms to cutflow
+</p>
+<ul class="org-ul">
+<li>colors
+[&gt;&gt;] ggHbb 3b w/o and w JCM</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8a95ed1" class="outline-3">
+<h3 id="org8a95ed1"><a href="../Journal/2024/11-November/14-November-2024-Thursday.html#ID-AEE790DB-4FBA-4FA3-A335-8CE0AF03A761">14 November 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org8a95ed1">
+<p>
+Looking into ggHbb
+</p>
+<ul class="org-ul">
+<li><code>python runner.py -p analysis/processors/processor_HH4b.py -y UL18 -d ttHbb ggHbb -c analysis/metadata/HH4b_rareBkgs.yml -o test_ttHbb_ggHbb.coffea -op hists/</code></li>
+<li>too slow&#x2026; changed top reco to fast and now only running ggHbb</li>
+<li><code>python runner.py -p analysis/processors/processor_HH4b.py -y UL18 -d ggHbb -c analysis/metadata/HH4b_rareBkgs.yml -o test_ggHbb.coffea -op hists/</code></li>
+<li>print cut flow with <code>python analysis/printCutFlow.py  -i hists/test_ggHbb.coffea -p ggHbb -e UL18</code></li>
+<li>HACKING the trigger bit requirement</li>
+<li>Debugging the noFvT weights.. found errror.. Fixing&#x2026;</li>
+<li>Make new ggHbb plots&#x2026;sent to Marko
+[&gt;&gt;] Update AN and twiki</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org60f8d01" class="outline-3">
+<h3 id="org60f8d01"><a href="../Journal/2024/11-November/15-November-2024-Friday.html#ID-22300CE1-9BF0-435F-A4DB-C8867EEC80E6">15 November 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org60f8d01">
+<ul class="org-ul">
+<li>Update AN and twiki with ggHbb</li>
+<li>script to make plots from histAll.coffea</li>
+<li><code>python analysis/makePlotsAN.py hists/ANv3/histAll.coffea --out hists/ANv3/plots</code>
+[&gt;&gt;] Bkg stat uncertianty in ratio band ?
+[&gt;&gt;] Add nPseudoTagJets plot
+[&gt;&gt;] Setup noFvT pipeline
+[&gt;&gt;] Why is canJet Phi 0-pi ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org660a721" class="outline-3">
+<h3 id="org660a721"><a href="../Journal/2024/11-November/16-November-2024-Saturday.html#ID-1A1B7729-7001-4B8C-9378-61D7B65D7FFD">16 November 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-org660a721">
+<ul class="org-ul">
+<li>Making noFvT plots on 340</li>
+<li>Make noFvT hists 
+<ul class="org-ul">
+<li><code>python runner.py -d data TTToHadronic TTToSemiLeptonic TTTo2L2Nu ZZ4b ZH4b GluGluToHHTo4B_cHHH1 -c analysis/metadata/HH4b_noFvT.yml   -p analysis/processors/processor_HH4b.py  -y UL17 UL18 UL16_preVFP UL16_postVFP -o histAll_noFvT.coffea -op hists/</code></li>
+</ul></li>
+<li>Making noFvT Plots
+<ul class="org-ul">
+<li><code>python -i analysis/makePlotsAN_noFvT.py hists/ANv3/histAll_noFvT.coffea --out hists/ANv3/plots_noFvT -m analysis/metadata/plotsAllNoFvT.yml</code></li>
+</ul></li>
+<li>Added noFVT plots to AN</li>
+<li>Updating JCM fits
+<ul class="org-ul">
+<li>=python analysis/make<sub>weights.py</sub> -o testJCM<sub>Coffea</sub> -c passPreSel -r SB -i hists/histAll<sub>noFvT.coffea</sub> =</li>
+<li><code>python analysis/make_weights.py -o testJCM_Coffea_fix_e -c passPreSel -r SB -i hists/histAll_noFvT.coffea  -fix_e</code></li>
+<li><code>python analysis/make_weights.py -o testJCM_Coffea_fix_d -c passPreSel -r SB -i hists/histAll_noFvT.coffea  -fix_d</code></li>
+<li>Adding fit data to JCM plots</li>
+</ul></li>
+<li>Updated JCM plots in AN</li>
+<li>Adding nPSjet hists</li>
+<li>Updating plots pre JCM:  (got mu<sub>QCD</sub> from the JCM fit)</li>
+<li><code>python  analysis/makePlotsAN_noFvT_muQCD.py hists/ANv3/histAll_noFvT.coffea --out hists/ANv3/plots_noFvT_muQCD -m analysis/metadata/plotsAllNoFvT_muQCD.yml</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf316ca6" class="outline-3">
+<h3 id="orgf316ca6"><a href="../Journal/2024/11-November/20-November-2024-Wednesday.html#ID-A342497E-22C5-4B7C-A4B3-E1AD4F259EB3">20 November 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgf316ca6">
+<ul class="org-ul">
+<li>Working the mixed data summary plots</li>
+<li>Running on <b>cmslpc336</b></li>
+<li><code>source  .ci-workflows/analysis-mixed-all.sh</code></li>
+<li>Found bug with multi-jet weights for mixed background &#x2026;</li>
+<li>Fixing CI&#x2026; after merge with johnda/master</li>
+<li>Fixed CI &#x2026; now mixed cutflow fails !!</li>
+<li>Now to mixed data summary plots</li>
+<li>= python -i analysis/iPlot.py &#x2013;comb hists/ANv3/histAll<sub>noFvT.coffea</sub> hists/ANv3/histMixedData.coffea  -m analysis/metadata/plotMixedVsDataVs3b.yml=</li>
+<li><code>python analysis/makePlotsMixedVsDataVs3b.py --comb hists/ANv3/histAll_noFvT.coffea hists/ANv3/histMixedData.coffea  -m analysis/metadata/plotMixedVsDataVs3b.yml --out hists/ANv3/mixedVsDataVs3b</code>
+[&gt;&gt;] Function for processing stack dict in <code>base_class/plots</code>
+[&gt;&gt;] Debug <code>data_3b_for_mixed</code> cutflow</li>
+<li>Added debugging output to outfile&#x2026; Rerunning CI&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org56cb816" class="outline-3">
+<h3 id="org56cb816"><a href="../Journal/2024/11-November/21-November-2024-Thursday.html#ID-60FC847B-56BA-4795-A157-B8AA6624E6D4">21 November 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org56cb816">
+<ul class="org-ul">
+<li>Got mixed ave and v0 plots running.</li>
+<li>Stats ratio error wrong!</li>
+<li>updated error in the ratio plots</li>
+<li>Added error band for the bkg uncertainty</li>
+<li>Need to blind the NoFvT plots !!!&#x2026; running&#x2026;.DONE</li>
+<li>Function for processing stack dict in <code>base_class/plots</code></li>
+<li>remade noFvT plots now blinded</li>
+<li>updated the mixed data summary plots</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0c5967d" class="outline-3">
+<h3 id="org0c5967d"><a href="../Journal/2024/11-November/22-November-2024-Friday.html#ID-8FFCA55D-CD74-4D38-A544-CB95544A7F13">22 November 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org0c5967d">
+<ul class="org-ul">
+<li>updating plots with error bands</li>
+<li><a href="4b code base.html#ID-07C5B981-2757-443B-89CF-D57206DBFD03">4b code base</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgac848de" class="outline-3">
+<h3 id="orgac848de"><a href="../Journal/2024/11-November/23-November-2024-Saturday.html#ID-44EBFB88-CFF0-4D99-940B-400ACBEEACDC">23 November 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgac848de">
+<ul class="org-ul">
+<li>Updated runTwoStageClosure to use new colors</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6fc904b" class="outline-3">
+<h3 id="org6fc904b"><a href="../Journal/2024/12-December/09-December-2024-Monday.html#ID-5489030A-C3A2-4D6B-9291-8A37E3B6CB05">9 December 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org6fc904b">
+<ul class="org-ul">
+<li>Chat AE: he will push today</li>
+<li>Working Appendix with CL results</li>
+<li>Finished the comments</li>
+<li>[XX] Send</li>
+<li>AE found problem with the fits&#x2026; will wait to send</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org00c5cc2" class="outline-3">
+<h3 id="org00c5cc2"><a href="../Journal/2024/12-December/13-December-2024-Friday.html#ID-3F1AC9EC-8BD1-4E36-85E1-6C7C4DEEC294">13 December 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org00c5cc2">
+<ul class="org-ul">
+<li>Updating the responses.</li>
+<li>New v3 versions</li>
+<li>Send email to L3s</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge0ede83" class="outline-2">
+<h2 id="orge0ede83">Archive</h2>
+<div class="outline-text-2" id="text-orge0ede83">
+<p>
+Cut a v3: 
+</p>
+<ul class="org-ul">
+<li>Fix binning</li>
+<li>ggHbb 3b w/o and w JCM</li>
+<li>Finalize L3 comments</li>
+<li>Add to AN
+<ul class="org-ul">
+<li>(AE) Add Boosted / Resolved discussion</li>
+<li>(AE) prefit plots + impact/pulls with asimov data</li>
+<li>(AE) plots per year ( to appendix T)</li>
+<li>(AE) refit  ZZ/ZH sensitivity (should actually improve with ensembeling )</li>
+<li>Blinded prefit plots (JA)</li>
+</ul></li>
+<li>Add to AN
+<ul class="org-ul">
+<li>Update plots with new code
+<ul class="org-ul">
+<li>fig 32 (Problem with ttbar Fraction)</li>
+<li>33 (From JCM Fits)</li>
+<li>34 (Need to add nPseudoTagJets)</li>
+<li>36 - 40 are (No FvT plots)</li>
+<li>42 - 49 (FvT Plots)</li>
+<li>72 Mixed data summary plots</li>
+<li>91-93 (From Combine)</li>
+<li>98</li>
+<li>99 - 101 (From Combine)</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb71bb29" class="outline-2">
+<h2 id="orgb71bb29">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org79346d8" class="outline-2">
+<h2 id="org79346d8">Links:</h2>
+<div class="outline-text-2" id="text-org79346d8">
+<p>
+202411141049
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/June 2025.html">June 2025</a></li>
+  <li><a href="../Journal/2025/10-October/15-October-2025-Wednesday.html">15 October 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/10-October/07-October-2025-Tuesday.html">07 October 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/07-July/02-July-2025-Wednesday.html">02 July 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/06-June/13-June-2025-Friday.html">13 June 2025 Friday</a></li>
+  <li><a href="../Journal/2025/06-June/12-June-2025-Thursday.html">12 June 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/06-June/11-June-2025-Wednesday.html">11 June 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/06-June/10-June-2025-Tuesday.html">10 June 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/06-June/09-June-2025-Monday.html">09 June 2025 Monday</a></li>
+  <li><a href="../Journal/2025/06-June/06-June-2025-Friday.html">06 June 2025 Friday</a></li>
+  <li><a href="../Journal/2025/03-March/26-March-2025-Wednesday.html">26 March 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/03-March/18-March-2025-Tuesday.html">18 March 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/03-March/17-March-2025-Monday.html">17 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/15-March-2025-Saturday.html">15 March 2025 Saturday</a></li>
+  <li><a href="../Journal/2025/03-March/07-March-2025-Friday.html">7 March 2025 Friday</a></li>
+  <li><a href="../Journal/2025/03-March/06-March-2025-Thursday.html">6 March 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/03-March/03-March-2025-Monday.html">3 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/02-February/28-February-2025-Friday.html">28 February 2025 Friday</a></li>
+  <li><a href="../Journal/2025/02-February/27-February-2025-Thursday.html">27 February 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/02-February/26-February-2025-Wednesday.html">26 February 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/02-February/25-February-2025-Tuesday.html">25 February 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/02-February/24-February-2025-Monday.html">24 February 2025 Monday</a></li>
+  <li><a href="../Journal/2025/02-February/21-February-2025-Friday.html">21 February 2025 Friday</a></li>
+  <li><a href="../Journal/2025/02-February/19-February-2025-Wednesday.html">19 February 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/02-February/11-February-2025-Tuesday.html">11 February 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/01-January/27-January-2025-Monday.html">27 January 2025 Monday</a></li>
+  <li><a href="../Journal/2025/01-January/16-January-2025-Thursday.html">16 January 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/01-January/15-January-2025-Wednesday.html">15 January 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/01-January/14-January-2025-Tuesday.html">14 January 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/01-January/13-January-2025-Monday.html">13 January 2025 Monday</a></li>
+  <li><a href="../Journal/2025/01-January/10-January-2025-Friday.html">10 January 2025 Friday</a></li>
+  <li><a href="../Journal/2025/01-January/09-January-2025-Thursday.html">09 January 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/01-January/08-January-2025-Wednesday.html">08 January 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/01-January/06-January-2025-Monday.html">06 January 2025 Monday</a></li>
+  <li><a href="../Journal/2024/November 2024.html">November 2024</a></li>
+  <li><a href="../Journal/2024/12-December/13-December-2024-Friday.html">13 December 2024 Friday</a></li>
+  <li><a href="../Journal/2024/12-December/09-December-2024-Monday.html">09 December 2024 Monday</a></li>
+  <li><a href="../Journal/2024/12-December/06-December-2024-Friday.html">06 December 2024 Friday</a></li>
+  <li><a href="../Journal/2024/12-December/05-December-2024-Thursday.html">05 December 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/03-December-2024-Tuesday.html">03 December 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/12-December/02-December-2024-Monday.html">02 December 2024 Monday</a></li>
+  <li><a href="../Journal/2024/11-November/27-November-2024-Wednesday.html">27 November 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/11-November/26-November-2024-Tuesday.html">26 November 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/11-November/25-November-2024-Monday.html">25 November 2024 Monday</a></li>
+  <li><a href="../Journal/2024/11-November/23-November-2024-Saturday.html">23 November 2024 Saturday</a></li>
+  <li><a href="../Journal/2024/11-November/22-November-2024-Friday.html">22 November 2024 Friday</a></li>
+  <li><a href="../Journal/2024/11-November/21-November-2024-Thursday.html">21 November 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/11-November/20-November-2024-Wednesday.html">20 November 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/11-November/19-November-2024-Tuesday.html">19 November 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/11-November/18-November-2024-Monday.html">18 November 2024 Monday</a></li>
+  <li><a href="../Journal/2024/11-November/16-November-2024-Saturday.html">16 November 2024 Saturday</a></li>
+  <li><a href="../Journal/2024/11-November/15-November-2024-Friday.html">15 November 2024 Friday</a></li>
+  <li><a href="../Journal/2024/11-November/14-November-2024-Thursday.html">14 November 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/11-November/13-November-2024-Wednesday.html">13 November 2024 Wednesday</a></li>
+</ul>
+</div>
+</body>
+</html>

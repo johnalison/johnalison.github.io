@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>What’s Really Going On in Machine Learning? Some Minimal Models</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">What’s Really Going On in Machine Learning? Some Minimal Models</h1>
+<p>
+<a href="https://writings.stephenwolfram.com/2024/08/whats-really-going-on-in-machine-learning-some-minimal-models/">https://writings.stephenwolfram.com/2024/08/whats-really-going-on-in-machine-learning-some-minimal-models/</a>
+</p>
+
+
+<p>
+Stephen Wolfram 
+</p>
+
+<p>
+Implements machine learning in &#x2013; what else &#x2013; cellular automata.  Overall Interesting, but not clearly related to traditional ML.  Probably some interesting ideas about how to really compress the size of networks, might be interesting for implementation in hardware.
+</p>
+
+<p>
+Typical Wolfram grandiose claims and statements not really backed up by much. 
+Lots of repetition; he needs an editor. 
+</p>
+<div id="outline-container-orgca9480e" class="outline-2">
+<h2 id="orgca9480e">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgd1221ac" class="outline-2">
+<h2 id="orgd1221ac">Links:</h2>
+<div class="outline-text-2" id="text-orgd1221ac">
+<p>
+202408271645
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

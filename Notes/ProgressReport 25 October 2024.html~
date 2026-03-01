@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 25 October 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 25 October 2024</h1>
+<p>
+Lot of random things in the past two weeks (5391 / CAPs / UCSB site visit) so it has felt like it has been harder to hit a stride. The new house (5391) is a toss up at this point. We asked for $120k back, not clear we are close enough to close on this deal. Sleep has been good, but still not getting into the meditation groove.  Would like to start getting up earlier. 
+</p>
+
+<div id="outline-container-org8d5edeb" class="outline-2">
+<h2 id="org8d5edeb">4b</h2>
+<div class="outline-text-2" id="text-org8d5edeb">
+<p>
+On the 4b front, I have made a lot of progress in the <a href="Classifier Studies.html#ID-C519450B-3D4C-47BA-8096-4B4B9D1E15E0">Classifier Studies</a>.  Adding ZZSR and ZHSR into the SB for the FvT fit.  I have all the ZZSR results in hand and the ZHSR should a straightforward extension. Will know soon how much we can gain from this. The Run 3 synthetic data has been slower. I think Im close but need to be able to devote some time to it. 
+</p>
+
+<p>
+Lots of progress on the code form AE and Chuyuan.  AE has added some debugging tools that allow us to check the limit with a certain commit of the code and CL how now (?) finally finished the classifier rewrite. Hopefully both of them can start getting some physics results soon. CL will look into the kλ improvements and effect of TTBar on the SvB / FvT.  AE has numbers that show the overlap with boosted and will now move to see what gains we can expect from the "low pT" 4b analysis. 
+</p>
+
+<p>
+Still not much from Sindhu. It seems like she is either not allocating much time to X→HH or is very inefficient. Waiting on her to write up the double peak study and have a first look at systematics on mHH. She will likely then need to move on to making signal samples. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf2be138" class="outline-2">
+<h2 id="orgf2be138">Stats Project</h2>
+<div class="outline-text-2" id="text-orgf2be138">
+<p>
+There has been some very nice progress on the stats project. Here is a summary of the overall strategy and recent progress. First we fit FvT with the full dataset, this learns a latent space that is optimized for separating four and three tag events. Call this the "FvT-all" fit. Next, we smear the latent space and refit the final attention layers to produce a smeared-FvT-all classifier.  We assume a signal would show up as a local, high-frequency excess in the FvT-all latent space which would be suppressed by the smearing. So, signal should have a high value of FvT-all and a relatively low value of smeared-FvT-all. We then construct the "SvB" discriminant as the ratio:  FvT-all / smeared-FvT-all.  The SR is defined as the highest X% of events in this distribution, the CR is defined as the remaining events. A second FvT classifier &#x2013; "FvT-bkg" &#x2013; is fit in the CR using a statistically-independent dataset. The FvT-bkg classifier is used to extrapolate the 3b events in the SR to predict the 4b background. Soheun has found that, in the presence of signal,  if the FvT-bkg uses the original latent space, ie: that found in the initial FvT-all fit, the signal contamination in the CR biases the SR background prediction.  However, if the "FvT-bkg" is refit from the jet-level inputs and a new latent space is derived using only the CR events, the CR signal contamination does not bias the background prediction. This suggests that the CR contamination in the original latent space is clustered (as in Swiss cheese) where the contamination in the CR-only derived latent space appears unclustered (as in blue cheese). 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd97f88b" class="outline-2">
+<h2 id="orgd97f88b">HGCal</h2>
+<div class="outline-text-2" id="text-orgd97f88b">
+<p>
+This week was a big week for us. The UCSB visit went just about has well as we could have hoped.  Lots of important take aways.  The one big action item on my side is to move on the Lab Techs. We also need to sit down and optimized process. Flow and positioning etc. 
+</p>
+</div>
+
+
+<div id="outline-container-org28051e0" class="outline-3">
+<h3 id="org28051e0">Follow-ups</h3>
+<div class="outline-text-3" id="text-org28051e0">
+<p>
+Not much bbWW, SoS, 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d3b45a" class="outline-3">
+<h3 id="org3d3b45a">Links:</h3>
+<div class="outline-text-3" id="text-org3d3b45a">
+<p>
+<a href="ProgressReport 11 October 2024.html#ID-5B36FD3D-8E00-4604-BC61-57A7EA9F0D4E">ProgressReport 11 October 2024</a>
+<a href="Progress Reports.html#ID-87B6EFF9-9731-480E-8CAB-89EE13CDDF27">Progress Reports</a>
+</p>
+
+<p>
+202410250919
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

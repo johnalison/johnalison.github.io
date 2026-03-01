@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reproducible Random Numbers</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Reproducible Random Numbers</h1>
+<p>
+Here is the tool I use [Squares](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L153-210">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L153-210</a>), and here are some examples to [setup seed](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/jetmet_tools/CorrectedJetsFactory.py?ref_type=heads#L143">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/jetmet_tools/CorrectedJetsFactory.py?ref_type=heads#L143</a>) and [create counters](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/jetmet_tools/CorrectedJetsFactory.py?ref_type=heads#L13-18">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/jetmet_tools/CorrectedJetsFactory.py?ref_type=heads#L13-18</a>).
+</p>
+
+<p>
+The basic idea is the RNG will always generate the same number given the same seed and counter, where the seed is to specify a random sequence, and the counter is the index to fetch a number from this sequence.
+</p>
+
+
+
+<p>
+The [seed is iterable of strings and integers](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L38-41">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L38-41</a>) to initialize the random generator e.g.  
+</p>
+
+<p>
+&gt;&gt;&gt; rng = Squares("Jet splitting", 1, "test") # the seed is recommended to be unique enough, so that none of the sequence share the same seed
+</p>
+
+<p>
+The [counter is any arraylike object that can be converted to np.ndarrray[uint64]](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L119-123">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L119-123</a>)
+</p>
+
+<p>
+The [generator will always try to reduce the last dimension unless there is only one](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L97-100">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/math/random.py?ref_type=heads#L97-100</a>) e.g.
+</p>
+
+<p>
+for a counter with shape [10000, 2, 3] it will return an random<sub>array</sub> of [10000, 2] and each item random<sub>array</sub>[i, j] is generated from counter[i, j, :] #3*64bits, this is useful when you want to generate numbers for each jet. As shown in the [jec case](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/jetmet_tools/CorrectedJetsFactory.py?ref_type=heads#L13-17">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/base_class/jetmet_tools/CorrectedJetsFactory.py?ref_type=heads#L13-17</a>) the counter is constructed from [event number(64-bit), phi(32-bit), eta(32-bit)] which guarantees each jet will get a unique and reproducible random number and is uncorrelated.  
+</p>
+
+
+
+<p>
+If you want to run on a jagged awkward array, you still need to do it after ak.flatten.
+</p>
+
+
+<div id="outline-container-orgce31088" class="outline-2">
+<h2 id="orgce31088">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgae55dfa" class="outline-2">
+<h2 id="orgae55dfa">Links:</h2>
+<div class="outline-text-2" id="text-orgae55dfa">
+<p>
+202407300935
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="jetdeclustering-20250504105905.html">JetDeClustering</a></li>
+  <li><a href="../Journal/2024/07-July/30-July-2024-Tuesday.html">30 July 2024 Tuesday</a></li>
+</ul>
+</div>
+</body>
+</html>

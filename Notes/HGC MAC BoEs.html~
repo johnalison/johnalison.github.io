@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HGC MAC BoEs</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">HGC MAC BoEs</h1>
+<p>
+The BoE area for <a href="Module assembly at CMU.html#ID-EBFD946D-C205-4315-B659-D49C9FF6216F">Module assembly at CMU</a> is at
+<a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13032">https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13032</a>
+</p>
+
+<ul class="org-ul">
+<li>8796 full-sized modules required for CE-H
+<ul class="org-ul">
+<li>924 HD will be assembled at UCSB</li>
+<li>7872: =&gt; 3936 for detector + 5% spares + 120 losses = 4240 each site</li>
+</ul></li>
+<li>Production plan: 
+<ul class="org-ul">
+<li>pre-production: 360 w/ 240 working modules ~5% total</li>
+<li>assuming a pre-production labor inefficiency of 50% (longer duration to build modules)</li>
+</ul></li>
+<li>Production plan:
+<ul class="org-ul">
+<li>Batches of 8%: each 30 days with 27 days of effort = 324 module / month</li>
+<li>Total of 11 8% blocks+ (3%  and 2% blocks on the ends)</li>
+</ul></li>
+</ul>
+
+<p>
+There you find the BoE we wrote for CD2/3 plus backup documentation such as for cleanroom consumables etc
+</p>
+
+<p>
+The BoE area for TTU is
+</p>
+
+<p>
+<a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13031">https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13031</a>
+</p>
+
+<p>
+/cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13031)[13031](<a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13031">https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13031</a>)
+</p>
+
+<div id="outline-container-org69f82af" class="outline-2">
+<h2 id="org69f82af">UCSB it is</h2>
+<div class="outline-text-2" id="text-org69f82af">
+<p>
+<a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13033">https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13033</a>
+</p>
+
+<ul class="org-ul">
+<li>The total number of odd-sized FSE and HSE modules is 2538 (full-size equivalent) and 2370 (half-size equivalent), respectively,</li>
+<li>for a total of “full-size-equivalent modules” of 4908.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc87539b" class="outline-2">
+<h2 id="orgc87539b">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org9f06262" class="outline-2">
+<h2 id="org9f06262">Links:</h2>
+<div class="outline-text-2" id="text-org9f06262">
+<p>
+202411201654
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

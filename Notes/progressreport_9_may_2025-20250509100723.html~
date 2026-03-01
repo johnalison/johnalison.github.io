@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 9 May 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 9 May 2025</h1>
+<p>
+I have really been working on process this fortnight. After
+considering leaving Emacs, I decided instead to go all-in. I'm working
+toward getting an AI agent (maybe Aider) set up. But first, I decided
+to move from Obsidian to org-mode. This has led me down a rabbit hole
+of Emacs improvements. This was not mission critical, but it will be a
+big net gain overall. I should have used org-mode from the beginning.
+</p>
+
+<p>
+Habits have all been strong. Reading and work have suffered somewhat
+from the big upswing in Emacs, but this should turn around soon.
+</p>
+
+<p>
+The academic year is over. Wes has successfully graduated, and I will
+hood him later today. My first PhD student! I have finished with
+classes, final grades are in, and I'm starting to put it out of my
+mind.
+</p>
+
+<p>
+On the 4b side, I've completed the cut-flow comparison. I now see better
+than 1% agreement with Marina. The improvement was due to correcting
+some minor discrepancies and performing a reskim with the updated
+calibration. I have created one seed and will launch the others once I
+hear back from her.
+</p>
+
+<p>
+Sindhu seems to be slowly making some progress, but I still can't
+really see the narrative. I have told her repeatedly to put the
+argument in slides&#x2026; it's still not there yet. We have the pre-approval
+scheduled for the end of the month, jointly with the Run3 team.
+</p>
+
+<p>
+There are many personnel changes in HGC. Ornella is leaving; she has
+found another job in biology. Jim is starting, and he will be a strong
+addition. The new class of Lab Techs has accepted. I need to make sure
+they are onboarded smoothly. We will also post a job for another, more
+"senior" tech to replace Ornella.
+</p>
+</div>
+</body>
+</html>

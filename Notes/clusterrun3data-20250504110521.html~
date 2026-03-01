@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ClusterRun3Data</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ClusterRun3Data</h1>
+
+
+
+
+<div id="outline-container-orgafd1f4a" class="outline-2">
+<h2 id="orgafd1f4a">Daily Logs</h2>
+<div class="outline-text-2" id="text-orgafd1f4a">
+<p>
+Log about work to cluster Run-3 data.
+</p>
+
+<p>
+<a href="../Journal/2024/10-October/28-October-2024-Monday.html#ID-C56AB695-9C9E-4612-9B21-30B429874EA8">28 October 2024 Monday</a>
+</p>
+<ul class="org-ul">
+<li>test job&#x2026; fails</li>
+<li>Looks like selected jets way too loose</li>
+<li>Adding Muons&#x2026;</li>
+<li>Move seljet cut to 20 GeV</li>
+<li>tmux running 2022<sub>EE</sub> on <b><b>cmslpc337</b></b>&#x2026; ran in 192 m
+<code>&gt; python runner.py  -o test_synthetic_datasets_cluster_2022_EE.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_EE   -op hists/ -m metadata/datasets_HH4b_Run3_fourTag.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml</code>
+<code>&gt; python runner.py  -o test_synthetic_datasets_cluster_2022_preEE.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_preEE   -op hists/ -m metadata/datasets_HH4b_Run3_fourTag.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml</code></li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/29-October-2024-Tuesday.html#ID-B1FBBE42-2555-4B92-9BCB-CE16DC68DF60">29 October 2024 Tuesday</a>
+</p>
+<ul class="org-ul">
+<li>running 2022<sub>preEE</sub> on <b><b>cmslpc337</b></b></li>
+<li><a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></li>
+<li>Update <b><b>make<sub>jet</sub><sub>splitting</sub><sub>PDFs.py</sub></b></b> to take a list of years</li>
+<li>Made clustering output for 2022<sub>EE</sub> and 2022<sub>preEE</sub></li>
+<li>Running clustering in 2023<sub>BPix</sub>&#x2026; running 2023<sub>preBPix</sub>&#x2026; done
+<code>&gt; python runner.py  -o test_synthetic_datasets_cluster_2023_preBPix.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2023_preBPix   -op hists/ -m metadata/datasets_HH4b_Run3_fourTag.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml</code>
+<code>&gt; python runner.py  -o test_synthetic_datasets_cluster_2023_BPix.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2023_BPix   -op hists/ -m metadata/datasets_HH4b_Run3_fourTag.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml</code></li>
+
+<li>Made PDFs for all years.</li>
+<li>Copied PDFs to FNAL</li>
+<li>Testing the synthetic dataset making&#x2026; looks OK!
+<ul class="org-ul">
+<li>&#x2026;need to turn off TTbar subtraction</li>
+<li>&#x2026;kill <code>canJet["calibration"]</code></li>
+</ul></li>
+<li>Running the synthetic dataset making on **cmslpc301</li>
+</ul>
+
+
+<p>
+<a href="../Journal/2024/11-November/05-November-2024-Tuesday.html#ID-8496A5C7-A1AC-40F6-87E7-E85CEB8512FF">5 November 2024 Tuesday</a>
+</p>
+<ul class="org-ul">
+<li>Re running clustering with new btagging  on <b><b>cmslpc348</b></b>&#x2026;. killed ! 
+<code>python runner.py  -o synthetic_datasets_cluster_Run3.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix   -op hists/ -m metadata/datasets_HH4b_Run3_fourTag.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml</code>
+<ul class="org-ul">
+<li>&#x2026; Killed after <b><b>60/161</b></b> **[1:10:49</li>
+</ul></li>
+</ul>
+
+<p>
+<a href="../Journal/2024/11-November/06-November-2024-Wednesday.html#ID-3781A4EB-B24F-4075-8EBD-C61D726C0D1A">6 November 2024 Wednesday</a>
+</p>
+<ul class="org-ul">
+<li>Trying on condor on cmslpc325:&#x2026; ran in 76 min:  <b><b>349</b></b> events/s total (1593337/4561.965741157532)
+=python runner.py  -o synthetic<sub>datasets</sub><sub>cluster</sub><sub>Run3.coffea</sub> -d data  -p analysis/processors/processor<sub>cluster</sub><sub>4b.py</sub> -y 2022<sub>preEE</sub> 2022<sub>EE</sub> 2023<sub>preBPix</sub> 2023<sub>BPix</sub>   -op hists/ -m metadata/datasets<sub>HH4b</sub><sub>Run3</sub><sub>fourTag.yml</sub> -c analysis/metadata/cluster<sub>4b</sub><sub>noTTSubtraction.yml</sub> &#x2013;condor =</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/12-December/08-December-2024-Sunday.html#ID-731116D7-C0D5-4E2E-9C4A-D62B01FC04D8">8 December 2024 Sunday</a>
+</p>
+<ul class="org-ul">
+<li>Running on <b><b>cmslpc319</b></b></li>
+<li>testing with
+<code>python runner.py -t -o test_synthetic_datasets_cluster_Run3.coffea -d data -p analysis/processors/processor_cluster_4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix -op hists/ -m metadata/datasets_HH4b_Run3_fourTag.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml</code></li>
+<li>running on condor with 
+<code>python runner.py  -o synthetic_datasets_cluster_Run3.coffea -d data -p analysis/processors/processor_cluster_4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix -op hists/ -m metadata/datasets_HH4b_Run3_fourTag.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml --condor</code></li>
+<li>Ran in <b><b>10651.310122966766</b></b> s = 177m</li>
+<li>Made splitting pdfs <a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a>
+<ul class="org-ul">
+<li><code>python  jet_clustering/make_jet_splitting_PDFs.py hists/synthetic_datasets_cluster_Run3.coffea --years Run3   --out jet_clustering/jet-splitting-PDFs-00-08-02</code></li>
+</ul></li>
+<li>Making synthetic dataset with new pdfs &#x2026;  <b><b>91m56.841s</b></b></li>
+</ul>
+
+
+<p>
+<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

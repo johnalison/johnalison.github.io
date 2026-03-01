@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ROOTInstall</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ROOTInstall</h1>
+
+
+<div id="outline-container-org510d9eb" class="outline-2">
+<h2 id="org510d9eb">Start with a clean python env</h2>
+<div class="outline-text-2" id="text-org510d9eb">
+<p>
+python3 -m venv ROOTenv
+source ROOTenv/bin/activate
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgc8b1fec" class="outline-2">
+<h2 id="orgc8b1fec">Build root</h2>
+<div class="outline-text-2" id="text-orgc8b1fec">
+<p>
+<a href="https://root.cern/install/#build-from-source">https://root.cern/install/#build-from-source</a>
+</p>
+
+
+
+<p>
+==` bash
+git clone &#x2013;branch latest-stable &#x2013;depth=1 <a href="https://github.com/root-project/root.git">https://github.com/root-project/root.git</a> root<sub>src</sub>
+mkdir root<sub>build</sub> root<sub>install</sub> &amp;&amp; cd root<sub>build</sub>
+#+BEGIN<sub>SRC</sub> 
+</p>
+
+<p>
+Need to install cmake <code>brew install cmake</code>
+</p>
+
+
+<p>
+#+END<sub>SRC</sub> bash
+cat ~/setupROOT.sh
+cmake -DCMAKE<sub>INSTALL</sub><sub>PREFIX</sub>=../root<sub>install</sub> ../root<sub>src</sub>
+cmake &#x2013;build . &#x2013; install -j4
+#+BEGIN<sub>SRC</sub> 
+</p>
+
+<p>
+Then
+</p>
+
+<p>
+<code>source ../root_install/bin/thisroot.sh</code>
+</p>
+
+<p>
+Now works!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org921bfb2" class="outline-2">
+<h2 id="org921bfb2">Setup script</h2>
+<div class="outline-text-2" id="text-org921bfb2">
+<p>
+Run this each time after login
+</p>
+
+
+<p>
+#+END<sub>SRCbash</sub>
+source python-environments/ROOTenv/bin/activate
+source python-environments/ROOTenv/root<sub>install</sub>/bin/thisroot.sh
+==`
+</p>
+</div>
+
+
+<div id="outline-container-org57e6025" class="outline-3">
+<h3 id="org57e6025">Follow-ups</h3>
+<div class="outline-text-3" id="text-org57e6025">
+<p>
+More details here:
+<a href="https://root.cern/install/build_from_source/">https://root.cern/install/build_from_source/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgee24236" class="outline-3">
+<h3 id="orgee24236">Links:</h3>
+<div class="outline-text-3" id="text-orgee24236">
+<p>
+<a href="ROOT.html#ID-DAFED73D-B400-4F7F-BA31-F16651FF418F">ROOT</a>
+</p>
+
+
+
+<p>
+202407241115
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2024/07-July/24-July-2024-Wednesday.html">24 July 2024 Wednesday</a></li>
+</ul>
+</div>
+</body>
+</html>

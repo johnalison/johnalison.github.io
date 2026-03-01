@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FlowBasedDeepGenerativeModels</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">FlowBasedDeepGenerativeModels</h1>
+<p>
+Source: <a href="https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html">https://lilianweng.github.io/lil-log/2018/10/13/flow-based-deep-generative-models.html</a>
+</p>
+
+<ul class="org-ul">
+<li>RealNVP: b/c (i) computing f^−1 does not require computing the inverse of s or t
+   (ii) computing the Jacobian determinant does not involve computing the Jacobian of s or t,
+those functions can be arbitrarily complex; i.e. both s and t can be modeled by deep neural networks.</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li><p>
+The autoregressive constraint is a way to model sequential data, x=[x1&#x2026;,xD]: each output only depends on the data observed in the past, but not on the future ones.
+In other words, the probability of observing xi is conditioned on x1,&#x2026;,xi−1 and the product of these conditional probabilities gives us the probability of observing the full sequence:
+</p>
+
+<p>
+p(x) = Prod<sub>i</sub><sup>D</sup> p(x<sub>i</sub>|x<sub>1</sub> &#x2026; x<sub>i-1</sub>)
+</p>
+
+<p>
+How to model the conditional density is of your choice.
+Common examples are
+</p>
+<ul class="org-ul">
+<li>Gaussian with mean and standard deviation computed as a function of x1:i−1</li>
+<li>Multilayer neural network with x1:i−1 as the input.</li>
+</ul></li>
+
+<li>"Autoregresive flow" is a is a transformation where each dimension in a vector variable is conditioned on the previous dimensions</li>
+
+<li>MADE (Masked Autoencoder for Distribution Estimation) is a scheme (specially designed architecture) for imposing the autoregressive constraint on a neural network</li>
+</ul>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="papers.html">Papers</a></li>
+</ul>
+</div>
+</body>
+</html>

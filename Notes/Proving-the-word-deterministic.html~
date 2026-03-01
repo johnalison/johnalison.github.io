@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proving-the-word-deterministic</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Proving-the-word-deterministic</h1>
+<p>
+How could you prove the world was deterministic?
+</p>
+
+<p>
+You could
+</p>
+<ul class="org-ul">
+<li>explicitly demonstrate it in simple sub-systems</li>
+<li>Show that the laws (theory) predict the outcome</li>
+<li>Then assume that the theory applies to more complicated systems</li>
+</ul>
+
+<p>
+Seems like you have to prove that a theory is deterministic and then claim that the theory applies to the world.
+</p>
+
+
+<ul class="org-ul">
+<li>determinism is the statement that initial conditions predict all future behaviour</li>
+</ul>
+
+
+<p>
+<a href="Determinism.html#ID-333B7DBE-F18A-45A3-8542-A02DF4228CA6">Determinism</a> 
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+<a href="Emergence.html#ID-2A7D81BB-6422-48B4-A84F-0121E4D1FA84">Emergence</a>
+</p>
+</div>
+</body>
+</html>

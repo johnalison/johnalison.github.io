@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary January 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary January 2025</h1>
+<p>
+CMU has proceeded with assembly of the pre-production modules at a target rate of 2/day. This rate will be increased once the final gantry tooling is received and commissioned. 
+So far, 8 CuT modules have been built. Assembly of these modules has been used to streamline production and increase capacity, including updates to the Labview &lt;-&gt; Database interface and  improvements to the module testing software. The production of modules will continue while supplies last. The chiller has been received and will start testing it in coming weeks. Two new technicians starting in February.
+</p>
+
+<p>
+UCSB has placed more of the final gantry tooling orders through Fermilab, expected delivery is end of February. Only one more orders remains, which is waiting on the finalization of the designs with hexaboard group.  The sensor trays have arrived in UCSB and the Teflon has been installed. These will be shipped to CMU and TTU shortly. UCSB has updated the gantry software to accommodate 2 trays which will allow higher rate of production (4 modules / gantry run). UCSB has also installed a large overhead ionizer to help mitigate ESD. 
+</p>
+
+
+
+
+<div id="outline-container-org04227d8" class="outline-2">
+<h2 id="org04227d8">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org9d4c24b" class="outline-2">
+<h2 id="org9d4c24b">Links:</h2>
+<div class="outline-text-2" id="text-org9d4c24b">
+<p>
+202501221450
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

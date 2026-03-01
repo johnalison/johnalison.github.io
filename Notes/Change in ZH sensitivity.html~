@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Change in ZH sensitivity</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Change in ZH sensitivity</h1>
+
+
+<div id="outline-container-org2bc4ce2" class="outline-2">
+<h2 id="org2bc4ce2">SOLVED: where not including gg-&gt;ZH</h2>
+</div>
+
+<div id="outline-container-org0853b75" class="outline-2">
+<h2 id="org0853b75">Plan</h2>
+<div class="outline-text-2" id="text-org0853b75">
+<ul class="org-ul">
+<li>For ZZ, ZH, and HH&#x2026;
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Compute acceptance in SR</li>
+<li class="off"><code>[&#xa0;]</code> Compute acceptance in VV-region</li>
+<li class="off"><code>[&#xa0;]</code> compare S/B ratios in bins of SvB</li>
+</ul></li>
+<li>Plots of the old SvB</li>
+<li class="off"><code>[&#xa0;]</code> Fit with the old SvB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2f75d28" class="outline-2">
+<h2 id="org2f75d28">Logs</h2>
+<div class="outline-text-2" id="text-org2f75d28">
+<p>
+<a href="../Journal/2025/01-January/27-January-2025-Monday.html#ID-9AEBE732-F6E7-4A98-B6D2-5E857BCE9FCB">27 January 2025 Monday</a>
+</p>
+<ul class="org-ul">
+<li>Debug conversion to root</li>
+<li>ROOT files look same as coffee &#x2026; problem in combine script !</li>
+<li>AE finds problem! Stat only limit same as 22-011 &#x2026; case closed !</li>
+<li>SOLVED !!!</li>
+</ul>
+
+
+<p>
+<a href="../Journal/2025/01-January/24-January-2025-Friday.html#ID-A2500AA2-2FBE-4885-B0E2-BD27AAEF911A">24 January 2025 Friday</a>
+</p>
+<ul class="org-ul">
+<li>Added the old SvB<sub>MA</sub> to be made in parallel</li>
+<li>running histAll <code>source .ci-workflows/analysis-testAll-job.sh</code></li>
+<li>converted (After adding SvB<sub>MA</sub><sub>preUL</sub>* to the list of histograms to convert)
+<ul class="org-ul">
+<li><code>python stats_analysis/convert_hist_to_json.py --input output/analysis_testAll_job/histAll.coffea</code></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Need to check the acceptance of ZH in SR wrt c++</li>
+<li>C++ total yields: bothZH4b in 
+<ul class="org-ul">
+<li>ps: 61.91 (568,654 )</li>
+<li>ps<sub>zh</sub>: 49.15 (439,017)</li>
+</ul></li>
+<li>python (ZH4b only)
+<ul class="org-ul">
+<li>ps 35.85 + 20.5</li>
+<li>ps<sub>zh</sub>: 28.48  +  16.0</li>
+</ul></li>
+<li>Run with ggZH4b</li>
+<li>on <b>cmslpc312</b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgac810f2" class="outline-2">
+<h2 id="orgac810f2">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org8c0a4e6" class="outline-2">
+<h2 id="org8c0a4e6">Links:</h2>
+<div class="outline-text-2" id="text-org8c0a4e6">
+<p>
+202501241009
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

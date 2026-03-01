@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6 jet clean ISR bugs</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">6 jet clean ISR bugs</h1>
+<p>
+Need clean ISR to remove:
+</p>
+
+<p>
+Need to have logic that if the complexity is the same the more bs go to the right
+<b>'(bb)(jj)'</b>. &#x2013;&gt;  (jj)(bb)
+</p>
+
+
+
+
+<div id="outline-container-org79683eb" class="outline-2">
+<h2 id="org79683eb">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgb12e0c7" class="outline-2">
+<h2 id="orgb12e0c7">Links:</h2>
+<div class="outline-text-2" id="text-orgb12e0c7">
+<p>
+202407301637
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

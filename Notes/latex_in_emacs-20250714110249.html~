@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Latex in Emacs</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Latex in Emacs</h1>
+
+
+<div id="outline-container-orgd3d1e51" class="outline-2">
+<h2 id="orgd3d1e51">Add latex in Emacs buffer</h2>
+<div class="outline-text-2" id="text-orgd3d1e51">
+<p>
+In line with double <code>$$</code> or single
+  <code>$\frac{S}{\sqrt{B}}$</code>
+</p>
+
+<p>
+\(\frac{S}{\sqrt{B}}\)
+</p>
+
+
+<p>
+Can also use <code>\begin{equation}</code> and <code>\end{equation}</code>
+</p>
+
+<p>
+To preview LaTeX fragments in your Org buffer:
+</p>
+<ul class="org-ul">
+<li>Use <code>C-c C-x C-l</code> to toggle LaTeX fragment previews</li>
+<li>Or <code>M-x org-latex-preview</code></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

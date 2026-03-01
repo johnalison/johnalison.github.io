@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FormattingInMarkdown</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">FormattingInMarkdown</h1>
+<p>
+<a href="https://www.markdownguide.org/cheat-sheet/">https://www.markdownguide.org/cheat-sheet/</a>
+</p>
+
+<div id="outline-container-org2022b0b" class="outline-2">
+<h2 id="org2022b0b">Block code with  \=\=\`</h2>
+<div class="outline-text-2" id="text-org2022b0b">
+<p>
+==`"
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">ls
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org61e7648" class="outline-2">
+<h2 id="org61e7648">inline  code with single \`</h2>
+<div class="outline-text-2" id="text-org61e7648">
+<p>
+<code>code</code>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org83a2494" class="outline-2">
+<h2 id="org83a2494">Horizontal Rule with &#x00ad;--</h2>
+<div class="outline-text-2" id="text-org83a2494">
+<p>
+text
+</p>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+text
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5608790" class="outline-2">
+<h2 id="org5608790">Strikethrough with \~\~</h2>
+<div class="outline-text-2" id="text-org5608790">
+<p>
+<code>~Test strike through~</code>
+</p>
+</div>
+
+
+
+
+
+<div id="outline-container-orgf66837e" class="outline-3">
+<h3 id="orgf66837e">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgb15fd58" class="outline-3">
+<h3 id="orgb15fd58">Links:</h3>
+<div class="outline-text-3" id="text-orgb15fd58">
+<p>
+<a href="links in markdown.html#ID-1CF3735C-7AE1-4AE7-8DBA-4CE05271D61B">links in markdown</a>
+<a href="Tables-in-Markdown.html#ID-86947AAA-9E58-4B96-88F3-DED08D5B4F9D">Tables-in-Markdown</a>
+[BROKEN LINK: Markdown]
+</p>
+
+
+
+
+
+<p>
+202407231919
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SetupPy3VirtualEnv_CompileROOT_EnergyFlowCode</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">SetupPy3VirtualEnv<sub>CompileROOT</sub><sub>EnergyFlowCode</sub></h1>
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<p>
+&gt; python3 -m venv OT-metric-virtualenv
+</p>
+
+<p>
+&gt; source OT-metric-virtualenv/bin/activate
+</p>
+
+<p>
+&gt; python -m pip install numpy scipy matplotlib ipython jupyter pandas sympy nose
+</p>
+
+<p>
+&gt; python -m pip  install Cython
+</p>
+
+<p>
+&gt; python -m pip  install POT
+</p>
+
+<p>
+&gt; wget <a href="https://root.cern.ch/download/root_v6.16.00.source.tar.gz">https://root.cern.ch/download/root_v6.16.00.source.tar.gz</a>
+</p>
+
+<p>
+&gt; tar -zxf root<sub>v6.16.00.source.tar.gz</sub>
+</p>
+
+<p>
+&gt; mkdir root-6.16.00<sub>builddir</sub>
+</p>
+
+<p>
+&gt; cd root-6.16.00<sub>builddir</sub>
+</p>
+
+<p>
+&gt; cmake ../root-6.16.00
+</p>
+
+<p>
+&gt; cmake &#x2013;build  .
+</p>
+
+<p>
+&gt; source bin/thisroot.sh
+</p>
+
+<p>
+&gt; python -m pip install energyflow		  
+</p>
+
+
+<div id="outline-container-org920bab7" class="outline-2">
+<h2 id="org920bab7">LAter&#x2026;</h2>
+<div class="outline-text-2" id="text-org920bab7">
+<p>
+&gt; python -m pip install seaborn
+</p>
+
+<p>
+&gt; python -m pip install root<sub>numpy</sub>
+</p>
+
+<p>
+&gt; python -m pip install torch
+</p>
+
+<p>
+&gt; python -m pip install sklearn
+</p>
+
+<p>
+&gt; python -m pip install tables
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org53f9e6c" class="outline-2">
+<h2 id="org53f9e6c">Round 2</h2>
+<div class="outline-text-2" id="text-org53f9e6c">
+<div class="org-src-container">
+<pre class="src src-python">python3 -m venv OT-metric-virtualenv-v2
+source OT-metric-virtualenv-v2/bin/activate
+python -m pip install numpy scipy matplotlib ipython jupyter pandas sympy nose Cython POT
+wget https://root.cern.ch/download/root_v6.22.02.source.tar.gz
+tar -zxf root_v6.22.02.source.tar.gz 
+mkdir root-6.22.02_builddir
+cd root-6.22.02_builddir/
+cmake ../root-6.22.02
+cmake --build  .
+source bin/thisroot.sh 
+python -m pip install energyflow
+python -m pip install seaborn root_numpy torch sklearn tables
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfd6345a" class="outline-2">
+<h2 id="orgfd6345a">Round 3</h2>
+<div class="outline-text-2" id="text-orgfd6345a">
+<p>
+&gt; python3 -m ensurepip
+&gt; python3 -m pip install jupyter
+&gt; Reinatalled root
+&gt; python3 -m pip install numpy
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf1553cb" class="outline-2">
+<h2 id="orgf1553cb">Round 4</h2>
+<div class="outline-text-2" id="text-orgf1553cb">
+<p>
+&gt;  python3 -m venv OT-metric-virtualenv-v3
+&gt; source OT-metric-virtualenv-v3/bin/activate
+&gt; python -m pip install numpy scipy matplotlib ipython jupyter pandas sympy nose Cython POT
+&gt; setupROOT
+&gt; python -m pip install energyflow
+</p>
+
+<p>
+&gt; Edit ~/OT-metric-virtualenv-v3/lib/python3.9/site-packages/energyflow/emd.py  [Made emd<sub>c</sub>(pTs0/rescale, pTs1/rescale, thetas, n<sub>iter</sub><sub>max</sub>) -&gt; emd<sub>c</sub>(pTs0/rescale, pTs1/rescale, thetas, n<sub>iter</sub><sub>max</sub>, 1)</p>
+</div>
+</div>
+</div>
+</body>
+</html>

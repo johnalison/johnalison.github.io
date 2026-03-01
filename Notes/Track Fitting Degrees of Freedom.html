@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Track Fitting Degrees of Freedom</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Track Fitting Degrees of Freedom</h1>
+
+
+<div id="outline-container-orgd8584a4" class="outline-2">
+<h2 id="orgd8584a4">Single Track</h2>
+<div class="outline-text-2" id="text-orgd8584a4">
+<p>
+A single track in 3D space has 5 degrees of freedom:
+</p>
+<ul class="org-ul">
+<li>2 parameters for direction (azimuthal and polar angles)</li>
+<li>2 parameters for position (intersection with a reference plane)</li>
+<li>1 parameter for curvature (related to momentum)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgda0bddd" class="outline-2">
+<h2 id="orgda0bddd">Two Tracks to Common Vertex</h2>
+<div class="outline-text-2" id="text-orgda0bddd">
+<p>
+When fitting two tracks to a common 3D vertex:
+</p>
+<ul class="org-ul">
+<li>Initial degrees of freedom: 2 × 5 = 10</li>
+<li>Constraints from common vertex: 3 (x, y, z coordinates must be identical)</li>
+<li>Remaining degrees of freedom: 10 - 3 = 7</li>
+</ul>
+
+<p>
+These 7 degrees of freedom represent:
+</p>
+<ul class="org-ul">
+<li>3 parameters for vertex position</li>
+<li>4 parameters for track directions (2 per track)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd814581" class="outline-2">
+<h2 id="orgd814581">N Tracks to Common Vertex</h2>
+<div class="outline-text-2" id="text-orgd814581">
+<p>
+For N tracks constrained to meet at a common 3D vertex:
+</p>
+<ul class="org-ul">
+<li>Initial degrees of freedom: N × 5 = 5N</li>
+<li>Constraints: 3N (each track must pass through same point)</li>
+<li>Subtract 3 free parameters (which is the position of the vertex)</li>
+<li>Final degrees of freedom: 5N - 3N - 3 = 2N - 3</li>
+</ul>
+
+<p>
+This formula gives:
+</p>
+<ul class="org-ul">
+<li>N = 1: 5 degrees of freedom</li>
+<li>N = 2: 7 degrees of freedom</li>
+<li>N = 3: 9 degrees of freedom</li>
+<li>etc.</li>
+</ul>
+
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2025/04-April/11-April-2025-Friday.html">11 April 2025 Friday</a></li>
+</ul>
+</div>
+</body>
+</html>

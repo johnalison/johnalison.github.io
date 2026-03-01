@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>27 February 2026 Friday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">27 February 2026 Friday</h1>
+<div id="outline-container-org1e657db" class="outline-2">
+<h2 id="org1e657db">Time Block</h2>
+<div class="outline-text-2" id="text-org1e657db">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">setup</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="../../../Notes/run3syntheticdata-20250504105620.html#ID-F186D2D0-4B38-4EBC-9B0D-4995A8771982">Run3 Synthetic Data</a></td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">bbWW</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">bbWW</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chat Bio</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Kids for Social</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<p>
+<b>W:</b>
+<b>DW:</b>
+<b>OT:</b>
+<b>ex</b> or <b>No ex</b>
+</p>
+</div>
+
+<div id="outline-container-org736b73f" class="outline-3">
+<h3 id="org736b73f">The One Thing:</h3>
+<div class="outline-text-3" id="text-org736b73f">
+<p>
+SAM code claude code
+JetDeClustereing (no TT)
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org277636e" class="outline-2">
+<h2 id="org277636e">Up at 7:30</h2>
+</div>
+
+
+<div id="outline-container-org4396993" class="outline-2">
+<h2 id="org4396993">M &amp; T to school on CMU bus</h2>
+</div>
+
+
+<div id="outline-container-org22339c6" class="outline-2">
+<h2 id="org22339c6">Good coffee this round!!!</h2>
+</div>
+
+
+<div id="outline-container-org57ca1dd" class="outline-2">
+<h2 id="org57ca1dd"><a href="../../../Notes/hbbreclusteringproject-20250504112711.html#ID-FA4AE2C2-051E-4BE8-B2D3-028895397F4A">Hbb Reclustering</a></h2>
+<div class="outline-text-2" id="text-org57ca1dd">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Move to falcon</li>
+<li>Claude Code</li>
+<li><span class="underline">Great Idea!</span> USe the FSR weights to flag truth FSR!</li>
+<li>SEtup on falcon&#x2026; but slurm not working&#x2026; bailing to LPC</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga96a2f7" class="outline-2">
+<h2 id="orga96a2f7"><a href="../../../Notes/run3syntheticdata-20250504105620.html#ID-F186D2D0-4B38-4EBC-9B0D-4995A8771982">Run3 Synthetic Data</a></h2>
+<div class="outline-text-2" id="text-orga96a2f7">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Pdfs for noTT
+<code>./run_container python  coffea4bees/jet_clustering/make_jet_splitting_PDFs.py output/synthetic_dataset_cluster_Run3/synthetic_datasets_Run3_nott.coffea  --years Run3   --out coffea4bees/jet_clustering/jet-splitting-PDFs-00-11-01</code></li>
+<li class="on"><code>[X]</code> Remake for noTT</li>
+<li>Need to make datasets and to analyze</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org61388ac" class="outline-2">
+<h2 id="org61388ac"><a href="../../../Notes/CMU bbWW.html#ID-D0FFC758-67AD-47A6-BCD7-EF12D43129AE">CMU bbWW</a></h2>
+<div class="outline-text-2" id="text-org61388ac">
+<ul class="org-ul">
+<li>AK: great progress on the</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org681a84e" class="outline-2">
+<h2 id="org681a84e">HGC Monthly Reports</h2>
+<div class="outline-text-2" id="text-org681a84e">
+<ul class="org-ul">
+<li>Setting up venv
+<code>pip install asyncpg tabulate</code>
+<code>python3 mac_public/module_counts_for_month.py -m 2  -y 2026 -mac TTU</code>
+<code>&gt; source CMU_modules.sh</code>
+<code>&gt; source UCSB_modules.sh</code>
+<code>&gt; source TTU_modules.sh</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9bde5ef" class="outline-2">
+<h2 id="org9bde5ef">Good Chat with Jim</h2>
+<div class="outline-text-2" id="text-org9bde5ef">
+<ul class="org-ul">
+<li>Says I should give Jessica a raise &#x2026; I agree</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge48a82f" class="outline-2">
+<h2 id="orge48a82f">Sent <a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a> datasets</h2>
+</div>
+
+
+<div id="outline-container-orgb060343" class="outline-2">
+<h2 id="orgb060343">Setting up <a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a> on falcon</h2>
+<div class="outline-text-2" id="text-orgb060343">
+<ul class="org-ul">
+<li><code>curl -fsSL https://claude.ai/install.sh | bash</code></li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-shell">echo 'export PATH="$HOME/.local/bin:$PATH"' &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
+</pre>
+</div>
+<ul class="org-ul">
+<li>Works &#x2026; easy pease</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgae4b74d" class="outline-2">
+<h2 id="orgae4b74d">Hoops and Steamroom</h2>
+<div class="outline-text-2" id="text-orgae4b74d">
+<ul class="org-ul">
+<li>Played decent &#x2026; two courts</li>
+<li>8; at Tmax = 124</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org893322f" class="outline-2">
+<h2 id="org893322f">More <a href="../../../Notes/hbbreclusteringproject-20250504112711.html#ID-FA4AE2C2-051E-4BE8-B2D3-028895397F4A">Hbb Reclustering</a></h2>
+</div>
+
+<div id="outline-container-org0c2032a" class="outline-2">
+<h2 id="org0c2032a">Met with the  Biocandidate</h2>
+</div>
+
+<div id="outline-container-org1f9cbb6" class="outline-2">
+<h2 id="org1f9cbb6"><a href="../../../Notes/hbbreclusteringproject-20250504112711.html#ID-FA4AE2C2-051E-4BE8-B2D3-028895397F4A">Hbb Reclustering</a></h2>
+<div class="outline-text-2" id="text-org1f9cbb6">
+<p>
+"I think the first goal should be a truth-level selection to flag events where there is significant FSR.
+To develop this I would like to explore the data for a few events. Can you write a print<sub>event</sub> function
+that prints the four<sub>vector</sub> (pt, eta, phi, mass) of the b-quarks, their children and the various status flags"
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf4a3552" class="outline-2">
+<h2 id="orgf4a3552">Got Kids for Grad social</h2>
+</div>
+
+
+<div id="outline-container-org2c7dfad" class="outline-2">
+<h2 id="org2c7dfad">Social Host</h2>
+</div>
+
+
+<div id="outline-container-org99f6244" class="outline-2">
+<h2 id="org99f6244">Home</h2>
+</div>
+
+
+<div id="outline-container-org4a50a65" class="outline-2">
+<h2 id="org4a50a65">Dinner at Manfreds</h2>
+</div>
+
+
+<div id="outline-container-org4e1145f" class="outline-2">
+<h2 id="org4e1145f">Late Night &#x2026; THinking re:Claude code</h2>
+<div class="outline-text-2" id="text-org4e1145f">
+<ul class="org-ul">
+<li>Use claude code to fix openclaw!
+<ul class="org-ul">
+<li></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

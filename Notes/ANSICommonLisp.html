@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ANSICommonLisp</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ANSICommonLisp</h1>
+
+<div id="outline-container-orgd2b2d67" class="outline-2">
+<h2 id="orgd2b2d67">ANSI Common Lisp (Paul Graham)</h2>
+<div class="outline-text-2" id="text-orgd2b2d67">
+<ul class="org-ul">
+<li><p>
+Very good. But this is the second time Ive stopped, mainly b/c I dont have the time to go through in the level of detail I want to.
+I did it this time up to chapter 4
+</p>
+
+<p>
+Im sure I will come back to this at some point.
+</p></li>
+
+<li>Lisp programers can, and often do, write programs to write their programs for them. Lisp is the only major language in which this is a routinely used technique.</li>
+
+<li>The spirit of Lisp hacking can be expressed in two sentances: Programming should be fun. Programs should be beautiful. Thats the spirit I have tried to convey in this book.</li>
+
+<li>After FORTRAN, List is the oldest language still in use. Whats more remarkable is that it is stil in the forefront of programming language technology.</li>
+
+<li>Programming languages teach you not to want what they cannot provide. You have to thnk in a language to write programs in it, and its hard to want something you cant describe.</li>
+
+<li>A valuable feature only found in Lisp is that Lisp programs are expressed as Lisp data structures. This means you can write programs to write programs.</li>
+
+<li>Learning lisp will teach you more than just a new language &#x2013; it will teach you new and more powerful ways of thinking about programs.</li>
+
+<li>Lisp is designed to be extensible: it lets you define new operators yourself. This is possible because the Lisp language is made out of the same functions and macros as your own programs.
+ So its no more difficulte to extend Lisp than to write a program in it. In fact, its so easy (and so useful) that extending the language is standard practice.
+As your writting your program down toward the language, you build the language up toward your program. You work bottom-up as well as top-down.</li>
+
+<li>A bottom-up program can be written as a series of layers, each one acting as a sort of programming language for the one above. Tex was one of the earliest programs to be written this way.
+Bottom-up programming leads naturally to extensible software. This is the best way to get reusable software. The layers beneathe will form a language for writting applications.
+What could be more reusable than a programming language?</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Planning is a necessary evil. It is a response to risk: the more dangerous an undertaking, the more important it is to plan ahead.</li>
+
+<li>Prefix notation: may at first seem a strange way to write expressions, but in fact this notation is one of the best things about Lisp.</li>
+
+<li>All Lips expressions are either atoms, like 1, or lists, which consist of zero or more expressions enclosed in parentheses. And this is all there is.
+In lisp we use a single notation to express all these ideas.</li>
+
+<li>Lisp provides the quote as a way of protecting expressions from evaluation.</li>
+
+<li>One of the most remarkable features of Lisp. Lisp programs are expressed as lists. If the argument of flexibility and elegance did not convince you that Lisp notation is a valuable tool, this point should.
+It means that Lisp programs can generate Lisp code.</li>
+
+<li>IT is important early on to understand the relation between expressions and lists. IF a list is quated, evaluation returns the list itself; if it is not quoted, the list is treated as code, and evaluation returns its value.</li>
+
+<li>Lisp makes no distinction between a program, a procedure, and a function. Functions do for everything (and indeed, make up most of the language itself.
+This means you will be able to test your functions piece by piece as you write them.</li>
+
+<li>A better metaphor for a function is a process that one goes through.</li>
+
+<li>read is very powerful. It is a complete Lisp parser. IT doesnt just read characters and return them as a string. It parses what it reads, and returns the Lisp objects that results.</li>
+
+<li>Functional programs means writting programs that work by returning values, instead of by modifying things. It is the dominant paradigm in Lisp.
+It means essentially avoiding setf and things like it.</li>
+
+<li>One of the most important advantages of functional programming is that it allows interactive testing. In purely functional code, you can test each function as you write it. If it returns the values you expect, you can be confident that it is correct. The added confidence, in the aggregate, makes a huge difference. You have instant turn around when you make changes anywhere in a program.</li>
+
+<li>Lamda expression allows us to use functions without naming them.</li>
+
+<li>In common Lisp values have types, not variables. So you dont have to declare the type of variables because any variable can hold objects of any type.</li>
+
+<li>The language has a single syntax to express all program structure, This syntax is based on the list, which is a kind of Lisp object.
+Functions, which are lisp objects in their own right, can be expressed as lists. And Lisp is itself a Lisp program, made almost entirely of Lisp functions no different from the ones you can define youself.</li>
+
+<li>A language that can be written in itself if fundamentally different fraom a language good for writting some particular class of applications. It opens up a new way of programming: as well as writting you program in the language, you can improve the language to suit your program. If you want to understand the essence of Lisp programming, this idea is a good place to begin.</li>
+
+<li>The developmeng of Lisp progrmas often echoes the development of Lisp itself. In the initial version of a Lisp program, you may use a lot of lists.
+Then in later versions you may switch to specialized data structures.</li>
+
+<li>One does not tend to think of lists as pairs, but they can be defined that way. Any nonempty list can be considered as a pair of the first element and the rest of the list. Lisp lists are the embodiment of this idea.</li>
+
+<li>One of the secrets to understanding Lisp is to realize that variables have values in the same way that lists have elements.</li>
+
+<li>The reason that Lisp has no pointers is that every value is conceptually a pointer.</li>
+
+<li>Unless you make declarations to the contrary, you will be able to store any kind of object in any kind of data structure, including the structure itself.</li>
+
+<li>Conses can also be considered as binary trees, with the car representing the right subtree and the cdr the left.</li>
+
+<li>The advantage of recursion is precisely that it lets us view algorithms in a more abstract way.
+We can assure ourselves that a recursive function is correct by verifying two thinkgs:
+<ul class="org-ul">
+<li>It works for lists of length 0 (the base case)</li>
+<li>Given that it works for lists of length n, that it also works for lists of length n+!</li>
+</ul></li>
+
+<li>Memory leaks and dangling pointers are simply impossible in Lisp</li>
+
+<li>When you call defstruct it automatically writes code defining several other functions. With macros you will be able to do the same thing yourself.</li>
+
+<li>Since only the value of the last expression is returned, the use of progn (or any block) implies side-effects.</li>
+
+<li>Understanding functions is one of the keys to understanding Lisp. Conceptually, functions are the core of Lisp.</li>
+
+<li>Will continue with Lisp after all.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="Books.html">Books</a></li>
+  <li><a href="../Journal/2023/May 2023.html">May 2023</a></li>
+</ul>
+</div>
+</body>
+</html>

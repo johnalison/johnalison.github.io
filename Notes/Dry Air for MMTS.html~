@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dry Air for MMTS</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Dry Air for MMTS</h1>
+<p>
+Rong-Shyang mentioned in his talk at the MAC testing meeting that the  
+MACs will be responsible for the equipment needed to supply the dry air  
+for the MMTS. The specs for this dry air are more stringent than what  
+we're using for our dry air storage cabinets, so at least at UCSB our  
+current air dryer won't work for the MMTS.
+</p>
+
+<p>
+Dry air requirements:
+– dew point &lt;-60C. vs (-16C to -19C at MACs)
+– Minimum flow rate 60l/min = 2.1cfm
+– Recommended 120l/min = 4.2 cfm
+</p>
+
+<p>
+Options: Manual Dessicant vs Regenerative Heatless
+</p>
+
+<div id="outline-container-orgbe062a5" class="outline-2">
+<h2 id="orgbe062a5">Manual Dessicant</h2>
+<div class="outline-text-2" id="text-orgbe062a5">
+<p>
+dessicant air dryer inline between the compressor air dryer and the MMTS. These are inexpensive, but would require frequent regeneration of the dessicant
+</p>
+
+<p>
+Cost: &lt; $500
+</p>
+</div>
+</div>
+<div id="outline-container-org6b0475d" class="outline-2">
+<h2 id="org6b0475d">Regenarative Heatless:</h2>
+<div class="outline-text-2" id="text-org6b0475d">
+<p>
+uses pressure swing adsorption (PSA). The operation is fully automatic and relatively little
+maintenance is required
+</p>
+
+<p>
+Cost : $2000-$4000
+</p>
+
+<p>
+<a href="https://www.radwell.com/Buy/WILKERSON%20PNEUMATIC/WILKERSON%20PNEUMATIC/DE1-AC-000-7G04">https://www.radwell.com/Buy/WILKERSON%20PNEUMATIC/WILKERSON%20PNEUMATIC/DE1-AC-000-7G04</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

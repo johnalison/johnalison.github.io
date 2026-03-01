@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tmux Tips</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Tmux Tips</h1>
+<p>
+<code>C-b [</code>       Enter copy mode
+C-b ?       List key bindings
+C-b :       Prompt for a command
+</p>
+
+<div id="outline-container-orgc1d762b" class="outline-2">
+<h2 id="orgc1d762b">Windows</h2>
+<div class="outline-text-2" id="text-orgc1d762b">
+<p>
+prefix <code>= control + b 
+ =&lt;prefix&gt;</code> + c  - to create a new window
+<code>&lt;prefix&gt;</code> + n  - to move to the next window
+<code>&lt;prefix&gt;</code> + p  - to move to the previous window  
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org78ea328" class="outline-2">
+<h2 id="org78ea328">Panes</h2>
+<div class="outline-text-2" id="text-org78ea328">
+<p>
+<code>&lt;prefix&gt;</code> + %  - split pane vertically 
+<code>&lt;prefix&gt;</code> + " - split pane horizontally 
+<code>&lt;prefix&gt;</code> + (arrow key) to move among panes
+<code>&lt;prefix&gt;</code> + z to zoom 
+<code>&lt;prefix&gt;</code> + space to switch vertical and horizontal panes
+</p>
+
+
+<p>
+tmux list-keys 
+</p>
+
+<p>
+bind-key    -T copy-mode    M-v                  send-keys -X page-up
+</p>
+
+<p>
+cat ~/.tmux.conf
+bind -T copy-mode M-p send-keys -X page-up
+bind -T copy-mode M-n send-keys -X page-down
+</p>
+</div>
+
+<div id="outline-container-orga46b9e0" class="outline-3">
+<h3 id="orga46b9e0">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org58edb34" class="outline-3">
+<h3 id="org58edb34">Links:</h3>
+<div class="outline-text-3" id="text-org58edb34">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+<a href="Tmux.html#ID-4I5J6K7L-8M9N-0O1P-2Q3R-4S5T6U7V8W9X">Tmux</a>
+<a href="Tmux has forever changed the way I write code..html#ID-D8AFEB27-B6AD-41CF-956C-1D02176EB16E">Tmux has forever changed the way I write code.</a>
+</p>
+
+
+<p>
+202408071124
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="Tmux has forever changed the way I write code..html">Tmux has forever changed the way I write code.</a></li>
+  <li><a href="../Journal/2024/08-August/07-August-2024-Wednesday.html">07 August 2024 Wednesday</a></li>
+</ul>
+</div>
+</body>
+</html>

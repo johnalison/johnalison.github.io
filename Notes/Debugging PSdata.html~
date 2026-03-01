@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Debugging PSdata</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Debugging PSdata</h1>
+<p>
+Seeing three tag events in the subsampled data.
+</p>
+
+<p>
+Testing in 
+==python runner.py -o debug<sub>TT</sub><sub>pseudodata</sub><sub>datasets.coffea</sub> -d ps<sub>data</sub><sub>TTToHadronic</sub> -p analysis/processors/processor<sub>HH4b.py</sub> -y UL16<sub>postVFP</sub>  -op analysis/hists/ -c analysis/metadata/HH4b<sub>rerun</sub><sub>SvB.yml</sub> -m metadata/datasets<sub>TT</sub><sub>pseudodata</sub><sub>Run2.yml</sub>
+</p>
+
+
+<div id="outline-container-org440bbb6" class="outline-2">
+<h2 id="org440bbb6">Solved:</h2>
+<div class="outline-text-2" id="text-org440bbb6">
+<p>
+A result of not turning on the jet calbiration 
+</p>
+
+<p>
+Now saving calibrated jet directly in the PSData
+</p>
+</div>
+
+<div id="outline-container-org7cb7e3e" class="outline-3">
+<h3 id="org7cb7e3e">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org958782a" class="outline-3">
+<h3 id="org958782a">Links:</h3>
+<div class="outline-text-3" id="text-org958782a">
+<p>
+<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">Jet DeClustering</a>
+</p>
+
+
+<p>
+202409171339
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

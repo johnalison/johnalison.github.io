@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 8 July 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 8 July 2025</h1>
+
+<div id="outline-container-orgda9dd75" class="outline-2">
+<h2 id="orgda9dd75">News:</h2>
+<div class="outline-text-2" id="text-orgda9dd75">
+<ul class="org-ul">
+<li>Ti baseplates: 21</li>
+<li><b>FMS:</b> Chris XXXX
+Went to 8th floor: 3 AC / Overflow from pannel and drain clogged
+(Related to rain ?)            
+Needed Urgency !
+Reinhard 20 years</li>
+<li>DB storage is full
+(How much data correspond to each module)
+(Backup Raid)</li>
+<li>Next Tuesday busy campus</li>
+<li>Lab is dry (?)</li>
+<li>Boards on hold in FNAL</li>
+<li>Baseplates / Sensor incoming</li>
+<li>EHS inspection saftey July 23rd</li>
+<li>Awards USCMS</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8a456e6" class="outline-2">
+<h2 id="org8a456e6">Action</h2>
+<div class="outline-text-2" id="text-org8a456e6">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Tranfer tape</li>
+<li class="on"><code>[X]</code> Ordering tape and boxes</li>
+<li class="off"><code>[&#xa0;]</code> Crates ?</li>
+<li class="on"><code>[X]</code> MMTS</li>
+<li class="off"><code>[&#xa0;]</code> Ask Al to purchase the liscence</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbcad1a5" class="outline-2">
+<h2 id="orgbcad1a5">Jessica</h2>
+<div class="outline-text-2" id="text-orgbcad1a5">
+<ul class="org-ul">
+<li>Dry &#x2026; Lab is back togeter &#x2026; Clean !</li>
+<li>Particulate counts good</li>
+<li>Licensing issue is fixed?</li>
+<li>Dry runs this afternoons.</li>
+<li>Tomorrow morning: CuT + v3b + pre-silicon (15)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge09a8b0" class="outline-2">
+<h2 id="orge09a8b0">Sindhu</h2>
+<div class="outline-text-2" id="text-orge09a8b0">
+<ul class="org-ul">
+<li>420 GB used. (Maybe full back up every day ?)</li>
+<li>Checking uploading in Asian Macs</li>
+<li>Conflicting entries in the DB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1d375bd" class="outline-2">
+<h2 id="org1d375bd">Jim</h2>
+<div class="outline-text-2" id="text-org1d375bd">
+<ul class="org-ul">
+<li>Shipping container for pritam</li>
+<li>Pannels back up !</li>
+<li>Will take lead on Gantry</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2dd2888" class="outline-2">
+<h2 id="org2dd2888">Josh</h2>
+<div class="outline-text-2" id="text-org2dd2888">
+<ul class="org-ul">
+<li>Testing to make sure duble slot CuT is good</li>
+<li>Camera circut</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org358adca" class="outline-2">
+<h2 id="org358adca">Jasqcue</h2>
+<div class="outline-text-2" id="text-org358adca">
+<ul class="org-ul">
+<li>mini-Gantry</li>
+<li>executig</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3b24021" class="outline-2">
+<h2 id="org3b24021">Joyce</h2>
+<div class="outline-text-2" id="text-org3b24021">
+<ul class="org-ul">
+<li>Cleaned lab</li>
+<li>Testing GUI</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga6c1c91" class="outline-2">
+<h2 id="orga6c1c91">Rain</h2>
+<div class="outline-text-2" id="text-orga6c1c91">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e70a2b" class="outline-2">
+<h2 id="org4e70a2b">Andrew</h2>
+<div class="outline-text-2" id="text-org4e70a2b">
+<ul class="org-ul">
+<li>Noisy channel detection at -40C</li>
+<li>Status of the crate ?</li>
+<li>Foam order</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org953aef1" class="outline-2">
+<h2 id="org953aef1">Carter</h2>
+<div class="outline-text-2" id="text-org953aef1">
+<ul class="org-ul">
+<li>Shipping boxes testing</li>
+<li>Help puttin up pannels</li>
+<li>65% -&gt; 35% 
+<ul class="org-ul">
+<li>Doubling desicant: 27%</li>
+<li>Dry air 36% -&gt; 29%</li>
+<li>Dry air + four bags OK</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7ac77f8" class="outline-2">
+<h2 id="org7ac77f8">Pritam</h2>
+<div class="outline-text-2" id="text-org7ac77f8">
+<ul class="org-ul">
+<li>Preparing shipping</li>
+<li>Starting to test chiller probably this week</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org85699f2" class="outline-2">
+<h2 id="org85699f2">Manami</h2>
+<div class="outline-text-2" id="text-org85699f2">
+<ul class="org-ul">
+<li>DB uploads</li>
+<li>could not upload QC data</li>
+<li>Most went through&#x2026;some stuff did not: enviromental data / pro-modules</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

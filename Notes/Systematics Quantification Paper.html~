@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Systematics Quantification Paper</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Systematics Quantification Paper</h1>
+<p>
+with Chris Palmer and Jacob ("Jake") David Weiling Lee 
+</p>
+
+<p>
+Paper describing breaking down systematics in terms of Fourier modes
+</p>
+
+<ul class="org-ul">
+<li>1st Chat: <a href="Chris Palmer Biases Systematics Paper 23 September 2024.html#ID-C2D219ED-D352-4C11-8B14-BC5D965D2885">Chris Palmer Biases Systematics Paper 23 September 2024</a></li>
+</ul>
+
+<p>
+Make up envelopes used to constrain the coeffients
+Plotting the changes 
+</p>
+
+
+<div id="outline-container-org751f96f" class="outline-2">
+<h2 id="org751f96f">Logs</h2>
+<div class="outline-text-2" id="text-org751f96f">
+</div>
+<div id="outline-container-orgfe2a1af" class="outline-3">
+<h3 id="orgfe2a1af"><a href="../Journal/2025/07-July/24-July-2025-Thursday.html#ID-71DD802F-3413-49F0-B828-0CF0B7F04677">24 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgfe2a1af">
+<ul class="org-ul">
+<li>s2 Method does not assume the Assumption, Your setup of the toys does</li>
+<li>s5: Envelop priors probably dont matter much.</li>
+<li>Discussed changing the "envelope fit" to have a shape fit without inflating the uncertianties</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge07bc4f" class="outline-3">
+<h3 id="orge07bc4f"><a href="../Journal/2025/06-June/20-June-2025-Friday.html#ID-35932784-51E0-4742-A620-B02955466F19">20 June 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orge07bc4f">
+<ul class="org-ul">
+<li>Understand better whats going on.</li>
+<li>Had some reasonable suggetions.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org29ae8ff" class="outline-3">
+<h3 id="org29ae8ff">Reviewing Slide <a href="../Journal/2025/06-June/03-June-2025-Tuesday.html#ID-5B31FCB7-24BA-40F2-B5BF-5062397EC38C">03 June 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org29ae8ff">
+<ul class="org-ul">
+<li>Always use a different underlying truth.</li>
+<li>s7: How many parameters does the F-test prefer here?</li>
+<li>s8: Can you show some of the background-only fits? What are the p-values? 
+I'm not sure these bands computed in this way are that meaningful. 
+You're taking the spread of fits to different underlying truths. Some of the variance in the observed fits will be due to variance in the underlying truths. 
+It may be better here to fix the underlying truth PDF and perform N-fits from samples derived from it; then the observed variance reflects the fits, not the problem specification.</li>
+<li>s9: Does the F-test show that 5 is enough?</li>
+<li>s11: To test the fits with the nuisance parameters, can you try fitting to background-only data? 
+It would be good to do this N times and show the pulls on the different nuisance parameters and the fit quality. 
+When you do the signal plus background fits, can you show the signal plus background fit in the plot? The pulls shown in the ratio still seem off to me when adding green and orange&#x2026; 
+It would also be good to show the pulls on the nuisance parameters&#x2026; You can create a separate figure or somehow add it to the bottom left.</li>
+<li>s12: (Checking if I understand correctly, the mean values of the nuisance parameters should all be consistent with 0, right?) 
+It's odd that the normalization is off. The first five bins, which dominate the total yield, are all high. 
+Are you allowing the overall normalization to float? For example, is func0 on slide 4 a constant?</li>
+<li>s13: Can you overlay the shapes of the priors for the five different nuisance parameters? 
+It would be interesting to see how the effective shapes used in s13 compare to the Gaussians.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9e0d691" class="outline-3">
+<h3 id="org9e0d691">Review Slides <a href="../Journal/2025/05-May/31-May-2025-Saturday.html#ID-A1851ED0-985D-44AF-8694-EE97702C3CD6">31 May 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-org9e0d691">
+<ul class="org-ul">
+<li>s4: I think some small correlation is okay. Best to keep orthogonalization with respect to the expected background.</li>
+<li>s5: It looks like overfitting to me. How do you determine how many modes to include? Can you also quote X²/dof or, better yet, Prob(X², nDoF)? My guess is that most of the 12(!) DoF are not statistically significant in this example.</li>
+<li>s6: Can you remind me how the envelope and model uncertainties are defined?
+<ul class="org-ul">
+<li>Is the envelope the range of many different pseudo datasets?</li>
+<li>What do you do again for the model uncertainties ?</li>
+</ul></li>
+<li>s7: Where do you get the "observed data" in the signal + background fits? Is it drawn from pseudo data with different true parameters or fluctuated from the expected background? (I assume there is no signal injected here.)</li>
+<li>s8: Can you also quote the p-value of the signal + background fit and the background-only fit? 
+e.g.: what is the Prob(X², nDoF)? 
+This fitted signal strength is unbiased, but it looks like the background modeling is poor.</li>
+<li>s9: What do you mean by "each background-only" fit? What distributions are you fitting ? Is it a) Poisson-fluctuated "observed" data or b) toys with different underlying PDFs? Something else? I'm not sure why you need to use KDEs here. I would just assign Gaussian constraints as a first pass.</li>
+<li>s10: I'm lost. What does the plot show? Are these 2 of the 5 fitted coefficients? Why 5? Shouldn't they have uncertainties on them?</li>
+<li>s11: The pull ratio on the left looks wrong: the last 6 bins are all high, but the associated pulls are not all positive. Also, what uncertainty goes into the definition of the pull here? 
+Again, you should quote the fit probability; it would also be good to report the pulls on the nuisance parameters. Maybe this is what you are attempting with the middle plots? 
+It would be good to compare the size of the signal uncertainty here with s7. 
+Did you look into the correlation of the signal shape with the other NPs?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb205998" class="outline-3">
+<h3 id="orgb205998"><a href="../Journal/2025/05-May/13-May-2025-Tuesday.html#ID-481D13E5-C536-4629-8368-49AEDEB6ED73">13 May 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgb205998">
+<ul class="org-ul">
+<li>One toy as the pseudodata</li>
+<li>Another toy as the background model</li>
+<li>Fit the normalization using the envalope as the uncertainties</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf6af8c1" class="outline-3">
+<h3 id="orgf6af8c1"><a href="../Journal/2025/04-April/22-April-2025-Tuesday.html#ID-C0D7FE4C-EBDC-405E-8288-CF6D816B6E5B">22 April 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgf6af8c1">
+<ul class="org-ul">
+<li>Many toys with different truth varations
+<ul class="org-ul">
+<li>How to extend  to</li>
+</ul></li>
+<li>Do you decorrelate the basis function wrt nominal</li>
+<li>Bands vs individual 1d distributions</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org7ec8640" class="outline-2">
+<h2 id="org7ec8640">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orge57b3f2" class="outline-2">
+<h2 id="orge57b3f2">Links:</h2>
+<div class="outline-text-2" id="text-orge57b3f2">
+<p>
+202504240720
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

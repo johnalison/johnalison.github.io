@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary November 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary November 2024</h1>
+<p>
+UCSB site visits to CMU and TTU. The visits were very productive in synchronization of MAC’s: programs, procedures, QC, and DB.  Also allowed for detailed planning of production ramp-up in next few months.
+</p>
+
+<p>
+Final gantry tooling ordering has begun. The first pieces have been received exceed the specification requirements. 
+</p>
+
+<p>
+UCSB: has built 5 LD Right partials on Ti baseplate (v3b chip) for an irradiation campaign.
+Each module has undergone 10 thermal cycles +20C/-40C and are currently in Croatia to be irradiated to 50 MRad.
+</p>
+
+<p>
+CMU has built 2 LD full modules, 1 CF baseplate and 1 CTu baseplate.  We are currently Interviewing technicians. There is one offer out and will likely make two more within the month.
+Module testing has running smoothly as we wait for first preproduction run.  There has also been lots of nice development of the database in advance of production ramp-up. 
+</p>
+
+
+
+
+<div id="outline-container-org50d81fb" class="outline-2">
+<h2 id="org50d81fb">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org7c3da9c" class="outline-2">
+<h2 id="org7c3da9c">Links:</h2>
+<div class="outline-text-2" id="text-org7c3da9c">
+<p>
+<a href="Modules Summary October 2024.html#ID-11B637FD-AAA9-48AF-8D7C-4596F2E868D6">Modules Summary October 2024</a>
+</p>
+
+
+<p>
+<a href="MAC Testing Meeting 20 November 2024.html#ID-2C03260E-4357-475F-8EE1-09A5603C4963">MAC Testing Meeting 20 November 2024</a>
+</p>
+
+
+<p>
+202411202021
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

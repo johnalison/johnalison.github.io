@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 8 November 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 8 November 2024</h1>
+<p>
+Another big fortnight!  The new house fell through, the house is re-listed but the selling agent is not making our disclosures public! We have reported her. Trump won decisively. It somehow doesn't feel as concerning as in 2016. I'm cautiously optimistic. Exercise, diet,  sleep, and reading have all been in check. Really want to start working on meditation and zettlekasten. 
+</p>
+
+<p>
+I also want to start thinking about HH at future colliders. 
+</p>
+<div id="outline-container-org88025df" class="outline-2">
+<h2 id="org88025df">4b</h2>
+<div class="outline-text-2" id="text-org88025df">
+<p>
+Has been a recent re-focusing toward getting the HH4b results ready for winter conferences. This has meant putting the low pT improvements on the back burner for the moment. Ive completed the classifier studies; adding the ZZ and ZH regions to the sideband has only a small impact on the background systematics.  After this I've focused on getting the synthetic data ready for Run-3. This was overall quite smooth, with the results looking qualitatively as good as Run-2. I'm waiting on feedback from Marina et al. and will then produce 15x datasets. I am now starting to answer the AN questions. Most of these are straightforward but a few require some work which is being done by AE and CL and are discussed below. Its probably also good to make 15 datasets for Run-2 and repeat the closure studies there. 
+</p>
+
+<p>
+AE is now looking into the variable binning. This is the big action item before the updated presentation next Wednesday.  He is also almost finished with the resolved boosted combination (what about kλ?) and has processed some single Higgs signals which show that they are an irrelevant background. 
+</p>
+
+<p>
+CL is studying the impact of the JCM on the FvT fits. This is very timely as the Run-3 sees that there is a degradation when correcting nJets first. He is also looking into the effect that using ttbar in the FvT training has on the closure.
+</p>
+
+<p>
+Still not much progress from Sindhu.  She is looking into runTwoStage closure but hasn't gotten past first-order bugs. She is still struggling to make the double peak plots that I made in 5 mins&#x2026;.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org06b5535" class="outline-2">
+<h2 id="org06b5535">HGC</h2>
+<div class="outline-text-2" id="text-org06b5535">
+<p>
+HGC action picking up.  We did a first round of interviews and have two promising candidates. I would suggest trying to get the guy from Oregon and then falling back on Andre, will see what Jessica thinks.  I will probably defer to her judgement here. Lots of ordering of equipment following the SB site visit. We are getting parts for the pre-production. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge3de2ee" class="outline-2">
+<h2 id="orge3de2ee">Follow-ups</h2>
+</div>
+
+
+
+
+<div id="outline-container-org1573ffb" class="outline-2">
+<h2 id="org1573ffb">Links:</h2>
+<div class="outline-text-2" id="text-org1573ffb">
+<p>
+<a href="ProgressReport 25 October 2024.html#ID-084D846B-D900-4E0F-9456-B225C34848CE">ProgressReport 25 October 2024</a>
+<a href="Progress Reports.html#ID-87B6EFF9-9731-480E-8CAB-89EE13CDDF27">Progress Reports</a>
+</p>
+
+<p>
+202411080851
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

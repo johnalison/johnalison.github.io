@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Module assembly at CMU</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Module assembly at CMU</h1>
+<p>
+<a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13032">https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13032</a>
+</p>
+
+<p>
+<a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/RetrieveFile?docid=13032&amp;filename=BoE---402-4-4-4---Standard-Module-Assembly-Site-2_V12.pdf&amp;version=21">https://cms-docdb.cern.ch/cgi-bin/DocDB/RetrieveFile?docid=13032&amp;filename=BoE---402-4-4-4---Standard-Module-Assembly-Site-2_V12.pdf&amp;version=21</a>
+</p>
+
+
+
+
+<p>
+8796 full-size modules are required on the entire CE-H detector of which 
+</p>
+<ul class="org-ul">
+<li>924 are HD full-size modules that will be assembled at UCSB.</li>
+<li>CMU will build 4240 LD : 120 losses to give 4120 LD :  3936 + 184 (test beam ?)
+<b>Pre-production</b>: Produce 360 with 240 modules being usable 5.8%</li>
+</ul>
+
+
+<p>
+The cost of consumables and disposable items (HEPA filters, glue, epoxy, cleanroom overalls, gloves, galoshes, etc.) is borne by the project at an estimated cost of $34k per year based on prototyping experience
+we assume a total of about 18 months of active cleanroom usage during module production.
+</p>
+
+<div id="outline-container-org4d45ebc" class="outline-2">
+<h2 id="org4d45ebc">Prototype-2 also called Pre-series</h2>
+<div class="outline-text-2" id="text-org4d45ebc">
+<ul class="org-ul">
+<li>For both prototype cycles we account for technicians for module assembly on the gantry and wire-bonding, as well as a senior electrical engineer for assembly oversight.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2bab2c4" class="outline-2">
+<h2 id="org2bab2c4">PreProduciton</h2>
+<div class="outline-text-2" id="text-org2bab2c4">
+<p>
+The pre-production of standard modules will consist of 240 modules (about 5%)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4150e5f" class="outline-2">
+<h2 id="org4150e5f">Production</h2>
+<div class="outline-text-2" id="text-org4150e5f">
+<p>
+12 modules / day
+</p>
+<ul class="org-ul">
+<li>1 FTE (senior engineer) for module QC, rework, supervising technicians, students, overall work oversight, and scheduling of workflow, (JS)</li>
+<li>1 FTE (junior technician) for module assembly on the gantry, (JR)</li>
+<li>1 FTE (senior technician) for wire-bonding modules, (AS)</li>
+<li>1 FTE (junior technician) for encapsulation and support operations on gantry and wire-bonder (Josh)</li>
+<li>1 FTE (junior technician) for receiving, inspection, stocking of parts, packing of completed modules, shipping, and overall cleanroom maintenance, (OP)</li>
+<li>2 FTE (undergraduate student) for module QC: single module testing, multi module tests including thermal cycling, data analysis, database entry,</li>
+<li>1 FTE (graduate student - uncosted) supporting multi module testing and thermal cycling</li>
+<li>0.5 FTE (postdoc - uncosted) to supervising undergrads &amp; analyze collected QC data, trend analysis</li>
+<li>0.25 FTE (scientist - uncosted) for associated work oversight work</li>
+</ul>
+
+
+
+<div id="org2f85509" class="figure">
+<p><img src="Production/2026-02-26_22-43-27_screenshot.png" alt="2026-02-26_22-43-27_screenshot.png" />
+</p>
+</div>
+
+
+<p>
+The CMU module assembly site will produce 12 modules per day for a total of 324 modules per 8% batch
+</p>
+
+<p>
+8% batches are arranged in blocks of 30 days duration each containing 27 days of effort
+</p>
+
+<p>
+a 11 such 8% blocks of production plus durations of 15 and 20 days (107 and 123 hours) of labor for the 6-8% and 97-100% batches, respectively.
+</p>
+
+<p>
+n of ~70 (~7) weeks corresponding to 2464 (123) labor hours for the production of the 3696 (184) standard production (test-beam) modules
+</p>
+</div>
+</div>
+<div id="outline-container-org2a24408" class="outline-2">
+<h2 id="org2a24408">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgc86c8d3" class="outline-2">
+<h2 id="orgc86c8d3">Links:</h2>
+<div class="outline-text-2" id="text-orgc86c8d3">
+<p>
+<a href="HGC Transfer Tape BCR.html#ID-B07B1EF0-8E92-478D-9E31-FFD3A5E8E932">HGC Transfer Tape BCR</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

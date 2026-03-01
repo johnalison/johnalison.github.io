@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Andrej Karpathy ML Lectures</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Andrej Karpathy ML Lectures</h1>
+<ul class="org-ul">
+<li>micrograd: <a href="https://github.com/karpathy/micrograd">https://github.com/karpathy/micrograd</a></li>
+</ul>
+<ul class="org-ul">
+<li>Zerop to Hero:<a href="https://karpathy.ai/zero-to-hero.html">https://karpathy.ai/zero-to-hero.html</a></li>
+<li>transformers</li>
+<li>nano chat</li>
+</ul>
+
+<div id="outline-container-org6586ff5" class="outline-2">
+<h2 id="org6586ff5">CS231n Winter 2016: Lecture 1</h2>
+<div class="outline-text-2" id="text-org6586ff5">
+<ul class="org-ul">
+<li>Pictures and Video are the "Dark Matter" of data.
+Most of the information on the web is unlabeled pictures or video that humans cannot possible watch/label</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd7b27e6" class="outline-2">
+<h2 id="orgd7b27e6">CS231n Winter 2016: Lecture 4: Backpropagation, Neural Networks 1</h2>
+<div class="outline-text-2" id="text-orgd7b27e6">
+<p>
+Think in terms of graphs (or circuts) not functions
+</p>
+<ul class="org-ul">
+<li>Add gate: gradient distributor</li>
+<li>max gate: gradient router</li>
+<li>mul gate:</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

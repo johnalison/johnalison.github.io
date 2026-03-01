@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 25 April 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 25 April 2025</h1>
+<p>
+Its short and sweet this week. Habits have all been good.  Did my
+first real trip (to FNAL.. more below) without drinking, it was all
+good.  I am in the teaching end-game; I gave my last in-person lecture
+and only have two make up lectures left, which I will give over Zoom.
+Modern Essentialls really is a great class to teach.
+</p>
+
+<p>
+Wes had his thesis defense! His talk was much better. I have now seen
+"v1" and "v3", "v2", which was was given to FNAL for his interview. I just found
+out that he did not get selected. Steve Told me it was mainly because
+of the talk; v2 must have been closer to v1 than v3&#x2026;
+</p>
+
+<p>
+I have been working alot on integrating AI.  I have started using
+Cursor &#x2013; its great, but not clear it will take over from emacs&#x2026;. I
+tried and found that I can actually make emacs more like Cursor. I
+setup chatGPT and copilot in emacs and am currently putting it through
+the paces. I also learned about Claude Code, a command line agent
+which is supposed to do a lot of what Cursor does without the
+annoying (VSCode) UI.
+</p>
+
+<p>
+On the 4b side, progress has been slow. We are now "L2 approved" but
+will wait until the rest of the Run3 team is ready to unblind and give
+the pre-approval talk.  Ive been slowly making progress on the cutflow
+challenge. I have found some real problems but have not managed to
+close the loop yet.  While at FNAL, I had a good converstion with
+Marko.  He is impressed with what we are doing and likes how we
+handled the politics of the Run3 4b.
+</p>
+
+<p>
+Lot of recent work on HGC. I've spent most of my time preparing the
+slides together for the DOE workshop this week. This was definitely a
+productive excercise. The trip was a good chance for me to get a
+better sense of whats going on in the project and to team-build with
+Jeremey, Ted, and Zoltan.  My talk went well, but there are definitely
+ways to improve for the next iteration in June.
+</p>
+</div>
+</body>
+</html>

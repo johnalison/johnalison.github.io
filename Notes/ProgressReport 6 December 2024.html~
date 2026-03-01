@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 6 December 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 6 December 2024</h1>
+<p>
+Seems like I have not done much in last two weeks, but the rest of the team as been picking up the slack.  I have mainly been focused on HGC "behind the scenes" work: hiring and applying to get more money. 
+</p>
+
+<p>
+The habits have all been good. Have really phased out the NA beer in favor of bubble water. 
+Need Improvements in meditation and some more weightlifting/kettle bells. 
+</p>
+
+<div id="outline-container-orgeca9897" class="outline-2">
+<h2 id="orgeca9897">4b</h2>
+<div class="outline-text-2" id="text-orgeca9897">
+<p>
+Made a big change in the plotting script backend to use python dictionaries. This should give us the functional equivalent of the ".C" files for root plots. 
+</p>
+
+<p>
+AE has been updating plots in the AN. The plan is to cut a new version of the AN in the next couple of days. We will then move on to re-doing the FvT fits with Chuyuan's code and finalize the analysis. 
+</p>
+
+<p>
+Chuyuan has now debugged the classifier rewrite and is producing a lot of interesting studies. 
+Compare ttbar vs no-ttbar in the FvT fits.  JCM vs no-JCM in the etc. Will update AN with these results.
+</p>
+
+<p>
+Sindhu has the runTwoStage closure running and (I think) is beginning to understand it. Her next step is to write it up and present it in B2G. Then move to start looking into signal samples.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org62751db" class="outline-2">
+<h2 id="org62751db">HGC</h2>
+<div class="outline-text-2" id="text-org62751db">
+<p>
+We have started module production! We have made two modules that could in principle be installed in the detector! Jonas is now the point man on the Gantry. 
+</p>
+
+<p>
+Have made two offers which were accepted; Ornella and Josh. The "machinist"  offer was declined.  Need to decide how we move forward on this.
+</p>
+
+<p>
+Also have been doing a lot of HGC management work.  Reading and preparing for the BCR to ask for more funding. I understand better now how the money is calculated, but still need to dig into the details of the final numbers. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcc4bb53" class="outline-2">
+<h2 id="orgcc4bb53">SOS</h2>
+<div class="outline-text-2" id="text-orgcc4bb53">
+<p>
+Wes/Peter have found problems in the binning strategy which lead to bins with no expected background events but observed data events. This caused major problems in the fit, but is now understood and fixed. There is still an excess that is believed to be from displaced J/Psi -&gt; mumu. Unclear how to proceed. One proposal is to widen the window of the mass veto. After this is settled will move to the approval.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72c3743" class="outline-2">
+<h2 id="org72c3743">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org1d7d575" class="outline-2">
+<h2 id="org1d7d575">Links:</h2>
+<div class="outline-text-2" id="text-org1d7d575">
+<p>
+<a href="ProgressReport 22 November 2024.html#ID-7A64E994-B4CA-4805-B466-A60FD8DCFD7B">ProgressReport 22 November 2024</a>
+<a href="Progress Reports.html#ID-87B6EFF9-9731-480E-8CAB-89EE13CDDF27">Progress Reports</a>
+</p>
+
+<p>
+202412060908
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

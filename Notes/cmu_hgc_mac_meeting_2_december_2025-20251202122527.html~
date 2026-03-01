@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 2 December 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 2 December 2025</h1>
+
+
+
+<div id="outline-container-orgeecd297" class="outline-2">
+<h2 id="orgeecd297">News</h2>
+<div class="outline-text-2" id="text-orgeecd297">
+<ul class="org-ul">
+<li>Ti Baseplates Here</li>
+<li>Boxes here</li>
+<li>OGP quote&#x2026;</li>
+<li>QC meetings</li>
+<li>Next Week meet on Friday instead of Tuesday.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org16c86e4" class="outline-2">
+<h2 id="org16c86e4">Action</h2>
+<div class="outline-text-2" id="text-org16c86e4">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Save data on offsets</li>
+<li class="on"><code>[X]</code> Order the 2nd crate?</li>
+<li class="off"><code>[&#xa0;]</code> Alabama GUI ?</li>
+<li class="off"><code>[&#xa0;]</code> Hire another tech</li>
+<li class="off"><code>[&#xa0;]</code> Add v3d to graphana</li>
+<li class="off"><code>[&#xa0;]</code> Ask about a Si data in management meeting</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3f64810" class="outline-2">
+<h2 id="org3f64810">Jessica</h2>
+<div class="outline-text-2" id="text-org3f64810">
+<ul class="org-ul">
+<li>wrapping up</li>
+<li>Thursday: 4/day and Friday</li>
+<li>M&amp;T:  8/day  W: 12/day</li>
+<li>Jim: What kind of prep before Thursday?</li>
+<li>Will prep for assembly by thursday</li>
+<li>OGP computer</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0638f58" class="outline-2">
+<h2 id="org0638f58">Jacques</h2>
+<div class="outline-text-2" id="text-org0638f58">
+<ul class="org-ul">
+<li>Arvind Jim and Jacque cleaned the lab</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd93694d" class="outline-2">
+<h2 id="orgd93694d">Pritam</h2>
+<div class="outline-text-2" id="text-orgd93694d">
+<ul class="org-ul">
+<li>PLC side: analalog is installed.</li>
+<li>Kind of complete</li>
+<li>Sam can connect PLC cpu</li>
+<li>Next to detect temperature and humidity sensor</li>
+<li>Will present.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2030fa0" class="outline-2">
+<h2 id="org2030fa0">Jim</h2>
+<div class="outline-text-2" id="text-org2030fa0">
+<ul class="org-ul">
+<li>Thermal chamber</li>
+<li>Spare door for the thermal chamber</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3303c37" class="outline-2">
+<h2 id="org3303c37">Arvind</h2>
+<div class="outline-text-2" id="text-org3303c37">
+<ul class="org-ul">
+<li>Helped clean</li>
+<li>Will help Jim</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0afa69d" class="outline-2">
+<h2 id="org0afa69d">Christian</h2>
+<div class="outline-text-2" id="text-org0afa69d">
+<ul class="org-ul">
+<li>Column to module info .. IHEP</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org71bc17a" class="outline-2">
+<h2 id="org71bc17a">Manami</h2>
+<div class="outline-text-2" id="text-org71bc17a">
+<ul class="org-ul">
+<li>Will download baseplates from central DB</li>
+<li>CERN DB has been migrated to new version DBloader</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org4dd9c7d" class="outline-2">
+<h2 id="org4dd9c7d">Andrew</h2>
+<div class="outline-text-2" id="text-org4dd9c7d">
+<ul class="org-ul">
+<li>Boxes are here !</li>
+<li>No updates on testing</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

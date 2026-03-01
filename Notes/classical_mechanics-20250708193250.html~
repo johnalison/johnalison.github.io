@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Classical Mechanics</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Classical Mechanics</h1>
+<p>
+John Tayor
+</p>
+
+<p>
+Very solid. Learned a lot. Definitely at the undergrad level. 
+</p>
+
+
+<p>
+Newtons Third Law (Equal and opposite forces) breaks down relativistically because of the relativity of simultaneity; the forces measured at the same time are equal and opposite.  If the force of A-on-B and B-on-A do not occur at the same place, then the validity of the 3rd law will be observer dependent.
+</p>
+
+<p>
+In elastic collisions between two equal mass particles, the angle between the outgoing velocities is 90 degrees. Observation of 90 degree scatterings was used in atomic and nuclear physics as evidence that a collision was elastic and that the particles had the same mass.
+</p>
+
+
+<p>
+The Lagrangian equation tells you directly that if L is independent of a coordinate, then the corrisponding generalized momentum is conserved.
+(eg: indpendence of y =&gt; py conserved, independence of phi =&gt; angular mom conserved. etc) 
+Related to to Noethers Theorem
+</p>
+
+
+<p>
+For any vector within a fixed rotating body     \(\frac{d\vec{e}}{dt} = \omega \times \vec{e}\) , where \(\omega\) is the angular velocity vector.
+</p>
+
+
+<p>
+The phenomena of choas was discovered so late, despite it being a wide spread feature of classical mechanics,  because it is only apparent in nonlinear equations which, in general, are impossible to solve analytically. Physicists either focused on linear problems or made simplifyiing the linear approximations.
+</p>
+
+
+<p>
+Fluids have zero shearing modulus, thus that cannot support the shears needed in transverse wave. All waves in fluids, or gases, are longitudinal.
+In solids both transverse and longitudinal waves can propogate, although at different speeds.  The transverse modes of earthquakes are seen to propotage,  but not through the center of the earth, showing that the earths cores is a liquid. 
+</p>
+</div>
+</body>
+</html>

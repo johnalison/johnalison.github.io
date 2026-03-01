@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NewMethodForCharmCalibration</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">NewMethodForCharmCalibration</h1>
+<p>
+Source: <a href="https://arxiv.org/pdf/2111.03027.pdf">https://arxiv.org/pdf/2111.03027.pdf</a>
+</p>
+
+<ul class="org-ul">
+<li>B-jet id has been used for decades</li>
+
+<li>Now starting to do charm jet tagging,
+<ul class="org-ul">
+<li>the more challenging task of identifying (background from both sides)
+<ul class="org-ul">
+<li>the definition of two discriminating variables; one to distinguish c jets from light-flavour jets (CvsL) and one to distinguish c jets from b jets (CvsB).</li>
+</ul></li>
+</ul></li>
+<li>Made freasible by advacess in deep learning</li>
+
+<li><p>
+Increasingly important to calibrate the full shape of the classifier output (not a few bins)
+</p>
+<ul class="org-ul">
+<li>each jet as an input to a machine-learning classifier or by performing a fit of the discriminator distributions to data</li>
+</ul>
+<p>
+eg; h-&gt;bb  / hh-&gt;bbtt
+ h-&gt;?bb also fits DeepCSV in the CR
+</p></li>
+
+<li>deepCSV and deepJet DeepNNs trained in MC, evaluated in data</li>
+
+<li>SF for b jets from
+<ul class="org-ul">
+<li>top quark pair (tt) production and/or multijet events where a jet contains a low-energy muon.</li>
+</ul></li>
+
+<li>This paper presents for the first time a calibration method to correct the differential c tagging discriminator distribution shapes.
+uses an iterative fit procedure with 3 control regions that are enriched in c, b, and light-flavour or gluon jets</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>used in tt+c</li>
+
+<li>Rather than correcting the efficiency of a selection in the discriminator, the full simulated differential shape of that dis- criminator can be calibrated to match the shape observed in data.</li>
+<li>For the first time this paper presents a method of calibrating the differential c tagging discriminator shapes.</li>
+
+<li>Need 3 CRs:
+
+<ul class="org-ul">
+<li>Charm: W+c</li>
+<li>B: ttbar</li>
+<li>Light: DY+jet</li>
+</ul></li>
+</ul>
+
+<p>
+he sampled c and b jets are required to contain a soft muon inside the jet cone
+</p>
+
+<ul class="org-ul">
+<li>B/c soft muons within jets are treated as any other charged PF candidate in both DeepCSV and DeepJet trainings, as opposed to training the network with explicit soft muon information, the bias in the discriminator responses aris- ing from using muon-containing c and b jets as a proxy for all c and b jets, is expected to be minimal. In Section 10.2 we further demonstrate the applicability of the correction factors to inclusive samples</li>
+</ul>
+
+
+
+<p>
+Q: The blue envelopes indicate the range of all nominal interpolated SF values in the corresponding CvsB range.
+</p>
+
+<p>
+<a href="CMS.html#ID-D0F94G67-9C3F-5E39-0G0D-F9G2588766EB">CMS</a>
+</p>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="papers.html">Papers</a></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RunROOTwithDocker</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">RunROOTwithDocker</h1>
+<p>
+<a href="https://hub.docker.com/r/rootproject/root">https://hub.docker.com/r/rootproject/root</a>
+</p>
+
+
+<p>
+Can get an interactive session with
+</p>
+
+<p>
+<code>docker run -it rootproject/root:latest bash</code>
+</p>
+
+<p>
+Does not do the x11 forwarding
+</p>
+
+
+<p>
+Tried with the instructions above&#x2026; but cant seem to get the browser to show up..
+</p>
+
+<p>
+<code>docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$ip:0 rootproject/root root</code>
+</p>
+
+<p>
+seeing errors about batch mode
+</p>
+
+<div id="outline-container-orgb1e2f13" class="outline-2">
+<h2 id="orgb1e2f13">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org17b1f3e" class="outline-2">
+<h2 id="org17b1f3e">Links:</h2>
+<div class="outline-text-2" id="text-org17b1f3e">
+<p>
+<a href="Docker.html#ID-43433489-DB0A-4461-BF3D-94B59AEDC8DA">Docker</a>
+</p>
+
+
+<p>
+202407231930
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2024/07-July/23-July-2024-Tuesday.html">23 July 2024 Tuesday</a></li>
+</ul>
+</div>
+</body>
+</html>

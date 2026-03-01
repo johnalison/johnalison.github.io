@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 18 July 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 18 July 2024</h1>
+
+<div id="outline-container-org2b83764" class="outline-2">
+<h2 id="org2b83764">News:</h2>
+<div class="outline-text-2" id="text-org2b83764">
+<p>
+<b>ESD Discusion</b>
+</p>
+<ul class="org-ul">
+<li>Add temperature / humidity during assembly</li>
+<li>Can we probe somewhere on teh chip</li>
+<li>3 / 17</li>
+</ul>
+
+<p>
+<b>Tooling bid</b>:  
+</p>
+
+<p>
+Vacations, lots of people away
+</p>
+</div>
+</div>
+<div id="outline-container-org877b83a" class="outline-2">
+<h2 id="org877b83a">Jessica:</h2>
+<div class="outline-text-2" id="text-org877b83a">
+<ul class="org-ul">
+<li>Back on campus starting on Monday</li>
+<li>Static dissipative cups installed.</li>
+<li>QC code reading via camera (Jonas to look into)</li>
+<li>Module assembly PETG and realistic (flatness good / offests needs checked)</li>
+<li>Live modules Friday or Monday</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga022aff" class="outline-2">
+<h2 id="orga022aff">Andrew</h2>
+<div class="outline-text-2" id="text-orga022aff">
+<ul class="org-ul">
+<li>Module testing: modules OK,</li>
+<li>Seeing modules acting like a capacitor</li>
+<li>Need standard for quoting the breakdown voltage</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e77f23" class="outline-2">
+<h2 id="org4e77f23">Eva</h2>
+<div class="outline-text-2" id="text-org4e77f23">
+<ul class="org-ul">
+<li>Will help jessica for next few days</li>
+<li>Resistivity readings</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7413e1a" class="outline-2">
+<h2 id="org7413e1a">Sindhu</h2>
+<div class="outline-text-2" id="text-org7413e1a">
+<ul class="org-ul">
+<li>common git hub account</li>
+<li>common services account for database uploads</li>
+<li>meeting with florin re: backup</li>
+<li>updated to information collected</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org259ee6f" class="outline-2">
+<h2 id="org259ee6f">Manami</h2>
+<div class="outline-text-2" id="text-org259ee6f">
+<ul class="org-ul">
+<li>Nice DB work</li>
+<li>Options to sync</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcb976b2" class="outline-2">
+<h2 id="orgcb976b2">Nedgme</h2>
+<div class="outline-text-2" id="text-orgcb976b2">
+<ul class="org-ul">
+<li>Added encapsulation page</li>
+<li>Added other partials</li>
+</ul>
+</div>
+
+<div id="outline-container-org512e87c" class="outline-3">
+<h3 id="org512e87c">Links:</h3>
+<div class="outline-text-3" id="text-org512e87c">
+<p>
+<a href="HGC.html#ID-E1G05H78-0D4G-6F40-1H1E-0AH3699877FC">HGC</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+<p>
+202407181107
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

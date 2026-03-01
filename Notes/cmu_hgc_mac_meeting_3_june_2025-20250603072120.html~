@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 3 June 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 3 June 2025</h1>
+<p>
+CMU HGC Mac Meeting 27 May 2025]]
+</p>
+
+<div id="outline-container-org12bcede" class="outline-2">
+<h2 id="org12bcede">Jessica</h2>
+<div class="outline-text-2" id="text-org12bcede">
+</div>
+<div id="outline-container-org20789b3" class="outline-3">
+<h3 id="org20789b3">Firstly, please welcome Jacques to the group. I have started to add Jacques to the shared Google Drive and</h3>
+<div class="outline-text-3" id="text-org20789b3">
+<p>
+Calendars, Bioraft, etc. Please let me know if there is anything else I need to do for onboarding.
+</p>
+</div>
+</div>
+<div id="outline-container-org4832f1a" class="outline-3">
+<h3 id="org4832f1a">Particulate counter project has been handed off to the undergrads:</h3>
+<div class="outline-text-3" id="text-org4832f1a">
+<p>
+<a href="https://github.com/cmu-hgc-mac/ambient-particulate-counts">https://github.com/cmu-hgc-mac/ambient-particulate-counts</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orge5a38c3" class="outline-3">
+<h3 id="orge5a38c3">I switched out the HB PUT feet for CuW baseplates and will finish the senor feet this afternoon</h3>
+</div>
+<div id="outline-container-org7ed949a" class="outline-3">
+<h3 id="org7ed949a">FMS estimates end of this week for the chiller power socket</h3>
+</div>
+
+<div id="outline-container-org73736a2" class="outline-3">
+<h3 id="org73736a2">Current estimate is over $400, which is mostly labor (parts alone are $20)</h3>
+</div>
+<div id="outline-container-orgae5d1f4" class="outline-3">
+<h3 id="orgae5d1f4">Line items here:</h3>
+<div class="outline-text-3" id="text-orgae5d1f4">
+<p>
+<a href="https://fmcs-reports.andrew.cmu.edu/birt/frameset?__report=WorkOrder_Detail_anonlabor.rptdesign&amp;Which%20Work%20Order=25-176353">https://fmcs-reports.andrew.cmu.edu/birt/frameset?__report=WorkOrder_Detail_anonlabor.rptdesign&amp;Which%20Work%20Order=25-176353</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org23ddf01" class="outline-3">
+<h3 id="org23ddf01">Notes for Wednesday have been started:</h3>
+<div class="outline-text-3" id="text-org23ddf01">
+<p>
+<a href="https://docs.google.com/presentation/d/1aeesbsSFn7UQOvhSjY_ZM0mypFeV5sE6J-HRVbcJJt0/edit?usp=sharing">https://docs.google.com/presentation/d/1aeesbsSFn7UQOvhSjY_ZM0mypFeV5sE6J-HRVbcJJt0/edit?usp=sharing</a>
+</p>
+
+<p>
+Feel free to change any details or provide feedback
+</p>
+</div>
+</div>
+
+<div id="outline-container-org77331b3" class="outline-3">
+<h3 id="org77331b3">The zipline is almost done. I should be able to determine pick and place bias shortly afterwards.</h3>
+</div>
+<div id="outline-container-org7ce5a3e" class="outline-3">
+<h3 id="org7ce5a3e">While waiting for the zipline, I started estimating consumables. It's cheapest to order epoxy supplies (syringes,</h3>
+<div class="outline-text-3" id="text-org7ce5a3e">
+<p>
+pistons, mixing nozzles, etc) in bulk. While discussing with UCSB, we're confident that one full 5cc syringe covers 4
+modules. However, the epoxy starts to harden 10-20 minutes after dispensing. Susanne wants me to test gluing 2
+modules at a time with one syringe (i.e., one syringe per tray) vs. 4 modules at a time with one syringe. One
+syringe per 4 modules saves about $3500. I will be sure to verify that we have the funds before placing any
+consumable orders.
+</p>
+</div>
+</div>
+<div id="outline-container-orge3a4276" class="outline-3">
+<h3 id="orge3a4276">The mini gantry appears to be sending a signal to the RPi. We might need to amplify the signal to get it into the</h3>
+<div class="outline-text-3" id="text-orge3a4276">
+<p>
+3.3V - 5V range?
+</p>
+
+<p>
+On a personal note, in addition to my son's 18 month checkup tomorrow:
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org8db5f21" class="outline-3">
+<h3 id="org8db5f21">I will be on campus at normal hours (8 am to 5 pm) and present on Wednesday.</h3>
+</div>
+</div>
+
+
+<div id="outline-container-org6cf1669" class="outline-2">
+<h2 id="org6cf1669">Rain</h2>
+<div class="outline-text-2" id="text-org6cf1669">
+<p>
+server's dashboard: <a href="http://cmsmac04.phys.cmu.edu:3000/dashboards">http://cmsmac04.phys.cmu.edu:3000/dashboards</a>
+newest module info: <a href="http://172.26.18.193:3000/goto/Jjv63CfNg?qorgId=1">http://172.26.18.193:3000/goto/Jjv63CfNg?qorgId=1</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

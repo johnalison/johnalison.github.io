@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>script to compare the splittings</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">script to compare the splittings</h1>
+<p>
+Got running. 
+</p>
+
+<p>
+eg: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">python  jet_clustering/splitting_comparison_plots.py analysis/hists/test_synthetic_datasets_4j_and_5j.coffea  --out jet_clustering/jet-splitting-PDFs-00-02-00/comparison
+
+</pre>
+</div>
+
+
+
+<div id="outline-container-orgef578e7" class="outline-2">
+<h2 id="orgef578e7">To-do</h2>
+<div class="outline-text-2" id="text-orgef578e7">
+<ul class="org-ul">
+<li>maybe add vs pt plots</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc2b9c58" class="outline-2">
+<h2 id="orgc2b9c58">Links:</h2>
+<div class="outline-text-2" id="text-orgc2b9c58">
+<p>
+<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">Jet DeClustering</a>
+</p>
+
+
+<p>
+202407220954
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

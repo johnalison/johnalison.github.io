@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Run-3 4b skims</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Run-3 4b skims</h1>
+
+<div id="outline-container-org76dd024" class="outline-2">
+<h2 id="org76dd024">Info</h2>
+<div class="outline-text-2" id="text-org76dd024">
+<p>
+<a href="BPix hole.html#ID-15D0574F-587B-4206-922E-47841F8A7D01">BPix hole</a>
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org3ee5c72" class="outline-2">
+<h2 id="org3ee5c72">Todo</h2>
+<div class="outline-text-2" id="text-org3ee5c72">
+<ul class="org-ul">
+<li>Need way to debug datasets in coffee
+<ul class="org-ul">
+<li>count lumi sections processed
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> script to check against JSON</li>
+</ul></li>
+<li>[xx] ~~count events processed before lumi sections
+<ul class="org-ul">
+<li>Already doing</li>
+</ul></li>
+<li>[xx] ~~check duplicate events
+<ul class="org-ul">
+<li>Spot check SRs</li>
+</ul></li>
+<li><a href="Coffea post re lumi counting.html#ID-AC2DEB19-60B4-4963-AD2A-CBDFE7C289EF">Coffea post re lumi counting</a></li>
+</ul></li>
+<li>Add preselection</li>
+<li>Update Jet pt corrections</li>
+<li>Rucio requests to LPC ?
+<ul class="org-ul">
+<li>Looks like they are already there.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd7488c4" class="outline-2">
+<h2 id="orgd7488c4">v2 Thursday Oct 10th</h2>
+<div class="outline-text-2" id="text-orgd7488c4">
+<ul class="org-ul">
+<li>EOS space:</li>
+<li>some errors:</li>
+<li>"no missing file errors"</li>
+<li>check lumis</li>
+<li>commit</li>
+
+<li>Trying skims with blocksite <code>blocklist_sites: 'T2_US_MIT'</code> in <code>/python/skimmer/metadata/HH4b.yml</code>&#x2026; didnt help</li>
+<li>Specified allowed sites"</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-yaml">allowlist_sites:
+    - T3_US_FNALLPC
+    - T2_US_Nebraska
+    - T2_US_Purdue
+    - T3_US_NotreDame
+    - T2_US_Caltech
+
+</pre>
+</div>
+<p>
+&#x2026;worked!
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2ad6600" class="outline-2">
+<h2 id="org2ad6600">Daily Logs</h2>
+<div class="outline-text-2" id="text-org2ad6600">
+</div>
+<div id="outline-container-orgaa259d9" class="outline-3">
+<h3 id="orgaa259d9"><a href="../Journal/2024/10-October/08-October-2024-Tuesday.html#ID-B11105C2-0BB1-4E72-863A-739053B58FE8">8 October 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgaa259d9">
+<ul class="org-ul">
+<li>tmux on <b>cmslpc316</b></li>
+<li>missing input dataset file</li>
+<li>trying 2023<sub>preBPix</sub> all eras (<b>source skim2023<sub>preBPix.sh</sub></b>)</li>
+<li>Fails b/c <b>Input sandbox size exceeds the maximum allowed limit.</b>
+<ul class="org-ul">
+<li>Created a clean checkout for the skim (used &#x2013;depth 1 to speed up the checkout)</li>
+</ul></li>
+<li>Jobs finished. some error messages and missing chunks.</li>
+<li>submitting 2023<sub>PBix</sub> &#x2026; Done no errors</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2686af2" class="outline-3">
+<h3 id="org2686af2"><a href="../Journal/2024/10-October/10-October-2024-Thursday.html#ID-E1913EE0-345A-418A-B5C7-04D5CC5B9716">10 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org2686af2">
+<ul class="org-ul">
+<li>Add event selection</li>
+<li>Test</li>
+<li>Submit</li>
+<li>Error from AK8 jet calibration.. Pinged AE.. fixed</li>
+<li>Waiting on updated pt calibration and nTag jet selection&#x2026; have it.</li>
+<li>submitting BPix on 331</li>
+<li>submitting preBPix on</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org26e21b4" class="outline-3">
+<h3 id="org26e21b4"><a href="../Journal/2024/10-October/11-October-2024-Friday.html#ID-C3DB99D5-E984-48C7-AE8B-F851B0797CB5">11 October 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org26e21b4">
+<ul class="org-ul">
+<li>Added script to do Lumi checking.</li>
+<li>Found missing LBs&#x2026; turns out these are missing from the Nano!</li>
+<li>Checked with <a href="dasgoclient.html#ID-98EEAEF6-8684-4D6B-B4F0-B677592D5593">dasgoclient</a></li>
+<li>Can simplify the checking by just checking that the skims saw all the input events which we can get from das summary</li>
+<li>Make script to get the DAS info form the datasets file
+<ul class="org-ul">
+<li>First version working&#x2026;</li>
+<li>Need to fix <b>py python/skimmer/metadata/get<sub>das</sub><sub>info.py</sub> -d python/skimmer/metadata/picoaod<sub>datasets</sub><sub>data</sub><sub>2023</sub><sub>BPix.yml</sub></b></li>
+<li>&#x2026;Done.</li>
+</ul></li>
+<li>Add README</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4a026f8" class="outline-3">
+<h3 id="org4a026f8"><a href="../Journal/2024/10-October/12-October-2024-Saturday.html#ID-05D4F48F-49F5-4AA9-8D64-8C6490C20F31">12 October 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-org4a026f8">
+<ul class="org-ul">
+<li>2022 skims from last night failed&#x2026; xrootd error &#x2026; maybe voms-proxy ? 
+<ul class="org-ul">
+<li>&lt;font color=red&gt;.. No due to MIT site problems &lt;/font&gt;</li>
+</ul></li>
+<li>Rerunning on <b>346</b>&#x2026; failed will run period by period..</li>
+<li>Start preEE with B &#x2026; done / Start C &#x2026; Error /.Start D &#x2026; done</li>
+<li>Start EE .. lots of errors</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfe46aad" class="outline-3">
+<h3 id="orgfe46aad"><a href="../Journal/2024/10-October/13-October-2024-Sunday.html#ID-69870697-1D07-4CE1-A73A-AC5561FC13C8">13 October 2024 Sunday</a></h3>
+<div class="outline-text-3" id="text-orgfe46aad">
+<ul class="org-ul">
+<li>Trying skims with blocksite <code>blocklist_sites: 'T2_US_MIT'</code> in <code>/python/skimmer/metadata/HH4b.yml</code>&#x2026; didnt help</li>
+<li>Specified allowed sites"</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-yaml">allowlist_sites:
+    - T3_US_FNALLPC
+    - T2_US_Nebraska
+    - T2_US_Purdue
+    - T3_US_NotreDame
+    - T2_US_Caltech
+
+</pre>
+</div>
+<p>
+&#x2026;worked! skims all good.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org45928c0" class="outline-3">
+<h3 id="org45928c0"><a href="../Journal/2024/10-October/14-October-2024-Monday.html#ID-E72A078C-3B16-4CF6-9BCE-36817EA98267">14 October 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org45928c0">
+<ul class="org-ul">
+<li>saved yaml in archive</li>
+<li>made merged data set:
+= py metadata/merge<sub>yaml</sub><sub>datasets.py</sub> -m metadata/datasets<sub>HH4b</sub><sub>Run3.yml</sub> -o metadata/datasets<sub>HH4b</sub><sub>Run3</sub><sub>merged.yml</sub> -f metadata/archive/skims<sub>Run3</sub><sub>2024</sub><sub>v2</sub>/picoaod<sub>datasets</sub><sub>data</sub><sub>202</sub>*=</li>
+<li>Testing four-b skims&#x2026;. Looks good</li>
+<li>Running skims locally &#x2026;*49m55.899s* again on <b>cmslpc319</b>&#x2026; <b>46m49.839s</b>
+<ul class="org-ul">
+<li>Fails b/c of jet calib file&#x2026; need to only rename if file not found.. 
+fixed by only untarring when needed.</li>
+<li>45,881 events/s total (127711027/2783.5447924137115)</li>
+</ul></li>
+<li>Running skims condor&#x2026;&#x2026; <b>39m9.456s</b>
+<ul class="org-ul">
+<li>132,884 events/s total (127711027/961.0680384635925)</li>
+</ul></li>
+<li>Problem with the condor 4b skim&#x2026; use the local v1 one.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org43aa920" class="outline-3">
+<h3 id="org43aa920"><a href="../Journal/2024/10-October/15-October-2024-Tuesday.html#ID-175E76CF-62F4-4F4B-BF74-B5356B5AFB7A">15 October 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org43aa920">
+<ul class="org-ul">
+<li>Trying condor 4b skims again on <b>cmslpc339</b>&#x2026; see errors again&#x2026;. <b>24m2.427s</b></li>
+<li>Making YAML for the four<sub>tag</sub> dataset</li>
+<li>Now on to <a href="run3syntheticdata-20250504105620.html#ID-F186D2D0-4B38-4EBC-9B0D-4995A8771982">Run3 Synthetic Data</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org92d6d1c" class="outline-3">
+<h3 id="org92d6d1c"><a href="../Journal/2024/12-December/12-December-2024-Thursday.html#ID-267A70F7-7A62-4B89-8B8F-CB0BC5AE96BC">12 December 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org92d6d1c">
+<ul class="org-ul">
+<li>on <b>cmslpc303</b></li>
+<li><code>base_path: root://cmseos.fnal.gov//store/user/jda102/XX4b/2024_v3/</code></li>
+<li> <code>python runner.py -s -p skimmer/processor/skimmer_4b.py -c  skimmer/metadata/HH4b.yml -y 2022_EE -d data -e E F G -op  skimmer/metadata/ -o picoaod_datasets_data_2022_EE.yml -m  metadata/datasets_HH4b_Run3.yml --condor</code></li>
+<li>finished in <b>2386.692587852478</b></li>
+<li><code>python runner.py -s -p skimmer/processor/skimmer_4b.py -c  skimmer/metadata/HH4b.yml -y 2022_preEE -d data -e B C D -op  skimmer/metadata/ -o picoaod_datasets_data_2022_preEE.yml -m  metadata/datasets_HH4b_Run3.yml --condor</code></li>
+<li>&#x2026; Has errors will likely need to rerun&#x2026; moving on.</li>
+<li>Running now on <b>cmslpc308</b></li>
+<li>`python runner.py -s -p skimmer/processor/skimmer<sub>4b.py</sub> -c  skimmer/metadata/HH4b.yml -y 2023<sub>preBPix</sub> -d data -e A B C D E F -op  skimmer/metadata/ -o picoaod<sub>datasets</sub><sub>data</sub><sub>2023</sub><sub>preBPix.yml</sub> -m  metadata/datasets<sub>HH4b</sub><sub>Run3.yml</sub> &#x2013;condor</li>
+<li>That fails (removing perdue)  trying BPix&#x2026;</li>
+<li><code>python runner.py -s -p skimmer/processor/skimmer_4b.py -c  skimmer/metadata/HH4b.yml -y 2023_BPix -d data -e D E -op  skimmer/metadata/ -o picoaod_datasets_data_2023_BPix.yml -m metadata/datasets_HH4b_Run3.yml --condor</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2a023e0" class="outline-3">
+<h3 id="org2a023e0"><a href="../Journal/2024/12-December/13-December-2024-Friday.html#ID-3F1AC9EC-8BD1-4E36-85E1-6C7C4DEEC294">13 December 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org2a023e0">
+<ul class="org-ul">
+<li>on <b>cmslpc302</b>
+<ul class="org-ul">
+<li><code>python runner.py -s -p skimmer/processor/skimmer_4b.py -c skimmer/metadata/HH4b.yml -y 2022_preEE -d data -e B C D -op skimmer/metadata/ -o picoaod_datasets_data_2022_preEE.yml -m metadata/datasets_HH4b_Run3.yml --condor</code></li>
+</ul></li>
+<li>Another ERROR&#x2026; running one era at a time now&#x2026;</li>
+<li>2022<sub>preEEB</sub> .. fails. Trying C .. OK. Trying D.. OK&#x2026; keep going</li>
+<li>Now on <b>cmslpc317</b></li>
+<li>Now on <b>cmslpc318</b></li>
+<li>2022<sub>preEEB</sub></li>
+<li>2022<sub>preEEC</sub></li>
+<li>2022<sub>preEED</sub></li>
+<li>2023<sub>preBPixA</sub></li>
+<li>2023<sub>preBPixB</sub></li>
+<li>2023<sub>preBPixC</sub></li>
+<li>2023<sub>preBPixD</sub></li>
+<li>2023<sub>preBPixE</sub></li>
+<li>2023<sub>preBPixF</sub></li>
+<li>2023<sub>BPixD</sub></li>
+<li>2023<sub>BPixE</sub></li>
+<li>Added <code>T1_US_FNAL_Disk</code> and blocked <code>T2_US_Purdue</code> .. fixed all previous failues
+<ul class="org-ul">
+<li>Also had to do set <code>rucio_regex_sites: 'T[123]_(US|CH|DE|UK)'</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org10613dc" class="outline-3">
+<h3 id="org10613dc"><a href="../Journal/2024/12-December/16-December-2024-Monday.html#ID-955DA758-7983-4B86-8FB2-6BFFD1678F55"> 16 December 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org10613dc">
+<ul class="org-ul">
+<li>No missing files reported</li>
+<li><p>
+Checking event counts
+</p>
+<ul class="org-ul">
+<li>eg: <code>python skimmer/metadata/check_event_counts.py -y skimmer/metadata/picoaod_datasets_data_2022_preEEB.yml</code></li>
+<li>All counts good!</li>
+</ul>
+<ul class="org-ul">
+<li>Copied output yml files to <code>metadata/archive/skims_Run3_2024_v3/</code></li>
+</ul></li>
+<li>Merging <code>python metadata/merge_yaml_datasets.py -m metadata/datasets_HH4b_Run3.yml -o metadata/datasets_HH4b_Run3_merged_v3.yml -f metadata/archive/skims_Run3_2024_v3/picoaod_datasets_data_202*</code></li>
+<li>Moved <code>datasets_HH4b_Run3_merged_v3.yml</code> to <code>datasets_HH4b_Run3.yml</code></li>
+<li>Now to four-b skims&#x2026;</li>
+<li>Command in =skimmer-fourTag-job.sh =
+<ul class="org-ul">
+<li><code>python runner.py -s -p skimmer/processor/skimmer_4b.py -c skimmer/metadata/HH4b_fourTag.yml -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix -d data -op skimmer/metadata/ -o picoaod_datasets_fourTag_data_Run3_v3.yml -m metadata/datasets_HH4b_Run3.yml --condor</code></li>
+</ul></li>
+<li>submitted on <b>cmslpc330</b></li>
+<li>now running on <b>cmslpc341</b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf47e4b6" class="outline-3">
+<h3 id="orgf47e4b6"><a href="../Journal/2024/12-December/17-December-2024-Tuesday.html#ID-DA6F71ED-8D63-4DF3-9A5A-6D0833A89CA1">17 December 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgf47e4b6">
+<ul class="org-ul">
+<li>on <b>cmslpc318</b></li>
+<li>Trying 4b skims locally
+<ul class="org-ul">
+<li><code>python runner.py -s -p skimmer/processor/skimmer_4b.py -c skimmer/metadata/HH4b_fourTag.yml -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix -d data -op skimmer/metadata/ -o picoaod_datasets_fourTag_data_Run3_v3.yml -m metadata/datasets_HH4b_Run3.yml</code></li>
+</ul></li>
+</ul>
+<p>
+an in 1508 s = 25min
+</p>
+<ul class="org-ul">
+<li>Merged fourTag skim datasets 
+<ul class="org-ul">
+<li><code>python metadata/merge_yaml_datasets.py -m metadata/datasets_HH4b_Run3.yml -o metadata/datasets_HH4b_Run3_fourTag_v3.yml -f skimmer/metadata/picoaod_datasets_fourTag_data_Run3_v3.yml</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org13c3a64" class="outline-3">
+<h3 id="org13c3a64"><a href="../Journal/2025/04-April/30-April-2025-Wednesday.html#ID-FED0A64E-A317-40B4-8979-95D5BE7B7F59">30 April 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org13c3a64">
+<ul class="org-ul">
+<li>Rerunning skims after <a href="Run3 HH4b Cutflow Challenge.html#ID-9058CACF-33CB-48C6-AD39-A423366C0D23">Run3 HH4b Cutflow Challenge</a></li>
+</ul>
+</div>
+<div id="outline-container-orgc867aa8" class="outline-4">
+<h4 id="orgc867aa8"><span class="done DONE">DONE</span> 2022<sub>preEE</sub></h4>
+<div class="outline-text-4" id="text-orgc867aa8">
+<ul class="org-ul">
+<li>No errors!</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org38c0006" class="outline-4">
+<h4 id="org38c0006"><span class="done DONE">DONE</span> 2022<sub>EE</sub></h4>
+<div class="outline-text-4" id="text-org38c0006">
+<ul class="org-ul">
+<li>No errors!</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf53571d" class="outline-4">
+<h4 id="orgf53571d"><span class="done DONE">DONE</span> 2023<sub>preBPix</sub></h4>
+<div class="outline-text-4" id="text-orgf53571d">
+<ul class="org-ul">
+<li>Allowed more sites&#x2026; then ran without errors</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e00f75" class="outline-4">
+<h4 id="org8e00f75"><span class="done DONE">DONE</span> 2023<sub>BPix</sub></h4>
+<div class="outline-text-4" id="text-org8e00f75">
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf7ecba6" class="outline-3">
+<h3 id="orgf7ecba6"><a href="../Journal/2025/05-May/01-May-2025-Thursday.html#ID-074F51FF-BA0F-475D-9D89-EA017F81347F">01 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgf7ecba6">
+<ul class="org-ul">
+<li>Skimming on <b><b>cmslpc302</b></b></li>
+<li>Add skims output to <b><b>archive/skims<sub>Run3</sub><sub>2025</sub>/</b></b></li>
+<li>Making merged dataset
+<ul class="org-ul">
+<li><code>python metadata/merge_yaml_datasets.py -m metadata/datasets_HH4b_Run3.yml -o metadata/datasets_HH4b_Run3_2025_Run3_skims.yml -f ../archive/skims_Run3_2025/picoaod_datasets_data_202*</code></li>
+</ul></li>
+<li>Making 4b skims
+<ul class="org-ul">
+<li><code>python runner.py -s -p skimmer/processor/skimmer_4b.py -c skimmer/metadata/HH4b_fourTag.yml -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix -d data -op skimmer/metadata/ -o picoaod_datasets_fourTag_data_Run3_v3.yml -m metadata/datasets_HH4b_Run3.yml --condor</code></li>
+</ul></li>
+<li>Failing&#x2026; missing files&#x2026; Trying locally&#x2026; works!</li>
+<li>Made dataset:
+<ul class="org-ul">
+<li><code>python metadata/merge_yaml_datasets.py -m metadata/datasets_HH4b_Run3.yml -o metadata/datasets_HH4b_Run3_fourTag_2025_skims.yml -f skimmer/metadata/picoaod_datasets_fourTag_data_Run3_2025_skims.yml</code></li>
+</ul></li>
+<li>Testing
+<ul class="org-ul">
+<li><code>python runner.py -o data_Run3_2025_skims.coffea -d data -p analysis/processors/processor_HH4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix -op output/synthetic_dataset_analyze_all -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_Run3_fourTag_2025_skims.yml</code></li>
+</ul></li>
+<li>Now on <b><b>cmslpc336</b></b></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org94fdc05" class="outline-2">
+<h2 id="org94fdc05">v3 Monday Dec 16th</h2>
+<div class="outline-text-2" id="text-org94fdc05">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8b7d0d9" class="outline-2">
+<h2 id="org8b7d0d9">v1 Tuesday Oct 8th</h2>
+<div class="outline-text-2" id="text-org8b7d0d9">
+<ul class="org-ul">
+<li>Problems&#x2026; too many collections/ triggers /events and no LumiBlock checking</li>
+<li>Will delete</li>
+</ul>
+</div>
+
+
+
+
+<div id="outline-container-orgf6ffd74" class="outline-3">
+<h3 id="orgf6ffd74">Missing chunks&#x2026;</h3>
+</div>
+
+<div id="outline-container-orgd74ef56" class="outline-3">
+<h3 id="orgd74ef56">BPix</h3>
+<div class="outline-text-3" id="text-orgd74ef56">
+<p>
+<b>ERROR</b>    <b>ERROR:root:The whole file is missing:</b> 
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">"root://dcache-cms-xrootd.desy.de:1094//store/data/Run2023D/ParkingHH/NANOAOD/22Sep2023_v2-v1/2560000/c493171c-63f5-4906-b09a-ac5684089bb0.root"
+"root://dcache-cms-xrootd.desy.de:1094//store/data/Run2023D/ParkingHH/NANOAOD/22Sep2023_v2-v1/60000/184bebb8-5e35-41d2-86b6-cc02c0307489.root"
+"root://dcache-cms-xrootd.desy.de:1094//store/data/Run2023D/ParkingHH/NANOAOD/22Sep2023_v2-v1/60000/69155626-c909-4645-b8e4-31e5024d609a.root"
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org79ef049" class="outline-3">
+<h3 id="org79ef049">preBPIX</h3>
+<div class="outline-text-3" id="text-org79ef049">
+<div class="org-src-container">
+<pre class="src src-bash">ERROR    ERROR:root:Missing chunk:
+ [101724, 305172) in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/08aeeda4-e4f1-4390-9430-e577dc10fa74.root"     picoaod.py:250
+[0, 109177)       in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/311758d6-b4a6-43b7-8b2a-ac8f40e2ef46.root"          picoaod.py:250
+[400148, 500185)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/37b60770-2fd3-4655-b4fc-c453ba94aa43.root"     picoaod.py:250
+[209522, 419044)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/42ac3f8a-48f5-4042-b6e4-72106c2e89c6.root"     picoaod.py:250
+[289719, 386292)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/45a6e8f1-d57a-4027-9fb2-c163a61e0f6b.root"     picoaod.py:250
+[95111, 190222)   in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/78aa0ec7-d875-48e2-ac96-b07f94fefa8d.root"      picoaod.py:250
+[285333, 475555)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/78aa0ec7-d875-48e2-ac96-b07f94fefa8d.root"     picoaod.py:250
+[96825, 290475)   in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/8e2d93c5-db0f-442d-8b7e-e7cfcb03479e.root"      picoaod.py:250
+[484125, 677775)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/8e2d93c5-db0f-442d-8b7e-e7cfcb03479e.root"     picoaod.py:250
+[390036, 585054)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/c0a8faf7-1b2d-4d13-9b69-1d7138937e2a.root"     picoaod.py:250
+[0, 123771)       in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/30000/38ef63b7-1f50-4da9-a010-0961e1259277.root"            picoaod.py:250
+[187722, 375444)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/30000/5d79f9cf-4ea4-4453-bca5-3f65f6f68e9f.root"       picoaod.py:250
+[0, 217684)       in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/30000/c3eb25c2-ee41-4996-bcc5-daadd69633f7.root"            picoaod.py:250
+[193132, 386264)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/30000/f2fc2cc9-6c4a-477b-a2fb-e77a5d397b7c.root"       picoaod.py:250
+[0, 213798)       in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/50000/0d228478-ce15-45db-8e49-79d0f605ccc7.root"            picoaod.py:250
+[427596, 534495)  in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/50000/0d228478-ce15-45db-8e49-79d0f605ccc7.root"       picoaod.py:250
+[93887, 187774)   in "root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/50000/46f2a209-4608-4348-a50a-f292adeb24a8.root"        picoaod.py:250
+
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-bash">ERROR    ERROR:root:The whole file is missing: 
+"root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/5e1f2fc8-191b-40c7-a3d2-cac7065482de.root"             picoaod.py:237
+"root://cmsxrootd.hep.wisc.edu:1094//store/data/Run2023C/JetMET0/NANOAOD/22Sep2023_v2-v1/2540000/dfb63f3c-3cea-42bf-84a8-5185cd687ada.root"             picoaod.py:237
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="outline-container-org28e73ce" class="outline-2">
+<h2 id="org28e73ce">Mail from AE</h2>
+<div class="outline-text-2" id="text-org28e73ce">
+<p>
+Hey  
+</p>
+
+<p>
+The skim code for Run3 is ready, but it works only for 2023 datasets.  
+For 2022, I am getting a weird error, but I have already pinged  
+Chuyuan; hopefully, he can help.  
+</p>
+
+<p>
+In any case, you can start with 2023 datasets. Here are some instructions:  
+</p>
+<ul class="org-ul">
+<li>Pull the latest code from master.</li>
+<li>Change the config['base<sub>path</sub>'] folder in python/skimmer/metadata/HH4b.yml.</li>
+<li>Use tmux or screen before submitting the jobs. Running skims will</li>
+</ul>
+<p>
+take a while.  
+</p>
+<ul class="org-ul">
+<li>If you want to monitor the jobs using the dashboard, you should</li>
+</ul>
+<p>
+forward the 10200 port when you do ssh, like: ssh -XY -L  
+10200:localhost:10200 @[cmslpc-el9.fnal.gov](<a href="http://cmslpc-el9.fnal.gov/">http://cmslpc-el9.fnal.gov/</a>)  
+</p>
+<ul class="org-ul">
+<li>After you open a tmux window, run the container</li>
+<li>Go to python/ and then run:</li>
+</ul>
+
+<p>
+python runner.py -s -p skimmer/processor/skimmer<sub>4b.py</sub> -c  
+skimmer/metadata/HH4b.yml -y 2023<sub>preBPix</sub>  -d data -e A B C D E F -op  
+skimmer/metadata/ -o picoaod<sub>datasets</sub><sub>data</sub><sub>2023</sub><sub>preBPix.yml</sub> -m  
+metadata/datasets<sub>HH4b</sub><sub>Run3.yml</sub> &#x2013;condor  
+</p>
+
+<p>
+python runner.py -s -p skimmer/processor/skimmer<sub>4b.py</sub> -c  
+skimmer/metadata/HH4b.yml -y 2023<sub>BPix</sub>  -d data -e D E -op  
+skimmer/metadata/ -o picoaod<sub>datasets</sub><sub>data</sub><sub>2023</sub><sub>BPix.yml</sub> -m  
+metadata/datasets<sub>HH4b</sub><sub>Run3.yml</sub> &#x2013;condor  
+</p>
+
+<p>
+Now, in my experience, this will not work, but you can give it a try.  
+It can work if you submit one job at a time for different eras (-e  
+option). If you do this, don't forget to change the name of the output  
+in picoaod<sub>datasets</sub><sub>data</sub><sub>XXXXX.yml</sub>  
+</p>
+
+<p>
+If you want to monitor the jobs in the dashboard while you are  
+connected through ssh, you can open a browser and open  
+[<a href="http://localhost:10200">http://localhost:10200</a>](<a href="http://localhost:10200/">http://localhost:10200/</a>)  
+</p>
+
+<p>
+If you have problems with files not getting located, you can play with  
+the runner['rucio<sub>regex</sub><sub>sites</sub>"] or runner['allowlist<sub>sites</sub>"] in  
+python/skimmer/metadata/HH4b.yml  
+</p>
+
+<p>
+Let me know if you have any questions  
+cheers,
+</p>
+</div>
+
+
+<div id="outline-container-org748e62c" class="outline-3">
+<h3 id="org748e62c">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgb9abb13" class="outline-3">
+<h3 id="orgb9abb13">Links:</h3>
+<div class="outline-text-3" id="text-orgb9abb13">
+<p>
+202410081033
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="run3syntheticdata-20250504105620.html">Run3 Synthetic Data</a></li>
+  <li><a href="run3_hh4b_cutflow_challenge-20250505103646.html">Run3 HH4b Cutflow Challenge</a></li>
+  <li><a href="run3_hemisphere_mixing-20260109085909.html">Run3 Hemisphere Mixing</a></li>
+  <li><a href="Run3 HH4b Cutflow Challenge.html">Run3 HH4b Cutflow Challenge</a></li>
+  <li><a href="../Journal/2025/05-May/01-May-2025-Thursday.html">01 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/04-April/30-April-2025-Wednesday.html">30 April 2025 Wednesday</a></li>
+  <li><a href="../Journal/2024/October 2024.html">October 2024</a></li>
+  <li><a href="../Journal/2024/December 2024.html">December 2024</a></li>
+  <li><a href="../Journal/2024/12-December/17-December-2024-Tuesday.html">17 December 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/12-December/16-December-2024-Monday.html">16 December 2024 Monday</a></li>
+  <li><a href="../Journal/2024/12-December/13-December-2024-Friday.html">13 December 2024 Friday</a></li>
+  <li><a href="../Journal/2024/12-December/12-December-2024-Thursday.html">12 December 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/06-December-2024-Friday.html">06 December 2024 Friday</a></li>
+  <li><a href="../Journal/2024/10-October/30-October-2024-Wednesday.html">30 October 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/10-October/15-October-2024-Tuesday.html">15 October 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/10-October/14-October-2024-Monday.html">14 October 2024 Monday</a></li>
+  <li><a href="../Journal/2024/10-October/13-October-2024-Sunday.html">13 October 2024 Sunday</a></li>
+  <li><a href="../Journal/2024/10-October/12-October-2024-Saturday.html">12 October 2024 Saturday</a></li>
+  <li><a href="../Journal/2024/10-October/11-October-2024-Friday.html">11 October 2024 Friday</a></li>
+  <li><a href="../Journal/2024/10-October/10-October-2024-Thursday.html">10 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/09-October-2024-Wednesday.html">09 October 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/10-October/08-October-2024-Tuesday.html">08 October 2024 Tuesday</a></li>
+</ul>
+</div>
+</body>
+</html>

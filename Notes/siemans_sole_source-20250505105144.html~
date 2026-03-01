@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Siemans Sole Source</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Siemans Sole Source</h1>
+<p>
+Sole Source Justification for Procurement of Nordson Centrifuge
+Introduction
+The Carnegie Mellon University (CMU) High-Energy Physics (HEP) Group with John Alison, Valentina Dutta, and Manfred Paulini studying elementary particle physics currently as members of the CMS Collaboration. The CMS detector is a large multi-purpose experiment operating at the Large Hadron Collider (LHC) at CERN, the European particle physics laboratory near Geneva, Switzerland. Research with the CMS experiment explores the fundamental constituents of matter and has received high priority within the U.S. particle physics program as supported by the Office of High Energy Physics at the U.S. Department of Energy’s (DOE) Office of Science, which is sponsoring this research. CMU physicists have participated in the CMS experiment since 1994 and the CMS experiment is expected to continue operating at the LHC with participation from CMU faculty for the next 20 years. 
+</p>
+
+<p>
+In the high-luminosity phase of the LHC physics program, the accelerator is foreseen to provide an integrated luminosity of about 3000 fb−1 over 10 years of operation starting in 2026. As outlined in the Technical Proposal for the Phase-II upgrade of the CMS detector, several upgrades are planned to address the aging of the present detector elements. One such element of the Phase-II upgrade is the replacement of the current electromagnetic and hadronic endcap calorimeters with a High Granularity Calorimeter (HGC) that has electromagnetic and hadronic sections with excellent transverse and longitudinal segmentation. The scope of the US-CMS collaboration is the construction of all parts for the hadronic section of the endcap calorimeter (CE-H). The U.S. work includes the design and construction of about half the active detectors in the CE-H, which includes both silicon and scintillator sensors, the development of designs and construction procedure for silicon sensor modules, scintillator modules, and cassettes that combine the modules into complete sub-assemblies for installation in the CE-H.
+</p>
+
+<p>
+Module Assembly at CMU
+</p>
+
+<p>
+Carnegie Mellon University has been chosen by the US-CMS upgrade project as one of
+three U.S. Module Assembly Center for the CMS Phase-II Endcap Calorimeter Upgrade
+together with UC Santa Barbara (UCSB) and Texas Tech University (TTU). There are
+in addition three international assembly sites in China, India, and Taiwan working on the
+module assemble for the electromagnetic portion of the endcap calorimeter. 
+</p>
+
+<p>
+The standard modules are the basic building blocks for the hadronic section of the endcap
+calorimeter. A module consists of a base plate, a sheet of kapton gold-plated on one side, a silicon sensor, and a printed circuit board (PCB). Using a robotic device called a gantry, these
+components are epoxied together to form a solid stack and the electrical connections between
+the PCB and the silicon sensor are accomplished by wire bonding. The assembly process
+relevant to this procurement is the operation of the automated gantry. The activities at the
+CMU Standard Module Assembly Site consist of the assembly of about 5000 full-hexagon
+192-channel modules, testing during the assembly process, quality control (QC) at the end of production, and shipping of the modules to the cassette production site. The procurement of several pieces of major equipment is part of setting up the module factories for production scheduled to start with prototype assembly later in 2020. One piece of equipment is a Centrifuge from Nordson to degas the encapsulant to be used with the already purchased Dispensing Robot from Integrated Dispensing Solutions, Inc. to encapsulate the electrical connections on the assembled modules that are established with fine wires through an automated wire-bonder (another piece of equipment that has already been acquired as part of CMU’s Module Assembly Center).
+</p>
+
+
+<p>
+Sole Source Justification
+</p>
+<ul class="org-ul">
+<li>Testing several module at a time is a critcial part of the QA/QC</li>
+<li>These parts are central to the multi module teststand</li>
+</ul>
+
+<p>
+Since the production of the HGC modules is a collaborative effort carried out at several
+assembly sites, it is essential that the same standards and assembly procedures are carried
+out at each of the assembly sites including the use of equipment. The following pre-existing
+requirements were established by CMS for the HGC module production project:
+• list of parts 
+</p>
+
+
+<p>
+The Siemens power distribution systemt is the only model that meets these requirements and
+is the system of choice for the CMS upgrade projects. 
+The other HEP groups in CMS are already operating the same device. To assure quality control of the modules that will be assembled at CMU, it is mandatory to work with the same equipment at CMU. This also allows sharing of software to control operation between the assembly sites.
+For details see attached quote.
+</p>
+
+<p>
+<a href="Draft Siemans Sole Source.html#ID-C1E8A916-E885-4321-8A6F-D9F95E4DF80B">Draft Siemans Sole Source</a>
+</p>
+
+
+<p>
+<b><b>Sole Source Justification for Procurement of Power distribution System</b></b>
+</p>
+
+<p>
+<b><b>Introduction</b></b>
+The Carnegie Mellon University (CMU) High-Energy Physics (HEP) Group with John Alison, Valentina Dutta, and Manfred Paulini studying elementary particle physics currently as members of the CMS Collaboration. The CMS detector is a large multi-purpose experiment operating at the Large Hadron Collider (LHC) at CERN, the European particle physics laboratory near Geneva, Switzerland. Research with the CMS experiment explores the fundamental constituents of matter and has received high priority within the U.S. particle physics program as supported by the Office of High Energy Physics at the U.S. Department of Energy’s (DOE) Office of Science, which is sponsoring this research. CMU physicists have participated in the CMS experiment since 1994 and the CMS experiment is expected to continue operating at the LHC with participation from CMU faculty for the next 20 years. 
+</p>
+
+<p>
+In the high-luminosity phase of the LHC physics program, the accelerator is foreseen to provide an integrated luminosity of about 3000 fb−1 over 10 years of operation starting in 2026. As outlined in the Technical Proposal for the Phase-II upgrade of the CMS detector, several upgrades are planned to address the aging of the present detector elements. One such element of the Phase-II upgrade is the replacement of the current electromagnetic and hadronic endcap calorimeters with a High Granularity Calorimeter (HGC) that has electromagnetic and hadronic sections with excellent transverse and longitudinal segmentation. The scope of the US-CMS collaboration is the construction of all parts for the hadronic section of the endcap calorimeter (CE-H). The U.S. work includes the design and construction of about half the active detectors in the CE-H, which includes both silicon and scintillator sensors, the development of designs and construction procedure for silicon sensor modules, scintillator modules, and cassettes that combine the modules into complete sub-assemblies for installation in the CE-H.
+</p>
+
+<p>
+<b><b>Module Assembly at CMU</b></b>
+Carnegie Mellon University has been chosen by the US-CMS upgrade project as one of
+three U.S. Module Assembly Center for the CMS Phase-II Endcap Calorimeter Upgrade
+together with UC Santa Barbara (UCSB) and Texas Tech University (TTU). There are
+in addition three international assembly sites in China, India, and Taiwan working on the
+module assemble for the electromagnetic portion of the endcap calorimeter. 
+</p>
+
+<p>
+The standard modules are the basic building blocks for the hadronic section of the endcap
+calorimeter. A module consists of a base plate, a sheet of kapton gold-plated on one side, a silicon sensor, and a printed circuit board (PCB). Using a robotic device called a gantry, these
+components are epoxied together to form a solid stack and the electrical connections between
+the PCB and the silicon sensor are accomplished by wire bonding.  The activities at the
+CMU Standard Module Assembly Site consist of the assembly of about 5000 full-hexagon
+192-channel modules, testing during the assembly process, quality control (QC) at the end of production, and shipping of the modules to the cassette production site. The procurement of several pieces of major equipment is part of setting up the module factories for production scheduled to start later this year. The assembly process relevant to this procurement is the testing of the assembled modules.
+</p>
+
+<p>
+<b><b>Sole Source Justification for Siemens Equipment</b></b>
+</p>
+
+<p>
+This document serves as justification for the sole-source procurement of the required Siemens equipment detailed in the attached quote, which includes:
+</p>
+
+<ul class="org-ul">
+<li>CPU 1214C, DC/DC/RELAY (6ES72141HG400XB0)</li>
+<li>SIMATIC S7 MEMORY CARD, 24 MB (6ES79548LF040AA0)</li>
+<li>S7-1200 Analog Input SM 1231 RTD, 8 AI (6ES72315PF320XB0)</li>
+<li>SIMATIC S7-1200 SM1234, 4AI/2AO (6ES72344HE320XB0)</li>
+<li>POWER SUPPLY S7-1200 PM1207 (6EP13321SH71)</li>
+<li>HMI TP700 COMFORT PANEL, 7" TFT (6AV21240GC010AX0)</li>
+<li>Protective Foil for TP700 Comfort Panel (6AV21246GJ000AX0)</li>
+</ul>
+
+<p>
+<b><b>Justification:</b></b>
+</p>
+
+<ul class="org-ul">
+<li><b><b>Critical Capability</b></b>: The Siemens equipment listed uniquely provides the capacity to test multiple modules simultaneously, which is an essential component of our Quality Assurance/Quality Control (QA/QC) protocols.</li>
+
+<li><b><b>Compatibility and Standardization</b></b>: The production of High Granularity Calorimeter (HGC) modules is a collaborative project involving multiple international assembly sites. Uniformity in assembly and testing processes across all sites is mandatory. The Siemens power distribution system is already established as the standardized equipment within the CMS collaboration for HGC module production, ensuring consistency and interoperability.</li>
+
+<li><b><b>Pre-existing Requirements</b></b>: CMS has clearly defined the equipment specifications required for the HGC module production project. The Siemens equipment uniquely fulfills these pre-defined CMS standards.</li>
+
+<li><b><b>Operational Efficiency</b></b>: Utilizing Siemens equipment ensures compatibility with existing software frameworks already developed and deployed at other CMS assembly sites, facilitating seamless collaboration and efficient cross-site operation.</li>
+</ul>
+
+<p>
+Given these factors, Siemens Industry, Inc. is uniquely qualified as the sole provider of the specified equipment necessary for the successful and standardized completion of the CMS upgrade projects, particularly in maintaining consistent QA/QC standards across multiple production sites.
+</p>
+
+<p>
+For detailed descriptions and pricing, please refer to the attached Siemens Quote.
+</p>
+
+
+
+<p>
+202504301411
+</p>
+</div>
+</body>
+</html>

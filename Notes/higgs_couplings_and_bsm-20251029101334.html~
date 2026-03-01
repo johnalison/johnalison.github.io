@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Higgs couplings and BSM</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Higgs couplings and BSM</h1>
+<p>
+(From chatGPT&#x2026;)
+</p>
+
+<div id="outline-container-orgfe58083" class="outline-3">
+<h3 id="orgfe58083">Set-up</h3>
+<div class="outline-text-3" id="text-orgfe58083">
+<ul class="org-ul">
+<li>Let each visible SM partial width scale as
+\(\Gamma_i = \kappa_i^2\,\Gamma_i^{\rm SM}\) .</li>
+<li>Define the visible width–scaling factor
+\(\kappa_H^2 \;\equiv\; \sum_i \kappa_i^2\,{\rm BR}i^{\rm SM}\),</li>
+</ul>
+<p>
+so that the sum of visible partial widths is \(\kappa_H^2\,\Gamma_{\rm SM}\)  (because \(\sum_i \Gamma_i^{\rm SM} = \Gamma_{\rm SM}\)).
+</p>
+<ul class="org-ul">
+<li>Add BSM (invisible/undetected) partial widths \(\Gamma_{\rm BSM}\equiv \Gamma_{\rm inv}+\Gamma_{\rm undet}\).  It is convenient to describe them by branching fractions</li>
+</ul>
+<p>
+\(B_{\rm inv}=\frac{\Gamma_{\rm inv}}{\Gamma_{\rm tot}},\qquad\)     \(B_{\rm undet}=\frac{\Gamma_{\rm undet}}{\Gamma_{\rm tot}},\qquad\)        \(B_{\rm BSM}\equiv B_{\rm inv}+B_{\rm undet}\)
+</p>
+
+<p>
+Then the total width satisfies
+\[
+\Gamma_{\rm tot}
+=\kappa_H^2\,\Gamma_{\rm SM} + \Gamma_{\rm BSM}
+=\kappa_H^2\,\Gamma_{\rm SM} + B_{\rm BSM}\,\Gamma_{\rm tot}.
+\]
+</p>
+
+<p>
+Solve for \(\Gamma_{\rm tot}:\)
+</p>
+
+<p>
+\[
+\Gamma_{\rm tot}\,(1-B_{\rm BSM})=\kappa_H^2\,\Gamma_{\rm SM}
+\;\;\Rightarrow\;\;
+\frac{\Gamma_{\rm tot}}{\Gamma_{\rm SM}}=\frac{\kappa_H^2}{1-B_{\rm BSM}}\;.
+\tag{1}
+\]
+</p>
+</div>
+</div>
+<div id="outline-container-orgdce6766" class="outline-3">
+<h3 id="orgdce6766">Signal strength with BSM width</h3>
+<div class="outline-text-3" id="text-orgdce6766">
+<p>
+For production mode p (coupling \(\kappa_p\)) and decay to final state f (coupling \(\kappa_f\)), the rate scales as
+\[
+\mu_{p,f} \equiv \frac{\sigma_p\times{\rm BR}f}{(\sigma_p\times{\rm BR}f)_{\rm SM}}
+= \frac{\kappa_p^2\,\kappa_f^2}{\displaystyle \frac{\Gamma{\rm tot}}{\Gamma_{\rm SM}}}
+= \frac{\kappa_p^2\,\kappa_f^2}{\kappa_H^2/(1-B_{\rm BSM})}
+= \frac{\kappa_p^2\,\kappa_f^2}{\kappa_H^2}\,\bigl(1-B_{\rm BSM}\bigr).
+\tag{2}
+\]
+This is the standard compact form you’ll often see:
+</p>
+
+<p>
+\[
+\boxed{\;\mu_{p,f} \;=\; \frac{\kappa_p^2\,\kappa_f^2}{\kappa_H^2}\,(1-B_{\rm BSM})\;}
+\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org82fb89c" class="outline-3">
+<h3 id="org82fb89c">The flat direction (degeneracy)</h3>
+<div class="outline-text-3" id="text-org82fb89c">
+<p>
+Consider a common rescaling of all visible couplings:
+</p>
+
+<p>
+\[
+\kappa_i \;\to\; c\,\kappa_i \quad \text{for all visible } i.
+\]
+</p>
+
+<p>
+Then
+</p>
+
+<p>
+\[
+\kappa_p^2 \to c^2\kappa_p^2,\quad
+\kappa_f^2 \to c^2\kappa_f^2,\quad
+\kappa_H^2 \to c^2\kappa_H^2.
+\]
+</p>
+
+<p>
+Plug into box above:
+\[
+\mu_{p,f}\;\to\; \frac{(c^2\kappa_p^2)(c^2\kappa_f^2)}{c^2\kappa_H^2}\,(1-B_{\rm BSM}^\prime)
+= c^2\,\frac{\kappa_p^2\kappa_f^2}{\kappa_H^2}\,(1-B_{\rm BSM}^\prime).
+\]
+</p>
+
+<p>
+To keep \(\mu_{p,f}\) unchanged for every channel, choose a new BSM width such that
+\[
+c^2\,(1-B_{\rm BSM}^\prime) = (1-B_{\rm BSM}) \;\;\Rightarrow\;\;
+1-B_{\rm BSM}^\prime = \frac{1-B_{\rm BSM}}{c^2}.
+\tag{3}
+\]
+Equivalently,
+\[
+B_{\rm BSM}^\prime = 1 - \frac{1-B_{\rm BSM}}{c^2}.
+\]
+As you increase c&gt;1 (make all visible κ’s larger), you can increase the BSM branching fraction
+</p>
+
+<p>
+\(B_{\rm BSM}\) per (3) so that all measured \(\mu_{p,f}\) stay exactly the same.
+</p>
+
+<p>
+That one-parameter family \(\{c,\,B_{\rm BSM}^\prime\}\) is the flat direction—the experimental likelihood is nearly unchanged along it.
+</p>
+
+<p>
+Two sanity checks:
+	•	If B<sub>BSM</sub>=0 initially, then after rescaling by c, you need \(B_{\rm BSM}^\prime = 1-1/c^2\) to keep the same \(\mu\)’s.
+	•	Physicality requires \(0\le B_{\rm BSM}^\prime\le 1\), which merely bounds how far you can push c for a fixed starting point.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2f932a5" class="outline-2">
+<h2 id="org2f932a5">Links</h2>
+<div class="outline-text-2" id="text-org2f932a5">
+<p>
+<a href="experimental_challenges_higgs_ewk_fall_2025-20250926101718.html#ID-6B24EC3C-F1A9-4D60-90A2-D4F9D76EF185">Experimental Challenges Higgs EWK Fall 2025</a>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

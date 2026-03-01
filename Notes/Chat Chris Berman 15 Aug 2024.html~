@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chat Chris Berman 15 Aug 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chat Chris Berman 15 Aug 2024</h1>
+<p>
+Will try to predict the mA distributions with simple PCA and check if it beats the dumb pt binning.  Can check this by binning finer than the binning used to make the dumb templates and see if there is a better description of the mA within the bins. If that works implement the PCA with an autoencoder (eg: use linear activation functions) this should give the same result. If that works can then move to non-linear activiations and improve further.
+</p>
+
+
+
+<div id="outline-container-org456738b" class="outline-2">
+<h2 id="org456738b">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org3aa3603" class="outline-2">
+<h2 id="org3aa3603">Links:</h2>
+<div class="outline-text-2" id="text-org3aa3603">
+<p>
+<a href="Chat Chris Berman 5 Aug 2024.html#ID-7DD96729-F221-4E8E-9FB0-4427992DD9A4">Chat Chris Berman 5 Aug 2024</a>
+<a href="mlforsplittingfunctions-20250504111208.html#ID-2A48C96B-FB7E-4E63-8D38-42958BDEFEF4">MLForSplittingFunctions</a>]
+</p>
+
+
+<p>
+202408151429
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

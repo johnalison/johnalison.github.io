@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAM Variance January 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CAM Variance January 2025</h1>
+
+
+<div id="outline-container-orgf4d4b8b" class="outline-2">
+<h2 id="orgf4d4b8b">402.04.04.04 CE - Standard Module Assembly Site 2</h2>
+<div class="outline-text-2" id="text-orgf4d4b8b">
+<p>
+Schedule VAriance 
+-226k
+</p>
+<ul class="org-ul">
+<li>-206k 
+<ul class="org-ul">
+<li>70k Assemble and test 1-80</li>
+<li>- 140: 81-240</li>
+</ul></li>
+<li>- 17k cleanroom consumables</li>
+</ul>
+
+<p>
+There is a schedule variance of -$226k in the cost account 402.04.04.04 CE - Standard Module Assembly Site 2 (CMU).  The variance is from the assembly and testing of the first 240 modules and the associated cleanroom consumables.
+</p>
+
+<p>
+This variance is expected due to missing input parts: hexaboards and baseplates. 
+At CMU, we now have 42 baseplates and 48 hexaboards and have begun assembly on the first 8 modules.  We still do have the final tooling (Si pickup tools and trays), so module construction is proceeding at a rate of 2/day. This cadence will continue until we exhaust the inventory.  The final tooling is expected in mid March and more hexaboards are expected to start arriving in April.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2cc356b" class="outline-2">
+<h2 id="org2cc356b">Impact</h2>
+<div class="outline-text-2" id="text-org2cc356b">
+<p>
+The activities contributing to the cumulative SV is due to upstream delay of input parts and will be completed later than scheduled.  When the input parts become available the value will be earned and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb50c29d" class="outline-2">
+<h2 id="orgb50c29d">402.04.04.05 CE - Module Assembly at UCSB</h2>
+<div class="outline-text-2" id="text-orgb50c29d">
+<ul class="org-ul">
+<li>-452k 
+<ul class="org-ul">
+<li>-373k + 10
+<ul class="org-ul">
+<li>-216k + -27k + 5 8 %</li>
+<li>-115k + -15k + 5 16%</li>
+</ul></li>
+<li>-30k
+<ul class="org-ul">
+<li>Cleanroom consubalbes</li>
+</ul></li>
+<li>-34k
+<ul class="org-ul">
+<li>Support</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>
+There is a cumulative schedule variance of -$446k in the cost account 
+402.04.04.05 CE - Module Assembly at UCSB.  The variance has two pieces:
+</p>
+<ol class="org-ol">
+<li>-410k Assembly, testing and shipping of full-size equivalent odd-sized modules 1-16%</li>
+<li>- 30k for supporting production at other assembly site</li>
+</ol>
+
+<p>
+This variance is expected due to missing input parts: hexaboards and baseplates. 
+</p>
+
+<p>
+It is expected that UCSB will start the assembly of modules once parts will become available.
+The will start with 12 HD full 120um Ti.
+</p>
+
+<p>
+In the mean time, the ordering of assembly tooling is well underway; the first batch of tools have been checked in shipped to CMU and TTU. The remaining orders have been placed are are expected by the end of February. UCSB has also been updating the gantry software to accommodate  4 modules per run. 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd0cd13c" class="outline-2">
+<h2 id="orgd0cd13c">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org40c8d1d" class="outline-2">
+<h2 id="org40c8d1d">Links:</h2>
+<div class="outline-text-2" id="text-org40c8d1d">
+<p>
+<a href="CAM Variance December 2024.html#ID-565FA994-11F8-488C-9AEB-9A792C9A1747">CAM Variance December 2024</a>
+<a href="CAM Variance.html#ID-F7D4E581-3414-4ADD-B26E-C7D341812ED7">CAM Variance</a>
+</p>
+
+
+
+
+<p>
+202501221143
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

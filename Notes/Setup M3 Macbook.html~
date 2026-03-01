@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Setup M3 Macbook</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Setup M3 Macbook</h1>
+<ul class="org-ul">
+<li>Making account with standard pwd</li>
+<li>Config Terminal</li>
+<li>Got chrome</li>
+<li>logged in to CMU wireless</li>
+<li>Configured keyboard</li>
+<li>Installed bitwarden</li>
+<li>typed git and was promted to install xcode developer tools&#x2026; installed them</li>
+<li>Installed homebrew</li>
+<li>Installed <a href="rectangle.html#ID-A1FFA44A-5B22-4242-9E1D-E0F40E95F2D9">rectangle</a> as a spectacle replacement</li>
+<li>==`brew install emacs</li>
+<li>installed <code>==dotfiles==</code></li>
+<li><a href="GetSSHKey.html#ID-7A269225-1A9C-4540-827A-791B28CBC30D">GetSSHKey</a></li>
+<li>Need to wait until my PSC key has been accepted</li>
+<li>To get keyboard working I had to copy the <code>~/dotfiles/KeyboardLayouts/Jamie.*</code> files to <code>/Library/Keyboard\ Layouts/</code></li>
+<li>Copied pub key to PSC</li>
+<li>Eduroam:
+<ul class="org-ul">
+<li>Requesting a new eduroam from :  <a href="https://ca.cern.ch/ca/">https://ca.cern.ch/ca/</a></li>
+<li>Followed the instructions at those websites</li>
+</ul></li>
+<li><a href="Mattermost Setup.html#ID-709711B8-B4EB-4EC5-AFC4-1FA902E7B02A">Mattermost Setup</a></li>
+<li>`brew install colordiff</li>
+<li>`brew install ispell</li>
+<li>`brew install tmux</li>
+<li>installed Proton VPN</li>
+<li>Installed pdflatex `brew install basictex</li>
+<li><code>brew install --cask caffeine</code></li>
+</ul>
+
+
+
+
+
+
+<div id="outline-container-orgd864cc7" class="outline-2">
+<h2 id="orgd864cc7">To do</h2>
+<div class="outline-text-2" id="text-orgd864cc7">
+<ul class="org-ul">
+<li>Setup backup disk (Will use previous 4TB disk)</li>
+<li>get git tab complete working</li>
+<li>Grid Certificate in keychain</li>
+<li>clean-up old computer
+<ul class="org-ul">
+<li>Presentaiotns</li>
+<li>ROOTHelp to lab ?  &#x2013;&gt; No already has a nice repo</li>
+<li>Consolidate Teaching ?</li>
+</ul></li>
+<li>Copy presentations</li>
+<li>Copy papers</li>
+<li>Copy Documents</li>
+<li>Clone Teaching</li>
+<li>RecLetters</li>
+<li>Setup notebooks</li>
+<li>Eduroam certificate</li>
+<li>ROOT for old 4b code
+<ul class="org-ul">
+<li>install cmake <code>brew install cmake</code></li>
+</ul></li>
+<li>Matter most</li>
+<li>Skype</li>
+<li>Dropbox Use Web</li>
+<li>Google Drive</li>
+<li>Copy music</li>
+<li><p>
+Need to setup ledger 
+</p>
+<ul class="org-ul">
+<li>Need to add pHEX</li>
+</ul>
+<p>
+"I find it easiest to just go to PulseX (launch pulseX app -&gt; trade -&gt; exchange) and then select it in the exchange area. Click the metamask logo on each coin you want to add to your wallet. It auto adds all the information."
+</p></li>
+</ul>
+</div>
+
+
+<div id="outline-container-org7d5f022" class="outline-3">
+<h3 id="org7d5f022">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgc72f975" class="outline-3">
+<h3 id="orgc72f975">Links:</h3>
+<div class="outline-text-3" id="text-orgc72f975">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+<a href="PythonVirtualEnvironment.html#ID-5F4E5437-C88F-4684-B6B8-2690A5D95BC4">PythonVirtualEnvironment</a>
+<a href="DockerSetup.html#ID-ABC065E8-147E-4A06-BE8F-97CE397A30C8">DockerSetup</a>
+</p>
+
+
+<p>
+202407221123
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

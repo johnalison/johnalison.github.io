@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>06 September 2024 Friday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="05-September-2024-Thursday.html">&#8592; Previous</a>
+  <a href="07-September-2024-Saturday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">06 September 2024 Friday</h1>
+
+<div id="outline-container-orgff8f746" class="outline-2">
+<h2 id="orgff8f746">Timeblock</h2>
+<div class="outline-text-2" id="text-orgff8f746">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Quarterly Planning</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">---</td>
+<td class="org-left">------------------</td>
+<td class="org-left">---</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Quarterly Planning</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Gym / Hoops</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Gym / Hoops</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Gym / Hoops</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">4b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">4b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">CMU CMS</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">CMU CMS</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>W:</b>  7 
+<b>DW:</b> 4
+<b>OT:</b> 5
+<b>ex</b> 
+</p>
+</div>
+</div>
+<div id="outline-container-org5c0d15a" class="outline-2">
+<h2 id="org5c0d15a">The ONE thing:</h2>
+<div class="outline-text-2" id="text-org5c0d15a">
+<ul class="org-ul">
+<li>Quarterly Planning</li>
+<li class="off"><code>[&#xa0;]</code> Jet Declustering</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb04a041" class="outline-2">
+<h2 id="orgb04a041">To Do</h2>
+<div class="outline-text-2" id="text-orgb04a041">
+<p>
+[&gt;] CAM Training
+[&gt;] Read HGC TDR
+[&gt;] Update skimmer CI: Compare cutflow during skim vs later processing vs known values
+[&gt;] Update printCutFlow to compare cutflows
+</p>
+<ul class="org-ul">
+<li>Add year option to plotting
+<ul class="org-ul">
+<li>On Saturday</li>
+</ul></li>
+<li>Push ttbar subtraction function</li>
+<li>Add synthetic dataset analyzer</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgacfb6f2" class="outline-2">
+<h2 id="orgacfb6f2">Log</h2>
+<div class="outline-text-2" id="text-orgacfb6f2">
+<p>
+Up at 7 
+</p>
+
+<p>
+M&amp;T to school &#x2026; work by 8:30
+</p>
+</div>
+</div>
+
+<div id="outline-container-org261eacd" class="outline-2">
+<h2 id="org261eacd">Will start reviewing the quarterly plans</h2>
+<div class="outline-text-2" id="text-org261eacd">
+<p>
+<a href="../Summer 2024.html#ID-FE89D80B-04DD-42AE-A538-F10D038C8736">Summer 2024</a>
+<a href="../../Fall2024.html#ID-A78CDE56-4107-441F-A92C-DDE4C396B10A">Fall 2024</a>
+Will be a nice pairing to the progress reports.. added to calendar
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8c755be" class="outline-2">
+<h2 id="org8c755be"><a href="../../../Notes/jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></h2>
+<div class="outline-text-2" id="text-org8c755be">
+<ul class="org-ul">
+<li>See daily log above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbee4a7e" class="outline-2">
+<h2 id="orgbee4a7e">Hoops</h2>
+<div class="outline-text-2" id="text-orgbee4a7e">
+<ul class="org-ul">
+<li>Played Great !!!</li>
+<li>Great Runs 3s and 4s</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd140dfa" class="outline-2">
+<h2 id="orgd140dfa"><a href="../../../Notes/CMU 4b Chats.html#ID-798D0A9C-3BCF-4B3E-AE61-54983415913A">CMU 4b Chats</a></h2>
+<div class="outline-text-2" id="text-orgd140dfa">
+<ul class="org-ul">
+<li>See daily's above</li>
+</ul>
+
+<p>
+More JetDeclustering
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1997f3e" class="outline-2">
+<h2 id="org1997f3e">CMU/CMS Round Table</h2>
+<div class="outline-text-2" id="text-org1997f3e">
+<ul class="org-ul">
+<li>Not much</li>
+</ul>
+
+<p>
+More JetDeclustering &#x2026; Nice progress
+</p>
+
+<p>
+Home with M&amp;T
+</p>
+
+<p>
+Some <a href="../../../Notes/Conspiracy.html#ID-0AB2A3D4-A07A-42B4-A099-41B3D6BC1056">Conspiracy</a>
+</p>
+
+<p>
+To Home Depot.. failed to get propane
+</p>
+
+<p>
+Finished wrtting up <a href="../../../Notes/blackswans-20250504185058.html#ID-1BD6D35A-7F08-4F74-86C1-74514E565975">BlackSwan</a>
+</p>
+
+<p>
+Late night hacking&#x2026; got the CI going. 
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

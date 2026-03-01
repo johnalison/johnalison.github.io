@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAM Variance February 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CAM Variance February 2026</h1>
+
+<div id="outline-container-org98bc6d9" class="outline-2">
+<h2 id="org98bc6d9">402.04.04.04 CE - Standard Module Assembly Site 2</h2>
+<div class="outline-text-2" id="text-org98bc6d9">
+<p>
+There is a cumulative schedule variance of -$702k in the cost account
+402.04.04.04 CE - Standard Module Assembly Site 2 (CMU). The variance
+is from the assembly and testing of the first 48% of modules and the
+associated cleanroom consumables.
+</p>
+
+<p>
+This variance is expected, primarily due to missing input parts
+(baseplates). CMU has received baseplates has resumed production in
+January and February. Shipment of the CuT baseplates from UCSB are
+arrivig soon. CMU has demonstrated the 12 modules / day protocol now.
+We are currently hiring another technician to get us up to 16/day.
+</p>
+
+<p>
+There is a cumulative cost variance of -$526k in cost account
+402.04.04.04 CE - Standard Module Assembly Site 2. This is expected
+and is consistent with the cumulative schedule variance discussed
+below. Schedule delays, due to missing input parts, have caused cost
+variance resulting from labor costs not earning value.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb790cb7" class="outline-2">
+<h2 id="orgb790cb7">Impact</h2>
+<div class="outline-text-2" id="text-orgb790cb7">
+<p>
+The activities contributing to this variance are due to upstream
+delays in receiving input components needed for the final module test
+stands, resulting in completion later than scheduled. Once the
+components become available, the value will be earned, and it should
+not impact the overall schedule.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga8e2b52" class="outline-2">
+<h2 id="orga8e2b52">402.04.04.05 CE - Module Assembly at UCSB</h2>
+<div class="outline-text-2" id="text-orga8e2b52">
+<p>
+765
+</p>
+
+<p>
+There is a cumulative schedule variance of -$765k in cost account
+402.04.04.05 CE - Module Assembly at UCSB. The variance has two
+components: most (90%) is due to the assembly, testing, and shipping
+of full-size equivalent odd-sized modules (1-48%); the remainder is
+for supporting production at other assembly sites. This past month
+UCSB has continued to produce modules with 16/day protocol and is
+catching up earning value given the availible input parts.
+</p>
+
+
+<p>
+There is a cumulative cost variance of -$977k in cost account
+402.04.04.05 CE - Module Assembly at UCSB. This is expected and is
+consistent with the cumulative schedule variance discussed above.
+Schedule delays, due to missing input parts, have caused cost variance
+resulting from labor costs not earning value.
+</p>
+</div>
+
+
+
+<div id="outline-container-org0ecec45" class="outline-3">
+<h3 id="org0ecec45">Current</h3>
+<div class="outline-text-3" id="text-org0ecec45">
+<p>
+There is a current cost variance of -$178k which is the result of
+January actuals reflecting a sum of several months of labor for module
+assembly at UCSB (Task: 402.44.501791 CE-UCSB Module Assembly MIE-C
+UNIV Labor).
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org5a5198c" class="outline-3">
+<h3 id="org5a5198c">Impact</h3>
+<div class="outline-text-3" id="text-org5a5198c">
+<p>
+The activities contributing to this variance are due to upstream
+delays in receiving input components needed for the final module test
+stands, resulting in completion later than scheduled. Input components
+are now becoming available and value is starting to be earned; it
+should not impact the overall schedule.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

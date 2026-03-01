@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NormalizingFlowModels</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">NormalizingFlowModels</h1>
+<p>
+Title: Normalizing flow models
+Source: <a href="https://deepgenerativemodels.github.io/notes/flow/">https://deepgenerativemodels.github.io/notes/flow/</a>
+</p>
+
+
+<ul class="org-ul">
+<li>Autoregressive models provide tractable likelihoods but no direct mechanism for learning features, whereas variational autoencoders can learn feature representations but have intractable marginal likelihoods.  Normalzing Flows combines the best of both worlds, allowing both feature learning and tractable marginal likelihood estimation.</li>
+
+<li>Goal:Map simple distributions (easy to sample and evaluate densities) to complex ones (learned via data).</li>
+
+<li>Change of variables key to mapping on distribution to another</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Deep normalizing flow models require specific architectural structures.
+<ul class="org-ul">
+<li>The input and output dimensions must be the same.</li>
+<li>The transformation must be invertible.</li>
+<li>Computing the determinant of the Jacobian needs to be efficient (and differentiable).</li>
+</ul></li>
+
+<li>Two popular formss of transformations that satisfy these properties are:
+<ul class="org-ul">
+<li>Nonlinear Independent Components Estimation (NICE)</li>
+<li>Real Non-Volume Preserving (RealNVP)</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+NICE: The coupling layer in NICE partitions a variable z into two disjoints subsets: z1 and z2.
+Then applies the following transformation:
+</p>
+
+<p>
+Forward mapping z-&gt;x
+  -) x1=z1, which is an identity mapping.
+  -) x2=z2+m<sub>θ</sub>(z1), where m<sub>θ</sub> is a neural network.
+</p>
+
+<p>
+Inverse mapping x-&gt;z:
+  -) z1=x1, which is an identity mapping.
+  -) z2=x2−m<sub>θ</sub>(x1), which is the inverse of the forward transformation.
+</p>
+
+<p>
+Note: the Jacobian of the forward mapping is lower trangular, whose determinant is simply the product of the elements on the diagonal, which is 1.
+Therefore, this defines a volume preserving transformation
+</p></li>
+
+<li>RealNVP adds scaling factors to the transformation.
+This results in a non-volume preserving transformation.</li>
+</ul>
+
+<p>
+<a href="NormalizingFlows.html#ID-4B15A7F6-CCF8-4401-B929-884CAD6CF0D1">NormalizingFlows</a></p>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="papers.html">Papers</a></li>
+</ul>
+</div>
+</body>
+</html>

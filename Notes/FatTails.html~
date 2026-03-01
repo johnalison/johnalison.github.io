@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FatTails</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">FatTails</h1>
+
+<div id="outline-container-org6d17a10" class="outline-2">
+<h2 id="org6d17a10">Statistical Consequences of Fat Tails (Nassim Nicholas Taleb)</h2>
+<div class="outline-text-2" id="text-org6d17a10">
+<ul class="org-ul">
+<li>The main idea behind the Incerto project is that while there is a lot of uncertainty and opacity about the world, and an incompleteness of information and understanding, there is little, if any, uncertainty about what actions should be taken based on such an incompleteness, in any given situation.</li>
+
+<li>The objective function of an academic department (and person) becomes collecting citations, honors, etc. at the expense of the purity of the subject: for instance many people get stuck in research corners because it is more beneficial to their careers and to their department.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+Black Swans: The idea is to not predict them, but be convex (or at least not concave) to their impact: fragility to a certain class of events is detectable, even measurable (by gauging second order effects and asymmetry of responses), while the statistical attributes of these events may remain elusive.
+</p>
+
+<p>
+It is hard to explain to modelers that we need to learn to work with things we have never seen (or imagined) before, but it is what it is
+</p></li>
+
+<li>The logic of Mediocristan: for something bad to happen, it needs to come from a series of very unlikely events, not a single one.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

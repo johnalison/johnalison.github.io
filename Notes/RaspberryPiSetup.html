@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>RaspberryPiSetup</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">RaspberryPiSetup</h1>
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+<div id="outline-container-org63b6fd7" class="outline-2">
+<h2 id="org63b6fd7">Format microSD card</h2>
+<div class="outline-text-2" id="text-org63b6fd7">
+<p>
+-&gt; Applications / SD Card formatter 
+</p>
+
+<p>
+Select card 
+Check that card info is as expected
+Select Quick format
+Give volume name eg: NOOBS
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgdc01479" class="outline-2">
+<h2 id="orgdc01479">Download NOOBS:</h2>
+<div class="outline-text-2" id="text-orgdc01479">
+<p>
+<a href="https://www.raspberrypi.org/downloads/noobs/">https://www.raspberrypi.org/downloads/noobs/</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge400ed7" class="outline-2">
+<h2 id="orge400ed7">open ~/Downloads/NOOBS<sub>v3</sub><sub>3</sub><sub>1.zip</sub></h2>
+</div>
+
+<div id="outline-container-org021bce7" class="outline-2">
+<h2 id="org021bce7">cp -r  NOOBS<sub>v3</sub><sub>3</sub><sub>1</sub>/* <i>Volumes/NOOBS</i></h2>
+<div class="outline-text-2" id="text-org021bce7">
+<p>
+&#x2013;&gt; DONEZO
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2d28c64" class="outline-2">
+<h2 id="org2d28c64">To get root to complie</h2>
+<div class="outline-text-2" id="text-org2d28c64">
+<p>
+sudo apt-get install libxpm-dev
+</p>
+
+<p>
+sudo apt-get install -y libxft-dev
+</p>
+
+<p>
+sudo apt-get install libxext-dev
+</p>
+
+<p>
+cmake ../root-6.20.04  -DCMAKE<sub>SHARED</sub><sub>LINKER</sub><sub>FLAGS</sub>=-latomic</p>
+</div>
+</div>
+</div>
+</body>
+</html>

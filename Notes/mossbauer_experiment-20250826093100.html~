@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mossbauer Experiment</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Mossbauer Experiment</h1>
+
+
+<div id="outline-container-org3c2def3" class="outline-2">
+<h2 id="org3c2def3">Recoilless Emission</h2>
+<div class="outline-text-2" id="text-org3c2def3">
+<ul class="org-ul">
+<li>Start with a nucleus:  Fe<sup>57</sup> : emits a photon (14.4 keV)
+<ul class="org-ul">
+<li>There is a nuclear recoil to conserve momentum.. Takes away some energy
+<ul class="org-ul">
+<li>Photon energy slightly less than the energy gap</li>
+</ul></li>
+<li>Consequence: This means that iron foil is transparent to its own radiation.</li>
+</ul></li>
+</ul>
+<p>
+Mossbauer trick: recoil is against the lattice. (quantum effect) 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc7f52ab" class="outline-2">
+<h2 id="orgc7f52ab">Can now use this to test the local environment</h2>
+<div class="outline-text-2" id="text-orgc7f52ab">
+<ul class="org-ul">
+<li>Electron density</li>
+<li>Nuclear Magnetic fields</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org85c6c4b" class="outline-2">
+<h2 id="org85c6c4b">Energy Levels</h2>
+<div class="outline-text-2" id="text-org85c6c4b">
+<p>
+Source vs observer
+</p>
+</div>
+</div>
+
+<div id="outline-container-org311da7a" class="outline-2">
+<h2 id="org311da7a">Goal</h2>
+<div class="outline-text-2" id="text-org311da7a">
+<ul class="org-ul">
+<li>How big is the magnetic field ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org299f36e" class="outline-2">
+<h2 id="org299f36e">Experimental Setup</h2>
+<div class="outline-text-2" id="text-org299f36e">
+<ul class="org-ul">
+<li>piston =&gt; Doppler shift only need mm/s</li>
+<li>Geiger counter</li>
+</ul>
+
+<p>
+Links: 
+ <a href="MPL.html#ID-FC35DC98-A2A5-42F2-A440-42F751A8472E">MPL</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Higgs Potential Algebra</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Higgs Potential Algebra</h1>
+
+
+<div id="outline-container-orgcdb8636" class="outline-2">
+<h2 id="orgcdb8636">One convention for Higgs potential</h2>
+<div class="outline-text-2" id="text-orgcdb8636">
+<p>
+\[
+V(\phi) = - \mu^2\phi^2+ \lambda \phi^4
+\]
+</p>
+
+<p>
+Find the minimum by computing 
+</p>
+
+<p>
+\[
+\frac{\partial V}{\partial \phi} = - 2 \mu^2\phi+ 4\lambda \phi^3 = \phi ( 4\lambda \phi^2 - 2 \mu^2)
+\]
+</p>
+
+<p>
+Minimum when \(\frac{\partial V}{\partial \phi} = 0\)  =&gt; \(\phi = 0\) or 
+</p>
+
+<p>
+\[
+\phi^2 = \frac{\mu^2}{2\lambda}
+\]
+or 
+</p>
+
+<p>
+\[
+\phi = \pm \sqrt{\frac{\mu^2}{2\lambda}}
+\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org225484b" class="outline-2">
+<h2 id="org225484b">Alternative convention with factors of 2</h2>
+<div class="outline-text-2" id="text-org225484b">
+<p>
+\[
+V(\phi) = - \frac{\mu^2}{2}\phi^2+ \frac{\lambda}{4} \phi^4
+\]
+then 
+</p>
+
+<p>
+\[
+\frac{\partial V}{\partial \phi} = - \mu^2\phi+ \lambda \phi^3 = \phi (\lambda \phi^2 - \mu^2)
+\]
+and  min at \(\phi = 0\) or 
+</p>
+
+<p>
+\[
+\phi = \pm \sqrt{\frac{\mu^2}{\lambda}} = \pm \frac{\mu}{\sqrt{\lambda}}
+\]
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org70c088a" class="outline-2">
+<h2 id="org70c088a">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org56fb9f1" class="outline-2">
+<h2 id="org56fb9f1">Links:</h2>
+<div class="outline-text-2" id="text-org56fb9f1">
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+[BROKEN LINK: 6J7K8L9M-0N1O-2P3Q-4R5S-6T7U8V9W0X1Y]
+</p>
+
+
+
+
+<p>
+202410191113
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

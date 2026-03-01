@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 22 November 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 22 November 2024</h1>
+<p>
+A lot of recent woes. A tree branch fell on the house, punctured the roof, and water damanged the celling in Teddys room. This has resulted in the tree bing removed and a renovation of Teddys room. Sleeping in the basement for the foreseeable future. 
+</p>
+
+<p>
+My habits have all been good. On the margin, should be eating less and lifting more. Zettlekasten has been improved; starting to write my notes in my own words. Still need to push harder on meditation. 
+</p>
+
+<p>
+Teaching the Osher class has been a lot of fun and not much work. Students seem to like it. I will plan to do another series on Experimental Particle Physics.
+</p>
+
+<div id="outline-container-org34faf32" class="outline-2">
+<h2 id="org34faf32">4b</h2>
+<div class="outline-text-2" id="text-org34faf32">
+<p>
+Have been pushing to cut a new version of the AN. This is very close. I have updated a lot of the plotting code and fixed some subtle bugs in the cutflow CIs.  We are now in a good state.  We need to finalize the binning (AE is close) and update the combine plots before cutting the new AN version and replying to comments. 
+</p>
+
+<p>
+Chuyuan has been getting nice physics results from the classifier. This is finally in a place that can be used.  Think the time is right for me to try to redo the FvT fits with the new code.
+</p>
+
+<p>
+Sindhu has made almost no progress. She has fallen victim to some legitimate bugs in the mixed data, but is not really able to fix them. Her next next steps are to look into the modeling of m4j in the mixed data. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org40abb87" class="outline-2">
+<h2 id="org40abb87">HGC</h2>
+<div class="outline-text-2" id="text-org40abb87">
+<p>
+Lots of progress here. Spent a lot of time trying to ramp personel.  Will make an offer to Andre tomorrow and ill interview Ornella (as lab coordinator) and Josh (as lab tech). Hopefully we will get all three. We are almost ready to start production. We are waiting on transfer tape, but can then start building the first 8 modules. 
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org869ce98" class="outline-2">
+<h2 id="org869ce98">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org4f8652a" class="outline-2">
+<h2 id="org4f8652a">Links:</h2>
+<div class="outline-text-2" id="text-org4f8652a">
+<p>
+<a href="ProgressReport 8 November 2024.html#ID-E0DA5E93-E78C-487B-98E9-B73208285D94">ProgressReport 8 November 2024</a>
+<a href="Progress Reports.html#ID-87B6EFF9-9731-480E-8CAB-89EE13CDDF27">Progress Reports</a>
+</p>
+
+
+<p>
+202411220926
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

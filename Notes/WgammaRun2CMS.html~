@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WgammaRun2CMS</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">WgammaRun2CMS</h1>
+<p>
+-) Figure 2 labels on the feynman diagram
+</p>
+
+<ul class="org-ul">
+<li>To remove events with a misreconstructed /pT due to the jet energy resolution, events are</li>
+</ul>
+<p>
+218 discarded where at least one jet has a transverse momentum (pjet) greater than 30GeV, and
+219 ∆φmin(jet, /pT ) &gt; 0.5.
+</p>
+
+<ul class="org-ul">
+<li>Should be dphi &lt; 0.5 ?!</li>
+<li>What is the efficeincy of this selection ? Large theory uncertianties associated with the modeling of the QCD radiation ?
+Done see an explicit ISR/FSR modelling uncertianty in Section 8. Is there one ?</li>
+
+<li>Templates for spike and beam halo are obtained from dedicated control regions in data.</li>
+</ul>
+
+<p>
+Would be good to say a few senstances about how these are defined.
+</p>
+
+<p>
+l303) Seems like this beam halo veto is new to this analyis.
+      Might be nice to include a plot showing the rejection. (and the fit to phi)
+</p>
+
+
+<p>
+-Section 10.1:
+  Suprised to not see the jet-veto here.
+  How much of the fiducial cross section comes from evetns that would fail the jet veto used in the measurement ?
+</p>
+
+
+<p>
+<a href="CMS.html#ID-D0F94G67-9C3F-5E39-0G0D-F9G2588766EB">CMS</a></p>
+</div>
+</body>
+</html>

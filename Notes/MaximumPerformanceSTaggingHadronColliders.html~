@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MaximumPerformanceSTaggingHadronColliders</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">MaximumPerformanceSTaggingHadronColliders</h1>
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+[BROKEN LINK: LeptonColliders]
+</p>
+
+<ul class="org-ul">
+<li>Cherenkov detectors were used to identify s-jets, exploiting their identification power for charged kaons.</li>
+
+<li>strange-hadrons, such as kaons and lambda baryons, do not only appear in the fragmentation of s-quarks but also are frequently part of d- and u-jets.
+identification of these strange-hadrons is experimentally challenging:</li>
+
+<li>K+/- and k<sub>L</sub> are long-lived.
+K+/- can in principle, be distinguished from other charged particles with the use of Cherenkov detectors or dE/dx
+     (Neither viable at the LHC)</li>
+
+<li>The s-tagging performance for a tagger based on tracking information was found to be similar for d- and u-jets [44], so that we limit ourselves in this study to 𝑑-jets as the only background class.
+(Really, no infor in jet charge?)</li>
+
+<li>the leading particle tends to be a strange-hadron (mostly kaons), while for d-jets, the leading particle is more likely to be a light hadron — in particular a pion</li>
+
+<li></li>
+</ul>
+</div>
+</body>
+</html>

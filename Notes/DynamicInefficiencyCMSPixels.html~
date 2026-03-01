@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DynamicInefficiencyCMSPixels</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">DynamicInefficiencyCMSPixels</h1>
+<p>
+<a href="https://iopscience.iop.org/article/10.1088/1748-0221/10/05/C05006/pdf">https://iopscience.iop.org/article/10.1088/1748-0221/10/05/C05006/pdf</a>
+</p>
+
+<p>
+<a href="CMS.html#ID-D0F94G67-9C3F-5E39-0G0D-F9G2588766EB">CMS</a>
+</p>
+
+
+<ul class="org-ul">
+<li>The sensor efficiency is defined by excluding the following sources of inefficiency: permanently damaged detector parts, modules with readout errors</li>
+</ul>
+<p>
+and Single Event Upsets (SEU).
+</p>
+
+<ul class="org-ul">
+<li>The impact of SEUs is minimized by reprogramming the detector during data taking. The SEU is not yet included in the CMS simulation software since it has a minor effect on recorded data</li>
+
+<li>Excluding all the above efficiency decreasing effects from the measurement, there remains a significant efficiency loss that we call the dynamic inefficiency</li>
+
+<li>In a series of high multiplicity events, the buffers (mainly data and time-stamp buffers) of the ROC (Pixel readout chip) may overflow, resulting in data losses.
+The largest part of the inefficiency comes from the overflow of the time-stamp buffers in the double columns.
+This inefficiency dynamic in the sense that it is not permanent, instead the size of the effect depends on trigger rate, previous and current events</li>
+</ul>
+</div>
+</body>
+</html>

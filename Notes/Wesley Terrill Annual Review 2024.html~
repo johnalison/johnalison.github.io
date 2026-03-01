@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wesley Terrill Annual Review 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Wesley Terrill Annual Review 2024</h1>
+
+
+<div id="outline-container-orgb5f6ac1" class="outline-2">
+<h2 id="orgb5f6ac1">Summary of research progress within past year.</h2>
+<div class="outline-text-2" id="text-orgb5f6ac1">
+<p>
+In the past year, Wes worked on developing the displaced electron channel for the search for compressed mass states. This included designing the signal region associated with the channel, estimating the largest background sources (fakes), as well as calculating the correction factors (scale factors) required for the analysis. In addition to integrating the displaced electron channel, he worked on improvements to the signal modeling. In particular, corrections to the W* and Z* decay modes due to massive decay products. The analysis was allowed to look at data in the signal region by the CMS collaboration. He has been working on understanding the observed data. The analysis is close to internal approval by the CMS collaboration as well as a publication of the results.
+</p>
+
+<p>
+In addition to working on the search for compressed mass states, Wes has made measurements of High Granularity Calorimeter (HGCAL) modules assembled with neutron irradiated sensors. Since last years early noise measurements, he has worked on including light injection measurements, where IR light is injected into the center of one of the cells on the surface of the silicon sensor. These results are in agreement with measurements taken on single diodes. He is working on an instrumentation paper detailing the results of the noise and light injection results.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2a66153" class="outline-2">
+<h2 id="org2a66153">Summary of research plan and recommendations of committee:</h2>
+<div class="outline-text-2" id="text-org2a66153">
+<p>
+The committee was impressed with Wes' progress, both on the analysis side and with the HGC upgrade project. In particular, the presentation of the analysis for non-HEP experts was significantly improved. 
+</p>
+
+<p>
+The committee recommends that Wes focus on getting his papers (HGC testing and Low-pt lepton + MeT search) published. In parallel, he should focus on "end-game": set a thesis defense date, write draft of the thesis, and start preparing post-doc applications. We would also encourage Wes to give talks/seminars at a number of universities after back from CERN. 
+</p>
+</div>
+</div>
+<div id="outline-container-orgb6c88a9" class="outline-2">
+<h2 id="orgb6c88a9">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgaa9e639" class="outline-2">
+<h2 id="orgaa9e639">Links:</h2>
+<div class="outline-text-2" id="text-orgaa9e639">
+<p>
+202412181615
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

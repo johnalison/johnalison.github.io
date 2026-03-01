@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Substack ideas</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Substack ideas</h1>
+<ul class="org-ul">
+<li>Higgs series (Write up my lecture series)</li>
+<li>Tips/Tricks for graduate students</li>
+<li>High Energy Physics  (Write up my talks)</li>
+<li>Lectures ?</li>
+</ul>
+
+<div id="outline-container-org24b996e" class="outline-2">
+<h2 id="org24b996e">ABCD Method</h2>
+</div>
+
+<div id="outline-container-org6ee3187" class="outline-2">
+<h2 id="org6ee3187">The physics behind "Slow is smooth, smooth is fast"</h2>
+<div class="outline-text-2" id="text-org6ee3187">
+<ul class="org-ul">
+<li>I am a big fan of Mental models: They are an explicit way of operationalizing idea "viewing things from a different POV".
+Often good advice, btu not always clear how you can do it.</li>
+<li>Slow is smooth and smooth is fast</li>
+<li>Drude model</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0c994f2" class="outline-2">
+<h2 id="org0c994f2">Reliabilty</h2>
+<div class="outline-text-2" id="text-org0c994f2">
+<p>
+<a href="You have nothing without Reliability.html#ID-FD09F6DE-0BFB-4C85-AC46-FC1029078632">You have nothing without Reliability</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

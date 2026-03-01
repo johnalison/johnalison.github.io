@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC Meeting 6 June 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">MAC Meeting 6 June 2025</h1>
+<p>
+<a href="https://indico.cern.ch/event/1554499/">https://indico.cern.ch/event/1554499/</a>
+</p>
+
+<div id="outline-container-orgd9ff514" class="outline-2">
+<h2 id="orgd9ff514">TTU</h2>
+<div class="outline-text-2" id="text-orgd9ff514">
+<ul class="org-ul">
+<li>Has 4/run going</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7f20e38" class="outline-2">
+<h2 id="org7f20e38">CMU</h2>
+<div class="outline-text-2" id="text-org7f20e38">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf0a2609" class="outline-2">
+<h2 id="orgf0a2609">UCSB Report</h2>
+<div class="outline-text-2" id="text-orgf0a2609">
+<ul class="org-ul">
+<li>First v3B HD top module</li>
+<li>LD Top tooling being commissioned: Have hexaboards need Ti baseplates</li>
+<li>LD 5 hexaboard testing working</li>
+<li>Thermal Cycles of Ti HDFulls (12)</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

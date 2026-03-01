@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HemisphereMixing</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">HemisphereMixing</h1>
+<p>
+Idea is to replace hemispheres (halves of events) with hemispheres from other events. Replace is done &#x2013; using a metric between hemisphere &#x2013; such that global event features are persevered, but the substructure within a hemisphere is scrambled: altered in a ~random way. 
+The key is defining the metric such that the scrambling of the hemispheres preserves the average kinematics of the background which suppressing signal.
+</p>
+
+
+
+
+<div id="org4f53903" class="figure">
+<p><img src="2026-02-26_22-36-40_screenshot.png" alt="2026-02-26_22-36-40_screenshot.png" />
+</p>
+</div>
+
+
+
+
+<div id="outline-container-org53868b2" class="outline-2">
+<h2 id="org53868b2">Follow-ups</h2>
+<div class="outline-text-2" id="text-org53868b2">
+<ul class="org-ul">
+<li>How can this be improved <a href="jetdeclusteringalgorithm-20250504110934.html#ID-81F11099-A998-406F-AEFD-1B626D15ADC9">JetDeClusteringAlgorithm</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org481c757" class="outline-2">
+<h2 id="org481c757">Links</h2>
+<div class="outline-text-2" id="text-org481c757">
+<p>
+<a href="problemswithhemispheremixing-20250504111619.html#ID-D570BA9A-4AA2-4336-9688-7E5A2FEA0076">ProblemsWithHemisphereMixing</a>
+<a href="hemispheremixingmotivation-20250504111447.html#ID-B18D3F12-BB0F-499B-A962-E34750B09AB9">HemisphereMixingMotivation</a>
+<a href="hig_22_011-20250504113037.html#ID-7AEA27C2-708B-4D7A-9520-2B52761682E3">HIG-22-011</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

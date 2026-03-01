@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Run3 Synthetic Data</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Run3 Synthetic Data</h1>
+<p>
+<a href="Splitting PDF Archive.html#ID-ACA7BE21-E10D-42BB-AB59-F3400F9F1686">Splitting PDF Archive</a>
+</p>
+
+<div id="outline-container-org3c83bdc" class="outline-2">
+<h2 id="org3c83bdc">To Do</h2>
+<div class="outline-text-2" id="text-org3c83bdc">
+<ul class="org-ul">
+<li>New cluster splitting templates</li>
+</ul>
+<p>
+Feedback from Marina:
+</p>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> add the TrigObj collection</li>
+<li>Move pt cut to 35</li>
+<li class="off"><code>[&#xa0;]</code> Jets with 3 medium b-jets</li>
+<li class="off"><code>[&#xa0;]</code> How to get dressed bs in output files ?</li>
+<li class="off"><code>[&#xa0;]</code> How to properly boost with the mass ?</li>
+</ul>
+
+<p>
+<code>2025_v1</code>: with new pdf 00-10-00
+</p>
+
+<p>
+<code>2025_v1</code>
+</p>
+<ul class="org-ul">
+<li>Like v9 but Using new Skims</li>
+</ul>
+
+<p>
+<code>v9</code>: 
+</p>
+<ul class="org-ul">
+<li>like v8 but now with the 00-09-02 pdfs (using the rotated masses for the ak4 jets pdfs)</li>
+</ul>
+
+
+<p>
+<code>v8</code>: 
+</p>
+<ul class="org-ul">
+<li>like v7 but with 00-09-01 pdfs (using new jet calibration)</li>
+</ul>
+
+<p>
+<code>v7</code>: 
+</p>
+<ul class="org-ul">
+<li>like v6 but only apply the b-reg corrections once</li>
+</ul>
+
+<p>
+v6: 
+</p>
+<ul class="org-ul">
+<li>like v5 but now rho correction when declustering.</li>
+</ul>
+
+<p>
+v5: 
+</p>
+<ul class="org-ul">
+<li>like v4, but with splitting functions that use the JEC calbiration</li>
+</ul>
+
+<p>
+v4: 
+</p>
+<ul class="org-ul">
+<li>like v3 but with new JEC calibration and btag filter at 30 GeV</li>
+</ul>
+
+<p>
+<b>v3</b>
+</p>
+<ul class="org-ul">
+<li>new skims (btag filter at 40 GeV)</li>
+</ul>
+
+<p>
+<b>v1</b>
+</p>
+<ul class="org-ul">
+<li>202*<sub>v1</sub></li>
+<li>Problems:   no TTbar subtraction / wrong btagging / wrong breg Corrections</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb58ff86" class="outline-2">
+<h2 id="orgb58ff86">Daily Logs</h2>
+<div class="outline-text-2" id="text-orgb58ff86">
+</div>
+<div id="outline-container-org1f33214" class="outline-3">
+<h3 id="org1f33214"><a href="../Journal/2026/02-February/26-February-2026-Thursday.html#ID-AA8BF4B2-D7DE-44D6-8683-D638A084A75B">26 February 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org1f33214">
+<ul class="org-ul">
+<li>Looks like norm different b/c eta selection</li>
+</ul>
+
+<div id="org49df7a0" class="figure">
+<p><img src="Daily_Logs/2026-02-26_12-15-48_screenshot.png" alt="2026-02-26_12-15-48_screenshot.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5ff2f40" class="outline-3">
+<h3 id="org5ff2f40"><a href="../Journal/2026/02-February/25-February-2026-Wednesday.html#ID-0BF3E3C8-132A-48A5-8565-875F7979197A">25 February 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org5ff2f40">
+<ul class="org-ul">
+<li>Confirmed that the ttbar PSData is being filled in the DeClustered data</li>
+<li>Running clustering without tt subtraction&#x2026; finished</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org0700b29" class="outline-3">
+<h3 id="org0700b29"><a href="../Journal/2026/02-February/24-February-2026-Tuesday.html#ID-B1ACA174-8A6C-40DC-9E44-3A4F95416D76">24 February 2026 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org0700b29">
+<ul class="org-ul">
+<li>Got the new clustered data&#x2026; looks reasonable</li>
+<li><p>
+Making splitting pdfs
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">./run_container python  coffea4bees/jet_clustering/make_jet_splitting_PDFs.py output/synthetic_dataset_cluster_Run3/synthetic_datasets_Run3_ttSub.coffea  --years Run3   --out coffea4bees/jet_clustering/jet-splitting-PDFs-00-11-00
+</pre>
+</div></li>
+
+<li>Implement ttbar subtraction with FvT in <code>make_declustered_data_4b.py</code></li>
+<li>Setting up make dataset scripts</li>
+<li>Making the synthetic dataset
+<code>./run_container source coffea4bees/scripts/synthetic-dataset-make-dataset-Run3-all.sh</code></li>
+<li><p>
+Fails with
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">
+ERROR    The whole dataset is missing: {'data_2023_preBPixF', 'data_2022_preEED', 'data_2023_preBPixE', 'data_2022_EEG', 'data_2023_preBPixA', 'data_2023_preBPixB',                picoaod.py:288
+                               'data_2022_preEEC', 'data_2023_preBPixD', 'data_2023_BPixD', 'data_2023_BPixE', 'data_2022_preEEB', 'data_2022_EEE', 'data_2023_preBPixC', 'data_2022_EEF'}                              
+  Traceback (most recent call last):
+    File "/srv/runner.py", line 1121, in &lt;module&gt;
+      run_job(fileset, configs, config_runner, executor, executor_args, args, client, tstart)
+    File "/srv/runner.py", line 191, in wrapper
+      result = func(*args, **kwargs)
+    File "/srv/runner.py", line 761, in run_job
+      output = process_skimming_output(output, fileset, configs, config_runner, args, client)
+    File "/srv/runner.py", line 626, in process_skimming_output
+      output, complete = integrity_check(fileset, output)
+    File "/srv/src/skimmer/picoaod.py", line 329, in integrity_check
+      output[dataset].pop("source")
+
+</pre>
+</div></li>
+<li>Testing locally &#x2026; b/c of the missing skip collections and <code>skip_collections</code> and <code>skip_branches</code>&#x2026;!</li>
+<li>Rerunning&#x2026; finished</li>
+<li>Made datasets &#x2026;</li>
+<li>Analyze resutls &#x2026; see less data than before &#x2026;
+<ul class="org-ul">
+<li>Why less data than before ???</li>
+<li class="on"><code>[X]</code> Am I missing the ttbar ? &#x2026; no &#x2026; at least ttbar only looks good</li>
+</ul></li>
+<li>Running with SvB</li>
+</ul>
+<p>
+580350 (Declustered)  vs (new) 592279.0 and (old) 668447.0
+</p>
+<ul class="org-ul">
+<li>Decluster with current code with out ttbar subtraction ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6f4a002" class="outline-3">
+<h3 id="org6f4a002"><a href="../Journal/2026/02-February/23-February-2026-Monday.html#ID-54BE58EA-3ADB-44B3-9EEB-C91104A76898">23 February 2026 Monday</a></h3>
+<div class="outline-text-3" id="text-org6f4a002">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Make cluster splittings with ttbar subtraction</li>
+<li class="on"><code>[X]</code> ttbar subtraction when DeClustering</li>
+<li>Setting up Run3 clustering &#x2026;</li>
+<li>Mote to subtracting TTbar with FvT weights  in process<sub>cluster</sub><sub>4b.py</sub></li>
+<li><code>./run_container source coffea4bees/scripts/synthetic-dataset-cluster-Run3.sh</code></li>
+<li>Make clustering pdfs</li>
+<li class="on"><code>[X]</code> Compare   to w/TT PDFs</li>
+<li>Was still running with test=True</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3c21a3c" class="outline-3">
+<h3 id="org3c21a3c"><a href="../Journal/2025/05-May/30-May-2025-Friday.html#ID-85F8A980-7B09-4F5D-AE36-BCD38F6B390C">30 May 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org3c21a3c">
+<ul class="org-ul">
+<li>Looking into merging "by Hand"</li>
+<li>On cmslpc323</li>
+<li>making <code>merge_synthetic_data_by_hand.py</code></li>
+<li>Debugging&#x2026; Got it working!</li>
+<li>Datasets <code>data_2022_EEE</code> and <code>data_2022_EEF</code> were merged with the wrong chunksize</li>
+<li>I think I know what Im doing&#x2026; Aborting this mission and now trying the other option&#x2026; Specify campaign</li>
+<li>Re:submitted on cmslpc323</li>
+<li>Think it ran&#x2026; Runing the analyzer</li>
+<li>Port forwarding with <code>ssh  -XY -L  10200:localhost:10200  cmslpc323</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8f431fe" class="outline-3">
+<h3 id="org8f431fe"><a href="../Journal/2025/05-May/29-May-2025-Thursday.html#ID-5C744739-8519-4666-8260-9DF5EE3C971D">29 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org8f431fe">
+<ul class="org-ul">
+<li>Lowering the jet pt threshold for pdf making to 20 GeV</li>
+<li>Running clustering on cmslpc346
+<code>python runner.py -o synthetic_datasets_Run3_2025_skims_20GeV.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix  -op output/synthetic_dataset_cluster  -m metadata/datasets_HH4b_Run3_fourTag_2025_skims.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml --condor</code></li>
+<li>Still some threshold effect at 30 GeV&#x2026; probably from skimming.</li>
+<li>Making pdfs 00-10-01
+<code>python  jet_clustering/make_jet_splitting_PDFs.py output/synthetic_dataset_cluster/synthetic_datasets_Run3_2025_skims_20GeV.coffea  --years Run3   --out jet_clustering/jet-splitting-PDFs-00-10-01</code></li>
+<li>Will make <code>2025_v3</code></li>
+<li>Fails with
+<code>ERROR    Missing chunk: [5181, 10362) in "root://cmseos.fnal.gov//store/user/jda102/XX4b/2025_Run3_skims/data_2023_preBPixB/picoAOD_fourTag.root"                                                                       picoaod.py:314
+                    ERROR    The jobs above failed. Merging is skipped.</code></li>
+<li>Rerunning with only preBPix and era B</li>
+<li>How to merge, if this suceeds ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org96a6148" class="outline-3">
+<h3 id="org96a6148"><a href="../Journal/2025/05-May/28-May-2025-Wednesday.html#ID-F3FE3164-526A-4488-AE5B-AA3D6C474366">28 May 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org96a6148">
+<ul class="org-ul">
+<li>Making presentations:
+<ul class="org-ul">
+<li><code>py jet_clustering/compare_datasets.py output/synthetic_dataset_analyze_all/synthetic_data_Run3_2025_v2_2seeds.coffea --out analysis/plots_synthetic_datasets_all_10-00-00 -m plots/metadata/plotsSyntheticVsData2.yml --year Run3</code></li>
+<li><code>make jetclustering_slides_Run3 TEXFILENAME=SyntheticDatasets-10-00-00 NEW_DIR=analysis\\/plots_synthetic_datasets_all_10-00-00</code></li>
+</ul></li>
+<li>Merging with master&#x2026;</li>
+<li>Need to fix CI&#x2026; Updated cutflow&#x2026; Had to loosen critiera for Run3 synthetic</li>
+<li>Merged!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6cf5a27" class="outline-3">
+<h3 id="org6cf5a27"><a href="../Journal/2025/05-May/22-May-2025-Thursday.html#ID-D421E911-4489-455F-94BC-D30746F01B5F">22 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org6cf5a27">
+<ul class="org-ul">
+<li>On <b>cmslpc302</b></li>
+<li>Launching seed 1
+<code>source  scripts/synthetic-dataset-make-dataset-all.sh</code></li>
+<li>running&#x2026;Failed&#x2026;maybe? checking</li>
+<li>All the output files are there&#x2026;will analyze</li>
+<li>added 2 samples to yaml running with from <code>source  scripts/synthetic-dataset-analyze-all.sh</code></li>
+<li>There is a missing input file&#x2026; Re-making.</li>
+<li>Failed again! Remaking only preBPix&#x2026; no failures</li>
+<li>Analyzing again&#x2026; looks good&#x2026; sent!</li>
+<li>Synthetic data is mismodelled at the very lowest SvB .. look into</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc3bc896" class="outline-3">
+<h3 id="orgc3bc896"><a href="../Journal/2025/05-May/09-May-2025-Friday.html#ID-106F8023-40DD-4A2F-9E89-9AA3AF34BB9D">09 May 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgc3bc896">
+<ul class="org-ul">
+<li>Made application of bjet regionssion consistent in cluster<sub>4b</sub> processor</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org21a14a5" class="outline-3">
+<h3 id="org21a14a5">Rerunnig clustering only on 2022<sub>preEE</sub>:</h3>
+<div class="outline-text-3" id="text-org21a14a5">
+<p>
+<code>python runner.py -o synthetic_datasets_Run3_2025_skims_fixCanJetPt.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_preEE   -op output/synthetic_dataset_cluster  -m metadata/datasets_HH4b_Run3_fourTag_2025_skims.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml --condor</code>
+</p>
+<ul class="org-ul">
+<li>On <b>cmslpc323</b></li>
+<li>Will then compare jet pTs to see if there was a change</li>
+<li>Results identical &#x2026; No need to remake</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3923bee" class="outline-3">
+<h3 id="org3923bee"><a href="../Journal/2025/05-May/08-May-2025-Thursday.html#ID-27ADAE5E-4314-492A-A849-98B98F6C44B3">08 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org3923bee">
+<p>
+ON cmslpc344
+</p>
+</div>
+</div>
+<div id="outline-container-org10cb8fe" class="outline-3">
+<h3 id="org10cb8fe">Submitted Clustering</h3>
+<div class="outline-text-3" id="text-org10cb8fe">
+<p>
+<code>python runner.py -o synthetic_datasets_Run3_2025_skims.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix  -op output/synthetic_dataset_cluster  -m metadata/datasets_HH4b_Run3_fourTag_2025_skims.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml --condor</code>
+</p>
+</div>
+</div>
+<div id="outline-container-org176ef12" class="outline-3">
+<h3 id="org176ef12">Making PDFs <code>00-10-00</code></h3>
+<div class="outline-text-3" id="text-org176ef12">
+<p>
+<code>python  jet_clustering/make_jet_splitting_PDFs.py output/synthetic_dataset_cluster/synthetic_datasets_Run3_2025_skims.coffea  --years Run3   --out jet_clustering/jet-splitting-PDFs-00-10-00</code>
+</p>
+
+<p>
+<a href="Splitting PDF Archive.html#ID-ACA7BE21-E10D-42BB-AB59-F3400F9F1686">Splitting PDF Archive</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7ccba46" class="outline-3">
+<h3 id="org7ccba46">Making Synthetic data with new PDFs  <code>2025_v2</code></h3>
+<div class="outline-text-3" id="text-org7ccba46">
+<p>
+<code>source  scripts/synthetic-dataset-make-dataset-all.sh</code>
+Done
+</p>
+</div>
+</div>
+<div id="outline-container-orge669cc9" class="outline-3">
+<h3 id="orge669cc9">Analyzing</h3>
+<div class="outline-text-3" id="text-orge669cc9">
+<p>
+Looks better than before!
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgd8b1b19" class="outline-3">
+<h3 id="orgd8b1b19"><a href="../Journal/2025/05-May/07-May-2025-Wednesday.html#ID-984AE879-4C6D-4F2C-8334-F6A11E91C74B">07 May 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgd8b1b19">
+<p>
+<a href="Run-3 4b skims.html#ID-1624929A-3B77-46EB-8AA5-8F5DB0C2EC3E">Run-3 4b skims</a>
+</p>
+
+<p>
+Writing to <code>root://cmseos.fnal.gov//store/user/jda102/XX4b/2025_v1</code>
+Will be <code>v10</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge088771" class="outline-3">
+<h3 id="orge088771">Launching seed0</h3>
+<div class="outline-text-3" id="text-orge088771">
+<p>
+<code>source  scripts/synthetic-dataset-make-dataset-all.sh</code>
+Failed.. I think because see was <code>{0}</code> in stead of <code>0</code>&#x2026; Rerunning
+Looks good:  <b>real    124m11.053s</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org776b80a" class="outline-3">
+<h3 id="org776b80a">Running the analyze script</h3>
+<div class="outline-text-3" id="text-org776b80a">
+<p>
+<code>time python runner.py -o synthetic_data_Run3_2025_v1.coffea -d synthetic_data data -p analysis/processors/processor_HH4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix  -op ${OUTPUT_DIR} -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_Run3_fourTag_2025_skims.yml --condor</code> from <code>source  scripts/synthetic-dataset-analyze-all.sh</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org208f352" class="outline-3">
+<h3 id="org208f352">Plots look decent.. not great</h3>
+<div class="outline-text-3" id="text-org208f352">
+<p>
+Synthetic data (can Jets) seem biased high
+</p>
+
+<p>
+<img src="file:///home/runner/RoamNotes/attachments/7May2025_selJets_pt.png" alt="7May2025_selJets_pt.png" /><img src="file:///home/runner/RoamNotes/attachments/7May2025_canJets_pt.png" alt="7May2025_canJets_pt.png" />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org9caf22d" class="outline-3">
+<h3 id="org9caf22d"><a href="../Journal/2025/03-March/31-March-2025-Monday.html#ID-EADAD6C4-B580-826C-56E7-4976DF7FAAA7">31 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org9caf22d">
+<ul class="org-ul">
+<li>Starting to bootstrap average uncertainty</li>
+<li>Script compute average and do bootstrapping:
+<ul class="org-ul">
+<li><code>python jet_clustering/bootstrap_correlation.py output/synthetic_dataset_analyze_all/synthetic_data_Run3_v8_new_16seeds_SvB_values.coffea</code></li>
+</ul></li>
+<li>Got the average of and the variance in a bin on SvB</li>
+<li>Got a list of SvB values by event id</li>
+<li>add weights&#x2026; do bootstrap</li>
+<li>make some plots</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgecdd348" class="outline-3">
+<h3 id="orgecdd348"><a href="../Journal/2025/03-March/27-March-2025-Thursday.html#ID-FD72F7C3-B3F8-5FB3-6046-BF411FCAD15C">27 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgecdd348">
+<ul class="org-ul">
+<li>adding logic to make plots config a template to auto expand syn<sub>vXXX</sub></li>
+<li>The 16 synthetic datasets look good!</li>
+<li>[&gt;&gt;] Variance study of SvB</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org25c5ca4" class="outline-3">
+<h3 id="org25c5ca4"><a href="../Journal/2025/03-March/26-March-2025-Wednesday.html#ID-A0622D94-79AA-AE13-4D88-708F6E4D6F84">26 March 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org25c5ca4">
+<ul class="org-ul">
+<li>16 datasets finished</li>
+<li>Sanity check that the files counts are there</li>
+<li>Running on <b><b>cmslpc303</b></b>
+<ul class="org-ul">
+<li><code>source scripts/synthetic-dataset-analyze-all.sh</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgde5c200" class="outline-3">
+<h3 id="orgde5c200"><a href="../Journal/2025/03-March/25-March-2025-Tuesday.html#ID-44D6E8E4-EC70-A13D-9FDF-189EF620FF8F">25 March 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgde5c200">
+<ul class="org-ul">
+<li>running on <b><b>cmslpc303</b></b></li>
+<li>Submitted random seeds 4 - 15</li>
+<li>Running&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6d53a2d" class="outline-3">
+<h3 id="org6d53a2d"><a href="../Journal/2025/03-March/24-March-2025-Monday.html#ID-80574853-B081-B826-601F-4DCDF08B1F4F">24 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org6d53a2d">
+<ul class="org-ul">
+<li>Starting to make many datasets</li>
+<li>running on <b><b>cmslpc303</b></b></li>
+<li>Submitted random seeds 1,2,3</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org264a372" class="outline-3">
+<h3 id="org264a372"><a href="../Journal/2025/03-March/04-March-2025-Tuesday.html#ID-7D1A502B-C4ED-54FD-213B-4BEA610EB10A">4 March 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org264a372">
+<ul class="org-ul">
+<li>Testing v8</li>
+<li>Making histograms on <b><b>cmslpc334</b></b></li>
+<li>plots look good</li>
+<li>Sent to marina</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaecf540" class="outline-3">
+<h3 id="orgaecf540"><a href="../Journal/2025/03-March/03-March-2025-Monday.html#ID-C8C55A2C-0491-1509-2D4E-955CEBDE5791">3 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgaecf540">
+<ul class="org-ul">
+<li>Marina points out that we are applying the b-regression twice&#x2026;.</li>
+<li>Fix code</li>
+<li>Verify pts in event Marina sent</li>
+<li>Remake PDFs</li>
+<li>Remake mixed data</li>
+<li><p>
+Testing
+</p>
+<ul class="org-ul">
+<li><code>time python runner.py -t -o synthetic_data_Run3_v6_debug_seedXXX.coffea -d synthetic_data data -p analysis/processors/processor_HH4b.py -y 2022_preEE   -op output/synthetic_dataset_analyze_all -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_Run3_fourTag_v6.yml</code></li>
+</ul>
+<ul class="org-ul">
+<li>Fix looks good</li>
+<li>make v7 synthetic datasets on <b><b>cmslpc321</b></b>.. done</li>
+<li>Running on v7 to make plots</li>
+<li>Looks OK &#x2026; not super great</li>
+<li>Making new pdfs .. on <b><b>cmslpc339</b></b>
+<ul class="org-ul">
+<li><code>python runner.py -o synthetic_datasets_Run3_fixCalib.coffea -d data  -p analysis/processors/processor_cluster_4b.py -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix  -op output/synthetic_dataset_cluster  -m metadata/datasets_HH4b_Run3_fourTag_v3.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml --condor</code></li>
+</ul></li>
+<li>Making 00-09-01 [&gt;&gt;]  <a href="Splitting PDF Archive.html#ID-ACA7BE21-E10D-42BB-AB59-F3400F9F1686">Splitting PDF Archive</a>
+<ul class="org-ul">
+<li><code>python  jet_clustering/make_jet_splitting_PDFs.py output/synthetic_dataset_cluster/synthetic_datasets_Run3_fixCalib.coffea  --years Run3   --out jet_clustering/jet-splitting-PDFs-00-09-01</code></li>
+</ul></li>
+<li>Making Run3 v8 synthetic data using 00-09-01</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6489ce8" class="outline-3">
+<h3 id="org6489ce8"><a href="../Journal/2025/02-February/28-February-2025-Friday.html#ID-A3A25744-A62A-4615-B1A7-A3F82892F52B">28 February 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org6489ce8">
+<ul class="org-ul">
+<li>making output files for Marina</li>
+<li>Print out first 100 events in 2022<sub>preEE</sub> Data and Synthetic data</li>
+<li><code>python analysis/debugRun3SyntheticData.py output/synthetic_dataset_analyze_all/synthetic_data_Run3_v6_debug_seedXXX.coffea</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga111ce5" class="outline-3">
+<h3 id="orga111ce5"><a href="../Journal/2025/02-February/26-February-2025-Wednesday.html#ID-816BD4C9-3AAF-4FD0-BA9D-3DB0ECA047CE">26 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orga111ce5">
+<ul class="org-ul">
+<li>Marina's closure now looks good.</li>
+<li>Seems like she is getting the wrong scale for the synthetic jet pts.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8acffec" class="outline-3">
+<h3 id="org8acffec"><a href="../Journal/2025/02-February/22-February-2025-Saturday.html#ID-CC550E23-A319-4FDB-87EA-5F826DA6C853">22 February 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-org8acffec">
+<ul class="org-ul">
+<li>making v6 on <b><b>cmslpc350</b></b>&#x2026; Done
+<ul class="org-ul">
+<li><code>source .ci-workflows/synthetic-dataset-make-dataset-all.sh</code></li>
+</ul></li>
+<li>Now making plots&#x2026; 
+<ul class="org-ul">
+<li><code>source .ci-workflows/synthetic-dataset-analyze-all.sh</code></li>
+</ul></li>
+<li>Ran with the wrong pt threshold &#x2026; rerunning at 30 GeV!&#x2026; Done&#x2026; Making plots</li>
+<li>[&gt;&gt;] Set threshold automatically</li>
+<li>Masses look much better !</li>
+<li>Sent to Marina</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org66c30d0" class="outline-3">
+<h3 id="org66c30d0"><a href="../Journal/2025/01-January/15-January-2025-Wednesday.html#ID-0BE16C92-2F47-49E7-8534-80227F80E5EA">15 January 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org66c30d0">
+<ul class="org-ul">
+<li>Making datasets file v5</li>
+<li>making histograms..</li>
+<li>v5 looking  good&#x2026; Making presentations</li>
+<li>sent to marina</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3edcc80" class="outline-3">
+<h3 id="org3edcc80"><a href="../Journal/2025/01-January/14-January-2025-Tuesday.html#ID-EC8B90F5-7EF4-4A36-9773-BD91CB97E0AD">14 January 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org3edcc80">
+<ul class="org-ul">
+<li>Making new splitting functions
+<ul class="org-ul">
+<li><code>python  jet_clustering/make_jet_splitting_PDFs.py output/synthetic_dataset_cluster/datasets_2022_EE.coffea  --years 2022_EE   --out jet_clustering/jet-splitting-PDFs-00-08-03</code></li>
+<li>same for other eras</li>
+</ul></li>
+<li>updated <a href="Splitting PDF Archive.html#ID-ACA7BE21-E10D-42BB-AB59-F3400F9F1686">Splitting PDF Archive</a></li>
+<li>Making synthetic datasets with new pdfs (v5)
+<ul class="org-ul">
+<li><code>source .ci-workflows/synthetic-dataset-make-dataset-all.sh</code></li>
+</ul></li>
+<li>on <b><b>cmslpc320</b></b>. &#x2026; <b><b>real    82m12.738s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5aef547" class="outline-3">
+<h3 id="org5aef547"><a href="../Journal/2025/01-January/10-January-2025-Friday.html#ID-F69C488F-7B82-4EC3-89CC-5A2BE7E1180A">10 January 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org5aef547">
+<ul class="org-ul">
+<li>Validate</li>
+<li>Send to Marina</li>
+<li>Looks like previous analayze job ran out of memory&#x2026;</li>
+<li>Rerunning  On <b><b>cmslpc330</b></b>&#x2026; checking memory
+<ul class="org-ul">
+<li><code>&gt; source .ci-workflows/synthetic-dataset-analyze-all.sh</code></li>
+</ul></li>
+<li>finished <b><b>44m8.523s</b></b></li>
+<li>Plots look good.</li>
+<li>Making presentations
+<ul class="org-ul">
+<li><code>python  jet_clustering/compare_datasets.py  hists/synthetic_data_Run3_v4_new_seedXXX.coffea   --out analysis/plots_synthetic_datasets_all_00-08-02-Run3_v4 -m plots/metadata/plotsSyntheticVsData2.yml</code></li>
+<li><code>make jetclustering_slides_Run3_all TEXFILENAME=SyntheticDatasets-00-08-02_Run3_v4 NEW_DIR=analysis\\/plots_synthetic_datasets_all_00-08-02-Run3_v4</code></li>
+</ul></li>
+<li>[&gt;&gt;] New splitting PDFs</li>
+<li>testing clustering job&#x2026;OK</li>
+<li>Submitting on condor &#x2026;
+<ul class="org-ul">
+<li><code>python runner.py -o datasets_Run3_v4.coffea -d data -p analysis/processors/processor_cluster_4b.py -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix -op output/synthetic_dataset_cluster -m metadata/datasets_HH4b_Run3_fourTag_v3.yml -c analysis/metadata/cluster_4b_noTTSubtraction.yml --condor</code></li>
+</ul></li>
+<li>Failed &#x2026; submitting the four years separately&#x2026;</li>
+<li>Submitting 2022<sub>EE</sub> on <b><b>cmslpc328</b></b>
+<ul class="org-ul">
+<li>2022<sub>EE</sub></li>
+<li>2022<sub>preEE</sub></li>
+<li>2023<sub>preBPix</sub></li>
+<li>2023<sub>BPix</sub></li>
+</ul></li>
+<li>Reduced the chunksize to 5k and works without errors!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org283bb25" class="outline-3">
+<h3 id="org283bb25"><a href="../Journal/2025/01-January/09-January-2025-Thursday.html#ID-8883B6FA-5F32-481C-B348-0A687B56DE29">9 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org283bb25">
+<ul class="org-ul">
+<li>AE pushed fix for JECRs</li>
+<li>pulled&#x2026;fixed printout</li>
+<li>resumbitting on <b><b>cmslpc331</b></b></li>
+<li><code>source .ci-workflows/synthetic-dataset-make-dataset-all.sh</code></li>
+<li>Finished &#x2026; <b><b>real    149m59.119s</b></b></li>
+<li>Making hists&#x2026; errror when processing synthetic data with new JECRs</li>
+<li>fixed&#x2026; running</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org55ac98d" class="outline-3">
+<h3 id="org55ac98d"><a href="../Journal/2025/01-January/08-January-2025-Wednesday.html#ID-8503282A-56D5-4E2C-8223-DA564C2992CA">8 January 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org55ac98d">
+<ul class="org-ul">
+<li>Merged</li>
+<li>Running on <b><b>cmslpc339</b></b></li>
+<li>30 GeV threshold</li>
+<li>Remaking v4 synthetic data 
+<ul class="org-ul">
+<li>30 GeV b-jet filter</li>
+<li>new jet corrections</li>
+<li><code>source  .ci-workflows/synthetic-dataset-make-dataset-all.sh</code></li>
+</ul></li>
+<li>Errors due to change in <code>apply_object_selection_4b</code> interface</li>
+<li>Running &#x2026; not on tmux !!&#x2026; killed &#x2026; re running</li>
+<li>Fails b/c of BPix JEC crash.. Pinged AE</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1a92530" class="outline-3">
+<h3 id="org1a92530"><a href="../Journal/2025/01-January/03-January-2025-Friday.html#ID-6B05716C-B562-4E8B-BCD9-3FA604C92E97">3 January 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org1a92530">
+<ul class="org-ul">
+<li>Iterated with marina</li>
+<li>25% differneces in yields</li>
+<li>[&gt;&gt;] Cut flow challenge</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge5448bc" class="outline-3">
+<h3 id="orge5448bc"><a href="../Journal/2024/12-December/19-December-2024-Thursday.html#ID-3138EC45-78A3-485C-9984-BE2AD262635F">19 December 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orge5448bc">
+<ul class="org-ul">
+<li>changed the b-fail flat to 30 GeV</li>
+<li>Still have condor errors
+<ul class="org-ul">
+<li>update to master</li>
+<li>rerun bootstrap</li>
+<li>Test job fails</li>
+<li>works with <code>--dask</code> !</li>
+</ul></li>
+<li>Redoing the synthetic data sets v4 with 30 GeV b-jet filter</li>
+<li><code>--dask</code> sets up a local dask cluster and only has access to interactive node cpus</li>
+<li>from AE:  
+<ul class="org-ul">
+<li>known problem: [<a href="https://github.com/CoffeaTeam/lpcjobqueue/issues/38">https://github.com/CoffeaTeam/lpcjobqueue/issues/38</a>](<a href="https://github.com/CoffeaTeam/lpcjobqueue/issues/38">https://github.com/CoffeaTeam/lpcjobqueue/issues/38</a>)</li>
+<li>fix <code>pip install htcondor==24.2.1</code></li>
+<li>Need to do this each time you <code>source set_shell.sh</code></li>
+</ul></li>
+<li>Now running with <code>--condor</code> !</li>
+<li>Failed &#x2026; retrying&#x2026; same error&#x2026;. removed output directory and trying again</li>
+<li>Now works ! Runs in <b><b>4586.94751906395s</b></b> = 76min</li>
+<li>Analyzing "v4"&#x2026; running on <b><b>cmslpc345</b></b></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd25ea0a" class="outline-3">
+<h3 id="orgd25ea0a"><a href="../Journal/2024/12-December/18-December-2024-Wednesday.html#ID-5DCC0AFC-F621-4706-9C24-D7DD793A0ECA">18 December 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgd25ea0a">
+<ul class="org-ul">
+<li>Local job finished in <b><b>30945.83396744728</b></b> = 515m = 8 hrs !</li>
+<li>Adding synthethic dataset files to <code>datasets_HH4b_Run3_fourTag_v3</code></li>
+<li>Processing new synthetic data
+<ul class="org-ul">
+<li><code>time python runner.py -o synthetic_data_Run3_v3_seedXXX.coffea -d synthetic_data data -p analysis/processors/processor_HH4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix  -op hists -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_Run3_fourTag_v3.yml</code></li>
+</ul></li>
+<li>Finished in &#x2026; **21m54.294s**=</li>
+<li>Normalization better !</li>
+<li>Sent to marina.</li>
+<li><code>python  jet_clustering/compare_datasets.py  hists/synthetic_data_Run3_v3_seedXXX.coffea   --out analysis/plots_synthetic_datasets_all_00-08-00-Run3_v3 -m analysis/metadata/plotsSyntheticVsData2.yml</code></li>
+<li>Making slides
+<ul class="org-ul">
+<li><code>make jetclustering_slides_Run3 TEXFILENAME=SyntheticDatasets-00-08-02_Run3_v3 NEW_DIR=analysis\\/plots_synthetic_datasets_all_00-08-02-Run3_v3</code></li>
+</ul></li>
+<li>[&gt;&gt;] new clustering templates</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge9a7d59" class="outline-3">
+<h3 id="orge9a7d59"><a href="../Journal/2024/12-December/17-December-2024-Tuesday.html#ID-DA6F71ED-8D63-4DF3-9A5A-6D0833A89CA1">17 December 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orge9a7d59">
+<ul class="org-ul">
+<li>on <b><b>cmslpc327</b></b></li>
+<li>Making v3 synthetic datasets</li>
+<li><code>source  .ci-workflows/synthetic-dataset-make-dataset-all.sh</code>
+<ul class="org-ul">
+<li><code>time python runner.py -s -p skimmer/processor/make_declustered_data_4b.py -c skimmer/metadata/declustering_noTT_subtraction_seed_${new_seed}.yml -y 2022_EE 2022_preEE 2023_BPix 2023_preBPix -d data -op skimmer/metadata/ -o picoaod_datasets_declustered_data_Run3_v3_seed${new_seed}.yml -m metadata/datasets_HH4b_Run3_fourTag_v3.yml</code></li>
+</ul></li>
+<li>condor fails&#x2026; doing locallly &#x2026; taking a looong time&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc0aea90" class="outline-3">
+<h3 id="orgc0aea90"><a href="../Journal/2024/12-December/11-December-2024-Wednesday.html#ID-297B32C9-8639-4FF7-BEFC-44ECF4C973FB">11 December 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgc0aea90">
+<ul class="org-ul">
+<li>Fix CI</li>
+<li>Debugging CI</li>
+<li>Multijet cutflow OK &#x2026;. but the histograms are off !?!</li>
+<li>Think the problem is with the tagcode</li>
+<li>If tagCode is buggy, the plots can be wrong, but the cutflow OK</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd0c6bb7" class="outline-3">
+<h3 id="orgd0c6bb7"><a href="../Journal/2024/12-December/10-December-2024-Tuesday.html#ID-AECA4A02-8A52-44DF-8ED7-C2CBED96AF24">10 December 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgd0c6bb7">
+<ul class="org-ul">
+<li>Running on new synthetic data
+[&gt;&gt;] Fix CI
+(<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a>) [&lt;&lt;] Try Run-2 synthetic data with lower pt Cut
+<ul class="org-ul">
+<li>Normalization in 22 looks OK (pt spectrum still cut in synthetic data)</li>
+<li>Normalizaiton in 23 off (missing trigger ?)&#x2026; Not the trigger.</li>
+<li>Found problem with input files&#x2026; rerunning</li>
+<li>Looks pretty good&#x2026;. sending to Marina</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf1ecda3" class="outline-3">
+<h3 id="orgf1ecda3"><a href="../Journal/2024/12-December/09-December-2024-Monday.html#ID-5489030A-C3A2-4D6B-9291-8A37E3B6CB05">9 December 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-orgf1ecda3">
+<ul class="org-ul">
+<li>Looks like the synthetic datasets finished OK.</li>
+<li>Processing them now&#x2026;
+       <code>python runner.py -o synthetic_data_Run3_seedXXX.coffea -d synthetic_data data -p analysis/processors/processor_HH4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix -op hists -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_Run3_fourTag.yml</code>
+[&gt;&gt;] Fix CI</li>
+<li>Moved the pt cut of the fail<sub>b</sub><sub>pt</sub> cut to 30 GeV 
+[&gt;&gt;] Try Run-2 synthetic data with lower pt Cut</li>
+<li>Rerunning Run3 synthetic data with lower pt threshold on <b><b>cmslpc320</b></b>&#x2026; finished <b><b>8492.214286327362</b></b> = 141 min</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2d1c78d" class="outline-3">
+<h3 id="org2d1c78d"><a href="../Journal/2024/12-December/07-December-2024-Saturday.html#ID-C1BE8B82-64D8-4FA4-978B-90B9ECA950BF">7 December 2024 Saturday</a></h3>
+<div class="outline-text-3" id="text-org2d1c78d">
+<ul class="org-ul">
+<li>Streamlining RunII and Run3 selection code</li>
+<li>Updating Run3 selection</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5738c20" class="outline-3">
+<h3 id="org5738c20"><a href="../Journal/2024/12-December/03-December-2024-Tuesday.html#ID-43BF166C-997C-47D7-A4D3-1DC3FD778F58">3 December 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org5738c20">
+<ul class="org-ul">
+<li>Running on Run3 synthetic data
+[&gt;&gt;] Check cutflow
+[&gt;&gt;] Plots comparing 3-tag</li>
+<li>Running on Run2 on <b><b>cmslpc350</b></b></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org63cbce7" class="outline-3">
+<h3 id="org63cbce7"><a href="../Journal/2024/11-November/07-November-2024-Thursday.html#ID-1FB4F118-8D27-4DD8-9407-50E63CDB13EC">7 November 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org63cbce7">
+<ul class="org-ul">
+<li>Ideas for improvements&#x2026; Do TTSubtraction add ttbar ps data</li>
+<li>Try to improve selected jet multiplicity
+[&gt;&gt;] Compare mixed to synthetic to threeTag</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga57b791" class="outline-3">
+<h3 id="orga57b791"><a href="../Journal/2024/11-November/06-November-2024-Wednesday.html#ID-3781A4EB-B24F-4075-8EBD-C61D726C0D1A">6 November 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orga57b791">
+<ul class="org-ul">
+<li>new input pdfs</li>
+<li>re:synthetic datasets</li>
+<li><a href="clusterrun3data-20250504110521.html#ID-B984F510-171C-4200-BB2E-D1DA6C78B1A3">ClusterRun3Data</a>
+<ul class="org-ul">
+<li>see daily logs above</li>
+</ul></li>
+<li>need to add <code>jet_clustering</code> to <code>condor_transfer_input_files</code></li>
+<li>making PDFS 00-08-01 recorded in <a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a>
+<code>python  jet_clustering/make_jet_splitting_PDFs.py hists/synthetic_datasets_cluster_Run3.coffea --years Run3   --out jet_clustering/jet-splitting-PDFs-00-08-01</code></li>
+<li>plot of clustering multiplicity types</li>
+<li>Remaking synthetic data (on condor) cmslpc325.. outputs to /store/user/jda102/XX4b/2024<sub>v2</sub> .. finished in <b><b>45m2.045s</b></b>&#x2026; no errors !</li>
+<li>Making hists from new synthetic datasets on condor &#x2026; <b><b>27m52.183s</b></b> &#x2026; better local!</li>
+<li><code>time python runner.py  -o synthetic_data_Run3_seedXXX-00-08-01.coffea -d  data synthetic_data -p analysis/processors/processor_HH4b.py -y 2022_preEE 2022_EE 2023_preBPix 2023_BPix  -op hists -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_Run3_fourTag.yml --condor</code></li>
+<li>Made presentations with 00-08-01</li>
+<li>Made plot comparing splitting type multiplicities</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org21f8a07" class="outline-3">
+<h3 id="org21f8a07"><a href="../Journal/2024/11-November/05-November-2024-Tuesday.html#ID-8496A5C7-A1AC-40F6-87E7-E85CEB8512FF">5 November 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org21f8a07">
+<ul class="org-ul">
+<li>recluster with new selection.. running see below
+[&gt;&gt;] new input pdfs
+[&gt;&gt;] re:synthetic datasets</li>
+<li>Making hists from new synthetic datasets locally &#x2026; <b><b>14m47.720s</b></b></li>
+<li>Making processor agnostic of btag algorithm&#x2026; Pushed</li>
+<li>Fix CI&#x2026;v1</li>
+<li>Update CERN/box slides and send mail</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6a269d2" class="outline-3">
+<h3 id="org6a269d2"><a href="../Journal/2024/11-November/01-November-2024-Friday.html#ID-18700773-0AC0-496B-A3B7-95A12A8BBDCC">1 November 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-org6a269d2">
+<ul class="org-ul">
+<li>[&gt;&gt;] Fix missing bRegCorr variables</li>
+<li>Made plots data vs synthetic in Run3
+<code>python  jet_clustering/compare_datasets.py  hists/synthetic_data_Run3_seedXXX.coffea   --out analysis/plots_synthetic_datasets_all_00-08-00-Run3 -m analysis/metadata/plotsSyntheticVsData2.yml</code></li>
+<li>Make slides with <code>make</code> &#x2026; very nice setup</li>
+<li>Sent mail to FBC2 group</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd979d83" class="outline-3">
+<h3 id="orgd979d83"><a href="../Journal/2024/10-October/31-October-2024-Thursday.html#ID-691C1F49-5A12-4CE5-A4F8-9B4CF9F683F9">31 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgd979d83">
+<ul class="org-ul">
+<li>Clean files from failed jobs</li>
+<li>Turning off jetVetoMaps</li>
+<li>Added synthetic datasets to yaml files</li>
+<li>Making hists</li>
+<li>[&gt;&gt;] Fix missing bRegCorr variables</li>
+<li>Hack to get running&#x2026;. working !&#x2026;**31m2.461s**</li>
+<li>First look at Plots &#x2026; sensible, but there are obvious problems.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8b89990" class="outline-3">
+<h3 id="org8b89990"><a href="../Journal/2024/10-October/30-October-2024-Wednesday.html#ID-FB82836E-F5BA-43D7-9327-B242EC521018">30 October 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org8b89990">
+<ul class="org-ul">
+<li>Trying with 3 workers &#x2026; Jobs failing b/c of memory</li>
+<li>Try with 4 workers 10<sub>000</sub> chunksize &#x2026; looks like this is working&#x2026; need to try condor</li>
+<li>Trying to run on condor submitting from <b><b>cmslpc313</b></b></li>
+<li>Needed to add jet<sub>clustering</sub> to transfered files&#x2026; running&#x2026; failed&#x2026;</li>
+<li>Trying with chunk size 5<sub>000</sub>, recopied voms-proxy&#x2026; WORKED !!!&#x2026; <b><b>175m51.908s</b></b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3a8ccdc" class="outline-3">
+<h3 id="org3a8ccdc"><a href="../Journal/2024/10-October/15-October-2024-Tuesday.html#ID-175E76CF-62F4-4F4B-BF74-B5356B5AFB7A">15 October 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org3a8ccdc">
+<ul class="org-ul">
+<li>Fixes for Run3 clustering test jobs</li>
+<li>Starting Run3 <a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></li>
+<li>Failed b/c tag &#x2026; also probably ran out of memory</li>
+<li>Fixed tag&#x2026; Now trying with 1<sub>000</sub> chunksize &#x2026; works</li>
+<li>Running all</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="run3_hemisphere_mixing-20260109085909.html">Run3 Hemisphere Mixing</a></li>
+  <li><a href="february_2026-20260202090424.html">February 2026</a></li>
+  <li><a href="Synthetic Data Closure.html">Synthetic Data Closure</a></li>
+  <li><a href="Run-3 4b skims.html">Run-3 4b skims</a></li>
+  <li><a href="../Journal/May2025.html">May 2025</a></li>
+  <li><a href="../Journal/March2025.html">March 2025</a></li>
+  <li><a href="../Journal/2026/02-February/27-February-2026-Friday.html">27 February 2026 Friday</a></li>
+  <li><a href="../Journal/2026/02-February/26-February-2026-Thursday.html">26 February 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/02-February/25-February-2026-Wednesday.html">25 February 2026 Wednesday</a></li>
+  <li><a href="../Journal/2026/02-February/24-February-2026-Tuesday.html">24 February 2026 Tuesday</a></li>
+  <li><a href="../Journal/2026/02-February/23-February-2026-Monday.html">23 February 2026 Monday</a></li>
+  <li><a href="../Journal/2025/06-June/05-June-2025-Thursday.html">05 June 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/30-May-2025-Friday.html">30 May 2025 Friday</a></li>
+  <li><a href="../Journal/2025/05-May/29-May-2025-Thursday.html">29 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/28-May-2025-Wednesday.html">28 May 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/05-May/22-May-2025-Thursday.html">22 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/09-May-2025-Friday.html">09 May 2025 Friday</a></li>
+  <li><a href="../Journal/2025/05-May/08-May-2025-Thursday.html">08 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/07-May-2025-Wednesday.html">07 May 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/03-March/31-March-2025-Monday.html">31 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/27-March-2025-Thursday.html">27 March 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/03-March/26-March-2025-Wednesday.html">26 March 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/03-March/25-March-2025-Tuesday.html">25 March 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/03-March/24-March-2025-Monday.html">24 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/04-March-2025-Tuesday.html">4 March 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/03-March/03-March-2025-Monday.html">3 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/02-February/28-February-2025-Friday.html">28 February 2025 Friday</a></li>
+  <li><a href="../Journal/2025/02-February/26-February-2025-Wednesday.html">26 February 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/02-February/22-February-2025-Saturday.html">22 February 2025 Saturday</a></li>
+  <li><a href="../Journal/2025/02-February/21-February-2025-Friday.html">21 February 2025 Friday</a></li>
+  <li><a href="../Journal/2025/01-January/15-January-2025-Wednesday.html">15 January 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/01-January/14-January-2025-Tuesday.html">14 January 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/01-January/13-January-2025-Monday.html">13 January 2025 Monday</a></li>
+  <li><a href="../Journal/2025/01-January/10-January-2025-Friday.html">10 January 2025 Friday</a></li>
+  <li><a href="../Journal/2025/01-January/09-January-2025-Thursday.html">09 January 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/01-January/08-January-2025-Wednesday.html">08 January 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/01-January/03-January-2025-Friday.html">03 January 2025 Friday</a></li>
+  <li><a href="../Journal/2024/12-December/19-December-2024-Thursday.html">19 December 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/18-December-2024-Wednesday.html">18 December 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/12-December/17-December-2024-Tuesday.html">17 December 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/12-December/13-December-2024-Friday.html">13 December 2024 Friday</a></li>
+  <li><a href="../Journal/2024/12-December/12-December-2024-Thursday.html">12 December 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/11-December-2024-Wednesday.html">11 December 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/12-December/10-December-2024-Tuesday.html">10 December 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/12-December/09-December-2024-Monday.html">09 December 2024 Monday</a></li>
+  <li><a href="../Journal/2024/12-December/07-December-2024-Saturday.html">07 December 2024 Saturday</a></li>
+  <li><a href="../Journal/2024/12-December/06-December-2024-Friday.html">06 December 2024 Friday</a></li>
+  <li><a href="../Journal/2024/12-December/05-December-2024-Thursday.html">05 December 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/03-December-2024-Tuesday.html">03 December 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/12-December/02-December-2024-Monday.html">02 December 2024 Monday</a></li>
+  <li><a href="../Journal/2024/11-November/07-November-2024-Thursday.html">07 November 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/11-November/06-November-2024-Wednesday.html">06 November 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/11-November/05-November-2024-Tuesday.html">05 November 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/11-November/04-November-2024-Monday.html">04 November 2024 Monday</a></li>
+  <li><a href="../Journal/2024/11-November/01-November-2024-Friday.html">01 November 2024 Friday</a></li>
+  <li><a href="../Journal/2024/10-October/31-October-2024-Thursday.html">31 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/30-October-2024-Wednesday.html">30 October 2024 Wednesday</a></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Effect of random binning on significance</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Effect of random binning on significance</h1>
+<p>
+Assume we have in the SR 
+D - data events and
+B - predicted background events
+</p>
+
+<div id="outline-container-orgac02bfd" class="outline-3">
+<h3 id="orgac02bfd">1) Assume no/negligible background uncertainty</h3>
+<div class="outline-text-3" id="text-orgac02bfd">
+<p>
+with one bin (ie: counting experiment) the significance of the discrepancy is given by 
+</p>
+
+<p>
+\[
+S_0 = \frac{D - B }{\sqrt{D}}
+\]
+with k random bins of equal size, (meaning there is no "shape" or trend of the D  or B) 
+</p>
+
+<p>
+Then the significance is given by, 
+</p>
+
+<p>
+\[
+S_k  = \sqrt{ \sum_k \left( \frac{D_k - B_k }{\sqrt{D_k}} \right)^2 } = \sqrt{ \left(\sum_k \frac{ \frac{D}{k} - \frac{B}{k} }{\sqrt{ \frac{D}{k} }} \right)^2 } = \sqrt{ \sum_k \left(  \frac{1}{\sqrt{k}} \frac{D - B }{\sqrt{D}}  \right)^2} = \sqrt{ \sum_k \left( \frac{1}{\sqrt{k}} S_0 \right)^2} 
+\]
+\[
+= \sqrt{ \sum_k  \frac{1}{k} S_0^2 } = S_0
+\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2d498a8" class="outline-3">
+<h3 id="org2d498a8">2) Now include background uncertianty</h3>
+<div class="outline-text-3" id="text-org2d498a8">
+<p>
+D3 is number of 3b data
+B = $&sum; w$D3, with \(w\sim\) B / D3        
+</p>
+
+<p>
+<b>(Note that the analysis is typically setup such that w &lt;&lt; 1, ie more D3 than expected D4 background)</b>
+</p>
+
+<p>
+Now with one bin the  significance of the discrepancy is given by 
+</p>
+
+<p>
+\[
+S_0 = \frac{D - B }{\sqrt{D + \sum w^2}} = \frac{D - B }{\sqrt{D + \sum (\frac{B}{D3})^2}} = \frac{D - B }{\sqrt{D + (\frac{B}{D3})^2 D3} } = \frac{D - B }{\sqrt{D + (\frac{B}{D3}) B} } = = \frac{D - B }{\sqrt{D + w B} }
+\]
+<b>(Again, note that the 2nd term in the denominator is usually arranged to be small bc w&lt;&lt;1)</b>
+</p>
+
+<p>
+Now with k bins: 
+</p>
+
+<p>
+\[
+S_k  = \sqrt{ \sum_k \left( \frac{\frac{D}{k} - \frac{B}{k} }{\sqrt{\frac{D}{k} + (\frac{B}{D3})^2 \frac{D3}{k}} } \right)^2 } = \sqrt{ \sum_k \left(\frac{1}{\sqrt{k}} \frac{D - B }{\sqrt{D + w B}} \right)^2 } = S_0
+\]
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgd71c88c" class="outline-2">
+<h2 id="orgd71c88c">Links</h2>
+<div class="outline-text-2" id="text-orgd71c88c">
+<p>
+[BROKEN LINK: 12F3E252-3317-465A-B0D9-312859B654BD]
+</p>
+
+
+<p>
+202504181245
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="stats_data_driven_sr-20250503141800.html">Stats-Data-Driven-SR</a></li>
+  <li><a href="../Journal/2025/04-April/18-April-2025-Friday.html">18 April 2025 Friday</a></li>
+</ul>
+</div>
+</body>
+</html>

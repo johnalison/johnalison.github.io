@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TriggerClosureInNano</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">TriggerClosureInNano</h1>
+
+<div id="outline-container-orgcc48867" class="outline-2">
+<h2 id="orgcc48867">run on 4b VHH MC</h2>
+<div class="outline-text-2" id="text-orgcc48867">
+<p>
+2018
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/ZHHTo4B_CV_1_0_C2V_1_0_C3_1_0_2018.txt  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2018 --bTag 0.6  --bTagSF -l 60.0e3 --isMC  --histDetailLevel fourTag.allEvents.passMDRs.passMjjOth.trigStudy --histFile hists_TrigStudy.root  --doTrigEmulation  nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/WHHTo4B_CV_1_0_C2V_1_0_C3_1_0_2018.txt  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2018 --bTag 0.6  --bTagSF -l 60.0e3 --isMC  --histDetailLevel fourTag.allEvents.passMDRs.passMjjOth.trigStudy --histFile hists_TrigStudy.root  --doTrigEmulation</code>
+</p>
+
+<p>
+2017
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/ZHHTo4B_CV_1_0_C2V_1_0_C3_1_0_2017.txt  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2017 --bTag 0.6  --bTagSF -l 36.7e3 --isMC  --histDetailLevel fourTag.allEvents.passMDRs.passMjjOth.trigStudy --histFile hists_TrigStudy.root  -r -j closureTests/UL//weights/dataRunII/jetCombinatoricModel_SB_03-00-00.txt --doTrigEmulation  nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/WHHTo4B_CV_1_0_C2V_1_0_C3_1_0_2017.txt  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2017 --bTag 0.6  --bTagSF -l 36.7e3 --isMC  --histDetailLevel fourTag.allEvents.passMDRs.passMjjOth.trigStudy --histFile hists_TrigStudy.root  -r -j closureTests/UL//weights/dataRunII/jetCombinatoricModel_SB_03-00-00.txt --doTrigEmulation</code>
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org0c42ac7" class="outline-2">
+<h2 id="org0c42ac7">run on 4b ZH MC</h2>
+<div class="outline-text-2" id="text-org0c42ac7">
+<p>
+2018
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/ZH4b2018.txt  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2018 --bTag 0.6  --bTagSF -l 60.0e3 --isMC  --histDetailLevel fourTag.allEvents.passMDRs.trigStudy --histFile hists_TrigStudy.root  -r -j closureTests/UL//weights/dataRunII/jetCombinatoricModel_SB_03-00-00.txt --doTrigEmulation</code>
+</p>
+
+<p>
+2017
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/ZH4b2017.txt  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2017 --bTag 0.6  --bTagSF -l 36.7e3 --isMC  --histDetailLevel fourTag.allEvents.passMDRs.trigStudy --histFile hists_TrigStudy.root  -r -j closureTests/UL//weights/dataRunII/jetCombinatoricModel_SB_03-00-00.txt --doTrigEmulation</code>
+</p>
+
+<p>
+2016
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/ZH4b2016.txt  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2016 --bTag 0.6  --bTagSF -l 36.0e3 --isMC  --histDetailLevel fourTag.allEvents.passMDRs.trigStudy --histFile hists_TrigStudy.root  -r -j closureTests/UL//weights/dataRunII/jetCombinatoricModel_SB_03-00-00.txt --doTrigEmulation</code>
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org990e78a" class="outline-2">
+<h2 id="org990e78a">run on 4b ttbar MC</h2>
+<div class="outline-text-2" id="text-org990e78a">
+<p>
+2018
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/TTToHadronic2018_4b_wJCM.txt  --inputWeightFiles closureTests/UL//fileLists/TTToHadronic2018_4b_wJCM_SvB_FvT.txt -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2018 --bTag 0.6  --bTagSF -l 60.0e3 --isMC  --histFile hists_4b_wFvT_Nominal_TrigStudy.root --histDetailLevel fourTag.passMDRs.trigStudy --jcmNameLoad Nominal -r --FvTName FvT_Nominal  --doTrigEmulation</code>
+</p>
+
+<p>
+2017
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/TTToHadronic2017_4b_wJCM.txt  --inputWeightFiles closureTests/UL//fileLists/TTToHadronic2017_4b_wJCM_SvB_FvT.txt -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2017 --bTag 0.6  --bTagSF -l 36.7e3 --isMC  --histFile hists_4b_wFvT_Nominal_TrigStudy.root --histDetailLevel fourTag.passMDRs.trigStudy --jcmNameLoad Nominal -r --FvTName FvT_Nominal --doTrigEmulation</code>
+</p>
+
+<p>
+2016
+</p>
+
+<p>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/TTToHadronic2016_preVFP_4b_wJCM.txt  --inputWeightFiles closureTests/UL//fileLists/TTToHadronic2016_preVFP_4b_wJCM_SvB_FvT.txt -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2016 --bTag 0.6  --bTagSF -l 19.5e3 --isMC  --histFile hists_4b_wFvT_Nominal_TrigStudy.root --histDetailLevel fourTag.passMDRs.trigStudy --jcmNameLoad Nominal -r --FvTName FvT_Nominal --doTrigEmulation  nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/UL//fileLists/TTToHadronic2016_postVFP_4b_wJCM.txt  --inputWeightFiles closureTests/UL//fileLists/TTToHadronic2016_postVFP_4b_wJCM_SvB_FvT.txt -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/UL/  -p NONE  -y 2016 --bTag 0.6  --bTagSF -l 16.5e3 --isMC  --histFile hists_4b_wFvT_Nominal_TrigStudy.root --histDetailLevel fourTag.passMDRs.trigStudy --jcmNameLoad Nominal -r --FvTName FvT_Nominal --doTrigEmulation</code>
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgf8c5c50" class="outline-2">
+<h2 id="orgf8c5c50">run on MC (Too slow and not as relevant)</h2>
+<div class="outline-text-2" id="text-orgf8c5c50">
+<p>
+<b>2018</b>
+</p>
+
+<p>
+<code>tTbarNTupleAnalysis ZZ4b/nTupleAnalysis/scripts/tTbarAnalysis_cfg.py -i closureTests/TTStudy//fileLists/TTTo2L2Nu2018.txt -p None  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/TTStudy/ -y 2018 --bTag 0.6  --bTagSF -l 60.0e3 --isMC  --histDetailLevel allEvents.passPreSel.passEMuSel.passMuSel.allMeT.triggerStudy  --histFile hists_TrigStudy.root  --nevents 1000000 --doTrigEmulation</code>
+</p>
+
+<p>
+<b>2017</b>
+</p>
+
+<p>
+<code>tTbarNTupleAnalysis ZZ4b/nTupleAnalysis/scripts/tTbarAnalysis_cfg.py -i closureTests/TTStudy//fileLists/TTTo2L2Nu2017.txt -p None  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/TTStudy/ -y 2017 --bTag 0.6  --bTagSF -l 36.7e3 --isMC  --histDetailLevel allEvents.passPreSel.passEMuSel.passMuSel.allMeT.triggerStudy  --histFile hists_TrigStudy.root  --nevents 100000 --doTrigEmulation</code>
+</p>
+
+
+
+<p>
+<b>2016</b>
+</p>
+
+<pre class="example">
+tTbarNTupleAnalysis ZZ4b/nTupleAnalysis/scripts/tTbarAnalysis_cfg.py -i closureTests/TTStudy//fileLists/TTTo2L2Nu2016_postVFP.txt -p None  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/TTStudy/ -y 2016 --bTag 0.6  --bTagSF -l 16.5e3 --isMC  --histDetailLevel allEvents.passPreSel.passEMuSel.passMuSel.allMeT.triggerStudy  --histFile hist_TrigStudy.root --nevents 100000 --doTrigEmulation
+
+</pre>
+</div>
+
+
+<div id="outline-container-org0308f54" class="outline-3">
+<h3 id="org0308f54">Links:</h3>
+<div class="outline-text-3" id="text-org0308f54">
+<p>
+<a href="hig_22_011-20250504113037.html#ID-7AEA27C2-708B-4D7A-9520-2B52761682E3">HIG-22-011</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

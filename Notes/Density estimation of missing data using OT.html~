@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Density estimation of missing data using OT</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Density estimation of missing data using OT</h1>
+<p>
+Malte Algren  Geneva, On ATLAS
+</p>
+
+<p>
+Interesting. 
+</p>
+<ul class="org-ul">
+<li>Do OT between tag samples: 3tag -&gt; 4 tag.</li>
+<li>However, dont have access to the full 4-tag distribution</li>
+<li>Instead "in fill" : replace 4b SR events with 3b SR events. 
+<ul class="org-ul">
+<li>Do OT from 3b → 4b infilled, not perfect&#x2026; but better than before</li>
+<li>Now in fill with new SR prediction</li>
+<li>iterate</li>
+</ul></li>
+<li>(missed how they actually compute the maps with NNs,&#x2026;) but it only works on 7d projected space</li>
+<li>Suggested that they add SvB to the list of variable they use to do the OT</li>
+<li>Very Sensitive to the CR boundary</li>
+<li>Maybe start with a better infill assumption &#x2026; eg: the reweighted prediction</li>
+</ul>
+
+<div id="outline-container-orga0fdb21" class="outline-2">
+<h2 id="orga0fdb21">Notes</h2>
+<div class="outline-text-2" id="text-orga0fdb21">
+<ul class="org-ul">
+<li>Malte Algren</li>
+<li>"Density estimation of missing data using OT"</li>
+<li>PhD student in Geneva HEP</li>
+<li>Related to "In painting" problem in</li>
+<li>Setup the ABCD problem</li>
+<li>Crop out 4b SR replace removed events with 3b SR</li>
+<li>Fit OT from 3b -&gt; 4b&#x2026; Iterate</li>
+<li>How many steps ? &#x2026;. How long for each step ? &#x2026; 
+<ul class="org-ul">
+<li>What do you technical  get in the end ? OT(map)</li>
+</ul></li>
+<li>How do you deal with point clouds ? &#x2026; Yes, they use point clouds.
+<ul class="org-ul">
+<li>16D → 7D</li>
+</ul></li>
+<li>How do you predict another variable ?</li>
+<li>Suggest adding 8th SvB variable and then comparing that prediction to the rewieghting</li>
+<li>Very Sensitive to the CR boundry</li>
+<li>Maybe start with a better infill assumption &#x2026; eg: the reweighted prediction</li>
+<li>Application generate synthetic data in the SR</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3fe5c7b" class="outline-2">
+<h2 id="org3fe5c7b">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgf1cc168" class="outline-2">
+<h2 id="orgf1cc168">Links:</h2>
+<div class="outline-text-2" id="text-orgf1cc168">
+<p>
+202504121742
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

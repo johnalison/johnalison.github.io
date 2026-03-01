@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>04 February 2026 Wednesday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="03-February-2026-Tuesday.html">&#8592; Previous</a>
+  <a href="05-February-2026-Thursday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">04 February 2026 Wednesday</h1>
+
+<div id="outline-container-org97cd8de" class="outline-2">
+<h2 id="org97cd8de">Time Block</h2>
+<div class="outline-text-2" id="text-org97cd8de">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">To campus</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Setup</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Chat AE</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chat AE</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">Chat AE</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Run3 Hemisphere Mixing</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Run3 Hemisphere Mixing</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Run3 Hemisphere Mixing</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="../../../Notes/migratehemispheremixingtopython-20250504113834.html#ID-0BA38B1E-9A32-4966-A212-5B527C768526">Migrate Hemisphere Mixing To Python</a></td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Chat Christian</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="../../../Notes/migratehemispheremixingtopython-20250504113834.html#ID-0BA38B1E-9A32-4966-A212-5B527C768526">Migrate Hemisphere Mixing To Python</a></td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b> 6 
+<b>DW:</b> 3
+<b>OT:</b> 3
+<b>ex</b> 
+</p>
+</div>
+
+<div id="outline-container-org1d16f03" class="outline-3">
+<h3 id="org1d16f03">The One Thing:</h3>
+<div class="outline-text-3" id="text-org1d16f03">
+<p>
+<a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org378ba2d" class="outline-2">
+<h2 id="org378ba2d">Up at 7:30</h2>
+</div>
+
+
+<div id="outline-container-org24ad363" class="outline-2">
+<h2 id="org24ad363">M &amp; T to schoool &#x2026; H Home sick</h2>
+</div>
+
+
+<div id="outline-container-orgd5a673a" class="outline-2">
+<h2 id="orgd5a673a"><a href="../../../Notes/Emacs tricks.html#ID-A07529B7-40AA-4536-9977-759B68A222E7">Emacs tricks</a></h2>
+<div class="outline-text-2" id="text-orgd5a673a">
+<p>
+To add a due date to a task in org-mode, position your cursor on the task heading and use:
+C-c C-d (which runs org-deadline)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org3011d05" class="outline-2">
+<h2 id="org3011d05">Buying Crypto</h2>
+<div class="outline-text-2" id="text-org3011d05">
+<ul class="org-ul">
+<li>Selling $20k from house fund &#x2026; will buy ETH for collateral
+<a href="../../../Notes/CryptoMoves.html#ID-1B7B7EC3-FADE-49CD-9456-1B13E15A981F">CryptoMoves</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org51e07f7" class="outline-2">
+<h2 id="org51e07f7"><a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></h2>
+<div class="outline-text-2" id="text-org51e07f7">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge11d86f" class="outline-2">
+<h2 id="orge11d86f">Hoops/Steamroom</h2>
+<div class="outline-text-2" id="text-orge11d86f">
+<ul class="org-ul">
+<li>Played well</li>
+<li>8' at Tmax = 125</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org18a5035" class="outline-2">
+<h2 id="org18a5035">More <a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></h2>
+</div>
+
+
+<div id="outline-container-org8bfcdec" class="outline-2">
+<h2 id="org8bfcdec">Thinking re:Christian</h2>
+<div class="outline-text-2" id="text-org8bfcdec">
+<ul class="org-ul">
+<li>Maybe have him skim 2024</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org20d9120" class="outline-2">
+<h2 id="org20d9120"><a href="../../../Notes/migratehemispheremixingtopython-20250504113834.html#ID-0BA38B1E-9A32-4966-A212-5B527C768526">Migrate Hemisphere Mixing To Python</a></h2>
+<div class="outline-text-2" id="text-org20d9120">
+<ul class="org-ul">
+<li>See logs above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga4f7595" class="outline-2">
+<h2 id="orga4f7595">Chat <a href="../../../Notes/christian_guinto_brody-20251104115643.html#ID-9E186A28-E90A-48F2-8546-A1959BC9C6C0">Christian Guinto-Brody</a></h2>
+<div class="outline-text-2" id="text-orga4f7595">
+<ul class="org-ul">
+<li>Will check out code and start skimming 24</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0b2f81a" class="outline-2">
+<h2 id="org0b2f81a">Got kids&#x2026; Home</h2>
+</div>
+
+
+<div id="outline-container-org497e988" class="outline-2">
+<h2 id="org497e988">More <a href="../../../Notes/migratehemispheremixingtopython-20250504113834.html#ID-0BA38B1E-9A32-4966-A212-5B527C768526">Migrate Hemisphere Mixing To Python</a></h2>
+<div class="outline-text-2" id="text-org497e988">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org28630ea" class="outline-2">
+<h2 id="org28630ea">Drafting Mail to SAM</h2>
+<div class="outline-text-2" id="text-org28630ea">
+<p>
+<a href="../../../Notes/hbbreclusteringproject-20250504112711.html#ID-FA4AE2C2-051E-4BE8-B2D3-028895397F4A">Hbb Reclustering</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6d4ed0d" class="outline-2">
+<h2 id="org6d4ed0d">Chat Olivito</h2>
+</div>
+
+
+<div id="outline-container-org3c363ee" class="outline-2">
+<h2 id="org3c363ee"><a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></h2>
+<div class="outline-text-2" id="text-org3c363ee">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3606fe5" class="outline-2">
+<h2 id="org3606fe5">Reading</h2>
+<div class="outline-text-2" id="text-org3606fe5">
+<ul class="org-ul">
+<li>Triolus and Cressida</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

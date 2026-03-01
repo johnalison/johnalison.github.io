@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC MAC Meeting 25 February 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC MAC Meeting 25 February 2025</h1>
+
+<div id="outline-container-org314835a" class="outline-2">
+<h2 id="org314835a">News</h2>
+<div class="outline-text-2" id="text-org314835a">
+<ul class="org-ul">
+<li>20 modules made 
+<ul class="org-ul">
+<li>are we using pre-series sensors for ROC 3b modules ?</li>
+</ul></li>
+<li>HGC week?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org40f15cc" class="outline-2">
+<h2 id="org40f15cc">Action Items</h2>
+<div class="outline-text-2" id="text-org40f15cc">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Free style comments for failed tests</li>
+<li class="off"><code>[&#xa0;]</code> Ping Jeremy re:Hexaboard testing</li>
+<li class="off"><code>[&#xa0;]</code> Module testing: Tutorial / user support</li>
+<li class="off"><code>[&#xa0;]</code> Waiting on sensor trays and tools and hexaboard trays</li>
+<li class="off"><code>[&#xa0;]</code> miniGantry project with UG</li>
+<li class="off"><code>[&#xa0;]</code> Logan clean + humidity sensors</li>
+<li>twizzers and humidifiers</li>
+<li class="off"><code>[&#xa0;]</code> Getting a cart</li>
+<li class="off"><code>[&#xa0;]</code> Mount the gantry e-stop button</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org657343c" class="outline-2">
+<h2 id="org657343c">Jessica</h2>
+<div class="outline-text-2" id="text-org657343c">
+<ul class="org-ul">
+<li>More tooling coming. ASAP.</li>
+<li>Start Ti</li>
+<li>Will do Clean run 2 last CuT</li>
+<li>Problem with the camera &#x2026; resolved</li>
+<li>Updating fiducial prediction in LabView</li>
+<li>Logan working on improving gantry</li>
+<li>Particulate counter working</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb70b5fc" class="outline-2">
+<h2 id="orgb70b5fc">Jonas</h2>
+<div class="outline-text-2" id="text-orgb70b5fc">
+<ul class="org-ul">
+<li>Getting Transfer tape jig back</li>
+<li>MMTS: 
+<ul class="org-ul">
+<li>Coolant 10L:  2k</li>
+<li>Tubing : insulated 3m/1500</li>
+</ul></li>
+<li>Chiller: keep away from walls / maintenance</li>
+<li>Build box to carry many carrying trays</li>
+<li>How to carry modules ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga835384" class="outline-2">
+<h2 id="orga835384">Pritam</h2>
+<div class="outline-text-2" id="text-orga835384">
+<ul class="org-ul">
+<li>Look up stuff for MMTS</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org30b3462" class="outline-2">
+<h2 id="org30b3462">Josh</h2>
+<div class="outline-text-2" id="text-org30b3462">
+<ul class="org-ul">
+<li>Playing with encapsulation programing</li>
+<li>Will update the programs</li>
+<li>Will touch up some modules</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1372bc7" class="outline-2">
+<h2 id="org1372bc7">Ornella</h2>
+<div class="outline-text-2" id="text-org1372bc7">
+<ul class="org-ul">
+<li>Taking over the orders</li>
+<li>Consumables</li>
+<li>Organized 8403</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0bdd69e" class="outline-2">
+<h2 id="org0bdd69e">Andrew</h2>
+<div class="outline-text-2" id="text-org0bdd69e">
+<ul class="org-ul">
+<li>Ordered a crate ! $1500 month lead times</li>
+<li>6/box instead of 10</li>
+<li>Testing all good</li>
+<li>1 half chip in 20 modules</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgadf81c3" class="outline-2">
+<h2 id="orgadf81c3">Sindhu</h2>
+<div class="outline-text-2" id="text-orgadf81c3">
+<ul class="org-ul">
+<li>Shipping info in postgres&#x2026; can upload to shipping tool</li>
+<li>Can upload data to central DB&#x2026; central tables module</li>
+<li>Issues with QC data&#x2026; tables outdated.</li>
+<li>Wants Undergrad</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga316b98" class="outline-2">
+<h2 id="orga316b98">Manami</h2>
+<div class="outline-text-2" id="text-orga316b98">
+<ul class="org-ul">
+<li>Interfacing with central DB team</li>
+<li>Hints in upload</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org732ecfb" class="outline-2">
+<h2 id="org732ecfb">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org60b8dc6" class="outline-2">
+<h2 id="org60b8dc6">Links:</h2>
+<div class="outline-text-2" id="text-org60b8dc6">
+<p>
+<a href="CMU HGC MAC Meeting 18 February 2025.html#ID-5D3F1654-1F8D-42C3-90B4-EA65A0D0DF52">CMU HGC MAC Meeting 18 February 2025</a>
+</p>
+
+
+<p>
+202502250749
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

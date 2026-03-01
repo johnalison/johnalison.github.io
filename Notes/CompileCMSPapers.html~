@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CompileCMSPapers</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CompileCMSPapers</h1>
+
+<div id="outline-container-orgefdf150" class="outline-2">
+<h2 id="orgefdf150">To compile CMS papers</h2>
+<div class="outline-text-2" id="text-orgefdf150">
+<p>
+<a href="https://twiki.cern.ch/twiki/bin/view/CMS/Internal/TdrProcessing">https://twiki.cern.ch/twiki/bin/view/CMS/Internal/TdrProcessing</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">docker login gitlab-registry.cern.ch
+docker pull gitlab-registry.cern.ch/tdr/containers/tdrlatex
+
+</pre>
+</div>
+
+<p>
+then 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">docker run --rm -v /Users/johnda/papers/HIG-22-011:/workspace gitlab-registry.cern.ch/tdr/containers/tdrlatex compile.sh
+
+</pre>
+</div>
+
+<p>
+with
+#+BEGIN<sub>SRC</sub> 
+</p>
+
+<p>
+#+END<sub>SRCbash</sub>
+ &gt; cat compile.sh 
+###################################
+#### To clone package:
+#### git clone &#x2013;recursive ssh://git@gitlab.cern.ch:7999/tdr/papers/HIG-22-011.git
+eval <code>utils/tdr runtime -sh</code>
+tdr &#x2013;style=paper &#x2013;temp<sub>dir</sub>=tmp b HIG-22-011
+==`
+</p>
+</div>
+
+
+
+<div id="outline-container-org944e84f" class="outline-3">
+<h3 id="org944e84f">Links:</h3>
+<div class="outline-text-3" id="text-org944e84f">
+<p>
+202407231911
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:44 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>07 February 2026 Saturday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="06-February-2026-Friday.html">&#8592; Previous</a>
+  <a href="08-February-2026-Sunday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">07 February 2026 Saturday</h1>
+
+
+<div id="outline-container-orge27a413" class="outline-2">
+<h2 id="orge27a413"><a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></h2>
+<div class="outline-text-2" id="text-orge27a413">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org46d1d7c" class="outline-2">
+<h2 id="org46d1d7c">Shovelled</h2>
+</div>
+
+
+<div id="outline-container-org357da29" class="outline-2">
+<h2 id="org357da29">Tasks&#x2026;</h2>
+<div class="outline-text-2" id="text-org357da29">
+<ul class="org-ul">
+<li>Filled out poll for Markus</li>
+<li>Scheduled Sindhu Annual review</li>
+<li>Signed PGSS offer letter</li>
+<li>Mail to SAM</li>
+<li>Fixed counter culture address</li>
+<li>Mail re: HS student <a href="../../../Notes/Advice to High-School Students interesting in physics.html#ID-CE106563-B5BD-4F57-99A1-DDD9D9FCCE23">Advice to High-School Students interesting in physics</a></li>
+<li>Letter for Chuyuan</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org723a590" class="outline-2">
+<h2 id="org723a590">Intro instructions 4b</h2>
+<div class="outline-text-2" id="text-org723a590">
+<p>
+Hi Christian,
+</p>
+
+<p>
+Here is the first part of the instructions to get you started.
+</p>
+
+<p>
+Our code consists of two main components:
+</p>
+
+<ul class="org-ul">
+<li>Barista (<a href="https://gitlab.cern.ch/cms-cmu/barista">https://gitlab.cern.ch/cms-cmu/barista</a> (<a href="https://gitlab.cern.ch/cms-cmu/barista">https://gitlab.cern.ch/cms-cmu/barista</a>)): A base class containing generic tools</li>
+</ul>
+<p>
+for various analyses, such as file access in EOS and object corrections.
+</p>
+<ul class="org-ul">
+<li>Coffea4bees (<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees">https://gitlab.cern.ch/cms-cmu/coffea4bees</a> (<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees">https://gitlab.cern.ch/cms-cmu/coffea4bees</a>)): The specific code for</li>
+</ul>
+<p>
+HH4b analysis.
+</p>
+
+<p>
+You can find more details in our documentation here: <a href="https://barista.docs.cern.ch/">https://barista.docs.cern.ch/</a> (<a href="https://barista.docs.cern.ch/">https://barista.docs.cern.ch/</a>). Since the
+framework is based on Coffea, you may also find this tutorial helpful: <a href="https://coffea-hep.readthedocs.io/en/latest/examples.html">https://coffea-hep.readthedocs.io/en/latest/examples.html</a>
+(<a href="https://coffea-hep.readthedocs.io/en/latest/examples.html">https://coffea-hep.readthedocs.io/en/latest/examples.html</a>).
+</p>
+
+<p>
+You will be assisting with "skimming," where we take centrally produced nanoAOD files, apply loose selections to remove
+unnecessary information, and store smaller root files for further processing. We have already completed skims for 2022–2023;
+we will now focus on 2024.
+</p>
+
+<p>
+Setup Instructions:
+</p>
+<ol class="org-ol">
+<li>In your no<sub>backup</sub> area on your cmslpc account, follow the quickstart guide to set up the framework:</li>
+</ol>
+<p>
+<a href="https://barista.docs.cern.ch/bbbb/#quickstart">https://barista.docs.cern.ch/bbbb/#quickstart</a> (<a href="https://barista.docs.cern.ch/bbbb/#quickstart">https://barista.docs.cern.ch/bbbb/#quickstart</a>).
+</p>
+<ol class="org-ol">
+<li>Key Scripts:</li>
+<li>run<sub>container</sub>: A wrapper that sets up the software environment (cmslpc, lxplus, or falcon) and allows you to run Coffea,</li>
+</ol>
+<p>
+Python, or Awkward code inside an analysis container.
+</p>
+<ul class="org-ul">
+<li>runner.py: The main script that manages files, processors, and output. You can view the available options by running: .</li>
+</ul>
+<p>
+/run<sub>container</sub> python runner.py &#x2013;help.
+(PD:  all our code always contains a `&#x2013;help` argument. You can run `./run<sub>container</sub> &#x2013;help` for instance.)
+</p>
+
+<p>
+To verify your setup, please run the following test (ensure your certificate is set up first):
+</p>
+
+<p>
+cd barista/
+./run<sub>container</sub> bash coffea4bees/scripts/skimmer-test.sh
+</p>
+
+<p>
+Please let me know once this finishes successfully without errors, and I will send over the next set of instructions.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orge695b17" class="outline-2">
+<h2 id="orge695b17">To Giant Eagle</h2>
+</div>
+
+
+<div id="outline-container-org6a39254" class="outline-2">
+<h2 id="org6a39254">more <a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></h2>
+<div class="outline-text-2" id="text-org6a39254">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org35aca24" class="outline-2">
+<h2 id="org35aca24"><a href="../../../Notes/huemers_proof_of_free_will-20260204093349.html#ID-C6B9E2FA-A6F7-4D05-B9A6-D856743F5CBE">Huemers Proof of free will</a></h2>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../../../Notes/run3_hemisphere_mixing-20260109085909.html">Run3 Hemisphere Mixing</a></li>
+</ul>
+</div>
+</body>
+</html>

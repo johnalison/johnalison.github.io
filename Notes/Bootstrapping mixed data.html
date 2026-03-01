@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bootstrapping mixed data</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Bootstrapping mixed data</h1>
+
+
+<div id="outline-container-org494b6ef" class="outline-2">
+<h2 id="org494b6ef">Plan</h2>
+<div class="outline-text-2" id="text-org494b6ef">
+<ul class="org-ul">
+<li>use <code>data*_v*</code> files to map event, run   -&gt; (h1<sub>event</sub>, h1<sub>run</sub>, h2<sub>event</sub>, h2<sub>run</sub> )
+<ul class="org-ul">
+<li><code>/store/user/jda102/condor/ZH4b/ULTrig/data2018_v0/picoAOD_3bDvTMix4bDvT_v0_newSBDef.root</code></li>
+</ul></li>
+<li>Make dictionary ala synthetic datasets of events to SvB</li>
+<li>Need another dictionary of events to hemi<sub>event</sub> pairs</li>
+<li>Assign hemi<sub>event</sub> pairs to SvB</li>
+<li>Fluctuate weights.</li>
+<li>Compute combined weights</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5882aa2" class="outline-2">
+<h2 id="org5882aa2">Logs</h2>
+<div class="outline-text-2" id="text-org5882aa2">
+</div>
+<div id="outline-container-org724520d" class="outline-3">
+<h3 id="org724520d"><a href="../Journal/2025/04-April/03-April-2025-Thursday.html#ID-65DE71EA-D228-4DD0-B796-B9B1A3DFFC17">3 April 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org724520d">
+<ul class="org-ul">
+<li>Adding hemi weights</li>
+<li>Starting bootstrapping script</li>
+<li>Made bootstraping plot!</li>
+<li><a href="https://chatgpt.com/share/67ee8c4f-9c7c-8000-beb0-e68ce34888ae">https://chatgpt.com/share/67ee8c4f-9c7c-8000-beb0-e68ce34888ae</a></li>
+<li>Got it going&#x2026;</li>
+<li>Write up weight calc</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9401a97" class="outline-3">
+<h3 id="org9401a97"><a href="../Journal/2025/04-April/02-April-2025-Wednesday.html#ID-94D36472-46C7-451D-9C14-0C53B7E18ADA">2 April 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org9401a97">
+<ul class="org-ul">
+<li><b>cmslpc304</b></li>
+<li><code>sed -e "s|run_dilep_ttbar_crosscheck: true|run_dilep_ttbar_crosscheck: false|" analysis/metadata/HH4b.yml &gt; output/analysis_test_mixed_job/HH4b.yml</code></li>
+<li><code>python runner.py  -o mixedData_wSvB.coffea -d    mixeddata  -p analysis/processors/processor_HH4b.py -y 2016 2017 2018 -op output/analysis_test_mixed_job  -m metadata/datasets_HH4b.yml -c output/analysis_test_mixed_job/HH4b.yml --condor</code></li>
+<li>Setting up to run on the mixed data
+<ul class="org-ul">
+<li>add datasets to the input yml file</li>
+<li>modify the runner to run on datamixed</li>
+<li>adding h1 and h2 event, run to output files</li>
+</ul></li>
+<li>Testing
+<ul class="org-ul">
+<li><code>python runner.py -t  -o testDataMixed_wSvB.coffea -d    datamixed  -p analysis/processors/processor_HH4b.py -y 2016  -op output/analysis_test_mixed_job  -m metadata/datasets_HH4b_datamixed.yml -c output/analysis_test_mixed_job/HH4b.yml --condor</code></li>
+</ul></li>
+<li>running on condor
+<ul class="org-ul">
+<li><code>python runner.py   -o dataMixed_hNumbers.coffea -d    datamixed  -p analysis/processors/processor_HH4b.py -y 2016 2017 2018  -op output/analysis_test_mixed_job  -m metadata/datasets_HH4b_datamixed.yml -c output/analysis_test_mixed_job/HH4b.yml --condor</code></li>
+</ul></li>
+<li>Script to prepare dataset
+<ul class="org-ul">
+<li>=python jet<sub>clustering</sub>/mixing<sub>correlation</sub><sub>prep</sub><sub>data.py</sub> output/analysis<sub>test</sub><sub>mixed</sub><sub>job</sub>/mixedData<sub>wSvB.coffea</sub>  output/analysis<sub>test</sub><sub>mixed</sub><sub>job</sub>/dataMixed<sub>hNumbers.coffea</sub> =</li>
+</ul></li>
+<li>Made merged dataset</li>
+<li>[&gt;&gt;] Bootstrap with hemisphere weights</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org7e83e5d" class="outline-2">
+<h2 id="org7e83e5d">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgf3a2054" class="outline-2">
+<h2 id="orgf3a2054">Links:</h2>
+<div class="outline-text-2" id="text-orgf3a2054">
+<p>
+<a href="Bootstrapping Synthetic Data Stat Uncertainties.html#ID-2814153C-B708-4321-86B7-C0CF252654D4">Bootstrapping Synthetic Data Stat Uncertainties</a>
+</p>
+
+
+<p>
+202504090843
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2025/04-April/03-April-2025-Thursday.html">03 April 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/04-April/02-April-2025-Wednesday.html">02 April 2025 Wednesday</a></li>
+</ul>
+</div>
+</body>
+</html>

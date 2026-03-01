@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ARC HIG-24-016 ttHH in l+4b</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ARC HIG-24-016 ttHH in l+4b</h1>
+<p>
+CADI:   <a href="https://cms.cern.ch/iCMS/analysisadmin/cadilines?line=HIG-24-016">https://cms.cern.ch/iCMS/analysisadmin/cadilines?line=HIG-24-016</a>
+Twiki: <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/AN2022122Review">https://twiki.cern.ch/twiki/bin/viewauth/CMS/AN2022122Review</a>
+</p>
+
+<div id="outline-container-org0c21b50" class="outline-2">
+<h2 id="org0c21b50">ARC Meeting <a href="../Journal/2025/12-December/02-December-2025-Tuesday.html#ID-2C2D50E2-1280-4469-B545-67F22E909595">02 December 2025 Tuesday</a></h2>
+<div class="outline-text-2" id="text-org0c21b50">
+<p>
+Update SL analysis public in thesis
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51004ca" class="outline-2">
+<h2 id="org51004ca">Questions re:Replies to my 1st Round</h2>
+<div class="outline-text-2" id="text-org51004ca">
+<ul class="org-ul">
+<li>ttZH vs ttZZ  to the classifier
+<ul class="org-ul">
+<li>I understand that they are hard to separate from ttHH, but isnt it suprising that they look more like ttHH than their respective classes?  P<sub>ttHH</sub> ~ 10x P<sub>ttZZ</sub> or ZH</li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>We are blinding only the two most sensitive bins, all the rest of the bins are unblinded.
+I am suggesting to look at the data -vs MC of the relevant object-level event-level variabels for events in these bins.  Not the inclusive preselection plots that are there now.</li>
+
+<li>Separate tt+bb and tt+ 4b samples
+<ul class="org-ul">
+<li>Would be good to understand why the fit failed. Maybe dig in to what separation scheme is causing the problems.  Not sure the fit failing when you try to keep them separate is sufficient jutification for merging them.</li>
+</ul></li>
+</ul>
+
+<p>
+-) Do you have any way of validating tt+bb modelling? eg: tt+2bs (maybe in the low tt+jet output node?)
+      I guess you care about the tt+bb modelling for the ttHH classifier, not ttH.
+      (What was the conclusion of these other studies? Do they use tt+bb out of the box ? or are there additional corrections/systematics applied?
+</p>
+
+<p>
+"CMS considers inherent variations of the chosen model as uncertainty, "
+</p>
+<ul class="org-ul">
+<li>LHCHWG-2022-003</li>
+</ul>
+<p>
+Are you including that for ttHH ? 
+</p>
+
+<p>
+-) tt+4b
+     OK, need to know how important this is the high SvB Bins.
+     If significant, need to justify the treatment of the systamtics esp given not good CR
+</p>
+
+<ul class="org-ul">
+<li><p>
+-) How are the seperate tt / tt+bb / tt+4b uncertianties propogated in the final fit. (What uncertianties do you use for tt+4b ?)
+</p>
+
+<p>
+"We impose a 30% QCD scale uncertainty on tt+4b.     
+</p>
+
+<p>
+OK, didnt see that discussed in the AN. Where does the 30% come from ? Any other modeling uncertiaties that are different between tt / tt+bb and tt+4b ?
+</p></li>
+
+<li><p>
+Plots starting at 52. Why the data/MC disagreement in 2016preVFP? smaller (but still there) in postVFP and 2017. (2018 is better).
+</p>
+
+<p>
+ "We believe the larger disagreement in 2016preVFP is due to the different detector condition."
+Is this seen in eg: ttH ? 
+</p></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd7643ad" class="outline-2">
+<h2 id="orgd7643ad">First round fo comments</h2>
+<div class="outline-text-2" id="text-orgd7643ad">
+<p>
+Dear Authors,
+</p>
+
+<p>
+  Here is a first set of ARC comment on AN v25.
+Stephane is away in until next week.  Jennet should also send comments soon. 
+</p>
+
+<p>
+best
+john
+</p>
+
+
+<p>
+-&#x2014;
+Big Picture :
+</p>
+
+<ul class="org-ul">
+<li>It would be good for the paper to quote a constraint on the ttHH coupling</li>
+
+<li>Why is the DL is more sensitive? It has less data and the same relative fraction of backgrounds as SL (they are tt+X).
+<ul class="org-ul">
+<li>Can you add a table comparing  signal Acceptance of SL and DL</li>
+</ul></li>
+
+<li>Why does ttZH/ttZZ looks more like ttHH to the classifiers. (s20 preapproval or Figure 89 in AN)</li>
+
+<li>It would be nice to see data/MC CR plots in a region is closer to the sensitive analyses regions.
+eg Maybe in some of the classifier bins near the blinded region</li>
+</ul>
+
+<p>
+tt vs tt+2b vs tt+4b  Modelling/Treatment
+</p>
+<hr />
+<p>
+-) l371: tt+bb and tt+ 4b  samples are treated as a single tt+jets sample.
+     Is it more resonable to split these as the theory uncertianties (and experimental validation) is qualitatively different between tt and tt+ 4b.
+</p>
+
+<p>
+-) It would good to show the tt+bb and tt+4b contributions in the discriminator output plots to show the relative importance of contributions in the different nodes.
+</p>
+
+<p>
+-) Do you have any way of validating tt+bb modelling?
+      eg: tt+2bs (maybe in the low tt+jet output node?) 
+</p>
+
+<p>
+-) Is there a way to validate the tt+4b modelling ?
+     eg: tt+4b (with low signal output)  ?
+</p>
+
+<p>
+-) How are the seperate tt / tt+bb / tt+4b uncertianties propogated in the final fit.
+    (What uncertianties do you use for tt+4b ?)
+</p>
+
+<p>
+Final fit
+</p>
+<hr />
+<ul class="org-ul">
+<li>l1062: "Then we construct separate final discriminators and fit them to the real data. The signal region with the better signal strength will be selected as the final signal region of this analysis."
+What do you mean better signal strenth? I think you should only do &gt;=5 or &gt;=6 based on <b>expected</b> sensitivity before you do any fitting to data. (Otherwise your choice is basised by the observed data)</li>
+</ul>
+
+
+<p>
+Minor:
+</p>
+<hr />
+<ul class="org-ul">
+<li>Why different nbjet cuts SL vs DL in the preselection?</li>
+
+<li>How are the Machine learning based jet assignments used in the SL analysis ? In the DL I see there are includes as input to the DNN.</li>
+
+<li>What do the bands in fig 47 correspond to?</li>
+
+<li>Did the DL channel look at data/MC agreement in the 2016 eras ? all plots are for 2017 and 2018 only ?</li>
+
+<li>Plots starting at 52. Why the data/MC disagreement in 2016preVFP? smaller (but still there) in postVFP and 2017.  (2018 is better).</li>
+
+<li>Would be good to see the modelling of the 12 output nodes mentioned in 1049.</li>
+
+<li>Fig 76: The regions fit are statistically independent. How do you deal with correlated statistical uncertianties in the observed data?</li>
+
+<li>Figs 78-81 why dont the rows/cols add up to one?</li>
+
+<li>1132: How are the final discrimants constructed from the output nodes?</li>
+
+<li>1141: This is the first mention of the "Sideband region". How it is defined?</li>
+
+<li>Figure 82: "Final discriminant distributions in the sideband region in 5j4b model option 2 for the five background nodes and the ttHH signal node," but only 4 plots are shown.</li>
+
+<li>Figure 86 looks more like a trend than a 15% normalization difference. How is this treated?</li>
+
+<li>Figure 89 again, isnt it weird these arent maximized along the diagonal.</li>
+
+<li>Again why only 2017 and 2018 for the DL channel? Is there plans to include the era in 2016.</li>
+
+<li>OK to use just one JES per year ? Given that all the background are from MC should justify not using the other NP breakdowns.</li>
+
+<li>l1368 six discriminants obtained from the evaluation of the DNN algorithm represented in Figure 101.
+(Only four are shown in the figure)</li>
+
+<li>Figure 102:
+<ul class="org-ul">
+<li>Strange that pile-up is so high. Almost as important as btagging</li>
+<li>Where does the uncertiantly on tt+bb adn tt+4b enter here ?</li>
+</ul></li>
+
+<li>Figure 103:
+<ul class="org-ul">
+<li>Odd these look so different from figure 102. The scale, and relative ordering change. How come? Esp mu<sub>ttHbb</sub>!</li>
+<li>Also Looks like here there are more btag NP than in figure 102</li>
+</ul></li>
+
+<li>Can you show the two 2016 eras in the DL channel ?</li>
+
+<li>Figure 105 same pileup comment. What is "CMS<sub>Btag</sub>" ? How does it relate to the other btag NPs?</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org80468f4" class="outline-2">
+<h2 id="org80468f4">AN</h2>
+<div class="outline-text-2" id="text-org80468f4">
+<p>
+v25
+</p>
+
+<ul class="org-ul">
+<li>l75: The selection constraint on the total number of jets is indeed furthermore refined to at least 5 or 6 jets and at least 4 b-tagged jets in the SL channel, (The pre-approval say 5 jets)</li>
+</ul>
+<p>
+-l107:multi-classification of an event as either signal or any of the different  tt +jets or ttH, ttZ, ttZZ and background processes. (preapproval shows 6 + (bkg?)
+</p>
+<ul class="org-ul">
+<li>l108 The events are consequently categorized by the jet multiplicity and the most-probable
+process according to the DNN classification, and the corresponding DNN classifier output is
+used as final discriminant.  Q: is there a separate binning in NJet ? it is used in the DNN.  If so what are the bins?</li>
+<li>358:  which is later used as one of the output node in the DNN for the tt(SL)HH4b analysis, as described in Section 7.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org342a29f" class="outline-2">
+<h2 id="org342a29f">Paper Draft</h2>
+<div class="outline-text-2" id="text-org342a29f">
+<ul class="org-ul">
+<li>Six classes correspond to the main physics processes</li>
+</ul>
+<p>
+considered in the analysis: t ̄t, t ̄tZ, t ̄tH, t ̄tHH, t ̄tZZ, and t ̄tZH. Once each event is assigned to
+one of these categories, the signal is extracted in a simultaneous binned profile likelihood fit
+of the expected signal and background distributions of the discriminating observable or of the
+event yield, depending on the channel and category, to the data.
+</p>
+
+<p>
+not ready for prime time&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd2b9ef5" class="outline-2">
+<h2 id="orgd2b9ef5">PreApproval: (Gamze Sokmen)</h2>
+<div class="outline-text-2" id="text-orgd2b9ef5">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1495525/#23-pre-approval-of-hig-24-016">https://indico.cern.ch/event/1495525/#23-pre-approval-of-hig-24-016</a></li>
+<li><p>
+400 Events in Run 3 &#x2014;&gt; 3k in HL-LHC
+</p>
+
+<p>
+6bs + single and dilepton channels 
+</p></li>
+</ul>
+
+<p>
+Dominant background tt+b 
+B=jet Multi to define SR and CR
+Background from MC
+</p>
+<ul class="org-ul">
+<li>What abotu tt+H+bb?</li>
+</ul>
+
+
+
+<p>
+Baseline selection
+</p>
+
+
+
+<ul class="org-ul">
+<li>single lepton
+<ul class="org-ul">
+<li>BR 10%</li>
+<li>Baseline selection &gt;= 4 Bjets</li>
+</ul></li>
+
+<li>Dilepton
+<ul class="org-ul">
+<li>BR 5%</li>
+<li>Baseline selection &gt;= 3 Bjets</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org04dea08" class="outline-2">
+<h2 id="org04dea08">Questions 1st Round</h2>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EffectivePython</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">EffectivePython</h1>
+
+<div id="outline-container-org6ce5c65" class="outline-2">
+<h2 id="org6ce5c65">Effective Python (Brett Slatkin)</h2>
+<div class="outline-text-2" id="text-org6ce5c65">
+<ul class="org-ul">
+<li>Very good. Learned a lot about python3. (Skipped some of the chapters on concurrency)</li>
+
+<li>Python has four built in ways of formatting string. All but one have serious downsides you should avoid.
+f-strings are the best. They achieve pithiness by allowing you to reference all names in the current scope directly in the expression.
+Can also evaluate python expressions with in the f-string.
+Use f-strings!</li>
+
+<li>As soon as expressions get complicated its time to consider splitting them into smaller pieces and moving logic into helper functions.
+What you gain in readability always outweighs what brevity may have afforded you.
+Avoid letting pythons pithy syntax for complex expressions from getting you into a mess.</li>
+
+<li>Dont repeat yourself.</li>
+
+<li>Enumerate is the pythonic way to write a loop: its short an easy to understand. There's usually no need to access anything using indices.</li>
+
+<li>Reduce visual noise and increase code clarity by using unpacking to avoid explicitly indexing into sequences.</li>
+
+<li>Zip: its output is as long as its shortest input</li>
+
+<li>Assignment expressions use the walrus operator (:=) to both assign and evaluate variable names in a single expression.</li>
+
+<li><p>
+Check for equality and references separately:
+</p>
+
+<p>
+assert b == a and b is not a
+</p></li>
+
+<li>Because starred expressions is always turned into a list, unpacking an iterator risks the potential of using up all the memory on your computer.
+You should only use catch-all unpacking on iterators when you know that result can fit into memory</li>
+
+<li>When dividing a list into non-overlapping pieces, catch-all unpacking is much less error prone than slicing and indexing.</li>
+
+<li>The key parameter of the sort method can be used to supply a helper function that returns the value to use for sorting</li>
+
+<li><p>
+Print all the members of an object:
+</p>
+
+<p>
+a - MyClass()
+for key, value in a._<sub>dict</sub>_<sub>.items</sub>():
+	print(f'{key} = {value}')
+</p></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>The flow of fetching  a key that exists or returning a default value is so common that the dict built-in provides the get method to accomplish the task.</li>
+
+<li>A large number of return values is extremely error prone.
+Never use more than three variables when unpacking. If you need to unpack more, you re better off defining a lightweight class or namedtuple.</li>
+
+<li>Prefer raising exceptions to returning None. returning none for special cases is error prone, instead raise an Exception up to the caller and have the caller deal with it.</li>
+
+<li>Functions are first-class objects in python. Which means you can refer to them directly, assign them to variables, pass them as arguments to other functions, compare them in expressions and if statements etc.</li>
+
+<li>The best practice is to always specify optional arguments using the keyword names and never pass them as positional arguments.
+You can define functions to accept keyword-only arguments using the * symbol in the argument list, which indicates the end of positional arguments and the beginning of keyword-only arguments
+Can also supply positional-only arguments using the "/" character in the argument list.</li>
+
+<li><p>
+Decorators are syntax to allow one function to modify another at run time.
+</p>
+
+<p>
+Using the "@" symbol is equivalent to calling the decorator on the function it wraps and assigning the return value to the original name in the same scope.
+</p>
+
+<p>
+Use the wraps decorator from the functools built-in module.
+</p></li>
+
+<li>Iterators are stateful and cant be reused by multiple callers.</li>
+
+<li>You can define your own iterable container type by implementing the <span class="underline"><span class="underline">iter</span></span> method as a generator.</li>
+
+<li>When you are looking for a way to compose functionality that's operating on a large stream of input, generator expressions are a great choice.</li>
+
+<li>Dictionaries are so easy to use there is a danger of overextending them to write brittle code.</li>
+
+<li>A mix in is a class that defines only a small set of additional methods for its child classes to provide.  Writing mix-ins is easy b/c Python makes it trivial to inspect the current state of any object.</li>
+
+<li>Private attributes aren't rigorously enforced by the python compiler.</li>
+
+<li>Much of programming in python is defining classes that contain data and describing how such objects relate to each other. Every python class is a container for some kind, encapsulating attributes and functionality together.</li>
+
+<li><p>
+I especially like @property because it lets you make incremental progress toward a better data model over time.
+</p>
+
+<p>
+Use @property to give existing instance attributes new functionality
+</p></li>
+
+<li>Use WeakKeyDictionary to ensure that your descriptor classes dont cause memory leaks.</li>
+
+<li>Python has another object hook called <span class="underline"><span class="underline">getattribute</span></span>. This special method is called every time an attribute is accessed on an object, even in cases where it does exist in the attribute dictionary.</li>
+
+<li>A class decorator is a simple function that receives a class instance as a parameter and returns either a new class or a modified version of the original class.
+These are useful when you want to modify every method or attribute of a class with minimal boilerplate.</li>
+
+<li>It can be very difficult to make concurrent python code run in parallel.</li>
+
+<li>The best choice for managing child processes is to use the subprocess built in module.
+You can also pipe data from a python program into a subprocess and retrieve its output.</li>
+
+<li>Although python supports multiple threads of execution, the GIL causes only one of them to make forward progress at a time. This means that when you reach for threads to do parallel computation and speed up your python programs you will be sorely disappointed.</li>
+
+<li>Once you've written a useful python program the next step is to productionize your code so its bulletproof. Making programs dependable when they encounter unexpected circumstances is just as important as making programs with correct functionality.</li>
+
+<li>There are four distinct times when you might want to take action during an exception handled in the:  try,  except, else and finally blocks.
+Each block serves a unique purpose in the compound statement</li>
+
+<li>The with statement allows you to reuse logic from try/finally block and reduce visual noise.</li>
+
+<li>the contextlib built-in module provides a contextmanager decorator that makes it easy to use your own functions in "with" statements.</li>
+
+<li>The purpose of pickle is to let you pass python objects between programs that you control over binary channels.</li>
+
+<li>Formats like json should be used for communication between programs or people who dont trust each other.</li>
+
+<li>The Decimal class is ideal for situations that require high precision and control over rounding behavior.</li>
+
+<li>The true source of slowdowns in a python program can be obscure. The best approach is to ignore your intuition and directly measure the performance of a program before you try to optimize.</li>
+
+<li>Use the profile module instead of the profile method b/c it provides more accurate profiling information.</li>
+
+<li><p>
+Pythons bisect module provides better ways to accomplish searches through ordered lists. You use the bisect<sub>left</sub> function to do an efficient binary search through any sequence of sorted items. The index it returns will either be where the item is already present in the list or where you'd want to insert it to keep it sorted.
+</p>
+
+<p>
+The best part is that its not limited to list type: you can use it with any object that acts like a sequence.
+</p>
+
+<p>
+Takes logarithmic time to search for values in a sorted list, can be orders of magnitude faster than other approaches.
+</p></li>
+
+<li>Priority queues allow you to process items in order of importance instead of FIFO.
+Use heapq to implement a priority queue.</li>
+
+<li><p>
+The dynamic behavior of python is both a blessing and a curse.
+</p>
+
+<p>
+A large number of programmers say its worth going without compile-time static type checking because of the productivity gained from the brevity and simplicity. But most people have at least one horror story about a program encountering a boneheaded error at runtime.
+</p>
+
+<p>
+In python it may be more important to write tests to verify correctness than in other languages. Luckily the same dynamic features that create risks also make it easy to write tests for your code and to debug malfunctioning programs
+</p></li>
+
+<li>IF you refactor or expand your code, test that verify behavior &#x2013; not implementation &#x2013; make it easy to identify whats changed. It sounds counterintuitive but having good tests actually makes it easier to modify python code, not harder.</li>
+
+<li><p>
+When debugging you almost always want to see the "repr" version of an object.
+The !r type conversion for an f-string.
+</p>
+
+<p>
+f-strings produce human readable strings for replacement text expressions unless you specify the "!r" suffix.
+</p></li>
+
+<li>I usually define one TestCase subclass for each set of related tests. Sometimes I have one TestCase for each function that has many edge cases.</li>
+
+<li><p>
+When programs get complicated you'll want additional tests to very the end-to-end interaction between your modules. This is the difference between unit tests and integration tests.
+In python its important to write both types.
+</p>
+
+<p>
+Use unittest.mock for creating mocks and using them in tests.
+</p></li>
+
+<li><p>
+In most other languages you use a debugger by specifying what line of a source file you'd like to stop on, and then executing the program.
+There is no difference between starting a python program in order to run the debugger and starting it normally.
+</p>
+
+<p>
+To initiate the debugger all you have to do is call "breakpoint()" This is the equivalent to important pdb and running set<sub>trace</sub>()
+</p>
+
+<p>
+At the pdb prompt, you can type in names of local variables and see their values printed out. You can see a list of all local variables with locals(). You can import modules and do anything else you want in python.
+</p></li>
+
+<li><p>
+Use virtual environments for isolated and reproducible dependencies. venv allows you to create isolated versions of the python environment.
+</p>
+
+<p>
+Use "python -m pip freeze" to save all of the explicit package dependencies into a file which by convention is called requirements.txt
+</p>
+
+<p>
+Using a requirements.txt file is ideal for collaborating with others through a revision control system. You can commit changes to your code at the same time you update your list of package dependencies.
+</p></li>
+
+<li>When defining a modules API the exceptions you raise are just as much a part of the interface as the functions and classes you define.</li>
+
+<li>Defining root exceptions for modules allows API consumers to insulate themselves from an API.</li>
+
+<li>While exceptions are primarily for automated error handling by machines, warning are all about communication between humans about what to expect in their collaboration.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

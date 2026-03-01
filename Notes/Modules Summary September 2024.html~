@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary September 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary September 2024</h1>
+<p>
+UCSB is wrapping up the pre-series. They have built 5 LD right modules (with Ti baseplate) for the irradiation campaign and have studied the glue/encapsulation pattern to mitigate noisy channels.  All the modules built with the new glue/tape pattern do not show noisy channels identified during the assembling procedure.  They have also found that covering common mode capacitors with encapsulation helps protect chips against failures.
+</p>
+
+
+<p>
+US MAC Assembly tooling will be ordered through Xometry (via Fermilab).  
+</p>
+
+<p>
+CMU has finished the preseries. Eleven live modules were assembled (eight assembled following the two at a time protocol) All but one has good electrical performance.  One module has low breakdown voltage, investigations ongoing. They have done studies characterizing the noise in modules. As with other MAC they have seen noisy cells around the perimeter and expect this will be mitigated with new glue/tape pattern from UCSB.  
+</p>
+
+<p>
+There is ongoing work on integrating the database into module assembly workflow via graphical interfaces. All pieces are in hand apart from the visual inspection GUI (from the OGP). This is work in progress and is expected to be in place for the MAC ramp up exercise.  
+</p>
+
+<p>
+The shipping material for the 3 US MACs ordered. The delivery date is still TBC.  
+</p>
+
+<p>
+CMU has started the search for lab technicians to be hired at the end of the year for module assembly.
+</p>
+
+
+
+
+<div id="outline-container-orgf9790fa" class="outline-2">
+<h2 id="orgf9790fa">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgd47af6f" class="outline-2">
+<h2 id="orgd47af6f">Links:</h2>
+<div class="outline-text-2" id="text-orgd47af6f">
+<p>
+<a href="Modules Summary August 2024.html#ID-0C25778C-BCF7-45A7-973A-7D80C4311464">Modules Summary August 2024</a>
+</p>
+
+<p>
+<a href="HGC MAC Meeting 11 September 2024.html#ID-18C92077-ED00-49EE-96CE-6CB77AC39CE6">HGC MAC Meeting 11 September 2024</a>
+</p>
+
+<p>
+202409241942
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

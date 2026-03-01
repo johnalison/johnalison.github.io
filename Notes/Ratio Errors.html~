@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ratio Errors</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ratio Errors</h1>
+<p>
+Ratio:
+\[
+r = \frac{N}{D}
+\]
+Error propogation: 
+</p>
+
+<p>
+\[
+\sigma_r^2 = \frac{\partial r}{\partial N} \sigma_N\ \oplus  \frac{\partial r}{\partial D} \sigma_D = \frac{1}{D} \sigma_N\ \oplus \frac{N}{D^2} \sigma_D
+\]
+</p>
+
+
+<p>
+So 
+\[
+\sigma_r = \sqrt{\frac{\sigma_N^2}{D^2}\ + \frac{N^2}{D^4}\sigma_D^2 }
+\]
+Or
+\[
+\frac{\sigma_r}{r} = \sqrt{\frac{D^2}{N^2}\frac{\sigma_N^2}{D^2}\ + \frac{D^2}{N^2}\frac{N^2}{D^4}\sigma_D^2 }
+\]
+</p>
+
+<p>
+Thus&#x2026;
+\[
+\left(\frac{\sigma_r}{r}\right)^2 = \left(\frac{\sigma_N}{N}\right)^2 + \left(\frac{\sigma_D}{D}\right)^2
+\]
+</p>
+
+
+<div id="outline-container-orga52a5ff" class="outline-2">
+<h2 id="orga52a5ff">Product of an arbitrary number of factors</h2>
+<div class="outline-text-2" id="text-orga52a5ff">
+<p>
+If 
+\[
+f = C_1^{e_1} C_2^{e_2}...  C_N^{e_1N}
+\]
+</p>
+
+<p>
+Then
+</p>
+
+<p>
+\[
+\frac{\partial f}{\partial C_i} = e_i \frac{f}{C_i}
+\]
+</p>
+
+<p>
+And 
+</p>
+
+<p>
+\[
+\frac{\sigma_f}{f} = \frac{1}{f}\sqrt{ \sum_i \left(e_i \frac{f}{C_i}\right)^2 \sigma_{C_i}^2\ } =  \sqrt{ \sum_i \left( \frac{e_i}{C_i}\right)^2 \sigma_{C_i}^2\ } 
+\]
+</p>
+
+
+<p>
+Thus&#x2026;
+\[
+\left(\frac{\sigma_f}{f}\right)^2 = \sum_\oplus\frac{e_i^2 \sigma_{C_i}}{C_i} 
+\]
+</p>
+
+<p>
+In the simple ration above \(e_i = \pm 1\) and \(e_i^2 = 1\).
+</p>
+</div>
+
+<div id="outline-container-orgc28785f" class="outline-3">
+<h3 id="orgc28785f">Follow-ups</h3>
+</div>
+<div id="outline-container-org9f3a593" class="outline-3">
+<h3 id="org9f3a593">Links:</h3>
+<div class="outline-text-3" id="text-org9f3a593">
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+<a href="ABCDMethod.html#ID-EF44A777-CF05-4EA0-9B90-41EAADEB45BD">ABCDMethod</a>
+</p>
+
+
+
+<p>
+202409201008
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 14 February 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 14 February 2025</h1>
+<p>
+I've started lifting again, its slow and steady. I did a set of
+kettlebells and it felt great! I have a new lifting plan that I got
+from the Peter Attia podcast. I'm going to try to go hard for 30-45
+mins with paired exercises that target different muscle groups. This
+will allow me to do the sets back-to-back with little or no rest in
+between. Basketball has been good, I've been playing well and having
+fun. All habits are in check. I would say I still need some more
+meditation and would like to do more 4b work. My writing habits are
+steady.
+</p>
+
+<p>
+On the four-b side we have been making nice progress. The lambda scan
+is now understood and looks as expected. We got a round of comments
+from the L2 conveners and have a first pass at the answers. There was
+nothing major, with some good points (eg: symmetric trigger weights
+systematics) and some action items to follow up on. We got a
+significant improvement in the expected limits, now ~5.5, after
+removing events with anomalously large signal weights.
+</p>
+
+<p>
+Most of my work has been focused on the synthetic datasets. I've
+started doing the closure with one of the seeds. This has been an
+opportunity to test the new FvT code, the interface is very nice, much
+better than before. Im still debugging the fits, but they seem to show
+the same problems that Marina is seeing with the Run3 synthetic
+datasets. The next step is to isolate the phase space in the synthetic
+data that is the least well-modeled by the 3b. Im guessing that this
+will point to shortcomings of the synthetic data. I have a good idea
+about how to improve the modeling of the jet masses in the synthetic
+data, I will re-compute the masses based on the final pT.
+</p>
+
+<p>
+Aniket gave a great talk in bbWW! We will proceed with adding the low
+pT jets and will now move to doing this in Run-3. This will should
+bring much more integration with the rest of the group.
+</p>
+
+<p>
+Lots of steady progress on HGC. Ornella and Josh have started and we
+are moving on another Ad. We have finalized a plan for the shipping
+containers and should will get new tooling soon.
+</p>
+</div>
+</body>
+</html>

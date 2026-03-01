@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Migrate Hemisphere Mixing To Python</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Migrate Hemisphere Mixing To Python</h1>
+<p>
+<a href="Synthetic-data-sets-via-hemisphere-mixing.html#ID-151BE736-0795-4305-87A1-A065C35822D0">Synthetic-data-sets-via-hemisphere-mixing</a>
+<a href="hemispheremixing-20250504111513.html#ID-27209C81-3ED8-4721-B0F6-57FC9FA9BB40">HemisphereMixing</a>
+</p>
+
+<div id="outline-container-org18c032c" class="outline-2">
+<h2 id="org18c032c">Notes:</h2>
+<div class="outline-text-2" id="text-org18c032c">
+<ul class="org-ul">
+<li>step 1) create library 4tag -&gt; bunch of kd-trees</li>
+<li>step 2) mix all 3b</li>
+<li>step 3) sub-sample mixed 3b</li>
+<li>Hemi-library / (kd-tree by summary variable)</li>
+<li>Lots of unit tests!!!!
+
+<ul class="org-ul">
+<li>Make hemi libraries 
+processor that outputs</li>
+</ul></li>
+
+<li>Make Mixed data
+<ul class="org-ul">
+<li>skimmer that loops over chunks
+<ul class="org-ul">
+<li>For each chunk:
+loop on jet selection
+for each jet selection</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgf08235a" class="outline-2">
+<h2 id="orgf08235a">To do</h2>
+<div class="outline-text-2" id="text-orgf08235a">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Add CI tests</li>
+<li class="on"><code>[X]</code> Add HIstograms</li>
+<li class="on"><code>[X]</code> Write out hemiLibrary</li>
+<li class="on"><code>[X]</code> Setup kdTrees
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Build all kdTrees&#x2026;</li>
+</ul></li>
+<li class="on"><code>[X]</code> Swap Hemis</li>
+<li class="on"><code>[X]</code> Output events</li>
+<li class="on"><code>[X]</code> Script to count hemis,</li>
+<li class="on"><code>[X]</code> Scheme for cutting off number</li>
+<li class="on"><code>[X]</code> PreCompute mean RMS&#x2026; output yaml</li>
+<li class="on"><code>[X]</code> Script to make histograms</li>
+<li class="on"><code>[X]</code> Function to load kdTrees</li>
+<li class="on"><code>[X]</code> Figure out rotations</li>
+<li class="on"><code>[X]</code> update other hemi info</li>
+<li class="on"><code>[X]</code> Use iterators to simply the for loop</li>
+<li class="on"><code>[X]</code> Clean and setup CIs</li>
+<li class="on"><code>[X]</code> output hemi file to EOS</li>
+<li class="on"><code>[X]</code> Run on condor</li>
+<li class="on"><code>[X]</code> Add printouts of the number of libraries loaded</li>
+<li class="off"><code>[&#xa0;]</code> Output empty electron and muon collections</li>
+<li><del>[ ] Add hemiwieghts for ttbar</del></li>
+<li class="on"><code>[X]</code> Script to run on mixed data and make plots.</li>
+<li class="on"><code>[X]</code> should also output "4b"-like files</li>
+<li class="on"><code>[X]</code> Check for hemis from the same event&#x2026;</li>
+<li class="on"><code>[X]</code> Plot hemi statistics</li>
+<li class="on"><code>[X]</code> Make mixed datasets&#x2026;</li>
+<li class="on"><code>[X]</code> Script to Count number of hemi uses, hemi-pair uses: inclusive, SB, and vSR</li>
+<li class="on"><code>[X]</code> Add sed changing path to test the hemimixing</li>
+<li class="on"><code>[X]</code> Run all Run2 years</li>
+<li class="on"><code>[X]</code> Debug the psedotag assignment&#x2026; Needs to be selected jets</li>
+<li class="on"><code>[X]</code> Read in correct metadata according to year</li>
+<li class="off"><code>[&#xa0;]</code> Signal injection</li>
+<li class="off"><code>[&#xa0;]</code> Boostrap scripts</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd73c3d3" class="outline-2">
+<h2 id="orgd73c3d3">Maybes</h2>
+<div class="outline-text-2" id="text-orgd73c3d3">
+<ul class="org-ul">
+<li><del>[ ] Merge hemiLibrary files? (Probably No)</del></li>
+<li><del>[ ] Merge Meta data ?</del>
+<ul class="org-ul">
+<li><del>[ ] Separete Random Access tree ?</del></li>
+<li><del>[ ] Split output files by jet Multiplicity ?</del></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org7099fde" class="outline-2">
+<h2 id="org7099fde">Logs</h2>
+<div class="outline-text-2" id="text-org7099fde">
+</div>
+<div id="outline-container-org0522019" class="outline-3">
+<h3 id="org0522019"><a href="../Journal/2026/02-February/04-February-2026-Wednesday.html#ID-E046E496-29BF-45F0-BC84-1FF1D831ED41">04 February 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org0522019">
+<ul class="org-ul">
+<li>Remaking Run2 mixed data with proper ttbar weight subtraction using FvT.. fails
+<ul class="org-ul">
+<li><code>ERROR    The whole dataset is missing: {'data_UL17B'}</code></li>
+</ul></li>
+<li>Rerunning</li>
+<li>Problem is w/UL17B I was not running on this before&#x2026; This might be an issue with teh new trigger</li>
+<li>Re-ran no UL17B &#x2026; looks OK&#x2026; nope some files did not merge&#x2026; rerunning</li>
+<li>Now <code>data_UL16_preVFPC</code> giving me problems&#x2026; rerunning locally</li>
+<li>Doesnt really make a differnece: norm is sligthly off</li>
+</ul>
+
+<div id="org90f3a05" class="figure">
+<p><img src="Logs/2026-02-04_20-49-17_screenshot.png" alt="2026-02-04_20-49-17_screenshot.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>(would probably be fixed with an updated JCM for subsampling)</li>
+</ul>
+
+<div id="org32bd816" class="figure">
+<p><img src="Logs/2026-02-04_20-47-42_screenshot.png" alt="2026-02-04_20-47-42_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>Still should probalby use the 3b DvT from the FvT in the future</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2d60e1f" class="outline-3">
+<h3 id="org2d60e1f"><a href="../Journal/2026/01-January/08-January-2026-Thursday.html#ID-E3A453F8-A071-4C6C-8264-D3FB48C4C6D2">08 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org2d60e1f">
+<ul class="org-ul">
+<li>Checking the JCM weights&#x2026; looks good</li>
+<li>Resplitting subsamples with the new JCM 0&#x2026; 1 &#x2026; 2</li>
+<li>Now running with SvB</li>
+<li class="on"><code>[X]</code> Make plots mixed vs 4b&#x2026;</li>
+<li class="on"><code>[X]</code> Think about mixed CIs</li>
+</ul>
+<p>
+Steps in making the mixed data:
+</p>
+<ul class="org-ul">
+<li>making the hemis ( Have CI)</li>
+<li>study the hemis   (Adding&#x2026;fix v1.. fix v2 .. fix v3&#x2026; WORKING.. how to check the yml ? &#x2026; fix v1&#x2026; WORKING)</li>
+<li>do the mixing &#x2026; (Adding&#x2026;fix v1&#x2026; WORKING</li>
+<li>do the splitting &#x2026; (Adding&#x2026; fix v1&#x2026; fix v2&#x2026;</li>
+<li>Analyze the split data &#x2026; (Adding&#x2026;</li>
+<li>Making hemistats &#x2026;
+<code>./run_container python coffea4bees/hemisphere_mixing/study_hemispheres.py --hemifiles coffea4bees/skimmer/metadata/hemisphere_library_noTT.yml --year UL18 UL17 UL16 --threshold 1000</code></li>
+<li>Moving to the skmmer metadata folder</li>
+<li>More CI works</li>
+<li>Added the cut flow CI</li>
+<li>MERGED!!!</li>
+<li>READY TO MOVE ON TO RUN3 &#x2026; DONE!!!!!</li>
+</ul>
+
+
+<div id="org80bdef9" class="figure">
+<p><img src="Logs/2026-01-15_10-11-02_screenshot.png" alt="2026-01-15_10-11-02_screenshot.png" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgebd26e7" class="outline-3">
+<h3 id="orgebd26e7"><a href="../Journal/2026/01-January/07-January-2026-Wednesday.html#ID-EE34C9F2-B9AA-42AA-BD87-A56CC33DFBC0">07 January 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgebd26e7">
+<ul class="org-ul">
+<li>checking nJets distribution with new JCM&#x2026; looks good</li>
+<li>pushing</li>
+<li>cleaning up in a helper function</li>
+<li class="on"><code>[X]</code> Adding new pseudoweights to splitter
+<code>./run_container source coffea4bees/scripts/mixeddata-split-dataset.sh</code></li>
+<li>Running splits 3 and 4</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org800669e" class="outline-3">
+<h3 id="org800669e"><a href="../Journal/2026/01-January/06-January-2026-Tuesday.html#ID-6E2E34A8-C05D-40E1-8C04-EA0CE653979B">06 January 2026 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org800669e">
+<ul class="org-ul">
+<li>Need to subsample based on new JCM</li>
+<li>Setting up new JCM
+<ul class="org-ul">
+<li>Need to run it on the mixed "fourTag" events add one to the number of untagged jets</li>
+<li>Changing the JCM interface to take the nJets not the jets themseleves</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8498eee" class="outline-3">
+<h3 id="org8498eee"><a href="../Journal/2025/12-December/24-December-2025-Wednesday.html#ID-1B6C7816-FFE7-4D5C-9ECE-CCD002C87EAD">24 December 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org8498eee">
+<ul class="org-ul">
+<li>Fixing CI</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org10229f1" class="outline-3">
+<h3 id="org10229f1"><a href="../Journal/2025/12-December/23-December-2025-Tuesday.html#ID-1E04BB8E-7D05-4AE5-80DA-7978B55677EC">23 December 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org10229f1">
+<ul class="org-ul">
+<li>Adding config for the JCM fitting</li>
+<li>Will use defaults as nominal</li>
+<li class="on"><code>[X]</code> Nominal config as example</li>
+<li class="on"><code>[X]</code> Low Pt config</li>
+<li class="on"><code>[X]</code> mixing JCM config</li>
+<li>Got the code going&#x2026;
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py  -o output/mixeddata_cluster/jcm_for_subsampling -c passPreSel -r SB --combine_input_files -i output/analysis_testAll_job/hist_TTbkgs.coffea output/analysis_testAll_job/hist_databkgs.coffea   output/mixeddata_cluster//study_mixed_datasets_all.coffea   --jcm_config coffea4bees/analysis/jcm_tools/metadata/mixeddata_all_config.yml</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org99a5363" class="outline-3">
+<h3 id="org99a5363"><a href="../Journal/2025/12-December/22-December-2025-Monday.html#ID-619D1E28-A9FB-450C-A8EE-0803FFF8FF79">22 December 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org99a5363">
+<ul class="org-ul">
+<li>Check Jet Multiplicities.</li>
+<li class="off"><code>[&#xa0;]</code> threeTag (No JCM) vs mixedAll (no subsample)</li>
+<li class="on"><code>[X]</code> fourTag ttbar vs PStag</li>
+<li class="off"><code>[&#xa0;]</code> Subsample vs threeTag JCM</li>
+<li>Thinking about jet multiplicities</li>
+<li>Adding fucntionality to plot separate vars from separate processes</li>
+<li>Adding the old jet multiplicities to the pico</li>
+<li>Running the mixing on condor ! &#x2026; Works nicely
+8,467 events/s total (9401182/1110.3234672546387)</li>
+<li>The jet multiplicities are nearly unchanged from the mixing</li>
+<li>To do the subsampleing I think I need to refit the JCM</li>
+<li>Testing JCM</li>
+</ul>
+<p>
+<code>./run_container python coffea4bees/analysis/jcm_tools/make_jcm_weights.py -o output/mixeddata_cluster/jcm_for_subsampling -c passPreSel -r SB --combine_input_files -i output/analysis_testAll_job/hist_TTbkgs.coffea output/analysis_testAll_job/hist_databkgs.coffea</code>
+</p>
+<ul class="org-ul">
+<li>Adding nJets and nTag jets histograms to study job processor to be able to fit JCM</li>
+<li>Got the JCM working&#x2026; probbly need to create a config to configure the different JCM fit</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org81a323b" class="outline-3">
+<h3 id="org81a323b"><a href="../Journal/2025/12-December/18-December-2025-Thursday.html#ID-8F9C9112-F88C-498D-9CA0-70A361AD67AC">18 December 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org81a323b">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Compare weighted njet distribution with subsampled one</li>
+<li class="on"><code>[X]</code> Check cut flow of subsampled distribution</li>
+<li class="on"><code>[X]</code> Check weights</li>
+<li>The sampled nJets looks  like the reweighted one</li>
+<li>Ran All Run2 data&#x2026;</li>
+<li class="on"><code>[X]</code> Compare the w/o ttbar</li>
+<li>Found problems with ttbar ! &#x2026; only getting assinged to mix<sub>v0</sub> &#x2026; Hacked it&#x2026; not sure if there is a better fix</li>
+<li class="on"><code>[X]</code> Check if we have a runner / ping AE</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga6a9529" class="outline-3">
+<h3 id="orga6a9529"><a href="../Journal/2025/12-December/17-December-2025-Wednesday.html#ID-D89E814E-2CD4-4E39-B4A0-2EE36ED65EB1">17 December 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orga6a9529">
+<ul class="org-ul">
+<li>adding mixed<sub>data</sub><sub>all</sub> to datasets yaml</li>
+<li>Running the mixed data study
+<code>./run_container source coffea4bees/scripts/mixeddata-study-mixeddataset.sh</code></li>
+<li>Studying the duplicates
+<code>python  coffea4bees/hemisphere_mixing/study_hemi_pairs.py coffea4bees/hemisphere_mixing/test_mixed_datasets_all.coffea</code></li>
+<li>Splitting the mixed data &#x2026; Ran v0 - v2</li>
+<li>Running on v0 - v2</li>
+<li>Add split datasets to datasets yaml
+<code>./run_container source coffea4bees/scripts/analysis-mixed-new.sh</code></li>
+<li>[&gt;&gt;] Check the JCM</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgab11d0f" class="outline-3">
+<h3 id="orgab11d0f"><a href="../Journal/2025/12-December/16-December-2025-Tuesday.html#ID-818E9E26-905D-464B-82E4-D39C0B2450CE">16 December 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgab11d0f">
+<ul class="org-ul">
+<li>Trying to run on EOS hemis&#x2026; works fine</li>
+<li>Updating how I pass in hemi&#x2026; using yaml</li>
+<li>I think I should move JCM to the study/splitter code&#x2026;
+&#x2026; No! needed for PS tag jet assignment.</li>
+<li>Testing subtract pseudotag with weight in mixing&#x2026; all good</li>
+<li>Made hemispheres for all of Run2&#x2026; on EOS</li>
+<li>Making hemi Statistics for all years</li>
+<li><code>./run_container python coffea4bees/hemisphere_mixing/study_hemispheres.py --hemifiles coffea4bees/skimmer/metadata/hemisphere_library_noTT.yml --year UL18 UL17 UL16 --threshold 1000</code></li>
+<li>Running the mixing on all data, all years&#x2026; no problems!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org03cc78f" class="outline-3">
+<h3 id="org03cc78f"><a href="../Journal/2025/12-December/15-December-2025-Monday.html#ID-14E89D96-887F-46AC-9455-D0BAC2D9E3D4">15 December 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org03cc78f">
+<ul class="org-ul">
+<li>Merging and trying to push to barista again&#x2026;
+.. MERGED !</li>
+<li>Trying to run with the ttbar subtraction. Seems to be OK</li>
+<li>Trying to output hemifiles to condor&#x2026; also seems OK
+<code>/store/user/jda102/XX4b/mixed_data_noTT/</code></li>
+</ul>
+
+<pre class="example" id="org182a8b1">
+
+data_UL18A_UL18B_UL18C_UL18D :
+
+	Cuts                          	FourTag                 	
+	                              	----------   ---------- 	
+	                              	weighted     (unit weight) 	
+
+
+	all                           	3643916.0    3643916.0  	
+	passNoiseFilter               	3639049.0    3639049.0  	
+	passHLT                       	3375863.0    3375863.0  	
+	passJetMult                   	3325925.0    3325925.0  	
+	passFourTag                   	124579.0     124579.0   	
+	pass_ttbar_filter             	116621.0     116621.0   	
+
+  
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-orgfa0d45f" class="outline-3">
+<h3 id="orgfa0d45f"><a href="../Journal/2025/12-December/12-December-2025-Friday.html#ID-6AC0FB32-8B8F-48BC-8928-97B4652E6A36">12 December 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgfa0d45f">
+<ul class="org-ul">
+<li>Adding 3b subsample correlation counts</li>
+<li><code>python  coffea4bees/hemisphere_mixing/study_hemi_pairs.py coffea4bees/hemisphere_mixing/test_mixed_datasets_all.coffea # -m coffea4bees/plots/metadata/plotsAllMixed.yml</code></li>
+<li>Made subsample matrix&#x2026; can do 16 samples with 4% overlap</li>
+<li>Updating splitter skimmer</li>
+<li>Made v1</li>
+<li>Trying to process</li>
+<li class="off"><code>[&#xa0;]</code> Better handling of new mixed data names</li>
+<li>Trying to run SvB on the mixed data
+<code>./run_container source coffea4bees/scripts/analysis-mixed-new.sh</code></li>
+<li>Comparing cutflow
+<ul class="org-ul">
+<li><code>python coffea4bees/analysis/printCutFlow.py -i coffea4bees/hemisphere_mixing/histData.coffea -p data -e UL18A UL18B UL18C UL18D</code></li>
+<li><code>python coffea4bees/analysis/printCutFlow.py -i coffea4bees/hemisphere_mixing/histMixedData.coffea -p mixeddata_4b_mix_v1 -e UL18</code></li>
+</ul></li>
+<li class="on"><code>[X]</code> Do I need to reapply the calibration or the bjet jet regression?</li>
+<li>Can I remove ttbar from hemisphere during splitting ???!!!!!!
+<ul class="org-ul">
+<li>I think so!!!!</li>
+</ul></li>
+<li>Making plots&#x2026; not bad</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">Data</th>
+<th scope="col" class="org-right">mixed</th>
+<th scope="col" class="org-right">ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">presel</td>
+<td class="org-right">124579.0</td>
+<td class="org-right">172676.0</td>
+<td class="org-right">1.3861</td>
+</tr>
+
+<tr>
+<td class="org-left">Dijet mass</td>
+<td class="org-right">51916.0</td>
+<td class="org-right">62978.0</td>
+<td class="org-right">1.2131</td>
+</tr>
+
+<tr>
+<td class="org-left">SR</td>
+<td class="org-right">19608.0</td>
+<td class="org-right">23067.0</td>
+<td class="org-right">1.1764</td>
+</tr>
+
+<tr>
+<td class="org-left">SB</td>
+<td class="org-right">32308.0</td>
+<td class="org-right">39911.0</td>
+<td class="org-right">1.2353</td>
+</tr>
+
+<tr>
+<td class="org-left">pass SvB</td>
+<td class="org-right">1569.0</td>
+<td class="org-right">1816.0</td>
+<td class="org-right">1.1574</td>
+</tr>
+
+<tr>
+<td class="org-left">fail SvB</td>
+<td class="org-right">78016.0</td>
+<td class="org-right">113344.0</td>
+<td class="org-right">1.4528</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Testing jet pts when clustering
+<ul class="org-ul">
+<li>In the hemis the jets have been calibrated but the breg has not been applied</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbe7e4d7" class="outline-3">
+<h3 id="orgbe7e4d7"><a href="../Journal/2025/12-December/11-December-2025-Thursday.html#ID-59E5BC2B-EFA5-42F4-8F8C-DEE4AA268C12">11 December 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgbe7e4d7">
+<ul class="org-ul">
+<li>Adding logic to split mixed datasets</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org12f2ecb" class="outline-3">
+<h3 id="org12f2ecb"><a href="../Journal/2025/12-December/10-December-2025-Wednesday.html#ID-1351D23C-AADC-477D-89F3-7F91FCBA3D53">10 December 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org12f2ecb">
+<ul class="org-ul">
+<li>Trying to run all &#x2026; now running !!
+<code>MiB Swap:   4096.0 total,   1507.9 free,   2588.1 used.    630.8 avail Mem</code></li>
+<li>Finished!</li>
+<li>Checking for duplicate events&#x2026;
+<ul class="org-ul">
+<li>very small number 1e-4 in total sample.</li>
+<li>Probably not worth removing duplicates here&#x2026;</li>
+</ul></li>
+<li class="on"><code>[X]</code> Study of reused hemis and hemipairs</li>
+<li>Wrote out hemi pair events and and runs in the SB and SR</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgaa97f34" class="outline-3">
+<h3 id="orgaa97f34"><a href="../Journal/2025/12-December/09-December-2025-Tuesday.html#ID-BA611E5F-AD0B-4185-8478-DA2B33CEE05B">09 December 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgaa97f34">
+<ul class="org-ul">
+<li>Retrying to run the mixing&#x2026; failing</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc8b751a" class="outline-3">
+<h3 id="orgc8b751a"><a href="../Journal/2025/12-December/08-December-2025-Monday.html#ID-BA3EDC6A-9264-4E51-AFD5-C49F3FD1528B">08 December 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgc8b751a">
+<ul class="org-ul">
+<li><del>Same event veto</del>  not Needed</li>
+<li>Adding a plot of the distance variable</li>
+<li>checking for duplicate events</li>
+<li>Re-processing all the mixed data  &#x2026; Now failing</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge38e9d5" class="outline-3">
+<h3 id="orge38e9d5"><a href="../Journal/2025/12-December/03-December-2025-Wednesday.html#ID-C3FDB97B-31C4-4FE2-B40B-B2E487DC8C83">03 December 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orge38e9d5">
+<ul class="org-ul">
+<li>Fixed output mixed pico names</li>
+<li>Starting HemiSplitter
+<code>./run_container source coffea4bees/scripts/mixeddata-split-dataset.sh</code></li>
+<li>Setting up good names for the hemivars</li>
+<li>Need to make a processor &#x2026; not a skimmer to study the mixed daa</li>
+<li><code>./run_container source coffea4bees/scripts/mixeddata-study-mixeddataset.sh</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3127862" class="outline-3">
+<h3 id="org3127862"><a href="../Journal/2025/12-December/01-December-2025-Monday.html#ID-9B0A8E15-AB9D-43E7-90C7-E698C362A63F">01 December 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org3127862">
+<ul class="org-ul">
+<li>Adding new thrust phi to output</li>
+<li>Thinking re:plotting script</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgdb247fe" class="outline-3">
+<h3 id="orgdb247fe"><a href="../Journal/2025/11-November/22-November-2025-Saturday.html#ID-016C7C32-AEA0-4DDC-8908-274EBF5478B6">22 November 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgdb247fe">
+<ul class="org-ul">
+<li>thinking re:pseduotag.</li>
+<li>Compute number of n = tag + loose - tag +PS tag</li>
+<li>sort by btagging score and call the top n "tagged" for the purposes of hemimixing</li>
+<li>Checked that the thrusts after mixing are very similar to the thrusts before &#x2026; should also make a histogram of this</li>
+<li>Bug fixing the number of pseudotags..</li>
+<li>Think I got a version</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd35daf3" class="outline-3">
+<h3 id="orgd35daf3"><a href="../Journal/2025/11-November/21-November-2025-Friday.html#ID-655CBC81-BECE-42B0-8B60-F8DA5379F8EA">21 November 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgd35daf3">
+<ul class="org-ul">
+<li>Running all with no ak.where  and only one round of lookup&#x2026;
+5,731 events/s total (3643937/635.801069021225)</li>
+<li>Running all no ak.where  and only one round of lookup&#x2026;      
+5,640 events/s total (3643937/646.0514125823975)</li>
+<li>Crashed with more than one iteration&#x2026;</li>
+<li class="on"><code>[X]</code> Fix ERROR in CI</li>
+<li>added v2 logic to loop on jet bins&#x2026; output to a list of hemis and then sort  at the end</li>
+<li>Runnign all BOO YEAAA &#x2026;
+5,101 events/s total (3643937/714.3310241699219)</li>
+<li class="on"><code>[X]</code> Recompute thrust axis after mixing&#x2026; <code>Looks good</code></li>
+<li>Trying to load kDTree in event loop instead of at init&#x2026; implemented</li>
+<li>Testing running all&#x2026; crashed&#x2026;</li>
+<li>Re ran &#x2026; 4,813 events/s total (3643937/757.1812090873718)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge2501af" class="outline-3">
+<h3 id="orge2501af"><a href="../Journal/2025/11-November/20-November-2025-Thursday.html#ID-83CED2F9-E641-4F2A-8DB3-BB9A2BE17F5E">20 November 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orge2501af">
+<ul class="org-ul">
+<li>Implementing rotations</li>
+<li>Removing muons and elecs from testing</li>
+<li class="on"><code>[X]</code> Add hemi matching distances</li>
+<li>creating a helper function for the hemi-replacement</li>
+<li>Setting up CIs</li>
+<li>Adding options for study<sub>hemispheres.py</sub>
+ total hemisphere = 233498
+ nHemiLibraries = 77
+combined counts 233498 vs total counts 233498</li>
+<li><code>./run_container python coffea4bees/hemisphere_mixing/study_hemispheres.py --hemifiles output/mixeddata_cluster/data_UL18D/hemisphereLib_e850b3fc-05bc-11ee-a472-0ebce183beef_1085436_1184112.root</code></li>
+<li>Reclustering all&#x2026;
+48,980 events/s total (3643937/74.39589524269104)</li>
+<li>Trying to mix all the data and fails with
+1 worker and 100,000 chunk size&#x2026; .works with 10,000 chunk size</li>
+<li class="on"><code>[X]</code> Try with fewer hemilibraries</li>
+<li>Trying with nHemiLibraries = 46 (threshold 1000) hemisphere libraries
+&#x2026; 35 events/s total</li>
+<li>Without the ak.where &#x2026; 35 events/s</li>
+<li>Now, with only one hemilibrary&#x2026;. 76 events/s</li>
+<li>With no hemireplacement 76&#x2026;</li>
+<li>with no splitting into hemis&#x2026; 83 events/s</li>
+<li>with running all  8,231 events/s</li>
+<li class="on"><code>[X]</code> Need to treat the pseudotag jet as a tagged jet</li>
+<li>All with just the hemi-creation  &#x2026;. 9,229 events/s total (3643937/394.85244703292847)</li>
+<li>All and no ak.where&#x2026;?</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org126ac55" class="outline-3">
+<h3 id="org126ac55"><a href="../Journal/2025/11-November/19-November-2025-Wednesday.html#ID-ED8615AC-EE03-4DE2-9D87-E4F6996C276D">19 November 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org126ac55">
+<ul class="org-ul">
+<li>Trying to update hemispheres&#x2026;.</li>
+<li>Try manying things.</li>
+<li>Chat AE&#x2026;. Chat GPT &#x2026;</li>
+<li>Temp solution look up all hemis each iteration&#x2026; only replace with mask using ak.where</li>
+<li>Works in test.</li>
+<li>Added iterators..cleaned the code</li>
+<li>running out of memory with 50 events!&#x2026; Found that its b/c of the electrons and muons &#x2026; kill them</li>
+<li>process both hemis in one go&#x2026;</li>
+<li>Got a solid version running.</li>
+<li>Good ideas on how to update synthetic jets</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4579153" class="outline-3">
+<h3 id="org4579153"><a href="../Journal/2025/11-November/18-November-2025-Tuesday.html#ID-453A7339-69CC-4A8C-8263-ACDB70315B21">18 November 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org4579153">
+<ul class="org-ul">
+<li>Setting up test to do the mixing&#x2026;</li>
+<li>Fighting with test vectors&#x2026; got it working</li>
+<li>Can build the new hemis.</li>
+<li>Now how to output the new events&#x2026;</li>
+<li>&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc170bed" class="outline-3">
+<h3 id="orgc170bed"><a href="../Journal/2025/11-November/17-November-2025-Monday.html#ID-E298ED1D-37FB-42DD-BE5D-DA26C63101A8">17 November 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgc170bed">
+<ul class="org-ul">
+<li>Mail CL re:better way to read the hemis</li>
+<li>Got the template script setup</li>
+<li>Think I will look on multiplicity bins
+<code>./run_container source coffea4bees/scripts/mixeddata-make-dataset.sh</code></li>
+<li class="on"><code>[X]</code> Need to start a test</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org47a81dd" class="outline-3">
+<h3 id="org47a81dd"><a href="../Journal/2025/11-November/14-November-2025-Friday.html#ID-2CBE496E-0736-4102-BCB9-1FF02BBBD61B">14 November 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org47a81dd">
+<ul class="org-ul">
+<li>Moving plots to output directory</li>
+<li>Made yaml with summary statistics</li>
+<li>Made plots of counts</li>
+<li>fighting to read back in the yaml</li>
+<li>&#x2026;. think I got it.</li>
+<li>Now converting to zscores when loading the hemi-libraries</li>
+<li>Can now load in all the hemis&#x2026;</li>
+<li>I think I need to clean the code a bit&#x2026; <code>Now done</code></li>
+<li>1st make yaml file.</li>
+<li>Then read it back and make the zscores and the data and the hists</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org051a6ac" class="outline-3">
+<h3 id="org051a6ac"><a href="../Journal/2025/11-November/13-November-2025-Thursday.html#ID-10187780-CB27-47BB-B227-64705A40F68C">13 November 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org051a6ac">
+<ul class="org-ul">
+<li>making script to counts hemispheres
+<code>./run_container python coffea4bees/hemisphere_mixing/study_hemispheres.py</code></li>
+<li>Think I need for each var [min, max]
+eg: nTag = [0, 4] .. if above 4 use the library with nTag == 4
+    then nSel[nTag=0] = [1, 3], if below 1 use 1, if above 3 use 3
+	    nJet[nTag=0, nSel=1] = [1,5]</li>
+<li>Adding script to count</li>
+<li>Need to add function getHemiLibrary(nTag, nSel, nJet)</li>
+<li>Adding histograms</li>
+<li>Updating pts to do |pt| in the sums</li>
+<li>remaking hemis
+57,231 events/s total (3643937/63.670448780059814)</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org2691dd0" class="outline-3">
+<h3 id="org2691dd0"><a href="../Journal/2025/11-November/12-November-2025-Wednesday.html#ID-37E6F1A4-3F7B-43C6-9E97-EE6BE2189C17">12 November 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org2691dd0">
+<ul class="org-ul">
+<li>Collecting notes</li>
+<li>Fixes from CL</li>
+<li>Cluster all
+Before: 51,020 events/s total (3643937/71.42242789268494)  
+Now:     48,182 events/s total (3643937/75.62821125984192)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6e96bc2" class="outline-3">
+<h3 id="org6e96bc2"><a href="../Journal/2025/11-November/11-November-2025-Tuesday.html#ID-87B1DBAB-A8BA-45BA-9D01-91E515DD4715">11 November 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org6e96bc2">
+<ul class="org-ul">
+<li>Adding event info</li>
+<li>Looking into writting out
+<code>./run_container combine root hemisphereLib.root</code></li>
+<li>I think I got the output working&#x2026; Testing&#x2026;</li>
+<li>Looks good!</li>
+<li>Testing all&#x2026; pushed</li>
+<li>Now need to start on the mixer</li>
+<li>Starting to add the kdTrees&#x2026; have a good defult</li>
+<li>Looking into reading files&#x2026; starting with uproot</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org49bb22b" class="outline-3">
+<h3 id="org49bb22b"><a href="../Journal/2025/11-November/10-November-2025-Monday.html#ID-0E36DABE-7D58-4BEF-A97D-66155B9AC9F2">10 November 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org49bb22b">
+<ul class="org-ul">
+<li>Mail to CL asking re:output files</li>
+<li>Starting <code>processor_make_hemi_library.py</code> in  <code>mixeddata-cluster.sh</code></li>
+<li><code>./run_container source coffea4bees/scripts/mixeddata-cluster.sh</code></li>
+<li>Created hemisphere</li>
+<li>Computing hemisphere variables</li>
+<li>Added CI tests</li>
+<li>Adding histograms
+<code>./run_container python -i coffea4bees/plots/iPlot.py output/mixeddata_cluster//test_mixed_datasets.coffea  -m coffea4bees/plots/metadata/plotsAll.yml</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0c3cf0f" class="outline-3">
+<h3 id="org0c3cf0f"><a href="../Journal/2025/11-November/07-November-2025-Friday.html#ID-D3E549F1-E932-4A25-8FF5-071A90FC6F90">07 November 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org0c3cf0f">
+<ul class="org-ul">
+<li>Got thrust running</li>
+<li>Sped up thrustaxis calculation</li>
+<li>Thinking about code structure
+Two processors
+Hemilibrarys</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org178c00e" class="outline-3">
+<h3 id="org178c00e"><a href="../Journal/2025/11-November/06-November-2025-Thursday.html#ID-A9DB4A80-7C24-43A4-B0EE-7ED502CB864F">06 November 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org178c00e">
+<ul class="org-ul">
+<li>Starting with Thrust axis calculation</li>
+<li><code>./run_container source coffea4bees/scripts/code-jet-clustering.sh</code></li>
+<li>Got some code from chatGPT to calculate thrust axis 
+<a href="https://chatgpt.com/share/690cf2e0-cf60-8000-a005-89bf9c8e4b2e">https://chatgpt.com/share/690cf2e0-cf60-8000-a005-89bf9c8e4b2e</a></li>
+<li>Starting a test for the thrust axis
+<code>./run_container source coffea4bees/scripts/code-hemisphere-mixing.sh</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="undergradprojects-20250504112326.html">UndergradProjects</a></li>
+  <li><a href="november_2025-20251031092255.html">November 2025</a></li>
+  <li><a href="january_2026-20260101111116.html">January 2026</a></li>
+  <li><a href="december_2025-20251201122904.html">December 2025</a></li>
+  <li><a href="../Journal/2026/02-February/04-February-2026-Wednesday.html">04 February 2026 Wednesday</a></li>
+  <li><a href="../Journal/2026/01-January/16-January-2026-Friday.html">16 January 2026 Friday</a></li>
+  <li><a href="../Journal/2026/01-January/08-January-2026-Thursday.html">08 January 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/01-January/07-January-2026-Wednesday.html">07 January 2026 Wednesday</a></li>
+  <li><a href="../Journal/2026/01-January/06-January-2026-Tuesday.html">06 January 2026 Tuesday</a></li>
+  <li><a href="../Journal/2025/12-December/24-December-2025-Wednesday.html">24 December 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/12-December/23-December-2025-Tuesday.html">23 December 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/12-December/22-December-2025-Monday.html">22 December 2025 Monday</a></li>
+  <li><a href="../Journal/2025/12-December/18-December-2025-Thursday.html">18 December 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/12-December/17-December-2025-Wednesday.html">17 December 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/12-December/16-December-2025-Tuesday.html">16 December 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/12-December/15-December-2025-Monday.html">15 December 2025 Monday</a></li>
+  <li><a href="../Journal/2025/12-December/12-December-2025-Friday.html">12 December 2025 Friday</a></li>
+  <li><a href="../Journal/2025/12-December/11-December-2025-Thursday.html">11 December 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/12-December/10-December-2025-Wednesday.html">10 December 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/12-December/09-December-2025-Tuesday.html">09 December 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/12-December/08-December-2025-Monday.html">08 December 2025 Monday</a></li>
+  <li><a href="../Journal/2025/12-December/03-December-2025-Wednesday.html">03 December 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/12-December/01-December-2025-Monday.html">01 December 2025 Monday</a></li>
+  <li><a href="../Journal/2025/11-November/23-November-2025-Sunday.html">23 November 2025 Sunday</a></li>
+  <li><a href="../Journal/2025/11-November/22-November-2025-Saturday.html">22 November 2025 Saturday</a></li>
+  <li><a href="../Journal/2025/11-November/21-November-2025-Friday.html">21 November 2025 Friday</a></li>
+  <li><a href="../Journal/2025/11-November/20-November-2025-Thursday.html">20 November 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/11-November/19-November-2025-Wednesday.html">19 November 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/11-November/18-November-2025-Tuesday.html">18 November 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/11-November/17-November-2025-Monday.html">17 November 2025 Monday</a></li>
+  <li><a href="../Journal/2025/11-November/14-November-2025-Friday.html">14 November 2025 Friday</a></li>
+  <li><a href="../Journal/2025/11-November/13-November-2025-Thursday.html">13 November 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/11-November/12-November-2025-Wednesday.html">12 November 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/11-November/11-November-2025-Tuesday.html">11 November 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/11-November/10-November-2025-Monday.html">10 November 2025 Monday</a></li>
+  <li><a href="../Journal/2025/11-November/07-November-2025-Friday.html">07 November 2025 Friday</a></li>
+  <li><a href="../Journal/2025/11-November/06-November-2025-Thursday.html">06 November 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/06-June/05-June-2025-Thursday.html">05 June 2025 Thursday</a></li>
+</ul>
+</div>
+</body>
+</html>

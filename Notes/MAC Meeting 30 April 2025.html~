@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC Meeting 30 April 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">MAC Meeting 30 April 2025</h1>
+<p>
+<a href="https://indico.cern.ch/event/1542594/">https://indico.cern.ch/event/1542594/</a>
+</p>
+
+<div id="outline-container-orgaeaa661" class="outline-2">
+<h2 id="orgaeaa661">Hexaboards</h2>
+<div class="outline-text-2" id="text-orgaeaa661">
+<ul class="org-ul">
+<li>530 / 600 LD boards (w/v3c) passed the QC</li>
+<li>Dead 1/2 chips !!!</li>
+<li>~170 coming soon. Will go through FNAL</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org09dd165" class="outline-2">
+<h2 id="org09dd165">Alethea</h2>
+<div class="outline-text-2" id="text-org09dd165">
+<ul class="org-ul">
+<li>Bonding notes:</li>
+<li>Encapsulant level should not exceed the top of the hexaboard • Look at the module from the side, there should be no dome of encapsulant</li>
+<li>Backside bonds: • More is better</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org99c2933" class="outline-2">
+<h2 id="org99c2933">Rong-Shang</h2>
+<div class="outline-text-2" id="text-org99c2933">
+<ul class="org-ul">
+<li>Numbers dont add b/c not all modules have been tested</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0e377ad" class="outline-2">
+<h2 id="org0e377ad">Bora:</h2>
+<div class="outline-text-2" id="text-org0e377ad">
+<ul class="org-ul">
+<li>Nice pictures for [BROKEN LINK: HGC Slides for April 2023 Review]</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3ba0841" class="outline-2">
+<h2 id="org3ba0841">Baseplates</h2>
+<div class="outline-text-2" id="text-org3ba0841">
+<ul class="org-ul">
+<li>Leave May 40 Ti LD Full / 72 to UCSB (12 of each partial type Ti)</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org542c40e" class="outline-2">
+<h2 id="org542c40e">Engineering Report (Susanne)</h2>
+<div class="outline-text-2" id="text-org542c40e">
+<ul class="org-ul">
+<li>Final order (Partials Hexaboard PUTs from Xometry) were delivered 4/23</li>
+<li>Ordering transfer tape</li>
+<li>Determination of module placement specs</li>
+<li>Spare parts for MACS</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgca43312" class="outline-2">
+<h2 id="orgca43312">UCSB Status</h2>
+<div class="outline-text-2" id="text-orgca43312">
+<p>
+12 HD Ti modules for cassettes
+3 HD "No tape test"
+Studies on binding the wrong cell
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge542d8c" class="outline-2">
+<h2 id="orge542d8c">Follow-ups</h2>
+</div>
+</div>
+</body>
+</html>

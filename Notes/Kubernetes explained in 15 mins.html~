@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kubernetes explained in 15 mins</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Kubernetes explained in 15 mins</h1>
+<p>
+<a href="https://www.youtube.com/watch?v=VnvRFRk_51k">https://www.youtube.com/watch?v=VnvRFRk_51k</a>
+</p>
+
+<p>
+kubernetes is an Open source container orchestration tool (developed by google)
+</p>
+<ul class="org-ul">
+<li>Docker containers or others</li>
+<li>Helps you manage these in different enviormnents.</li>
+</ul>
+
+<div id="outline-container-org8205802" class="outline-2">
+<h2 id="org8205802">Why kubernetes?</h2>
+<div class="outline-text-2" id="text-org8205802">
+<ul class="org-ul">
+<li>containers perfect for micro-services, but now need to manage many</li>
+<li>k8s guarantees high availability, scalability, disaster recovery</li>
+<li>Abstraction layer over containers</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org65673e7" class="outline-2">
+<h2 id="org65673e7">What is kubernetes?</h2>
+<div class="outline-text-2" id="text-org65673e7">
+<ul class="org-ul">
+<li>Basic architecture, at least one master node, connected to worker nodes (with each running kublet running)</li>
+<li>Each worker node has docker containers with different applications running on it.</li>
+<li>Master node run API server/ scheduler / etcd (backup)</li>
+<li>Virtual network: turns the nodes into one powerful machine.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2bd4f33" class="outline-2">
+<h2 id="org2bd4f33">Pods</h2>
+<div class="outline-text-2" id="text-org2bd4f33">
+<ul class="org-ul">
+<li>smallest unit that you will configure</li>
+<li>wrapper of (one or more) container.</li>
+<li>1 pod per application.</li>
+<li>Each pod gets an IP</li>
+<li>ephemeral components</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9c51aea" class="outline-2">
+<h2 id="org9c51aea">Service</h2>
+<div class="outline-text-2" id="text-org9c51aea">
+<ul class="org-ul">
+<li>sit in front of pods to handle replacemed pods</li>
+<li>permanant IP addresses</li>
+<li>load balancer</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org95de080" class="outline-2">
+<h2 id="org95de080">How</h2>
+<div class="outline-text-2" id="text-org95de080">
+<ul class="org-ul">
+<li>configuration through APIServer on master node.</li>
+<li>clients (UI/API/CLI) talk to APIServer (the only entry point)</li>
+<li>requests in yaml or json</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orga3a39be" class="outline-3">
+<h3 id="orga3a39be">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org2b6557a" class="outline-3">
+<h3 id="org2b6557a">Links:</h3>
+<div class="outline-text-3" id="text-org2b6557a">
+<p>
+[BROKEN LINK: Kubernetes]
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+<a href="Kubernetes Course.html#ID-0692A6B4-09D6-46CF-A44E-C2BD27465162">Kubernetes Course</a>
+</p>
+
+
+
+<p>
+202409281234
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

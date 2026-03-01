@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FearlessSymmetry</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">FearlessSymmetry</h1>
+
+<div id="outline-container-org008d4a5" class="outline-2">
+<h2 id="org008d4a5">Fearless Symmetry</h2>
+<div class="outline-text-2" id="text-org008d4a5">
+<ul class="org-ul">
+<li>Not bad.  Good attempt to explain cutting edge math.</li>
+<li>Tough going in the end, probably could have been done better.</li>
+<li>Mathematical definitions create usage, not describe it.</li>
+<li>Mathematical definitions cannot be wrong, only inconsistent or useless.</li>
+<li>Lie group theory a marriage between calculus and group theory</li>
+<li>Complex numbers forced on the world when solving CUBIC equiations. (Assumed x<sup>2</sup> + 1 = 0 had no solutions) Intermediate steps of the cubic equation involve imaginary numbers even though the final solutions are real.</li>
+<li>Every root of a complex equation is already in C.</li>
+<li>"2x3xR=C" the bible,  ie "pi = 3" the bible.</li>
+<li>There is no (cannot be) a general method for finding all integer solutions to all systems of Z-equations in many variables</li>
+<li>Pi is not in Q-Alg, this fact is apparently very hard to prove.</li>
+<li>Not every number in Q-Alg can be obtained from the integers with repeated application of +,-,*,/ and ()<sup>(1/n)</sup>.</li>
+<li>There is only one element of G (The absolute Galois Group) other than the identity which we can give a complete discription: complex conjugation.</li>
+<li>A representation that is not faithful emphasizes certiant features of the sourse group and obscures others, enabling us to better understand the source group.</li>
+<li>Some very large and complicated groups have been shown to be isomorphic to the Galois group of a poly-nominal (Including the Monster group)</li>
+<li>Open conjectures: Poincare, Riemann Hypothesis, P==NP</li>
+<li>Proving things about poly-nominals usual much easier than proving things about integers: Poly-Nominals have roots and can be differentiated.
+(Is there a notion of differentiation that can be applied to integers? Primes? )</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

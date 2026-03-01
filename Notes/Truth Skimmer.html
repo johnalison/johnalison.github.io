@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Truth Skimmer</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Truth Skimmer</h1>
+<p>
+Skimmer for making input for stats studies
+</p>
+<div id="outline-container-orgfcbb4d1" class="outline-2">
+<h2 id="orgfcbb4d1">To do</h2>
+<div class="outline-text-2" id="text-orgfcbb4d1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> More signal samples for Soeheun</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgab45cf3" class="outline-2">
+<h2 id="orgab45cf3">Daily Logs</h2>
+<div class="outline-text-2" id="text-orgab45cf3">
+</div>
+<div id="outline-container-org34bf34f" class="outline-3">
+<h3 id="org34bf34f"><a href="../Journal/2025/03-March/17-March-2025-Monday.html#ID-06DD1AA5-DB7E-2E5D-E879-BF970A34A274">17 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org34bf34f">
+<ul class="org-ul">
+<li><code>python runner.py   -s -p skimmer/processor/skimmer_truth.py -c skimmer/metadata/HH4b_truth.yml -y UL18 -d ZZ4b ZH4b -op output/TruthSkims -o picoaod_datasets_GluGluToHHTo4B_cHHH0_UL18.yml -m metadata/datasets_HH4b.yml --condor</code></li>
+<li>Submitted on <b>cmslpc315</b></li>
+<li>Saw an error with the nanny port&#x2026; resubmitting&#x2026; now see jobs in condor<sub>q</sub></li>
+<li>Turns out it was a problem with AEs new container</li>
+<li>&#x2026;Finished.
+<ul class="org-ul">
+<li><code>root://cmseos.fnal.gov//store/user/jda102/XX4b/2024_v3/Z?4b_UL18/</code></li>
+</ul></li>
+<li>sent to Soehen [<a href="https://cmu.box.com/s/z1awu1efhjd5xqfev9arcgoy1mq8s01y">https://cmu.box.com/s/z1awu1efhjd5xqfev9arcgoy1mq8s01y</a>](<a href="https://cmu.box.com/s/z1awu1efhjd5xqfev9arcgoy1mq8s01y">https://cmu.box.com/s/z1awu1efhjd5xqfev9arcgoy1mq8s01y</a>)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgfa94be4" class="outline-3">
+<h3 id="orgfa94be4"><a href="../Journal/2025/03-March/15-March-2025-Saturday.html#ID-84599549-73B6-34F2-FEF3-1F4F1DDD4C81">15 March 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgfa94be4">
+<ul class="org-ul">
+<li>Testing with
+<ul class="org-ul">
+<li><code>sed -e "s#base_path.*#base_path: \/srv\/python\/output\/skimmer_test_job\/#" -e "s/\#max.*/maxchunks: 5/" -e "s/\#test.*/test_files: 1/" -e "s/2024_.*/tmp\//" skimmer/metadata/HH4b_truth.yml &gt; $OUTPUT_DIR/HH4b_truth.yml</code></li>
+<li><code>python runner.py -t -s -p skimmer/processor/skimmer_truth.py -c $OUTPUT_DIR/HH4b_truth.yml -y UL18 -d GluGluToHHTo4B_cHHH0 -op $OUTPUT_DIR -o picoaod_datasets_GluGluToHHTo4B_cHHH0_UL18.yml -m $OUTPUT_DIR/datasets_HH4b.yml</code></li>
+</ul></li>
+<li>Basic bjet selection</li>
+<li>only keep needed variables</li>
+<li>changing output broken when using the preselct &#x2026; mismatch between events and branches</li>
+<li>Got it working !!!</li>
+<li>[&gt;&gt;] Remove the GenParts</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org89f47af" class="outline-2">
+<h2 id="org89f47af">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org2d4d8f7" class="outline-2">
+<h2 id="org2d4d8f7">Links:</h2>
+<div class="outline-text-2" id="text-org2d4d8f7">
+<p>
+202503230845
+</p>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2025/03-March/24-March-2025-Monday.html">24 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/17-March-2025-Monday.html">17 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/15-March-2025-Saturday.html">15 March 2025 Saturday</a></li>
+</ul>
+</div>
+</body>
+</html>

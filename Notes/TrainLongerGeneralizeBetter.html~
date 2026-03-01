@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TrainLongerGeneralizeBetter</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">TrainLongerGeneralizeBetter</h1>
+
+<div id="outline-container-orgd873874" class="outline-2">
+<h2 id="orgd873874">Train longer, generalize better: closing the generalization gap in large batch training of neural networks</h2>
+<div class="outline-text-2" id="text-orgd873874">
+<p>
+<a href="https://arxiv.org/pdf/1705.08741.pdf">https://arxiv.org/pdf/1705.08741.pdf</a>
+</p>
+
+<ul class="org-ul">
+<li>Deep learning models are typically trained using stochastic gradient descent or one of its variants. These methods update the weights using their gradient, estimated from a small fraction of the training data. It has been observed that when using large batch sizes there is a persistent degradation in generalization performance - known as the "generalization gap" phenomenon. Identifying the origin of this gap and closing it had remained an open problem.</li>
+
+<li>We present a novel algorithm named "Ghost Batch Normalization" which enables significant decrease in the generalization gap without increasing the number of updates.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+The optimization method of choice for training highly complex and non-convex DNNs, is typically stochastic gradient decent (SGD) or some variant of it.
+Since SGD, at best, finds a local minimum of the non-convex objective function, substantial research efforts are invested to explain DNNs ground breaking results
+</p>
+
+<p>
+it is still unclear why these complex models tend to generalize well to unseen data despite being heavily over-parameterized (
+</p></li>
+
+<li>when a large batch size is used while training DNNs, the trained models appear to generalize less well.</li>
+
+<li>Training with large batch size immediately increases parallelization, thus has the potential to decrease learning time.</li>
+
+<li>Claim: There is no inherent "generalization gap": large-batch training can generalize as well as small batch training by adapting the number of iterations.</li>
+
+<li><p>
+Batch Normalization (BN) (Ioffe &amp; Szegedy, 2015), is known to accelerate the training, increase the robustness of neural network to different initialization schemes and improve generalization
+since BN uses the batch statistics it depends on the choosen batch size.
+</p>
+
+<p>
+By acquiring the statistics on small virtual ("ghost") batches instead of the real large batch we can reduce the generalization error
+</p></li>
+
+<li>the initial high-learning rate training phase enables the model to reach farther locations in the parameter space, which may be necessary to find wider local minima and better generalization.</li>
+
+<li>in contrast to previous conception, there is no inherent generalization problem with training using large mini batches.
+model training using large mini-batches can generalize as well as models trained using small mini-batches.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

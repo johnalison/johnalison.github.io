@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Economics is a Field of Software Engineering</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Economics is a Field of Software Engineering</h1>
+<p>
+<a href="https://www.maximum-progress.com/p/economics-is-a-field-of-software">https://www.maximum-progress.com/p/economics-is-a-field-of-software</a>
+</p>
+
+<p>
+A lot of economics is software engineering.
+most of my job as an economics researcher is writing code.
+</p>
+
+
+<p>
+This shift into software skills has made economists valuable hires for tech companies which in turn has further incentivized economics education and practice to adopt more of the tools of software engineering.
+</p>
+
+<p>
+the transition of economics into software engineering is not yet complete and is currently in an uncanny valley.
+</p>
+
+<p>
+Economics has the power of software engineering but still retains the ethics and intellectual norms of 1970s academia.
+</p>
+<ul class="org-ul">
+<li>Even though code and data have become by far the most important and resource intensive parts of economics research output, the currency of the profession is still “papers.”</li>
+</ul>
+
+<p>
+PDFs are no longer sufficient to contain the research outputs of economists.
+</p>
+<ul class="org-ul">
+<li> fork-able Github repo would be better.</li>
+</ul>
+
+<p>
+Interactive, web-forward presentations of research should be rewarded over basic PDFs.
+</p>
+
+<p>
+There are also insufficient rewards for economists writing open-source software for other economists
+</p>
+
+<p>
+ we shouldn’t treat a paper as complete without a fully replicating Github repo.
+</p>
+
+<p>
+We should have been treating papers as text + code + data packages decades ago.
+</p>
+<div id="outline-container-org6cec6bb" class="outline-2">
+<h2 id="org6cec6bb">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orged7e1c7" class="outline-2">
+<h2 id="orged7e1c7">Links:</h2>
+<div class="outline-text-2" id="text-orged7e1c7">
+<p>
+202409140754
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

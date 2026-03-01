@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NormalizingFlows</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">NormalizingFlows</h1>
+
+
+
+
+<div id="outline-container-org78ed22b" class="outline-2">
+<h2 id="org78ed22b">Main idea</h2>
+<div class="outline-text-2" id="text-org78ed22b">
+<p>
+In Normalizing flows you learn invertible (reversible) transformations from some standard input distribution (eg: Gaussian) to some complicated distribution (eg: observed data) that you are trying to model.  It is critical that the transformation be invertible so that the training data can be mapped back to a known probability distribution, from which the likelihood of the data can be calculated. The transformation is then learned from maximizing the likelihood of the training data. A "Normalizing flow" is a series of these invertible transformations performed one after another; multiple transformations improve the expressiveness of the model and are particularly important given the, popular form of the transformation needed for inevitability discussed below.
+The resulting flow is invertible given that each of the constituent transformations is invertible. 
+</p>
+</div>
+
+
+<div id="outline-container-orgf6d616e" class="outline-3">
+<h3 id="orgf6d616e">Advantages</h3>
+<div class="outline-text-3" id="text-orgf6d616e">
+<p>
+Can learn the full probability distribution of the the data being modeled.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2632f43" class="outline-3">
+<h3 id="org2632f43">Tricks</h3>
+<div class="outline-text-3" id="text-org2632f43">
+<p>
+Trick is setting up a bijections that are by construction invertible and has many parameters that can be learned. This is Done with "Coupling Layers" that  split data into two contiguous regions (A and B). Then the output of region A is just a copy of the input:
+     y<sup>A</sup> = x<sup>A</sup>
+whereas the output of region be is a function of x<sup>B</sup> whose parameters only depend on x<sup>A</sup>.
+     y<sup>B</sup> = h(x<sup>B</sup>; Theta(x<sup>A</sup>))
+In practice, the transformations h and Theta are usually arbitrarily complicated functions parameterized by neural nets. This form guarantees the Jacobian is triangular, and the function invertible.
+</p>
+
+
+
+<p>
+Sources:
+ArticleNotes/FlowBasedDeepGenerativeModels.md
+ArticleNotes/NormalizingFlowModels.md
+ArticleNotes/NormalizingFlowsTutorial.md
+ArticleNotes/WhatAreNormalizingFlows.md
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

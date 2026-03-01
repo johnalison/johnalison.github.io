@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAM Variance August 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CAM Variance August 2025</h1>
+<p>
+<a href="cam_variance_july_2025-20250718144155.html#ID-E7430DA7-80DD-4A8E-AC3D-CB5AD6156E9D">CAM Variance July 2025</a>
+</p>
+
+<div id="outline-container-orgef63c1c" class="outline-2">
+<h2 id="orgef63c1c">402.04.04.04 CE - Standard Module Assembly Site 2</h2>
+<div class="outline-text-2" id="text-orgef63c1c">
+<p>
+Cumulative Cost Variance
+-225k
+</p>
+
+<p>
+There is a cumulative cost variance of -$225k in cost account 402.04.04.04 CE - Standard Module Assembly Site 2. This is expected and is consistent with the cumulative schedule variance discussed below. Schedule delays, due to missing input parts, have caused cost variance resulting from labor costs not earning value.
+</p>
+
+
+<p>
+Cumulative Schedule Variance:
+-435k
+</p>
+
+
+<p>
+There is a schedule variance of -$435k in the cost account 402.04.04.04 CE - Standard Module Assembly Site 2 (CMU).  The variance is from the assembly and testing of the first 24% of modules and the associated cleanroom consumables.
+</p>
+
+<p>
+This variance is expected, primarily due to missing input parts (baseplates). We now received 130 v3c hexaboards and 20 Ti baseplates. The final gantry tooling has being commissioned and we are proceeded to making a run of 20 Ti+v3c modules at a pace of four modules per day. 
+</p>
+</div>
+
+<div id="outline-container-orgd893bb2" class="outline-3">
+<h3 id="orgd893bb2">Impact</h3>
+<div class="outline-text-3" id="text-orgd893bb2">
+<p>
+The activities contributing to this variance are due to upstream delays in receiving input components needed for the final module test stands, resulting in completion later than scheduled. Once the components become available, the value will be earned, and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org60fff8e" class="outline-2">
+<h2 id="org60fff8e">402.04.04.05 CE - Module Assembly at UCSB</h2>
+<div class="outline-text-2" id="text-org60fff8e">
+<p>
+Cumulative Cost Variance
+-558k
+</p>
+
+<p>
+There is a cumulative cost variance of -$558k in cost account 402.04.04.05 CE - Module Assembly at UCSB. This is expected and is consistent with the cumulative schedule variance discussed below. Schedule delays, due to missing input parts, have caused cost variance resulting from labor costs not earning value.
+</p>
+
+
+
+<p>
+Cumulative Schedule Variance:
+  -541k
+</p>
+
+
+<p>
+There is a cumulative schedule variance of -$541k in cost account 402.04.04.05 CE - Module Assembly at UCSB. The variance has two components: most (90%) is due to the assembly, testing, and shipping of full-size equivalent odd-sized modules (1-32%); the remainder is for supporting production at other assembly sites.
+Baseplate had hexaboards have been shipped to UCSB. They are currently struggle with the delivery of the baseplates, the package appears to have been lost. In the mean time they are completing studies of irradiated modules (all look good) and proceeding to build LD top and five for cassettes testin
+g
+</p>
+</div>
+
+
+<div id="outline-container-orgb4292e1" class="outline-3">
+<h3 id="orgb4292e1">Impact</h3>
+<div class="outline-text-3" id="text-orgb4292e1">
+<p>
+The activities contributing to this variance are due to upstream delays in receiving input components needed for the final module test stands, resulting in completion later than scheduled. Once the components become available, the value will be earned, and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org2bdc308" class="outline-2">
+<h2 id="org2bdc308">402.04.04.02 CE - Module Factories</h2>
+<div class="outline-text-2" id="text-org2bdc308">
+<p>
+Current Cost Variance
+-121
+</p>
+
+<p>
+There is a current cost variance of -121k in cost account 402.04.04.02 CE - Module Factories. This is mainly due to the actuals associated with the module test stands being accrued this month and is consistent with the (positive) schedule variance reported below.
+</p>
+
+<p>
+Current Schedule Variance:
++124k !
+</p>
+
+<p>
+There is a current schedule variance of +$124k in cost account 402.04.04.02 CE - Module Factories. The variance has two components: ~$100k for module test stands for production (PCB stands) and ~$25k for procurement of thermal testing units. These items are currently en route to the MACs and arrived sooner than budgeted.
+</p>
+</div>
+
+
+<div id="outline-container-org71ff087" class="outline-3">
+<h3 id="org71ff087">Impact</h3>
+<div class="outline-text-3" id="text-org71ff087">
+<p>
+There is no real long term impact of having these items early and the MACs are still limited by input parts (baseplates).
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

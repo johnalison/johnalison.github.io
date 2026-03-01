@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FBC2 Meetings</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">FBC2 Meetings</h1>
+
+<div id="outline-container-org3a8652d" class="outline-2">
+<h2 id="org3a8652d">To do List</h2>
+<div class="outline-text-2" id="text-org3a8652d">
+<p>
+<a href="https://cernbox.cern.ch/files/spaces/eos/user/m/mkolosov/Run3/Run3HHto4b.docx">https://cernbox.cern.ch/files/spaces/eos/user/m/mkolosov/Run3/Run3HHto4b.docx</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56e2c94" class="outline-2">
+<h2 id="org56e2c94">Logs</h2>
+<div class="outline-text-2" id="text-org56e2c94">
+</div>
+<div id="outline-container-orgfb7d125" class="outline-3">
+<h3 id="orgfb7d125"><a href="../Journal/2026/02-February/05-February-2026-Thursday.html#ID-D57D85FE-831B-4547-85DE-E48027235520">05 February 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgfb7d125">
+<ul class="org-ul">
+<li>DIscussion of pairing algorithm</li>
+<li>[&gt;&gt;] Slides re:synthetic data</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org115a74f" class="outline-3">
+<h3 id="org115a74f"><a href="../Journal/2026/01-January/29-January-2026-Thursday.html#ID-B2636073-0B7A-4C21-A3AD-94AF2AF767D8">29 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org115a74f">
+<ul class="org-ul">
+<li>Lei talk:
+<ul class="org-ul">
+<li>Better choice for clustering algo ?</li>
+<li>Better way to move PF cands</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org620235c" class="outline-3">
+<h3 id="org620235c"><a href="../Journal/2026/01-January/22-January-2026-Thursday.html#ID-581A41D2-6BBD-4A95-BEF0-E43CF229F784">22 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org620235c">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1639802/">https://indico.cern.ch/event/1639802/</a></li>
+<li>Gave talk .. <a href="run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a> Went well
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> How to get dressed bs in output files ?</li>
+<li class="on"><code>[X]</code> What is the selection for output jets in mixing and synthetic datasets ?
+Sent the following to Marina
+    A: For mixed data all the input jets are mixed so the only
+preselection is the cut to make the nanoAOD (This is b/c the
+performance of mixing algorithm doesnt really scale with the
+number of jets) For the synthetic data I do use. a preselection
+to speed up the DeClustering algorithm The preselection is
+(event.Jet.pt &gt;= 20) &amp; (event.Jet.jetId &gt;= 2) &amp;
+event.Jet.lepton<sub>cleaned</sub> &amp; (np.abs(event.Jet.eta) &lt;= 4.7) That
+preselection is on the input jets used to cluster (and compute
+the templates) when I sample the template to make the synthetic
+(fake) jets I make up new pts and eta. IF the fake jets fail the
+pt or eta acceptance I try again with a new random number. But I
+only allow 8 attempts, after which point I just accept the jets
+so here that can be some (hopefully small) number of jets that
+have pt&lt;20 (For the b-jets I require pt &gt; 30 and eta &lt; 2.5)</li>
+</ul></li>
+
+<li>Lei gave a good talk
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Comment on signal suppression is a good thing</li>
+<li class="on"><code>[X]</code> Should make the animation pdf friendly</li>
+<li class="on"><code>[X]</code> Add another step in his movie</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org6d76542" class="outline-3">
+<h3 id="org6d76542"><a href="run3_hemisphere_mixing-20260109085909.html#ID-F1D3FDC6-6FBD-4614-8AB0-2917F349E625">15 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org6d76542">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1621376/">https://indico.cern.ch/event/1621376/</a></li>
+<li><a href="https://cernbox.cern.ch/files/spaces/eos/user/m/mkolosov/Run3/Run3HHto4b.docx">https://cernbox.cern.ch/files/spaces/eos/user/m/mkolosov/Run3/Run3HHto4b.docx</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf7b906a" class="outline-3">
+<h3 id="orgf7b906a"><a href="../Journal/2025/10-October/16-October-2025-Thursday.html#ID-3724D74E-5C22-4A3E-817B-6932EF99CAB5">16 October 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgf7b906a">
+<ul class="org-ul">
+<li>Talk about AE talk</li>
+<li>Update on mass decorelation</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5157fcc" class="outline-3">
+<h3 id="org5157fcc"><a href="../Journal/2025/09-September/11-September-2025-Thursday.html#ID-E29FBAFA-4E8F-490A-B795-70AAE6CB5E76">11 September 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org5157fcc">
+<ul class="org-ul">
+<li>Gave Synthetic dataset slides&#x2026; Went well</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org13b867f" class="outline-3">
+<h3 id="org13b867f"><a href="../Journal/2025/08-August/21-August-2025-Thursday.html#ID-7329128B-288C-4845-A333-341D837131E3">21 August 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org13b867f">
+<ul class="org-ul">
+<li>Contrastive learning&#x2026; Not clear what it is good for&#x2026;</li>
+<li>Loukas seems pumped</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5a69bbe" class="outline-3">
+<h3 id="org5a69bbe"><a href="../Journal/2025/07-July/24-July-2025-Thursday.html#ID-71DD802F-3413-49F0-B828-0CF0B7F04677">24 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org5a69bbe">
+<ul class="org-ul">
+<li>Sindu Talk</li>
+<li>Show mHH with an intermideate cut in SvB</li>
+<li>Double ratio correction in the intermediate bin?</li>
+<li><a href="https://cmsweb.cern.ch/das/request?input=dataset%3D%2FGluGluToBulkGravitonToHHTo4B_M-1000_narrow_TuneCP5_13TeV-madgraph-pythia8%2FRunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2%2FMINIAODSIM&amp;instance=prod/global">https://cmsweb.cern.ch/das/request?input=dataset%3D%2FGluGluToBulkGravitonToHHTo4B_M-1000_narrow_TuneCP5_13TeV-madgraph-pythia8%2FRunIISummer20UL16MiniAOD-106X_mcRun2_asymptotic_v13-v2%2FMINIAODSIM&amp;instance=prod/global</a>
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1523858/contributions/6540826/attachments/3077457/5446299/CMS_Presentation_29May.pdf">https://indico.cern.ch/event/1523858/contributions/6540826/attachments/3077457/5446299/CMS_Presentation_29May.pdf</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbab3051" class="outline-3">
+<h3 id="orgbab3051"><a href="../Journal/2025/07-July/17-July-2025-Thursday.html#ID-66A4D1CC-60B8-4B15-9C28-69EEDF899F9A">17 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgbab3051">
+<ul class="org-ul">
+<li>Paper meeting with Marko / Marina / Stephane</li>
+<li>Marko will write the minutes</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org177c9bd" class="outline-3">
+<h3 id="org177c9bd"><a href="../Journal/2025/07-July/10-July-2025-Thursday.html#ID-338FC11E-DBC1-43EA-BAFC-FEE08B0F30BA">10 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org177c9bd">
+<ul class="org-ul">
+<li>Marina meets Stephane and Marko re:paper</li>
+<li>Discussing details</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgade4f0a" class="outline-3">
+<h3 id="orgade4f0a"><a href="../Journal/2025/07-July/03-July-2025-Thursday.html#ID-D512E37E-5BBD-481D-B063-FC630D91945A">03 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgade4f0a">
+<ul class="org-ul">
+<li>Really pushing ZZ and ZH Run2+3 combination
+(We should prepare to add the 5/fb?)</li>
+<li>Not much&#x2026; chat Jaco and Loukas about continuing to work together.</li>
+<li>They are happy to have me.</li>
+<li>Want me to reach out to ETH see what their plans are</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org544b112" class="outline-3">
+<h3 id="org544b112"><a href="../Journal/2025/06-June/26-June-2025-Thursday.html#ID-7FD9CBD7-2BFC-43DB-9985-91C73980AE68">26 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org544b112">
+<ul class="org-ul">
+<li>How hard is it to do the combination of ZZ and ZH ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org148349b" class="outline-3">
+<h3 id="org148349b"><a href="../Journal/2025/06-June/19-June-2025-Thursday.html#ID-8583F5C0-CD36-4DC6-8D03-44B4D2CA7FD2">19 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org148349b">
+<ul class="org-ul">
+<li>Discussion of proceeding to the unblinding step 3</li>
+<li>Just waiting on the boosted</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb6110d5" class="outline-3">
+<h3 id="orgb6110d5"><a href="../Journal/2025/06-June/12-June-2025-Thursday.html#ID-59B53FCC-CE1F-4B1D-AC00-1081A97CC19B">12 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgb6110d5">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1558329/">https://indico.cern.ch/event/1558329/</a></li>
+<li>Unblinding stage 2</li>
+<li>Synthetic data improves in mass-decorrelation study</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org240b357" class="outline-3">
+<h3 id="org240b357"><a href="../Journal/2025/06-June/05-June-2025-Thursday.html#ID-1EE37A04-6597-4659-82C3-9F6551ACE44A">05 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org240b357">
+<ul class="org-ul">
+<li>Discusion re:paper</li>
+<li>Run-3 Resolved unblinded</li>
+<li>We will also unblind!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6814831" class="outline-3">
+<h3 id="org6814831"><a href="../Journal/2025/05-May/22-May-2025-Thursday.html#ID-D421E911-4489-455F-94BC-D30746F01B5F">22 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org6814831">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1551592/">https://indico.cern.ch/event/1551592/</a></li>
+<li>Looking into preaproval slides</li>
+<li>Luka using synthetic data for background!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org55ebed2" class="outline-3">
+<h3 id="org55ebed2"><a href="../Journal/2025/05-May/08-May-2025-Thursday.html#ID-27ADAE5E-4314-492A-A849-98B98F6C44B3">08 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org55ebed2">
+<ul class="org-ul">
+<li>Preapproval May 27th</li>
+<li>Run3 new ntuples</li>
+<li>Chat Boosted</li>
+<li>AE slides for the boosted</li>
+<li><a href="Naive Limit Combination.html#ID-0C3C066A-ECFA-448A-AB45-ED0BFAB46339">Naive Limit Combination</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org11d8db0" class="outline-3">
+<h3 id="org11d8db0">01 May Cancelled</h3>
+</div>
+
+<div id="outline-container-orga0687ec" class="outline-3">
+<h3 id="orga0687ec">24 April John in FNAL</h3>
+</div>
+
+<div id="outline-container-org89d5f55" class="outline-3">
+<h3 id="org89d5f55"><a href="../Journal/2025/04-April/10-April-2025-Thursday.html#ID-8AC30A91-F4B3-48AE-B800-EBBEB1BF6A17">10 April 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org89d5f55">
+<ul class="org-ul">
+<li>ZZ and ZH for run3 results look good</li>
+<li>Discussion of paper strategy</li>
+<li>Showed bootstrap results</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org249180a" class="outline-3">
+<h3 id="org249180a"><a href="../Journal/2025/03-March/06-March-2025-Thursday.html#ID-0194C295-2872-D0F2-2A2E-D3F588811AD8">6 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org249180a">
+<ul class="org-ul">
+<li>[&lt;&lt;] Make Run3 CR cut and make a print of event/run numbers</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb6340ab" class="outline-3">
+<h3 id="orgb6340ab"><a href="../Journal/2025/02-February/27-February-2025-Thursday.html#ID-649D18B4-0AAF-49D1-B5A4-63A8892C954D">27 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgb6340ab">
+<ul class="org-ul">
+<li>[&gt;&gt;]  Print out first 100 events in 2022<sub>preEE</sub> Data and Synthetic data</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbf5dfc8" class="outline-3">
+<h3 id="orgbf5dfc8"><a href="../Journal/2025/02-February/20-February-2025-Thursday.html#ID-42859109-FCEE-413B-AA66-0FB61E428781">20 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgbf5dfc8">
+<ul class="org-ul">
+<li>Not Much</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5af1db1" class="outline-3">
+<h3 id="org5af1db1"><a href="../Journal/2025/02-February/13-February-2025-Thursday.html#ID-5D19B0E6-7AAC-4275-89FB-DCDD45CC09FF">13 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org5af1db1">
+<ul class="org-ul">
+<li>Not much</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgebbdbc8" class="outline-3">
+<h3 id="orgebbdbc8"><a href="../Journal/2025/02-February/06-February-2025-Thursday.html#ID-AC3FA48E-0103-4EAB-86E9-60C96C531D46">6 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgebbdbc8">
+<ul class="org-ul">
+<li>Synthetic datasets still look bad in CR</li>
+<li>Discussed Marina's USCMS talk on Friday</li>
+<li>(JA thinks: &#x2026; Vivek will not be happy)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org06f2050" class="outline-3">
+<h3 id="org06f2050"><a href="../Journal/2025/01-January/30-January-2025-Thursday.html#ID-C27C7532-8E4A-482F-B0A1-F655EA2D3E91">30 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org06f2050">
+<ul class="org-ul">
+<li>[&gt;&gt;] Closure on the Synthetic datasets</li>
+<li>Discussion re:nJets and ttbar</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgafbe48a" class="outline-3">
+<h3 id="orgafbe48a"><a href="../Journal/2025/01-January/23-January-2025-Thursday.html#ID-783461C0-9544-4F19-8808-E95F4D94E267">23 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgafbe48a">
+<ul class="org-ul">
+<li>More evidence that Reclustering might be the way to go</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6f75dbe" class="outline-3">
+<h3 id="org6f75dbe"><a href="../Journal/2025/01-January/16-January-2025-Thursday.html#ID-B15743B5-F90D-448D-A9E9-5E7276AE1AD8">16 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org6f75dbe">
+<ul class="org-ul">
+<li>got the comments on Run 3&#x2026; Not bad</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4bcb357" class="outline-3">
+<h3 id="org4bcb357"><a href="../Journal/2025/01-January/09-January-2025-Thursday.html#ID-8883B6FA-5F32-481C-B348-0A687B56DE29">09 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org4bcb357">
+<ul class="org-ul">
+<li>Not much</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge7c068f" class="outline-3">
+<h3 id="orge7c068f"><a href="../Journal/2024/12-December/12-December-2024-Thursday.html#ID-267A70F7-7A62-4B89-8B8F-CB0BC5AE96BC">12 December 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orge7c068f">
+<ul class="org-ul">
+<li>Synthetic data still factor of 2 too low!
+[&gt;&gt;] Reskim and try again ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9e8da24" class="outline-3">
+<h3 id="org9e8da24"><a href="../Journal/2024/12-December/05-December-2024-Thursday.html#ID-BC88947B-BB5C-4514-A7D3-12EA2A2B3F46">05 December 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org9e8da24">
+<ul class="org-ul">
+<li>Not much</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5cf0479" class="outline-3">
+<h3 id="org5cf0479"><a href="../Journal/2024/11-November/21-November-2024-Thursday.html#ID-60FC847B-56BA-4795-A157-B8AA6624E6D4">21 November 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org5cf0479">
+<ul class="org-ul">
+<li>Nice studies by CL:</li>
+<li><a href="https://indico.cern.ch/event/1481600/">https://indico.cern.ch/event/1481600/</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeeb0baa" class="outline-3">
+<h3 id="orgeeb0baa"><a href="../Journal/2024/11-November/14-November-2024-Thursday.html#ID-AEE790DB-4FBA-4FA3-A335-8CE0AF03A761">14 November 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgeeb0baa">
+<ul class="org-ul">
+<li>Discussion of jet energy correction procedure</li>
+<li>Training discussion &#x2026; Bailed</li>
+<li>Evan's email</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga637c8e" class="outline-3">
+<h3 id="orga637c8e"><a href="../Journal/2024/11-November/07-November-2024-Thursday.html#ID-1FB4F118-8D27-4DD8-9407-50E63CDB13EC">07 November 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orga637c8e">
+<ul class="org-ul">
+<li>"JCM-like" correction degrades FvT closure in Run-3</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb31ba0c" class="outline-3">
+<h3 id="orgb31ba0c"><a href="../Journal/2024/10-October/31-October-2024-Thursday.html#ID-691C1F49-5A12-4CE5-A4F8-9B4CF9F683F9">31 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgb31ba0c">
+<ul class="org-ul">
+<li>Discussion re:jet-veto maps</li>
+<li>[&gt;&gt;] Request presentation</li>
+<li>Gave talk on <a href="Classifier Studies.html#ID-C519450B-3D4C-47BA-8096-4B4B9D1E15E0">Classifier Studies</a>&#x2026; Summary: doesnt matter much which SB to use</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org579f2cd" class="outline-3">
+<h3 id="org579f2cd"><a href="../Journal/2024/10-October/24-October-2024-Thursday.html#ID-B0055121-3794-4CA5-ACA5-C37545CCDF3D">24 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org579f2cd">
+<ul class="org-ul">
+<li>Need to push on update Run-2 status</li>
+<li>Boosted overlap numbers</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8f44064" class="outline-3">
+<h3 id="org8f44064"><a href="../Journal/2024/10-October/10-October-2024-Thursday.html#ID-E1913EE0-345A-418A-B5C7-04D5CC5B9716">10 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org8f44064">
+<ul class="org-ul">
+<li>not much, discussion of new jet calbiration</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49e5dda" class="outline-3">
+<h3 id="org49e5dda"><a href="../Journal/2024/09-September/23-September-2024-Monday.html#ID-789A27FA-0EDC-4335-9531-C15235BA9CC7">23 September 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org49e5dda">
+<ul class="org-ul">
+<li>Not much</li>
+<li>Will implement Run-3 selection</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd199a1a" class="outline-3">
+<h3 id="orgd199a1a"><a href="../Journal/2024/09-September/16-September-2024-Monday.html#ID-F86C7725-8973-49EF-A1D0-B3D439B2AB53">16 September 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-orgd199a1a">
+<ul class="org-ul">
+<li>Not much&#x2026; to much emphasis on reconstruction efficiency. What really matters is if the signal events end up in the SR. The SvB classifier will take care of the rest.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0a1c405" class="outline-3">
+<h3 id="org0a1c405"><a href="../Journal/2024/09-September/09-September-2024-Monday.html#ID-16FB9397-F48B-4F74-9B4C-F0102CE2E0A9">09 September 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org0a1c405">
+<ul class="org-ul">
+<li>Mail by Marko&#x2026;</li>
+<li>Test the FvT from the fitting OR of SB ZZ and ZH.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org806aff2" class="outline-3">
+<h3 id="org806aff2"><a href="../Journal/2024/08-August/26-August-2024-Monday.html#ID-73C2954A-DAC9-4CA3-BE6E-2CE5B83B6D41">26 August 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org806aff2">
+<ul class="org-ul">
+<li>Not much: Jaco and Lukas away</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e130df" class="outline-3">
+<h3 id="org4e130df"><a href="../Journal/2024/08-August/12-August-2024-Monday.html#ID-4378A824-344F-4E4F-B0AB-73A7ABD3C95F">12 August 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-org4e130df">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1445702/">https://indico.cern.ch/event/1445702/</a></li>
+<li>Not much&#x2026;</li>
+<li>Lukas on mass decorrelation</li>
+<li>Sent Loukas link to  <a href="Low Pt HH4b.html#ID-CC79588D-4B0C-4EED-AB0E-2C1586B76E10">Low Pt HH4b</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2026/02-February/26-February-2026-Thursday.html">26 February 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/02-February/19-February-2026-Thursday.html">19 February 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/02-February/05-February-2026-Thursday.html">05 February 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/01-January/29-January-2026-Thursday.html">29 January 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/01-January/22-January-2026-Thursday.html">22 January 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/01-January/15-January-2026-Thursday.html">15 January 2026 Thursday</a></li>
+  <li><a href="../Journal/2025/11-November/06-November-2025-Thursday.html">06 November 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/10-October/23-October-2025-Thursday.html">23 October 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/10-October/16-October-2025-Thursday.html">16 October 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/10-October/09-October-2025-Thursday.html">09 October 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/09-September/11-September-2025-Thursday.html">11 September 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/08-August/21-August-2025-Thursday.html">21 August 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/07-July/24-July-2025-Thursday.html">24 July 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/07-July/17-July-2025-Thursday.html">17 July 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/07-July/10-July-2025-Thursday.html">10 July 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/07-July/03-July-2025-Thursday.html">03 July 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/06-June/26-June-2025-Thursday.html">26 June 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/06-June/19-June-2025-Thursday.html">19 June 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/06-June/12-June-2025-Thursday.html">12 June 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/06-June/05-June-2025-Thursday.html">05 June 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/22-May-2025-Thursday.html">22 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/08-May-2025-Thursday.html">08 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/04-April/10-April-2025-Thursday.html">10 April 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/03-March/06-March-2025-Thursday.html">6 March 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/02-February/27-February-2025-Thursday.html">27 February 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/02-February/20-February-2025-Thursday.html">20 February 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/02-February/13-February-2025-Thursday.html">13 February 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/02-February/06-February-2025-Thursday.html">6 February 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/01-January/30-January-2025-Thursday.html">30 January 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/01-January/23-January-2025-Thursday.html">23 January 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/01-January/16-January-2025-Thursday.html">16 January 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/01-January/09-January-2025-Thursday.html">09 January 2025 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/12-December-2024-Thursday.html">12 December 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/05-December-2024-Thursday.html">05 December 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/11-November/21-November-2024-Thursday.html">21 November 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/11-November/14-November-2024-Thursday.html">14 November 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/11-November/07-November-2024-Thursday.html">07 November 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/31-October-2024-Thursday.html">31 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/24-October-2024-Thursday.html">24 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/17-October-2024-Thursday.html">17 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/10-October-2024-Thursday.html">10 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/03-October-2024-Thursday.html">03 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/09-September/23-September-2024-Monday.html">23 September 2024 Monday</a></li>
+  <li><a href="../Journal/2024/09-September/16-September-2024-Monday.html">16 September 2024 Monday</a></li>
+  <li><a href="../Journal/2024/09-September/09-September-2024-Monday.html">09 September 2024 Monday</a></li>
+  <li><a href="../Journal/2024/08-August/26-August-2024-Monday.html">26 August 2024 Monday</a></li>
+  <li><a href="../Journal/2024/08-August/12-August-2024-Monday.html">12 August 2024 Monday</a></li>
+</ul>
+</div>
+</body>
+</html>

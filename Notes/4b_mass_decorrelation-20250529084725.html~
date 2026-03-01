@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>4b Mass Decorrelation</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">4b Mass Decorrelation</h1>
+
+<div id="outline-container-org785e115" class="outline-2">
+<h2 id="org785e115">1st Hbb Presentation</h2>
+<div class="outline-text-2" id="text-org785e115">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1495526/#b-598198-higgs-to-bbcc">https://indico.cern.ch/event/1495526/#b-598198-higgs-to-bbcc</a></li>
+<li>Background from low SvB extrapolated to high SvB</li>
+<li>Classifier needs to be decorrelated from mass</li>
+<li>Why isnt the signal mass decorrlated? (Normalization probably very different)</li>
+<li>2D fit: but much coarser in one higgs mass than the other&#x2026;. Not essentail to the method</li>
+<li>s11: good to also show the background modelling in the Sidebands</li>
+<li>Good talk.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

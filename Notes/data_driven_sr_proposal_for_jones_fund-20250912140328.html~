@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Data-driven SR Proposal for Jones Fund</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Data-driven SR Proposal for Jones Fund</h1>
+
+<div id="outline-container-org1548327" class="outline-2">
+<h2 id="org1548327">Abstract</h2>
+<div class="outline-text-2" id="text-org1548327">
+<p>
+The next breakthrough in particle physics may be something we have not thought of. Yet current Large Hadron Collider (LHC) searches depend on explicit signal hypotheses — a constraint that blinds us to unforeseen signatures. We propose a fundamentally new, model-agnostic strategy to "discover the unexpected."
+</p>
+
+<p>
+Our approach combines cutting-edge statistics with high-energy physics. First, we train a deep neural network to distinguish real LHC data from an imperfect SM background model, flagging events most unlike the background. To separate genuine new-physics signals from mere background mismodeling, we introduce a novel frequency-space filter: by comparing an unsmeared classifier to a "smeared" version in its latent space, we isolate high-frequency features characteristic of localized, previously unknown signals while suppressing low-frequency artifacts of background bias.
+</p>
+
+<p>
+Once a candidate signal region is defined, we estimate the background directly from data using control regions and data-driven corrections. This dual relaxation of both signal and background assumptions extends discovery potential to an unexplored regime where neither is fully specified.
+</p>
+
+<p>
+Led by physicist John Alison and statistician Mikael Kuusela at Carnegie Mellon University, the project will support graduate students in physics and statistics and progress from proof-of-principle studies on simulated data to full deployment on CMS experiment datasets. Beyond high-energy physics, these techniques for robust, unsupervised anomaly detection have broad applicability across the sciences whenever imperfect models meet high-dimensional data.
+</p>
+
+<p>
+This interdisciplinary effort promises a step-change in our ability to find new physics at the LHC—and to develop general statistical tools for detecting the genuinely unexpected.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org467b1f0" class="outline-2">
+<h2 id="org467b1f0">V2</h2>
+<div class="outline-text-2" id="text-org467b1f0">
+<p>
+The next breakthrough in particle physics may be something we have not thought of. Yet current Large Hadron Collider (LHC) searches depend on explicit signal hypotheses — a constraint that blinds us to unforeseen signatures. We propose a fundamentally new, model-agnostic strategy to "discover the unexpected."
+</p>
+
+<p>
+Our approach combines cutting-edge statistics with high-energy physics. We train a deep neural network to distinguish LHC data from an imperfect background model. To separate genuine new-physics signals from mere background mismodeling, we introduce a novel frequency-space filter to isolate high-frequency features characteristic of localized, previously unknown signals while suppressing low-frequency artifacts of background bias.
+</p>
+
+<p>
+Once a candidate signal region is defined, we estimate the background directly from data using control regions and data-driven corrections. This dual relaxation of both signal and background assumptions extends discovery potential to an unexplored regime where neither is fully specified.
+</p>
+
+<p>
+Led by physicist John Alison and statistician Mikael Kuusela at Carnegie Mellon University, the project will support graduate students in physics and statistics and progress from proof-of-principle studies on simulated data to full deployment on CMS experiment datasets. Beyond high-energy physics, these techniques for robust, unsupervised anomaly detection have broad applicability across the sciences whenever imperfect models meet high-dimensional data.
+</p>
+
+<p>
+This interdisciplinary effort promises a step-change in our ability to find new physics at the LHC - and to develop general statistical tools for detecting the genuinely unexpected.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf0b587c" class="outline-2">
+<h2 id="orgf0b587c">Paper</h2>
+<div class="outline-text-2" id="text-orgf0b587c">
+<p>
+<a href="https://docs.google.com/document/d/1jfNB1iNa-Se4DZypdlnEYd8zFIFjWpOV3nGchQoGRw4/edit?tab=t.0#heading=h.wg0dmiivq64i">https://docs.google.com/document/d/1jfNB1iNa-Se4DZypdlnEYd8zFIFjWpOV3nGchQoGRw4/edit?tab=t.0#heading=h.wg0dmiivq64i</a>
+</p>
+
+<p>
+Title: Discovering the Unexpected 
+John Alison and Mikael Kuusela
+</p>
+
+
+<p>
+Finding evidence for physics beyond the Standard Model (SM) is the next major direction in particle physics. The Large Hadron Collider (LHC) provides a rich and unique opportunity to search for new physics directly by looking for signatures not predicted in the SM. Current searches at the LHC rely on explicit (high-dimensional) signal model assumptions. Classifiers are trained to distinguish between the characteristics of known SM backgrounds and those of expected signals. These classifiers are blind to new physics that results in unanticipated signatures, restricting discovery potential to the subset of models that we have been creative enough to consider. An outstanding problem in particle physics and statistics is how to extend these searches when we don't know what exact form the signal will take: how to discover the unexpected. The goal of this proposal is to develop statistical tools and techniques to solve this problem and apply them to the LHC datasets. This work will have immediate implications for high-energy physics, but the problem is sufficiently general that we anticipate this work to have broad impacts beyond the field.
+</p>
+
+<p>
+The work in this proposal will be jointly led by John Alison (CMU Physics) and Mikeal Kuusela (CMU Statistics and Data Science). The funds will be used to support two graduate students, one in statistics and one in physics, to work full time on this problem. The work will begin with proof-of-principle algorithms developed on simulated data. It will then be applied to data from the CMS experiment at the LHC. Alison is a member of the CMS experiment and well-positioned to port this work within the collaboration. Two graduate students, Sindhu Murthy (Physics) and Soheun Yi (Statistics), are working on closely related problems and are excited about joining this project.
+</p>
+
+<p>
+<b>Context of proposed work</b>
+</p>
+
+<p>
+The role of the proposed work in context of the field is sketched in Figure 1. Searches for new physics are straightforward when the signal is well specified and high-fidelity simulations of the backgrounds are available. This is the regime of traditional methods indicated in green in the figure, where strong assumptions are made about both the signal and background model. From the statistical point of view, life is easy in this corner.
+</p>
+
+<p>
+Much recent work in the field has gone into relaxing one of these assumptions. There are several known solutions, including one introduced by Kuusela~\cite{}, for finding unknown signals when the modelling of SM backgrounds is perfect, the orange region in the figure. These algorithms work in toy models, but fail in realistic datasets where the background is never perfectly known.
+</p>
+
+<p>
+Many important searches for known new physics signatures involve processes where the SM backgrounds cannot be reliably simulated. Alison and Kuusela have developed data-driven techniques that leverage assumptions on the signal to allow the assumptions on the background model to be relaxed~\cite{}, extending coverage to the red region of the figure.
+</p>
+
+<p>
+The proposed work will simultaneously relax the signal and background assumptions, extending coverage to previously unexplored regions, as indicated in blue.
+</p>
+
+<p>
+<b>Proposed Work</b>
+</p>
+
+<p>
+We assume an observed dataset, consisting of SM background and an unknown signal, and an imperfect (i.e., systematically biased) model of the SM background. Our idea is to proceed in two steps, the first is to identify the region of phase-space most likely to contain the unknown signal. This data-driven signal region will be determined using unsupervised anomaly detection techniques. We will train a classifier (built from a deep neural network) to separate observed data and background. Events that the classifier scores as more "data-like" will be those most unlike the background model.
+</p>
+
+<p>
+The main challenge in relaxing assumptions on both the signal and background models is that this classifier alone cannot be used to select signal events. In addition to signal, the high data-score region will select the phase space of the background that is mis-modeled. A signal region defined using the classifier would be useless as we could not tell if an excess of data is due to the presence of new physics or to mis-modeling of the background.
+</p>
+
+<p>
+Instead, we will define the signal region using a key insight about the frequency characteristics associated with the signal. Whatever unknown features the signal may have, we assume it will correspond to relatively high-frequency features of the classifier latent space, whereas the background mis-modeling will tend to be relatively low-frequency features. This assumption is based on the localized nature of signal events in contrast to the more gradually varying background mis-modeling.
+</p>
+
+<p>
+We will exploit this assumption to identify the signal region in the high-dimensional feature space using a low-pass filter. The idea is to construct a second "smeared" classifier by adding Gaussian noise to the latent space of the initial data-vs-background classifier. The smearing will have a larger impact on the high-frequency signal than on the low-frequency background mismodelling. We will then play these two classifiers off of one another to isolate the signal component. Events that have high data-like scores from both the smeared and unsmeared classifiers will tend to be (low-frequency) background mismodelling. Events that have a high data-like score only on the unsmeared classifier are more likely to be from (high-frequency) signal.
+</p>
+
+<p>
+Having identified the signal region as high-score unsmeared and low-score smeared events, the second step is to estimate the background in this region. Here again, we cannot simply use our background prediction in this region as our background model is assumed to be imperfect. Instead we will define background-to-data correction factors in a control region defined as having high-score in both the unsmeared and smeared classifiers. This will closely follow our previous work on data-driven background techniques mentioned above.
+</p>
+
+<p>
+There are several important open questions &#x2013; both on the statistical and physics fronts &#x2013; that remain to be addressed in detail:
+</p>
+<ul class="org-ul">
+<li>(statistical) how to avoid biasing the classifier from statistical fluctuations</li>
+<li>(statistical) how to determine the appropriate level of smearing in the low-pass filter</li>
+<li>(statistical) how to optimize the classifier architecture and training</li>
+<li>(physics) how to assess systematic uncertainties on the background corrections</li>
+<li>(physics) how to interpret a null result as a constraint on particular models of new physics</li>
+<li>(physics) how to deploy these algorithms in real CMS data</li>
+</ul>
+
+<p>
+In summary, searching for unknown signals in the presence of an imperfect background modelling is an unsolved statistical problem. Here, an interdisciplinary approach is required to advance the field. The team at CMU is well-positioned to carry out this research. A technique to find anomalies that is robust to imperfections is not a niche problem, we expect this work will have broad implications throughout the sciences.
+</p>
+
+
+<p>
+"The proposal should list specific mechanisms and application deadlines for seeking additional funding."
+</p>
+
+<p>
+NSF TRIPODS (Transdisciplinary Research in Principles of Data Science): Explicitly targets interdisciplinary data science research
+</p>
+</div>
+
+<div id="outline-container-org28bf602" class="outline-3">
+<h3 id="org28bf602">Credibiity</h3>
+<div class="outline-text-3" id="text-org28bf602">
+<p>
+Optimal transport 
+Statistics
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2fae794" class="outline-3">
+<h3 id="org2fae794">Budget to support</h3>
+<div class="outline-text-3" id="text-org2fae794">
+<p>
+physics grad studnet and stats grad student
+(small amount for travel
+</p>
+
+
+<p>
+References:
+</p>
+<ul class="org-ul">
+<li>OT
+<ul class="org-ul">
+<li>ZZ/ZH 4b</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

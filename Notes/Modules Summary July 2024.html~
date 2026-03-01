@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary July 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary July 2024</h1>
+<p>
+<b>General</b>: Given report of ATLAS silicon modules cracking, have studied baseplate material to minimize Si stresses. Titanium promising in terms of Si stresses and forces. Expect minimal impact on assembly, tooling , and mounting. An order of titanium plates has been placed.  
+</p>
+
+<p>
+UCSB: Built more than 5 HD modules and have exercised producing two at a time.  
+</p>
+
+<p>
+UCSB: Built new HD module with Alumina Baseplate. Observed and studying some noisy channels.  
+</p>
+
+<p>
+TTU built 4 additional modules with good dimensional and electrical performance characteristics  
+(CF baseplates with hybrid gluing)  
+</p>
+
+<p>
+TTU is progressing on the tooling order for all US MACs. They have collected quotes to establish the cost estimate.  
+</p>
+
+<p>
+TTU Attempted to hire a technician but was unsuccessful.  
+</p>
+
+<p>
+TTU plans to build 4 neutron-radiated modules in the coming weeks.  
+</p>
+
+<p>
+CMU  placed an order for 300 foam inserts for the US MACs for module shipping. 200 for LD-Full and 100 for HD-Full. Will be sufficient for the remainder of pre-series and the ramp-up  
+</p>
+
+<p>
+CMU Currently assembling two modules at a time.  (CF baseplate and hybrid gluing)  
+</p>
+
+<p>
+CMU Working towards a singular LabView codebase across all MACs. Assisting other MACs local database used during assembly.
+</p>
+
+<hr />
+
+<p>
+CMU 10 LD full on C-fiber for FNAL (phase 1) • 
+TTU 10 LD full on C-fiber for FNAL (phase 1)
+• TTU build 4 LD full modules with irradiated sensors
+• UCSB finish first 11 HD full C-fiber modules for FNAL (phase 1)
+</p>
+
+
+
+<p>
+CMU Working towards singular LabView codebase across all MACs. Assisting other MACs Implement
+</p>
+
+<p>
+Notes:
+<a href="https://indico.cern.ch/event/1416611/contributions/6018729/attachments/2892261/5070489/Summer%20Workshop%202024_1.pdf">https://indico.cern.ch/event/1416611/contributions/6018729/attachments/2892261/5070489/Summer%20Workshop%202024_1.pdf</a>
+<a href="https://indico.cern.ch/event/1416611/contributions/6013486/attachments/2892448/5070732/BaseplateReport_HGCALSummer.pdf">https://indico.cern.ch/event/1416611/contributions/6013486/attachments/2892448/5070732/BaseplateReport_HGCALSummer.pdf</a>
+</p>
+
+<div id="outline-container-orge770eac" class="outline-2">
+<h2 id="orge770eac">Links:</h2>
+<div class="outline-text-2" id="text-orge770eac">
+<p>
+202407161637
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

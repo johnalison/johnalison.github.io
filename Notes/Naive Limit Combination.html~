@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Naive Limit Combination</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Naive Limit Combination</h1>
+<p>
+When combining limits from two different measurements, the naive combination &#x2013; which assumes the measurements are completely independent is given by
+</p>
+
+
+<p>
+\[
+\sigma_c = \sqrt{\frac{1}{\frac{1}{\sigma_1^2} + \frac{1}{\sigma_2^2}}} = \frac{\sigma_1\sigma_2}{\sqrt{\sigma_1^2+\sigma_2^2}}
+\] 
+</p>
+
+
+<p>
+If \(\sigma_1=\sigma_2\), 
+\[
+\sigma_c = \frac{\sigma^2}{\sqrt{2\sigma}} = \frac{\sigma}{\sqrt{2}}
+\]
+</p>
+
+
+
+
+<div id="outline-container-org336aa14" class="outline-2">
+<h2 id="org336aa14">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgec6b9e6" class="outline-2">
+<h2 id="orgec6b9e6">Links:</h2>
+<div class="outline-text-2" id="text-orgec6b9e6">
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+<a href="Estimation.html#ID-006C46F0-91B0-4C51-B59A-43CD5D65A055">Estimation</a>
+</p>
+
+
+<p>
+202408150959
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

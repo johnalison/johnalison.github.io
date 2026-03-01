@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vera Cluster Setup</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Vera Cluster Setup</h1>
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+<div id="outline-container-org283f664" class="outline-2">
+<h2 id="org283f664">There are instructions about getting started.</h2>
+<div class="outline-text-2" id="text-org283f664">
+<p>
+Once you have a PSC user name Ill have to send a mail to add you to the project.
+</p>
+
+<p>
+&gt; to logon Every time  
+alias vera='ssh [](<a href="mailto:alison@vera.psc.edu">mailto:alison@vera.psc.edu</a> "‌")[alison@vera.psc.edu](<a href="mailto:alison@vera.psc.edu">mailto:alison@vera.psc.edu</a>)'
+</p>
+
+<p>
+&gt; Setup sw (once)
+</p>
+
+<p>
+<code>git clone https://github.com/patrickbryant/ZZ4b.git</code>
+</p>
+
+<p>
+&gt; Example job script  
+cat /hildafs/home/alison/hh4b/main<sub>job.sh</sub>
+</p>
+
+<p>
+Need to change seeds
+</p>
+
+<p>
+ checks running jobs  
+squeue
+</p>
+
+<p>
+ Submit  
+&gt; sbatch main<sub>job.sh</sub>
+</p>
+</div>
+
+
+<div id="outline-container-orga690733" class="outline-3">
+<h3 id="orga690733">ssh key</h3>
+<div class="outline-text-3" id="text-orga690733">
+<p>
+[<a href="https://grants.psc.edu/cgi-bin/ssh/listKeys.pl">https://grants.psc.edu/cgi-bin/ssh/listKeys.pl</a>](<a href="https://grants.psc.edu/cgi-bin/ssh/listKeys.pl">https://grants.psc.edu/cgi-bin/ssh/listKeys.pl</a>)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org820b96f" class="outline-3">
+<h3 id="org820b96f">scp</h3>
+<div class="outline-text-3" id="text-org820b96f">
+<p>
+<code>scp .aliases  alison@vera.psc.edu: scp .bashrc alison@data.vera.psc.edu:TestTransfer (Password</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8093cbb" class="outline-3">
+<h3 id="org8093cbb">Project numbers</h3>
+<div class="outline-text-3" id="text-org8093cbb">
+<p>
+<code>&gt; id -gn phy210037p</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1478e71" class="outline-3">
+<h3 id="org1478e71">Sign on</h3>
+<div class="outline-text-3" id="text-org1478e71">
+<p>
+<code>ssh alison@vera.psc.edu</code>
+</p>
+</div>
+
+<div id="outline-container-org14e3ed7" class="outline-4">
+<h4 id="org14e3ed7">Test interactively</h4>
+<div class="outline-text-4" id="text-org14e3ed7">
+<p>
+‘''srun -N 1 -p TWIG &#x2013;gpus=a100-40:1 &#x2013;pty bash -i’''
+</p>
+</div>
+</div>
+
+<div id="outline-container-org677c352" class="outline-4">
+<h4 id="org677c352">Slides to intro to vera</h4>
+<div class="outline-text-4" id="text-org677c352">
+<p>
+[<a href="https://vera-doc.psc.edu/img/vera.pdf">https://vera-doc.psc.edu/img/vera.pdf</a>](<a href="https://vera-doc.psc.edu/img/vera.pdf">https://vera-doc.psc.edu/img/vera.pdf</a>)
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge15401a" class="outline-3">
+<h3 id="orge15401a">Links:</h3>
+<div class="outline-text-3" id="text-orge15401a">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+
+<p>
+202407112053
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

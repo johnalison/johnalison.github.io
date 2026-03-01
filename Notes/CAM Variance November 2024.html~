@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAM Variance November 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CAM Variance November 2024</h1>
+
+
+<div id="outline-container-org9d77fc0" class="outline-2">
+<h2 id="org9d77fc0">402.04.04.04 CE - Standard Module Assembly Site 2</h2>
+<div class="outline-text-2" id="text-org9d77fc0">
+<p>
+Schedule Variance:
+</p>
+
+<p>
+-225k
+</p>
+<ul class="org-ul">
+<li>-208k: 
+<ul class="org-ul">
+<li>70k Assemble and test 1-80</li>
+<li>140: 81-240</li>
+</ul></li>
+<li>16k Associated cleanroom consumables</li>
+</ul>
+
+
+
+<p>
+There is a schedule variance of -$225k in the cost account 402.04.04.04 CE - Standard Module Assembly Site 2 (CMU).  The variance is from the assembly and testing of the first 240 modules and the associated cleanroom consumables.
+</p>
+
+
+<p>
+This variance is expected due to missing input parts: hexaboards. 
+We now have 8 baseplates and are expected to get 48 hexaboards this week. 
+Once the hexaboards are in hand we will proceed with module construction: (2/day) for four days. This cadence will continue as baseplates become available.  In the new year, with the finalized tooling, we will increase the number of modules per day.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org29620aa" class="outline-2">
+<h2 id="org29620aa">Impact</h2>
+<div class="outline-text-2" id="text-org29620aa">
+<p>
+The activities contributing to the cumulative SV is due to upstream delay of input parts and will be completed later than scheduled.  When the input parts become available the value will be earned and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc134758" class="outline-2">
+<h2 id="orgc134758">402.04.04.05 CE - Module Assembly at UCSB</h2>
+<div class="outline-text-2" id="text-orgc134758">
+<p>
+-440k
+</p>
+<ul class="org-ul">
+<li>-373k: production odd-sized 1-16%</li>
+<li>-36k: cleanroom consumables / shipping</li>
+<li>-30k: support of operations at all module sites</li>
+</ul>
+
+<p>
+There is a cumulative schedule variance of -$440k in the cost account 
+402.04.04.05 CE - Module Assembly at UCSB.  The variance has two pieces:
+</p>
+<ol class="org-ol">
+<li>-410k Assembly, testing and shipping of full-size equivalent odd-sized modules 1-16%</li>
+<li>- 30k for supporting production at other assembly site</li>
+</ol>
+
+<p>
+This variance is expected due to missing input parts: hexaboards and baseplates. 
+</p>
+
+<p>
+It is expected that UCSB will start the assembly of modules once parts will become available.
+The will start with 12 HD full 120um Ti.
+</p>
+
+<p>
+In the mean time, the ordering of assembly tooling is well underway; the first batch of tools look excellent. UCSB has also begun visiting MACs to synchronize methods, share best practices, get focused on ramping-up.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgb457091" class="outline-2">
+<h2 id="orgb457091">Impact</h2>
+<div class="outline-text-2" id="text-orgb457091">
+<p>
+The activities contributing to the cumulative SV are due to upstream delays of the input parts and will be completed later than scheduled.  When the input parts become available the value will be earned and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2104221" class="outline-2">
+<h2 id="org2104221">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orge036616" class="outline-2">
+<h2 id="orge036616">Links:</h2>
+<div class="outline-text-2" id="text-orge036616">
+<p>
+<a href="CAM Variance October 2024.html#ID-E201CECB-4D9D-4106-9EC2-CBCAC05F61F9">CAM Variance October 2024</a>
+<a href="CAM Variance.html#ID-F7D4E581-3414-4ADD-B26E-C7D341812ED7">CAM Variance</a>
+</p>
+
+<p>
+202411180939
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

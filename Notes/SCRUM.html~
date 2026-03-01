@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SCRUM</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">SCRUM</h1>
+
+<div id="outline-container-orgb7c3642" class="outline-2">
+<h2 id="orgb7c3642">SCRUM (Jeff Sutherland)</h2>
+<div class="outline-text-2" id="text-orgb7c3642">
+<ul class="org-ul">
+<li>Good book overall. Could have been a lot shorter. too many examples / too much bragging / I think the idea. Would be interesting to try to implement</li>
+
+<li>Only problem with Gantt charts: they are always wrong.</li>
+
+<li>Gantt charts used to plan WWI (developed just prior)</li>
+
+<li>Main idea: Whenever you start a project why not regularly check in to see if heading in the right direction/is actually what people want.</li>
+
+<li>80% of the value of any piece of software in 20% of the features. <a href="Mental Models.html#ID-D2672C2B-070A-48FA-8437-683D0B39718E">Mental Models</a></li>
+
+<li>People &gt; process / Products that work &gt; documenting specs / Collaborating &gt; negotiating / responding to change &gt; following a plan</li>
+
+<li>Three daily questions: What did you do since last meeting ? What are you going to do next ? What is getting in your way ?</li>
+
+<li>That very large groups do LESS seems to be an iron clad rule of human nature.</li>
+
+<li>Changing TEAM performance much more important (by orders of magnitude) than changing individual performance. <a href="Rationality.html#ID-E4DEB720-88F3-4E98-A7DF-175A32B68648">Rationality</a> <a href="Leadership.html#ID-984C9BFB-26B4-46E4-BA8F-593E79E777CD">Leadership</a></li>
+
+<li>Dont look for bad people, look for bad systems - one that incentivize bad behaviors and reward poor performance <a href="Rationality.html#ID-E4DEB720-88F3-4E98-A7DF-175A32B68648">Rationality</a></li>
+
+<li>Time makes up your life, wasting it is a form of suicide.</li>
+
+<li>A team that depends on regular heroic actions to make its deadlines is not working the way it should.</li>
+
+<li>Normal Project Management Planning is stupid because people are so bad at predicting how much work something requires.</li>
+
+<li>Key to refine they plan THROUGHOUT they project, rather than do it all up front.</li>
+
+<li>What is the little improvement that can be done right away that will make things better?</li>
+
+<li>He who will defend everything, defends nothing.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Docker</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Docker</h1>
+
+
+<div id="outline-container-orgcc6cbb9" class="outline-2">
+<h2 id="orgcc6cbb9">To compile a CMS Note with docker</h2>
+<div class="outline-text-2" id="text-orgcc6cbb9">
+<p>
+<a href="CompileCMSPapers.html#ID-D5CF593A-8C1E-4110-AC98-B0162A70D374">CompileCMSPapers</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org01e3017" class="outline-2">
+<h2 id="org01e3017">To remove stopped containers</h2>
+<div class="outline-text-2" id="text-org01e3017">
+<p>
+<code>docker container prune</code>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org443ec76" class="outline-2">
+<h2 id="org443ec76">To list all containers (running and stoped)</h2>
+<div class="outline-text-2" id="text-org443ec76">
+<p>
+<code>docker container ls -a</code>
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org40ac914" class="outline-2">
+<h2 id="org40ac914">Old</h2>
+<div class="outline-text-2" id="text-org40ac914">
+<p>
+docker build -f DockerfileOT -t example-ot:fixPlotting .
+</p>
+
+
+<p>
+docker tag b0c65fb6301d johnalison/example-ot:fixPlotting
+docker push johnalison/example-ot
+</p>
+</div>
+
+
+<div id="outline-container-org06e97df" class="outline-3">
+<h3 id="org06e97df">Links:</h3>
+<div class="outline-text-3" id="text-org06e97df">
+<p>
+<a href="CMS.html#ID-D0F94G67-9C3F-5E39-0G0D-F9G2588766EB">CMS</a></p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

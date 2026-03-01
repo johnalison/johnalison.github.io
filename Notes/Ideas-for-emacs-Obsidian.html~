@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ideas-for-emacs-Obsidian</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ideas-for-emacs-Obsidian</h1>
+<p>
+<a href="obsidian.html#ID-4BE2A768-9F7A-4143-8D20-413FBF6217DC">obsidian</a>
+</p>
+
+<p>
+Installed 
+<a href="https://github.com/licht1stein/obsidian.el">https://github.com/licht1stein/obsidian.el</a>
+</p>
+
+<p>
+Uses:
+<a href="https://jblevins.org/projects/markdown-mode/">https://jblevins.org/projects/markdown-mode/</a>
+</p>
+
+<p>
+Look into 
+<a href="https://company-mode.github.io/">https://company-mode.github.io/</a>
+</p>
+
+<p>
+This looks great!
+&#x2026; Links dont really work.  Turned out not to really be a big deal
+</p>
+
+<div id="outline-container-org7ce40c8" class="outline-2">
+<h2 id="org7ce40c8">Follow-up</h2>
+<div class="outline-text-2" id="text-org7ce40c8">
+<ul class="org-ul">
+<li>How can you search all the links by file name ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5e57654" class="outline-2">
+<h2 id="org5e57654">Links</h2>
+<div class="outline-text-2" id="text-org5e57654">
+<p>
+[BROKEN LINK: 8B9C0D1E-2F3G-4H5I-6J7K-8L9M0N1O2P3Q]
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

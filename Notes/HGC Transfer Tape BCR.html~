@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HGC Transfer Tape BCR</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">HGC Transfer Tape BCR</h1>
+<p>
+<a href="https://fbcr.fnal.gov/BCR/All">https://fbcr.fnal.gov/BCR/All</a>
+</p>
+
+
+<div id="outline-container-org97b943a" class="outline-2">
+<h2 id="org97b943a">Mail from <a href="../Journal/2024/12-December/19-December-2024-Thursday.html#ID-3138EC45-78A3-485C-9984-BE2AD262635F">19 December 2024 Thursday</a></h2>
+<div class="outline-text-2" id="text-org97b943a">
+<p>
+So I suggest updating the BCR as follows:
+   - $15k new 2410 -&gt;  $6k used 2410 
+   - add HV distribution cost ~$6k 
+  (The cost of the PLC and LV power supplies should be in the noise. )
+</p>
+
+<p>
+With the procurement through CMU. 
+</p>
+
+<p>
+The bottom line cost change would be reduction of about $9k :  ($15k x 3 -&gt; $12k x 3)
+</p>
+</div>
+
+<div id="outline-container-org43ad0a8" class="outline-3">
+<h3 id="org43ad0a8">HV System</h3>
+<div class="outline-text-3" id="text-org43ad0a8">
+<p>
+from: <a href="https://indico.cern.ch/event/1471518/contributions/6195787/attachments/2957115/5200188/MAC_TestingIntro_Oct%2030%202024.pdf">https://indico.cern.ch/event/1471518/contributions/6195787/attachments/2957115/5200188/MAC_TestingIntro_Oct%2030%202024.pdf</a>
+</p>
+<ul class="org-ul">
+<li>1 x VITREK 964i High Voltage Switching System Mainframe (8 card capacity)
+<a href="https://vitrek.com/product/964i/">https://vitrek.com/product/964i/</a>.  $2.7k</li>
+<li>3 x VITREK LV3-8R Card 3kV Single (+) input Bus 8 Outputs, Red Banana Jacks</li>
+</ul>
+<p>
+<a href="https://vitrek.com/product/lv3-8r/">https://vitrek.com/product/lv3-8r/</a>.   3 x 600 
+</p>
+
+<p>
+Total 6k
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0d0f0f3" class="outline-2">
+<h2 id="org0d0f0f3">Mans meeting <a href="../Journal/2024/12-December/17-December-2024-Tuesday.html#ID-DA6F71ED-8D63-4DF3-9A5A-6D0833A89CA1">17 December 2024 Tuesday</a></h2>
+<div class="outline-text-2" id="text-org0d0f0f3">
+<p>
+There are overheads ~20% but vary by University (which is why my numbers arent identical)
+</p>
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1356090/contributions/5710303/attachments/2768555/4823054/MMStand-ShoppingList.pdf">https://indico.cern.ch/event/1356090/contributions/5710303/attachments/2768555/4823054/MMStand-ShoppingList.pdf</a></li>
+<li>from <a href="https://indico.cern.ch/event/1356090/">https://indico.cern.ch/event/1356090/</a></li>
+<li><a href="https://vastitec.com/en/products-2/safety-2/high-voltage-switching-system/">https://vastitec.com/en/products-2/safety-2/high-voltage-switching-system/</a></li>
+<li><a href="https://www.tek.com/en/products/keithley/source-measure-units/2400-standard-series-sourcemeter">https://www.tek.com/en/products/keithley/source-measure-units/2400-standard-series-sourcemeter</a></li>
+<li>Ping Rong Shoang about mimimum requirements</li>
+<li>Ping Joe and Nural about HV 2410</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0c93c08" class="outline-2">
+<h2 id="org0c93c08">BCR Draft</h2>
+<div class="outline-text-2" id="text-org0c93c08">
+</div>
+<div id="outline-container-org2849f35" class="outline-4">
+<h4 id="org2849f35">What is the change about? Include any details about the change</h4>
+<div class="outline-text-4" id="text-org2849f35">
+<p>
+This change has two pieces which affect module production at the 3 US sites (CMU, TTU, and UCSB). 
+</p>
+
+<p>
+The first is a change of the cost of consumables used during module production stemming from the change in adhesive used for module assembly and including an annual calibration of the OGP microscope used in the QA/QC process.
+</p>
+
+<p>
+The OGP calibration will increase the cost by $2k.
+</p>
+
+<p>
+The per module consumables cost will:
+</p>
+<ul class="org-ul">
+<li>increase by $8.75 (cost of the transfer tape)</li>
+<li>decrease by $0.7 (we now need will need less of the Araldite epoxy)</li>
+</ul>
+
+<p>
+The combined effect is an increase in the total cleanroom consumables cost of $34k at each site.  
+</p>
+
+<p>
+The second change is for equipment needed to supply dry air and high-voltage for the multi-module test stand. This increases the cost of the setup needed per MAC by:
+</p>
+<ul class="org-ul">
+<li>$15k for high-voltage power supplies</li>
+<li>$5k for the dry-air regenerative air dryer</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgbad83e3" class="outline-4">
+<h4 id="orgbad83e3">Impact / Justification</h4>
+<div class="outline-text-4" id="text-orgbad83e3">
+<p>
+Module construction was originally foreseen to only use epoxy for adhesive. Because the PCB can arrive too warped to laminate with epoxy alone, we would like to move to a "hybrid" adhesive strategy, using a combination of epoxy and transfer tape.  The hybrid adhesive strategy also reduces the latency of producing a module; with epoxy-only construction requires two overnight curing steps, with the hybrid scheme a module can be assembled in a single day. Reducing assembly latency by two days significantly mitigates the risk from problems during the first assembly stages. This change will thus lead to improved module quality, decreased time to produce a module, and reduced potential risk. 
+</p>
+
+
+<p>
+Annual calibration of the OGP SmartScope microscopes is required to maintain their precision and reliability. It is critical that the QA/QC measurements remain accurate and consistent over time.
+</p>
+
+<p>
+Equipment is needed to supply the dry air  and high-voltage power for the multi-module test stands.  These test stands are a critical part of the QA/QC at each site. The specification for the dry air is more stringent than what is currently used during assembly in for storage. The specs could potentially be met with a manual desiccant air dryer inline between the compressor air dryer and the teststand. These are inexpensive ($500), but would require frequent regeneration of the desiccant which would be tedious and costly in terms of person-time.  Regenerative air dryers ($4000) have fully automatic operation and require relatively little maintenance.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3555cc9" class="outline-2">
+<h2 id="org3555cc9">Change was:</h2>
+<div class="outline-text-2" id="text-org3555cc9">
+<ul class="org-ul">
+<li>Three sites:</li>
+<li>26355 - 5250 + 1500 = 22605 / year x 1.5 = 33907.5
+
+<ul class="org-ul">
+<li>15,300.000+ 3,850.00</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaadf8bc" class="outline-2">
+<h2 id="orgaadf8bc">Notes</h2>
+<div class="outline-text-2" id="text-orgaadf8bc">
+<ul class="org-ul">
+<li>Update all cleanroom consumable numbers ?</li>
+<li>Araldite:   464 -&gt; 202  $20 -&gt; $25
+<ul class="org-ul">
+<li>Current: 251 days * 24 modules / day * (13 modules / cartrige )<sup>-1</sup> = 464 x $20 = $9,280.00. (Was 20/13&#x2026; now 25/30</li>
+<li>New: 251 days * 24 modules / day * (30 modules / cartrige )<sup>-1</sup> = 201 cartridges x  $25 / cartrige = $4,020.00</li>
+</ul></li>
+</ul>
+
+<p>
+<a href="https://www.perigeedirect.com/products/huntsman-araldite-2011-slow-setting-all-purpose-epoxy?variant=42330316177662">https://www.perigeedirect.com/products/huntsman-araldite-2011-slow-setting-all-purpose-epoxy?variant=42330316177662</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3dec8a8" class="outline-2">
+<h2 id="org3dec8a8">Transfer Tape: 251 * 24 m/d * 1 tape/module = 6024 * $8.75 = <b>$52710.0</b></h2>
+<div class="outline-text-2" id="text-org3dec8a8">
+<ul class="org-ul">
+<li>OR: 251 * 12m/d = 3012 * $8.75 = <b>$26355.0</b></li>
+</ul>
+
+
+<p>
+Added OGP calibration
+</p>
+
+<ul class="org-ul">
+<li>-5k  + 26k + 1500 * 1.5</li>
+</ul>
+<p>
+45,344 + 2
+</p>
+
+<p>
+Change:
+</p>
+<ul class="org-ul">
+<li>Was <b>13920.0</b> - <b>6030.0</b></li>
+<li>Should be (-7890 + 39532.5 + 3000)</li>
+</ul>
+
+<p>
+$48288 -&gt; $72,288 
+$45344 -&gt; 69344
+$48396 + 24
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org40a7d63" class="outline-2">
+<h2 id="org40a7d63">Assembly Estimates</h2>
+<div class="outline-text-2" id="text-org40a7d63">
+<p>
+Was: 34k / year  x 1./12 months x (1 month / 231 modules) = $12.27 / module
+Now  56k /year  x  1/12 x 1/231 = $20.20 / module
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9bcec63" class="outline-2">
+<h2 id="org9bcec63">Questions:</h2>
+<div class="outline-text-2" id="text-org9bcec63">
+<ul class="org-ul">
+<li>BOE assumes 24 modules glued /day x 251 days = 6024 ?
+<ul class="org-ul">
+<li>if 12/day = 3012 (/year)</li>
+</ul></li>
+<li>How the uncertainty assessed ?</li>
+</ul>
+<p>
+A: <a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/RetrieveFile?docid=12919&amp;filename=HL_LHC-CMS-Detector-Upgrade-Key-Assumptions-v9-4.pdf&amp;version=57">https://cms-docdb.cern.ch/cgi-bin/DocDB/RetrieveFile?docid=12919&amp;filename=HL_LHC-CMS-Detector-Upgrade-Key-Assumptions-v9-4.pdf&amp;version=57</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb41a755" class="outline-2">
+<h2 id="orgb41a755">BCR Draft</h2>
+<div class="outline-text-2" id="text-orgb41a755">
+<ul class="org-ul">
+<li>Cost update for transfer tape assembly  for ODMB5/7 boards</li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>How expensive is the Alerdite ? How much do we save now that we do transfer tape  &#x2026; mail to Jessica</li>
+<li>How much is the transfer tape ?  &#x2026; mail to Jessica</li>
+<li><p>
+Notes: 
+</p>
+<ul class="org-ul">
+<li>$30/cartridge</li>
+<li>With full epoxy can do ~10 modules / cartridge  ~ $3 / module</li>
+</ul>
+<ul class="org-ul">
+<li>Hybrid can do ~30 modules / catrige ~ $1 / module</li>
+<li>Susanna:  (SRP) quote 9000 pieces, enough for 4500 modules each at TTU and CMU. The cost per item does come down to $8.75 with such a large quantity.</li>
+</ul></li>
+<li>Ping Jeremy re: Baseline Change Request
+<ul class="org-ul">
+<li>Need spread sheet form Manfred&#x2026;pinged him</li>
+</ul></li>
+</ul>
+
+
+<p>
+Spread sheet from Jessica (Not the official one!)
+<a href="https://docs.google.com/spreadsheets/d/1PWj6JIvCmMzZLiagedCTp9tm09GdRMhWJG3yRQuG7rs/edit?gid=156788291#gid=156788291">https://docs.google.com/spreadsheets/d/1PWj6JIvCmMzZLiagedCTp9tm09GdRMhWJG3yRQuG7rs/edit?gid=156788291#gid=156788291</a>
+</p>
+
+<p>
+Official one available here:
+<a href="https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13032">https://cms-docdb.cern.ch/cgi-bin/DocDB/ShowDocument?docid=13032</a>
+</p>
+
+<p>
+$33,875.13 / 4240 ~$8/module 
+</p>
+
+<p>
+<a href="HGC MAC BoEs.html#ID-CEEA5D38-C121-4797-B623-E1AF4012D1D5">HGC MAC BoEs</a>
+</p>
+
+<p>
+<a href="Dry Air for MMTS.html#ID-53375128-8643-4B4E-8E42-FA5AA369D869">Dry Air for MMTS</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org04e9af9" class="outline-2">
+<h2 id="org04e9af9">Follow-ups</h2>
+<div class="outline-text-2" id="text-org04e9af9">
+<p>
+<a href="Module assembly at CMU.html#ID-EBFD946D-C205-4315-B659-D49C9FF6216F">Module assembly at CMU</a>
+</p>
+
+<p>
+<a href="HGC MAC P2UG Silicon Modules 5 Nov 2024.html#ID-FC4ACEB2-814B-43EE-941D-9CD19329BA41">HGC MAC P2UG Silicon Modules 5 Nov 2024</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

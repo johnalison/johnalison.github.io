@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>copilot-chat</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">copilot-chat</h1>
+<ul class="org-ul">
+<li><code>copilot-chat-insert-commit-message</code> generates a commit message!</li>
+<li><code>copilot-chat</code> To start chat</li>
+<li><code>copilot-chat-list</code> lists the buffers that are part of copilots context</li>
+</ul>
+
+
+<div id="outline-container-orgdf17f88" class="outline-2">
+<h2 id="orgdf17f88">When running <code>copilot-chat</code>, you are required to choose a directory because:</h2>
+<div class="outline-text-2" id="text-orgdf17f88">
+<ul class="org-ul">
+<li>The directory serves as the context for the session. <code>copilot-chat</code> uses the files and structure within the selected directory to provide relevant suggestions and responses.</li>
+<li>It allows <code>copilot-chat</code> to analyze the codebase, understand the project structure, and offer context-aware assistance.</li>
+<li>By selecting a directory, <code>copilot-chat</code> can access and reference files, functions, and other resources within the project to provide more accurate and helpful responses.</li>
+<li>It ensures that the tool operates within the scope of a specific project, avoiding irrelevant or unrelated suggestions.</li>
+</ul>
+
+<p>
+This directory-based approach is particularly useful for large projects, as it helps <code>copilot-chat</code> focus on the relevant parts of the codebase.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf254c49" class="outline-2">
+<h2 id="orgf254c49">Typical Workflow</h2>
+<div class="outline-text-2" id="text-orgf254c49">
+<ol class="org-ol">
+<li>Start with <code>copilot-chat-transient</code> (<code>C-c c</code>) to explore available commands.</li>
+<li>Select a command from the transient menu, such as starting a chat or sending a prompt.</li>
+<li>Use direct commands or keybindings for repetitive tasks once familiar with the workflow.</li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

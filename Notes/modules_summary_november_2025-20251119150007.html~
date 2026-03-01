@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary November 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary November 2025</h1>
+<p>
+UCSB has made 26 v3C HD fulls last month. The HD full (CuW) assembly
+ was performed using a 12 modules / day protocol and good placement
+ and electrical properties where observed. They have performed a
+ thermal cycling campaign where ~30 modules going through 100 thermal
+ cycles. In parallel work is on going to setting up the multi-module
+ test stand. The thermal chamber has been received and is being
+ installed
+</p>
+
+
+<p>
+CMU is still waiting for baseplates, a shippment as been sent from
+CERN and should arring in time to resume module production in
+December. During the downtime we have finalized the auto-loctate
+functionality LabVIEW and have continued to setup the multi-module
+test stand. We have installed the thermal chamber in the cleanroom
+and are currently plumbing the coolant lines.
+</p>
+</div>
+</body>
+</html>

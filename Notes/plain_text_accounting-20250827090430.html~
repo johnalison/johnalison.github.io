@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Plain Text Accounting</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Plain Text Accounting</h1>
+<p>
+<a href="https://devhints.io/ledger">https://devhints.io/ledger</a>
+<a href="https://ledger-cli.org/doc/ledger3.html#Emacs-org-Mode">https://ledger-cli.org/doc/ledger3.html#Emacs-org-Mode</a>
+</p>
+<ul class="org-ul">
+<li>An account is anywhere money can go.</li>
+<li><code>ledger convert download.csv</code></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>Getting finances sorted out</li>
+<li><code>hledger import Chase8695_Activity20250620_20250719_20250826.CSV --rules-file=chase.rules  --file=chase_test.ledger</code></li>
+<li>Creating Accounting Package</li>
+</ul>
+
+
+<p>
+<code>brew install hledger</code>
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ARC TOP-24-006 3 top production</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ARC TOP-24-006 3 top production</h1>
+<p>
+<a href="https://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=TOP-24-006">https://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=TOP-24-006</a>
+</p>
+
+
+<div id="outline-container-org13273d0" class="outline-2">
+<h2 id="org13273d0">My notes</h2>
+<div class="outline-text-2" id="text-org13273d0">
+<ul class="org-ul">
+<li>tttW dominates triple top production (1fb)</li>
+<li>tttj is 0.5fb</li>
+<li>2 analyses: SL / SS + ML (SS + ML completely dominates)</li>
+<li>Expected sensitivity is 30x SM</li>
+<li>SL: dominated by ttbar</li>
+<li>SS+ML: ttX and fakes</li>
+<li>Problem is more 4top than 3top and they are very similar</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga8674ed" class="outline-2">
+<h2 id="orga8674ed">Second comments post unblinding (v6)</h2>
+<div class="outline-text-2" id="text-orga8674ed">
+<ul class="org-ul">
+<li>Can you add the unblinded data to figures 15-18</li>
+<li>In Figure 51 its hard to see the signal distrubutions.  Can you overlay the signal  scaled up by factor of ~30?</li>
+<li>Figure 54 can you remind me what the "LF" and "HF" NP correspond to?</li>
+<li>Is the ISRQCD term just on signal or correlated with signal and background</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org06ef5a2" class="outline-2">
+<h2 id="org06ef5a2">First comments</h2>
+<div class="outline-text-2" id="text-org06ef5a2">
+<p>
+Dear Authors, 
+</p>
+
+<p>
+Here is a first round of ARC comments focusing on SS and ML analysis on ANv5.
+</p>
+
+<ul class="org-ul">
+<li>Its nice to see all the distributions split by era, however I think its also worth having the combined Run2 distributions to be able to judge the modeling with higher statistics.</li>
+</ul>
+<ul class="org-ul">
+<li>Are the same BDT inputs used for the ML and SS events ?</li>
+<li>L840: "If good agreement is found in the ttZ control region, we can demonstrate that the BDT used for signal extraction isn’t over-trained and/or displaying odd behaviors."
+<ul class="org-ul">
+<li>From comparing Figures 27 and 28, it seems like there are far fewer statistics in the ttZ CR in the relevant BDT bins than in the SR (&gt;0.6). How does the observed modeling of the ttZ CR validate the BDT in the most sensitive SR bins  ?</li>
+</ul></li>
+
+<li>Figure 27: Can you make a combined plot for all years, and compute teh χ2 / DoF ?</li>
+<li>Figure 28: 
+<ul class="org-ul">
+<li>How was the binning determined ?</li>
+<li>Would be good to unblind below 0.5 in the SR to check the background modeling.  (Should be OK to unblind given the small S/B.)</li>
+<li>Again for the hT in the last row, can you compute a χ2/Dof for combined plot ?</li>
+</ul></li>
+</ul>
+<p>
+Section 7: 
+</p>
+<ul class="org-ul">
+<li>In the begining of section can you provide a summary of the the big picture to guide the reader.  Eg: How does the total systematic uncertainty compare with the statistical uncertainty ? Which systematics uncertainties dominate the total ?</li>
+</ul>
+
+<p>
+john
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfefd67b" class="outline-2">
+<h2 id="orgfefd67b">AN v5</h2>
+<div class="outline-text-2" id="text-orgfefd67b">
+<ul class="org-ul">
+<li>L 726: Why not 3 or more ? to kill ttbar</li>
+<li>Would be good to quote the the signal Acc x efficiency for the SL selection, for the different signals.</li>
+</ul>
+
+<p>
+Questions: 
+</p>
+<ul class="org-ul">
+<li>"Validation of the data and Monte Carlo agreement for the DNN discriminator score is done in a completely orthogonal phase space to the signal extraction region." What the the score look like the validation region vs the extraction region ?</li>
+</ul>
+
+
+<p>
+SS and ML:
+</p>
+<ul class="org-ul">
+<li>769. 3 or more leptons, the event is vetoed if all three leptons have the same charge
+<ul class="org-ul">
+<li>Do you use these events to check the fakes / charge mis-id?</li>
+</ul></li>
+
+<li>Would be good to have total RunII histograms, split by year is nice to have, but also good to see the modeling with higher stats.</li>
+<li>L840: "If good agreement is found in the ttZ control region, we can demonstrate that the BDT used for signal extraction isn’t over-trained and/or displaying odd behaviors."
+<ul class="org-ul">
+<li>Can give a plot comparing the background BDT distributions in the ttZ to the SR ? How similar are they ? Do the most sensitive BDT bins in the SR have reasonably statistics in the ttZ CR ?
+<ul class="org-ul">
+<li>Seems like there are far few stats in the ttZ CR in the releavent BDT bins than in the SR. How can the modelling be used to extrapolate to the SR ?</li>
+</ul></li>
+</ul></li>
+<li>4top BDT to train four top as the signal and all samples (including the three top signal and other backgrounds) as the background.</li>
+<li>After the 4top control reigon is defined, all events in the 4top CR are removed and the second, 3top is trainied with 3top as the signal and the other samples (excluding 4top) as the background</li>
+<li>Are the same BDT inputs used for the ML and SS events ?</li>
+<li>Figure 27: Can you make a combined plot for all years, and compute teh χ2 / Dof ?</li>
+<li>Figure 28: 
+<ul class="org-ul">
+<li>How was the binning determined ?</li>
+<li>Would be good to unblind below 0.5 in the SR to check the background modeling.</li>
+<li>Again for the hT in the last row, can you compute a χ2/Dof for combined plot ?</li>
+</ul></li>
+</ul>
+<p>
+Sections 7: 
+</p>
+<ul class="org-ul">
+<li>In the begining of section can you provide a summary of the the big picture.  Eg: how does the total systematic uncertianty compare to the statistical uncertianty ? Which systematics uncertianties dominate the total ?</li>
+</ul>
+
+
+
+<p>
+Skipping: 6.1- 
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org91b77dc" class="outline-2">
+<h2 id="org91b77dc">Paper Draft</h2>
+<div class="outline-text-2" id="text-org91b77dc">
+<p>
+v0
+L2 why not mention 3t + b as well?
+L9: Why would observation of 3T confirm the observatino of 4T ?
+</p>
+
+<p>
+not ready for prime time!
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2c60776" class="outline-2">
+<h2 id="org2c60776">Pre-Approval Talk</h2>
+<div class="outline-text-2" id="text-org2c60776">
+<p>
+<a href="https://indico.cern.ch/event/1508158/contributions/6346453/attachments/3008312/5305223/GMT20250204-130915_Recording_1920x1080.mp4">https://indico.cern.ch/event/1508158/contributions/6346453/attachments/3008312/5305223/GMT20250204-130915_Recording_1920x1080.mp4</a>
+</p>
+
+<ul class="org-ul">
+<li>4 top seed at 5σ: ~ 4fb</li>
+<li>No 3-top search: 2 fb (tttW dominates !)</li>
+<li>BSM can give 3tops:</li>
+<li>Production involves b in the initial state</li>
+<li>Single Lepton / Same sign and Multi-lepton</li>
+<li>Forward jets ?</li>
+</ul>
+
+<p>
+SSDL/ML: 
+</p>
+<ul class="org-ul">
+<li>Nb &gt;= 1   Why not &gt;=3 ? what does Nb look like?</li>
+<li>90% of the sensitivity</li>
+</ul>
+
+<p>
+SL: 
+</p>
+<ul class="org-ul">
+<li>does the ABCDnn use the XY regions ?</li>
+<li>~10%</li>
+</ul>
+
+
+<p>
+Questions: 
+</p>
+<ul class="org-ul">
+<li>How much 4top background is there?</li>
+<li>How is this fit ?</li>
+<li class="off"><code>[&#xa0;]</code> What is the Acc x efficiency ?</li>
+<li class="off"><code>[&#xa0;]</code> Which uncertainties are the most important: Stat vs syst? leading sys?</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgb2ae28e" class="outline-2">
+<h2 id="orgb2ae28e">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org9b33d98" class="outline-2">
+<h2 id="org9b33d98">Links:</h2>
+<div class="outline-text-2" id="text-org9b33d98">
+<p>
+202501280944
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

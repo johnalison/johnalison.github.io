@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Debug Mixed Data Cutflow</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Debug Mixed Data Cutflow</h1>
+<ul class="org-ul">
+<li>Trying run on c++</li>
+<li>Container with:</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-shell">
+&gt; cmssw-el7 -p --bind `readlink $HOME` --bind `readlink -f ${HOME}/nobackup/` --bind /uscms_data --bind /cvmfs -- /bin/bash -l
+&gt; source  setupHH4b.sh
+
+
+</pre>
+</div>
+
+
+<ul class="org-ul">
+<li>Commands to run the c++ on mixed analysis in: <code>debug_py.sh</code>
+<code>nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i closureTests/ULTrig//fileLists/mixed2018_3bDvTMix4bDvT_wJCM_v0.txt --friends closureTests/ULTrig//fileLists/mixed2018_3bDvTMix4bDvT_wJCM_friends_3bDvTMix4bDvT_v0_SeedAll45.txt -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/ULTrig/  -p NONE  -y 2018 --bTag 0.6  --histFile hists_wFvT_3bDvTMix4bDvT_v0_weights_newSBDefSeedAll45.root --histDetailLevel fourTag.passPreSel.passMjjOth.HHSR.bdtStudy  --FvTName FvT_3bDvTMix4bDvT_v0_newSBDefSeedAve --unBlind  --isDataMCMix  --runKlBdt</code></li>
+
+<li>Need to uncomment SR<sub>events</sub> lines</li>
+<li>make with scram b -j 5</li>
+<li>Dumping
+<code>py ZZ4b/nTupleAnalysis/scripts/dumpSRInfo.py  --in root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/ULTrig/mixed2018_3bDvTMix4bDvT_wJCM_v0/hists_wFvT_3bDvTMix4bDvT_v0_weights_newSBDefSeedAll45.root --out SR_info_mixed2018_3bDvTMix4bDvT_wJCM_v0</code></li>
+<li>Added SvB<sub>MA</sub><sub>ps</sub> to the output</li>
+<li>Now checking the python</li>
+<li>Read in pkl files with <code>debugMixedData.py</code>
+<code>./run_container python analysis/debugMixedData.py hists/histMixedData.coffea</code></li>
+<li>Running on py
+<code>./run_container python runner.py  -o histMixedData.coffea -d    mixeddata  -p analysis/processors/processor_HH4b.py -y 2018  -op output/ -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_nottcheck.yml</code></li>
+<li>Going back to the previous SvB files.
+<code>SvB_MA_file = f'{path}/SvB_MA_newSBDef.root' if 'mix' in self.dataset else f'{fname.replace("picoAOD", "SvB_MA")}'</code></li>
+<li>Read in the c++ and the python with 
+<code>./run_container python analysis/debugMixedData.py output//histMixedData.coffea</code></li>
+<li>Start with:
+<code>N c++ events 21697</code>
+<code>In c++, but not py 1613 frac 0.07</code>
+<code>In py but not c++ 684 frac 0.03</code></li>
+<li>Not making PU cut in c++ brings us to
+<code>N c++ events 21697</code>
+<code>In c++, but not py 708 frac 0.03</code>
+<code>In py but not c++ 701 frac 0.03</code></li>
+<li>Residual effect probably from random numbers</li>
+<li>AE will try with this change</li>
+</ul>
+</div>
+</body>
+</html>

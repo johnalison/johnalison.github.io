@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Module Summary June 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Module Summary June 2025</h1>
+<p>
+CMU is waiting on input parts to resume production. Ti baseplates and v3c boards are en route to CMU. In the meantime, we are working on setting up the multi-module test stand. The chiller has been powered and verified to be functioning properly. The final tooling has been installed and commissioned with pick-and-place exercises. We will next proceed with CuT modules on v3b hexaboards until the other parts arrive.
+</p>
+
+<p>
+UCSB has built the first v3b HD top module. Assembly was smooth, and the module performance was as expected. We are waiting for v3c boards to assemble more HD Tops. LD Top is the next shape for UCSB. The tooling has been commissioned and tested with dummy parts. We have 5 v3b hexaboards waiting on Ti baseplates to create functional modules.
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jack Nosila</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Jack Nosila</h1>
+<p>
+My chief of staff
+</p>
+
+<div id="outline-container-orgbb009e9" class="outline-2">
+<h2 id="orgbb009e9">Links</h2>
+<div class="outline-text-2" id="text-orgbb009e9">
+<ul class="org-ul">
+<li><a href="https://github.com/jacknosila">https://github.com/jacknosila</a></li>
+<li><a href="https://api-dashboard.search.brave.com/app/dashboard">https://api-dashboard.search.brave.com/app/dashboard</a></li>
+<li><a href="https://console.agentmail.to/dashboard/overview">https://console.agentmail.to/dashboard/overview</a></li>
+<li><a href="https://mail.proton.me/u/0/inbox">https://mail.proton.me/u/0/inbox</a></li>
+<li><a href="https://platform.claude.com/usage#rate-limit-usage">https://platform.claude.com/usage#rate-limit-usage</a></li>
+<li><a href="https://platform.claude.com/workspaces/default/cost">https://platform.claude.com/workspaces/default/cost</a>  
+creating openclaw backup:
+   <a href="https://github.com/johnalison/openclaw-backup">https://github.com/johnalison/openclaw-backup</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org54acfc9" class="outline-2">
+<h2 id="org54acfc9">Setup macOS</h2>
+<div class="outline-text-2" id="text-org54acfc9">
+<p>
+jacknosila
+TheFutureIsNow
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf249f0" class="outline-2">
+<h2 id="orgdf249f0">Accounts</h2>
+<div class="outline-text-2" id="text-orgdf249f0">
+<ul class="org-ul">
+<li>Created proton mail account
+jacknosila@proton.me  (pwd in valut)</li>
+<li class="on"><code>[X]</code> Github account "jacknosila"  (pwd in vault)</li>
+<li class="on"><code>[X]</code> Protonmail accoutn setup (jacknosila@proton.me)</li>
+<li class="on"><code>[X]</code> Gmail (jacknoslia@gmail.com)</li>
+</ul>
+</div>
+
+
+
+
+
+<div id="outline-container-orgced020c" class="outline-3">
+<h3 id="orgced020c">Brave</h3>
+<div class="outline-text-3" id="text-orgced020c">
+<ul class="org-ul">
+<li><a href="https://api-dashboard.search.brave.com/app/dashboard">https://api-dashboard.search.brave.com/app/dashboard</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orga899aeb" class="outline-2">
+<h2 id="orga899aeb">Give Brain dump to Jack: Who am I</h2>
+<div class="outline-text-2" id="text-orga899aeb">
+<ul class="org-ul">
+<li>Studied Physics and Philosophy at University of Pittsburgh</li>
+<li>Phd from University of Pennsylvania on the discovery of the Higgs boson with the ATLAS detector</li>
+<li>Did a postdoc at University of Chicago also working on the ATLAS detector</li>
+<li>I am now a professor of Physics at Carnegie Mellon University (CMU) working on the CMS detector</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org95768b9" class="outline-2">
+<h2 id="org95768b9">People for him to monitor on twitter</h2>
+<div class="outline-text-2" id="text-org95768b9">
+<ul class="org-ul">
+<li>@mattshumer_
+@RichardHeartWin
+@DavidDeutschOxf
+@karpathy
+@steipete</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org49abbf9" class="outline-2">
+<h2 id="org49abbf9">Git Configuration</h2>
+<div class="outline-text-2" id="text-org49abbf9">
+<ul class="org-ul">
+<li><p>
+Had to configure a second git crediction
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">
+# Jack's GitHub SSH key
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_jack
+  IdentitiesOnly yes
+
+# Johns 
+Host github-john
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_new
+
+</pre>
+</div></li>
+</ul>
+<p>
+Then
+  <code>git remote add origin git@github-john:johnalison/openclaw-backup.git</code>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

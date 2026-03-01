@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>09 September 2024 Monday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="08-September-2024-Sunday.html">&#8592; Previous</a>
+  <a href="10-September-2024-Tuesday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">09 September 2024 Monday</h1>
+
+<div id="outline-container-org03b7ffe" class="outline-2">
+<h2 id="org03b7ffe">Timeblock</h2>
+<div class="outline-text-2" id="text-org03b7ffe">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">setup</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">---</td>
+<td class="org-left">----------------</td>
+<td class="org-left">---</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HH-&gt;4b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">HH-&gt;4b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Jet Declustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">MultiHiggs</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Gym</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Gym</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Gym</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">skimming cutflow</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Sindhu</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Aniket</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Colloq</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Colloq</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">berman</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>W:</b> 7 
+<b>DW:</b> 2
+<b>OT:</b> 4
+<b>ex</b> 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb3f6768" class="outline-2">
+<h2 id="orgb3f6768">The ONE thing:</h2>
+<div class="outline-text-2" id="text-orgb3f6768">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> <a href="../../../Notes/jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org908ba79" class="outline-2">
+<h2 id="org908ba79">To Do</h2>
+<div class="outline-text-2" id="text-org908ba79">
+<p>
+[&gt;] CAM Training
+[&gt;] Read HGC TDR
+[  ] <code>~Update skimmer CI: Compare cutflow during skim vs later processing vs known values~</code>
+[&gt;] Update printCutFlow to compare cutflows
+[&gt;] Review Anikets slides For Thursday !
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1ebd773" class="outline-2">
+<h2 id="org1ebd773">Log</h2>
+<div class="outline-text-2" id="text-org1ebd773">
+<p>
+Up at 7:20 
+</p>
+
+<p>
+M&amp;T to school &#x2026; H will stay home
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgb01aa07" class="outline-2">
+<h2 id="orgb01aa07"><a href="../../../Notes/jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></h2>
+<div class="outline-text-2" id="text-orgb01aa07">
+<ul class="org-ul">
+<li>See daily log above</li>
+</ul>
+
+<p>
+<a href="../../../Notes/fbc2_meetings-20250508090616.html#ID-1B750F49-7865-4111-A85E-6FB137D9B266">FBC2 Meetings</a>
+</p>
+
+
+<p>
+Looking into the Skimmer CI failing&#x2026; Need to add more detailed checks&#x2026;
+</p>
+
+<p>
+<a href="../../../Notes/multiHiggs working meeting 9 September 2024.html#ID-71C09802-49DE-420B-A277-4668EC01607B">multiHiggs working meeting 9 September 2024</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd134d69" class="outline-2">
+<h2 id="orgd134d69">Gym / Steamroom</h2>
+<div class="outline-text-2" id="text-orgd134d69">
+<ul class="org-ul">
+<li>core / 50' Zone 2 bike</li>
+<li>10' at Tmax  = 124</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf83c145" class="outline-2">
+<h2 id="orgf83c145">Debugging Skimmer cutflow&#x2026;</h2>
+<div class="outline-text-2" id="text-orgf83c145">
+<ul class="org-ul">
+<li>Problem with counts (preSel now by tag)</li>
+<li>Problem with weights&#x2026; Due to sumw not being the same in the skim&#x2026; I think this is OK?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3d69cdb" class="outline-2">
+<h2 id="org3d69cdb">Chat <a href="../../../Notes/Sindhu Murthy.html#ID-A03D5619-3BAC-4F9C-A30B-CBA1E64F39D2">Sindhu Murthy</a></h2>
+<div class="outline-text-2" id="text-org3d69cdb">
+<p>
+[BROKEN LINK: Notes/Chat w Sindhu 9 September 2024]
+</p>
+
+<p>
+<a href="../../../Notes/Chat w Aniket 9 September 2024.html#ID-DE2814F6-191F-406E-BACF-85DF55EA5402">Chat w Aniket 9 September 2024</a>
+</p>
+
+<p>
+<a href="../../../Notes/CMU Physics Colloquium 9 September 2024.html#ID-9ADF5BF9-BC19-4201-99C1-B3DD498C1233">CMU Physics Colloquium 9 September 2024</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb22c52e" class="outline-2">
+<h2 id="orgb22c52e">Chat with Chris Berman re:PCA</h2>
+<div class="outline-text-2" id="text-orgb22c52e">
+<ul class="org-ul">
+<li>need to use both mean and variance to get PCA to work</li>
+</ul>
+
+<p>
+Home with M&amp;T
+</p>
+
+<p>
+Applied for Mortgage with Jeff Mountain
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

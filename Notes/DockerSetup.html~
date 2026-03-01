@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DockerSetup</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">DockerSetup</h1>
+
+
+
+<div id="outline-container-orgf125f84" class="outline-2">
+<h2 id="orgf125f84">Login to CERNs registry</h2>
+<div class="outline-text-2" id="text-orgf125f84">
+<p>
+<a href="https://twiki.cern.ch/twiki/bin/view/CMS/Internal/TdrProcessing">https://twiki.cern.ch/twiki/bin/view/CMS/Internal/TdrProcessing</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">docker login gitlab-registry.cern.ch
+docker pull gitlab-registry.cern.ch/tdr/containers/tdrlatex
+
+</pre>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="outline-container-orgd4d6cbd" class="outline-3">
+<h3 id="orgd4d6cbd">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org8d2656c" class="outline-3">
+<h3 id="org8d2656c">Links:</h3>
+<div class="outline-text-3" id="text-org8d2656c">
+<p>
+<a href="CompileCMSPapers.html#ID-D5CF593A-8C1E-4110-AC98-B0162A70D374">CompileCMSPapers</a>
+</p>
+
+
+
+<p>
+202407231711
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

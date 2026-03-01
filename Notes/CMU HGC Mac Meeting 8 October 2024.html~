@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 8 October 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 8 October 2024</h1>
+
+
+<div id="outline-container-orga124c02" class="outline-2">
+<h2 id="orga124c02">News</h2>
+<div class="outline-text-2" id="text-orga124c02">
+<ul class="org-ul">
+<li>MAC meeting next wednesday.</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge79cf42" class="outline-2">
+<h2 id="orge79cf42">Action</h2>
+<div class="outline-text-2" id="text-orge79cf42">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Get new carrying trays (Jonas: will do Xometry spark 30 modules)</li>
+<li>Clean lab/change filters soon</li>
+<li class="off"><code>[&#xa0;]</code> UG lab tech ? x 2 ?</li>
+<li class="off"><code>[&#xa0;]</code> Backups on everything</li>
+<li>Build new module with new glue pattern</li>
+<li>Will get new dry air cabinet ($700)</li>
+<li class="off"><code>[&#xa0;]</code> work study (student?)</li>
+<li class="off"><code>[&#xa0;]</code> MP to email UCSB (do we bake the modules?)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge6b6da4" class="outline-2">
+<h2 id="orge6b6da4">Manami</h2>
+<div class="outline-text-2" id="text-orge6b6da4">
+<ul class="org-ul">
+<li>script to read data</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc8f7a39" class="outline-2">
+<h2 id="orgc8f7a39">Jessica</h2>
+<div class="outline-text-2" id="text-orgc8f7a39">
+<ul class="org-ul">
+<li>Live module new glue and tape pattern
+<ul class="org-ul">
+<li>glue leaking / pressure too high (recoverable)</li>
+</ul></li>
+<li>Finish this module then do CU dummies</li>
+<li>Build live with Cu baseplate 
+<ul class="org-ul">
+<li>1 cabinets 200 modules in</li>
+<li>12/day = 3x4</li>
+</ul></li>
+<li>Cleaned the lab: need repairs on counter</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc5053ce" class="outline-2">
+<h2 id="orgc5053ce">Sindhu</h2>
+<div class="outline-text-2" id="text-orgc5053ce">
+<ul class="org-ul">
+<li>Ti option added to Labview
+<ul class="org-ul">
+<li>CF version not working</li>
+</ul></li>
+<li>Pascal tool (python in squal)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc7b9e25" class="outline-2">
+<h2 id="orgc7b9e25">Jonas</h2>
+<div class="outline-text-2" id="text-orgc7b9e25">
+<ul class="org-ul">
+<li>Understand GUI code</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd4e5380" class="outline-2">
+<h2 id="orgd4e5380">Pritam</h2>
+<div class="outline-text-2" id="text-orgd4e5380">
+<ul class="org-ul">
+<li>OS to el9</li>
+</ul>
+</div>
+
+
+
+
+
+
+<div id="outline-container-orgc93c912" class="outline-3">
+<h3 id="orgc93c912">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org0a8f997" class="outline-3">
+<h3 id="org0a8f997">Links:</h3>
+<div class="outline-text-3" id="text-org0a8f997">
+<p>
+<a href="CMU HGC Mac Meeting 1 October 2024.html#ID-97A9FD05-B891-404C-9023-A70329D7EC77">CMU HGC Mac Meeting 1 October 2024</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+<p>
+202410081013
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

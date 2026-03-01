@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Evolution of Silicon Sensor Technology in Particle Physics</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Evolution of Silicon Sensor Technology in Particle Physics</h1>
+<p>
+Frank Hartman June 2017
+<a href="https://link-springer-com.ezproxy.cern.ch/book/10.1007/978-3-319-64436-3">https://link-springer-com.ezproxy.cern.ch/book/10.1007/978-3-319-64436-3</a>
+</p>
+
+<ul class="org-ul">
+<li>first introduced in the DELPHI experiment at LEP, but soon followed by all collider experiments to date.</li>
+
+<li>the readout electronics evolved from microsecond to nanosecond integration times and to radiation-tolerant sub-micron technology devices.</li>
+
+<li>earth consists of, at least the upper crust, silicon and oxygen with some dirt (in the form of the other 90 elements) thrown in for added value.</li>
+
+<li>Silicon sensors have a very good intrinsic energy resolution: for every 3.6 eV released by a particle crossing the medium, one electron–hole pair is produced. Compared to about 30 eV required to ionise a gas molecule in a gaseous detector, one gets 10 times the number of particles in silicon. The average energy loss of a minimum ionising particle in silicon is 390 eV/μm, creating 108 (electron–hole pairs)/μm; these values being high due to the high density of silicon.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>The mobilities in silicon are quite high and therefore suited for the use as HEP detectors resulting in below 10 ns collection/readout time in silicon sensors of several 100 μm thickness.</li>
+</ul>
+
+<div id="outline-container-org53f312f" class="outline-2">
+<h2 id="org53f312f">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org67aafb4" class="outline-2">
+<h2 id="org67aafb4">Links:</h2>
+<div class="outline-text-2" id="text-org67aafb4">
+<p>
+202501071233
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

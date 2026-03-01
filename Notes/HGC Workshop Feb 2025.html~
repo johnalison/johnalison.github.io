@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HGC Workshop Feb 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">HGC Workshop Feb 2025</h1>
+<p>
+<a href="https://indico.cern.ch/event/1464337/">https://indico.cern.ch/event/1464337/</a>
+</p>
+
+<div id="outline-container-orgeaec754" class="outline-2">
+<h2 id="orgeaec754">Intro slides Karl</h2>
+<div class="outline-text-2" id="text-orgeaec754">
+<p>
+Expect v3d to be usable everywhere in the system, with SEE to TOA to be managed as a feature
+• Transition to module assembly with v3d once validated (by summer)
+v3e with SEE resistant TOA IP block, design in work 
+• Would like to complete the detector with this chip once qualified, and this will be only in 12m (if things go smoothly!)
+</p>
+</div>
+</div>
+<div id="outline-container-org24f21e2" class="outline-2">
+<h2 id="org24f21e2">Modules Meeting at HGCal Week</h2>
+<div class="outline-text-2" id="text-org24f21e2">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1512127/">https://indico.cern.ch/event/1512127/</a></li>
+</ul>
+</div>
+
+<div id="outline-container-org6685ce8" class="outline-4">
+<h4 id="org6685ce8">Production plan - module types and distribution of components</h4>
+<div class="outline-text-4" id="text-org6685ce8">
+<p>
+Proposal to have ROC 3C hexaboards available at MACs in March
+</p>
+<ul class="org-ul">
+<li>April: 4/day x 2 weeks</li>
+<li>May 8/day x 2 weeks</li>
+<li>June 12/day</li>
+<li>July 16/day</li>
+</ul>
+<p>
+ROC 3B − Build with non-production (prototype) sensor
+</p>
+</div>
+</div>
+
+<div id="outline-container-org884c54b" class="outline-4">
+<h4 id="org884c54b">Engineering Report</h4>
+<div class="outline-text-4" id="text-org884c54b">
+<ul class="org-ul">
+<li>Last tools fo CMU and TTU delivered ~now to UCSB</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgc10fe31" class="outline-2">
+<h2 id="orgc10fe31">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgbf2396b" class="outline-2">
+<h2 id="orgbf2396b">Links:</h2>
+<div class="outline-text-2" id="text-orgbf2396b">
+<p>
+202502241446
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

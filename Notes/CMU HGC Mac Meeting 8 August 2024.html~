@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 8 August 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 8 August 2024</h1>
+<p>
+Manfred away
+Get new carrying trays
+</p>
+
+<div id="outline-container-org327a45f" class="outline-2">
+<h2 id="org327a45f">News</h2>
+<div class="outline-text-2" id="text-org327a45f">
+<ul class="org-ul">
+<li>Eva is moving back to Seattle &#x2026; next friday last day.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbd0369c" class="outline-2">
+<h2 id="orgbd0369c">Jessica</h2>
+<div class="outline-text-2" id="text-orgbd0369c">
+<ul class="org-ul">
+<li>9 modules built. (Front side Ecapuslation not done&#x2026; need it for 4 modules)</li>
+<li>Can Build 2 more next week (How many do they need at FNAL ? )</li>
+<li>No need for Cu Tungsten</li>
+<li>Clean lab/change filters soon.</li>
+<li>Minor updated needed to component trays</li>
+<li>QR camera gun acts like wireless keyboard.</li>
+<li>Still glue leaking affecting position 1 / modify line</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org926ebde" class="outline-2">
+<h2 id="org926ebde">Andrew</h2>
+<div class="outline-text-2" id="text-org926ebde">
+<ul class="org-ul">
+<li>6 new modules</li>
+<li>0003 - bad IV</li>
+<li>0004 - OK</li>
+<li>0005 - Bad IV</li>
+<li>0006 - bad IV</li>
+<li>0007  - bad IV</li>
+<li>F2CX-0006 -OK</li>
+<li>No dead half chips</li>
+<li>Edge cells noisy</li>
+<li>Check if the sensors are OK</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org20b1e41" class="outline-2">
+<h2 id="org20b1e41">Pritam</h2>
+<div class="outline-text-2" id="text-org20b1e41">
+<ul class="org-ul">
+<li>Testing</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1129f84" class="outline-2">
+<h2 id="org1129f84">Joy</h2>
+<div class="outline-text-2" id="text-org1129f84">
+<ul class="org-ul">
+<li>ramping back up</li>
+<li>will shadow</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org37d46d3" class="outline-2">
+<h2 id="org37d46d3">Eva</h2>
+<div class="outline-text-2" id="text-org37d46d3">
+<ul class="org-ul">
+<li>QR camera gun acts like wireless keyboard</li>
+<li>back from vacation</li>
+<li>getting Jonas back up to speed</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org26414e5" class="outline-2">
+<h2 id="org26414e5">Jonas</h2>
+<div class="outline-text-2" id="text-org26414e5">
+<ul class="org-ul">
+<li>Shelving</li>
+<li>Estimate: 5 x 3 x 10</li>
+<li>Another cabinet</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org76335c6" class="outline-2">
+<h2 id="org76335c6">Sindhu</h2>
+<div class="outline-text-2" id="text-org76335c6">
+<ul class="org-ul">
+<li>Cleaned DB tables</li>
+<li>Plan to upload DB to the central database.</li>
+<li>OGP writes to central DB , but there is a problem now</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2d4df6c" class="outline-2">
+<h2 id="org2d4df6c">Nedgma</h2>
+<div class="outline-text-2" id="text-org2d4df6c">
+<ul class="org-ul">
+<li>bonder GUI works well.</li>
+<li>Meet with UCSB, getting it going with them.</li>
+<li>Slides for MAC meeting ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org665d461" class="outline-2">
+<h2 id="org665d461">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orge88a772" class="outline-2">
+<h2 id="orge88a772">Links:</h2>
+<div class="outline-text-2" id="text-orge88a772">
+<p>
+<a href="HGC.html#ID-E1G05H78-0D4G-6F40-1H1E-0AH3699877FC">HGC</a>
+<a href="CMU HGC Mac Meeting 1 August 2024.html#ID-FFD7072A-1184-45A4-9D6D-E3F44E79DB8A">CMU HGC Mac Meeting 1 August 2024</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+
+<p>
+202408081059
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

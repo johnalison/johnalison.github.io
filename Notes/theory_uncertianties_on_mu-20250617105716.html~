@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Theory uncertianties on mu</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Theory uncertianties on mu</h1>
+<p>
+Not sure how meaningful large theory uncertianties are on the observed
+mu. Especially in cases where sensitivity to the SM is low (5-8x SM).
+In these case, the fitted mu can get be large (even though consistent
+with 0). The size of the theory uncertianties scale with the observed
+mu. In cases where the relative SM theory uncertianties are large,
+theory uncertianties can become the leading uncertianty on mu. The
+observed limit then is largely driven by the uncertianty on the
+reference cross section used to normalizie the observed value, not the
+excess observed.
+</p>
+
+
+<p>
+<b>Other Points:</b>
+This is reallly an exotics analysis, In  EXO, we would never be including these
+uncertianties on observed limits.
+</p>
+
+<p>
+Its also, not clear that they are only really valid for mu = 1 anyway.
+eg: does the effect of mTop really just scale linearly with with mu up to mu~10?
+</p>
+
+
+<hr />
+</div>
+</body>
+</html>

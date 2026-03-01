@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary September 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary September 2025</h1>
+<p>
+CMU completed production of 20 Ti+v3c modules, which successfully validated the four-module-per-day assembly cadence that is now operating smoothly. With the current baseplate supply depleted, production will scale to eight modules per day once new baseplates arrive. Ten modules have been shipped to UCSB for thermal cycling tests as a follow-up to previous studies conducted at TTU. Setup of the MMTS system (chiller and electronics) is ongoing.
+</p>
+
+
+<p>
+UCSB MAC successfully completed commissioning tooling for all module shapes and produced the first live LD-5 modules with left and bottom configurations. The facility is now fully operational to manufacture all assigned module shapes and types. Stressed module testing campaigns demonstrated significant progress, with highly irradiated modules delivering excellent results. Additionally, modules constructed with epoxy-only assembly to simulate end-of-life conditions performed well. The v3v hexaboard shipment experienced import delays but arrived Thursday, enabling v3c module production to begin next month.
+</p>
+</div>
+</body>
+</html>

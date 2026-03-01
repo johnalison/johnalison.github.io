@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ISR-FSR-jet-DiscernmentInJetDeClustering</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ISR-FSR-jet-DiscernmentInJetDeClustering</h1>
+<p>
+The jet declustering algorithm allows for some discernment between ISR and FSR jets. FSR jets will be clustered with the b-jets first; the ISR jets should be clustered last. The jet-declustering algorithm can be configured to stop when the b-jets have been clustered, but before the ISR jets.  Then only the FSR-like clusterings are declustered from the splitting templates.
+</p>
+
+
+
+<p>
+Example with 4bs + 1 non-bjets
+</p>
+
+
+<div id="orge7fc98b" class="figure">
+<p><img src="2026-02-26_22-38-28_screenshot.png" alt="2026-02-26_22-38-28_screenshot.png" />
+</p>
+</div>
+
+
+
+
+<p>
+<a href="jetdeclusteringalgorithm-20250504110934.html#ID-81F11099-A998-406F-AEFD-1B626D15ADC9">JetDeClusteringAlgorithm</a>
+</p>
+
+<p>
+<a href="hemispheremixingandisf_fsr-20250504111418.html#ID-443F4BB1-778F-4E7C-9CAA-45FA9176185B">HemisphereMixingAndISF-FSR</a>
+</p>
+</div>
+</body>
+</html>

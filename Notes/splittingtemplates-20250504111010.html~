@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SplittingTemplates</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">SplittingTemplates</h1>
+<p>
+The splitting templates parameterize the sub-jet kinematics subject to the constraint that the combined jet mass and energy are conserved. This is done in the frame of \(p_\mu = (E, p_T, 0, 0)\)
+</p>
+
+<p>
+The subjets can then be described by 4 degrees-of-freedom: (\(\theta_A\). zA, mA, mB).  Where subjet A is the subjet with higher \(z = p \cdot \hat{p}_{combined}\). Theta<sub>A</sub> is the angle between this jets direction and the direction of the combined jet.  The plane of the decay is a 5th DoF.  Apart from \(\theta_A\) and zA, the 5 variable are not very correlated. So we can sample this same as a product of 2D x 1D x 1D x 1D randomly sampled variables. 
+</p>
+
+<p>
+Note that randomly sampling from the splitting templates will change the combined jets mass (which is of course a function of its substructure.)
+</p>
+
+
+<div id="outline-container-org796f9ad" class="outline-2">
+<h2 id="org796f9ad">Followups</h2>
+<div class="outline-text-2" id="text-org796f9ad">
+<ul class="org-ul">
+<li>Do the splitting templates depend on the jet flavor?</li>
+</ul>
+
+
+<p>
+<a href="btagsasaquarkgluontag-20250504111118.html#ID-8CBCCBAA-E746-470B-93DA-CE0E76525D57">BTagsAsAQuarkGluonTag</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

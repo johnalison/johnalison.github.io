@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary October 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary October 2025</h1>
+<p>
+It's been a relatively slow month at CMU as we await baseplates to
+resume making modules. We have been using this time as an opportunity
+to improve workflow. We have deployed LabVIEW software to auto-locate
+the fiducials during production. Surveys now take less time and
+require less manual input. The multi-module teststand setup is in
+progress. We have received the thermal chamber and are in the process
+of setting it up.
+</p>
+
+
+<p>
+UCSB has assembled 22 high-density CuW modules and 8 high-density Ti
+modules this month. The modules were produced using a protocol of 8
+per day with 4 modules per gantry run. The mechanical and electrical
+performance of the modules is excellent. This run of modules was used
+to commission the two remaining HD Full assembly trays. The
+multi-module test stand setup is proceeding. The thermal chamber is in
+ocean freight and has just passed through the Panama Canal and is
+expected at the end of the month.
+</p>
+</div>
+</body>
+</html>

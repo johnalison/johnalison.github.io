@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stats-Data-Driven-SR</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Stats-Data-Driven-SR</h1>
+<p>
+Links: 
+</p>
+
+<p>
+<a href="STAMPS 27 September 2024.html#ID-7D2D584C-CD3E-4ED4-9DAC-0747A449B440">STAMPS 27 September 2024</a>
+</p>
+
+<p>
+<a href="data_driven_sr_proposal_for_jones_fund-20250912140328.html#ID-0EF5C322-B5AC-4C76-B83B-632A5662FC97">Data-driven SR Proposal for Jones Fund</a>
+</p>
+
+<div id="outline-container-org2f086b6" class="outline-2">
+<h2 id="org2f086b6">Paper draft:</h2>
+<div class="outline-text-2" id="text-org2f086b6">
+<p>
+<a href="https://www.overleaf.com/project/688668ae400db8e684d5ff97">https://www.overleaf.com/project/688668ae400db8e684d5ff97</a>
+</p>
+</div>
+
+<div id="outline-container-org7fe888d" class="outline-3">
+<h3 id="org7fe888d">Review <a href="../Journal/2025/10-October/15-October-2025-Wednesday.html#ID-E311A2E1-0A3D-4579-958C-D6532199D96C">15 October 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org7fe888d">
+<ul class="org-ul">
+<li><p>
+I think it woudl be good start explicitly include the "big-picture" figure  in the introduction.
+</p>
+
+<div id="org6803dd1" class="figure">
+<p><img src="Reviewing_Soheuns_draft/2025-10-15_11-17-22_screenshot.png" alt="2025-10-15_11-17-22_screenshot.png" />
+</p>
+</div></li>
+
+<li>Also maybe in the introdcution maybe want layout conceptually the data challenge in our generalized problem.
+In our fomulation the observed data can differe from the background model for two reasons, there is signal or the background is misspecified. Our work aims at teasing these two differences apart</li>
+</ul>
+
+<p>
+Whats New:
+</p>
+<ul class="org-ul">
+<li>Using the classifier(s) for data-driven SR</li>
+<li>Anaylsis in the embedded space</li>
+<li>Ensambleing with max to amplifiy signal</li>
+<li>2nd smeared classifier</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgea14cc4" class="outline-2">
+<h2 id="orgea14cc4">Log</h2>
+<div class="outline-text-2" id="text-orgea14cc4">
+</div>
+<div id="outline-container-orgb59d174" class="outline-3">
+<h3 id="orgb59d174"><a href="../Journal/2025/12-December/08-December-2025-Monday.html#ID-BA3EDC6A-9264-4E51-AFD5-C49F3FD1528B">08 December 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgb59d174">
+<ul class="org-ul">
+<li>Looked at intro of new draft&#x2026; much better!</li>
+<li>Chat re: Introduction of paper draft</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org927f57a" class="outline-3">
+<h3 id="org927f57a"><a href="../Journal/2025/10-October/20-October-2025-Monday.html#ID-593C2438-CE14-4C22-A351-4B0349196135">20 October 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org927f57a">
+<ul class="org-ul">
+<li>Not much&#x2026; ABCD as capture and release</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3954805" class="outline-3">
+<h3 id="org3954805"><a href="../Journal/2025/10-October/15-October-2025-Wednesday.html#ID-E311A2E1-0A3D-4579-958C-D6532199D96C">15 October 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org3954805">
+<ul class="org-ul">
+<li>Reviewed paper above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49ca89c" class="outline-3">
+<h3 id="org49ca89c"><a href="../Journal/2025/10-October/10-October-2025-Friday.html#ID-00AC0E1A-7764-442A-A725-639A0439A3FC">10 October 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org49ca89c">
+<ul class="org-ul">
+<li>Not much</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9df339c" class="outline-3">
+<h3 id="org9df339c"><a href="../Journal/2025/09-September/29-September-2025-Monday.html#ID-2DEE5BC9-7DC8-48A9-AB26-78DD44204FE6">29 September 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org9df339c">
+<ul class="org-ul">
+<li>Paper draft solid. ZH results make sense</li>
+<li>Stamps on the 10th</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4da28ce" class="outline-3">
+<h3 id="org4da28ce"><a href="../Journal/2025/09-September/15-September-2025-Monday.html#ID-4290D529-1F80-49C1-B963-8B35EC5084EB">15 September 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org4da28ce">
+<ul class="org-ul">
+<li>Currently loose a factor of 2 with data: Maybe universal inference?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfe2b554" class="outline-3">
+<h3 id="orgfe2b554"><a href="../Journal/2025/08-August/21-August-2025-Thursday.html#ID-7329128B-288C-4845-A333-341D837131E3">21 August 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgfe2b554">
+<ul class="org-ul">
+<li>[&gt;] Read overleaf</li>
+<li>We learn the relevant variable. In high-D space</li>
+<li>Assume somethings about signal</li>
+<li>Generaized model agnositcs search of new physics in presense of imprerfect background model</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org00b6d06" class="outline-3">
+<h3 id="org00b6d06"><a href="../Journal/2025/08-August/14-August-2025-Thursday.html#ID-3CFB4846-98EC-4589-8F32-072CDFC34E6E">14 August 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org00b6d06">
+<ul class="org-ul">
+<li>Going over paper draft</li>
+<li>Has results for X-&gt;hh-&gt;4b signals</li>
+<li><a href="https://www.overleaf.com/project/688668ae400db8e684d5ff97">https://www.overleaf.com/project/688668ae400db8e684d5ff97</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3b12528" class="outline-3">
+<h3 id="org3b12528"><a href="../Journal/2025/07-July/29-July-2025-Tuesday.html#ID-3DE9E875-1D7E-40BB-B213-B076B76788D7">29 July 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org3b12528">
+<ul class="org-ul">
+<li>How to describe the benifit of the smearing</li>
+<li>Maybe come up with a 1D toy to explain the effect of smearing ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf40f0f0" class="outline-3">
+<h3 id="orgf40f0f0"><a href="../Journal/2025/07-July/10-July-2025-Thursday.html#ID-338FC11E-DBC1-43EA-BAFC-FEE08B0F30BA">10 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgf40f0f0">
+<ul class="org-ul">
+<li>Soheun going through paper outline</li>
+<li>Will start drafting the paper</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4257134" class="outline-3">
+<h3 id="org4257134"><a href="../Journal/2025/06-June/16-June-2025-Monday.html#ID-25C27635-8B10-4313-9C44-4E3FAD920615">16 June 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org4257134">
+<ul class="org-ul">
+<li>Not much</li>
+<li>Meet again on Friday</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org26710db" class="outline-3">
+<h3 id="org26710db"><a href="../Journal/2025/06-June/12-June-2025-Thursday.html#ID-59B53FCC-CE1F-4B1D-AC00-1081A97CC19B">12 June 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org26710db">
+<ul class="org-ul">
+<li>Not much&#x2026; mainly recap.</li>
+<li>Unbinned is bad idea.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org659417b" class="outline-3">
+<h3 id="org659417b"><a href="../Journal/2025/05-May/15-May-2025-Thursday.html#ID-53FF8481-ECA7-4316-9C8A-9D1B847EBB73">15 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org659417b">
+<ul class="org-ul">
+<li>Chat about correct test statistic to use</li>
+<li>How to determine the corrections. Fit now in a SB, what prior to put on when fitting in the SR</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2d301cc" class="outline-3">
+<h3 id="org2d301cc"><a href="../Journal/2025/05-May/08-May-2025-Thursday.html#ID-27ADAE5E-4314-492A-A849-98B98F6C44B3">08 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org2d301cc">
+<p>
+Discussion of goodness-of-fit
+Background prediction much better when smearing  
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org10c3e11" class="outline-3">
+<h3 id="org10c3e11"><a href="../Journal/2025/05-May/05-May-2025-Monday.html#ID-339C8AF4-231B-4799-91A6-4A9EE7FA7CD3">05 May 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org10c3e11">
+<ul class="org-ul">
+<li>Discussed unbinned teststatistics</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org142939c" class="outline-3">
+<h3 id="org142939c"><a href="../Journal/2025/05-May/01-May-2025-Thursday.html#ID-074F51FF-BA0F-475D-9D89-EA017F81347F">01 May 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org142939c">
+<ul class="org-ul">
+<li>On Zoom</li>
+<li>Soheun's claim is that the rejection rate depends on teh number of bins</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbafe958" class="outline-3">
+<h3 id="orgbafe958"><a href="../Journal/2025/04-April/17-April-2025-Thursday.html#ID-885AD8D8-BA67-445D-814B-48D96D572AE6">17 April 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgbafe958">
+<ul class="org-ul">
+<li>Question re: CR with bais, improvement from 1 bin vs 2bins ?</li>
+<li>Write up</li>
+<li><a href="Effect of random binning on significance.html#ID-4595723B-658F-4AE8-87D0-4E76E1673695">Effect of random binning on significance</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6062e25" class="outline-3">
+<h3 id="org6062e25"><a href="../Journal/2025/04-April/10-April-2025-Thursday.html#ID-8AC30A91-F4B3-48AE-B800-EBBEB1BF6A17">10 April 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org6062e25">
+<ul class="org-ul">
+<li>2D plots clearly show benefit of smearing</li>
+<li>Try max(FvT) vs mean(FvT)  max vs min gamma/gamma-tilde</li>
+<li>Claude desktop</li>
+<li>setup MCP for obsidian</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc0b5afb" class="outline-3">
+<h3 id="orgc0b5afb"><a href="../Journal/2025/04-April/03-April-2025-Thursday.html#ID-65DE71EA-D228-4DD0-B796-B9B1A3DFFC17">3 April 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgc0b5afb">
+<ul class="org-ul">
+<li>Useful meeting</li>
+<li>Smearing hurts power some, but improves bias</li>
+<li>Plot of FvT<sub>CR</sub> vs FvT for SR defined with different smearing definitions</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge1cf7f5" class="outline-3">
+<h3 id="orge1cf7f5"><a href="../Journal/2025/03-March/27-March-2025-Thursday.html#ID-FD72F7C3-B3F8-5FB3-6046-BF411FCAD15C">27 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orge1cf7f5">
+<ul class="org-ul">
+<li>Discussed impact of smearing on quality of background modelling</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org061afd9" class="outline-3">
+<h3 id="org061afd9"><a href="../Journal/2025/03-March/20-March-2025-Thursday.html#ID-7CC6A534-772D-555C-BDB4-6A0786E71479">20 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org061afd9">
+<ul class="org-ul">
+<li>Discussion using gamma vs gamma/gamma tilde</li>
+<li>Will start looking into the other signals next</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org230c3df" class="outline-3">
+<h3 id="org230c3df"><a href="../Journal/2025/03-March/13-March-2025-Thursday.html#ID-8C72BE12-6828-6F0A-FB49-CA5817659A04">13 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org230c3df">
+<ul class="org-ul">
+<li>[&gt;&gt;] Get more signal samples</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3f6416d" class="outline-3">
+<h3 id="org3f6416d"><a href="../Journal/2025/02-February/20-February-2025-Thursday.html#ID-42859109-FCEE-413B-AA66-0FB61E428781">20 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org3f6416d">
+<ul class="org-ul">
+<li>gamma/gamma-tilde look good</li>
+<li>Get other signal samples</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6bdb76b" class="outline-3">
+<h3 id="org6bdb76b"><a href="../Journal/2025/02-February/13-February-2025-Thursday.html#ID-5D19B0E6-7AAC-4275-89FB-DCDD45CC09FF">13 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org6bdb76b">
+<ul class="org-ul">
+<li>Discuss journal</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5eed1db" class="outline-3">
+<h3 id="org5eed1db"><a href="../Journal/2025/02-February/04-February-2025-Tuesday.html#ID-078DA17A-0F46-4930-BEFA-B92F8E535151">4 February 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org5eed1db">
+<ul class="org-ul">
+<li>Discussed the uncertainty on the predicted normalization</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org83062be" class="outline-3">
+<h3 id="org83062be"><a href="../Journal/2025/01-January/30-January-2025-Thursday.html#ID-C27C7532-8E4A-482F-B0A1-F655EA2D3E91">30 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org83062be">
+<ul class="org-ul">
+<li>Discussion about how to properly compute the null</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org40ebb22" class="outline-3">
+<h3 id="org40ebb22"><a href="../Journal/2025/01-January/23-January-2025-Thursday.html#ID-783461C0-9544-4F19-8808-E95F4D94E267">23 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org40ebb22">
+<ul class="org-ul">
+<li>How to calculate pvalues with SvB</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc93428b" class="outline-3">
+<h3 id="orgc93428b"><a href="../Journal/2025/01-January/09-January-2025-Thursday.html#ID-8883B6FA-5F32-481C-B348-0A687B56DE29">9 January 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgc93428b">
+<ul class="org-ul">
+<li>Another background fit in the SR</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5dac62f" class="outline-3">
+<h3 id="org5dac62f"><a href="../Journal/2024/12-December/19-December-2024-Thursday.html#ID-3138EC45-78A3-485C-9984-BE2AD262635F">19 December 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org5dac62f">
+<ul class="org-ul">
+<li>Soheun poster: 1hr,</li>
+<li><b><b>DARMA</b></b> (Data-driven Algorithm for signal Region-based Model-Agnostic signals) ? ??</li>
+<li>Should we vary the kernel during the ensembling ?
+<ul class="org-ul">
+<li>Complicates interpretations</li>
+</ul></li>
+<li>Use CLUE to show that smearing works</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdc96102" class="outline-3">
+<h3 id="orgdc96102"><a href="../Journal/2024/12-December/10-December-2024-Tuesday.html#ID-AECA4A02-8A52-44DF-8ED7-C2CBED96AF24">10 December 2024 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgdc96102">
+<ul class="org-ul">
+<li>Reviewed the Ada write up</li>
+<li>Ensemblelling seems to work</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1abc994" class="outline-3">
+<h3 id="org1abc994"><a href="../Journal/2024/12-December/05-December-2024-Thursday.html#ID-BC88947B-BB5C-4514-A7D3-12EA2A2B3F46">5 December 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org1abc994">
+<ul class="org-ul">
+<li>How to ensemble the latent space.</li>
+<li>not much else&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49b73ea" class="outline-3">
+<h3 id="org49b73ea"><a href="../Journal/2024/11-November/21-November-2024-Thursday.html#ID-60FC847B-56BA-4795-A157-B8AA6624E6D4">21 November 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org49b73ea">
+<ul class="org-ul">
+<li>How to ensamble gamma/~gamma</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0595330" class="outline-3">
+<h3 id="org0595330">[BROKEN LINK: 11 November 2020]</h3>
+<div class="outline-text-3" id="text-org0595330">
+<ul class="org-ul">
+<li>Discussion of Profile background in the SR</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5345e03" class="outline-3">
+<h3 id="org5345e03"><a href="../Journal/2024/10-October/31-October-2024-Thursday.html#ID-691C1F49-5A12-4CE5-A4F8-9B4CF9F683F9">31 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org5345e03">
+<ul class="org-ul">
+<li>Not much</li>
+<li>Discussion of calibrating the background prediction. eg: an Nuisance parameters to the bkg.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc0a6699" class="outline-3">
+<h3 id="orgc0a6699"><a href="../Journal/2024/10-October/24-October-2024-Thursday.html#ID-B0055121-3794-4CA5-ACA5-C37545CCDF3D">24 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgc0a6699">
+<p>
+Very good discussion ! 
+</p>
+<ul class="org-ul">
+<li>Null looks OK</li>
+<li>With signal present we see that the background prediction is biased by CR signal contamination when fitting FvT using the original latent space (found by fitting SvB).</li>
+<li>When fitting the FvT from the original inputs the results look good.</li>
+<li>This suggests that impact of the signal contamination in the CR depends strongly on the latent space used in the FvT. (Swiss cheese vs Blue cheese).  When using the original ("SvB") latent space the FvT sees the CR signal contamination as swiss cheese, and the signal contamination in the CR biases the background prediction in the SR. When the FvT latent space is re-derived using only events in the CR,  the FvT now sees the CR signal contamination as blue cheese, and there is little (if any bias) on the background prediction in the SR.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org04cdddd" class="outline-3">
+<h3 id="org04cdddd"><a href="../Journal/2024/10-October/17-October-2024-Thursday.html#ID-5DD31BAC-4A29-4FBC-9057-58F9B7FD3BC3">17 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org04cdddd">
+<ul class="org-ul">
+<li>Going over the reviews accepted to Neurips</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb6e7ae7" class="outline-3">
+<h3 id="orgb6e7ae7"><a href="../Journal/2024/10-October/09-October-2024-Wednesday.html#ID-28D1DB61-E1D4-4D9E-AD62-EA1B47FB9B06">9 October 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgb6e7ae7">
+<ul class="org-ul">
+<li>Long discussion re:training schedules (not so useful</li>
+<li>Discussion of unfolding:  
+<ul class="org-ul">
+<li>Claim (MK) only need a foward model trained on simulation/ this would then be insensitvie to simulation mismodelling</li>
+<li>think about this with 1d cartoon</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org26b2ecc" class="outline-3">
+<h3 id="org26b2ecc"><a href="../Journal/2024/10-October/02-October-2024-Wednesday.html#ID-DCEBD512-A4DC-477B-AA50-F787153ECFBE">2 October 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org26b2ecc">
+<ul class="org-ul">
+<li>Investigating FvT fitting in the CR.  not much else</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc103744" class="outline-3">
+<h3 id="orgc103744"><a href="../Journal/2024/09-September/25-September-2024-Wednesday.html#ID-AA8A9D39-BB6F-40CB-BEEF-598A4236DA19">25 September 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgc103744">
+<ul class="org-ul">
+<li>Not much.</li>
+<li>Confusion about SR defintion.</li>
+<li>Using 3 partitions of the dataset to do the analysis.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf368d3e" class="outline-3">
+<h3 id="orgf368d3e"><a href="../Journal/2024/09-September/13-September-2024-Friday.html#ID-B8059191-3CDB-47B0-BE7D-1C80D1C8186B">13 September 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-orgf368d3e">
+<ul class="org-ul">
+<li>Bias in background sample&#x2026; probably due to using same datasets for FvT and defining SR regions</li>
+<li>Probably problem of using the same dataset to define both classifiers.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0878ca7" class="outline-3">
+<h3 id="org0878ca7"><a href="../Journal/2024/08-August/28-August-2024-Wednesday.html#ID-6CF1FDCB-1C7A-41A5-8E94-64D2FC2A23F7">28 August 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org0878ca7">
+<ul class="org-ul">
+<li>Probably not worth doing PCA on latent spaces because downstream classifiers sees such different performance. (If it was just differences in projections, the classifier performance would be the same)</li>
+
+<li><p>
+Discussed paper plan
+</p>
+
+<p>
+<b><b>Test</b></b>
+</p>
+<ul class="org-ul">
+<li>Try sub-sample 3b as "4b", should see closure</li>
+<li>sub-sample 3b + systematic by hand shift,  show robust against variation</li>
+<li>then 4b</li>
+</ul></li>
+
+<li>Check 2nd FvT modelling in the CR !</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org32be5c2" class="outline-3">
+<h3 id="org32be5c2"><a href="../Journal/2024/08-August/22-August-2024-Thursday.html#ID-90F2731A-7196-4BC6-80D1-2403C6DE8B79">22 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org32be5c2">
+<ul class="org-ul">
+<li>Smearing data seems to work to find SR.</li>
+
+<li>Question: How will we interpret a null result ? 
+<ul class="org-ul">
+<li>Maybe better to smear input space ?</li>
+</ul></li>
+
+<li>Question: How to ensemble over latent space ?</li>
+
+<li>Seeing big variation in FvT from different random number seeds&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd2f59d3" class="outline-3">
+<h3 id="orgd2f59d3"><a href="../Journal/2024/08-August/12-August-2024-Monday.html#ID-4378A824-344F-4E4F-B0AB-73A7ABD3C95F">12 August 2024 Monday</a></h3>
+<div class="outline-text-3" id="text-orgd2f59d3">
+<ul class="org-ul">
+<li>Smearing the 4b to get rid of the high frequency modes
+<ul class="org-ul">
+<li>Smear the 6d input space.</li>
+<li>Not clear how to fix the smearing scale / can do a scan.</li>
+<li>Seems like good idea</li>
+</ul></li>
+
+<li>Looks like the clustering in rho / (distance to point with higher rho) also working</li>
+
+<li>Can probably use this to show that the smearing is working.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge9efa7f" class="outline-3">
+<h3 id="orge9efa7f"><a href="../Journal/2024/08-August/02-August-2024-Friday.html#ID-2EBFB628-028E-461C-9750-EFCB745A55DA">2 August 2024 Friday</a></h3>
+<div class="outline-text-3" id="text-orge9efa7f">
+<ul class="org-ul">
+<li>recap: 
+<ul class="org-ul">
+<li>tried high signal ratios</li>
+</ul></li>
+
+<li>Discussion re clustering algorithm.</li>
+
+<li>I pointed to :
+<a href="https://www.science.org/doi/10.1126/science.1242072">https://www.science.org/doi/10.1126/science.1242072</a>
+will try that</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org995e981" class="outline-3">
+<h3 id="org995e981"><a href="../Journal/2024/07-July/18-July-2024-Thursday.html#ID-E9B5A7D3-5715-4679-B130-632C6EDBD97E">18 July 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org995e981">
+<ul class="org-ul">
+<li>Previous results OK</li>
+<li>Lots of review to get MK up to speed on what we are doing.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org766e7aa" class="outline-3">
+<h3 id="org766e7aa"><a href="../Journal/2024/07-July/10-July-2024-Wednesday.html#ID-0AF87E28-B4FE-4CC9-BD60-2303F976373C">10 July 2024 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org766e7aa">
+<ul class="org-ul">
+<li>For Signal ration 0.05</li>
+<li>Study the FvT cut used for clustering.</li>
+<li>Looks like method works for signal fractions of 0.05, but does NOT work for signal fractions of 0.01.</li>
+<li>The UMAP seeing the signal events as unweighted (over sampling the signal)</li>
+<li>Question: Can UMAP be run on weighted events ?</li>
+</ul>
+
+
+
+<p>
+202502231214
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

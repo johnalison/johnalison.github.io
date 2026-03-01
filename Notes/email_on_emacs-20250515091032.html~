@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Email on Emacs</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Email on Emacs</h1>
+
+<div id="outline-container-org706c944" class="outline-2">
+<h2 id="org706c944">Movements</h2>
+<div class="outline-text-2" id="text-org706c944">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">C-n</td>
+<td class="org-left">next-line</td>
+<td class="org-left">Moves to the next header line</td>
+</tr>
+
+<tr>
+<td class="org-left">C-p</td>
+<td class="org-left">previous-line</td>
+<td class="org-left">Moves to the previous header line</td>
+</tr>
+
+<tr>
+<td class="org-left">[[</td>
+<td class="org-left">mu4e-headers-prev-unread</td>
+<td class="org-left">Moves to previous unread message</td>
+</tr>
+
+<tr>
+<td class="org-left">]]</td>
+<td class="org-left">mu4e-headers-next-unread</td>
+<td class="org-left">Moves to next unread message</td>
+</tr>
+
+<tr>
+<td class="org-left">j</td>
+<td class="org-left">mu4e~headers-jump-to-maildir</td>
+<td class="org-left">Jump to another mail directory</td>
+</tr>
+
+<tr>
+<td class="org-left">q</td>
+<td class="org-left">mu4e~headers-quit-buffer</td>
+<td class="org-left">Quit the headers view</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org88fae9a" class="outline-2">
+<h2 id="org88fae9a">Toggles</h2>
+<div class="outline-text-2" id="text-org88fae9a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">P</td>
+<td class="org-left">mu4e-headers-toggle-threading</td>
+<td class="org-left">Toggles threaded message display</td>
+</tr>
+
+<tr>
+<td class="org-left">W</td>
+<td class="org-left">mu4e-headers-toggle-include-related</td>
+<td class="org-left">Toggles related message display</td>
+</tr>
+
+<tr>
+<td class="org-left">S-&lt;tab&gt;</td>
+<td class="org-left">mu4e-thread-fold-toggle-all</td>
+<td class="org-left">Folds the treads</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgc709e8d" class="outline-2">
+<h2 id="orgc709e8d">Marking</h2>
+<div class="outline-text-2" id="text-orgc709e8d">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">d</td>
+<td class="org-left">mu4e-headers-mark-for-trash</td>
+<td class="org-left">Marks message for deletion</td>
+</tr>
+
+<tr>
+<td class="org-left">m</td>
+<td class="org-left">mu4e-headers-mark-for-move</td>
+<td class="org-left">Marks message for move to folder</td>
+</tr>
+
+<tr>
+<td class="org-left">+</td>
+<td class="org-left">mu4e-headers-mark-for-flag</td>
+<td class="org-left">Marks message for flagging</td>
+</tr>
+
+<tr>
+<td class="org-left">-</td>
+<td class="org-left">mu4e-headers-mark-for-unflag</td>
+<td class="org-left">Marks message for unflagging</td>
+</tr>
+
+<tr>
+<td class="org-left">%</td>
+<td class="org-left">mu4e-headers-mark-pattern</td>
+<td class="org-left">Marks based on a regex pattern</td>
+</tr>
+
+<tr>
+<td class="org-left">u</td>
+<td class="org-left">mu4e-headers-mark-for-unmark</td>
+<td class="org-left">Removes mark for message</td>
+</tr>
+
+<tr>
+<td class="org-left">U</td>
+<td class="org-left">mu4e-mark-unmark-all</td>
+<td class="org-left">Unmarks all marks in the view</td>
+</tr>
+
+<tr>
+<td class="org-left">x</td>
+<td class="org-left">mu4e-mark-execute-all</td>
+<td class="org-left">Executes all marks in the view</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgf230569" class="outline-2">
+<h2 id="orgf230569">Searching</h2>
+<div class="outline-text-2" id="text-orgf230569">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">s</td>
+<td class="org-left">mu4e-headers-search</td>
+<td class="org-left">Search all e-mails</td>
+</tr>
+
+<tr>
+<td class="org-left">S</td>
+<td class="org-left">mu4e-headers-search-edit</td>
+<td class="org-left">Edit current search</td>
+</tr>
+
+<tr>
+<td class="org-left">'/'</td>
+<td class="org-left">mu4e-headers-search-narrow</td>
+<td class="org-left">Narrow down the current results</td>
+</tr>
+
+<tr>
+<td class="org-left">b</td>
+<td class="org-left">mu4e-headers-search-bookmark</td>
+<td class="org-left">Select a bookmark to search with</td>
+</tr>
+
+<tr>
+<td class="org-left">B</td>
+<td class="org-left">mu4e-headers-search-bookmark-edit</td>
+<td class="org-left">Edit bookmark before search</td>
+</tr>
+
+<tr>
+<td class="org-left">g</td>
+<td class="org-left">mu4e-rerun-search</td>
+<td class="org-left">Rerun the current search</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-org7dcd3cd" class="outline-2">
+<h2 id="org7dcd3cd">Composing</h2>
+<div class="outline-text-2" id="text-org7dcd3cd">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">C</td>
+<td class="org-left">mu4e-compose-new</td>
+<td class="org-left">Compose a new e-mail</td>
+</tr>
+
+<tr>
+<td class="org-left">R</td>
+<td class="org-left">mu4e-compose-reply</td>
+<td class="org-left">Compose a reply to selected email</td>
+</tr>
+
+<tr>
+<td class="org-left">F</td>
+<td class="org-left">mu4e-compose-forward</td>
+<td class="org-left">Compose a forward for selected email</td>
+</tr>
+
+<tr>
+<td class="org-left">E</td>
+<td class="org-left">mu4e-compose-edit</td>
+<td class="org-left">Edit selected draft message</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-org2104dce" class="outline-2">
+<h2 id="org2104dce">Download Attachments</h2>
+<div class="outline-text-2" id="text-org2104dce">
+<ul class="org-ul">
+<li>Position your cursor on the attachment in the email view.</li>
+<li>Press O to open or save the attachment.</li>
+<li>You'll be prompted to select a location to save it.</li>
+</ul>
+
+<p>
+For multiple attachments:
+</p>
+
+<p>
+Use A (capital A) to save all attachments at once.
+You'll be prompted to choose a directory where all attachments will be saved.
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgd9edeef" class="outline-2">
+<h2 id="orgd9edeef">Workflow</h2>
+<div class="outline-text-2" id="text-orgd9edeef">
+<ul class="org-ul">
+<li>To update search capital <code>S</code></li>
+<li><code>r</code> refiles the email</li>
+<li>search for unread with <code>flag:unread</code> search for flagged with <code>flag:flagged</code></li>
+<li>Use <code>W</code> for reply all "Wide"</li>
+<li>to restrict mail for today <code>date:today..now</code></li>
+<li><code>jda/insert-group-emails</code> to use group mail with tab completion!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7e660ca" class="outline-2">
+<h2 id="org7e660ca">Initial Setup</h2>
+<div class="outline-text-2" id="text-org7e660ca">
+<ul class="org-ul">
+<li><a href="https://systemcrafters.net/emacs-mail/streamline-your-email-with-mu4e/">https://systemcrafters.net/emacs-mail/streamline-your-email-with-mu4e/</a></li>
+<li><code>brew install isync mu msmtp</code></li>
+<li>Got it working with out gpg&#x2026; Need to debug..</li>
+<li>I think I got the gpg command working&#x2026; But hitting IMAP throttle limits</li>
+<li>Setting up mu</li>
+<li><code>mu init --maildir=~/Mail/gmail --my-address=johnda102@gmail.com</code></li>
+<li><code>mu index</code></li>
+<li><code>[mu4e] Tip: `user-mail-address' ('johnalison@cmu.edu') is not part of mu's =addresses; add it with 'mu init --my-address</code>'=</li>
+<li>Got email sending going !!!!</li>
+<li>Removed important folder to avoid duplicates</li>
+<li class="on"><code>[X]</code> Update mu with other email addresses</li>
+<li>Move from @ACTION to starred</li>
+<li>Removed "All Mail" sync time goes from <code>1m51.426s</code> to <code>0m4.650s</code> !</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

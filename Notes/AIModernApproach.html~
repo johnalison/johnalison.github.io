@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AIModernApproach</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">AIModernApproach</h1>
+
+<div id="outline-container-org5303b67" class="outline-2">
+<h2 id="org5303b67">AI: A modern approach.  (Stuart Russell and Peter Norvig)</h2>
+<div class="outline-text-2" id="text-org5303b67">
+<ul class="org-ul">
+<li>Decent brought a lot together</li>
+
+<li><p>
+Was not until the 18C that the brain was thought to be the seat of consciousness. Before then, other candidates included the heart and spleen.
+</p>
+
+<p>
+<a href="UsedToBelieve.html#ID-51ECCFC6-3DF4-6HH6-1H01-H97H183980DF">Used To Believe</a>
+</p></li>
+
+<li>BF Skinner "Verbal Behavior" (Curiously a review of the book became as famous as the book itself and killed off behaviorism)</li>
+
+<li>In 2001, argument that improvement in image recognition from increasing size of data by 10-100 outweighs any improvement from teaching algorithm.</li>
+
+<li>It is better to design measures according to what you actually want to achieve rather than how you think the agent should behave.</li>
+
+<li>Rationality maximizes expected performance, perfection maximizes actual performance.</li>
+
+<li>Is life on earth a search algorithm?</li>
+
+<li><p>
+Things that are hard to learn end up in the genome, things that are easy to learn, need not.
+</p>
+
+<p>
+<a href="WhoWeAre.html#ID-B75D0E27-3053-4565-AC82-DB4B933C52C0">WhoWeAre</a>
+</p></li>
+
+<li>When uncertainty enters, possibilities are multiplied enormously and forming detailed plans of action becomes pointless b/c the world is not going to play along.</li>
+
+<li><p>
+After humanity spent 1000s of years improving our tactics, computers tell humans they are completely wrong. I would go so far as to say not a single human has touched the edge of the truth of "Go"
+Alien type of intelligence re: alpha-zero.
+</p>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p></li>
+
+<li>Mu Zero operates without even being told the rules of the game.</li>
+
+<li>n-queens is easy for local search b/c solutions are densely distributed throughout the state space (Better to start at random and improve).</li>
+
+<li>An inference algorithms is complete if it can derive any sentence that is entailed.  "The world is everything that is the case".</li>
+
+<li>The problem of determining the satisfiability of sentences in propositional logic (SAT problem) was the 1st to be shown to be NP-complete. Many problems in computer science are really SAT problems.</li>
+
+<li>Programming languages lack a general mechanism for deriving facts from other facts.</li>
+
+<li>The whole of number theory (+ cryptology) can be built up from one constant, one function, one predicate and 4 axioms.</li>
+
+<li>Entailment for 1st order logic is semi-decidable: algorithms exist to say yes to all entailed sentences, but no algorithm that says no to every non-entailed sentence ("Halting problem")</li>
+
+<li>Incompleteness theorem: there are true arithmetic statements that cannot be proved.</li>
+
+<li>We can never prove all the theorems of mathematics with any given system of axioms</li>
+
+<li>DeepMath: system uses deepNN to select axioms that are most likely to lead to a proof when handed to a traditional theorem prover. 
+In a sense, NN plays the role of mathematicians intuition.</li>
+
+<li>One important aspect of learning is the ability to generalize eliminating detail that is specific to the problem instance. It seems inconceivable that humans could be as competent without such a mechanism.</li>
+
+<li><p>
+The decomposition of large probabilistic domains into weakly connected subsets through conditional independence is one of the most important developments in AI.
+</p>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p></li>
+
+<li>The utility of money is almost exactly proportional to the logarithm of the amount.</li>
+
+<li>One of the most important parts of decision making is know what questions to ask.</li>
+
+<li><p>
+Information has values to the extent that it is likely to cause a change of plan and to the extent that the new plan will be significantly better than the old.
+</p>
+
+<p>
+<a href="Rationality.html#ID-E4DEB720-88F3-4E98-A7DF-175A32B68648">Rationality</a>
+</p></li>
+
+<li><p>
+If all perturbations of the parameters leave the optimal decision unchanged, then it is reasonable to assume its a good one. If however, the optimal decision changes considerably with the parameters of the model, then there is a good chance that the model may produce a decision that is substantially sub-optimal.
+</p>
+
+<p>
+<a href="Rationality.html#ID-E4DEB720-88F3-4E98-A7DF-175A32B68648">Rationality</a> <a href="Mental Models.html#ID-D2672C2B-070A-48FA-8437-683D0B39718E">Mental Models</a> <a href="Checklists.html#ID-53EEFE8-5FH6-8JJ8-3J23-J19J305102FH">Checklists</a>
+</p></li>
+
+<li>Models of concurrent action have been a major focus of research in CS for decades, but no definitive model has prevailed.</li>
+
+<li>Nash equilibrium: every player simultaneously playing best response given the choices of others.</li>
+
+<li>Every game has at least one Nash eq. in mixed strategies (This is why Nash equilibrium are important)</li>
+
+<li>Outcome is Pareto optimal of no other outcome that would improve one player with out harming another.</li>
+
+<li>Voting: there will always be some circumstances under which a voter can benefit by misrepresenting their preferences.</li>
+
+<li>Why ML ?| Designers cannot anticipate all future situations, or have no idea who to program a solution.</li>
+
+<li>Decision Trees: often the first method tried (for classification)</li>
+</ul>
+<p>
+Pros: ease of understanding / scalability / discrete and continuous
+Cons: Can have sub-optimal accuracy / if deep, expensive to run / unstable one new example can change whole tree)
+</p>
+
+<ul class="org-ul">
+<li>L1 regularization tends to produce sparse models. Takes the dimensional axes seriously, while L2 treats them as arbitrary.</li>
+
+<li>Trick of locality-sensitivity Hash (LSH). Need has function g(x) with property that the probability  that two points have same hash is small if distance is large and high if distance is small. Create multiple random projections and combine. g<sub>1</sub>, &#x2026; g<sub>n</sub>. Fetch set of points in bin g<sub>i</sub>(x<sub>q</sub>) of each hash table and take the union to define candidates.</li>
+
+<li>Locality weighted regression advantages of nearest neighbors w/o discontinuities.  Avoid discontinuities in h(x) by avoiding discontinuities in the set of example to estimate h(x). 
+Decrease weight over distance gradually (width matters more than shape)</li>
+
+<li>SUMS Combine advantages of non-parametric and parametric models.  Flexibility to represent complex functions, but are resistant to over-fitting. Logistic Regression finds some separating line, the exact location depends on ALL the example points. Key insight of SUMS is that some examples are more important that others and paying attention to these leads to better generalization. (ie: SUMS attempt to minimize GENERALIZED loss)</li>
+
+<li>The most important factor in success of ML projects is the features used.</li>
+
+<li>Random Forrest: good when you have a lot of categorical features with many that are irrelevant.</li>
+
+<li>Nonparametric: good when lot of data, no prior knowledge and dont want to worry about getting wrong features.</li>
+
+<li>Log. Regression does well when the data are linearly separable</li>
+
+<li>SVM good when the data are not too large.</li>
+
+<li>Decision trees and linear regression are highly interpretative.</li>
+
+<li><p>
+If you need ML, then the problem is complex, you shouldn't expect a simple explanation.
+(Which would you trust: experimental aircraft never flown, but with a detailed explanation of why it is safe? or, an aircraft that completed 100 flights with no guaranteed explanation?)
+</p>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p></li>
+
+<li>Beta distributions B(T,a,b) = &alpha; T<sup>(a-b)</sup> (1-T)<sup>b</sup>-1 is closed under Bayes updates.</li>
+
+<li>A sufficiently large NN can implement a lookup table</li>
+
+<li><p>
+One hot encoding generally better than mapping values to ints. (One hot ignores numerical adjacency)
+</p>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p></li>
+
+<li>When comparing networks with similar numbers of parameters, the deeper network typically generalizes better</li>
+
+<li>A linear auto-encoder is closely connected to Principle Component Analysis.</li>
+
+<li>"The AI revolution will not be supervised"</li>
+
+<li>There is not much point learning about the best radio station when falling off a cliff.</li>
+
+<li>No single best approach to reinforcement learning.</li>
+
+<li>When deep network trained on abstracts up to 2008 and asked to pick compounds that are "thermo electric" but not yet in abstracts 3 of model top 5 pick were discovered to be thermometric in later papers.</li>
+
+<li>Why we see color: fruit is a bribes trees offer animal to carry their seeds. Signal the bribe with colors. Fruits starts green then changes to red or yellow when ripe.  Fruit eating animals need to see these changes.</li>
+</ul>
+
+<p>
+<a href="WhoWeAre.html#ID-B75D0E27-3053-4565-AC82-DB4B933C52C0">WhoWeAre</a>
+</p>
+
+<ul class="org-ul">
+<li>Have realized deep network better and over fitting fears overblown.</li>
+
+<li>Critics of weak AI objected to the very possibility of intelligent behavior (now seen as short sighted)</li>
+
+<li><p>
+Autonomous weapons scalable weapons of mass destruction. Scale of attack is proportional to amount of hardware one can afford. 
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Leave property intact.  Can be applied selectively - possible untraceable</td>
+</tr>
+</tbody>
+</table></li>
+
+<li>k anonymity: a database is k-anonymous  if every record in the database is indistinguishable from at least k-1 others.</li>
+
+<li><p>
+Explanations are not decisions, they are stories about decisions
+</p>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p></li>
+
+<li>In 1900, 40% of US in agriculture, in 2000 only 2%, in 2010 25% played farmville.</li>
+
+<li><p>
+Almost any tech in the wrong hands can cause harm, but with AI the hands might be operating on their own.
+</p>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p></li>
+
+<li>Krakova 2018 (AI agents that have gamed the system)</li>
+</ul>
+<p>
+<a href="https://deepmind.com/blog/article/Specification-gaming-the-flip-side-of-AI-ingenuity">https://deepmind.com/blog/article/Specification-gaming-the-flip-side-of-AI-ingenuity</a>
+</p>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p>
+
+<ul class="org-ul">
+<li>Trying to write down all the rules so that the robot always does the right thing is almost certainly hopeless.  
+eg: trying to write loophole-free tax code for several thousand years without success. Better to make a robust sense of "I want to pay my taxes"</li>
+</ul>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a> <a href="Leadership.html#ID-984C9BFB-26B4-46E4-BA8F-593E79E777CD">Leadership</a> <a href="Invert.html#ID-58F33K3-0KL1-3OO3-8O78-O64O850657KM">Invert</a>
+</p>
+
+<ul class="org-ul">
+<li>Some warn we have no experience controlling powerful non-human entities with superhuman capabilities. Not quite true, centuries of experience with nations and corporations. Our record of controlling these entities is not very encouraging. (Wars / Global warming ect)</li>
+</ul>
+
+<p>
+<a href="AI.html#ID-6A1CFC4C-2DCB-4EDC-B5F1-167AC7DA2426">AI</a>
+</p>
+
+<ul class="org-ul">
+<li>"Money is like gasoline during a road trip. You dont want to run out of gas on your trip, but your not doing a tour of gas stations. You have to pay attention to money, but it shouldn't be all about money."</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

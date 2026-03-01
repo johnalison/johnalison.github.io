@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lei Zhao</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Lei Zhao</h1>
+<p>
+Masters Student Starting May 22
+</p>
+
+
+<div id="outline-container-org781fb97" class="outline-2">
+<h2 id="org781fb97">Logs</h2>
+<div class="outline-text-2" id="text-org781fb97">
+</div>
+<div id="outline-container-org5666094" class="outline-3">
+<h3 id="org5666094"><a href="../Journal/2025/11-November/19-November-2025-Wednesday.html#ID-ED8615AC-EE03-4DE2-9D87-E4F6996C276D">19 November 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org5666094">
+<ul class="org-ul">
+<li>Has the synthetic data running.. but sees that the declustered jets are the same .</li>
+<li>I told him probably b/c</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb5ee39d" class="outline-3">
+<h3 id="orgb5ee39d"><a href="../Journal/2025/10-October/31-October-2025-Friday.html#ID-16A4239E-01D2-4F37-AA06-3D49B0907478">31 October 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgb5ee39d">
+<ul class="org-ul">
+<li>Not understanding the delta phi and delta eta of the new subjets.</li>
+<li>Think he gets it now &#x2026; Will get back to me</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd5c9813" class="outline-3">
+<h3 id="orgd5c9813"><a href="../Journal/2025/09-September/03-September-2025-Wednesday.html#ID-37D46142-2D8B-4C56-91E4-505D279CDCC2">03 September 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgd5c9813">
+<ul class="org-ul">
+<li>Build to making synthethic PF cands</li>
+<li>Synthetirc subjet is in place.</li>
+<li>Have PF &lt;&#x2013;&gt; Fat jet</li>
+<li>Next: Assoctiate PFCand w subjets (JA) 
+<ul class="org-ul">
+<li>i0 / i1 / unassociated</li>
+</ul></li>
+<li>Move Assiociate PFCands to new subjets (LZ)
+<ul class="org-ul">
+<li>Plot dR(PF, fat jet)</li>
+<li>Move fat jet to (eta and phi) create new PF Candiates (dR(PF, fatjet') = dR(PF, old fatjet)</li>
+<li><p>
+movePFCand(rPt, dEta, dPhi, PF<sub>old</sub>)
+&#x2026;. PF<sub>New</sub> = Copy(PF<sub>old</sub>)
+eta<sub>new</sub> = eta<sub>old</sub> + dEta ?
+phi<sub>new</sub> = phi<sub>old</sub> + dPhi ?          
+pt<sub>new</sub>  = pt<sub>old</sub> * rPt (= ptNew/ptOld)
+</p>
+
+<p>
+return PF<sub>New</sub>
+</p></li>
+</ul></li>
+<li>type(selev.PFCands)</li>
+<li>Set summary to Lei</li>
+<li>Met Sufie</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

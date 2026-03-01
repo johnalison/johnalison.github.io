@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FoundationsModernPhysics</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">FoundationsModernPhysics</h1>
+
+<div id="outline-container-org3a5363f" class="outline-2">
+<h2 id="org3a5363f">The Foundations of Modern Physics (Steven Weinberg)</h2>
+<div class="outline-text-2" id="text-org3a5363f">
+<ul class="org-ul">
+<li>The measurement of Avogadro's number was widely recognized in the late 19C as one off the great challenges facing physics.</li>
+
+<li>With thermodynamics one may derive powerful results of great generality without ever committing oneself to the existence off atoms or molecules. <a href="statistical_mechanics-20260222145655.html#ID-0A3BE470-3176-4BBA-AF14-B0A624F4D91F">Statistical Mechanics</a></li>
+
+<li>Many of the consequences of macroscopic classical thermodynamics can be deduced from the existence of another thermodynamic variable, entropy. Like other thermodynamic variables it depends only on the state of the system, although its definition seems to indicate that it also depends on the way the system is prepared. The fact that entropy depends only on the thermodynamic state has far reaching consequences. <a href="statistical_mechanics-20260222145655.html#ID-0A3BE470-3176-4BBA-AF14-B0A624F4D91F">Statistical Mechanics</a></li>
+
+<li>It is the introduction of the concept off probability into physics that creates an asymmetry between the past and future.</li>
+
+<li>The fact that viscous draw is independent of gas density was regarded as a confirmation of the molecular theory of gas dynamics.</li>
+
+<li>Millikans Oil drop experiment: Even more important (than measuring the value of the charge) the observation that droplet charges come close to interger multiples of a unit charge gave direct evidence for the discreteness of electric charge.</li>
+
+<li>In the first decade of the 20C, Einstein had the idea of learning about fundamental constants from observation of teh diffusion of artificial particles.</li>
+
+<li>The atomic theory underlying these measurements of microscopic parameters and the values found gained much credit from the consistency of the results.</li>
+
+<li>Ernst Mach: As late as 1916, shortly before his death, declared "I can accept the theory of relativity as little as I can accept the existence of atoms and other such dogmas". This goes to show that a scientist can maintain his own principles, bravely holding out against a wide consensus of the scientific establishment, and still be wrong. <a href="UsedToBelieve.html#ID-51ECCFC6-3DF4-6HH6-1H01-H97H183980DF">Used To Believe</a></li>
+
+<li>Rutherford was lucky. He was calculating probabilities (for alpha particle recoil) using classical mechanics and got the right answer, even though at these velocities and separations QM would normally be needed. Scattering by inverse square law is special; it allows the use of classical mechanics in some circumstances where for any other force it would be necessary to use QM.</li>
+
+<li>The Bohr theory also provides a rough idea of the sizes of all atoms. The electric field felt by the outermost electron in any atom is largely shielded by the Z-1 electrons closer to the nucleus, so the radius of its orbit is very crudely given by the Bohr result, only with Z~1. This is why the sizes off the atoms of heavy elements are not very much larger than that off the hydrogen atom, ~1e-10m.</li>
+
+<li>Knowing the rate at which a classical light wave of a given energy density is absorbed or stimulates emission by an atom, we can calculate the rate at which it spontaneously emits photons, an explicitly quantum process.</li>
+
+<li>The work of Einstein (on Special relativity) started what become one of the continuing preoccupations of modern physics: the study of hypothetical principles of invariance and their physical implications.</li>
+
+<li>It should not be thought that special relativity is in any way super-seeded by general relativity.</li>
+
+<li>It is the conservation of energy and momentum that makes these concepts useful.</li>
+
+<li>We cannot leave out the term mc<sup>2</sup> in the energy, or change it to any other constant term. If we did, then p<sup>mu</sup> would not satisfy the condition for a four-vector, and the conservation of energy and momentum would not be Lorentz invariant.</li>
+
+<li>We need electrons with energy a bit larger than 10 eV to get wavelengths nearly as small as a typical lattice spacing, ~1e-10 m.  This is no coincidence. In de Broglies interpretation of the Bohr quantization assumption, the wavelength of an electron with an energy of a few eV, which is typical of atomic binding energies, much fit a few times around an atomic orbit, and therefore must be similar to the size of the atom, which is similar to the spacing of atoms in crystals.</li>
+
+<li>Great derivation of the Schrodinger equation p130.</li>
+
+<li>Schrodinger was justly proud that the existence of discrete energy levels, and hence the existence of atomic spectra discovered over a century earlier, were now explained as a mathematical consequence of boundary conditions imposed on a wave equation, rather than Bohr's ad hoc assumption of angular momentum quantization.</li>
+
+<li>Commutation acts like differentiation: [A, BC] = [A,B]C + B[A,C] <a href="Mental Models.html#ID-D2672C2B-070A-48FA-8437-683D0B39718E">Mental Models</a></li>
+
+<li>In field theories where observables depend on position, in order to preserve the appearance of Lorentz invariance it is necessary to work in the Heisenberg picture, so that these observables will depend on time as well as on space coordinates.</li>
+
+<li>The spin operator has nothing to do with positions and momenta. <a href="PhilosophyOfPhysics.html#ID-0CE429F1-8967-41E4-A5DA-D389942C2C35">PhilosophyOfPhysics</a></li>
+
+<li>We see that it is not possible to have physical systems with weird angular momenta such as j = 1/3, 1/4 ect. <a href="PhilosophyOfPhysics.html#ID-0CE429F1-8967-41E4-A5DA-D389942C2C35">PhilosophyOfPhysics</a></li>
+
+<li>Any particle at rest, whether elementary or not, will have what is called an intrinsic parity that depends only on the type n of the particle. (What does it mean to have party negative elementary particles? ) <a href="PhilosophyOfPhysics.html#ID-0CE429F1-8967-41E4-A5DA-D389942C2C35">PhilosophyOfPhysics</a> <a href="DontUnderstand.html#ID-8C9D0E1F-2G3H-4I5J-6K7L-8M9N0O1P2Q3R">DontUnderstand</a></li>
+
+<li>One can tell whether nuclei are bosons or fermions just by observing whether radiation from the para or ortho transitions is stronger. Observations of the diatomic nitrogen molecule presented a puzzle regarding the nature of the nitrogen nucleus that was only resolved with the discovery of the neutron.</li>
+
+<li>It was the study of scattering using this approximation that led the probabilistic interpretation of QM.</li>
+
+<li>It is in order to satisfy the canonical commutation relations that in wave mechanics we represent the momentum vector by the operator -i hbar Del. What for de Broglie and Schodinger was just a guess is a necessary consequence of the canonical formalism.</li>
+
+<li>The chief reason for using the Lagrangian formalism to construct a Hamiltonian is that there is a deep relation between conservation laws and symmetries of the Lagrangian. <a href="PhilosophyOfPhysics.html#ID-0CE429F1-8967-41E4-A5DA-D389942C2C35">PhilosophyOfPhysics</a></li>
+
+<li>It is not possible to write a simple local Hamiltonian for a charged particle in general electric and magnetic fields using just the fields E and B. What in classical physics is merely a convenience, in QM, is a necessity (To use the scalar and vector potentials) <a href="PhilosophyOfPhysics.html#ID-0CE429F1-8967-41E4-A5DA-D389942C2C35">PhilosophyOfPhysics</a></li>
+
+<li>All that the atomic physicist needed to know about the nucleus was its electric charge, mass, and (to account for hyper-fine splitting) its spin and magnetic moment.</li>
+
+<li>Whatever the total number A of nucleons, as a first approximation the binding energy per nucleon and the volume per nucleon tend to be similar for all nuclei. This is known as the saturation of nuclear forces. What a constant volume per nucleon, the volume of a nucleus is proportional to the number A of nucleons, so the nuclear radius R is proportional to A<sup>1</sup>/3 <a href="Estimation.html#ID-006C46F0-91B0-4C51-B59A-43CD5D65A055">Estimation</a></li>
+
+<li>There is a deep symmetry between protons and neutrons, which made it evident that neutrons are fermions and just as elementary as protons.</li>
+
+<li>The quarks all carry the same set of colors, so strong nuclear forces do not distinguish up from down quarks, but isotopic spin symmetry is not imposed on the theory, it is just that there is no room in the theory for any violation of the symmetry other than then quark masses, and the quark masses although unequal are very small. The small mass difference between the proton and the neutron comes both from differences in the quark masses and from electromagnetic forces among the quarks, but the quark mass difference is somewhat more important. This is why the neutron is heavier than the proton, even though the electric charges of the quarks in the proton are larger than those in the neutron. It is both the smallness of the quark masses and the relative weakness of the electron-magnetic effects that makes the neutron-proton mass difference 1.293 MeV, so tiny compared with the proton mass 938 MeV.</li>
+
+<li>No doubly charged particles with similar mass have ever been found, so the pions cannot be part of a isotopic spin multiplet with t &gt;= 2, and therefore must be part of a triplet, with t=1. The neutral t<sub>3</sub> member of the triplet, the neutral pion, was discovered at the Berkeley cyclotron in 1950 - the first particle to be found at an accelerator before it being discovered in cosmic rays.</li>
+
+<li>The quark masses contribute equally to all three pions, so the ~4.6 MeV mass difference between the charged and neutral pions is entirely due to electromagnetic forces. In fact, this is the one mass difference in an isotopic spin multiplet of elementary particles that has been successfully calculated as a purely electron-magnetic effect.</li>
+
+<li>The great difference between the closed shells in atoms and nuclei arises from the difference in the form of their effective potentials.</li>
+
+<li>The so-called magic numbers of nuclear physics are analogous to the atomic numbers of the noble gases in atomic physics. We expect nuclei with a magic number of protons or neutrons to be more deeply bound and hence more abundant than other nuclei with similar numbers of neutrons and protons. A nucleus is likely to be particularly deeply bound if it is double magic, with a magic number of both protons and neutrons.</li>
+
+<li>For a relatively high energy beta decay neutrino with energy 10 MeV the cross section is of order 1e-44 cm<sup>2</sup>. In ordinary matter, with a number density of nucleons of order 1e24 cm<sup>-3</sup>, this given a mean free path 1e20 mc or about 100 light years.</li>
+
+<li>In other words a(p) and a^&dagger;(p) respectively annihilate and create a particle of momentum p. This is what we mean when we refer to elementary particles being bundles or the energy and momentum in some field.</li>
+
+<li>There is no reason why the cosmological constant should not include an infinite negative term that simply cancels rho<sub>vac</sub>, possibly leaving over a finite remaining energy density.</li>
+
+<li>QM perturbation theory: the fact that the denominators involve energy but not momentum differences makes it obvious that they are not Lorentz invariant, so they make it difficult to keep track of Lorentz invariance in relativistic theories.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

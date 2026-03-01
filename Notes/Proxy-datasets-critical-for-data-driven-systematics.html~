@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proxy-datasets-critical-for-data-driven-systematics</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Proxy-datasets-critical-for-data-driven-systematics</h1>
+<p>
+Proxy data sets are critical for assessing systematic uncertainties when you have important data-driven backgrounds (eg: HH→4b).  Examples of proxy datasets in the 4b analysis are: shifted validation regions, the 3b dataset, and synthetic datasets from hemisphere mixing.
+</p>
+
+<div id="outline-container-orga01051d" class="outline-2">
+<h2 id="orga01051d">Links:</h2>
+<div class="outline-text-2" id="text-orga01051d">
+<p>
+<a href="ABCDMethod.html#ID-EF44A777-CF05-4EA0-9B90-41EAADEB45BD">ABCDMethod</a>
+<a href="hemispheremixing-20250504111513.html#ID-27209C81-3ED8-4721-B0F6-57FC9FA9BB40">Hemisphere-mixing</a>
+</p>
+
+<p>
+<a href="Synthetic-data-sets-via-hemisphere-mixing.html#ID-151BE736-0795-4305-87A1-A065C35822D0">Synthetic-data-sets-via-hemisphere-mixing</a>
+</p>
+
+
+
+<p>
+202407141525
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

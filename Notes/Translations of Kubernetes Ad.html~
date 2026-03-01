@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Translations of Kubernetes Ad</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Translations of Kubernetes Ad</h1>
+<p>
+<b>Undergraduate Research Assistant Positions in High-Energy Particle Physics</b>  
+</p>
+
+<p>
+The Department of Physics at Carnegie Mellon University is looking for two undergraduate students to assist in building and prototyping a Kubernetes cluster. This cluster will support cutting-edge research in high-energy particle physics, particularly in enhancing data processing speeds for large datasets.  
+</p>
+
+<p>
+<b>Key Responsibilities</b>:  
+</p>
+
+<ul class="org-ul">
+<li><b>System Administration:</b> Manage and maintain multiple machines within the cluster.</li>
+<li><b>Programming:</b> Develop skills in scripting (Bash/Python) and work extensively with Linux/Unix systems.</li>
+<li><b>Cluster Management:</b> Learn and gain hands-on experience with Kubernetes and other Linux cluster provisioning tools like Puppet, Cobbler, and Ansible.</li>
+<li><b>Monitoring Tools:</b> Learn to use large-scale monitoring tools such as Nagios, Ganglia, and PerfSONAR.</li>
+</ul>
+
+<p>
+<b>Why Apply?</b>  
+</p>
+
+<ul class="org-ul">
+<li><b>Help Shape the Direction of Future Computing in High-Energy Physics:</b> Contribute to pioneering research efforts and influence the development of new computing infrastructure.</li>
+<li><b>Collaborative Environment:</b> Work closely with faculty members in the Department of Physics and system administrators from the Mellon College of Science.</li>
+<li><b>Professional Growth</b>: Receive guidance from computing professionals, including collaborators working on the CMS experiment at the Large Hadron Collider.</li>
+</ul>
+
+<p>
+This position offers a unique opportunity to develop valuable technical skills while contributing to significant research efforts in particle physics.  
+</p>
+
+<p>
+Contact Professor John Alison ([johnalison@cmu.edu](<a href="mailto:johnalison@cmu.edu">mailto:johnalison@cmu.edu</a>)), if you are interested in or have any questions.
+</p>
+
+<div id="outline-container-org8bbf3cd" class="outline-2">
+<h2 id="org8bbf3cd">Matteos:</h2>
+<div class="outline-text-2" id="text-org8bbf3cd">
+<p>
+The Department of Physics at Carnegie Mellon University is searching for two undergraduate Research Assistants to build and prototype Kubernetes cluster to support fundamental research in high-energy particle physics. The new facility will  provide services for “low latency columnar analysis,” enabling rapid processing of data in a column-wise fashion.  
+</p>
+
+<p>
+The job will require administration of multiple machines, as well as programming. It will require developing scripting proficiency in Bash/Python and expertise with Linux/Unix operating systems. Besides Kubernetes, experience with Linux cluster provisioning tools (e.g. Pupper, Cobbler, Ansible) and large scale monitoring tools (e.g. Nagios, Ganglia, PefSONAR) will be acquired.  
+</p>
+
+<p>
+The work will be performed under the supervision of faculty members of the Department of Physics and in collaboration with system admins from the Mellon College of Science. Further support will be provided by external collaborators, more specifically from computing professionals from the University of Nebraska who developed the suite of tools ([<a href="https://coffea-casa.readthedocs.io/en/latest/">https://coffea-casa.readthedocs.io/en/latest/</a>](<a href="https://coffea-casa.readthedocs.io/en/latest/">https://coffea-casa.readthedocs.io/en/latest/</a>)) that will be installed on the new cluster._
+</p>
+</div>
+
+
+<div id="outline-container-org8594026" class="outline-3">
+<h3 id="org8594026">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org794b440" class="outline-3">
+<h3 id="org794b440">Links:</h3>
+<div class="outline-text-3" id="text-org794b440">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+
+
+<p>
+202408221845
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

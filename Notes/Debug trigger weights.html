@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Debug trigger weights</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Debug trigger weights</h1>
+<p>
+Need to run in an el7 container:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">cmssw-el7 -p --bind =readlink $HOME= --bind =readlink -f ${HOME}/nobackup/= --bind /uscms_data --bind /cvmfs -- /bin/bash -l
+
+</pre>
+</div>
+
+<p>
+Seems to work
+</p>
+
+<p>
+Commands: 
+<code>=py ZZ4b/nTupleAnalysis/scripts/makeULClosure.py --addTriggerWeights -c=</code>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis_cfg.py -i ZZ4b/fileLists/GluGluToHHTo4B_cHHH02018.txt -p picoAOD_wTrigWeights.root  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/ULTrig/ -y 2018 --bTag 0.6  --bTagSF -l 60.0e3 --isMC  --histDetailLevel allEvents.passPreSel.threeTag.fourTag  --histFile hists.root --calcTrigWeights --onlyEventsTree
+
+</pre>
+</div>
+
+<p>
+nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis<sub>cfg.py</sub> -i ZZ4b/fileLists/GluGluToHHTo4B<sub>cHHH02018.txt</sub> -p picoAOD<sub>wTrigWeights.root</sub>  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/ULTrig/ -y 2018 &#x2013;bTag 0.6  &#x2013;bTagSF -l 60.0e3 &#x2013;isMC  &#x2013;histDetailLevel allEvents.passPreSel.threeTag.fourTag  &#x2013;histFile hists.root &#x2013;calcTrigWeights &#x2013;onlyEventsTree
+</p>
+
+
+<p>
+nTupleAnalysis ZZ4b/nTupleAnalysis/scripts/nTupleAnalysis<sub>cfg.py</sub> -i ZZ4b/fileLists/GluGluToHHTo4B<sub>cHHH12018.txt</sub> -p picoAOD<sub>wTrigWeights.root</sub>  -o root://cmseos.fnal.gov//store/user/jda102/condor/ZH4b/ULTrig/ -y 2018 &#x2013;bTag 0.6  &#x2013;bTagSF -l 60.0e3 &#x2013;isMC  &#x2013;histDetailLevel allEvents.passPreSel.threeTag.fourTag  &#x2013;histFile hists.root &#x2013;calcTrigWeights &#x2013;onlyEventsTree &#x2013;nevents 100
+</p>
+
+<div id="outline-container-org3b2670b" class="outline-2">
+<h2 id="org3b2670b">Debuging</h2>
+<div class="outline-text-2" id="text-org3b2670b">
+<p>
+python: 
+<b>event is [63163, 63171, 63161, 63175, 63198, 63246, 63247, 63271, 63276, 63273]</b>
+ <b>hT  is [791, 342, 444, 847, 571, 1.13e+03, 543, 660, 384, 470]</b>
+ trig<sub>weight</sub><sub>data</sub>  is [0.99,  0.09, 0.67, 0.97, 0.89, 0.95, 0.88, 1.0,     0.33, 0.92]
+                    0.99, 0.26  0.7,        1.   0.9    0.62. 0.86.  0.98. 0.22. 0.95  
+</p>
+
+
+<p>
+c++: 
+ht: 793.688,  <b>338.375</b>,  <b>440.375</b>,  <b>928.25</b>, <b>576.375</b>, <b>1122</b>, <b>538.375</b>, <b>654.781</b>, 383.156, 469.125
+trig<sub>weight</sub><sub>data</sub>: 1, 0.4, 0.5 1, 1
+</p>
+</div>
+<div id="outline-container-org625a783" class="outline-3">
+<h3 id="org625a783">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org57f785a" class="outline-3">
+<h3 id="org57f785a">Links:</h3>
+<div class="outline-text-3" id="text-org57f785a">
+<p>
+202409171150
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Journal/2024/09-September/18-September-2024-Wednesday.html">18 September 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/09-September/17-September-2024-Tuesday.html">17 September 2024 Tuesday</a></li>
+</ul>
+</div>
+</body>
+</html>

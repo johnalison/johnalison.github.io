@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs Bookmarks</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Emacs Bookmarks</h1>
+
+
+<div id="outline-container-orga4ad23c" class="outline-2">
+<h2 id="orga4ad23c">Baisc Operations</h2>
+<div class="outline-text-2" id="text-orga4ad23c">
+<ul class="org-ul">
+<li>Can edit with <code>bookmark-bmenu-list</code> (<code>C-x r l</code>)</li>
+<li>Then use dired-like bindings</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8e9faa0" class="outline-2">
+<h2 id="org8e9faa0">Creating bookmarks:</h2>
+<div class="outline-text-2" id="text-org8e9faa0">
+<p>
+<code>C-x r m</code> (bookmark-set) - Set a bookmark at the current location
+You'll be prompted to name the bookmark
+save with <code>bookmarks-save</code>
+</p>
+</div>
+
+<div id="outline-container-orge875964" class="outline-3">
+<h3 id="orge875964">Jumping to bookmarks:</h3>
+<div class="outline-text-3" id="text-orge875964">
+<p>
+But better to just you <code>consult-buffer</code>
+</p>
+
+<p>
+C-x r b (bookmark-jump) - Jump to a bookmark
+C-x r l (bookmark-bmenu-list) - List all bookmarks
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org3a5465d" class="outline-3">
+<h3 id="org3a5465d">Managing bookmarks:</h3>
+<div class="outline-text-3" id="text-org3a5465d">
+<p>
+M-x bookmark-delete - Delete a bookmark
+M-x bookmark-rename - Rename a bookmark
+</p>
+
+<p>
+[&gt;&gt;] <a href="org_roam_tips-20250503175045.html#ID-7391CD68-2E3C-4FB0-B1E2-5BDAC7CCF2B9">Org-Roam-Tips</a>
+</p>
+
+
+<p>
+Emacs bookmarks can actually save and recall much more than just files. Here's what you can bookmark:
+</p>
+
+<p>
+File locations - The most common use, marking a specific position in a file
+Dired buffers - Bookmark directory listings, including which files were marked and the cursor position
+Info nodes - Bookmark specific nodes in Info documentation
+GNUS buffers - Bookmark locations in news articles and mailboxes
+Web pages - Using packages like EWW, you can bookmark web pages
+Remote locations - Bookmarks work with TRAMP for remote files and directories
+Non-file buffers - You can bookmark shell buffers, compilation buffers, etc.
+Org mode locations - Special integration with Org mode headings
+Custom bookmark types - Packages can define their own bookmark types
+</p>
+
+<p>
+For example, you could:
+</p>
+
+<p>
+Bookmark a specific mail message in a mail reader
+Bookmark a shell command's output
+Bookmark a specific search result
+Bookmark a man page
+Bookmark a specific heading in a document
+</p>
+
+<p>
+Under the hood, Emacs bookmarks are quite flexible - they can store arbitrary Lisp data and have custom handlers for jumping to the bookmarked location. This is why they can work with virtually any type of Emacs buffer, not just files.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

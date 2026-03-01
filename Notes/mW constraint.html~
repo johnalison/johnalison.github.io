@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>mW constraint</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">mW constraint</h1>
+<p>
+We measure \(p_\mu^\mu\) and \(\vec{p}_T^\nu\). 
+</p>
+
+<p>
+We will impose \({p_\mu^{\rm{comb.}}}^2 = m_W^2\)
+</p>
+
+<p>
+Assume \(p_\nu^2 = p_\mu^2 = 0\). Only unknown is \(p_z^\nu\)
+</p>
+
+
+<p>
+\(p_\mu^{\rm{comb.}} = \begin{pmatrix} E_\mu + E_\nu \\  \vec{p}_T^\mu + \vec{p}_T^\nu \\ {p_z}_\mu + {p_z}_\nu \end{pmatrix}\) 
+</p>
+
+
+<p>
+\({p_\mu^{\rm{comb.}}}^2 = (E_\mu + E_\nu)^2 - \left[ (\vec{p}_T^\mu + \vec{p}_T^\nu)^2 + ({p_z}_\mu + {p_z}_\nu)^2 \right]\)
+</p>
+
+<p>
+\(= \cancel{|p_\mu|^2} + 2|p_\mu| |p_\nu| + \cancel{|p_\nu|^2} - \left[ \cancel{{\vec{p}_T^\mu}^2} + {\cancel{\vec{p}_T^\nu}^2} + 2 \vec{p}_T^\mu \cdot \vec{p}_T^\nu  + \cancel{{{p_z}_\mu}^2} + \cancel{{{p_z}_\nu}^2} + 2{p_z}_\mu{p_z}_\nu   \right]\)
+</p>
+
+<p>
+OR
+</p>
+
+<p>
+\(m_W^2 = 2 E_\mu \sqrt{ {\vec{p}_T^\nu}^2 + {{p_{z}}_\nu}^2 } - 2 \left[ \vec{p}_T^\mu \cdot \vec{p}_T^\nu + {p_z}_\mu {p_z}_\nu \right]\)
+</p>
+
+<p>
+\(\frac{m_W^2}{2} + \left[ \vec{p}_T^\mu \cdot \vec{p}_T^\nu + {p_z}_\mu {p_z}_\nu \right] = E_\mu \sqrt{ {\vec{p}_T^\nu}^2 + {{p_{z}}_\nu}^2 }\)
+</p>
+
+<p>
+Squaring
+</p>
+
+<p>
+\(\frac{m_W^4}{4} + m_W^2 \left[ \vec{p}_T^\mu \cdot \vec{p}_T^\nu + {p_z}_\mu {p_z}_\nu \right] + \left[ \vec{p}_T^\mu \cdot \vec{p}_T^\nu + {p_z}_\mu {p_z}_\nu \right]^2 = E_\mu^2 ( {\vec{p}_T^\nu}^2 + {{p_{z}}_\nu}^2 )\)
+</p>
+
+<p>
+\(\frac{m_W^4}{4} + m_W^2 \left[ \vec{p}_T^\mu \cdot \vec{p}_T^\nu + {p_z}_\mu {p_z}_\nu \right] + \left[ (\vec{p}_T^\mu \cdot \vec{p}_T^\nu)^2 + 2(\vec{p}_T^\mu \cdot \vec{p}_T^\nu) {p_z}_\mu {p_z}_\nu + ({p_z}_\mu {p_z}_\nu)^2 \right] = E_\mu^2 ( {\vec{p}_T^\nu}^2 + {{p_{z}}_\nu}^2 )\)
+</p>
+
+<p>
+OR &#x2026;
+</p>
+
+<p>
+\(\left( \frac{m_W^4}{4} + m_W^2 \vec{p}_T^\mu \cdot \vec{p}_T^\nu  + (\vec{p}_T^\mu \cdot \vec{p}_T^\nu)^2 -  E_\mu^2 {\vec{p}_T^\nu}^2  \right) + \left(m_W^2{p_z}_\mu + 2(\vec{p}_T^\mu \cdot \vec{p}_T^\nu){p_z}_\mu \right){p_z}_\nu +  \left( {p_z}_\mu^2 - E_\mu^2 \right){{p_z}_\nu}^2 =0\)
+</p>
+
+<p>
+which is 
+</p>
+
+<p>
+\(C + B \cdot {p_z}_\nu + A \cdot {{p_z}_\nu}^2 = 0\)
+</p>
+
+<p>
+with
+</p>
+
+<p>
+\(A = \left( {p_z}_\mu^2 - E_\mu^2 \right)\)
+</p>
+
+<p>
+\(B = \left(m_W^2{p_z}_\mu + 2(\vec{p}_T^\mu \cdot \vec{p}_T^\nu){p_z}_\mu \right)\)
+</p>
+
+<p>
+\(C = \left( \frac{m_W^4}{4} + m_W^2 \vec{p}_T^\mu \cdot \vec{p}_T^\nu  + (\vec{p}_T^\mu \cdot \vec{p}_T^\nu)^2 -  E_\mu^2 {\vec{p}_T^\nu}^2  \right)\)
+</p>
+
+<p>
+Then have two solutions for \({p_z}_\nu\).
+</p>
+
+<p>
+\({p_z}_\nu = \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}\)
+</p>
+
+
+
+<div id="outline-container-orgc496293" class="outline-2">
+<h2 id="orgc496293">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org2fbd504" class="outline-2">
+<h2 id="org2fbd504">Links:</h2>
+<div class="outline-text-2" id="text-org2fbd504">
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+</p>
+
+
+
+<p>
+202410031242
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

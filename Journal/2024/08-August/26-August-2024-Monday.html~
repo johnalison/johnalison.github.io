@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>26 August 2024 Monday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="25-August-2024-Sunday.html">&#8592; Previous</a>
+  <a href="27-August-2024-Tuesday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">26 August 2024 Monday</h1>
+
+<div id="outline-container-org357f690" class="outline-2">
+<h2 id="org357f690">Timeblock</h2>
+<div class="outline-text-2" id="text-org357f690">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Setup</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">---</td>
+<td class="org-left">---------------</td>
+<td class="org-left">---</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">FBC2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">FBC2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Multihiggs</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Hoops</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Sindhu</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Aniket</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>W:</b>  7 
+<b>DW:</b> 4
+<b>OT:</b> 2
+<b>ex</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad5f551" class="outline-2">
+<h2 id="orgad5f551">The ONE thing:</h2>
+<div class="outline-text-2" id="text-orgad5f551">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> JetDeclustering</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgdcdbc82" class="outline-2">
+<h2 id="orgdcdbc82">To Do</h2>
+<div class="outline-text-2" id="text-orgdcdbc82">
+<ul class="org-ul">
+<li>notes for MPL intros on Tuesday: Only Zeeman Effect left
+<ul class="org-ul">
+<li>Review Particle Notes</li>
+<li>Make/Print PDFs</li>
+</ul></li>
+<li>Check out MPL Labs</li>
+<li>[ &gt;] CAM Training</li>
+<li>[ &gt;] Read HGC TDR</li>
+<li>Poll new HGC Meeting time
+<ul class="org-ul">
+<li>Waiting on MP and VD</li>
+</ul></li>
+<li>[ &gt;] Update skimmer CI: Compare cutflow during skim vs later processing vs known values</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgaf0eb99" class="outline-2">
+<h2 id="orgaf0eb99">Log</h2>
+<div class="outline-text-2" id="text-orgaf0eb99">
+<p>
+Up at 7
+</p>
+
+<p>
+M&amp;T to school
+</p>
+
+<p>
+<a href="../../../Notes/Zeeman Effect.html#ID-4A774075-840C-4B94-930C-7FAD4BD00D1F">Zeeman Effect</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org12dfc8a" class="outline-2">
+<h2 id="org12dfc8a"><a href="../../../Notes/jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></h2>
+<div class="outline-text-2" id="text-org12dfc8a">
+<ul class="org-ul">
+<li>See daily logs above</li>
+</ul>
+
+
+<p>
+<a href="../../../Notes/fbc2_meetings-20250508090616.html#ID-1B750F49-7865-4111-A85E-6FB137D9B266">FBC2 Meetings</a>
+</p>
+
+
+<p>
+Chat with Kristine:  Will use my booze for Scotts party
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9966f5d" class="outline-2">
+<h2 id="org9966f5d">Hoops</h2>
+<div class="outline-text-2" id="text-org9966f5d">
+<ul class="org-ul">
+<li>good run / Got some good wins.</li>
+</ul>
+
+<p>
+Checked out MPL rooms
+</p>
+
+<p>
+<a href="../../../Notes/Electron Spin Resonance.html#ID-A2E6C4A3-282B-4ACF-BA32-5BFE2E8954D4">Electron Spin Resonance</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6ecc556" class="outline-2">
+<h2 id="org6ecc556">Chat <a href="../../../Notes/Sindhu Murthy.html#ID-A03D5619-3BAC-4F9C-A30B-CBA1E64F39D2">Sindhu Murthy</a></h2>
+<div class="outline-text-2" id="text-org6ecc556">
+<p>
+<a href="../../../Notes/Chat w Aniket 26 August 2024.html#ID-EFF71160-27D8-4327-9C02-42365A77333D">Chat w Aniket 26 August 2024</a>
+</p>
+
+<p>
+Printed intro printout for <a href="../../../Notes/MPL.html#ID-FC35DC98-A2A5-42F2-A440-42F751A8472E">MPL</a>
+</p>
+
+<p>
+more mixed
+</p>
+
+<p>
+Home with M&amp;T
+</p>
+
+<p>
+T sick&#x2026;
+</p>
+
+<p>
+New Meeting time 12 on T
+<a href="https://whenisgood.net/ss4cfpn">https://whenisgood.net/ss4cfpn</a>
+</p>
+
+<p>
+More pumping on synthetic datasets
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

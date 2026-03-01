@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Learning List</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Learning List</h1>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Woits QM</li>
+<li class="off"><code>[&#xa0;]</code> EFT</li>
+<li class="off"><code>[&#xa0;]</code> Classical Physics (Geometric Approach)</li>
+<li class="off"><code>[&#xa0;]</code> QM as extension of probability (Aaronson)</li>
+<li>AWK</li>
+<li>AI Modern Approach</li>
+<li>Normalizing flows</li>
+<li>Note Taking</li>
+<li class="on"><code>[X]</code> Micro Economics</li>
+<li class="off"><code>[&#xa0;]</code> Gauge theory as Geometry</li>
+<li>Scattering Amplitudes</li>
+<li>New kind of science</li>
+<li class="off"><code>[&#xa0;]</code> Lisp</li>
+<li class="trans"><code>[-]</code> Python
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Coffea</li>
+<li class="off"><code>[&#xa0;]</code> dask</li>
+<li class="off"><code>[&#xa0;]</code> awkward</li>
+<li class="off"><code>[&#xa0;]</code> numba</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Experimental foundations of particle physics</li>
+<li class="on"><code>[X]</code> Fly by night physics</li>
+<li class="off"><code>[&#xa0;]</code> Cosmology</li>
+<li class="off"><code>[&#xa0;]</code> Assembly</li>
+<li>Mental Math</li>
+<li class="off"><code>[&#xa0;]</code> Astrophysics (Wienberg)</li>
+<li class="off"><code>[&#xa0;]</code> Gaussian Processes</li>
+<li class="off"><code>[&#xa0;]</code> Structure: Why things dont fall down</li>
+<li class="off"><code>[&#xa0;]</code> The Art of Electronics</li>
+<li>QFT and the Standard Model</li>
+<li>Experiments in Modern Physics</li>
+<li>Nuclear Physics</li>
+<li class="off"><code>[&#xa0;]</code> Chemistry 
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Modern Chemistry</li>
+</ul></li>
+<li>Many Worlds</li>
+</ul>
+
+
+
+<div id="outline-container-orgd6df056" class="outline-2">
+<h2 id="orgd6df056">Links:</h2>
+<div class="outline-text-2" id="text-orgd6df056">
+<p>
+202407191707
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

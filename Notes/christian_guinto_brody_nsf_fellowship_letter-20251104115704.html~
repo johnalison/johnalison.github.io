@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Christian Guinto-Brody NSF fellowship Letter</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Christian Guinto-Brody NSF fellowship Letter</h1>
+<p>
+I am writing to strongly support Christian Guinto-Brody for an NSF Graduate Research Fellowship. I have known Christian for more than five years and he has recently joined my group at CMU working on the CMS experiment. He is a perfect candidate for this fellowship. His proposed work on improvements for the di-Higgs search is important and timely. His proposal is ambitious, but well within his reach. However, what sets his application apart is his plan for broader impacts through his connections with the Pennsylvania Governor School for the Sciences.
+</p>
+
+<p>
+I first met Christian when he was a star high-school student in the Pennsylvania Governor's School for the Sciences (PGSS). The PGSS is an intense, five-week program for talented Pennsylvania high-school students. Each summer, 75 rising seniors from high schools across the state stay in residence on CMU's campus. Students take lecture courses in biology, chemistry, physics, mathematics and computer science; a laboratory course; and work on one of several team research projects. Christian took my PGSS course on the physics behind the Higgs boson. It was clear to me then that Christian was special; he was eager to learn what particle physicists actually do with high-energy proton collisions and tried to build an intuition for what types of tools are needed to make sense of the data. Christian was such an exceptional student that he was brought back as a teaching assistant with the program a few years later.
+</p>
+
+<p>
+I remained in touch with Christian after PGSS. I followed his career at UVA and recruited him to join CMU as a graduate student. He was involved in several exciting hardware upgrade projects at UVA and is a great fit for my group at CMU. Since joining he has already begun to play an important role in our module assembly center for the High-Granularity calorimeter upgrade. Modules assembled at CMU are thoroughly tested then shipped to Fermilab to be integrated into larger detector sections. Christian is working to synchronize the results of module tests performed at CMU with the central CERN database, he is also in charge of setting up our shipping protocol. This work is not glamorous, but is essential for a project of this size and complexity.
+</p>
+
+<p>
+The research Christian proposes for the fellowship is a natural extension of the existing efforts of my group. He ultimately wants to search for HH→4b for his thesis. He proposes a staged approach to getting involved. He will first contribute to improving b-tagging, working within the CMS performance group. His plan is to use advanced machine learning techniques to make the tagging algorithms less sensitive to mis-modelling of the simulation used to train them. This work will be critical for the HH→4b analysis, but will also be of significant benefit to the collaboration as a whole. After this, he plans to extend work that my group has prototyped on the ZZ/ZH→4b analysis to the HH→4b search with the full Run-3 dataset. This will build on his b-tagging work and promises to be one of the most exciting LHC analyses in the next few years. This staged approach is a wise strategy that will allow Christian to fit into the existing effort within CMS.
+</p>
+
+<p>
+One thing that I think is particularly compelling in Christian's proposal is his plan for teaching data science to high-school students in PGSS. Christian will develop a team project based on CMS open data. Each PGSS student is required to take part in a team project curated by an experienced team leader. Teams are responsible for carrying out an experiment and writing a research report, presented at a symposium at the end of the program. Publicly available CMS data presents an ideal opportunity to create a team project based around the analysis of actual LHC data. Christian plans to have students design and execute an analysis to “discover” the Higgs boson in the open data. They will learn the core skills needed to analyze scientific data – basic programming, data visualization, uncertainty quantification, and statistical analysis – and will explore b-jet identification using modern machine learning libraries. This work will help attract students to STEM careers and provide valuable experience transferable beyond high-energy physics.
+</p>
+
+<p>
+In summary, I believe Christian would be an excellent fit for this fellowship. He brings the required experience and enthusiasm, and his current work and proposed program aligns well with the position’s goals. As PI, I would fully support Christian in this role with my group's resources. This opportunity aligns well with my group’s priorities, and I am confident that Christian’s contributions will make a substantial impact.
+</p>
+
+
+<div id="outline-container-org6403d52" class="outline-2">
+<h2 id="org6403d52">Draft</h2>
+<div class="outline-text-2" id="text-org6403d52">
+<p>
+Dear Colleagues, 
+</p>
+
+<p>
+I am writing to strongly support Christian Guinto-Brody for an NSF Graduate Research Fellowship. I have known Christian for more than five years and he has recently joined my group at CMU working on the CMS experiment. He is a perfect candidate for this fellowship. His proposed work on improvements for the di-Higgs search is important and timely. His proposal is ambitious, but well within his reach. However, what sets his application apart is his plan for broader impacts through his connections with the Pennsylvania Governor School for the Sciences.
+</p>
+
+<p>
+I first met Christian when he was a star high-school student in the Pennsylvania Governor's School for the Sciences (PGSS). The PGSS is an intense, five-week program for talented Pennsylvania high-school students. Each summer, 75 rising seniors from high schools across the state stay in residence on CMU's campus. Students take lecture courses in biology, chemistry, physics, mathematics and computer science; a laboratory course; and work on one of several team research projects. Christian took my PGSS course on the physics behind the Higgs boson. It was clear to me then that Christian was special; he was eager to learn what particle physicists actually do with high-energy proton collisions and tried to build an intuition for what types of tools are needed to make sense of the data. Christian was such an exceptional student that he was brought back as a teaching assistant with the program a few years later.
+</p>
+
+<p>
+The research Christian proposes for the fellowship is a natural extension of the existing efforts of my group. He ultimately wants to search for HH→4b for his thesis. He proposes a staged approach to getting involved. He will first contribute to improving b-tagging, working within the CMS performance group. His plan is to use advanced machine learning techniques to make the tagging algorithms less sensitive to mis-modelling of the simulation used to train them. This work will be critical for the HH→4b analysis, but will also be of significant benefit to the collaboration as a whole. After this he plans to extend work that my group has prototyped on ZZ/ZH→4b analysis to the HH→4b search with the full Run-3 dataset. This will build on his b-tagging work and promises to be one of the most exciting LHC analyses in the next few years. This staged approach is a wise strategy that will allow Christian to fit into the existing effort within CMS.
+</p>
+
+<p>
+I remained in touch with Christian after PGSS. I followed his career at UVA and recruited him to join CMU as a graduate student. He was involved in several exciting hardware upgrade projects at UVA and is a great fit for my group at CMU. Since joining he has already begun to play an important role in our module assembly center for the High-Granularity calorimeter upgrade. Modules assembled at CMU are thoroughly tested then shipped to Fermilab to be integrated into larger detector sections. Christian is working to synchronize the results of module tests performed at CMU with the central CERN database, he is also in charge of setting up our shipping protocol. This work is not glamorous, but is essential for a project of this size and complexity.
+</p>
+
+<p>
+One thing that I think is particularly compelling in Christian's proposal is his plan for teaching data science to high-school students in PGSS. Christian will develop a team project based on CMS open data. Each PGSS student is required to take part in a team project curated by an experienced team leader. Teams are responsible for carrying out an experiment and writing a research report, presented at a symposium at the end of the program. Publicly available CMS data presents an ideal opportunity to create a team project based around the analysis of actual LHC data. Christian plans to have students design and execute an analysis to measure the Higgs boson cross section. They will learn the core skills needed to analyze scientific data – basic programming, data visualization, uncertainty quantification, and statistical analysis – and will explore b-jet identification using modern machine learning libraries. This work will help attract students to STEM careers and provide valuable experience transferable beyond high-energy physics.
+</p>
+
+
+<p>
+In summary, I believe Christian would be an excellent fit for this fellowship. He brings the required experience and enthusiasm, and his current work and proposed program aligns well with the position’s goals. As PI, I would fully support Christian in this role with my group's resources and. This opportunity aligns well with my group’s priorities, and I am confident that Christian’s contributions will make a substantial impact.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

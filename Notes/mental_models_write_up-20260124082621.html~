@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mental Models Write Up</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Mental Models Write Up</h1>
+<p>
+I am a big fan of mental models. <a href="https://fs.blog/mental-models/">https://fs.blog/mental-models/</a>
+</p>
+
+<p>
+The advice to "think outside of the box" or to "look at a problem from a different point of view" is often wise. For a long time I understood this intellectually, but wasn't sure how to actually do it. If you are stuck thinking in a box (whatever that really means), what exactly do you do to think outside of it? Mental models are an explicit way of operationalizing this advice.
+</p>
+
+<p>
+Mental models are like filters for analyzing a problem or situation. You can adopt different mental models in turn to explicitly take different perspectives. Each model emphasizes different aspects, interrelationships, or approaches to a problem.
+</p>
+
+<p>
+One simple example is the idea of inversion. We are often stuck when figuring out how to achieve a goal. What actions should we take to "win" or "succeed"? It can be a hard problem. How to make money in the stock market? Where to optimize to cut costs? When using the mental model of inversion the idea is instead of trying to succeed, you focus on what actions you can take to avoid failing. Like most mental models, it's a subtle reframing of the situation. Index funds are the natural solution to investment suggested by inversion; focus on reducing fees (avoid guaranteed losses) rather than picking stocks to maximize gains. Similarly, Henry Ford used to buy scrapped Ford cars to find out which of the parts didn't fail, these could be made cheaper.
+</p>
+
+<p>
+I use mental models as short cuts to higher-level thinking. I find I can often out-think experts with more domain knowledge, or even just smarter people, by using mental models as to structure my thinking.
+</p>
+
+<p>
+Here is a list of the mental models I find most useful. There are many more examples here: <a href="https://fs.blog/mental-models/">https://fs.blog/mental-models/</a>
+</p>
+
+<p>
+List of Mental models
+</p>
+<ul class="org-ul">
+<li>Trade-offs are everywhere: Bias vs. Variance / Freedom vs. Justice / &#x2026;</li>
+<li>"ABCD Method" / Capture Recapture: Will say more about this later</li>
+<li>Closure Test: Test what you are doing in a situation where you know what answer you should get.</li>
+<li>Circle of Competence:
+<ul class="org-ul">
+<li>How to defend against authority: "Is this authority truly an expert?" / "How trustworthy can we expect the expert to be here?"</li>
+</ul></li>
+<li>Law of diminishing returns</li>
+<li>"Free rolls": decisions with asymmetry between upside and downside because potential losses are insignificant.</li>
+<li>"Applause lights": When someone says something that is so obvious that there is no possible defense for the inverse.</li>
+<li>Slow is smooth and smooth is fast</li>
+<li>Feelings/Emotions: low latency non-conscious thinking</li>
+<li>Seek Role models / Mentors: Who is achieving what you want? Find them and emulate them</li>
+<li>Commutation acts like differentiation:
+<ul class="org-ul">
+<li>[A, BC] = [A,B]C + B[A,C]</li>
+<li>d/dx BC = (d/dx B) C + B (d/dx C)</li>
+</ul></li>
+<li>Incentives matter</li>
+<li>The happiness test for decisions: If the difference in choice won't affect your happiness in a week&#x2026; don't spend time on it.</li>
+<li>Where are the quick, low cost, iteration cycles</li>
+<li>Devil's Advocate: "He who knows only his own side of the case, knows little of that" John Stuart Mill
+What is the truth in the other side?</li>
+<li>The middle way: in a longstanding argument/dispute "think gray" the truth is somewhere in between</li>
+<li>&#x2026;</li>
+</ul>
+</div>
+</body>
+</html>

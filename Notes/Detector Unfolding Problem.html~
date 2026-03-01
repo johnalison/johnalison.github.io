@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Detector Unfolding Problem</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Detector Unfolding Problem</h1>
+<p>
+The problem with unfolding is that the detector smearing can in general cause two very different input truth distributions to give identical observed smeared data. In which case, there is no unique way to invert. 
+</p>
+
+<p>
+![BROKEN LINK: 1DUnfoldingCartoon.excalidraw]
+</p>
+
+<p>
+Solutions to this type of "ill-posed" inverse problem require an arbitrary choice of regularization, usually taken from a detector simulation, to stabilize the inversion. However, instead of solving the inverse problem, you can learn the forward model relatively robustly with simulation. Then its actually easy to go from truth to smeared data with out much sensitivity to the simulation. However the algorithms do the unfolding  &#x2013; inferring the input truth from the observed smeared data &#x2013; are much more sensitive to the assumed underlying simulation model through the choice of the regulator.
+</p>
+
+<div id="outline-container-orga4d3706" class="outline-2">
+<h2 id="orga4d3706">Follow-ups</h2>
+<div class="outline-text-2" id="text-orga4d3706">
+<p>
+<a href="https://www.sciencedirect.com/science/article/pii/0168900295014780">https://www.sciencedirect.com/science/article/pii/0168900295014780</a>
+</p>
+
+<p>
+<a href="https://indico.cern.ch/event/1357972/contributions/5866596/attachments/2873882/5032439/Kuusela_PhyStat_unfolding.pdf">https://indico.cern.ch/event/1357972/contributions/5866596/attachments/2873882/5032439/Kuusela_PhyStat_unfolding.pdf</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84249c1" class="outline-2">
+<h2 id="org84249c1">Links:</h2>
+<div class="outline-text-2" id="text-org84249c1">
+<p>
+[BROKEN LINK: 1DUnfoldingCartoon.excalidraw]
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+</p>
+
+<p>
+202410092229
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

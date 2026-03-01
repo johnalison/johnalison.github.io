@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 14 January 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 14 January 2024</h1>
+
+<div id="outline-container-org05f4793" class="outline-2">
+<h2 id="org05f4793">News</h2>
+<div class="outline-text-2" id="text-org05f4793">
+<ul class="org-ul">
+<li>Chiller arrived</li>
+<li>KRIA arrived</li>
+<li>Tooling arrived</li>
+<li>Stickers for</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgce113b6" class="outline-2">
+<h2 id="orgce113b6">Jessica</h2>
+<div class="outline-text-2" id="text-orgce113b6">
+<ul class="org-ul">
+<li>Made 4 modules</li>
+<li>Good work flow</li>
+<li>Hick ups: GUI freezing / some glue leakage</li>
+<li>offsets</li>
+<li>pull tests OK</li>
+<li>Plan: 4/8 Cu</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3d88526" class="outline-2">
+<h2 id="org3d88526">Andrew</h2>
+<div class="outline-text-2" id="text-org3d88526">
+<ul class="org-ul">
+<li>errors on PCBs before assembly</li>
+<li>24/48 tested ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4bfe2f3" class="outline-2">
+<h2 id="org4bfe2f3">Sindhu</h2>
+<div class="outline-text-2" id="text-org4bfe2f3">
+<ul class="org-ul">
+<li>local DB up and running</li>
+<li>central DB up and running</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2c22b2f" class="outline-2">
+<h2 id="org2c22b2f">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org8bad880" class="outline-2">
+<h2 id="org8bad880">Links:</h2>
+<div class="outline-text-2" id="text-org8bad880">
+<p>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+<a href="CMU HGC Mac Meeting 17 December 2024.html#ID-7035A87C-797A-49C6-AD4B-D2E250ACC2FE">CMU HGC Mac Meeting 17 December 2024</a>
+</p>
+
+<p>
+202501141205
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

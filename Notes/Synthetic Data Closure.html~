@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Synthetic Data Closure</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Synthetic Data Closure</h1>
+
+
+<div id="outline-container-orgbdd09e7" class="outline-2">
+<h2 id="orgbdd09e7">Fitting Instructions from CL</h2>
+<div class="outline-text-2" id="text-orgbdd09e7">
+<p>
+Here are the steps to set up environment and run the synthetic training on rogue01/02
+(require MR445)
+</p>
+
+<p>
+The following only need to be done once:
+</p>
+<ul class="org-ul">
+<li>setup the apptainer tmp/cache dir and install grid certificate:
+following the step 1&amp;2 <a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/tree/master/python/classifier#falconrogue">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/tree/master/python/classifier#falconrogue</a></li>
+</ul>
+
+<p>
+Then for each run:
+</p>
+<ul class="org-ul">
+<li>start a container following the step 3 <a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/tree/master/python/classifier#falconrogue">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/tree/master/python/classifier#falconrogue</a>
+(the line: source ./classifier/install.sh is optional if you don't directly use the pyml.py cli)</li>
+</ul>
+
+<p>
+For synthetic dataset training:
+</p>
+<ul class="org-ul">
+<li>modify the lines marked as TODO in the following files:</li>
+</ul>
+
+<p>
+classifier/config/workflows/synthetic/train.yml:
+    <b>L29 the path to JCM weights for each synthetic data</b> <a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/train.yml#L29">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/train.yml#L29</a>
+        the python format can be used to specify the synthetic seed e.g. if the weights are stored in the following yml files:
+          JCM/synthetic<sub>seed0</sub>/jetCombinatoricModel<sub>SB.yml</sub>@@JCM<sub>weights</sub>
+          JCM/synthetic<sub>seed1</sub>/jetCombinatoricModel<sub>SB.yml</sub>@@JCM<sub>weights</sub>
+       then the following can be used:
+         JCM/synthetic<sub>seed</sub>{synthetic}/jetCombinatoricModel<sub>SB.yml</sub>@@JCM<sub>weights</sub>
+       where the {synthetic} will be replaced by the string from the dict passed through -template e.g. in  [L12 of run.sh](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/run.sh#L12">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/run.sh#L12</a>) t the user and synthetic are passed
+     <b>[L50 the base path to store the models and metadata](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/train.yml#L50">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/train.yml#L50</a>)</b>
+</p>
+
+<p>
+classifier/config/workflows/synthetic/evaluate.yml
+   <b>[L24 the path to load model](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/evaluate.yml#L24">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/evaluate.yml#L24</a>)</b>
+        this should be the same as L50 of train.yml but adding a result.json to the end
+    <b>[L37 the base path to store the evaluated friend trees](<a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/evaluate.yml#L37">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/python/classifier/config/workflows/synthetic/evaluate.yml#L37</a>)</b>
+</p>
+
+<p>
+The train.yml will train on 3b data, 4b synthetic, 3b+4b ttbar
+The evaluate.yml will evaluate 3b+4b data (since 3b and 4b data are stored in the same root file)
+</p>
+
+<ul class="org-ul">
+<li><p>
+run the following:
+bash classifier/config/workflows/synthetic/run.sh $LPCUSER
+</p>
+
+<p>
+where the $LPCUSER is the lpc username, in order to store on eos.
+</p>
+
+<p>
+if you get
+OSError: [Errno 98] Address already in use
+try other ports for monitor e.g.
+bash classifier/config/workflows/synthetic/run.sh $LPCUSER 10100
+this is because someone is using the default port 10200 (e.g. I am running on the same node)
+</p></li>
+</ul>
+
+<p>
+Let me know if you have any question
+</p>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-orgdda1362" class="outline-2">
+<h2 id="orgdda1362">Logs</h2>
+<div class="outline-text-2" id="text-orgdda1362">
+</div>
+<div id="outline-container-orgb6d1466" class="outline-3">
+<h3 id="orgb6d1466"><a href="../Journal/2025/02-February/22-February-2025-Saturday.html#ID-CC550E23-A319-4FDB-87EA-5F826DA6C853">22 February 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgb6d1466">
+<ul class="org-ul">
+<li>Fixed problem with empty histograms&#x2026; rerunning v4 on condor</li>
+<li>Still see large event weights. .. not clear whats happening.</li>
+<li><a href="run3syntheticdata-20250504105620.html#ID-F186D2D0-4B38-4EBC-9B0D-4995A8771982">Run3 Synthetic Data</a></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org67e674b" class="outline-3">
+<h3 id="org67e674b"><a href="../Journal/2025/02-February/21-February-2025-Friday.html#ID-FDFB2E66-4394-414C-BDC0-FADB00DE1804">21 February 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org67e674b">
+<ul class="org-ul">
+<li>Falcon back&#x2026; AE killed it before</li>
+<li>Running fitting with v4 &#x2026; explicitly remove threeTag events from the synthetic dataset</li>
+<li>Fit&#x2026; running the data .. on condor
+<ul class="org-ul">
+<li><code>python runner.py -o synthetic_data_closure_Run2_seed0_data_v4.coffea -d data -p analysis/processors/processor_HH4b.py -y UL17 UL18 UL16_preVFP UL16_postVFP -op output/synthetic_dataset_closure -c analysis/metadata/HH4b_synthetic_closure.yml -m metadata/datasets_HH4b.yml --condor</code></li>
+</ul></li>
+<li>Output file is empty&#x2026;think its because the histCuts aren't there&#x2026; yes&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org42bd843" class="outline-3">
+<h3 id="org42bd843"><a href="../Journal/2025/02-February/20-February-2025-Thursday.html#ID-42859109-FCEE-413B-AA66-0FB61E428781">20 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org42bd843">
+<ul class="org-ul">
+<li>Looking at plots&#x2026; not clear why we have these bizzare weights&#x2026;</li>
+<li>Check why canJet pt &lt; 40 ! .. bRegCor?</li>
+<li>Think synthetic events are making the three tag selection when b-jet out of acceptance.</li>
+<li>Removing by hand</li>
+<li>Remaking inputs
+<ul class="org-ul">
+<li><code>python runner.py -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_classifier_inputs.yml -d synthetic_data -y UL16_preVFP UL16_postVFP UL17 UL18 -op output/ -o classifier_synthetic_data_v4.coffea</code></li>
+</ul></li>
+<li>Can write out directly to eos!!
+<ul class="org-ul">
+<li><code>python runner.py -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_classifier_inputs.yml -d synthetic_data -y UL16_preVFP UL16_postVFP UL17 UL18 -op root://cmseos.fnal.gov//store/user/jda102/XX4b/2024_v4/  -o classifier_synthetic_data_v4.coffea</code></li>
+</ul></li>
+<li>Error when using rogue container</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgaaa48b2" class="outline-3">
+<h3 id="orgaaa48b2"><a href="../Journal/2025/02-February/19-February-2025-Wednesday.html#ID-085B19CD-F94F-4D55-9B2E-E3F99A32B2DB">19 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orgaaa48b2">
+<ul class="org-ul">
+<li>Rerunning On <b>cmslpc338</b></li>
+<li>FvT much better! Looking at lots of plots&#x2026;</li>
+<li>Still have anomalously  high values, think they are coming from synthetic data out of acceptance</li>
+<li>Remove synthetic data overrides</li>
+<li>Remake friend trees
+<ul class="org-ul">
+<li><code>python runner.py -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_classifier_inputs.yml -d synthetic_data -y UL16_preVFP UL16_postVFP UL17 UL18 -op output/ -o classifier_synthetic_data_v3.coffea</code></li>
+</ul></li>
+<li>Copy output to eos <b>classifier<sub>synthetic</sub><sub>data</sub><sub>v3</sub></b></li>
+<li>Training on rogue01&#x2026;Done</li>
+<li>Making data hists &#x2026; on condor&#x2026; running blind
+<ul class="org-ul">
+<li><code>python runner.py -o synthetic_data_closure_Run2_seed0_data_v2.coffea -d data -p analysis/processors/processor_HH4b.py -y UL17 UL18 UL16_preVFP UL16_postVFP -op output/synthetic_dataset_closure -c analysis/metadata/HH4b_synthetic_closure.yml -m metadata/datasets_HH4b.yml --condor</code></li>
+</ul></li>
+<li>Ran with the wrong version of the friend tree!</li>
+<li>Rerunning now on condor*cmslpc307*</li>
+<li>Why are there 3b events with pt &lt; 30 ? &#x2026; breg ?</li>
+<li>Rerunning on <b>cmslpc323</b> with FvT regions</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgad0a9dd" class="outline-3">
+<h3 id="orgad0a9dd">[BROKEN LINK: 70989FA1-6823-4C54-8292-6C1ACE84162A]</h3>
+<div class="outline-text-3" id="text-orgad0a9dd">
+<ul class="org-ul">
+<li>testing v2</li>
+<li>made hists 
+<ul class="org-ul">
+<li><code>source  .ci-workflows/synthetic-dataset-analyze-all.sh</code></li>
+</ul></li>
+<li>making plots
+<ul class="org-ul">
+<li>`python  jet<sub>clustering</sub>/compare<sub>datasets.py</sub>  output/synthetic<sub>dataset</sub><sub>analyze</sub><sub>all</sub>/synthetic<sub>data</sub><sub>RunII</sub><sub>seedXXX.coffea</sub>   &#x2013;out analysis/plots<sub>synthetic</sub><sub>datasets</sub><sub>all</sub><sub>00</sub>-09-00 -m plots/metadata/plotsSyntheticVsData2.yml</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org6277a2d" class="outline-2">
+<h2 id="org6277a2d">making presentation</h2>
+<div class="outline-text-2" id="text-org6277a2d">
+<ul class="org-ul">
+<li><code>make jetclustering_slides_RunII TEXFILENAME=SyntheticDatasets-00-09-09 NEW_DIR=analysis\\/plots_synthetic_datasets_all_00-09-00</code></li>
+</ul>
+<ul class="org-ul">
+<li>New masses look much better ! &#x2026; Not much else changed ?</li>
+<li>Remaking FvT inputs
+<ul class="org-ul">
+<li><code>python runner.py -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_classifier_inputs.yml -d synthetic_data -y UL16_preVFP UL16_postVFP UL17 UL18 -op output/ -o classifier_synthetic_data_v2.coffea</code></li>
+</ul></li>
+<li>Copy output to eos
+<ul class="org-ul">
+<li><code>xrdcp python/output/classifier_synthetic_data_v2.json root://cmseos.fnal.gov//store/user/jda102/XX4b/2024_v2/</code></li>
+<li>`xrdcp python/output/classifier<sub>synthetic</sub><sub>data</sub><sub>v2.coffea</sub> root://cmseos.fnal.gov//store/user/jda102/XX4b/2024<sub>v2</sub>/'</li>
+</ul></li>
+<li>Fitting JCM
+<ul class="org-ul">
+<li>= python analysis/make<sub>weights.py</sub> -o testJCM<sub>Coffea</sub><sub>SyntheticData</sub><sub>v2</sub> -c passPreSel -r SB &#x2013;combine<sub>input</sub><sub>file</sub> -i output/histAll.coffea output/synthetic<sub>dataset</sub><sub>analyze</sub><sub>all</sub>/synthetic<sub>data</sub><sub>RunII</sub><sub>seedXXX.coffea</sub> &#x2013;data4bName syn<sub>v0</sub> -m plots/metadata/plotsJCMSyntheticData.yml=</li>
+</ul></li>
+<li>Need to make synthetic data only
+<ul class="org-ul">
+<li><code>time python runner.py -o synthetic_data_only_RunII_seedXXX.coffea -d synthetic_data  -p analysis/processors/processor_HH4b.py -y UL17 UL18 UL16_preVFP UL16_postVFP -op output/synthetic_dataset_analyze_all/ -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_fourTag.yml</code></li>
+</ul></li>
+<li>Refit JCM&#x2026; looks good</li>
+<li>pushing &#x2026; merge failed&#x2026; will just use local branch on falcon</li>
+<li>Training:
+<ul class="org-ul">
+<li><code>bash classifier/config/workflows/synthetic/run.sh jda102</code></li>
+</ul></li>
+<li>Seems all good</li>
+<li>Making closure plots
+<ul class="org-ul">
+<li><code>source .ci-workflows/synthetic-dataset-closure.sh</code></li>
+</ul></li>
+<li>Running on <b>cmslpc318</b></li>
+<li>Crashed &#x2026; rerunning</li>
+</ul>
+</div>
+
+
+
+<div id="outline-container-orgd4f1d3d" class="outline-3">
+<h3 id="orgd4f1d3d"><a href="../Journal/2025/02-February/15-February-2025-Saturday.html#ID-7E10D4D4-7A57-4B63-9B15-006EFC7971A8">15 February 2025 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgd4f1d3d">
+<ul class="org-ul">
+<li><code>singularity exec -B .:/srv --nv --pwd /srv docker://chuyuanliu/heptools:ml bash --init-file /entrypoint.sh</code></li>
+<li><code>voms-proxy-init --rfc --voms cms -valid 192:00</code></li>
+<li>Added synthetic to datasets being evaluated</li>
+<li>Is the TTBar PS data being loaded ?&#x2026; No it was not</li>
+<li>Pinged Chuyuan</li>
+<li>re-training with PSData</li>
+<li>Testing on <b>cmslpc336</b>
+<ul class="org-ul">
+<li>=source .ci-workflows/synthetic-dataset-closure.sh =</li>
+</ul></li>
+<li>Still see high FvT values</li>
+<li>Running the evaluation on the synthetic data &#x2026; works</li>
+<li>Added cut for passFvT5 and 50</li>
+<li>running the data with the FvT cuts</li>
+<li>running on  <b>cmslpc336</b></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org97ceb9e" class="outline-3">
+<h3 id="org97ceb9e"><a href="../Journal/2025/02-February/14-February-2025-Friday.html#ID-3CFA9D40-C3A9-4EDF-8813-743C7177E998">14 February 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org97ceb9e">
+<ul class="org-ul">
+<li>Data finished in <b>152m35.996s</b></li>
+<li>Debug synthetic data &#x2026; Is it needed ?</li>
+<li>Running ttbar &#x2026; bailed.</li>
+<li>Chat AE: can wget the files and merge.
+<ul class="org-ul">
+<li>Download ttbar files locally, scp to LPC, merge</li>
+<li><code>python analysis/tools/merge_coffea_files.py -o output/hist__TT/histAll_TTbar.coffea -f output/hist__TT/hist__TTTo*coffea</code></li>
+</ul></li>
+<li>Made plots comparing background synthetic data&#x2026; FvT way off!</li>
+<li>Make FvT files for synthetic data</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga05a5f1" class="outline-3">
+<h3 id="orga05a5f1"><a href="../Journal/2025/02-February/13-February-2025-Thursday.html#ID-5D19B0E6-7AAC-4275-89FB-DCDD45CC09FF">13 February 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orga05a5f1">
+<ul class="org-ul">
+<li>Retrying on <b>cmslpc317</b> with only the data</li>
+<li>data works!</li>
+<li>[&gt;&gt;] Debug synthetic data &#x2026; Is it needed ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org047a116" class="outline-3">
+<h3 id="org047a116"><a href="../Journal/2025/02-February/12-February-2025-Wednesday.html#ID-628BDF15-4CFA-482F-8613-A6EB7DAABE87">12 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org047a116">
+<ul class="org-ul">
+<li>Trying to train again.. CL fixed the container</li>
+<li>Setup singularity &#x2026; reinstalled (good sign)</li>
+<li><code>&gt; singularity exec -B .:/srv --nv --pwd /srv docker://chuyuanliu/heptools:ml bash --init-file /entrypoint.sh</code></li>
+<li>Now training runs great! 
+<ul class="org-ul">
+<li><code>bash classifier/config/workflows/synthetic/run.sh jda102</code></li>
+</ul></li>
+<li>Done <b>0:05:28*</b>.**570593*</li>
+<li>Now need to run with FvT weights : example in <code>HH4b_example_FvT.yml</code></li>
+<li>Made <code>HH4b_synthetic_closure.yml</code></li>
+<li><code>source synthetic-dataset-closure.sh</code></li>
+<li>Looks like a miss match between files names in json and file paths on eos&#x2026; pinged CL</li>
+<li>Was giving the wrong input datasets file now updated.</li>
+<li>OK working now running on <b>cmslpc317</b></li>
+<li>Crashed&#x2026; .Should run the data/TTbar Separately &#x2026;.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3902822" class="outline-3">
+<h3 id="org3902822"><a href="../Journal/2025/02-February/11-February-2025-Tuesday.html#ID-5AE90786-AB86-4D5E-B02E-8035601EE62B">11 February 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org3902822">
+<ul class="org-ul">
+<li><code>apptainer exec -B .:/srv --nv --pwd /srv docker://chuyuanliu/heptools:ml bash --init-file /entrypoint.sh</code></li>
+<li>Running the fit&#x2026; seeing errors&#x2026; sent mail to CL</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org186c3b9" class="outline-3">
+<h3 id="org186c3b9"><a href="../Journal/2025/02-February/10-February-2025-Monday.html#ID-88381E35-3F86-45BA-8235-FD89692D1785">10 February 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org186c3b9">
+<ul class="org-ul">
+<li>Fit JCM to synthetic data</li>
+<li>Making synthetic data histograms:</li>
+<li><code>time python runner.py -o synthetic_data_RunII_seedXXX.coffea -d synthetic_data  -p analysis/processors/processor_HH4b.py -y UL17 UL18 UL16_preVFP UL16_postVFP -op ${OUTPUT_DIR} -c analysis/metadata/HH4b_run_fastTopReco.yml -m metadata/datasets_HH4b_fourTag.yml</code></li>
+<li>Fitting JCM</li>
+<li><code>python analysis/make_weights.py -o testJCM_Coffea_SyntheticData -c passPreSel -r SB --combine_input_file -i output/histAll.coffea output/synthetic_dataset_analyze_all/synthetic_data_RunII_seedXXX.coffea --data4bName syn_v0 -m plots/metadata/plotsJCMSyntheticData.yml</code></li>
+<li>committed and pushed changes</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgdb9fb2d" class="outline-3">
+<h3 id="orgdb9fb2d"><a href="../Journal/2025/02-February/04-February-2025-Tuesday.html#ID-078DA17A-0F46-4930-BEFA-B92F8E535151">4 February 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgdb9fb2d">
+<p>
+Following CL instructions here: <a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/tree/master/python/classifier#falconrogue">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/tree/master/python/classifier#falconrogue</a>
+</p>
+<ul class="org-ul">
+<li>on rogue01
+<ul class="org-ul">
+<li><code>falcon</code></li>
+<li><code>&gt; ssh rogue01</code></li>
+</ul></li>
+<li><p>
+Seeing Error with grid cert (Tried to use my userkeys and remake them&#x2026; same)
+</p>
+<ul class="org-ul">
+<li>`&gt; voms-proxy-init -voms cms -rfc &#x2013;valid 168:0</li>
+</ul>
+<p>
+Enter GRID pass phrase for this identity:
+Certificate validation error: Signature of a CRL corresponding to this certificates CA is invalid
+User credential is not valid!
+</p></li>
+<li>Works if I dont give the <code>-voms cms</code></li>
+<li>CL says above error only b/c Im outside the container</li>
+<li>container taking a while&#x2026; I didnt hit enter !!</li>
+<li>proxy all good inside the container.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd1616b8" class="outline-3">
+<h3 id="orgd1616b8"><a href="../Journal/2025/02-February/03-February-2025-Monday.html#ID-AB30A0FA-F0DD-4FEF-BEC9-2D1CA920D8E3">3 February 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orgd1616b8">
+<ul class="org-ul">
+<li><a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">Jet DeClustering</a></li>
+<li><code>python runner.py -m metadata/datasets_HH4b.yml -c analysis/metadata/HH4b_classifier_inputs.yml -d synthetic_data -y UL16_preVFP UL16_postVFP UL17 UL18 -op output/ -o classifier_synthetic_data.coffea</code></li>
+<li>Had to set <code>top_reconstruction_override: fast</code></li>
+<li>Looks good&#x2026; rerunning with output to <code>root://cmseos.fnal.gov//store/user/jda102/XX4b/2024_v1/</code></li>
+<li>Need to make inputs for the other data as well&#x2026; Turns out I dont&#x2026; CL has them already</li>
+<li>[&gt;&gt;] Fit JCM to synthetic data</li>
+<li>Copy files to eos
+<ul class="org-ul">
+<li><code>xrdcp python/output/classifier_synthetic_data.coffea root://cmseos.fnal.gov//store/user/jda102/XX4b/2024_v1/</code></li>
+<li><code>xrdcp python/output/classifier_synthetic_data.json root://cmseos.fnal.gov//store/user/jda102/XX4b/2024_v1/</code></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

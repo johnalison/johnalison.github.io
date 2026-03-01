@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 22 August 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 22 August 2024</h1>
+<p>
+Manfred away
+</p>
+<div id="outline-container-orgaec6928" class="outline-2">
+<h2 id="orgaec6928">Action</h2>
+<div class="outline-text-2" id="text-orgaec6928">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Get new carrying trays</li>
+<li>How many preseries modules do they need at FNAL ? 
+<ul class="org-ul">
+<li>Ping zoltan</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Clean lab/change filters soon</li>
+<li class="off"><code>[&#xa0;]</code> UG lab tech ? x 2 ?</li>
+<li class="off"><code>[&#xa0;]</code> Fittings for manual pickup tool</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd894cc2" class="outline-2">
+<h2 id="orgd894cc2">News</h2>
+<div class="outline-text-2" id="text-orgd894cc2">
+<p>
+Jessica back on campus
+Negjma back (unclear how much time) "122" 
+HGC Meeting next week
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6ade294" class="outline-2">
+<h2 id="org6ade294">Jessica</h2>
+<div class="outline-text-2" id="text-org6ade294">
+<ul class="org-ul">
+<li>~15 hexaboards with a lot of dead cells</li>
+<li>Done with module assembly</li>
+<li>Ordered filters</li>
+<li>Will change desiccant in test stand</li>
+<li>Test Stand GUI: Power switch</li>
+<li>OGP pricing: not clear what we need to pay for</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf8a8a76" class="outline-2">
+<h2 id="orgf8a8a76">Alyesha</h2>
+<div class="outline-text-2" id="text-orgf8a8a76">
+<ul class="org-ul">
+<li>Encapsulated 4 modules</li>
+<li>Getting program back and running</li>
+<li>Get some more encapsulant</li>
+<li>Will update program names and documentation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf0f14c1" class="outline-2">
+<h2 id="orgf0f14c1">Andrew</h2>
+<div class="outline-text-2" id="text-orgf0f14c1">
+<ul class="org-ul">
+<li>Not a ton of progress</li>
+<li>Testing after encapsulation: no dead 1/2 chips</li>
+<li>Big picture: We need to understand why we ahve some modules with bad IV</li>
+<li>Modules exchange to TTU</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e4bf35" class="outline-2">
+<h2 id="org5e4bf35">Jonas</h2>
+<div class="outline-text-2" id="text-org5e4bf35">
+<ul class="org-ul">
+<li>Shelving will be finished soon</li>
+<li>need more partsh for shelves</li>
+<li>Will submit camera mount to techspark</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7557c9c" class="outline-2">
+<h2 id="org7557c9c">Manami</h2>
+<div class="outline-text-2" id="text-org7557c9c">
+<ul class="org-ul">
+<li>Encapsulated 3 modules (1 broke wire)</li>
+<li>Done with XML templates for QC data</li>
+<li>Need pipeline to upload to central DB</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org623218c" class="outline-2">
+<h2 id="org623218c">Pritam</h2>
+<div class="outline-text-2" id="text-org623218c">
+<ul class="org-ul">
+<li>Tested 2 modules</li>
+<li>Seeing</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd70b04a" class="outline-2">
+<h2 id="orgd70b04a">Sindhu</h2>
+<div class="outline-text-2" id="text-orgd70b04a">
+<ul class="org-ul">
+<li>DB offline at 2pm: IT to install pyVM</li>
+<li>common git hub</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf0e1047" class="outline-2">
+<h2 id="orgf0e1047">Nedjma</h2>
+<div class="outline-text-2" id="text-orgf0e1047">
+<ul class="org-ul">
+<li>Iterating with UCSB</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org313039a" class="outline-2">
+<h2 id="org313039a">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org3ef23f0" class="outline-2">
+<h2 id="org3ef23f0">Links:</h2>
+<div class="outline-text-2" id="text-org3ef23f0">
+<p>
+<a href="HGC.html#ID-E1G05H78-0D4G-6F40-1H1E-0AH3699877FC">HGC</a>
+<a href="CMU HGC Mac Meeting 15 August 2024.html#ID-7C1B3C56-2C5D-438B-8A3E-235F1A475943">CMU HGC Mac Meeting 15 August 2024</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+<p>
+202408221055</p>
+</div>
+</div>
+</div>
+</body>
+</html>

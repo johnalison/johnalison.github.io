@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Recursive Splitting Types</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Recursive Splitting Types</h1>
+<p>
+Instead of keeping track of all splitting types (see list below) we can define them recursively using the masses to parameterize the clustering history. 
+</p>
+
+<p>
+eg:  
+</p>
+<ul class="org-ul">
+<li>bb: is g-&gt;bb  with mA ~ mB ≈ m1</li>
+<li>bj: b-&gt;bj with mA ~ mB ≈ m1</li>
+<li>jj:  j -&gt; jj with mA ~ mB  ≈ m1</li>
+<li>(bj)b:  is really g-&gt;bb with mA ≈ m2 / mB ~ m1</li>
+</ul>
+
+<div id="outline-container-orgda77764" class="outline-2">
+<h2 id="orgda77764">Actually not sure if this buys much in the end&#x2026;)</h2>
+<div class="outline-text-2" id="text-orgda77764">
+<ul class="org-ul">
+<li>eg how much do z/theta/phi depend on mA ?</li>
+</ul>
+
+<p>
+Better idea is to  <a href="Group Splittings Based on Multiplicity.html#ID-7BA9C230-555F-4741-AB46-48CE03D76D13">Group Splittings Based on Multiplicity</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgbdc5407" class="outline-2">
+<h2 id="orgbdc5407">(Partial) List of splittings</h2>
+<div class="outline-text-2" id="text-orgbdc5407">
+<p>
+bb                            323313.0 
+bj                            268439.0 
+(bj)b                         112957.0 
+jj                             77487.0 
+(bj)j                          34839.0 
+(jj)b                          21616.0 
+(bj)(bj)                       15438.0 
+(jj)j                          12162.0 
+((bj)j)b                       10569.0 
+((jj)b)b                        6168.0 
+(bj)(jj)                        4867.0 
+((bj)j)(bj)                     3967.0 
+4/2                             3015.0 
+((bj)j)j                        2639.0 
+((jj)b)(bj)                     2555.0 
+((jj)j)b                        2002.0 
+3/3                             1880.0 
+((jj)b)j                        1571.0 
+5/1                             1009.0 
+((bj)(jj))b                      989.0 
+4/3                              778.0 
+5/2                              553.0 
+(((bj)j)j)b                      531.0 
+((jj)j)(bj)                      518.0 
+((bj)j)(jj)                      487.0 
+(((jj)j)b)b                      453.0 
+(jj)(jj)                         406.0 
+((jj)j)j                         370.0 
+(((jj)b)j)b                      299.0 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org095f2d1" class="outline-2">
+<h2 id="org095f2d1">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgeb11409" class="outline-2">
+<h2 id="orgeb11409">Links:</h2>
+<div class="outline-text-2" id="text-orgeb11409">
+<p>
+<a href="jetdeclusteringalgorithm-20250504110934.html#ID-81F11099-A998-406F-AEFD-1B626D15ADC9">Jet DeClustering Algorithm</a>
+<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">Jet DeClustering</a>
+</p>
+
+
+<p>
+202408131058
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

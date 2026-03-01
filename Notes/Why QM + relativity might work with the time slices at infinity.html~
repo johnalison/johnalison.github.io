@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Why QM + relativity might work with the time slices at infinity</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Why QM + relativity might work with the time slices at infinity</h1>
+<p>
+QM tells you that if you know  \(\psi(x, t_0)\) on one time slice how to get the wave function at future time. The problem is that different observers will not agree on the starting or ending time slices. The way around this is only allow the past and future time slices at \(\pm \infty\).  To see how this works:
+</p>
+
+<p>
+In general 
+$$
+</p>
+\begin{equation*}
+\begin{bmatrix} x \\ t \end{bmatrix} = 
+\begin{bmatrix}
+\gamma & \beta \gamma  \\
+\beta \gamma & \gamma  \\
+\end{bmatrix}
+\begin{bmatrix} x' \\ t' \end{bmatrix}
+\end{equation*}
+
+<p>
+$$
+The x's and t's will be different in the prime and unprimed frame, 
+except for
+</p>
+
+<p>
+$$
+</p>
+\begin{equation*}
+\begin{bmatrix} \pm\infty \\ \pm\infty \end{bmatrix} = 
+\begin{bmatrix}
+\gamma & \beta \gamma  \\
+\beta \gamma & \gamma  \\
+\end{bmatrix}
+\begin{bmatrix} \pm\infty \\ \pm\infty \end{bmatrix} 
+\end{equation*}
+
+<p>
+$$
+Which all observers will agree on.
+</p>
+
+
+
+<div id="outline-container-org6f4fa9c" class="outline-2">
+<h2 id="org6f4fa9c">Links:</h2>
+<div class="outline-text-2" id="text-org6f4fa9c">
+<p>
+<a href="Physics.html#ID-CB29343E-8349-47A4-8FDE-3C5A8AA896A9">Physics</a>
+<a href="quantum_mechanics-20260222145753.html#ID-9DD55B2B-D890-4142-9FC5-2AE9FC22A347">Quantum Mechanics</a>
+</p>
+
+<p>
+202407091020
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

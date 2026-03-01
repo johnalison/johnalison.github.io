@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Images in Obsidian</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Images in Obsidian</h1>
+
+<div id="outline-container-org8aea46c" class="outline-2">
+<h2 id="org8aea46c">Control the size of pasted image</h2>
+<div class="outline-text-2" id="text-org8aea46c">
+<p>
+Nominal size
+`
+<code>![[Pasted image 20240730120040.png]]</code>
+</p>
+
+<p>
+change width, here set it to 400 pixels (?)
+</p>
+<div class="org-src-container">
+<pre class="src src-md">![[Pasted image 20240730120040.png|400]]
+
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org2dd86bb" class="outline-2">
+<h2 id="org2dd86bb">Can Embed youtube videos</h2>
+<div class="outline-text-2" id="text-org2dd86bb">
+<div class="org-src-container">
+<pre class="src src-md">![](https://www.youtube.com/watch?v=NnTvZWp5Q7o)
+
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-org733c670" class="outline-3">
+<h3 id="org733c670">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org4837def" class="outline-3">
+<h3 id="org4837def">Links:</h3>
+<div class="outline-text-3" id="text-org4837def">
+<p>
+<a href="obsidian.html#ID-4BE2A768-9F7A-4143-8D20-413FBF6217DC">obsidian</a>
+</p>
+
+
+<p>
+202407301517
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

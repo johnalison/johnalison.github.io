@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:45 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>1 March 2025 Saturday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">1 March 2025 Saturday</h1>
+<ul class="org-ul">
+<li>Review Feb</li>
+<li>[&gt;&gt;] Do <a href="../../../Notes/Institutional Review HL-LHC Projections HIG-25-002.html#ID-66E07A39-FC1E-448C-BE5B-32B9A5AC7BED">Institutional Review HL-LHC Projections HIG-25-002</a></li>
+<li>Understand event selection in FvT Training</li>
+</ul>
+
+
+<div id="outline-container-org1fe703d" class="outline-2">
+<h2 id="org1fe703d">Review Feb:</h2>
+<div class="outline-text-2" id="text-org1fe703d">
+<ul class="org-ul">
+<li>[&gt;&gt;] Call Liberty mutual re:tree down</li>
+<li>[&gt;&gt;] Setup for Chance
+<ul class="org-ul">
+<li>[&gt;&gt;] Get him set up with [BROKEN LINK: 50ED0324-B224-47D2-BDBD-70C2C68417CD]</li>
+</ul></li>
+<li>[&gt;&gt;] Work L2 Comments</li>
+<li>[&gt;&gt;] Read for <a href="../../../Notes/ARC TOP-24-006 3 top production.html#ID-C96D3685-CC16-497C-BC6C-D1888C729FE1">ARC TOP-24-006 3 top production</a></li>
+<li>[&gt;&gt;] Do  <a href="../../../Notes/DOE Review Li Zepeng.html#ID-D5EFFFB7-9E60-4E1B-8BE7-84EF3E417D0F">DOE Review Li Zepeng</a></li>
+<li>Close on AccXEff plots with <a href="../../../Notes/Add Cutflow Histograms.html#ID-D5A13532-1D9B-456A-9E0B-2FF8B06C017B">Add Cutflow Histograms</a></li>
+<li>[&gt;&gt;]  Fill <a href="../../../Notes/CAM Turnaround Report.html#ID-5EE61469-FF33-4191-98A8-0664CFDC4975">CAM Turnaround Report</a> by March 6th</li>
+<li>truth HH plots before and after genWeight cleaning</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2e49e3d" class="outline-2">
+<h2 id="org2e49e3d">Pinged Dylan King re:UG work</h2>
+</div>
+
+<div id="outline-container-org7a9389e" class="outline-2">
+<h2 id="org7a9389e">Reading</h2>
+<div class="outline-text-2" id="text-org7a9389e">
+<p>
+Some <a href="../../../Notes/Fly By Night Physics.html#ID-DCF95C4F-636F-4A6E-A128-336BEB8B37D5">Fly By Night Physics</a>
+Some <a href="../../../Notes/ForANewLiberty.html#ID-4076B95C-63FA-4944-AE6D-536365961FC7">For a New Liberty</a>
+Some <a href="../../../Notes/I See Satan Fall Like Lightning.html#ID-00709AC4-2DB5-497F-8232-7684280E0115">I See Satan Fall Like Lightning</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8da22e9" class="outline-2">
+<h2 id="org8da22e9">Finishing on makeAccXEff</h2>
+</div>
+
+<div id="outline-container-org0c018dc" class="outline-2">
+<h2 id="org0c018dc">Did plots with and without genWeight cleaning</h2>
+</div>
+
+<div id="outline-container-orga0ad269" class="outline-2">
+<h2 id="orga0ad269">More reading.</h2>
+</div>
+
+<div id="outline-container-org7b34457" class="outline-2">
+<h2 id="org7b34457">Giant Eagle</h2>
+</div>
+</div>
+</body>
+</html>

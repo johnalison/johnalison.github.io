@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>30 August 2024 Friday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="29-August-2024-Thursday.html">&#8592; Previous</a>
+  <a href="31-August-2024-Saturday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">30 August 2024 Friday</h1>
+
+<div id="outline-container-orgcbf5e7c" class="outline-2">
+<h2 id="orgcbf5e7c">Timeblock</h2>
+<div class="outline-text-2" id="text-orgcbf5e7c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Setup</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">---</td>
+<td class="org-left">---------------</td>
+<td class="org-left">---</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Progress Report</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Progress Report</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">HEP Lunch</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HEP Lunch</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">HEP Lunch</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Stamps Kickoff</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">CMS H-&gt;4b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">JetDeclustering</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">CMU CMS</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">CMU CMS</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Slides</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Slides</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>W:</b> 8 
+<b>DW:</b> 4 
+<b>OT:</b> 3
+ <b><code>~ex~</code></b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1efcdb2" class="outline-2">
+<h2 id="org1efcdb2">The ONE thing:</h2>
+<div class="outline-text-2" id="text-org1efcdb2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Jet Declustering</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org671a788" class="outline-2">
+<h2 id="org671a788">To Do</h2>
+<div class="outline-text-2" id="text-org671a788">
+<ul class="org-ul">
+<li>Ping Eva Contact
+[&gt;] Slides for Wednesday
+[&gt; ] CAM Training
+[&gt;] Read HGC TDR
+[&gt;] Update skimmer CI: Compare cutflow during skim vs later processing vs known values</li>
+<li>clean up mixed data flags
+[&gt;] Update printCutFlow to compare cutflows
+[&gt;] Convert c++ trigger code to python</li>
+<li>Sign tonys paper</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0161b83" class="outline-2">
+<h2 id="org0161b83">Log</h2>
+<div class="outline-text-2" id="text-org0161b83">
+<p>
+Up at 7
+</p>
+
+<p>
+M&amp;T to school.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1dd8ef2" class="outline-2">
+<h2 id="org1dd8ef2"><a href="../../../Notes/jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></h2>
+<div class="outline-text-2" id="text-org1dd8ef2">
+<ul class="org-ul">
+<li>See daily logs above</li>
+</ul>
+
+<p>
+<a href="../../../Notes/ProgressReport 30 August 2024.html#ID-16A4A2E1-FA02-4281-8564-983CD1F018AA">ProgressReport 30 August 2024</a>
+</p>
+
+<p>
+Sent Eva contact an email
+</p>
+
+<p>
+Some work on JetDeClustering slides
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge7a82b7" class="outline-2">
+<h2 id="orge7a82b7">Hep Lunch</h2>
+</div>
+
+<div id="outline-container-org47cccd4" class="outline-2">
+<h2 id="org47cccd4">Stamps Kick off</h2>
+</div>
+
+<div id="outline-container-org6a9dddc" class="outline-2">
+<h2 id="org6a9dddc"><a href="../../../Notes/CMU 4b Chats.html#ID-798D0A9C-3BCF-4B3E-AE61-54983415913A">CMU 4b Chats</a></h2>
+<div class="outline-text-2" id="text-org6a9dddc">
+<ul class="org-ul">
+<li>See daily's above</li>
+</ul>
+
+<p>
+<a href="../../../Notes/CMU Round Table 30 August 2024.html#ID-0F0C07B1-70D8-431B-B013-0FD212863D06">CMU Round Table 30 August 2024</a>
+</p>
+
+<p>
+more mixed&#x2026;cleaning up
+</p>
+
+<p>
+Home with M&amp;T, barely missed the rain.
+</p>
+
+<p>
+Adding synthetic data CI
+</p>
+
+<p>
+[Second Brain tour on MacOS](<a href="https://www.youtube.com/@mischavandenburg">https://www.youtube.com/@mischavandenburg</a>)
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 16 January 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 16 January 2026</h1>
+<p>
+It seems like its been a short month, with the Holidays and kids being
+home, but I actually got a decent amount done. All my habits have been
+good. I want to work more on meditation, glimpses,  and sleeping on
+my back.
+</p>
+
+<p>
+Reading and writting have been strong. Im doing a run of English
+history: the shakespeare &#x2013; the Henriad &#x2013; and a good English history
+book. I want to start working through Karpathies tutorials and putting
+some more time into substack. For substack, I am thinking about
+starting a couple of series to put existing ideas/slides/lectures into
+posts. 
+</p>
+
+<p>
+I have been playing a lot of good hoops. On a sad note, Greg has left,
+likely for good; I will miss him. BJJ was solid before I strained my
+neck over break. I will take a couple weeks off and try to find a good
+stretching protocol, maybe some intro to yogo videos. Lifting and zone
+2 has filled in some gaps of BJJ and over break.
+</p>
+
+<p>
+We are starting to really get settled in the new house. The pictures
+are up, got an inspection (all clear), and have had a number of
+mini-house warmings. The fireplace will get setup soon and then we
+should be good to go.
+</p>
+
+<p>
+Most of the work has been getting the Airbnb on shell. This has been a
+big sucess. Perfection is not requried! We moved the big TV, got nice
+pictures taken (from Sean), posted the listing, sorted out pricing,
+and have had our first guests. We are getting into the rhythm of
+turning the house, it actually hasnt been bad at all so far and we
+have made some strategic costco runs. We have gotten some nice
+feedback and have been using that to improve; we got some bedside
+tables and are working on a better setup of the basement. So far so
+good. We have gotten all 5 stars! No we just need to let time work.
+</p>
+
+<p>
+On the 4b side, the paper has gone into CWR. This is going to be ugly
+as the paper is barely viable. From my side, I have finished migrating
+hemisphere mixing to python. I pushed through the Run 2 to the end and
+the results look good. The migration was much easier than I feared.
+Its nice to now have everything in python. I am now working on running
+the mixing in '22 and '23. This will require getting the ttbar and
+trigger SF implemented and doing DvT fits.
+</p>
+
+<p>
+From the HGC side we are back to making modules. This has been slow
+going, and we have fried some 1/2 chips. The big action item now is
+hiring another tech.
+</p>
+</div>
+</body>
+</html>

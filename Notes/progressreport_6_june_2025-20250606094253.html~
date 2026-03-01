@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 6 June 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 6 June 2025</h1>
+<p>
+Once again, another slow fortnight. I've done a lot of work getting
+processes dialed in. In Emacs, I have now sorted out buffers, Ediff,
+world clock, and have a new theme. I think I'm in a good spot; time to
+get back to work. My habits have all been good, but I need more
+meditation. I've accomplished a lot around the house in the last two
+weeks. I reinstalled the awning and set up a new umbrella for the
+deck. This is now in a good spot.
+</p>
+
+<p>
+On the 4b side, we had the pre-approval. This went well, and we are
+proceeding to unblinding. Sindhu is starting to do more, and Chance
+and Lei are ramping up. I've gotten Alejandro's code to run on Rogue;
+it's seamless. The undergraduate student fell through; easy come, easy
+go.
+</p>
+
+<p>
+I'm in a good position with the synthetic datasets. The big question
+is: what do I want to do next? I think I should give another talk in
+Hbb about the Run-3 synthetic data. I need to finish running the
+N-seeds; I've already done 2 out of 16. After that, two interesting
+next steps are HbbReclustering and migrating the hemisphere mixing.
+I've started to set up the studies for the HbbReclustering. This might
+be a good project to hand off to a student&#x2026; maybe Christian? I think
+the mixing is something I want to handle. Perhaps I should try setting
+this up with Cursor?
+</p>
+
+<p>
+On the HGC side, Jacques has started, and the final tooling is being
+checked out. However, the base plates are delayed, so the production
+in the near term will likely be v3b on CuT. I did the directors'
+review at FNAL. I executed well. It's not clear how useful the review
+was; it was probably more for management, but the social aspect was
+well worth it for me. I saw Scott while I was there. He seems to be
+doing okay, but he appeared a little emotionally fragile&#x2026;
+</p>
+</div>
+</body>
+</html>

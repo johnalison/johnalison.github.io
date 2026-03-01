@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Run3 Trigger Scale Factors</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Run3 Trigger Scale Factors</h1>
+
+
+
+<div id="outline-container-orgccb728b" class="outline-2">
+<h2 id="orgccb728b">AE Introduction</h2>
+<div class="outline-text-2" id="text-orgccb728b">
+<p>
+ok, first you need to modify the config file from here: <a href="https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/analysis/metadata/trigger_weights.yml?ref_type=heads#L9-11">https://gitlab.cern.ch/cms-cmu/coffea4bees/-/blob/master/analysis/metadata/trigger_weights.yml?ref_type=heads#L9-11</a>
+</p>
+<ul class="org-ul">
+<li><code>use_vectorized</code> is the new trigger weights (vectorized because the old code was still doing loops)</li>
+<li><code>tagger</code> is the tagger we use in Run3. (Marina has 3 types of taggers, so I just copied them)</li>
+<li><code>make_classifier_input</code> is where you store the new friendtrees.</li>
+</ul>
+
+<p>
+then you will need to run something like this:
+</p>
+
+<p>
+<code>./run_container python runner.py -p coffea4bees/analysis/processors/processor_trigger_weights.py -d TTToSemiLeptonic -y 2022_EE -m coffea4bees/metadata/datasets_HH4b_Run3/ -c coffea4bees/analysis/metadata/trigger_weights.yml -op output/ -o test.coffea</code>
+</p>
+
+<p>
+This code has not been validated, so it could be that there are some bugs. I just visually look at the weights and see that they are between 0-1. 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org887ccec" class="outline-2">
+<h2 id="org887ccec">Logs</h2>
+<div class="outline-text-2" id="text-org887ccec">
+</div>
+<div id="outline-container-org06957d4" class="outline-3">
+<h3 id="org06957d4"><a href="../Journal/2026/02-February/12-February-2026-Thursday.html#ID-0067DFEA-B38F-414A-8DE0-DCA1D18F3AD0">12 February 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org06957d4">
+<ul class="org-ul">
+<li>3b looks OK
+<code>python -i coffea4bees/plots/iPlot.py --combine  coffea4bees/Run3TriggerSFs/trigWeight_TTbar_wHLT.coffea coffea4bees/Run3TriggerSFs/trigWeight_data.coffea -m coffea4bees/plots/metadata/plotsAll_TTCR_3b.yml</code></li>
+</ul>
+<pre class="example">
+plot("selJets_ll.n",region=sum,yscale="linear",cut="passElMu",norm=0,rebin=1,doratio=1,year="Run3")
+</pre>
+
+<div id="org340fc93" class="figure">
+<p><img src="Logs/2026-02-12_14-10-27_screenshot.png" alt="2026-02-12_14-10-27_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>4b looks off
+<code>python -i coffea4bees/plots/iPlot.py --combine  coffea4bees/Run3TriggerSFs/trigWeight_TTbar_wHLT.coffea coffea4bees/Run3TriggerSFs/trigWeight_data.coffea -m coffea4bees/plots/metadata/plotsAll_TTCR_4b.yml</code></li>
+</ul>
+
+<div id="org3a41e9f" class="figure">
+<p><img src="Logs/2026-02-12_14-09-42_screenshot.png" alt="2026-02-12_14-09-42_screenshot.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>OK will now try to fit JCM with floating 4b TT to see if this helps at all&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7561bc8" class="outline-3">
+<h3 id="org7561bc8"><a href="run3_hemisphere_mixing-20260109085909.html#ID-EDCDBF0F-ABF8-4A6B-8F61-C6CFB92D0078">11 February 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org7561bc8">
+<ul class="org-ul">
+<li>Adding threeTag and fourTag plots to diplepton hists</li>
+<li>Changed selection to be &gt;2 btags</li>
+<li>Test job not running&#x2026; taking forever to preprocess files</li>
+</ul>
+<p>
+-<code>/store/user/smurthy/XX4b/2025_Run3_skims/TTToHadronic_2023_BPix/</code>
+</p>
+<ul class="org-ul">
+<li>When I <code>eos ls</code> I see:</li>
+</ul>
+<p>
+<code>error: MGM root://cmseos.fnal.gov not online/reachable</code>
+</p>
+<ul class="org-ul">
+<li>Trying again later&#x2026; more files can be accessed but still halting&#x2026; now running!</li>
+<li>Adding the three and four tag selection to dilepton plots</li>
+<li>Running on all TTMC&#x2026; finished</li>
+<li>running on all Data&#x2026; finished!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd936867" class="outline-3">
+<h3 id="orgd936867"><a href="../Journal/2026/01-January/31-January-2026-Saturday.html#ID-ECBC0500-689A-4CEA-AC57-6EDEAAD9F8F7">31 January 2026 Saturday</a></h3>
+<div class="outline-text-3" id="text-orgd936867">
+<ul class="org-ul">
+<li>Running all the TTbar samples &#x2026; Had to go to 8GB  of condor memory</li>
+<li><code>116,895 events/s total (156244645/1336.629465341568)</code></li>
+<li>Now have ttbar nJets&#x2026; on to fitting JCM</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga1afb09" class="outline-3">
+<h3 id="orga1afb09"><a href="../Journal/2026/01-January/30-January-2026-Friday.html#ID-921BB7D4-BC29-4B6A-B43A-3090CF239088">30 January 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-orga1afb09">
+<ul class="org-ul">
+<li>Looks like the ttbar files are missing the xs</li>
+<li class="on"><code>[X]</code> Eta cut in ht defitinos 2.4 -&gt; 2.5</li>
+<li>Adding xs from Marina's AN
+<a href="https://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2023/151">https://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2023/151</a></li>
+<li>Re-Running 2L2Nu with xs&#x2026; norm is much better !</li>
+<li>Updating friend trees &#x2026; fixed btagging and jet eta cut</li>
+<li>Running 2L2Nu on condor outputing to eos</li>
+<li class="on"><code>[X]</code> Add lepton plots</li>
+<li class="on"><code>[X]</code> Add seljet plots</li>
+<li class="on"><code>[X]</code> Add Mll</li>
+<li class="on"><code>[X]</code> Add emu selection</li>
+<li class="on"><code>[X]</code> Add MeT</li>
+<li><p>
+Remade hists data and TTbar
+</p>
+<p>
+    mumu:
+    <img src="Logs/2026-01-30_22-22-24_screenshot.png" alt="2026-01-30_22-22-24_screenshot.png" />
+emu:
+</p>
+
+<div id="orgbccc1f6" class="figure">
+<p><img src="Logs/2026-01-30_22-22-50_screenshot.png" alt="2026-01-30_22-22-50_screenshot.png" />
+</p>
+</div></li>
+<li>Probably good enough to move on!</li>
+<li>Adding quarkonina and Z vetos to mumu</li>
+<li>Pushing  &#x2026; Fixing the CI&#x2026; updating the cutflow&#x2026;</li>
+<li>Make friend trees for SemiLeptonic and Hadronic</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org13b12f6" class="outline-3">
+<h3 id="org13b12f6"><a href="../Journal/2026/01-January/29-January-2026-Thursday.html#ID-B2636073-0B7A-4C21-A3AD-94AF2AF767D8">29 January 2026 Thursday</a></h3>
+<div class="outline-text-3" id="text-org13b12f6">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Check cutflows of TTbar skims
+<ul class="org-ul">
+<li>two tag data is in the 2L2Nu skims.. about half the total dataset &#x2026;</li>
+</ul></li>
+<li>Running on condor with out trig weights</li>
+<li><code>python coffea4bees/analysis/printCutFlow.py -i coffea4bees/Run3TriggerSFs/test_trigWeight_TTTo2L2Nu.coffea -p TTTo2L2Nu -e 2023_preBPixMC</code></li>
+<li class="on"><code>[X]</code> Turning on the dilepton selection</li>
+<li>Fix to get the ttbar plotting region working
+plot("tagJets<sub>dilepttbar.eta</sub>",region=sum,yscale="log",cut="passDilepTtbar",norm=0,rebin=1,doratio=0,year="Run3",process="TTbar")</li>
+<li class="on"><code>[X]</code> Add plots relevant for trigger turn ons</li>
+<li>Pushed</li>
+<li>Running w/Trigger weight TTTo2L2Nu condor
+<code>14,424 events/s total (10153441/703.9495573043823)</code></li>
+<li>Running w/o Trigger weight &#x2026;
+<code>17,281 events/s total (10153441/587.5605149269104)</code></li>
+<li>Ran data:
+<code>55,313 events/s total (69615572/1258.5722591876984)</code></li>
+<li>Looks like the ttbar weights are way off !  ..</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1890f30" class="outline-3">
+<h3 id="org1890f30"><a href="../Journal/2026/01-January/28-January-2026-Wednesday.html#ID-322958A4-6891-4B82-9E97-DC39D2457AC8">28 January 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org1890f30">
+<ul class="org-ul">
+<li>Making the trigger weight with <code>PNet</code></li>
+<li>Running all on condor&#x2026; outputing to eos&#x2026; Condor fails.. .running locally &#x2026; works
+<ul class="org-ul">
+<li>I think the condor job fails because of memory (only ran with 2GBs&#x2026;)</li>
+</ul></li>
+<li>Testing the trigger weights
+<code>./run_container source coffea4bees/scripts/weights-trigger-analysis-Run3.sh</code></li>
+<li>Running all the TTMC with trigger weights  &#x2026; condor taking forever&#x2026; too small chunk size.. now 100k</li>
+<li>Condor still fails with 100k.. THink its b.c memeory 2GB -&gt; 4GB rerunning &#x2026; still problems now 6GB</li>
+</ul>
+
+<p>
+<b>Plan:</b>
+</p>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> TTTo2L2Nu without trig SF</li>
+<li class="on"><code>[X]</code> TTTo2L2Nu w/trig SF</li>
+<li class="on"><code>[X]</code> Data 3tag ?</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgdb45e84" class="outline-3">
+<h3 id="orgdb45e84"><a href="../Journal/2026/01-January/27-January-2026-Tuesday.html#ID-FBCF61BF-E433-4024-88E3-E787F8B4E599">27 January 2026 Tuesday</a></h3>
+<div class="outline-text-3" id="text-orgdb45e84">
+<ul class="org-ul">
+<li>Starting</li>
+<li>First attempt &#x2026; TTTo2L2Nu 2022 test job .. failed</li>
+<li>Pinged AE&#x2026; Now fixed</li>
+<li>Running all years, no test</li>
+<li>Finshed&#x2026; Need to put on eos</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Tasks.html">Tasks</a></li>
+  <li><a href="january_2026-20260101111116.html">January 2026</a></li>
+  <li><a href="../Journal/2026/02-February/12-February-2026-Thursday.html">12 February 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/02-February/11-February-2026-Wednesday.html">11 February 2026 Wednesday</a></li>
+  <li><a href="../Journal/2026/01-January/31-January-2026-Saturday.html">31 January 2026 Saturday</a></li>
+  <li><a href="../Journal/2026/01-January/30-January-2026-Friday.html">30 January 2026 Friday</a></li>
+  <li><a href="../Journal/2026/01-January/29-January-2026-Thursday.html">29 January 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/01-January/28-January-2026-Wednesday.html">28 January 2026 Wednesday</a></li>
+  <li><a href="../Journal/2026/01-January/27-January-2026-Tuesday.html">27 January 2026 Tuesday</a></li>
+</ul>
+</div>
+</body>
+</html>

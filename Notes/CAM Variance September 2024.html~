@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAM Variance September 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CAM Variance September 2024</h1>
+<p>
+Three Variances:
+</p>
+<ul class="org-ul">
+<li>402.04.04.02 CE - Module Factories</li>
+<li>402.04.04.04 CE - Standard Module Assembly Site 2</li>
+<li>402.04.04.05 CE - Module Assembly at UCSB</li>
+</ul>
+
+<div id="outline-container-org4a11bac" class="outline-2">
+<h2 id="org4a11bac">402.04.04.04 CE - Standard Module Assembly Site 2</h2>
+<div class="outline-text-2" id="text-org4a11bac">
+<p>
+There is a cumulative schedule variance of -$240k in the cost account 
+402.04.04.04 CE - Standard Module Assembly at CMU.  The variance has two pieces:
+</p>
+<ul class="org-ul">
+<li>1) -220k Variance from the Assembly of the 1st 240 modules.</li>
+<li>2) -20k Variance from Updating procedures based on prototyping experience</li>
+</ul>
+
+<p>
+This variance is expected due to missing input parts: hexaboards and baseplates. 
+</p>
+
+<p>
+It is expected that CMU will start the assembly of modules once parts will become available.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae6f2b3" class="outline-2">
+<h2 id="orgae6f2b3">Impact</h2>
+<div class="outline-text-2" id="text-orgae6f2b3">
+<p>
+The activities contributing to the cumulative SV is due to upstream delay of input parts and will be completed later than scheduled.  When input parts come available the value will be earned and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1e7de05" class="outline-2">
+<h2 id="org1e7de05">402.04.04.05 CE - Module Assembly at UCSB</h2>
+<div class="outline-text-2" id="text-org1e7de05">
+<p>
+There is a cumulative schedule variance of -$395k in the cost account 
+402.04.04.05 CE - Module Assembly at UCSB.  The variance has two pieces:
+</p>
+<ol class="org-ol">
+<li>-318k Assemble and test full-size equivalent odd-sized modules 1-16%</li>
+<li>- 77k Assembly of odd-sized preseries modules</li>
+</ol>
+
+<p>
+This variance is expected due to missing input parts: hexaboards and baseplates. 
+</p>
+
+<p>
+It is expected that UCSB will start the assembly of modules once parts will become available.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org52b2cb5" class="outline-2">
+<h2 id="org52b2cb5">Impact</h2>
+<div class="outline-text-2" id="text-org52b2cb5">
+<p>
+The activities contributing to the cumulative SV is due to upstream delay of input parts and will be completed later than scheduled.  When input parts come available the value will be earned and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7ff81bb" class="outline-2">
+<h2 id="org7ff81bb">402.04.04.02 CE - Module Factories</h2>
+<div class="outline-text-2" id="text-org7ff81bb">
+<p>
+There is a cumulative schedule variance of -$372k in the cost account 402.04.04.02 CE - Module Factories.  This variance is for delivery of the chiller, thermal testing units, and teststand electronics for 3 assembly centers and labor associated with setup and commissioning.
+</p>
+
+<p>
+This is a result of delays in the chiller design and delivery testing electronics. The current estimate is that the process in a few weeks to one of the CMU, TTU and UCSB will each receive an electronics test stand for the MAC rampup.  The chiller will likely be available in a few months. 
+</p>
+</div>
+
+
+<div id="outline-container-org5478901" class="outline-3">
+<h3 id="org5478901">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgb7da21a" class="outline-3">
+<h3 id="orgb7da21a">Links:</h3>
+<div class="outline-text-3" id="text-orgb7da21a">
+<p>
+<a href="CAM Variance August 2024.html#ID-AB7F372F-052A-4343-9CD8-32CAD5C27806">CAM Variance August 2024</a>
+<a href="CAM Variance.html#ID-F7D4E581-3414-4ADD-B26E-C7D341812ED7">CAM Variance</a>
+</p>
+
+<p>
+202409131924
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

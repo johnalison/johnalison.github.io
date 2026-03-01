@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PSC  for ML</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">PSC  for ML</h1>
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<p>
+Testing on PSC:
+module load anaconda3
+</p>
+
+<p>
+Can then create a new conda enviroment using the provided template as above:
+conda env create &#x2013;file pytorch.yml
+</p>
+
+<p>
+To activate the environment,
+</p>
+
+<p>
+conda activate pytorch
+</p>
+
+<p>
+(Note: I had to add the following to my .bashrc)
+</p>
+
+<p>
+. /opt/packages/anaconda/anaconda3-5.2.0/etc/profile.d/conda.sh
+</p>
+
+<p>
+To transfer data need to use the data.bridges path
+</p>
+
+<p>
+&gt; scp test<sub>jets</sub><sub>BJetsAll.hdf5.tgz</sub> alison@data.bridges.psc.edu:/pylon5/ph5fpep/alison/BTaggingML/QCD<sub>Glu</sub><sub>Quark</sub>/IMG
+</p>
+
+<p>
+To run an interactive node (eg: used to convert to Parquet)
+&gt; interact -p GPU-shared &#x2013;gres=gpu:k80:1 -N 1 -t 30:00
+&gt; interact -p GPU-small &#x2013;gres=gpu:p100:1 -N 1 -t 30:00
+&gt; interact -p GPU &#x2013;gres=gpu:k80:4 -N 1 -t 30:00
+&gt; interact -p GPU-AI &#x2013;gres=gpu:volta16:1  (Running out of memory)
+</p>
+
+<p>
+For testing training: 
+The GPU-shared pool looks like it does not have enough memory per job (7GB/node) to deal with what we need.  So we have to use either GPU-SMALL or the regular GPU nodes.
+</p>
+
+<p>
+&gt; time py jet<sub>trainer</sub><sub>bjets.py</sub> -c 0 -e 1 
+</p>
+
+<p>
+Wall time comparisons:  4 detector layers (Muons/Tracks/ECAL/HCAL) / 1-epoch / 3 blocks
+K80:       “Train time:776.08s in 11595 steps”  Wall Time: 15m39.123s
+T1080:  “Train time:729.10s in 11595 steps”  Wall Time: 13m37.764s
+P100  :  “Train time:674.21s in 11595 steps”  Wall Time: 14m14.386s
+v100 :    “Train time:520.92s in 11595 steps”  Wall Time: 9m44.620s
+</p>
+
+
+
+<p>
+Running on with singularity 
+&gt; interact -p GPU-AI &#x2013;gres=gpu:volta16:1
+&gt; cd /pylon5/ph5fpep/alison/BTaggingML/QCD<sub>Glu</sub><sub>Quark</sub>
+&gt; module load singularity/3.0.0
+&gt; singularity shell &#x2013;nv /pylon5/containers/ngc/pytorch/18.10-py3.simg
+&gt; . /opt/conda/etc/profile.d/conda.sh
+conda activate pytorch
+python jet<sub>trainer</sub><sub>bjets.py</sub> -c 0 -e 1 
+</p>
+
+<p>
+On GPU AI with no singularity shell:
+interact -p GPU-AI &#x2013;gres=gpu:volta16:4
+module load AI/anaconda3-5.1.0<sub>gpu</sub>
+cd Pylon/Allison/
+source activate pytorch
+time python jet<sub>trainer</sub><sub>bjets.py</sub> -c 0 -e 1
+</p>
+</div>
+</body>
+</html>

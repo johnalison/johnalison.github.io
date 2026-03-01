@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Classifier Studies</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Classifier Studies</h1>
+
+
+<div id="outline-container-org222e8cc" class="outline-2">
+<h2 id="org222e8cc">Big Picture</h2>
+<div class="outline-text-2" id="text-org222e8cc">
+<p>
+Run2 mixed Classifier tests <a href="Classifier Studies.html#ID-C519450B-3D4C-47BA-8096-4B4B9D1E15E0">Classifier Studies</a>
+</p>
+<ul class="org-ul">
+<li>1) Does JCM matter? / 2) Does ttbar matter ? / 3) Gain from ZZ 4) Gain from ZH 5) Gain  from low SvB SR events ?</li>
+<li>Can test 1) 3 4 5 from mixed data old classifier. Need new one for 2</li>
+</ul>
+<ul class="org-ul">
+<li>Run3: Test 4v2 vs 4v3 with synthetic data compare to 3v2 (systematics)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org06e5ce4" class="outline-2">
+<h2 id="org06e5ce4">Does JCM matter ?</h2>
+<div class="outline-text-2" id="text-org06e5ce4">
+<p>
+CL checking&#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf099b08" class="outline-2">
+<h2 id="orgf099b08">Gain from ZZ Region ?</h2>
+<div class="outline-text-2" id="text-orgf099b08">
+<p>
+Best to just redefine the SB when training. 
+</p>
+
+<p>
+SB
+</p>
+
+<p>
+Resubmit jobs with 
+`grep -L Done slurm-v0<sub>offset</sub>*.out  | awk '{gsub("slurm-", "jobs_"); gsub("out","sh"); cmd = "sbatch " $0; print cmd; system(cmd)}'
+</p>
+
+<p>
+DONE ! Minimal gain
+</p>
+</div>
+</div>
+
+<div id="outline-container-org91cd6dd" class="outline-2">
+<h2 id="org91cd6dd">Gain from both ZZ and ZH Regions ?</h2>
+<div class="outline-text-2" id="text-org91cd6dd">
+<p>
+DONE ! Minimal Gain
+</p>
+</div>
+</div>
+
+<div id="outline-container-org126eb51" class="outline-2">
+<h2 id="org126eb51">Gain from low SvB SR events ?</h2>
+<div class="outline-text-2" id="text-org126eb51">
+<p>
+(Not enough PSC bucks to check&#x2026;)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc3a4477" class="outline-2">
+<h2 id="orgc3a4477">Daily Logs</h2>
+<div class="outline-text-2" id="text-orgc3a4477">
+<p>
+<a href="../Journal/2024/10-October/14-October-2024-Monday.html#ID-E72A078C-3B16-4CF6-9BCE-36817EA98267">14 October 2024 Monday</a>
+</p>
+<ul class="org-ul">
+<li>More <a href="Setting up Falcon.html#ID-8EDAF592-E453-448F-A0E2-1792F31D33B8">Setting up Falcon</a></li>
+<li>test job &#x2026; very slow on rogue01&#x2026;  when doing all offsets together&#x2026;</li>
+<li>Try one offset at a time &#x2026; MUCH faster (?)</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/16-October-2024-Wednesday.html#ID-C4680965-890B-4C71-9651-10B74838454F">16 October 2024 Wednesday</a>
+</p>
+<ul class="org-ul">
+<li>Setting up <a href="PSC Bridges.html#ID-15702540-D811-4C3B-8FA8-3353D4CBF1EB">PSC Bridges</a></li>
+<li>Submitting SB + ZZSR study</li>
+<li>Submitted all ZZSR fits</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/17-October-2024-Thursday.html#ID-5DD31BAC-4A29-4FBC-9057-58F9B7FD3BC3">17 October 2024 Thursday</a>
+</p>
+<ul class="org-ul">
+<li>ZZSR jobs finished&#x2026;</li>
+<li>looks like I ran out of quota on /jet/home/alison
+<ul class="org-ul">
+<li><code>my_quotas</code> &#x2026; saved in <a href="PSC Bridges.html#ID-15702540-D811-4C3B-8FA8-3353D4CBF1EB">PSC Bridges</a></li>
+</ul></li>
+<li>Need to move submission output to /project</li>
+<li>moving files to filesystems with more space</li>
+<li>Resubmitted failed SB | ZZSR jobs</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/18-October-2024-Friday.html#ID-5844021E-E924-4183-9E82-02C09DAD0B7F">18 October 2024 Friday</a>
+</p>
+<ul class="org-ul">
+<li>Having problems greping bridges</li>
+<li>Checked that the output .pkl files are all there as expected</li>
+<li>sent mail&#x2026; Bridges2 still having problems</li>
+<li>Submitted jobs to write out FvT</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/21-October-2024-Monday.html#ID-80A88A4C-D89F-43E7-87F9-A371229A5C7D">21 October 2024 Monday</a>
+</p>
+<ul class="org-ul">
+<li>Looks like Bridges OS is back</li>
+<li>need to check failed jobs "Done" not enough</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/22-October-2024-Tuesday.html#ID-966D5929-A3FF-424C-BE21-ED9BD5BBE3D2">22 October 2024 Tuesday</a>
+</p>
+<ul class="org-ul">
+<li>resubmitted &#x2026; seeing cuda errors</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/23-October-2024-Wednesday.html#ID-FC1FC587-248A-40FF-BE2F-45313D43916F">23 October 2024 Wednesday</a>
+</p>
+<ul class="org-ul">
+<li>setting up master</li>
+<li>submit jobs to average over the kFolds</li>
+<li>copied to LPC (with <code>python/analysis/copy_from_PSC.py</code>)</li>
+<li>made all input hists</li>
+<li>did the conversions</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/24-October-2024-Thursday.html#ID-B0055121-3794-4CA5-ACA5-C37545CCDF3D">24 October 2024 Thursday</a>
+</p>
+<ul class="org-ul">
+<li>Cant run runTwoStageClosure &#x2026;</li>
+<li>Fixed with new combine container</li>
+<li>Running the fits&#x2026; seem sensible</li>
+<li>Starting FvT fits with ZZ and ZHSR in the SB</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/25-October-2024-Friday.html#ID-A500C044-C3A5-4788-BB8C-A75F489309D3">25 October 2024 Friday</a>
+</p>
+<ul class="org-ul">
+<li>Check files&#x2026;. need to Rename offset0 files</li>
+<li>Fixed ZH naming &#x2026; submitted offsets 1 and 2</li>
+<li>renames bad offset0 files</li>
+<li>Resubmitted failed jobs</li>
+<li>Start looking at ZZinSB vs SB results</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/26-October-2024-Saturday.html#ID-14AA9644-01E0-4594-8A7C-CF55366C8668">26 October 2024 Saturday</a>
+</p>
+<ul class="org-ul">
+<li>checking ZH jobs.. resubmit a few that failed.</li>
+<li>writting out ZZ and ZH in SR files</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/10-October/28-October-2024-Monday.html#ID-C56AB695-9C9E-4612-9B21-30B429874EA8">28 October 2024 Monday</a>
+</p>
+<ul class="org-ul">
+<li>Copying ZZ and ZH files to LPC</li>
+<li>needed to update <code>study_name</code> in combined FvT script&#x2026; rerunning</li>
+<li>Recopying</li>
+</ul>
+</div>
+<div id="outline-container-orged82e98" class="outline-3">
+<h3 id="orged82e98">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org32da864" class="outline-3">
+<h3 id="org32da864">Links:</h3>
+<div class="outline-text-3" id="text-org32da864">
+<p>
+202410121123
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="fbc2_meetings-20250508090616.html">FBC2 Meetings</a></li>
+  <li><a href="ProgressReport 25 October 2024.html">ProgressReport 25 October 2024</a></li>
+  <li><a href="Classifier Studies.html">Classifier Studies</a></li>
+  <li><a href="../Journal/2024/October 2024.html">October 2024</a></li>
+  <li><a href="../Journal/2024/10-October/30-October-2024-Wednesday.html">30 October 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/10-October/28-October-2024-Monday.html">28 October 2024 Monday</a></li>
+  <li><a href="../Journal/2024/10-October/27-October-2024-Sunday.html">27 October 2024 Sunday</a></li>
+  <li><a href="../Journal/2024/10-October/26-October-2024-Saturday.html">26 October 2024 Saturday</a></li>
+  <li><a href="../Journal/2024/10-October/25-October-2024-Friday.html">25 October 2024 Friday</a></li>
+  <li><a href="../Journal/2024/10-October/24-October-2024-Thursday.html">24 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/23-October-2024-Wednesday.html">23 October 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/10-October/22-October-2024-Tuesday.html">22 October 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/10-October/21-October-2024-Monday.html">21 October 2024 Monday</a></li>
+  <li><a href="../Journal/2024/10-October/18-October-2024-Friday.html">18 October 2024 Friday</a></li>
+  <li><a href="../Journal/2024/10-October/17-October-2024-Thursday.html">17 October 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/10-October/16-October-2024-Wednesday.html">16 October 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/10-October/15-October-2024-Tuesday.html">15 October 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/10-October/14-October-2024-Monday.html">14 October 2024 Monday</a></li>
+  <li><a href="../Journal/2024/10-October/12-October-2024-Saturday.html">12 October 2024 Saturday</a></li>
+  <li><a href="../Journal/2024/10-October/11-October-2024-Friday.html">11 October 2024 Friday</a></li>
+</ul>
+</div>
+</body>
+</html>

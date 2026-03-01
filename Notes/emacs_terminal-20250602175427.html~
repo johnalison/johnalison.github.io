@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs Terminal</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Emacs Terminal</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Keybinding</th>
+<th scope="col" class="org-left">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">C-c C-j</td>
+<td class="org-left">Switch from character mode to line mode</td>
+</tr>
+
+<tr>
+<td class="org-left">C-c C-k</td>
+<td class="org-left">Switch from line mode back to character mode</td>
+</tr>
+</tbody>
+</table>
+
+
+<ul class="org-ul">
+<li>How to switch input modes:</li>
+</ul>
+
+
+<div id="outline-container-orgdd57513" class="outline-2">
+<h2 id="orgdd57513">Notes:</h2>
+<div class="outline-text-2" id="text-orgdd57513">
+<p>
+<b>Character mode</b> (the default): Keys are sent directly to the terminal program running inside term mode. You interact with the shell/program as if you were in a regular terminal.
+<b>Line mode</b>: Keys are interpreted by Emacs first, so you can use normal Emacs editing commands.
+To switch between modes:
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

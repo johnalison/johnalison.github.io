@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WhatAreNormalizingFlows</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">WhatAreNormalizingFlows</h1>
+<p>
+Title: What are Normalizing Flows?
+Sources: <a href="https://www.youtube.com/watch?v=i7LjDvsLWCg">https://www.youtube.com/watch?v=i7LjDvsLWCg</a>
+</p>
+
+<ul class="org-ul">
+<li>Bi-jecttion from known sample (Usually Gaussian) to complicated thing your trying to model.</li>
+
+<li>Bi-jection is a composition of many other bijections (each of which is invertable)</li>
+
+<li>Trick is setting up a bijections that is by construction invertable and has many pramaters that can be learned.</li>
+
+<li><p>
+Done with Coupling Layers.
+split data at that layer into two contiguous regions. (A and B)
+y<sup>A</sup> = x<sup>A</sup>
+y<sup>B</sup> = h(x<sup>B</sup>; Theta(x<sup>A</sup>))
+</p>
+
+<p>
+ Results in bijections that with a Jacobian that is triangular =&gt; |Det| is production of diagonals
+(These preserve area) 
+</p></li>
+
+<li>Separate scaling matrix to change area</li>
+
+<li>Trick to reduce the diminionsality of latent space (above has the same as the input data)
+Can enforce smaller latent dim. with something called "Real NVP"</li>
+</ul>
+<p>
+<a href="NormalizingFlows.html#ID-4B15A7F6-CCF8-4401-B929-884CAD6CF0D1">NormalizingFlows</a></p>
+</div>
+</body>
+</html>

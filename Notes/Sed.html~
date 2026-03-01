@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sed</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Sed</h1>
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+
+<p>
+<a href="https://www.gnu.org/software/sed/manual/sed.html">https://www.gnu.org/software/sed/manual/sed.html</a>
+</p>
+
+<ul class="org-ul">
+<li><p>
+Test a replacement
+</p>
+
+<p>
+&gt; sed -n 's/* %GREEN%/&#x2014;&gt;/p' CWR<sub>AlbertDeRoeck.twiki</sub>
+</p></li>
+
+<li><p>
+Do the replacement in line
+</p>
+
+<p>
+&gt; sed -i 's/* %GREEN%/&#x2014;&gt;/g' CWR<sub>AlbertDeRoeck.twiki</sub>
+(On mac)    &gt; sed -i ''  's/* %GREEN%/&#x2014;&gt;/g' CWR<sub>AlbertDeRoeck.twiki</sub>
+</p></li>
+
+<li><p>
+By default sed prints all processed input
+Use -n to suppress output, and the p command to print specific lines. The following command prints only line 45 of the input file:
+</p>
+
+<p>
+&gt; sed -n '45p' file.txt
+</p></li>
+
+<li><p>
+sed commands follow this syntax:
+</p>
+
+<p>
+[addr]X[options]
+</p></li>
+
+<li><p>
+The following example deletes lines 30 to 35 in the input. 30,35 is an address range. d is the delete command:
+</p>
+
+<p>
+&gt; sed '30,35d' input.txt &gt; output.txt
+</p></li>
+
+<li>The s command (as in substitute) is probably the most important in sed and has a lot of different options. The syntax of the s command is ‘s/regexp/replacement/flags’.</li>
+
+<li><p>
+Addresses determine on which line(s) the sed command will be executed. The following command replaces the word ‘hello’ with ‘world’ only on line 144:
+</p>
+
+<p>
+&gt; sed '144s/hello/world/' input.txt &gt; output.txt
+</p></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+Addresses can contain regular expressions to match lines based on content instead of line numbers. The following command replaces the word ‘hello’ with ‘world’ only in lines containing the word ‘apple’:
+</p>
+
+<p>
+&gt; sed '<i>apple/s/hello/world</i>' input.txt &gt; output.txt
+</p></li>
+
+<li><p>
+The following command replaces the word ‘hello’ with ‘world’ only in lines not containing the word ‘apple’:
+</p>
+
+<p>
+&gt; sed '<i>apple</i>!s/hello/world/' input.txt &gt; output.txt
+</p></li>
+
+<li><p>
+Can use <i>regex</i> to select any line which matches the regular expression regex
+</p>
+
+<p>
+(eg: replace W aith XX only on lines that match "Wife"
+&gt; sed  '/Wife/s/W/XX/p' tags
+</p></li>
+
+<li><p>
+\%regexp%
+(The % may be replaced by any other single character.)
+</p>
+
+<p>
+This also matches the regular expression regexp, but allows one to use a different delimiter than /.
+</p></li>
+</ul>
+
+
+<ul class="org-ul">
+<li><p>
+Regular expressions in sed are specified between two slashes.
+</p>
+
+<p>
+The following command prints lines containing the word ‘hello’:
+</p>
+
+<p>
+&gt; sed -n '/hello/p'
+</p>
+
+<p>
+The above example is equivalent to this grep command:
+</p>
+
+<p>
+&gt; grep 'hello'
+</p></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Using sha to test if files have same content</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Using sha to test if files have same content</h1>
+<p>
+Can use sha256 to see if two files are the same.
+</p>
+
+<p>
+On mac:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">&gt; shasum -a 256 jet_clustering/jet-splitting-PDFs-00-02-00/clustering_pdfs_vs_pT.yml 
+
+e4ef089c5ffda45675b757523e0fe5c9581e7166774031cd172d9035ce26d917  jet_clustering/jet-splitting-PDFs-00-02-00/clustering_pdfs_vs_pT.yml
+
+</pre>
+</div>
+
+<p>
+and on LPC: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">y&gt; sha256sum jet_clustering/jet-splitting-PDFs-00-02-00/clustering_pdfs_vs_pT.yml 
+
+e4ef089c5ffda45675b757523e0fe5c9581e7166774031cd172d9035ce26d917  jet_clustering/jet-splitting-PDFs-00-02-00/clustering_pdfs_vs_pT.yml
+
+</pre>
+</div>
+
+<div id="outline-container-orga0910b4" class="outline-2">
+<h2 id="orga0910b4">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org575dd41" class="outline-2">
+<h2 id="org575dd41">Links:</h2>
+<div class="outline-text-2" id="text-org575dd41">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+
+<p>
+202407291556
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

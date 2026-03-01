@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ProgressReport 28 March 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ProgressReport 28 March 2025</h1>
+<p>
+Habits have all been good. As usual, I could use some more
+mindfulness. Ive been doing some more Zettlekasten and good reading. I
+have been working more in the past couple weeks and have been doing a
+lot of social activities: Penguins games, Sara Shook concert, Bernie
+Klus funeral, and happy hours.
+</p>
+
+<p>
+On the 4b side, I think I finally have a good first pass with the
+Run-3 synthetic dataset. I debugged the jet calibration and cutflow
+with Marina and we are now in agreement. I then made 16 synthetic
+datasets and passed it to her.  These look reasonable.  I want to
+determine the impact of the correlation on the final SvB variable. I
+think I understand how to do this using fluctuated event
+weights. After this, it might be a good time to present in Hbb again.
+</p>
+
+<p>
+We have also been doing some work on the latest (and should be last)
+round of L2 comments. These required making ROC plots and setting up
+at TTbar CR to make sure we are seeing the consistent data/MC yields.
+We sent a mail with answers and cut a new AN. I think our next step is
+ARC review.
+</p>
+
+<p>
+Ive been doing lots of HGC work in the last two weeks. I redid the
+"estimate-to-complete" for module production using more realistic
+production procedures: the hybrid adhesive should allow 16 modules to
+be produced per day. I have also started to better understand the
+monthly budgets and how much we really have to spend. We will move
+forward on offering James Picard a tech/machinist position. Hopefully
+this will turn into something that can be supported by the
+department/college. We recently started producing our first v3c
+modules.
+</p>
+
+<p>
+Wes gave the SoS approval talk; it went well. There were some
+questions, but the analysis is approved and will be shown at Moriond
+QCD! I've been iterating with Wes on his FNAL job talk slides. Its in
+a good state, but needs some work. He has moved back to the stats and
+will give a practice talk.
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modules Summary October 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Modules Summary October 2024</h1>
+<p>
+USCB has finished the pre-series. 5 LD right on Ti have been assembled at UCSB. A plan has been developed for ESD protection/mitigation during tape application and backing paper removal. The idea is to short both sides of the HV capacitor together and connect them to ground through a flexible, wide conductor incorporated directly into the transfer tape fixture.  
+</p>
+
+<p>
+CMU has added automation for reading QR codes and sensor scratch pads. They have added dry air cabinets capacity for storage of silicon and assembled modules.  CMU has recently assembled a carbon fiber module with the latest gluing pattern. This module showed improved electrical performance as suggested by previous studies from UCSB.  
+</p>
+
+<p>
+Plans have been made to have the components available for pre-production. The silicon is already in hand; the hexaboards and baseplates will be delivered to the MACs in early November.  
+</p>
+
+<p>
+Orders for the gantry tooling have started to be placed through Fermilab. The orders will proceed in batches and the tooling will become available in early 2025.  
+</p>
+
+<p>
+Improved automated encapsulation programs have been documented and provided to the other MACs.  
+</p>
+
+<p>
+A first version of the local database infrastructure for pre-production is in place. It is ready, once we have settled on a standard part naming scheme.
+</p>
+
+<div id="outline-container-org7ed504a" class="outline-2">
+<h2 id="org7ed504a">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org6c9b857" class="outline-2">
+<h2 id="org6c9b857">Links:</h2>
+<div class="outline-text-2" id="text-org6c9b857">
+<p>
+<a href="Modules Summary September 2024.html#ID-C4D76135-BD97-4843-886C-9969A3E143DD">Modules Summary September 2024</a>
+<a href="HGC MAC Meeting 16 October 2024.html#ID-18AB119A-9A5E-444E-8442-840358857DE6">HGC MAC Meeting 16 October 2024</a>
+</p>
+
+<p>
+202410190955
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

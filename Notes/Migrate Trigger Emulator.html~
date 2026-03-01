@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Migrate Trigger Emulator</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Migrate Trigger Emulator</h1>
+
+<div id="outline-container-org53a1de4" class="outline-2">
+<h2 id="org53a1de4">To Do</h2>
+<div class="outline-text-2" id="text-org53a1de4">
+<ul class="org-ul">
+<li>basic tests</li>
+<li>Script to convert ROOT files to Yaml</li>
+<li>Test vectors from MC, compare weights in picos to py weights</li>
+<li>Schedule CI</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0e2a419" class="outline-2">
+<h2 id="org0e2a419">Daily Logs</h2>
+<div class="outline-text-2" id="text-org0e2a419">
+<p>
+<a href="../Journal/2024/08-August/31-August-2024-Saturday.html#ID-BE5A7C9A-8D6F-4CD5-9741-408DC9A11515">31 August 2024 Saturday</a>
+</p>
+<ul class="org-ul">
+<li>Got minimal examples working</li>
+<li>made convert script to convert ROOT to yaml</li>
+<li>Starting to config 2018 jet triggers</li>
+<li>Configured all years</li>
+<li>Configured the menu for all years</li>
+<li>Setup basic test.   Need Test vectors</li>
+<li>Basically finished the Emulator Tool!!!!</li>
+</ul>
+
+<p>
+<a href="../Journal/2024/09-September/03-September-2024-Tuesday.html#ID-7510EBEF-5FA5-4A38-B98F-D732E59885D0">3 September 2024 Tuesday</a>
+</p>
+<ul class="org-ul">
+<li>adding hT<sub>trigger</sub></li>
+<li>Add CI</li>
+<li>1st draft finished! &#x2026; pushed</li>
+<li>Run CI</li>
+</ul>
+</div>
+
+<div id="outline-container-orgf4f45a2" class="outline-3">
+<h3 id="orgf4f45a2">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgab5ba59" class="outline-3">
+<h3 id="orgab5ba59">Links:</h3>
+<div class="outline-text-3" id="text-orgab5ba59">
+<p>
+<a href="HH4b.html#ID-63F88P8-5PQ6-8TT8-3T23-T19T305102PQ">HH4b</a>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+[BROKEN LINK: coffea4bs]
+</p>
+
+
+
+<p>
+202408311108
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SuperThinking</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">SuperThinking</h1>
+
+<div id="outline-container-org4db20e6" class="outline-2">
+<h2 id="org4db20e6">Super Thinking (Weinberg and McCann)</h2>
+<div class="outline-text-2" id="text-org4db20e6">
+<ul class="org-ul">
+<li>Average at best. Felt like word salad most of the time.</li>
+
+<li>Most of the mental models I've seen before, maybe useful to another audience.</li>
+
+<li><p>
+If you can identify a mental model that applies to a situation in front of you, you immediately know a lot about it.
+</p>
+
+<p>
+<a href="Mental Models.html#ID-D2672C2B-070A-48FA-8437-683D0B39718E">Mental Models</a>
+</p></li>
+
+<li><p>
+mental models are short cuts to higher-level thinking.
+</p>
+
+<p>
+<a href="Mental Models.html#ID-D2672C2B-070A-48FA-8437-683D0B39718E">Mental Models</a>
+</p></li>
+
+<li>Very few mental models are innate.</li>
+
+<li><p>
+Thinking gray: the truth is somewhere in between, a shade of gray.
+This model is powerful b.c it forces you to be patient. By delaying decision making you avoid confirmation bias since you haven't yet made a decision to confirm.
+Need to employ this one more.  Dont jump to conclusions.  Employ "the middle way"
+</p>
+
+<p>
+<a href="Mental Models.html#ID-D2672C2B-070A-48FA-8437-683D0B39718E">Mental Models</a> <a href="Protocols.html#ID-AFC02299-8850-4092-87F7-EFD1195F7359">Protocols</a>
+</p></li>
+
+<li>Devils advocate: This was once an official in position the Catholic Church used during the process of canonizing people as saints. If someone is canonized, the decision is eternal, so it was critical to get it right.</li>
+
+<li>Goodhart's law: When a measure becomes a target, it ceases to be a good measure.</li>
+
+<li>Short-termism: or technical debt in the software industry.</li>
+
+<li>Marcus Seneca said, "The abundance of books is a distraction" (In the 1st century AD!!!)</li>
+
+<li>Long-term commitment to an organizational strategy creates a lot of inertia toward that strategy. This can lead to sub-optimal decisions, "strategy tax"</li>
+
+<li>Shirky principle: institutions will try to preserve the problem to which they are the solution.</li>
+
+<li>Maximize your "luck surface area"</li>
+
+<li>A 95% CL does not say there is a 95% chance of the true value of the parameter being in the interval. They tell you that if you ran the experiment many times, the confidence intervals calculated would contain the parameter you are studying 95% of the time.
+By contrast, Bayesian statistics analogously produces credible intervals which do say that; they specify the current best estimated range for the probability of the parameter.</li>
+
+<li>Bayesian's contend that by choosing a strong prior, they can start closer to the truth, allowing them to converge on the final result faster.
+Flip side: it is also possible that Bayesian's' prior beliefs are actually doing the opposite, starting them further from the truth.</li>
+
+<li>It is inherently difficult to create a complete pro-con list when your experience is limited.</li>
+
+<li><p>
+When you see out sized output by an individual it is usually because they have many things working in their favor all at one to produce that out-sized impact. This can actually viewed as a positive. It means that such out-sized output can be created within an organization, not be recruiting world-class all-stars, but by crafting the right project and roles. ("10X team")
+</p>
+
+<p>
+<a href="Leadership.html#ID-984C9BFB-26B4-46E4-BA8F-593E79E777CD">Leadership</a>
+</p></li>
+
+<li>Commandos, infantry, and police.  Sometimes being a commando, even though it sounds really exciting, actually hurts the project.</li>
+
+<li>Peter principle: managers rise to the level of their incompetence.</li>
+
+<li>Conviction vs consequence Matrix.</li>
+
+<li>You have to be careful about your mindset, especially with things you're already pretty good at. The reason is that when you're good at something (eg: math) being good at that thing can become part of your identity. Yet effectively growing a skill requires consistently getting out of your comfort zone and periodically failing.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

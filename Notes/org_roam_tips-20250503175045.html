@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Org-Roam-Tips</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Org-Roam-Tips</h1>
+<p>
+Org and Org-roam hints and tricks
+</p>
+
+<div id="outline-container-org9b79f88" class="outline-2">
+<h2 id="org9b79f88">To link to work in tasks:</h2>
+<div class="outline-text-2" id="text-org9b79f88">
+<ul class="org-ul">
+<li>In Tasks: Create the link (<code>org-store-link</code>)  Ive bound to <code>C-c s</code></li>
+<li>Then in the daily <code>C-c C-l</code></li>
+</ul>
+<p>
+[[[BROKEN LINK: No match for fuzzy expression: *Projectile] and Magit][
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80eadc1" class="outline-2">
+<h2 id="org80eadc1">Tips</h2>
+<div class="outline-text-2" id="text-org80eadc1">
+<ul class="org-ul">
+<li><code>org-roam-dailies-capture-today</code> (Not clear I will use this so much)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e089f7" class="outline-2">
+<h2 id="org4e089f7">Links</h2>
+<div class="outline-text-2" id="text-org4e089f7">
+<ul class="org-ul">
+<li>Create link with <code>C-c n i</code></li>
+<li>Backlinks buffer!  <code>C-c n l</code></li>
+<li>Can use .org files for your template source!</li>
+<li>Preview Bound to <code>C-c p</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0386827" class="outline-2">
+<h2 id="org0386827">Time Stamps</h2>
+<div class="outline-text-2" id="text-org0386827">
+<ul class="org-ul">
+<li>Insert date <code>org-time-stamp</code>   can run with <code>C-c .</code></li>
+<li>Can due -7 or +7 in when selecting and org date</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcf36ef0" class="outline-2">
+<h2 id="orgcf36ef0">Text formatting</h2>
+<div class="outline-text-2" id="text-orgcf36ef0">
+<ul class="org-ul">
+<li>Wrap a text in characters to show in different modes</li>
+</ul>
+<pre class="example" id="org3be55c7">
+
+*bold*
+/italic/
+_underlined_
+=verbatim=
+~code~
++strike-through+
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgcf4b805" class="outline-2">
+<h2 id="orgcf4b805">Tasks</h2>
+<div class="outline-text-2" id="text-orgcf4b805">
+<ul class="org-ul">
+<li>org refile <code>C-v C-w</code></li>
+<li>Set tags with <code>C-c C-q</code> (calls org-set-tags-command)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8516f0a" class="outline-2">
+<h2 id="org8516f0a">Bullets</h2>
+<div class="outline-text-2" id="text-org8516f0a">
+<ul class="org-ul">
+<li><code>Control + enter</code> makes a new bullet</li>
+<li>Alt + enter make a new bullet right where you are</li>
+<li>Cycles through done states <code>C-C C-X C-b</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf8afbbe" class="outline-2">
+<h2 id="orgf8afbbe">Lists</h2>
+<div class="outline-text-2" id="text-orgf8afbbe">
+<ul class="org-ul">
+<li>Can get new list item with <code>M-RET</code></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgff7833d" class="outline-2">
+<h2 id="orgff7833d">Agenda</h2>
+<div class="outline-text-2" id="text-orgff7833d">
+<p>
+When in the agenda view, you can use:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">key</th>
+<th scope="col" class="org-left">action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">f</td>
+<td class="org-left">Move forward one day</td>
+</tr>
+
+<tr>
+<td class="org-left">b</td>
+<td class="org-left">Move backward one day</td>
+</tr>
+
+<tr>
+<td class="org-left">.</td>
+<td class="org-left">Jump to today</td>
+</tr>
+
+<tr>
+<td class="org-left">'/'</td>
+<td class="org-left">Filter task by tag</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Can filter tasks by tag in agenda mode using <code>/</code>
+OR can use org-agenda <code>m</code> to filter by tags
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c18a61" class="outline-2">
+<h2 id="org0c18a61">Basic Bookmark Operations</h2>
+<div class="outline-text-2" id="text-org0c18a61">
+<p>
+Creating bookmarks:
+</p>
+
+<p>
+<code>C-x r m</code> (bookmark-set) - Set a bookmark at the current location
+You'll be prompted to name the bookmark
+</p>
+
+<p>
+Can goto bookmarks form <code>consult-buffer</code>
+</p>
+
+<p>
+Managing bookmarks:
+</p>
+
+<p>
+M-x bookmark-delete - Delete a bookmark
+M-x bookmark-rename - Rename a bookmark
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd61f43f" class="outline-2">
+<h2 id="orgd61f43f">Org screen shots <a href="org_roam_tips-20250503175045.html#ID-7391CD68-2E3C-4FB0-B1E2-5BDAC7CCF2B9">Org-Roam-Tips</a></h2>
+<div class="outline-text-2" id="text-orgd61f43f">
+<p>
+Can do <code>org-download-clipboard</code> to insert screen shots!!!
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf4fee9b" class="outline-2">
+<h2 id="orgf4fee9b">Link to Email</h2>
+<div class="outline-text-2" id="text-orgf4fee9b">
+<p>
+<code>- org-store-line [C-c s]</code> on the mail in view mail
+</p>
+<ul class="org-ul">
+<li><code>C-c C-l</code> where you want to put the link</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc4dc7f6" class="outline-2">
+<h2 id="orgc4dc7f6">Can link to files on the file system! <a href="org_roam_tips-20250503175045.html#ID-7391CD68-2E3C-4FB0-B1E2-5BDAC7CCF2B9">Org-Roam-Tips</a></h2>
+<div class="outline-text-2" id="text-orgc4dc7f6">
+<p>
+<code>C-c C-l</code> then do <code>file:</code> RET and then navigate to the file you want.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgaf1137e" class="outline-2">
+<h2 id="orgaf1137e">FAQ</h2>
+<div class="outline-text-2" id="text-orgaf1137e">
+</div>
+<div id="outline-container-org7aa4d19" class="outline-3">
+<h3 id="org7aa4d19">Found org file that I could not link to.</h3>
+<div class="outline-text-3" id="text-org7aa4d19">
+<ul class="org-ul">
+<li>Tried clearing the cache and restarted, but it did nothing.</li>
+<li>But in the link by hand and when I opened it went to an other file.</li>
+<li>Realised there was another file with teh same UUID&#x2026; not clear how that happened</li>
+<li>By changing the UUID of one of the file clearing the cache and rerunning the db sync, I was able to link to it</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="org_roam_tips-20250503175045.html">Org-Roam-Tips</a></li>
+  <li><a href="emacs_bookmarks-20250507141327.html">Emacs Bookmarks</a></li>
+  <li><a href="../Journal/2025/06-June/03-June-2025-Tuesday.html">03 June 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/05-May/20-May-2025-Tuesday.html">20 May 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/05-May/15-May-2025-Thursday.html">15 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/14-May-2025-Wednesday.html">14 May 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/05-May/08-May-2025-Thursday.html">08 May 2025 Thursday</a></li>
+  <li><a href="../Journal/2025/05-May/07-May-2025-Wednesday.html">07 May 2025 Wednesday</a></li>
+  <li><a href="../Journal/2025/05-May/04-May-2025-Sunday.html">04 May 2025 Sunday</a></li>
+  <li><a href="../Journal/2025/05-May/03-May-2025-Saturday.html">03 May 2025 Saturday</a></li>
+  <li><a href="../Journal/2025/05-May/02-May-2025-Friday.html">02 May 2025 Friday</a></li>
+  <li><a href="../Journal/2025/05-May/01-May-2025-Thursday.html">01 May 2025 Thursday</a></li>
+</ul>
+</div>
+</body>
+</html>

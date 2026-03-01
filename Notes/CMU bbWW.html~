@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU bbWW</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU bbWW</h1>
+
+<div id="outline-container-orgbd0b292" class="outline-2">
+<h2 id="orgbd0b292">Logs</h2>
+<div class="outline-text-2" id="text-orgbd0b292">
+</div>
+<div id="outline-container-org1b14a9d" class="outline-3">
+<h3 id="org1b14a9d"><a href="../Journal/2026/02-February/06-February-2026-Friday.html#ID-7B5289DF-0FC7-4CAF-B4AE-63AB7D61EE9F">06 February 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-org1b14a9d">
+<ul class="org-ul">
+<li>Lots of good slides from AK</li>
+<li>Need a way to reconstruct the higgs mass</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgeee7d30" class="outline-3">
+<h3 id="orgeee7d30"><a href="../Journal/2026/01-January/30-January-2026-Friday.html#ID-921BB7D4-BC29-4B6A-B43A-3090CF239088">30 January 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-orgeee7d30">
+<ul class="org-ul">
+<li>Aniket new SRs.</li>
+<li>AGE working on cluster</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgfad9139" class="outline-3">
+<h3 id="orgfad9139"><a href="../Journal/2025/11-November/14-November-2025-Friday.html#ID-2CBE496E-0736-4102-BCB9-1FF02BBBD61B">14 November 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgfad9139">
+<p>
+AK: Talk of SR definitions has data and MC files&#x2026; Will send to me
+</p>
+</div>
+</div>
+
+<div id="outline-container-org289e6c8" class="outline-3">
+<h3 id="org289e6c8"><a href="../Journal/2025/11-November/07-November-2025-Friday.html#ID-D3E549F1-E932-4A25-8FF5-071A90FC6F90">07 November 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org289e6c8">
+<ul class="org-ul">
+<li>Next steps:
+<ul class="org-ul">
+<li>Update the code with histogrmas of the clasifier outputs</li>
+<li>Make pltos of all the backgroup vs signal</li>
+<li>Make pltos of data vs background</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbdf4fdd" class="outline-3">
+<h3 id="orgbdf4fdd"><a href="../Journal/2025/10-October/31-October-2025-Friday.html#ID-16A4239E-01D2-4F37-AA06-3D49B0907478">31 October 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgbdf4fdd">
+<ul class="org-ul">
+<li>AK: Lots of good classifier studies</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org652721a" class="outline-3">
+<h3 id="org652721a"><a href="../Journal/2025/10-October/10-October-2025-Friday.html#ID-00AC0E1A-7764-442A-A725-639A0439A3FC">10 October 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org652721a">
+<ul class="org-ul">
+<li>AK: good progress on the classifier</li>
+<li>JA: good progress on the processor</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgfad2b58" class="outline-3">
+<h3 id="orgfad2b58"><a href="../Journal/2025/10-October/03-October-2025-Friday.html#ID-356860E0-8DBA-4443-B965-92406442941D">03 October 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgfad2b58">
+<p>
+AE: 4b work 
+AK: Classifier running
+JA: Plots
+MM: ttH Hadronic 
+SD: 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org4666e3a" class="outline-3">
+<h3 id="org4666e3a"><a href="../Journal/2025/09-September/26-September-2025-Friday.html#ID-48E2FCAA-D4FF-4071-85AA-8E2507A5E458">26 September 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org4666e3a">
+<ul class="org-ul">
+<li>AE: getting code running</li>
+<li>AK: Chat re:classifier</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org71edb7e" class="outline-3">
+<h3 id="org71edb7e"><a href="../Journal/2025/09-September/05-September-2025-Friday.html#ID-EB23704F-18B5-4FCB-BB86-09E9AC55D78A">05 September 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-org71edb7e">
+<ul class="org-ul">
+<li>AK: Updates on MC and SR</li>
+<li>AE: updating code</li>
+<li>JA: will add plotting</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge093863" class="outline-3">
+<h3 id="orge093863"><a href="../Journal/2025/08-August/21-August-2025-Thursday.html#ID-7329128B-288C-4845-A333-341D837131E3">21 August 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orge093863">
+<ul class="org-ul">
+<li>Discussed setting up the nominal selction</li>
+<li>The dominate sensitivity in the nominal analysis comes from 3j+2b</li>
+<li>So far we have been comparing against 4j+2b</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0dd2256" class="outline-3">
+<h3 id="org0dd2256"><a href="../Journal/2025/08-August/07-August-2025-Thursday.html#ID-21E90116-2A1D-4484-9A7C-CB4872AB2CBB">07 August 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org0dd2256">
+<ul class="org-ul">
+<li>Aniket fixes chi2 plots</li>
+<li>Chat re:ttH worth it.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1beb14f" class="outline-3">
+<h3 id="org1beb14f"><a href="../Journal/2025/07-July/31-July-2025-Thursday.html#ID-E1CF837B-4BC7-4E90-AE0A-6C62AAFAD90A">31 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org1beb14f">
+<ul class="org-ul">
+<li>Skims mostly done</li>
+<li>Chat about next steps</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org16e9924" class="outline-3">
+<h3 id="org16e9924"><a href="../Journal/2025/07-July/24-July-2025-Thursday.html#ID-71DD802F-3413-49F0-B828-0CF0B7F04677">24 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org16e9924">
+</div>
+<div id="outline-container-orgc63586e" class="outline-4">
+<h4 id="orgc63586e">AK</h4>
+<div class="outline-text-4" id="text-orgc63586e">
+<ul class="org-ul">
+<li>Some plots</li>
+<li>Will work on skims</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org41398f9" class="outline-4">
+<h4 id="org41398f9">AE</h4>
+<div class="outline-text-4" id="text-org41398f9">
+<ul class="org-ul">
+<li>Restructuring the coffea4b s code</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org22b1093" class="outline-4">
+<h4 id="org22b1093">MM:</h4>
+<div class="outline-text-4" id="text-org22b1093">
+<ul class="org-ul">
+<li>Looking into ttH
+(Discussion after, isnt ttH dead on arrival ?)</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8302a42" class="outline-3">
+<h3 id="org8302a42"><a href="../Journal/2025/07-July/17-July-2025-Thursday.html#ID-66A4D1CC-60B8-4B15-9C28-69EEDF899F9A">17 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org8302a42">
+</div>
+<div id="outline-container-org5f09d57" class="outline-4">
+<h4 id="org5f09d57">AE</h4>
+</div>
+<div id="outline-container-org09bb8ac" class="outline-4">
+<h4 id="org09bb8ac">AK</h4>
+<div class="outline-text-4" id="text-org09bb8ac">
+<ul class="org-ul">
+<li>Put coffea 2025 aside for the moment</li>
+<li>Doesnt run with more than 2 or 3 files</li>
+<li>Data driven approach for ttbar</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc911528" class="outline-4">
+<h4 id="orgc911528">MC</h4>
+</div>
+<div id="outline-container-org5f8818b" class="outline-4">
+<h4 id="org5f8818b">SM</h4>
+<div class="outline-text-4" id="text-org5f8818b">
+<ul class="org-ul">
+<li>At a workshop</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga7f2d7c" class="outline-4">
+<h4 id="orga7f2d7c">MM</h4>
+<div class="outline-text-4" id="text-orga7f2d7c">
+<ul class="org-ul">
+<li>Working on ttH all fully hadronic</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org57700dd" class="outline-3">
+<h3 id="org57700dd"><a href="../Journal/2025/07-July/10-July-2025-Thursday.html#ID-338FC11E-DBC1-43EA-BAFC-FEE08B0F30BA">10 July 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-org57700dd">
+<ul class="org-ul">
+<li>Will reply to the previous mail</li>
+</ul>
+</div>
+<div id="outline-container-org8e3f9ec" class="outline-4">
+<h4 id="org8e3f9ec">AK:</h4>
+<div class="outline-text-4" id="text-org8e3f9ec">
+<ul class="org-ul">
+<li>Code mostly setup</li>
+<li>Will move to Run3</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc88a7f6" class="outline-4">
+<h4 id="orgc88a7f6">SD:</h4>
+<div class="outline-text-4" id="text-orgc88a7f6">
+<ul class="org-ul">
+<li>Producing the signal</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org742d87f" class="outline-4">
+<h4 id="org742d87f">AE:</h4>
+<div class="outline-text-4" id="text-org742d87f">
+<ul class="org-ul">
+<li>Will help with histograms</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb148876" class="outline-4">
+<h4 id="orgb148876">MM:</h4>
+<div class="outline-text-4" id="text-orgb148876">
+<ul class="org-ul">
+<li>Ramping up</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge06f941" class="outline-3">
+<h3 id="orge06f941"><a href="../Journal/2025/07-July/02-July-2025-Wednesday.html#ID-1887A372-62A7-4736-A0BF-67C23913A53F">02 July 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orge06f941">
+<ul class="org-ul">
+<li>Aniket to give update in next meeting</li>
+<li>Implementing unit tests</li>
+<li>Will move to new version of coffea</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9daebdb" class="outline-3">
+<h3 id="org9daebdb"><a href="../Journal/2025/05-May/07-May-2025-Wednesday.html#ID-984AE879-4C6D-4F2C-8334-F6A11E91C74B">07 May 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org9daebdb">
+<ul class="org-ul">
+<li>Discuss adding in quadrature</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org23ddbe8" class="outline-3">
+<h3 id="org23ddbe8"><a href="../Journal/2025/04-April/30-April-2025-Wednesday.html#ID-FED0A64E-A317-40B4-8979-95D5BE7B7F59">30 April 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org23ddbe8">
+<ul class="org-ul">
+<li>Submitting Samples&#x2026;not going welll</li>
+<li>Should setup a friend tree maker instead</li>
+<li>Sam found bug in Aniket's code&#x2026; gain in low pT much better than originally thought.</li>
+<li>Will prepare slides</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org062e14f" class="outline-3">
+<h3 id="org062e14f"><a href="../Journal/2025/03-March/26-March-2025-Wednesday.html#ID-A0622D94-79AA-AE13-4D88-708F6E4D6F84">26 March 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org062e14f">
+<ul class="org-ul">
+<li>AE: has scripts to make low pt jets</li>
+<li>Aniket has 1st draft of new processor</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org57d4618" class="outline-3">
+<h3 id="org57d4618"><a href="../Journal/2025/03-March/12-March-2025-Wednesday.html#ID-2FBDF0DC-6722-A72F-18D5-1ED28CEAD64E">12 March 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org57d4618">
+<ul class="org-ul">
+<li>Coffea25 code runing 10x faster than before</li>
+<li>will ping FNAL re:code structuring</li>
+<li>will ping Fikri re:Run3 samples</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge951570" class="outline-3">
+<h3 id="orge951570"><a href="../Journal/2025/02-February/26-February-2025-Wednesday.html#ID-816BD4C9-3AAF-4FD0-BA9D-3DB0ECA047CE">26 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-orge951570">
+<ul class="org-ul">
+<li>AE: has nano recipe from Frikri &#x2026; only goes down to 15 GeV&#x2026; iterating.</li>
+<li>AK: setting up new coffea framework</li>
+<li>Plan to meet with coffeea experts to discuss framework setup</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9e70d63" class="outline-3">
+<h3 id="org9e70d63"><a href="../Journal/2025/02-February/12-February-2025-Wednesday.html#ID-628BDF15-4CFA-482F-8613-A6EB7DAABE87">12 February 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org9e70d63">
+<ul class="org-ul">
+<li>Will start moving to new coffea version and to run3</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org336fb0a" class="outline-3">
+<h3 id="org336fb0a"><a href="../Journal/2025/01-January/29-January-2025-Wednesday.html#ID-AB888C80-5FC4-4DAA-8F1D-48D8FA39D863">29 January 2025 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org336fb0a">
+<ul class="org-ul">
+<li>Aniket to give slides next meeting</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga06efbd" class="outline-3">
+<h3 id="orga06efbd"><a href="../Journal/2024/12-December/05-December-2024-Thursday.html#ID-BC88947B-BB5C-4514-A7D3-12EA2A2B3F46">5 December 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orga06efbd">
+<ul class="org-ul">
+<li>Prep talk for bbWW</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org246d89a" class="outline-3">
+<h3 id="org246d89a"><a href="../Journal/2024/10-October/31-October-2024-Thursday.html#ID-691C1F49-5A12-4CE5-A4F8-9B4CF9F683F9">31 October 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org246d89a">
+<ul class="org-ul">
+<li>Not much.  Chi2 using mean of the signal distribution !</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org571768d" class="outline-3">
+<h3 id="org571768d"><a href="../Journal/2024/09-September/26-September-2024-Thursday.html#ID-892A8AE8-182D-4D78-81D6-E868D76555E2">26 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org571768d">
+<ul class="org-ul">
+<li>AE: Running jobs</li>
+<li>AK: will debug w-mass constraint by trying to fit by hand&#x2026; Sam will help</li>
+<li>SD: running on lxplus</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org244cb5b" class="outline-3">
+<h3 id="org244cb5b"><a href="../Journal/2024/09-September/19-September-2024-Thursday.html#ID-B3E569D4-C737-4656-82F0-6EC1418530A3">19 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org244cb5b">
+<p>
+Aniket
+</p>
+<ul class="org-ul">
+<li>Will add unit test to do the neutrino reweighting
+Alejandro</li>
+<li>Calibration results for all years</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga13e4a1" class="outline-3">
+<h3 id="orga13e4a1"><a href="../Journal/2024/09-September/12-September-2024-Thursday.html#ID-47B2CB77-47B0-463F-9F38-5D8811AD62F1">12 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orga13e4a1">
+<ul class="org-ul">
+<li>Aniket: Processor too slow&#x2026; b/c running all systematics. Will turn off.</li>
+<li>ttbar Chi2 now looks good.</li>
+<li>Not much else&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd2ccffc" class="outline-3">
+<h3 id="orgd2ccffc"><a href="../Journal/2024/09-September/05-September-2024-Thursday.html#ID-311B0821-4121-4480-B616-068BA4E33E42">5 September 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgd2ccffc">
+<ul class="org-ul">
+<li>Aniket: getting the new processor going</li>
+<li>AGE:  discussion of working with ETH</li>
+<li>Not much else</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga0e6998" class="outline-3">
+<h3 id="orga0e6998"><a href="../Journal/2024/08-August/29-August-2024-Thursday.html#ID-48BAF83C-B348-44B6-90C7-38F3446813F9">29 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orga0e6998">
+<ul class="org-ul">
+<li>Aniket still sees weird chi2 problems</li>
+<li>Needs to define the W*-&gt;qq  vs W-&gt;qq using the truth information</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb184f2d" class="outline-3">
+<h3 id="orgb184f2d"><a href="../Journal/2024/08-August/22-August-2024-Thursday.html#ID-90F2731A-7196-4BC6-80D1-2403C6DE8B79">22 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgb184f2d">
+<p>
+Aniket
+</p>
+<ul class="org-ul">
+<li>Chi2 scale off will remake (likely bug)</li>
+<li>Will start making comprehensive slides</li>
+<li>Discussion of various chi2 terms</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc8de15d" class="outline-3">
+<h3 id="orgc8de15d"><a href="../Journal/2024/08-August/15-August-2024-Thursday.html#ID-606140B0-BD38-45D4-9934-D32293F79D0A">15 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgc8de15d">
+<p>
+Aniket
+</p>
+<ul class="org-ul">
+<li>Bug in w-mass constraint</li>
+<li>Will make X<sub>HH</sub> and X<sub>tt</sub></li>
+
+<li>Separately for W* -&gt; qq and W-&gt;qq</li>
+
+<li>For W*-&gt;qq:
+X<sub>HH</sub> include mass terms for both higges</li>
+<li><p>
+For W-&gt;qq:
+Only have H-&gt;bb can try adding mT leptonic W and pZ neutrino 
+</p>
+
+<p>
+Alejandro 
+</p></li>
+<li>Has JEC corrections in hand</li>
+<li>Will present to JERC in two weeks and ask about need for JER</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge7a03df" class="outline-3">
+<h3 id="orge7a03df"><a href="../Journal/2024/08-August/08-August-2024-Thursday.html#ID-01047EF1-EA74-40C4-B133-F99CF5755013">8 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orge7a03df">
+<p>
+Aniket
+</p>
+<ul class="org-ul">
+<li>Good plots</li>
+<li>mTop looks buggy, signal at ttbar are too close.</li>
+<li>mH looks OK</li>
+<li><p>
+WIll update slides with jet selection
+</p>
+
+<p>
+Sam
+</p></li>
+<li><p>
+looking into s vs B
+</p>
+
+<p>
+Sena
+</p></li>
+<li>progress on code</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org38d86fc" class="outline-3">
+<h3 id="org38d86fc"><a href="../Journal/2024/08-August/01-August-2024-Thursday.html#ID-C810DB4E-CAC1-463A-84BB-AB3F46C5D8C7">1 August 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org38d86fc">
+<ul class="org-ul">
+<li>Only aniket</li>
+<li>Making good progress!</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org8663c98" class="outline-3">
+<h3 id="org8663c98"><a href="../Journal/2024/07-July/25-July-2024-Thursday.html#ID-4E7A2B1F-3000-4981-A557-B107D06F5FC2">25 July 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-org8663c98">
+<ul class="org-ul">
+<li><a href="https://indico.cern.ch/event/1432491/">https://indico.cern.ch/event/1432491/</a></li>
+
+<li>Can sign up on:
+cms-hh-bbvv@cern.ch</li>
+
+<li>Alejandro
+<ul class="org-ul">
+<li>Has response scale corrections.</li>
+<li>What about resolution ? Will look into</li>
+<li>Trying to use Matteos processor, but problem with saving histograms</li>
+<li>(Will not make it next meeting)</li>
+</ul></li>
+
+<li>Sena 
+<ul class="org-ul">
+<li>Back from holidays</li>
+<li>Problem running on the Korean cluster</li>
+</ul></li>
+
+<li>Aniket
+<ul class="org-ul">
+<li>fix for Wasnt plotting the tru</li>
+<li>Looks like the Higgs mass plots are switched.</li>
+<li>Post slides to agenda.</li>
+</ul></li>
+
+<li>Sam 
+<ul class="org-ul">
+<li>Making progress on plotting</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb586ba9" class="outline-3">
+<h3 id="orgb586ba9"><a href="../Journal/2024/07-July/11-July-2024-Thursday.html#ID-44A6B549-3B5F-4066-8C1C-F67B1CE6310E">11 July 2024 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgb586ba9">
+<ul class="org-ul">
+<li>Comparing the top 3 qvsq jets</li>
+<li>Looking into the leading p<sub>t</sub>. Can probably require only the leading to be</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org2bb0091" class="outline-2">
+<h2 id="org2bb0091">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org96e5750" class="outline-2">
+<h2 id="org96e5750">Links:</h2>
+<div class="outline-text-2" id="text-org96e5750">
+<p>
+202502222003
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

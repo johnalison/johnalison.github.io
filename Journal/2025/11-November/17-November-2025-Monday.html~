@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>17 November 2025 Monday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="16-November-2025-Sunday.html">&#8592; Previous</a>
+  <a href="18-November-2025-Tuesday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">17 November 2025 Monday</h1>
+
+<div id="outline-container-orge59b195" class="outline-2">
+<h2 id="orge59b195">Time Block</h2>
+<div class="outline-text-2" id="text-orge59b195">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">setup/ mails</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">setup/ mails</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Migrate Hemisphere mixing</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Migrate Hemisphere mixing / Insurance setup</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">Migrate Hemisphere mixing</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Migrate Hemisphere mixing</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Hoops</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Stats Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Stats Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">4b Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">4b Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">MPL Grading</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">MPL Grading</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b> 6
+<b>DW:</b> 2
+<b>OT:</b> 2
+<b>ex</b> 
+</p>
+</div>
+
+<div id="outline-container-org03e299f" class="outline-3">
+<h3 id="org03e299f">The One Thing:</h3>
+<div class="outline-text-3" id="text-org03e299f">
+<p>
+<a href="../../../Notes/migratehemispheremixingtopython-20250504113834.html#ID-0BA38B1E-9A32-4966-A212-5B527C768526">Migrate Hemisphere Mixing To Python</a>
+Shapely info
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge3a5cdd" class="outline-2">
+<h2 id="orge3a5cdd">Up at 7:30</h2>
+</div>
+
+
+<div id="outline-container-orge0fa4c9" class="outline-2">
+<h2 id="orge0fa4c9">M&amp;T to school</h2>
+</div>
+
+
+<div id="outline-container-orge02a9f3" class="outline-2">
+<h2 id="orge02a9f3">Pinged ECS highschool re:dates for CMU visit</h2>
+</div>
+
+
+<div id="outline-container-orgaf8b21f" class="outline-2">
+<h2 id="orgaf8b21f">uploaded CL letter</h2>
+</div>
+
+
+<div id="outline-container-orge171a2b" class="outline-2">
+<h2 id="orge171a2b"><a href="../../../Notes/migratehemispheremixingtopython-20250504113834.html#ID-0BA38B1E-9A32-4966-A212-5B527C768526">Migrate Hemisphere Mixing To Python</a></h2>
+<div class="outline-text-2" id="text-orge171a2b">
+<ul class="org-ul">
+<li>See logs above</li>
+</ul>
+</div>
+<div id="outline-container-orge3f08f6" class="outline-3">
+<h3 id="orge3f08f6">Mail to CL</h3>
+<div class="outline-text-3" id="text-orge3f08f6">
+<p>
+Hi Chuyuan, I am currently reading in the hemisphere files using uproot [1].
+Is there a better way to do this using TreeReader ?
+</p>
+
+<p>
+john
+</p>
+
+<p>
+[1] 
+hemifiles = f"output/mixeddata<sub>cluster</sub>/data<sub>year<sub>str</sub></sub>*/*.root",
+</p>
+
+<p>
+jet<sub>branches</sub> = ["Jet<sub>phi</sub>", "Jet<sub>pt</sub>", "Jet<sub>eta</sub>", "Jet<sub>mass</sub>", "Jet<sub>btagDeepFlavB</sub>", "Jet<sub>bRegCorr</sub>", "Jet<sub>jetId</sub>"]
+hemi<sub>summary</sub><sub>vars</sub> = ["sumPt<sub>T</sub><sub>minor</sub>", "sumPt<sub>T</sub>", "combinedMass", "pz" ]
+branch<sub>list</sub> = ["nJet", "nSelJet", "nTagJet"] + hemi<sub>summary</sub><sub>vars</sub> + jet<sub>branches</sub>
+</p>
+
+<p>
+hemi<sub>data</sub> = read<sub>hemi</sub><sub>files</sub>(hemifiles, branch<sub>list</sub>=branch<sub>list</sub>)
+</p>
+
+<p>
+def read<sub>hemi</sub><sub>files</sub>(hemifiles, tree<sub>name</sub>="Events", branch<sub>list</sub>=None):
+</p>
+
+<p>
+hemi<sub>vars</sub> = { var<sub>name</sub>: [] for var<sub>name</sub> in branch<sub>list</sub> }
+</p>
+
+<p>
+for batch in uproot.iterate(
+	f"{hemifiles}:{tree<sub>name</sub>}"
+	branch<sub>list</sub>,
+	step<sub>size</sub>=200<sub>000</sub>,                                                               
+	library="np",
+):
+</p>
+
+<p>
+if hemi<sub>vars</sub>[branch<sub>list</sub>[0]] is None:
+    for var<sub>name</sub> in branch<sub>list</sub>:
+	hemi<sub>vars</sub>[var<sub>name</sub>] = batch[var<sub>name</sub>]
+else:
+    for var<sub>name</sub> in branch<sub>list</sub>:
+	hemi<sub>vars</sub>[var<sub>name</sub>] = np.concatenate( (hemi<sub>vars</sub>[var<sub>name</sub>], batch[var<sub>name</sub>]) )
+</p>
+
+<p>
+return hemi<sub>vars</sub>
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org32f2ab0" class="outline-2">
+<h2 id="org32f2ab0">Next-generation underground neutrino detector in China up and running</h2>
+<div class="outline-text-2" id="text-org32f2ab0">
+<p>
+<a href="https://physicstoday.aip.org/news/next-generation-underground-neutrino-detector-in-china-up-and-running">https://physicstoday.aip.org/news/next-generation-underground-neutrino-detector-in-china-up-and-running</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org4074b27" class="outline-2">
+<h2 id="org4074b27">Finalized Insurance with Sharp</h2>
+<div class="outline-text-2" id="text-org4074b27">
+<ul class="org-ul">
+<li>Car insurance: payed yearly&#x2026; Steph needs to cancel with Sam</li>
+<li>720: Will get a refund &#x2026; and will have to put it back in escrow</li>
+<li>5421: will go in escrow</li>
+<li>Need to cancel 720 and Car insurance</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org06fc92e" class="outline-2">
+<h2 id="org06fc92e">Hoops/Steamroom</h2>
+<div class="outline-text-2" id="text-org06fc92e">
+<ul class="org-ul">
+<li>Played decent&#x2026; all down to the wire &#x2026; all lost &#x2026; covered speads though</li>
+<li>7' at Tmax = 124</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2f4ff29" class="outline-2">
+<h2 id="org2f4ff29"><a href="../../../Notes/stats_data_driven_sr-20250503141800.html#ID-F4AD8527-8EC6-427C-A28E-C5C58525E87E">Stats-Data-Driven-SR</a></h2>
+<div class="outline-text-2" id="text-org2f4ff29">
+<p>
+Read new draft
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf52be73" class="outline-2">
+<h2 id="orgf52be73">Calling PGS water</h2>
+<div class="outline-text-2" id="text-orgf52be73">
+<ul class="org-ul">
+<li>412-255-2423</li>
+<li>pressed 5 &#x2026; pressed 5</li>
+<li>closing company has to submit for final bill: closing company submits for final bill</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org667bb48" class="outline-2">
+<h2 id="org667bb48">Duquesne Light &#x2026; <a href="../../../Notes/5421_kentucky-20250721183707.html#ID-1156D8C1-7648-4E7D-ABBE-6C6BFDA9DD70">5421 Kentucky</a></h2>
+<div class="outline-text-2" id="text-org667bb48">
+<p>
+4250613685 and your new account number is 8915753748.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge9daa5a" class="outline-2">
+<h2 id="orge9daa5a">Peoples Gas</h2>
+<div class="outline-text-2" id="text-orge9daa5a">
+<p>
+Scheduled a start service appointment for the 25th.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org12e3393" class="outline-2">
+<h2 id="org12e3393">4b Chat</h2>
+<div class="outline-text-2" id="text-org12e3393">
+<ul class="org-ul">
+<li>Chat with AE: He is doing baseclasses for the 4b processors&#x2026; a good idea</li>
+<li>Told him about my progress with mixed data</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org705eac5" class="outline-2">
+<h2 id="org705eac5">MPL Grading</h2>
+<div class="outline-text-2" id="text-org705eac5">
+</div>
+<div id="outline-container-org18113c6" class="outline-3">
+<h3 id="org18113c6">Neutrons:</h3>
+<div class="outline-text-3" id="text-org18113c6">
+<p>
+Notebooks: Leonard Cheng
+</p>
+<ul class="org-ul">
+<li>Overall nice detail of the calibration and analysis.</li>
+<li>Especially nice plots of fitting background and multiple overlapping peaks</li>
+<li>I'm not sure this analysis could be repeated in a year from notebook alone&#x2026; eg: I would have liked to see more details of the electronics setup ect.</li>
+<li>I would also have liked to see some more discusion of the half-life uncertianties.
+Eg some comment on the fit quality, how this could or could not effect the scientific conclusions
+<ul class="org-ul">
+<li>PHA Spectra should be histograms with error bars on the data points.</li>
+</ul></li>
+</ul>
+
+
+<p>
+Finished Grading Neutrons&#x2026; 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf836857" class="outline-2">
+<h2 id="orgf836857">Chat with Roy</h2>
+</div>
+
+
+<div id="outline-container-orga013f64" class="outline-2">
+<h2 id="orga013f64">Reading</h2>
+</div>
+
+
+<div id="outline-container-orga3a12f7" class="outline-2">
+<h2 id="orga3a12f7">Some late night <a href="../../../Notes/migratehemispheremixingtopython-20250504113834.html#ID-0BA38B1E-9A32-4966-A212-5B527C768526">Migrate Hemisphere Mixing To Python</a></h2>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>22 November 2024 Friday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="21-November-2024-Thursday.html">&#8592; Previous</a>
+  <a href="23-November-2024-Saturday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">22 November 2024 Friday</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">setup</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">---</td>
+<td class="org-left">--------------------------</td>
+<td class="org-left">--------------------------</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left"><code>~Progress Report~</code></td>
+<td class="org-left">data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cut flow</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><code>~Progress Report~</code></td>
+<td class="org-left">data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cut flow</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Connor Interview</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><code>~Progress Report~</code></td>
+<td class="org-left">data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cut flow</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left"><code>~Progress Report~</code></td>
+<td class="org-left">data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cut flow</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cut flow</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">HEP Lunch</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HEP Lunch</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">HEP Lunch</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Mails for Ornella refs</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">4b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">4b</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">CMU CMS</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">CMU CMS</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Home</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Update plots</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>W:</b> 8 
+<b>DW:</b> 3 
+<b>OT:</b> 2
+<b>No ex</b>
+</p>
+
+<p>
+&#x2014;
+</p>
+<div id="outline-container-org7165961" class="outline-2">
+<h2 id="org7165961">The ONE thing:</h2>
+<div class="outline-text-2" id="text-org7165961">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> debug/Fix data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cutflow CI</li>
+</ul>
+
+<p>
+&#x2014;
+</p>
+</div>
+</div>
+<div id="outline-container-org6b04eec" class="outline-2">
+<h2 id="org6b04eec">To Do</h2>
+<div class="outline-text-2" id="text-org6b04eec">
+<p>
+[&gt;&gt;] Work <a href="../../../Notes/Run2 HH4b AN.html#ID-0451C17E-E57B-4E78-963D-F9B56A6A031A">Run2 HH4b AN</a>
+[&gt;&gt;] Letter for Jonas&#x2026; Due Dec 15th
+[&gt;&gt;]  Read [BROKEN LINK: Notes/Run2 X-&gt;HY-&gt;4b]
+</p>
+<ul class="org-ul">
+<li>debug/Fix data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cutflow CI
+[&gt;&gt;]  BCR
+	[&gt;&gt;] Read BOE
+[&gt;&gt;]   <a href="../../../Notes/Snakemake tutorial.html#ID-146801AD-98AE-420A-9961-CFFD174AB6B2">Snakemake tutorial</a></li>
+<li>Ping Josh re:interview</li>
+<li>Respond to Ornella re:interview
+<ul class="org-ul">
+<li>Ping References</li>
+</ul></li>
+</ul>
+<p>
+[&gt;&gt;] Progress report
+</p>
+
+<p>
+&#x2014;
+</p>
+</div>
+</div>
+<div id="outline-container-org6a00746" class="outline-2">
+<h2 id="org6a00746">Log</h2>
+<div class="outline-text-2" id="text-org6a00746">
+<p>
+Wash hairs 
+</p>
+
+<p>
+M&amp;T to school in snow
+</p>
+
+<ul class="org-ul">
+<li>Try obsidian calendar tool</li>
+</ul>
+
+<p>
+<a href="../../../Notes/ProgressReport 22 November 2024.html#ID-7A64E994-B4CA-4805-B466-A60FD8DCFD7B">ProgressReport 22 November 2024</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5de539e" class="outline-2">
+<h2 id="org5de539e">Debug data<sub>3b</sub><sub>for</sub><sub>mixed</sub> cutflow CI</h2>
+<div class="outline-text-2" id="text-org5de539e">
+<ul class="org-ul">
+<li>Adding print outs</li>
+<li>CI fails&#x2026;</li>
+</ul>
+<p>
+`data<sub>3b</sub><sub>for</sub><sub>mixed</sub><sub>2018</sub>             passDiJetMass       15.51      15.48           0.0019                0.03`
+</p>
+<ul class="org-ul">
+<li>FvT weights are identical &#x2026;</li>
+<li>JCM weight are different &#x2026; printing out JCM weights are read from file.. differences</li>
+<li>Will add a different threshold for the data JCM cutflow test</li>
+<li>Debugging with CL</li>
+<li>FOUND THE pseudoJet Bug !! Very subtle
+<ul class="org-ul">
+<li>Bug in uproot. when searching for a key that is not in the dictionary, returns random member if the key you search for starts with a number&#x2026;. Now fixed</li>
+</ul></li>
+<li>Removed the different JCM threshold</li>
+</ul>
+
+
+<p>
+<a href="../../../Notes/CMU HGC MAC Websites.html#ID-EE89E17B-2D6A-49CC-AC32-DC8434FB7D19">CMU HGC MAC Websites</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6f76820" class="outline-2">
+<h2 id="org6f76820">Chatted with Connor</h2>
+<div class="outline-text-2" id="text-org6f76820">
+<ul class="org-ul">
+<li>Could also be a good fit. $20/hour, told him start date was Feb/March
+[&gt;&gt;] ping him for a visit in January</li>
+</ul>
+
+<p>
+<a href="../../../Notes/CAM Turnaround Report.html#ID-5EE61469-FF33-4191-98A8-0664CFDC4975">CAM Turnaround Report</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org48815b8" class="outline-2">
+<h2 id="org48815b8">HEP Lunch</h2>
+<div class="outline-text-2" id="text-org48815b8">
+<ul class="org-ul">
+<li>Not much&#x2026;</li>
+</ul>
+
+<p>
+<a href="../../../Notes/Lab Techs Fall 2024.html#ID-07AEF4C3-7581-439B-846C-595F768ED2D7">Lab Techs Fall 2024</a>
+</p>
+
+<p>
+Pinged Ornellas reference
+</p>
+</div>
+</div>
+
+<div id="outline-container-org223ee81" class="outline-2">
+<h2 id="org223ee81"><a href="../../../Notes/CMU 4b Chats.html#ID-798D0A9C-3BCF-4B3E-AE61-54983415913A">CMU 4b Chats</a></h2>
+<div class="outline-text-2" id="text-org223ee81">
+<ul class="org-ul">
+<li>Debugging with CL</li>
+<li>FOUND THE pseudoJet Bug !! Very subtle.. see above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgadc509d" class="outline-2">
+<h2 id="orgadc509d">CMU CMS Round Table</h2>
+<div class="outline-text-2" id="text-orgadc509d">
+<ul class="org-ul">
+<li>Not much</li>
+</ul>
+
+
+<p>
+Home to be with Teddy and Marlo
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org701a322" class="outline-2">
+<h2 id="org701a322"><a href="../../../Notes/Run2 HH4b AN.html#ID-0451C17E-E57B-4E78-963D-F9B56A6A031A">Run2 HH4b AN</a></h2>
+<div class="outline-text-2" id="text-org701a322">
+<ul class="org-ul">
+<li>see dailys</li>
+</ul>
+
+
+<p>
+Ordered Scuillies pizza.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc29b7bb" class="outline-2">
+<h2 id="orgc29b7bb">Poker Night</h2>
+<div class="outline-text-2" id="text-orgc29b7bb">
+<ul class="org-ul">
+<li>good times: Clay /  (<sub>wife</sub>_) / Shane Valenzi / Steve / Tony</li>
+<li>Won $23</li>
+</ul>
+
+<p>
+Some <a href="../../../Notes/Progressive Myths.html#ID-0C8526B4-7FCF-41E0-97AB-2E81540ADF4B">Progressive Myths</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

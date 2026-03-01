@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MLCodeSetup</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">MLCodeSetup</h1>
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<p>
+In the auton cluster, add the ff. to your ~/.bashrc
+</p>
+
+<p>
+if [ -e /opt/miniconda3/etc/profile.d/conda.sh ]; then
+    . /opt/miniconda3/etc/profile.d/conda.sh
+</p>
+
+
+<p>
+Elsewhere, download and install miniconda (<a href="https://conda.io/docs/user-guide/install/index.html">https://conda.io/docs/user-guide/install/index.html</a>).
+Create a new conda environment using the provided template
+</p>
+
+<p>
+conda env create &#x2013;file pytorch.yml
+</p>
+
+<p>
+To activate the environment,
+</p>
+
+<p>
+conda activate pytorch
+</p>
+
+
+<div id="outline-container-orgbc95a14" class="outline-2">
+<h2 id="orgbc95a14">Tensorflow CMU</h2>
+<div class="outline-text-2" id="text-orgbc95a14">
+<p>
+Source: <a href="https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/">https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/</a>
+</p>
+
+<p>
+&gt; conda create -n tf tensorflow
+&gt; conda activate tf
+</p>
+
+
+<p>
+pip install &#x2013;upgrade tensorflow-probability
+pip install &#x2013;upgrade tensorflow
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

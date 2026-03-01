@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>4b Resonant Search</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">4b Resonant Search</h1>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> X -&gt; hh -&gt;4b dedicated</li>
+<li class="off"><code>[&#xa0;]</code> X-&gt;YH -&gt; 4b dedicated 2d scan</li>
+<li class="off"><code>[&#xa0;]</code> Semi-supervised</li>
+</ul>
+
+
+<div id="outline-container-orgbd7cd41" class="outline-2">
+<h2 id="orgbd7cd41">X → HH → 4b</h2>
+<div class="outline-text-2" id="text-orgbd7cd41">
+<ul class="org-ul">
+<li>Separate HH SR from ZZ and ZH</li>
+<li class="off"><code>[&#xa0;]</code> Check modeling in SB (ZZ)</li>
+<li class="off"><code>[&#xa0;]</code> Check modeling in mixed data SR after SvB Cut</li>
+<li class="off"><code>[&#xa0;]</code> Check bias of SvB cut</li>
+<li class="off"><code>[&#xa0;]</code> Refit SvB with decorrelation in mHH
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Will want to keep ZZ/ZH/HH signals too</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Systematics from mixed data</li>
+<li>Whence the double peaks in mHH ?</li>
+
+<li>Near term plan:
+<ul class="org-ul">
+<li>Extend mass rage to 200 - 1200 GeV</li>
+<li>Separate closure tests in mixed data ZZ ZH and HH regions</li>
+<li>Do fit background only in unblinded ZZ SR</li>
+<li>Present background modeling in B2G</li>
+</ul></li>
+<li>Longer-term / In parallel :
+<ul class="org-ul">
+<li>Get signal samples picos</li>
+<li>Do blinded signal + bkg fit in HH SR</li>
+<li>Get limits vs mass</li>
+<li>Plot SvB in HH SR</li>
+<li>Determine if can gain with a SvB cut</li>
+<li>Present in B2G (Determine publication plan)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf07b500" class="outline-2">
+<h2 id="orgf07b500">X → YH → 4b</h2>
+<div class="outline-text-2" id="text-orgf07b500">
+<ul class="org-ul">
+<li>2D Brute force scan</li>
+<li>Solve jet-pairing combinatorics</li>
+<li>How to unbias FvT in scan 
+<ul class="org-ul">
+<li>Clever way without brute force refit ? (right to be forgotten)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga23e9b2" class="outline-2">
+<h2 id="orga23e9b2">Semi-supervised</h2>
+<div class="outline-text-2" id="text-orga23e9b2">
+<ul class="org-ul">
+<li>Seeing Bias in 2d mass plane after plotting upper tail.</li>
+<li>Plot lower tail.</li>
+<li>How important is it to cluster in the mass mass plane after a DvB cut ?</li>
+</ul>
+</div>
+
+
+
+
+<div id="outline-container-org71b659d" class="outline-3">
+<h3 id="org71b659d">Follow-ups</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

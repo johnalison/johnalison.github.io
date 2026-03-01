@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-01 Sun 04:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clustering Algebra</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Clustering Algebra</h1>
+<p>
+<b>Go to plane of decay products, then boost to P<sub>z</sub> = 0</b>
+</p>
+
+<div id="outline-container-orgfbbbf3c" class="outline-2">
+<h2 id="orgfbbbf3c">Start</h2>
+<div class="outline-text-2" id="text-orgfbbbf3c">
+<p>
+<b>DOF counting:</b>
+</p>
+<ul class="org-ul">
+<li>\(P_1^\mu\) - 3 DoF : \(P_x\), \(P_z\) and m</li>
+<li>\(P_2^\mu\) - 3 DoF : \(P_x\), \(P_z\) and m</li>
+<li>1 constraint \(P_z^1 + P_z^2 = 0\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org73bd43f" class="outline-2">
+<h2 id="org73bd43f">End</h2>
+<div class="outline-text-2" id="text-org73bd43f">
+<p>
+One combined vector
+</p>
+
+<p>
+<b>DOF counting:</b>
+</p>
+<ul class="org-ul">
+<li>\(P_T\), \(\theta\) , z, \(m_1\), \(m_2\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org45ca4ae" class="outline-2">
+<h2 id="org45ca4ae">Clustering</h2>
+<div class="outline-text-2" id="text-org45ca4ae">
+<p>
+\[
+P_{comb}^\mu = P_1^\mu + P_2^\mu = \begin{pmatrix} E_1 + E_2 \\ P_T^1 + P_T^2 \\ 0 \\ 0 \end{pmatrix}
+\]
+</p>
+</div>
+</div>
+<div id="outline-container-org5f96cb4" class="outline-2">
+<h2 id="org5f96cb4">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org1bc900a" class="outline-2">
+<h2 id="org1bc900a">Links:</h2>
+<div class="outline-text-2" id="text-org1bc900a">
+<p>
+<a href="splittingtemplates-20250504111010.html#ID-84055C72-DBD2-4091-B41C-D85A63AF9A1B">SplittingTemplates</a>
+<a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

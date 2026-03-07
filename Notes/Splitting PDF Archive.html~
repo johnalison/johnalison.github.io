@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Splitting PDF Archive</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Splitting PDF Archive</h1>
+
+<div id="outline-container-org7e6b0d0" class="outline-2">
+<h2 id="org7e6b0d0"><code>00-05-00</code>:  All years and all jet multiplicities (old notCanJet<sub>sel</sub> def)</h2>
+</div>
+<div id="outline-container-org972c3f3" class="outline-2">
+<h2 id="org972c3f3"><code>00-05-01</code>:  bug fix combined jet flavor definition</h2>
+</div>
+<div id="outline-container-org5bb9bfc" class="outline-2">
+<h2 id="org5bb9bfc"><code>00-06-00</code>: 18 with fix all jet mutliplicites (updated nonCanJet def )</h2>
+</div>
+<div id="outline-container-org9bc7655" class="outline-2">
+<h2 id="org9bc7655"><code>00-06-01</code>: 18 new groupings (not cleaning ISR)</h2>
+</div>
+<div id="outline-container-orga334eb4" class="outline-2">
+<h2 id="orga334eb4"><code>00-06-02</code>: All years / new groupings</h2>
+</div>
+<div id="outline-container-orgf946a4b" class="outline-2">
+<h2 id="orgf946a4b"><code>00-07-00</code>: All years / Xb/Yj groupings (21 total)</h2>
+</div>
+<div id="outline-container-org14f2d85" class="outline-2">
+<h2 id="org14f2d85"><code>00-07-01</code>:       ''        Tuning ranges</h2>
+</div>
+<div id="outline-container-org5c43ac2" class="outline-2">
+<h2 id="org5c43ac2"><code>00-07-02</code>:    like 00-07-01, but with ttbar subtraction</h2>
+</div>
+<div id="outline-container-orga85f91b" class="outline-2">
+<h2 id="orga85f91b"><code>00-07-03:</code>    like 00-07-02, but split by year</h2>
+</div>
+<div id="outline-container-orgea1d188" class="outline-2">
+<h2 id="orgea1d188"><code>00-08-00:</code> like 00-07-02, with <b>JEC/JER</b> on data.</h2>
+<div class="outline-text-2" id="text-orgea1d188">
+<p>
+Includes run3 data&#x2026; wrong btagging/calibration in run2
+</p>
+</div>
+</div>
+<div id="outline-container-orge8e0279" class="outline-2">
+<h2 id="orge8e0279"><code>00-08-01</code>:     like 00-08-00 but run3 with right btagging bRegCorr still unclear&#x2026;</h2>
+</div>
+<div id="outline-container-org77dd026" class="outline-2">
+<h2 id="org77dd026"><code>00-08-02</code>.     like 00-08-01 but with lower pt selected jets (30 GeV) for Run3</h2>
+</div>
+<div id="outline-container-orga527268" class="outline-2">
+<h2 id="orga527268"><code>00-08-03</code>:     like 00-08-02 but with new Run3 jet calibration</h2>
+</div>
+<div id="outline-container-org580a4a3" class="outline-2">
+<h2 id="org580a4a3"><code>00-09-00</code>:     but with rhoA and rhoB pdfs to update the declustered jet masses</h2>
+</div>
+<div id="outline-container-org6f9f287" class="outline-2">
+<h2 id="org6f9f287"><code>00-09-01</code>:     like 00-09-00 but with fixed Run3 calibration</h2>
+</div>
+<div id="outline-container-org57b3337" class="outline-2">
+<h2 id="org57b3337"><code>00-09-02</code>:     like 00-09-01 but with rotated mass corrections</h2>
+</div>
+<div id="outline-container-org96432bb" class="outline-2">
+<h2 id="org96432bb"><code>00-10-00</code>:     Using the new 2025 skims</h2>
+</div>
+<div id="outline-container-orgdf74571" class="outline-2">
+<h2 id="orgdf74571"><code>00-10-01</code>:     Like 00-10-00 but with 20 GeV threshold on jets</h2>
+</div>
+<div id="outline-container-org0779958" class="outline-2">
+<h2 id="org0779958"><code>00-11-00</code>:     With ttbar subtraction</h2>
+</div>
+<div id="outline-container-orge3240e4" class="outline-2">
+<h2 id="orge3240e4"><code>00-11-01</code>:     No ttbar subtraction</h2>
+</div>
+</div>
+</body>
+</html>

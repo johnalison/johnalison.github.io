@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Computers</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Computers</h1>
+
+<div id="outline-container-orgea44d23" class="outline-2">
+<h2 id="orgea44d23">Hardware</h2>
+<div class="outline-text-2" id="text-orgea44d23">
+<ul class="org-ul">
+<li>Components</li>
+<li>Architecture</li>
+<li>Performance</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3c91468" class="outline-2">
+<h2 id="org3c91468">Software</h2>
+<div class="outline-text-2" id="text-org3c91468">
+<ul class="org-ul">
+<li>Operating systems</li>
+<li>Programming languages</li>
+<li>Applications</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org993c83d" class="outline-2">
+<h2 id="org993c83d">Networking</h2>
+<div class="outline-text-2" id="text-org993c83d">
+<ul class="org-ul">
+<li>Protocols</li>
+<li>Security</li>
+<li>Cloud computing</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga7aa211" class="outline-2">
+<h2 id="orga7aa211">Resources</h2>
+<div class="outline-text-2" id="text-orga7aa211">
+<ul class="org-ul">
+<li>Books</li>
+<li>Online tutorials</li>
+<li>Documentation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org094b899" class="outline-2">
+<h2 id="org094b899">Notes</h2>
+<div class="outline-text-2" id="text-org094b899">
+<ul class="org-ul">
+<li>Created as a placeholder for future content</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

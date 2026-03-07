@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>4b code base</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">4b code base</h1>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> added processed lumi section</li>
+<li class="on"><code>[X]</code> updating skip colections and (removing HLT branches)</li>
+<li class="on"><code>[X]</code> Remake plotting to be more flexible re:hist structure ?</li>
+<li class="on"><code>[X]</code> Script to check process lumi section agaist json</li>
+<li class="on"><code>[X]</code> Reduce histograms Do we need the "other" tag list item ? / other regions ? passPreSel cut ?</li>
+<li class="off"><code>[&#xa0;]</code> RunII and Run3 options to sum over the proper years</li>
+<li class="on"><code>[X]</code> Histograms to cutflow</li>
+<li class="on"><code>[X]</code> Matplotlib ".py"</li>
+<li class="on"><code>[X]</code> clean JCM code</li>
+<li class="off"><code>[&#xa0;]</code> Why is canJet Phi 0-pi ?</li>
+<li class="off"><code>[&#xa0;]</code> Code to make cutflow eff plots</li>
+<li class="on"><code>[X]</code> Debug variable binning function</li>
+<li class="on"><code>[X]</code> Dont draw ration points when no data</li>
+</ul>
+
+<div id="outline-container-orge14dfef" class="outline-2">
+<h2 id="orge14dfef">Logs</h2>
+<div class="outline-text-2" id="text-orge14dfef">
+</div>
+<div id="outline-container-org076da78" class="outline-3">
+<h3 id="org076da78"><a href="../Journal/2025/09-September/09-September-2025-Tuesday.html#ID-9F7336A7-8733-4FB5-B31F-C53C38A1A422">09 September 2025 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org076da78">
+<ul class="org-ul">
+<li><code>./run_container source coffea4bees/scripts/analysis-test.sh</code></li>
+<li><code>./run_container source coffea4bees/scripts/analysis-signals-test.sh</code></li>
+<li><code>./run_container source coffea4bees/scripts/analysis-merge-test-job.sh</code></li>
+<li><code>./run_container source coffea4bees/scripts/analysis-plot.sh</code></li>
+<li>Debugging</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6bf8f81" class="outline-3">
+<h3 id="org6bf8f81"><a href="../Journal/2025/09-September/08-September-2025-Monday.html#ID-A0787A96-1723-4359-BD89-5F3688A1F937">08 September 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-org6bf8f81">
+<ul class="org-ul">
+<li>Setup code <code>new_master</code></li>
+<li>Running CIs</li>
+<li>Making plots&#x2026; But I dont think the tag is being used</li>
+<li><code>Now fixed tag</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2720f9d" class="outline-3">
+<h3 id="org2720f9d"><a href="../Journal/2025/03-March/30-March-2025-Sunday.html#ID-6A03D71C-4A9C-DB21-CA91-C59EB966FA4D">30 March 2025 Sunday</a></h3>
+<div class="outline-text-3" id="text-org2720f9d">
+<ul class="org-ul">
+<li>Testing 2d plots</li>
+<li>Fixing CI</li>
+<li>Merging with master</li>
+<li>clean up interface</li>
+<li>Split making the dict and plotting</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaef8ca9" class="outline-3">
+<h3 id="orgaef8ca9"><a href="../Journal/2025/03-March/28-March-2025-Friday.html#ID-59B61F28-D367-C543-973A-BAE3E5337BB0">28 March 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgaef8ca9">
+<ul class="org-ul">
+<li>Working 2d plots</li>
+<li>Merged the 2d and 1d helper functions</li>
+<li>Got the ratio going !!!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge1e8165" class="outline-3">
+<h3 id="orge1e8165"><a href="../Journal/2025/03-March/24-March-2025-Monday.html#ID-80574853-B081-B826-601F-4DCDF08B1F4F">24 March 2025 Monday</a></h3>
+<div class="outline-text-3" id="text-orge1e8165">
+<ul class="org-ul">
+<li>Roc Plots</li>
+<li>Bug fix phh</li>
+<li>rerunning signal samples</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd19a756" class="outline-3">
+<h3 id="orgd19a756"><a href="../Journal/2025/03-March/21-March-2025-Friday.html#ID-701CEA48-2BDF-0215-6CE6-32B54F31EA43">21 March 2025 Friday</a></h3>
+<div class="outline-text-3" id="text-orgd19a756">
+<ul class="org-ul">
+<li>Working Roc Plots</li>
+<li>Run to make phh plots (SR and HH region)</li>
+<li>Added kl reweighting function</li>
+<li>Spikes from one of the variances of the signal sample&#x2026; need to request nominal</li>
+<li>GOT kl-rw working!!!</li>
+<li>Added new hists (phh and phh<sub>hh</sub>)</li>
+<li>Running all signals on <b>cmslpc322</b></li>
+<li>lots of errors&#x2026; fixing</li>
+<li>Running on condor
+<ul class="org-ul">
+<li>=source scripts/analysis-testAll-job.sh =</li>
+<li>some ZZ4b file transfer failed</li>
+<li>resubmit</li>
+</ul></li>
+<li>Signal finished</li>
+<li>Finally finished backgrounds too</li>
+<li>p(HH) seems even better than p(S) !!!</li>
+<li>mailed AE</li>
+<li>push code</li>
+<li>Add to AN
+<ul class="org-ul">
+<li>&lt;font color=red&gt; On Saturday, on Saturday &#x2026; on Saturday &lt;/font&gt;</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd5a42e1" class="outline-3">
+<h3 id="orgd5a42e1"><a href="../Journal/2025/03-March/20-March-2025-Thursday.html#ID-7CC6A534-772D-555C-BDB4-6A0786E71479">20 March 2025 Thursday</a></h3>
+<div class="outline-text-3" id="text-orgd5a42e1">
+<ul class="org-ul">
+<li>Working Roc Plots</li>
+<li>got one curve at a time.</li>
+<li>Got multiple curves going</li>
+<li>Need to plot from different files</li>
+<li><code>python plots/makeRocPlot.py hists/histAll_20250304_a100c66.coffea hists/histAll_signals_cHHHX_20250304_a100c66.coffea --outputFolder roc_curves</code></li>
+<li>[&gt;&gt;] Run to make phh plots (SR and HH region)</li>
+<li>Curves for different k-lambdas</li>
+<li>Found spikes in kl = 2.45 sample</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaedec4f" class="outline-3">
+<h3 id="orgaedec4f">Follow-ups</h3>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="march_2026-20260301100820.html">March 2026</a></li>
+  <li><a href="Run2 HH4b AN.html">Run2 HH4b AN</a></li>
+  <li><a href="Add Cutflow Histograms.html">Add Cutflow Histograms</a></li>
+  <li><a href="../Journal/2026/03-March/05-March-2026-Thursday.html">05 March 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/03-March/04-March-2026-Wednesday.html">04 March 2026 Wednesday</a></li>
+  <li><a href="../Journal/2025/09-September/09-September-2025-Tuesday.html">09 September 2025 Tuesday</a></li>
+  <li><a href="../Journal/2025/09-September/08-September-2025-Monday.html">08 September 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/30-March-2025-Sunday.html">30 March 2025 Sunday</a></li>
+  <li><a href="../Journal/2025/03-March/28-March-2025-Friday.html">28 March 2025 Friday</a></li>
+  <li><a href="../Journal/2025/03-March/24-March-2025-Monday.html">24 March 2025 Monday</a></li>
+  <li><a href="../Journal/2025/03-March/21-March-2025-Friday.html">21 March 2025 Friday</a></li>
+  <li><a href="../Journal/2025/03-March/20-March-2025-Thursday.html">20 March 2025 Thursday</a></li>
+  <li><a href="../Journal/2024/12-December/13-December-2024-Friday.html">13 December 2024 Friday</a></li>
+  <li><a href="../Journal/2024/12-December/11-December-2024-Wednesday.html">11 December 2024 Wednesday</a></li>
+  <li><a href="../Journal/2024/12-December/03-December-2024-Tuesday.html">03 December 2024 Tuesday</a></li>
+  <li><a href="../Journal/2024/11-November/21-November-2024-Thursday.html">21 November 2024 Thursday</a></li>
+  <li><a href="../Journal/2024/11-November/01-November-2024-Friday.html">01 November 2024 Friday</a></li>
+  <li><a href="../Journal/2024/10-October/28-October-2024-Monday.html">28 October 2024 Monday</a></li>
+  <li><a href="../Journal/2024/10-October/09-October-2024-Wednesday.html">09 October 2024 Wednesday</a></li>
+</ul>
+</div>
+</body>
+</html>

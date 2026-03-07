@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 27 August 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 27 August 2024</h1>
+
+<div id="outline-container-org97d4fe5" class="outline-2">
+<h2 id="org97d4fe5">Action</h2>
+<div class="outline-text-2" id="text-org97d4fe5">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Get new carrying trays</li>
+<li>How many preseries modules do they need at FNAL ? 
+<ul class="org-ul">
+<li>Ping zoltan</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Clean lab/change filters soon</li>
+<li class="off"><code>[&#xa0;]</code> UG lab tech ? x 2 ?</li>
+<li>Fittings for manual pickup tool</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgea4240a" class="outline-2">
+<h2 id="orgea4240a">News</h2>
+<div class="outline-text-2" id="text-orgea4240a">
+<ul class="org-ul">
+<li>Santa Barbra visit end OCT</li>
+<li>W-H reentry meeting</li>
+<li>MAC meeting 4th or 11th ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9301ab3" class="outline-2">
+<h2 id="org9301ab3">Jessica</h2>
+<div class="outline-text-2" id="text-org9301ab3">
+<ul class="org-ul">
+<li>OGP license renewed at no charge</li>
+<li>Portable ionizer worker</li>
+<li>Ordering parts for test stand power strips
+<ul class="org-ul">
+<li>Arduino relay</li>
+</ul></li>
+<li>Component trays to get updated</li>
+<li>Change filters soon</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org54cea3e" class="outline-2">
+<h2 id="org54cea3e">Andrew</h2>
+<div class="outline-text-2" id="text-org54cea3e">
+<ul class="org-ul">
+<li>Weird IV behavior due to short time between steps.</li>
+<li>Will test all modules</li>
+<li>Are other groups using the scripts for Iv?  get the details</li>
+<li>Testing GUI: adding stuff to it.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd8f9cf7" class="outline-2">
+<h2 id="orgd8f9cf7">Jonas</h2>
+<div class="outline-text-2" id="text-orgd8f9cf7">
+<ul class="org-ul">
+<li>Shelves ready: 4 x 10 × 5</li>
+<li>Need dry air / Dessicant tank</li>
+<li>Grabber ready to go.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga19aa8e" class="outline-2">
+<h2 id="orga19aa8e">Sindhu</h2>
+<div class="outline-text-2" id="text-orga19aa8e">
+<ul class="org-ul">
+<li>No big updates</li>
+<li>QC Tables</li>
+<li>Will upload to the central DB soon</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgc3819d5" class="outline-2">
+<h2 id="orgc3819d5">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-orgd5a3e15" class="outline-2">
+<h2 id="orgd5a3e15">Links:</h2>
+<div class="outline-text-2" id="text-orgd5a3e15">
+<p>
+<a href="HGC.html#ID-E1G05H78-0D4G-6F40-1H1E-0AH3699877FC">HGC</a>
+<a href="CMU HGC Mac Meeting 22 August 2024.html#ID-4103A994-1315-4273-812E-226E8CC00B71">CMU HGC Mac Meeting 22 August 2024</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+<p>
+202408271205</p>
+</div>
+</div>
+</div>
+</body>
+</html>

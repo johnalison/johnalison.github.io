@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>20 April 2025 Sunday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">20 April 2025 Sunday</h1>
+
+
+
+<div id="outline-container-orgd63c2fe" class="outline-2">
+<h2 id="orgd63c2fe">Easter with kids</h2>
+</div>
+
+<div id="outline-container-org410d99d" class="outline-2">
+<h2 id="org410d99d">Setting up <a href="../../../Notes/gptel-20250521160152.html#ID-198CB508-0700-42B1-BC2E-3F8E6EEF331F">gptel</a></h2>
+</div>
+
+<div id="outline-container-org59c5fa5" class="outline-2">
+<h2 id="org59c5fa5">Parents for easter</h2>
+</div>
+
+
+<div id="outline-container-orgb1c8412" class="outline-2">
+<h2 id="orgb1c8412">Home &#x2026; More emacs hacking</h2>
+</div>
+
+<div id="outline-container-org9f79823" class="outline-2">
+<h2 id="org9f79823">Trying to install sshfs agian&#x2026;</h2>
+<div class="outline-text-2" id="text-org9f79823">
+<ul class="org-ul">
+<li><b>&gt; brew install &#x2013;cask macfuse</b></li>
+<li>brew tap gromgit/fuse</li>
+<li>brew install gromgit/fuse/sshfs</li>
+<li><code>sshfs jda102@cmslpc-el9.fnal≠.gov:/uscms/home/jda102/nobackup/HH4b/Run3/coffea4bees ~/CMSWork/hh4b/coffea4beesLPC  -ovolname=coffea4beesLPC -oauto_cache   -oallow_other</code></li>
+<li>Many shutdowns required to get it going&#x2026;</li>
+<li>To kill: <code>diskutil unmount force ~/RemoteServer</code></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf0d096c" class="outline-2">
+<h2 id="orgf0d096c">Need to setup copilot on LPC!&#x2026;</h2>
+<div class="outline-text-2" id="text-orgf0d096c">
+<p>
+&lt;font color="red"&gt;Future me here, no instead used direct emacs editing &#x2026; ACTUALLY GREAT!!! EXACTLY WHAT I NEEDED !!!!&lt;/font&gt;
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

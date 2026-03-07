@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emacs</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Emacs</h1>
+<p>
+:ID:       8B9C0D1E-2F3G-4H5I-6J7K-8L9M0N1O2P3Q
+</p>
+
+<div id="outline-container-org34cfbc3" class="outline-2">
+<h2 id="org34cfbc3">Emacs Configuration</h2>
+<div class="outline-text-2" id="text-org34cfbc3">
+</div>
+<div id="outline-container-org2b2caef" class="outline-3">
+<h3 id="org2b2caef">Key Bindings</h3>
+<div class="outline-text-3" id="text-org2b2caef">
+<ul class="org-ul">
+<li>Custom keymaps</li>
+<li>Global shortcuts</li>
+<li>Mode-specific bindings</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org583c515" class="outline-3">
+<h3 id="org583c515">Packages</h3>
+<div class="outline-text-3" id="text-org583c515">
+<ul class="org-ul">
+<li>Org Mode</li>
+<li>Magit</li>
+<li>Helm</li>
+<li>Ivy</li>
+<li>Company</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge5543cd" class="outline-3">
+<h3 id="orge5543cd">Custom Functions</h3>
+<div class="outline-text-3" id="text-orge5543cd">
+<ul class="org-ul">
+<li>Utility functions</li>
+<li>Mode hooks</li>
+<li>Custom commands</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e166f6" class="outline-3">
+<h3 id="org5e166f6">Tips and Tricks</h3>
+<div class="outline-text-3" id="text-org5e166f6">
+<ul class="org-ul">
+<li>Workflow optimizations</li>
+<li>Productivity hacks</li>
+<li>Common patterns</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

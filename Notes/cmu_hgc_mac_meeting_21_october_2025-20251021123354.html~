@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 21 October 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 21 October 2025</h1>
+
+<div id="outline-container-org6d7294d" class="outline-2">
+<h2 id="org6d7294d">News</h2>
+<div class="outline-text-2" id="text-org6d7294d">
+<ul class="org-ul">
+<li>Shelves + parts arrived</li>
+<li>Expoxy setting.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3f59d56" class="outline-2">
+<h2 id="org3f59d56">Action</h2>
+<div class="outline-text-2" id="text-org3f59d56">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Hexaboard Boxes back to Dave</li>
+<li class="off"><code>[&#xa0;]</code> Save data on offsets</li>
+<li class="off"><code>[&#xa0;]</code> Action: Mail MP</li>
+<li class="off"><code>[&#xa0;]</code> Order the 2nd crate</li>
+<li class="off"><code>[&#xa0;]</code> Alabama GUI ?</li>
+<li class="off"><code>[&#xa0;]</code> Ping Zoltan</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org903ede4" class="outline-2">
+<h2 id="org903ede4">Jessica</h2>
+<div class="outline-text-2" id="text-org903ede4">
+<ul class="org-ul">
+<li>Fidual Autolocation working well</li>
+<li>File corrupted&#x2026; need sub VIs</li>
+<li>Recalibrate the Gantry</li>
+<li>Work on fiducual locations</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8b1faa1" class="outline-2">
+<h2 id="org8b1faa1">Jim</h2>
+<div class="outline-text-2" id="text-org8b1faa1">
+<ul class="org-ul">
+<li>Work with Pritam.</li>
+<li>Curtis cleaned out room</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgeb6fae3" class="outline-2">
+<h2 id="orgeb6fae3">Arvind</h2>
+<div class="outline-text-2" id="text-orgeb6fae3">
+<ul class="org-ul">
+<li>Updating the Labview scripts</li>
+<li>Project: Find away around lxplus 2FA</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org406b5fd" class="outline-2">
+<h2 id="org406b5fd">Christian</h2>
+<div class="outline-text-2" id="text-org406b5fd">
+<ul class="org-ul">
+<li>Table is here</li>
+<li>Have chair mats</li>
+<li>PC</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org45398db" class="outline-2">
+<h2 id="org45398db">Manami</h2>
+<div class="outline-text-2" id="text-org45398db">
+<ul class="org-ul">
+<li>UCSB xml upload trouble shooting</li>
+<li>Updated mass uploaded</li>
+<li>Polishing up code for local DB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbfde3c0" class="outline-2">
+<h2 id="orgbfde3c0">Pritam</h2>
+<div class="outline-text-2" id="text-orgbfde3c0">
+<ul class="org-ul">
+<li>Figuring out the components</li>
+<li>Only need computer: intel i7</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc5d88c6" class="outline-2">
+<h2 id="orgc5d88c6">Sindhu</h2>
+<div class="outline-text-2" id="text-orgc5d88c6">
+<ul class="org-ul">
+<li>MACs need to stop uploading pedastool data</li>
+<li>IHEP getting upto speed</li>
+<li>NTU not really using the local DB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge59d222" class="outline-2">
+<h2 id="orge59d222">Andrew</h2>
+<div class="outline-text-2" id="text-orge59d222">
+<ul class="org-ul">
+<li>Noise plots</li>
+<li>Boxes wil be here NovXX</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6ebedf4" class="outline-2">
+<h2 id="org6ebedf4">Jacques</h2>
+<div class="outline-text-2" id="text-org6ebedf4">
+<ul class="org-ul">
+<li>Carrying try</li>
+<li>Learning surveying and testing</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org767c5f8" class="outline-2">
+<h2 id="org767c5f8">Joy</h2>
+<div class="outline-text-2" id="text-org767c5f8">
+<ul class="org-ul">
+<li>Feature for OPG program updates</li>
+<li>What does the DAQ scan do&#x2026;</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>03 March 2026 Tuesday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">03 March 2026 Tuesday</h1>
+
+<div id="outline-container-org4241fb8" class="outline-2">
+<h2 id="org4241fb8">Time Block</h2>
+<div class="outline-text-2" id="text-org4241fb8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Setup</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">To Campus</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Claude Code</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Code</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">Claude Code</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Code</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Mac MEeting</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Mac MEeting</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Gym / SteamRoom</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Gym / SteamRoom</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Austin Mail</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Coding</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">HGC Management Meeting / Turnaround</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HGC Management Meeting / Turnaround</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Claude Code</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Code</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b>  7 
+<b>DW:</b>  4
+<b>OT:</b>  3
+<b>ex</b> 
+</p>
+</div>
+
+<div id="outline-container-org5775059" class="outline-3">
+<h3 id="org5775059">The One Thing:</h3>
+<div class="outline-text-3" id="text-org5775059">
+<p>
+Claude Coding
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgae2e5af" class="outline-2">
+<h2 id="orgae2e5af">Up at 7:30</h2>
+</div>
+
+
+<div id="outline-container-orge654838" class="outline-2">
+<h2 id="orge654838">Setup at Home</h2>
+</div>
+
+
+<div id="outline-container-org3d1bd80" class="outline-2">
+<h2 id="org3d1bd80">To campus</h2>
+</div>
+
+
+<div id="outline-container-orgd839d2a" class="outline-2">
+<h2 id="orgd839d2a"><a href="../../../Notes/hbbreclusteringproject-20250504112711.html#ID-FA4AE2C2-051E-4BE8-B2D3-028895397F4A">Hbb Reclustering</a></h2>
+<div class="outline-text-2" id="text-orgd839d2a">
+<ul class="org-ul">
+<li>Testing on Falcon&#x2026; slower &#x2026; but all good</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8ec0b2f" class="outline-2">
+<h2 id="org8ec0b2f"><a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a></h2>
+<div class="outline-text-2" id="text-org8ec0b2f">
+<p>
+<a href="https://claudeblattman.com/workflows/">https://claudeblattman.com/workflows/</a>
+</p>
+<ul class="org-ul">
+<li>Setting up a top-level ClaudeCode</li>
+<li>Made some good skills and a nice second brain</li>
+<li><code>/start</code> and <code>/done</code></li>
+<li><code>/draft-prompt</code></li>
+<li>Now getting google workspace setup</li>
+<li>Setup <code>/mac-reminder</code></li>
+
+<li>Ideas:
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> (Roam Notes) ProgressReports</li>
+<li class="on"><code>[X]</code> (Roam Notes) Daily Summaries from sixmonths and 1 year ago</li>
+<li class="on"><code>[X]</code> Email Drafting</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-orgb65d426" class="outline-3">
+<h3 id="orgb65d426">Input</h3>
+<div class="outline-text-3" id="text-orgb65d426">
+<p>
+I am an Emacs power user, I am also skilled in python and git.
+and am comfortable with the terminal 
+</p>
+
+<p>
+2nd brain
+  RoamNotes
+  NotesWebpage to host 2nd brain (driven by a Claude Code instance)
+</p>
+
+<p>
+What I need help with:
+</p>
+<ul class="org-ul">
+<li>prompt engineering</li>
+<li>devloping skills for other ClaudCode instances (eg: in ~/RoamNotes)</li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org5b360ed" class="outline-2">
+<h2 id="org5b360ed">Chat Jeff</h2>
+<div class="outline-text-2" id="text-org5b360ed">
+<ul class="org-ul">
+<li>Will move  on CL&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7a8335b" class="outline-2">
+<h2 id="org7a8335b">Austin Tarman</h2>
+<div class="outline-text-2" id="text-org7a8335b">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Mail to Jeff re:Austin</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org50aed6f" class="outline-2">
+<h2 id="org50aed6f"><a href="../../../Notes/cmu_hgc_mac_meeting_3_march_2026-20260303115311.html#ID-E9A3E4BA-7724-41D5-AB06-3A030A0D101D">CMU HGC Mac Meeting 3 March 2026</a></h2>
+<div class="outline-text-2" id="text-org50aed6f">
+<ul class="org-ul">
+<li>Short and Sweet</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2af6d0f" class="outline-2">
+<h2 id="org2af6d0f">Chat Richard Wurzbach (Grease Thief) re: Austin Tarman</h2>
+</div>
+
+
+<div id="outline-container-orgeaf9335" class="outline-2">
+<h2 id="orgeaf9335">Gym/Steamroom</h2>
+<div class="outline-text-2" id="text-orgeaf9335">
+<p>
+2 supersets:
+   bench - deads / toe-to-bar / uppercut curls
+   10' at Tmax 126
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgbe2e7ad" class="outline-2">
+<h2 id="orgbe2e7ad"><a href="../../../Notes/hgc_management_meeting-20250505104424.html#ID-A4EDAC61-16F3-484B-B564-3C5B68FFD498">HGC Management Meeting</a></h2>
+<div class="outline-text-2" id="text-orgbe2e7ad">
+<p>
+<a href="../../../Notes/CAM Turnaround Report.html#ID-5EE61469-FF33-4191-98A8-0664CFDC4975">CAM Turnaround Report</a>
+</p>
+
+<p>
+CMU:
+</p>
+
+<p>
+Total: 4240 
+</p>
+</div>
+
+<div id="outline-container-org5d41068" class="outline-3">
+<h3 id="org5d41068">Modules assembled at CMU during 2026/2 --</h3>
+<div class="outline-text-3" id="text-org5d41068">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Geometry</th>
+<th scope="col" class="org-left">Resolution</th>
+<th scope="col" class="org-left">BP Material</th>
+<th scope="col" class="org-right">Sensor Thickness</th>
+<th scope="col" class="org-left">ROC Version</th>
+<th scope="col" class="org-left">Final Grade</th>
+<th scope="col" class="org-right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Full</td>
+<td class="org-left">LD</td>
+<td class="org-left">Titanium</td>
+<td class="org-right">300</td>
+<td class="org-left">HGCROCV3d</td>
+<td class="org-left">A</td>
+<td class="org-right">28</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Full</td>
+<td class="org-left">LD</td>
+<td class="org-left">Titanium</td>
+<td class="org-right">300</td>
+<td class="org-left">HGCROCV3d</td>
+<td class="org-left">C</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Full</td>
+<td class="org-left">LD</td>
+<td class="org-left">Titanium</td>
+<td class="org-right">300</td>
+<td class="org-left">HGCROCV3d</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+UCSB:   (4908)
+</p>
+</div>
+</div>
+<div id="outline-container-org5ba2694" class="outline-3">
+<h3 id="org5ba2694">Modules assembled at UCSB during 2026/2 --</h3>
+<div class="outline-text-3" id="text-org5ba2694">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Geometry</th>
+<th scope="col" class="org-left">Resolution</th>
+<th scope="col" class="org-left">BP Material</th>
+<th scope="col" class="org-right">Sensor Thickness</th>
+<th scope="col" class="org-left">ROC Version</th>
+<th scope="col" class="org-left">Final Grade</th>
+<th scope="col" class="org-right">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Full</td>
+<td class="org-left">HD</td>
+<td class="org-left">Titanium</td>
+<td class="org-right">200</td>
+<td class="org-left">HGCROCV3d</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">42</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Full</td>
+<td class="org-left">HD</td>
+<td class="org-left">Titanium</td>
+<td class="org-right">200</td>
+<td class="org-left">HGCROCV3d</td>
+<td class="org-left">A</td>
+<td class="org-right">23</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Full</td>
+<td class="org-left">HD</td>
+<td class="org-left">Titanium</td>
+<td class="org-right">200</td>
+<td class="org-left">HGCROCV3d</td>
+<td class="org-left">C</td>
+<td class="org-right">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgf6d80a2" class="outline-2">
+<h2 id="orgf6d80a2"><a href="../../../Notes/hgc_management_meeting-20250505104424.html#ID-A4EDAC61-16F3-484B-B564-3C5B68FFD498">HGC Management Meeting</a></h2>
+<div class="outline-text-2" id="text-orgf6d80a2">
+<ul class="org-ul">
+<li>Moves</li>
+<li>L113            SM21360	ECM: Commission module teststands for production (module sites)  &#x2013;&gt; 50%</li>
+<li>L117            SM23190	ECM: Purchase of shipping cases for UCSB Site  -&gt; 100%</li>
+<li>L161   SM40180	ECM-Assemble and test module 81-240 at Site 2         35% -&gt; 53%
+35%  (56 Modules) -&gt; (86 Modules) 53%</li>
+<li>L162                  SM40190	ECM- Supervise assembly and testing of modules 81-240 at Site 2</li>
+<li>L201         SM60860	ECM-Assemble and test full-size equivalent odd-sized modules (9% - 16%)   5%-&gt;
+5% (17 modules) -&gt; (85 Modules)  0.254491017964</li>
+</ul>
+
+
+<p>
+Last week in July 28-30th
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org0f9508d" class="outline-2">
+<h2 id="org0f9508d">More <a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a> Setup</h2>
+<div class="outline-text-2" id="text-org0f9508d">
+<p>
+See above
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org786e5de" class="outline-2">
+<h2 id="org786e5de"><a href="../../../Notes/sindhu_murthy_annual_review_2026-20260303172449.html#ID-6B119109-F5E5-4133-B9DB-0DADED6718FA">Sindhu Murthy Annual Review 2026</a></h2>
+<div class="outline-text-2" id="text-org786e5de">
+<p>
+<b>Student:</b> Sindhu Murthy
+<b>Date:</b> Feb 20th 2026
+<b>Members present:</b> John Alison / Hy Track / Matteo Cremonesi / Manfred Paulini
+<b>Title of current research:</b> Seach for X-&gt;HH-&gt;4b with the CMS detector
+</p>
+
+<p>
+<b>Summary of Progress Since last review:</b>
+Sindhu has prototyped her analysis with data taken in an earlier
+running period 2016-2018. She has developed a detailed data-driven
+background model for the large QCD multijet background and has
+adapted a technique for assessing systematic uncertainties. She has
+since turned her attention to data taken in the more recent
+data-taking period (2022-2024). This dataset will serve as the
+basis for her thesis.
+</p>
+
+<p>
+In addition to analysis work she has developed a database system that
+has proven invaluable to the High-Granularity Calorimeter module
+assembly centers. She has been recognized within the collaboration
+with an award for this work.
+</p>
+
+<p>
+<b>Summary of research plan and recommendations of the committee</b>
+The committee notes a marked improvement in the presentation of her
+research progress and analysis since the last annual review. The
+committee recommends that she try to prioritize her thesis analysis
+over the database work going forward. We understand there is pressure
+to keep up with DB work, but it would be good to start giving priority to
+analysis wherever possible.
+</p>
+
+<p>
+<b>Expected graduation date:</b>  Fall 2027
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgb7da9cf" class="outline-2">
+<h2 id="orgb7da9cf">Home with M &#x2026; in car with S</h2>
+</div>
+
+
+<div id="outline-container-org10290d1" class="outline-2">
+<h2 id="org10290d1">Reading</h2>
+<div class="outline-text-2" id="text-org10290d1">
+<p>
+<a href="../../../Notes/the_english_and_their_history-20251231093929.html#ID-FDC9ADC0-77BA-48CF-9DB0-482D66EAAD0E">The English and Their History</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgcdb6b93" class="outline-2">
+<h2 id="orgcdb6b93"><a href="../../../Notes/aniket_khanal_annual_review_2026-20260303210954.html#ID-2B03222E-93BD-42CD-8391-4121F249C9A7">Aniket Khanal Annual Review 2026</a></h2>
+<div class="outline-text-2" id="text-orgcdb6b93">
+<p>
+<b>Student:</b> Aniket Khanal
+<b>Date:</b> Feb 20th 2026
+<b>Members present:</b> John Alison / Matteo Cremonesi / Manfred Paulini / Brian Batel
+<b>Title of current research:</b> Seach for Di-Higgs production in the bbWW final state
+</p>
+
+<p>
+<b>Summary of Progress Since last review:</b>
+</p>
+
+<p>
+Aniket has two ideas to improve the current HH-&gt;bbWW analysis. The
+first is to increase H-&gt;WW acceptance by going lower in jet transverse
+momentum. He argued in his slides why this is a wise strategy as it
+can nearly double signal acceptance, while providing a handle to
+suppress the leading ttbar background. His second idea for improving
+HH-&gt;bbWW is to develop data-driven corrections for the ttbar
+background. This again is a sensible thing to do as the current
+analysis requires the accurate modelling of the tails of the ttbar
+process to 1 part in a million. Data-driven corrections can provide
+confidence in the background model and flexibly adapt to any feature
+mismodelled by the simulation.
+</p>
+
+
+<p>
+<b>Summary of research plan and recommendations of the committee</b>
+</p>
+
+<p>
+Aniket's plan is to continue pursuing both improvement with the CMS
+and bbWW effort.
+</p>
+
+<p>
+The committee was impressed by the clear presentation of his work and
+future plans. The committee notes that Aniket is making good progress
+and recommends he keep up the good work.
+</p>
+
+<p>
+<b>Expected graduation date:</b>  Fall 2028
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org65c896e" class="outline-2">
+<h2 id="org65c896e">Sent mails re:Annual Reviews</h2>
+</div>
+</div>
+</body>
+</html>

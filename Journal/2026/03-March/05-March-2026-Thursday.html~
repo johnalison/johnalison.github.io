@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>05 March 2026 Thursday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">05 March 2026 Thursday</h1>
+
+<div id="outline-container-orgdb0f894" class="outline-2">
+<h2 id="orgdb0f894">Time Block</h2>
+<div class="outline-text-2" id="text-orgdb0f894">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">setup</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">build /archive-tasks</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">4b Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">4b Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">PLB Review</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Codeing</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Claude Codeing</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Lunch</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Claude Coding</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Coding</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Claude Coding</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Coding</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Claude Coding</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Claude Coding</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">BJJ</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">BJJ</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b>  7 
+<b>DW:</b>  6
+<b>OT:</b> 6
+<b>ex</b> 
+</p>
+</div>
+
+<div id="outline-container-org9efe037" class="outline-3">
+<h3 id="org9efe037">The One Thing:</h3>
+<div class="outline-text-3" id="text-org9efe037">
+<p>
+[BROKEN LINK: No match for fuzzy expression: *SEtup Top-level Claude Code]
+<a href="../../../Notes/4b code base.html#ID-07C5B981-2757-443B-89CF-D57206DBFD03">4b code base</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8dae0c7" class="outline-2">
+<h2 id="org8dae0c7">UP at 7:00</h2>
+<div class="outline-text-2" id="text-org8dae0c7">
+<ul class="org-ul">
+<li>SMH hammering re:chat bots</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgee8f95f" class="outline-2">
+<h2 id="orgee8f95f">Walk to 720 &#x2026; in rain&#x2026; To check on water&#x2026; all good</h2>
+</div>
+
+
+<div id="outline-container-org812b1f2" class="outline-2">
+<h2 id="org812b1f2">Walk to bus stop &#x2026; CMU bus</h2>
+</div>
+
+
+<div id="outline-container-org862f283" class="outline-2">
+<h2 id="org862f283">Claude Code <a href="../../../Notes/4b code base.html#ID-07C5B981-2757-443B-89CF-D57206DBFD03">4b code base</a></h2>
+<div class="outline-text-2" id="text-org862f283">
+<ul class="org-ul">
+<li>Can switch accounts with <code>/login</code></li>
+<li class="on"><code>[X]</code> Add SnakeMake workflows for all the CIs
+"Our  gitlab CI workflows are in coffea4bees/workflows/gitlab-CI/  most of these also have Snakemake workflows in Snakefile<sub>testCI.smk</sub>. Can you find and add any that are missing ?"</li>
+<li class="on"><code>[X]</code> Cleaning up the handing of firends <a href="../../../Archive.html#ID-BC2AA58D-FF10-4F2F-BE11-C8624A89716D">Clean up Run2 vs Run3 configs</a>
+" I want to clean up the analysis/metadata config files. Specifially there are some configs with a nominal version and a Run3 version where the only real difference in the friends configuration eg: HH4b<sub>classifier</sub><sub>inputs</sub><sub>Run3</sub> and HH4b<sub>classifier</sub><sub>inputs</sub>.  I would like to create a seperate config file for friends that changes with the year, similar to what we do in coffea4bees/metadata/triggers<sub>HH4b.yml</sub>. We then need to make sure that file is getting parsed and the friends are properly passed in runner.py</li>
+<li>Claude Coded&#x2026; Testing&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcfe8175" class="outline-2">
+<h2 id="orgcfe8175">Personal <a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a></h2>
+<div class="outline-text-2" id="text-orgcfe8175">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> What to do with finished tasks in Roam Notess?
+Funciton for archiving completed Tasks  
+Built <code>/archive-tasks</code> to move the completed tasks to <code>Archive.org</code> ordered via month and year</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8a0611c" class="outline-2">
+<h2 id="org8a0611c"><a href="../../../Notes/fbc2_meetings-20250508090616.html#ID-1B750F49-7865-4111-A85E-6FB137D9B266">FBC2 Meetings</a></h2>
+<div class="outline-text-2" id="text-org8a0611c">
+<ul class="org-ul">
+<li>FSR Recovery
+<ul class="org-ul">
+<li>Truth tag FSR:  dR vs pT-ratio</li>
+<li>Calibrate the 15 GeV jets?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge18b5d2" class="outline-2">
+<h2 id="orge18b5d2">Response for PLB-D-25-01868R1 <a href="../../../Notes/atlas_x_sh_bbgg-20251014101023.html#ID-A68D261A-6D51-4D33-9840-10E45489A2F5">ATLAS X-&gt;SH-&gt;bbgg</a></h2>
+<div class="outline-text-2" id="text-orge18b5d2">
+<p>
+<a href="../../../Archive.html#ID-92D7495E-622C-4522-BD06-ABBF38FF2EDF">PLB Review</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfde35f1" class="outline-2">
+<h2 id="orgfde35f1">Cleaning up friends in <a href="../../../Notes/4b code base.html#ID-07C5B981-2757-443B-89CF-D57206DBFD03">4b code base</a></h2>
+<div class="outline-text-2" id="text-orgfde35f1">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge6488e6" class="outline-2">
+<h2 id="orge6488e6">Lunch&#x2026;. Noodles!</h2>
+</div>
+
+
+<div id="outline-container-org9459674" class="outline-2">
+<h2 id="org9459674">More <a href="../../../Notes/4b code base.html#ID-07C5B981-2757-443B-89CF-D57206DBFD03">4b code base</a></h2>
+<div class="outline-text-2" id="text-org9459674">
+<ul class="org-ul">
+<li>see above</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf6bd82b" class="outline-2">
+<h2 id="orgf6bd82b">Chat Roy re: Teaching and AB x BA = ihI</h2>
+<div class="outline-text-2" id="text-orgf6bd82b">
+<ul class="org-ul">
+<li>Trace both sides =&gt; P and X must be infinite dim ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgae5f9eb" class="outline-2">
+<h2 id="orgae5f9eb">Starting to [BROKEN LINK: No match for fuzzy expression: *Add ttbar cut flows using weights]</h2>
+<div class="outline-text-2" id="text-orgae5f9eb">
+<p>
+"In processor<sub>HH4b.py</sub> we have the option of plotting the ttbar (fourtag and threetag) processes from data by weighted with events with the corresponding FvT  probablities (option enabled with 'plot<sub>ttbar</sub><sub>with</sub><sub>weights</sub>') When we do this I would also like to compute and output the corresponding ttbar cutflow where the event counts are summed with the corresponding weight."
+</p>
+
+<p>
+Decent amount of iteration&#x2026;
+</p>
+
+<p>
+"Oh wait, I see whats wrong.  We dont want separate _cutFlow<sub>ttbar4b</sub> and _cutFlow<sub>ttbar3b</sub> cutflows. We want one _cutFlow<sub>ttbar</sub> but the cutFlow<sub>ttbar</sub>.<sub>cutFlowThreeTag</sub> should be filled with threeTag events using weight<sub>d3</sub><sub>to</sub><sub>t3</sub> weights and cutFlow<sub>ttbar</sub>.<sub>cutFlowFourTag</sub> shoudl be filled with threeTag events using weight<sub>d3</sub><sub>to</sub><sub>t4</sub> weights "
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9a6987f" class="outline-2">
+<h2 id="org9a6987f">Idea for emacs command to create and store link to task from the org-agenda page</h2>
+<div class="outline-text-2" id="text-org9a6987f">
+<p>
+&#x2026; Built one out with claudeCode&#x2026; but&#x2026; turns out <code>org-store-link</code> (<code>C-c s</code>) does exactly what I wanted
+</p>
+
+<ul class="org-ul">
+<li>I was wrong!
+The org-store-link are relative and break when the Tasks get cleaned up!
+<code>[[file:~/RoamNotes/Tasks.org::*Setup MvD weights][Setup MvD weights]]</code></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgd1f1abf" class="outline-2">
+<h2 id="orgd1f1abf">Updated Git repos to track <code>.claude/skills</code></h2>
+</div>
+
+
+<div id="outline-container-orge22ad1b" class="outline-2">
+<h2 id="orge22ad1b">I think the next step is the MvD fits</h2>
+</div>
+
+
+<div id="outline-container-orgd980124" class="outline-2">
+<h2 id="orgd980124">Leaving for BJJ</h2>
+</div>
+
+
+<div id="outline-container-org2f934f3" class="outline-2">
+<h2 id="org2f934f3">BJJ</h2>
+<div class="outline-text-2" id="text-org2f934f3">
+<ul class="org-ul">
+<li>Arm bars from closed gaurd</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org61cca12" class="outline-2">
+<h2 id="org61cca12">Back to personal <a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a></h2>
+<div class="outline-text-2" id="text-org61cca12">
+<ul class="org-ul">
+<li>working <a href="../../../Archive.html#ID-998330C6-B662-42E0-97F2-47DD380E22A0">Setup org-store agenda links</a></li>
+<li>Finished</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2a4c03c" class="outline-2">
+<h2 id="org2a4c03c">Chat Olivito</h2>
+</div>
+</div>
+</body>
+</html>

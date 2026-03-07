@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Progress Reports</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Progress Reports</h1>
+<p>
+Note: These reports are auto generated based on inputs from this repo
+</p>
+
+<div id="outline-container-org73f6034" class="outline-2">
+<h2 id="org73f6034">Progress Report: 2026-02-23 – 2026-03-01</h2>
+<div class="outline-text-2" id="text-org73f6034">
+</div>
+<div id="outline-container-orgbdc85b0" class="outline-3">
+<h3 id="orgbdc85b0">HH→4b / ZZ→4b / ZH→4b</h3>
+<div class="outline-text-3" id="text-orgbdc85b0">
+<p>
+The dominant theme of the week was advancing the Run 3 data-driven background modelling, with simultaneous effort on hemisphere mixing and synthetic data generation.
+</p>
+
+<p>
+On the hemisphere mixing front, the week began wrapping up the Run 3 v1 (with ttbar subtraction) campaign. Monday was spent making comparison plots of the mixed datasets against data and synthetic datasets, merging results. Wednesday saw slide preparation for a Thursday FBC2 presentation at <a href="https://indico.cern.ch/event/1655563/">https://indico.cern.ch/event/1655563/</a>. The talk was given Thursday and received a more muted reaction than hoped — suggestions from the audience included plotting the delta-y limit and a remark that the semi-merged analysis is fundamentally a low-pt analysis. On Friday, the hemisphere mixing datasets were sent to collaborators. A productive discussion with AE on Thursday identified the mixed→4b extrapolation (fitting MvD weights in the sideband and extrapolating to the signal region) as the clearest near-term next step for the 4b background model from mixed-data strategy.
+</p>
+
+<p>
+Substantial work also continued on the Run 3 synthetic data. Monday established ttbar subtraction via FvT weights in the clustering step and set up the clustering scripts. Tuesday saw new clustered data produced and jet-splitting PDFs generated (version 00-11-00), followed by implementation of ttbar subtraction with FvT in <code>make_declustered_data_4b.py</code>. After debugging missing-dataset errors and re-running, the synthetic dataset yields were found to be lower than before (580k declustered vs. an older 668k), prompting investigation. Wednesday confirmed that ttbar PS data is filling correctly in the declustered output and that the difference likely traces to an eta 2.5 vs 2.4 cut, confirmed Thursday by comparing new and old PDFs. Friday produced a clean no-ttbar-subtraction version: new PDFs (00-11-01) were generated, the full dataset remade, and the analysis run — finding essentially no change relative to the ttbar-subtracted version, which will inform the path forward.
+</p>
+
+<p>
+The Hbb FSR recovery project was initiated and gained momentum mid-week. Thursday saw the derived processor set up on the <code>HbbFSRRecovery</code> branch and the FSR-recovery analysis script running. Friday brought a key idea: use FSR weights to flag truth-level FSR events, which was then pursued with Claude Code to write a <code>print_event</code> diagnostic function exploring b-quark four-vectors, their decay products, and status flags.
+</p>
+
+<p>
+At the weekly CMU 4b group meeting Monday, AE announced plans to start doing fits; Sindhu reported progress on trigger SFs; Chuyuan was working on CI; Christian has skims running and will process one dataset; Lei is exploring clustering on the cluster.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga54e43f" class="outline-3">
+<h3 id="orga54e43f">HH→bbWW</h3>
+<div class="outline-text-3" id="text-orga54e43f">
+<p>
+The weekly bbWW meeting on Friday brought encouraging news: Aniket reported great progress on the HWW mass regressor, with early results suggesting that <code>mHWW</code> can be successfully regressed. No other major bbWW developments this week.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e5f0e3" class="outline-3">
+<h3 id="org4e5f0e3">HGCal / Modules</h3>
+<div class="outline-text-3" id="text-org4e5f0e3">
+<p>
+The Modules Summary for February 2026 was drafted and circulated Monday. CMU has been sustaining ~12 modules/day for several days, producing 30 Ti/300 and Ti/200 modules in the past month, of which 29 are Grade A and one Grade B. Hexaboards are becoming the limiting factor, with roughly two weeks of inventory remaining. MMTS setup is ongoing at high priority — all coldplates and U-pipes installed, most of the PLC is functional, IV curves are being tested at ambient conditions before proceeding with chilling.
+</p>
+
+<p>
+The weekly MAC meeting on Tuesday reviewed status across CMU and UCSB (UCSB has accumulated 124 high-quality modules and recently hit 8 HD Top modules per day). At CMU, module assembly is proceeding well, wire bonding with Jacques is ongoing, and the pickup tool has a slow leak. The chiller is making slower-than-expected progress with dry air. IV testing and GUI software development are in progress. The meeting agreed to move forward on Austin (a technician hire), and Taiwan trip approval (March 23–25) is pending. Sindhu is working on automated CMSR uploads for all MACs. A longer tour of the 9th floor revealed various items needing attention.
+</p>
+
+<p>
+Friday was spent setting up the HGC Monthly Reports tooling: a Python venv with asyncpg and tabulate, and scripts to query module counts by month and institution.
+</p>
+
+<p>
+A DOE site visit to Alabama was confirmed for March 31–April 1. Flight ($355) and hotel were booked mid-week.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43b32c2" class="outline-3">
+<h3 id="org43b32c2">Service &amp; Outreach</h3>
+<div class="outline-text-3" id="text-org43b32c2">
+<p>
+The Undergraduate Lab Committee met Monday; follow-up needed on FMS cost data. The full Faculty Meeting took place Thursday. The annual report was uploaded Wednesday. A discussion with Jim on Friday led to agreement that Jessica deserves a raise.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgea05c20" class="outline-3">
+<h3 id="orgea05c20">Group / Students</h3>
+<div class="outline-text-3" id="text-orgea05c20">
+<p>
+Beyond the 4b meeting and the ongoing AE collaboration on the mixed-data background modelSam was given a commitment to receive FSR analysis code by email; he is also contributing to HGC work (temperature sensors at CMU). Aniket (bbWW) reported the mass regressor breakthrough at the Friday meeting.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6dff0f5" class="outline-3">
+<h3 id="org6dff0f5">Other</h3>
+<div class="outline-text-3" id="text-org6dff0f5">
+<p>
+Claude Code tooling received attention. The Notes Webpage was configured to build once daily at 4am on Monday. On Friday, Claude Code was set up on <code>falcon</code> (blocked by slurm, work moved to LPC). Saturday and Sunday were spent developing the <code>Jack Nosila</code> AI reading/briefing agent: Google API access, a Twitter/X account, and Claude Code integration were all set up, and a self-improving-agent skill was added Sunday. Late Friday evening an idea crystallized to use Claude Code to fix OpenClaw.
+</p>
+
+<p>
+A short essay connecting Austrian economics insights to epistemology was written up on Sunday.
+</p>
+
+<p>
+On the physical side: basketball and steamroom on Monday, Wednesday, and Friday (good runs, Tmax ~122–126°F); BJJ on Thursday (flower sweep from bottom guard) and Saturday (butterfly sweep, no injuries). Fengwei's wedding was attended Saturday at Heinz Chapel. Reading: finished <i>All's Well That Ends Well</i> on Sunday, progressing through <i>The English and Their History</i> and <i>Salt Fat Acid Heat</i>; started <i>A Confederacy of Dunces</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2040f9d" class="outline-3">
+<h3 id="org2040f9d">Next Focus</h3>
+<div class="outline-text-3" id="text-org2040f9d">
+<p>
+The most pressing near-term items: get the HGC database running on lxplus; continue the no-TT synthetic dataset pipeline (JetDeClustering without ttbar subtraction); pursue the mixed→4b extrapolation (MvD weight fit) as the central next step for the 4b background model; continue the FSR truth-level study for Hbb reclustering. The Alabama DOE site visit preparation will pick up in March.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

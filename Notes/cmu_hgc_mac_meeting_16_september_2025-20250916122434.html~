@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 16 September 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 16 September 2025</h1>
+
+
+
+<div id="outline-container-org69b9e8b" class="outline-2">
+<h2 id="org69b9e8b">News</h2>
+<div class="outline-text-2" id="text-org69b9e8b">
+<ul class="org-ul">
+<li></li>
+
+<li>(Modules to FNAL)</li>
+<li>(Module to India ?)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org233d105" class="outline-2">
+<h2 id="org233d105">Action</h2>
+<div class="outline-text-2" id="text-org233d105">
+<ul class="org-ul">
+<li>Boxes ordering today?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org36d3eea" class="outline-2">
+<h2 id="org36d3eea">Jessica</h2>
+<div class="outline-text-2" id="text-org36d3eea">
+<ul class="org-ul">
+<li>No baseplates &#x2026; Improving process</li>
+<li>Streamlining OGP and labview programs</li>
+<li>Working with Arvind on the automated, probably dont need a zoomed out camera</li>
+<li><b>Thinking</b> re: CuT200um problem
+<ul class="org-ul">
+<li>Maybe Glue-Place Glue-Place  vs Glue+Glue - Place-Place</li>
+</ul></li>
+<li>Joystick cable seems OK ?</li>
+<li>Arvind builds a grade A modules</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org17dc35b" class="outline-2">
+<h2 id="org17dc35b">Arvind</h2>
+<div class="outline-text-2" id="text-org17dc35b">
+<ul class="org-ul">
+<li>Build module</li>
+<li>Met Sindhu re:Labview pipeline</li>
+<li>Already have a couple scripts</li>
+<li>Learning LabView</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga07841d" class="outline-2">
+<h2 id="orga07841d">Jim</h2>
+<div class="outline-text-2" id="text-orga07841d">
+<ul class="org-ul">
+<li>Mattermost vs Slack</li>
+<li>Color coding for Gantry</li>
+<li>Joy stick and QR code holders</li>
+<li>Steve EE from Millers</li>
+<li>Techspark on CNC</li>
+<li>Jeff has scrap metal</li>
+<li>Working on mastercam</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgf270734" class="outline-2">
+<h2 id="orgf270734">Jacques</h2>
+<div class="outline-text-2" id="text-orgf270734">
+<ul class="org-ul">
+<li>Materials back from Tech spark</li>
+<li>Coming together nice. Some issues with the door</li>
+<li>Looking into the bonder</li>
+<li>List for upgrading encapsulation</li>
+<li>Extra monitor in the shipping room</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc530083" class="outline-2">
+<h2 id="orgc530083">Sindhu</h2>
+<div class="outline-text-2" id="text-orgc530083">
+<ul class="org-ul">
+<li>Optimized bonger GUI</li>
+<li>Jascuqe need to use a computer with gloves.</li>
+<li>Now only use at start at end of encapsulation</li>
+<li>DB meeting on Monday&#x2026;script for mass uploading</li>
+<li>Mans wants us to upload all QC data</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4d72b51" class="outline-2">
+<h2 id="org4d72b51">Manami</h2>
+<div class="outline-text-2" id="text-org4d72b51">
+<ul class="org-ul">
+<li>Starting to make a HGC welcome pack</li>
+<li>Thoughts about moving the encapsulant station to the tester</li>
+<li>Script to check upload</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org61b6881" class="outline-2">
+<h2 id="org61b6881">Andrew</h2>
+<div class="outline-text-2" id="text-org61b6881">
+<ul class="org-ul">
+<li>Modules shipped to UCSB</li>
+<li>Hanging pedastool tests</li>
+<li>Boxes purchased</li>
+<li>Module sent to india</li>
+<li>Have tarriff from CERN</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge921b59" class="outline-2">
+<h2 id="orge921b59">Christian</h2>
+<div class="outline-text-2" id="text-orge921b59">
+<ul class="org-ul">
+<li>THink about shipping workflow</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaa829ab" class="outline-2">
+<h2 id="orgaa829ab">Pritam</h2>
+<div class="outline-text-2" id="text-orgaa829ab">
+<ul class="org-ul">
+<li>Chiller wireing</li>
+<li>Working on buying MMTS parts</li>
+<li>Jim helped n</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

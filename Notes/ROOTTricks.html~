@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ROOTTricks</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ROOTTricks</h1>
+<p>
+<a href="ROOT.html#ID-DAFED73D-B400-4F7F-BA31-F16651FF418F">ROOT</a>
+</p>
+
+<div id="outline-container-org24c38f6" class="outline-2">
+<h2 id="org24c38f6">Boilerplate</h2>
+<div class="outline-text-2" id="text-org24c38f6">
+<div class="org-src-container">
+<pre class="src src-python">import ROOT  
+ROOT.gROOT.SetBatch(True)
+ROOT.gErrorIgnoreLevel = ROOT.kWarning
+ROOT.gStyle.SetOptStat(0)
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8ad17ba" class="outline-2">
+<h2 id="org8ad17ba">iPlot</h2>
+<div class="outline-text-2" id="text-org8ad17ba">
+<div class="org-src-container">
+<pre class="src src-python">from iUtils import parseOpts, getPM, setBatch, plot
+
+setBatch()
+(o,a) = parseOpts()
+pm = getPM(o)
+
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge2a8bfc" class="outline-2">
+<h2 id="orge2a8bfc">ROOT Tree Codes</h2>
+<div class="outline-text-2" id="text-orge2a8bfc">
+<p>
+The list of currently supported types is given below:
+</p>
+
+<p>
+C : a character string terminated by the 0 character
+B : an 8 bit signed integer (Char<sub>t</sub>)
+b : an 8 bit unsigned integer (UChar<sub>t</sub>)
+S : a 16 bit signed integer (Short<sub>t</sub>)
+s : a 16 bit unsigned integer (UShort<sub>t</sub>)
+I : a 32 bit signed integer (Int<sub>t</sub>)
+i : a 32 bit unsigned integer (UInt<sub>t</sub>)
+F : a 32 bit floating point (Float<sub>t</sub>)
+f : a 24 bit floating point with truncated mantissa (Float16<sub>t</sub>)
+D : a 64 bit floating point (Double<sub>t</sub>)
+d : a 24 bit truncated floating point (Double32<sub>t</sub>)
+L : a 64 bit signed integer (Long64<sub>t</sub>)
+l : a 64 bit unsigned integer (ULong64<sub>t</sub>)
+O : [the letter o, not a zero] a boolean (Bool<sub>t</sub>)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc7bd4fb" class="outline-2">
+<h2 id="orgc7bd4fb">Fix Ratio</h2>
+<div class="outline-text-2" id="text-orgc7bd4fb">
+<p>
+Following should fix it:
+</p>
+<div class="org-src-container">
+<pre class="src src-python">ratio.Draw("PE same")
+oldSize = ratio.GetMarkerSize()
+ratio.SetMarkerSize(0)
+ratio.DrawCopy("same e0")
+ratio.SetMarkerSize(oldSize)
+ratio.Draw("PE same")
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgff639fd" class="outline-2">
+<h2 id="orgff639fd">Optparsee</h2>
+<div class="outline-text-2" id="text-orgff639fd">
+<div class="org-src-container">
+<pre class="src src-python">import optparse
+parser = optparse.OptionParser()
+parser.add_option('-o', '--outputDir',           help="OutputDir")
+o, a = parser.parse_args()
+
+if not os.path.isdir(o.outputDir):
+    os.mkdir(o.outputDir)
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

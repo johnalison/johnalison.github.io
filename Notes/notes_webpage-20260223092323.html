@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notes Webpage</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Notes Webpage</h1>
+
+<div id="outline-container-orgdbf9fda" class="outline-2">
+<h2 id="orgdbf9fda">External Links</h2>
+<div class="outline-text-2" id="text-orgdbf9fda">
+<p>
+<a href="https://johnalison.github.io/">https://johnalison.github.io/</a>
+</p>
+
+<p>
+<a href="https://github.com/johnalison/johnalison.github.io/actions">https://github.com/johnalison/johnalison.github.io/actions</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07ab223" class="outline-2">
+<h2 id="org07ab223">Features</h2>
+<div class="outline-text-2" id="text-org07ab223">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Search function</li>
+<li class="on"><code>[X]</code> Progress Reports Index</li>
+<li class="on"><code>[X]</code> Better Index for Dailies (maybe from months?)</li>
+<li class="on"><code>[X]</code> Links to previous and next day on daily journal entries</li>
+<li class="on"><code>[X]</code> Automatic Daily builds</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga83cde0" class="outline-2">
+<h2 id="orga83cde0">To build and Host Locally</h2>
+<div class="outline-text-2" id="text-orga83cde0">
+<div class="org-src-container">
+<pre class="src src-shell">
+cd /Users/johnda/NotesWebpage &amp;&amp; ./build.sh                                                                                                                                              
+</pre>
+</div>
+
+<p>
+<code>build.sh</code> does a fresh git pull of RoamNotes first, then runs the Emacs publish. The direct Emacs command skips the pull and just rebuilds from whatever is already in RoamNotes/ — useful if you just want to test a publish.el change quickly without waiting for a clone.
+</p>
+
+<p>
+After it finishes, serve with:
+</p>
+
+<p>
+<code>cd /Users/johnda/NotesWebpage/public &amp;&amp; python3 -m http.server 8080</code>
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org0e9e328" class="outline-2">
+<h2 id="org0e9e328">Claude Code Instructions</h2>
+<div class="outline-text-2" id="text-org0e9e328">
+<ul class="org-ul">
+<li>Make my notes into a web page</li>
+<li>checkout repo</li>
+<li>compile on the org files to html&#x2026; See how that looks &#x2026;post process to make better?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="february_2026-20260202090424.html">February 2026</a></li>
+  <li><a href="../Journal/2026/02-February/23-February-2026-Monday.html">23 February 2026 Monday</a></li>
+  <li><a href="../Journal/2026/02-February/22-February-2026-Sunday.html">22 February 2026 Sunday</a></li>
+  <li><a href="../Journal/2026/02-February/21-February-2026-Saturday.html">21 February 2026 Saturday</a></li>
+  <li><a href="../Journal/2026/02-February/20-February-2026-Friday.html">20 February 2026 Friday</a></li>
+</ul>
+</div>
+</body>
+</html>

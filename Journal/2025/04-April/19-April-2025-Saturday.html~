@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>19 April 2025 Saturday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">19 April 2025 Saturday</h1>
+
+
+
+
+
+<div id="outline-container-org11f4427" class="outline-2">
+<h2 id="org11f4427">Up at 8</h2>
+</div>
+
+<div id="outline-container-org5b95c48" class="outline-2">
+<h2 id="org5b95c48">Finished [BROKEN LINK: Myth of the Rational Voter] &#x2026; very good</h2>
+</div>
+
+<div id="outline-container-org387c919" class="outline-2">
+<h2 id="org387c919">Finished [BROKEN LINK: Hamlet]</h2>
+<div class="outline-text-2" id="text-org387c919">
+<ul class="org-ul">
+<li>[&gt;&gt;] Humer argument for why science and reason assume free will:
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=FjAYvhv1-Lg&amp;t=3955s">https://www.youtube.com/watch?v=FjAYvhv1-Lg&amp;t=3955s</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org89a967c" class="outline-2">
+<h2 id="org89a967c">Some [BROKEN LINK: Just Six Numbers]</h2>
+</div>
+
+<div id="outline-container-org13b068e" class="outline-2">
+<h2 id="org13b068e">Fixed the fence</h2>
+</div>
+
+<div id="outline-container-orgac6cb7c" class="outline-2">
+<h2 id="orgac6cb7c">Gym / Steamroom</h2>
+<div class="outline-text-2" id="text-orgac6cb7c">
+<ul class="org-ul">
+<li>3 supersets</li>
+<li>close grip bench - row+deadlifts  / incline dumbbell bench - snatch grip depressed deadlifts / flys - lunges</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd96c6e7" class="outline-2">
+<h2 id="orgd96c6e7">Some [BROKEN LINK: Hamlet] Commentary</h2>
+</div>
+
+<div id="outline-container-org3a270cb" class="outline-2">
+<h2 id="org3a270cb">Installing karabiner</h2>
+<div class="outline-text-2" id="text-org3a270cb">
+<ul class="org-ul">
+<li><a href="https://karabiner-elements.pqrs.org/docs/getting-started/installation/">https://karabiner-elements.pqrs.org/docs/getting-started/installation/</a></li>
+<li>GREAT!!!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgada2e86" class="outline-2">
+<h2 id="orgada2e86">Chat GPT in emacs !:</h2>
+<div class="outline-text-2" id="text-orgada2e86">
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=H8jvhz0CGzU">https://www.youtube.com/watch?v=H8jvhz0CGzU</a></li>
+<li><a href="https://www.youtube.com/watch?v=bsRnh_brggM&amp;t=789s">https://www.youtube.com/watch?v=bsRnh_brggM&amp;t=789s</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc33c4f1" class="outline-2">
+<h2 id="orgc33c4f1">Installing emacs copilot</h2>
+<div class="outline-text-2" id="text-orgc33c4f1">
+<ul class="org-ul">
+<li><code>git clone https://github.com/copilot-emacs/copilot.el</code></li>
+<li>edited .emacs file</li>
+<li><code>M-x copilot-install-server</code></li>
+<li>`M-x copilot-login</li>
+<li>Then signed on the webpage</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org85cd96c" class="outline-2">
+<h2 id="org85cd96c">Setting up gptel</h2>
+</div>
+</div>
+</body>
+</html>

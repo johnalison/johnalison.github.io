@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 3 March 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 3 March 2026</h1>
+
+
+<div id="outline-container-org26527ea" class="outline-2">
+<h2 id="org26527ea">News</h2>
+<div class="outline-text-2" id="text-org26527ea">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 200 CuT in here</li>
+<li class="off"><code>[&#xa0;]</code> Tiawan trip approval 23 &#x2013; 25th</li>
+<li class="off"><code>[&#xa0;]</code> More Ti baseplates</li>
+<li class="off"><code>[&#xa0;]</code> 12 modules yesturday</li>
+<li class="off"><code>[&#xa0;]</code> Offer to Austin</li>
+<li>MAC Meeting tomorrow</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org9be6a12" class="outline-2">
+<h2 id="org9be6a12">Action</h2>
+<div class="outline-text-2" id="text-org9be6a12">
+<ul class="org-ul">
+<li>Meeting:
+<ul class="org-ul">
+<li>CuT need to assemble within a year</li>
+<li>100 + 200um Si</li>
+<li>Continue Ti + 300 v3d</li>
+</ul></li>
+<li>MMTS:
+<ul class="org-ul">
+<li></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbc87d3e" class="outline-2">
+<h2 id="orgbc87d3e">MMTS</h2>
+<div class="outline-text-2" id="text-orgbc87d3e">
+</div>
+<div id="outline-container-orga837f61" class="outline-3">
+<h3 id="orga837f61">(1) ETA and items to complete for chiller checkout with the shelves.</h3>
+<div class="outline-text-3" id="text-orga837f61">
+<ul class="org-ul">
+<li>Shleves need to be moved&#x2026; waiting on UCSB</li>
+<li class="off"><code>[&#xa0;]</code> Dry air being installed now</li>
+<li class="off"><code>[&#xa0;]</code> Needed more fittings</li>
+<li class="off"><code>[&#xa0;]</code> Most of the sensors are mounted</li>
+<li class="off"><code>[&#xa0;]</code> Chiller connection</li>
+<li class="off"><code>[&#xa0;]</code> Magnetic door lock working</li>
+<li>Chiller to shelves : compression fittings ordered for chamber to chiller connection, leak test should be</li>
+</ul>
+<p>
+done in 10 days. 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org5c83b04" class="outline-3">
+<h3 id="org5c83b04">(2) ETA and items to complete for tray assembly (without Kria)</h3>
+<div class="outline-text-3" id="text-org5c83b04">
+<ul class="org-ul">
+<li>Have all components.</li>
+<li>Build a tray</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge6801d4" class="outline-3">
+<h3 id="orge6801d4">(3) Status on wiring, software, etc for IV curve tests</h3>
+<div class="outline-text-3" id="text-orge6801d4">
+<ul class="org-ul">
+<li>Andrew is ordering the wires and connectors.
+Connections should be done in 10-14 days as well.
+PLC side should be completed within 10-14 days as well.</li>
+<li>PLC found a few parts which should arrive this week.</li>
+<li>IV was done.. with single module GUI&#x2026; HV switch</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org291c61f" class="outline-2">
+<h2 id="org291c61f">Jessica</h2>
+<div class="outline-text-2" id="text-org291c61f">
+<ul class="org-ul">
+<li>Tightening up the fiducial finding</li>
+<li>Moving along nicely</li>
+<li>Mini Gantry camera throwing errors</li>
+<li>SB sees the same</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge87d1b6" class="outline-2">
+<h2 id="orge87d1b6">Sindhu</h2>
+<div class="outline-text-2" id="text-orge87d1b6">
+<ul class="org-ul">
+<li>Working with TTU to rename the 300 um to 200 um</li>
+<li>Updated in their postgres system (and lxplus)</li>
+<li>Struggling with uploads to cmsrw</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd1ffb60" class="outline-2">
+<h2 id="orgd1ffb60">Rain</h2>
+<div class="outline-text-2" id="text-orgd1ffb60">
+<ul class="org-ul">
+<li>Figured out a way to get the grapha of all macs to show up</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org65f69fc" class="outline-2">
+<h2 id="org65f69fc">Christian</h2>
+<div class="outline-text-2" id="text-org65f69fc">
+<ul class="org-ul">
+<li>No real updates for this week.</li>
+<li>Organzing the shipping area.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

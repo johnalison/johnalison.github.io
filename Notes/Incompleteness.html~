@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Incompleteness</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Incompleteness</h1>
+<p>
+:ID:       1E2F3G4H-5I6J-7K8L-9M0N-1O2P3Q4R5S6T
+</p>
+
+<div id="outline-container-org77a133b" class="outline-2">
+<h2 id="org77a133b">Incompleteness Theorems</h2>
+<div class="outline-text-2" id="text-org77a133b">
+</div>
+<div id="outline-container-orgfd4cb10" class="outline-3">
+<h3 id="orgfd4cb10">Gödel's Theorems</h3>
+<div class="outline-text-3" id="text-orgfd4cb10">
+<ul class="org-ul">
+<li>First Incompleteness Theorem</li>
+<li>Second Incompleteness Theorem</li>
+<li>Proofs and Implications</li>
+<li>Historical Context</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7060214" class="outline-3">
+<h3 id="org7060214">Applications</h3>
+<div class="outline-text-3" id="text-org7060214">
+<ul class="org-ul">
+<li>Mathematics</li>
+<li>Computer Science</li>
+<li>Philosophy</li>
+<li>Logic</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org318b7d7" class="outline-3">
+<h3 id="org318b7d7">Related Concepts</h3>
+<div class="outline-text-3" id="text-org318b7d7">
+<ul class="org-ul">
+<li>Consistency</li>
+<li>Completeness</li>
+<li>Decidability</li>
+<li>Formal Systems</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc79601d" class="outline-3">
+<h3 id="orgc79601d">Resources</h3>
+<div class="outline-text-3" id="text-orgc79601d">
+<ul class="org-ul">
+<li>Key Papers</li>
+<li>Books</li>
+<li>Online Resources</li>
+<li>Lectures</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

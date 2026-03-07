@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-07 Sat 04:32 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Setting up Falcon</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Setting up Falcon</h1>
+
+
+
+
+<div id="outline-container-orgf254c29" class="outline-2">
+<h2 id="orgf254c29">Initial Setup</h2>
+<div class="outline-text-2" id="text-orgf254c29">
+</div>
+<div id="outline-container-orgc6460ab" class="outline-3">
+<h3 id="orgc6460ab">Copied public key from mac to falcon with</h3>
+<div class="outline-text-3" id="text-orgc6460ab">
+<ul class="org-ul">
+<li><b>ssh-copy-id jalison@falcon.phys.cmu.edu</b></li>
+
+<li>Then make ssh keys on falcon which I copied to rogue01
+<a href="GetSSHKey.html#ID-7A269225-1A9C-4540-827A-791B28CBC30D">GetSSHKey</a></li>
+
+<li>Can now login with out password</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org722e3d6" class="outline-3">
+<h3 id="org722e3d6">Got Git working</h3>
+<div class="outline-text-3" id="text-org722e3d6">
+<ul class="org-ul">
+<li>Added ssh to gitlab</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org900d76e" class="outline-3">
+<h3 id="org900d76e">Enviroment setup</h3>
+<div class="outline-text-3" id="text-org900d76e">
+<ul class="org-ul">
+<li><code>==git clone git@github.com:johnalison/dotfiles.git==</code></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org92743a1" class="outline-2">
+<h2 id="org92743a1">Old Classifier Training setup</h2>
+<div class="outline-text-2" id="text-org92743a1">
+<p>
+Installing conda as here: <a href="https://phoenixnap.com/kb/install-anaconda-ubuntu">https://phoenixnap.com/kb/install-anaconda-ubuntu</a>
+</p>
+
+<p>
+then:
+`&gt; conda env create -f vera<sub>environment.yml</sub>
+Where <code>vera_environment.yml</code> is from the bridges2 setup
+</p>
+
+<p>
+Then conda 
+</p>
+</div>
+
+<div id="outline-container-org8a89bd8" class="outline-3">
+<h3 id="org8a89bd8">Copied the picos over from PSCBridges2</h3>
+<div class="outline-text-3" id="text-org8a89bd8">
+<ul class="org-ul">
+<li>copied them to falcon /scratch</li>
+<li>Not copying them to rogue01 scratch</li>
+</ul>
+
+<p>
+Trying test job&#x2026;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8753bf4" class="outline-2">
+<h2 id="org8753bf4">New Classifier Training setup should be coffea</h2>
+</div>
+
+<div id="outline-container-org5381f4d" class="outline-2">
+<h2 id="org5381f4d">Login instructions</h2>
+<div class="outline-text-2" id="text-org5381f4d">
+<p>
+-&#x2014; get a login &#x2014;  
+</p>
+
+<ul class="org-ul">
+<li>Go to [<a href="https://account.mcs.cmu.edu/">https://account.mcs.cmu.edu/</a>](<a href="https://account.mcs.cmu.edu/">https://account.mcs.cmu.edu/</a>)</li>
+<li>Choose option 1</li>
+<li>If prompted, enter your cmu andrewid and cmu password</li>
+<li>type your desired cluster password twice (can be the same as andrew password or different) and tick "squadron" only</li>
+<li>click submit and wait for confirmation of your request on the webpage</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org409f987" class="outline-3">
+<h3 id="org409f987">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-orgabee520" class="outline-3">
+<h3 id="orgabee520">Links:</h3>
+<div class="outline-text-3" id="text-orgabee520">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<p>
+202410121539
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="cmu4bchats-20250504083825.html">CMU 4b Chats</a></li>
+  <li><a href="Classifier Studies.html">Classifier Studies</a></li>
+  <li><a href="CMU 4b Chats.html">CMU 4b Chats</a></li>
+  <li><a href="../Journal/2024/October 2024.html">October 2024</a></li>
+  <li><a href="../Journal/2024/10-October/12-October-2024-Saturday.html">12 October 2024 Saturday</a></li>
+  <li><a href="../Journal/2024/10-October/09-October-2024-Wednesday.html">09 October 2024 Wednesday</a></li>
+</ul>
+</div>
+</body>
+</html>

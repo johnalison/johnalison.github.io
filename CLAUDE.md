@@ -65,6 +65,16 @@ Monthly page URL patterns recognised:
 
 ## Local build and preview
 
+Three skills are available as slash commands:
+
+| Command | What it does |
+|---------|-------------|
+| `/preview-notes` | Pull latest RoamNotes → start server immediately → kick off background build. Run `/serve-notes` when done to reload. |
+| `/build-notes` | Rebuild from existing `RoamNotes/`, wait for completion (~3-5 min). |
+| `/serve-notes` | Kill anything on `:8080` and start a fresh server from `public/`. |
+
+Or run manually:
+
 ```bash
 # Full build (pulls latest RoamNotes first)
 ./build.sh
@@ -87,5 +97,5 @@ cd public && python3 -m http.server 8080
 
 - `max-width: 740px` content column with `1in` left margin
 - Tables default to content width; `body.monthly-page table` expands to `100vw` (full bleed)
-- Daily journal pages get `body.journal-page` — currently unused but available for future targeting
+- Daily journal pages are detected via `/\/Journal\/` URL pattern in JS (available for future CSS targeting)
 - `nav.day-nav`: flex row with `justify-content: space-between` for prev/next links above page title

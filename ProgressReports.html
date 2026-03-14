@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Progress Reports</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Progress Reports</h1>
+
+<div id="outline-container-orgba1489f" class="outline-2">
+<h2 id="orgba1489f">Progress Report: 12 February 2026 – 13 March 2026</h2>
+<div class="outline-text-2" id="text-orgba1489f">
+</div>
+<div id="outline-container-orgbe2829d" class="outline-3">
+<h3 id="orgbe2829d">HH→4b / ZZ→4b / ZH→4b</h3>
+<div class="outline-text-3" id="text-orgbe2829d">
+<p>
+The Run3 hemisphere-mixing pipeline is now complete and committed. I
+finished the v1 mixed-data production with ttbar subtraction: remade
+classifier inputs, refitted the JCM ("v2"), trained a new FvT, and
+validated the 3b and 4b ttbar modelling with per-event weights. The
+4b ttbar model is in good shape; the t3 modelling has a residual issue
+tied to old trigger-weight treatment. I presented the v1 results at
+the FBC2 meeting on 26 February (Indico 1655563); audience was
+interested but asked for delta-y plots and more detail on the
+semi-merged regime. The pZ-boost improvement to hemisphere matching
+was implemented with Claude Code — Lorentz-boosting matched hemispheres
+to the target pZ reduces the effective library lookup to three variables
+instead of four, increasing available match statistics. A new Run3
+Synthetic Data version was remade with the ttbar-subtracted (noTT)
+hemisphere library and new splitting PDFs (00-11-01); analysis shows
+basically no change in closure quality versus the previous version.
+</p>
+
+<p>
+The MvD classifier is the main current focus. I designed and built it
+from scratch: new dataset config (mix4 / t4 / d4 labels), new model
+baseline (MvD.py), and full training + evaluate workflow under
+<code>HH4b_Run3/MvD/</code>. Getting training clean required tracking down NaNs
+in xW/xbW from failed top reco and NaNs in NotCanJet<sub>mass</sub> from
+numerical instabilities in the pZ boost. Both are fixed via a
+<code>_fill_nan</code> preprocessor and corrected dataset ERA config. Training now
+runs without NaN loss on gpu1 in tmux on LPC. Preliminary ROC shows
+MvD discriminating better than FvT, which is unexpected and warrants
+scrutiny. Classifier input production ran cleanly at ~98k events/s via
+condor (~12 minutes for 25.6M events). Outstanding: run closure and
+compare MvD vs FvT head-to-head. Still need to verify that jet
+multiplicity is correct for the JCM evaluation in the MvD workflow.
+</p>
+
+<p>
+The Hbb FSR-recovery project moved to Falcon and has a working derived
+processor on branch <code>HbbFSRRecovery</code>. The key idea from this period:
+use FvT weights as a truth-level FSR flag rather than a geometric
+selection. Claude Code was used to set up the truth-level
+event-printing infrastructure.
+</p>
+
+<p>
+4b codebase cleanup was substantial. Processors were migrated to a base
+class, object-selection cuts moved from hard-coded values to YAML
+configs, the friends config was split into a year-dependent file
+analogous to <code>triggers_HH4b.yml</code>, and Snakemake wrappers were added for
+all CI jobs. I also added ttbar cutflow output using FvT weights (3b
+→ t3 and 3b → t4), after resolving a cutflow indexing bug with Claude
+Code.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc3e9773" class="outline-3">
+<h3 id="orgc3e9773">HH→bbWW</h3>
+<div class="outline-text-3" id="text-orgc3e9773">
+<p>
+Aniket reported a working mass regressor for mHWW on 27 February — a
+significant milestone for HH→bbWW reconstruction. Weekly meetings
+continued but my direct physics activity was light. Aniket's annual
+review (20 February) was very good; the committee was impressed by his
+low-pt jet strategy and plans for data-driven ttbar corrections.
+Expected graduation Fall 2028.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd21997e" class="outline-3">
+<h3 id="orgd21997e">HGCal / Modules</h3>
+<div class="outline-text-3" id="text-orgd21997e">
+<p>
+CMU assembled 29 Grade-A modules (Ti/300 and Ti/200) in February at a
+peak rate of 12 modules/day. Hexaboards are now the production-limiting
+factor with about 2 weeks of inventory on hand. The MMTS coldplate and
+U-pipe installation is complete, PLC is largely functional, and IV
+testing at ambient conditions has started. UCSB hit 8 HD Top modules in
+a single day (all Grade A) for a total of 124 high-quality modules;
+their MMTS dry-air and cooling manifold rework is underway.
+</p>
+
+<p>
+The February Modules Summary was written and submitted for the DOE
+turnaround report. The CAM turnaround for the 3 March management
+meeting logged 30 modules at CMU in 2026/2 (28 Grade A, 1 Grade C, 1
+ungraded) and 68 at UCSB. The project review is scheduled for late
+July. I was asked to attend the DOE site visit in Alabama (31 March –
+1 April) and booked travel ($355 flight). An offer letter for Austin
+Tarman (technician, $23/hr) was sent and is moving forward with Jeff.
+The 200um CuT modules need to reach CERN before end of March.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org64b6382" class="outline-3">
+<h3 id="org64b6382">Service &amp; Outreach</h3>
+<div class="outline-text-3" id="text-org64b6382">
+<p>
+I submitted my annual report (uploaded 26 February). I served on the
+bio-faculty search and attended faculty meetings on 26 February and
+12 March. Undergraduate Labs Committee meetings continued; the
+committee needs FMS cost data before acting. I completed FNAL annual
+training on 12 March. I submitted a referee response for PLB review
+D-25-01868R1 (ATLAS X→SH→bbgg) on 5 March. I registered for the
+STAMPS workshop on trustworthy statistical inference at CMU (13–15
+May).
+</p>
+
+<p>
+Teaching for Fall 2026 is settled: Physics of Energy (after briefly
+reconsidering Modern Physics 3). Rachel confirmed no concerns about
+my tenure case and recommended I consider leadership development
+courses. I'll join the faculty AI committee in Fall 2026. I wrote a
+UG job ad for an "AI Agents for Scientific Computing" position.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org574983e" class="outline-3">
+<h3 id="org574983e">Group / Students</h3>
+<div class="outline-text-3" id="text-org574983e">
+<p>
+Annual reviews for Sindhu Murthy and Aniket Khanal were completed on
+20 February. Both were positive. Sindhu's committee recommended she
+prioritize thesis analysis over DB work; expected graduation Fall 2027.
+Aniket's committee was impressed by his mass regressor and low-pt
+strategy; expected graduation Fall 2028. Mails summarizing both
+reviews were sent on 3 March.
+</p>
+
+<p>
+In the 9 March 4b group meeting: AE reported low-pt mixed-data is
+nearly done; Sindhu is on triggers; CGB is skimming; Lei is on boosted
+synthetic data. I showed Sindhu how to use Claude Code. Chat with Jeff
+on 10 March confirmed Chuyuan Liu's contract is set and Austin's offer
+letter is next; I'll ping about raises later in the month.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc952ba7" class="outline-3">
+<h3 id="orgc952ba7">Other</h3>
+<div class="outline-text-3" id="text-orgc952ba7">
+<p>
+Substantial Claude Code infrastructure was built this period. Key items:
+set up Claude Code in Emacs (claude-code.el) and installed it on Falcon
+and LPC; built <code>/archive-tasks</code> to move completed tasks to <code>Archive.org</code>
+by month; built <code>/progress-report</code>, <code>/session-summary</code> (dated slug
+filenames), and <code>/poll-fill</code> skills; set up git repos to track
+<code>.claude/skills</code>. I started the issue-bot project
+(github.com/johnalison/issue-bot) — an automated GitLab issue solver
+that invokes Claude Code headlessly to plan and fix issues and run local
+CI. The <code>plan-fix</code> and <code>test-local-CI</code> slash commands are implemented
+and CI now runs on Falcon. I launched the Notes Webpage
+(johnalison.github.io) with a nightly org-publish pipeline.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc088946" class="outline-3">
+<h3 id="orgc088946">Next Focus</h3>
+<div class="outline-text-3" id="text-orgc088946">
+<p>
+Run closure for MvD and compare against FvT — this is the blocking step
+before the approach can be proposed to the collaboration. AE needs to
+verify the jet multiplicity for the JCM evaluation. Implement SvB from
+Evan in the MvD workflow. Continue issue-bot development: next is a
+<code>test</code> function that pushes a branch and monitors GitLab CI status.
+Ping Jeff about staff raises later in March. Attend Alabama DOE site
+visit (31 March – 1 April).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcb2f585" class="outline-2">
+<h2 id="orgcb2f585">Progress Report: 2026-03-12 (Thursday)</h2>
+<div class="outline-text-2" id="text-orgcb2f585">
+</div>
+<div id="outline-container-org08b7d18" class="outline-3">
+<h3 id="org08b7d18">HH→4b / ZZ→4b / ZH→4b</h3>
+<div class="outline-text-3" id="text-org08b7d18">
+<p>
+Thursday was almost entirely devoted to the mixed-data background model ("4b Background from Mixed-data"), which was also the stated One Thing for the day. The main arc of the work was debugging and rebuilding the MvD classifier pipeline to eliminate NaN contamination.
+</p>
+
+<p>
+Early in the day the test script was confirmed working and all condor jobs were submitted. ttbar was added via MvD weights, plots and cutflow from MvD weights were added, and a bug was fixed in which mixeddata<sub>all</sub> eras were not being merged correctly in the histogram axis. CI failures were then addressed.
+</p>
+
+<p>
+The central debugging challenge was NaN values appearing in the MvD training. Investigation traced the source to NaNs in the input jets — likely a problem in the boosting step. A script was written to check classifier inputs for NaNs, the jet NaNs were fixed, CI was repaired, and the entire mixeddata<sub>all</sub> dataset was remade from scratch. After the rebuild, NaNs were confirmed gone.
+</p>
+
+<p>
+A new script was written to output datasets from pico*yml output (<code>make_dataset_yml.py</code>) and documented in <code>src/tools/README.md</code>. Classifier inputs were re-run to completion, and training was launched on gpu1 via tmux — confirming no more NaNs.
+</p>
+
+<p>
+A new issue appeared at the end of the day: only half the expected mixeddata<sub>all</sub> events were visible. Investigation pointed to an ERA config error in <code>common.yml</code>. After correcting the config and rerunning, event counts were restored to the correct values (SR: ~1.6M mix4 events, SB: ~3.3M mix4 events).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge9c4cb3" class="outline-3">
+<h3 id="orge9c4cb3">HGCal / Modules</h3>
+<div class="outline-text-3" id="text-orge9c4cb3">
+<p>
+Had a substantive chat with Rachel covering several HGCal-adjacent topics: leadership development courses, upcoming external review cycle (10 students, 5 external reviewers), staff promotion planning, and tenure case status (no concerns flagged). The conversation also touched on the AI committee (next fall) and course planning.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7edb18e" class="outline-3">
+<h3 id="org7edb18e">Service &amp; Outreach</h3>
+<div class="outline-text-3" id="text-org7edb18e">
+<p>
+Attended the CMU Faculty Meeting. Items discussed included the teachers program (going well) and the bio search.
+</p>
+
+<p>
+Completed required FNAL training.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb16305a" class="outline-3">
+<h3 id="orgb16305a">Other</h3>
+<div class="outline-text-3" id="text-orgb16305a">
+<p>
+Decided to teach Physics of Energy — a question raised during the Rachel chat that was resolved affirmatively by end of day.
+</p>
+
+<p>
+Did some Claude Code workflow work: updated the <code>/session-summary</code> skill to use a <code>&lt;slug&gt;-YYYY-MM-DD.md</code> naming convention for session archives (e.g., <code>fix-background-model-2026-03-12.md</code>).
+</p>
+
+<p>
+Read "Are you a Claude Code Virgin?" (Substack / Home Economics) — noted as very good.
+</p>
+
+<p>
+Set up CMU Ready-2-Ride account.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3dc857f" class="outline-3">
+<h3 id="org3dc857f">Next Focus</h3>
+<div class="outline-text-3" id="text-org3dc857f">
+<ul class="org-ul">
+<li>Confirm MvD training converges cleanly with corrected mixeddata<sub>all</sub> ERA config</li>
+<li>Run closure study to compare MvD background model vs FvT</li>
+<li>Evaluate SvB from Evan; assess SvB gain from adding b-tagging to classifier</li>
+<li>Understand the residual source of input-jet NaNs (flagged as open: likely in boosting step)</li>
+</ul>
+
+<p>
+Note: These reports are auto generated based on inputs from this repo
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgec35eb3" class="outline-2">
+<h2 id="orgec35eb3">Progress Report: 2026-02-23 – 2026-03-01</h2>
+<div class="outline-text-2" id="text-orgec35eb3">
+</div>
+<div id="outline-container-org3d8f32b" class="outline-3">
+<h3 id="org3d8f32b">HH→4b / ZZ→4b / ZH→4b</h3>
+<div class="outline-text-3" id="text-org3d8f32b">
+<p>
+The dominant theme of the week was advancing the Run 3 data-driven background modelling, with simultaneous effort on hemisphere mixing and synthetic data generation.
+</p>
+
+<p>
+On the hemisphere mixing front, the week began wrapping up the Run 3 v1 (with ttbar subtraction) campaign. Monday was spent making comparison plots of the mixed datasets against data and synthetic datasets, merging results. Wednesday saw slide preparation for a Thursday FBC2 presentation at <a href="https://indico.cern.ch/event/1655563/">https://indico.cern.ch/event/1655563/</a>. The talk was given Thursday and received a more muted reaction than hoped — suggestions from the audience included plotting the delta-y limit and a remark that the semi-merged analysis is fundamentally a low-pt analysis. On Friday, the hemisphere mixing datasets were sent to collaborators. A productive discussion with AE on Thursday identified the mixed→4b extrapolation (fitting MvD weights in the sideband and extrapolating to the signal region) as the clearest near-term next step for the 4b background model from mixed-data strategy.
+</p>
+
+<p>
+Substantial work also continued on the Run 3 synthetic data. Monday established ttbar subtraction via FvT weights in the clustering step and set up the clustering scripts. Tuesday saw new clustered data produced and jet-splitting PDFs generated (version 00-11-00), followed by implementation of ttbar subtraction with FvT in <code>make_declustered_data_4b.py</code>. After debugging missing-dataset errors and re-running, the synthetic dataset yields were found to be lower than before (580k declustered vs. an older 668k), prompting investigation. Wednesday confirmed that ttbar PS data is filling correctly in the declustered output and that the difference likely traces to an eta 2.5 vs 2.4 cut, confirmed Thursday by comparing new and old PDFs. Friday produced a clean no-ttbar-subtraction version: new PDFs (00-11-01) were generated, the full dataset remade, and the analysis run — finding essentially no change relative to the ttbar-subtracted version, which will inform the path forward.
+</p>
+
+<p>
+The Hbb FSR recovery project was initiated and gained momentum mid-week. Thursday saw the derived processor set up on the <code>HbbFSRRecovery</code> branch and the FSR-recovery analysis script running. Friday brought a key idea: use FSR weights to flag truth-level FSR events, which was then pursued with Claude Code to write a <code>print_event</code> diagnostic function exploring b-quark four-vectors, their decay products, and status flags.
+</p>
+
+<p>
+At the weekly CMU 4b group meeting Monday, AE announced plans to start doing fits; Sindhu reported progress on trigger SFs; Chuyuan was working on CI; Christian has skims running and will process one dataset; Lei is exploring clustering on the cluster.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8d01263" class="outline-3">
+<h3 id="org8d01263">HH→bbWW</h3>
+<div class="outline-text-3" id="text-org8d01263">
+<p>
+The weekly bbWW meeting on Friday brought encouraging news: Aniket reported great progress on the HWW mass regressor, with early results suggesting that <code>mHWW</code> can be successfully regressed. No other major bbWW developments this week.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e3b1e8" class="outline-3">
+<h3 id="org7e3b1e8">HGCal / Modules</h3>
+<div class="outline-text-3" id="text-org7e3b1e8">
+<p>
+The Modules Summary for February 2026 was drafted and circulated Monday. CMU has been sustaining ~12 modules/day for several days, producing 30 Ti/300 and Ti/200 modules in the past month, of which 29 are Grade A and one Grade B. Hexaboards are becoming the limiting factor, with roughly two weeks of inventory remaining. MMTS setup is ongoing at high priority — all coldplates and U-pipes installed, most of the PLC is functional, IV curves are being tested at ambient conditions before proceeding with chilling.
+</p>
+
+<p>
+The weekly MAC meeting on Tuesday reviewed status across CMU and UCSB (UCSB has accumulated 124 high-quality modules and recently hit 8 HD Top modules per day). At CMU, module assembly is proceeding well, wire bonding with Jacques is ongoing, and the pickup tool has a slow leak. The chiller is making slower-than-expected progress with dry air. IV testing and GUI software development are in progress. The meeting agreed to move forward on Austin (a technician hire), and Taiwan trip approval (March 23–25) is pending. Sindhu is working on automated CMSR uploads for all MACs. A longer tour of the 9th floor revealed various items needing attention.
+</p>
+
+<p>
+Friday was spent setting up the HGC Monthly Reports tooling: a Python venv with asyncpg and tabulate, and scripts to query module counts by month and institution.
+</p>
+
+<p>
+A DOE site visit to Alabama was confirmed for March 31–April 1. Flight ($355) and hotel were booked mid-week.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd4ab9be" class="outline-3">
+<h3 id="orgd4ab9be">Service &amp; Outreach</h3>
+<div class="outline-text-3" id="text-orgd4ab9be">
+<p>
+The Undergraduate Lab Committee met Monday; follow-up needed on FMS cost data. The full Faculty Meeting took place Thursday. The annual report was uploaded Wednesday. A discussion with Jim on Friday led to agreement that Jessica deserves a raise.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2d34855" class="outline-3">
+<h3 id="org2d34855">Group / Students</h3>
+<div class="outline-text-3" id="text-org2d34855">
+<p>
+Beyond the 4b meeting and the ongoing AE collaboration on the mixed-data background modelSam was given a commitment to receive FSR analysis code by email; he is also contributing to HGC work (temperature sensors at CMU). Aniket (bbWW) reported the mass regressor breakthrough at the Friday meeting.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f5379d" class="outline-3">
+<h3 id="org0f5379d">Other</h3>
+<div class="outline-text-3" id="text-org0f5379d">
+<p>
+Claude Code tooling received attention. The Notes Webpage was configured to build once daily at 4am on Monday. On Friday, Claude Code was set up on <code>falcon</code> (blocked by slurm, work moved to LPC). Saturday and Sunday were spent developing the <code>Jack Nosila</code> AI reading/briefing agent: Google API access, a Twitter/X account, and Claude Code integration were all set up, and a self-improving-agent skill was added Sunday. Late Friday evening an idea crystallized to use Claude Code to fix OpenClaw.
+</p>
+
+<p>
+A short essay connecting Austrian economics insights to epistemology was written up on Sunday.
+</p>
+
+<p>
+On the physical side: basketball and steamroom on Monday, Wednesday, and Friday (good runs, Tmax ~122–126°F); BJJ on Thursday (flower sweep from bottom guard) and Saturday (butterfly sweep, no injuries). Fengwei's wedding was attended Saturday at Heinz Chapel. Reading: finished <i>All's Well That Ends Well</i> on Sunday, progressing through <i>The English and Their History</i> and <i>Salt Fat Acid Heat</i>; started <i>A Confederacy of Dunces</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org793a97d" class="outline-3">
+<h3 id="org793a97d">Next Focus</h3>
+<div class="outline-text-3" id="text-org793a97d">
+<p>
+The most pressing near-term items: get the HGC database running on lxplus; continue the no-TT synthetic dataset pipeline (JetDeClustering without ttbar subtraction); pursue the mixed→4b extrapolation (MvD weight fit) as the central next step for the 4b background model; continue the FSR truth-level study for Hbb reclustering. The Alabama DOE site visit preparation will pick up in March.
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

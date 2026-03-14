@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Setting up Falcon</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Setting up Falcon</h1>
+
+
+
+
+<div id="outline-container-org141568f" class="outline-2">
+<h2 id="org141568f">Initial Setup</h2>
+<div class="outline-text-2" id="text-org141568f">
+</div>
+<div id="outline-container-org8c40701" class="outline-3">
+<h3 id="org8c40701">Copied public key from mac to falcon with</h3>
+<div class="outline-text-3" id="text-org8c40701">
+<ul class="org-ul">
+<li><b>ssh-copy-id jalison@falcon.phys.cmu.edu</b></li>
+
+<li>Then make ssh keys on falcon which I copied to rogue01
+<a href="GetSSHKey.html#ID-7A269225-1A9C-4540-827A-791B28CBC30D">GetSSHKey</a></li>
+
+<li>Can now login with out password</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8833f23" class="outline-3">
+<h3 id="org8833f23">Got Git working</h3>
+<div class="outline-text-3" id="text-org8833f23">
+<ul class="org-ul">
+<li>Added ssh to gitlab</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org089ce63" class="outline-3">
+<h3 id="org089ce63">Enviroment setup</h3>
+<div class="outline-text-3" id="text-org089ce63">
+<ul class="org-ul">
+<li><code>==git clone git@github.com:johnalison/dotfiles.git==</code></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgff06689" class="outline-2">
+<h2 id="orgff06689">Old Classifier Training setup</h2>
+<div class="outline-text-2" id="text-orgff06689">
+<p>
+Installing conda as here: <a href="https://phoenixnap.com/kb/install-anaconda-ubuntu">https://phoenixnap.com/kb/install-anaconda-ubuntu</a>
+</p>
+
+<p>
+then:
+`&gt; conda env create -f vera<sub>environment.yml</sub>
+Where <code>vera_environment.yml</code> is from the bridges2 setup
+</p>
+
+<p>
+Then conda 
+</p>
+</div>
+
+<div id="outline-container-org37830cc" class="outline-3">
+<h3 id="org37830cc">Copied the picos over from PSCBridges2</h3>
+<div class="outline-text-3" id="text-org37830cc">
+<ul class="org-ul">
+<li>copied them to falcon /scratch</li>
+<li>Not copying them to rogue01 scratch</li>
+</ul>
+
+<p>
+Trying test job&#x2026;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc3c6c29" class="outline-2">
+<h2 id="orgc3c6c29">New Classifier Training setup should be coffea</h2>
+</div>
+
+<div id="outline-container-org6505980" class="outline-2">
+<h2 id="org6505980">Login instructions</h2>
+<div class="outline-text-2" id="text-org6505980">
+<p>
+-&#x2014; get a login &#x2014;  
+</p>
+
+<ul class="org-ul">
+<li>Go to [<a href="https://account.mcs.cmu.edu/">https://account.mcs.cmu.edu/</a>](<a href="https://account.mcs.cmu.edu/">https://account.mcs.cmu.edu/</a>)</li>
+<li>Choose option 1</li>
+<li>If prompted, enter your cmu andrewid and cmu password</li>
+<li>type your desired cluster password twice (can be the same as andrew password or different) and tick "squadron" only</li>
+<li>click submit and wait for confirmation of your request on the webpage</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org6b8204e" class="outline-3">
+<h3 id="org6b8204e">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org522e485" class="outline-3">
+<h3 id="org522e485">Links:</h3>
+<div class="outline-text-3" id="text-org522e485">
+<p>
+<a href="computing.html#ID-318E7094-F253-4EF0-8F50-960D92C2108C">computing</a>
+</p>
+
+<p>
+202410121539
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 2 September 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 2 September 2025</h1>
+
+
+
+<div id="outline-container-org7c225a0" class="outline-2">
+<h2 id="org7c225a0">News</h2>
+<div class="outline-text-2" id="text-org7c225a0">
+<ul class="org-ul">
+<li>12 Ti + v3c</li>
+<li>JIm and Arvind on Gantry</li>
+<li>Jessica and Jasques on Bonder</li>
+<li>Tried to ship modules</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5e3c02e" class="outline-2">
+<h2 id="org5e3c02e">Action</h2>
+<div class="outline-text-2" id="text-org5e3c02e">
+<ul class="org-ul">
+<li>Outstanding issue CuT + 200um</li>
+<li>Try 8 next month.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3661983" class="outline-2">
+<h2 id="org3661983">Jessica</h2>
+<div class="outline-text-2" id="text-org3661983">
+<ul class="org-ul">
+<li>Keep building</li>
+<li>Will tighten up Labview</li>
+<li>OGP next</li>
+<li>Jim built</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf0e04e" class="outline-2">
+<h2 id="orgbf0e04e">Jim</h2>
+<div class="outline-text-2" id="text-orgbf0e04e">
+<ul class="org-ul">
+<li>Building modules</li>
+<li>Gangtry and OGP</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd299809" class="outline-2">
+<h2 id="orgd299809">Jacques</h2>
+<div class="outline-text-2" id="text-orgd299809">
+<ul class="org-ul">
+<li>Encapsulation all good.</li>
+<li>Some touch up required</li>
+<li>Will test on v3b boards</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge9f03f3" class="outline-2">
+<h2 id="orge9f03f3">Arvind</h2>
+<div class="outline-text-2" id="text-orge9f03f3">
+<ul class="org-ul">
+<li>Some baseplate surveys</li>
+<li>End to end testing with hexabords</li>
+<li>OGP</li>
+<li>Helping jasque with software</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga51381e" class="outline-2">
+<h2 id="orga51381e">Manami</h2>
+<div class="outline-text-2" id="text-orga51381e">
+<ul class="org-ul">
+<li>Prepared slide about thinking re: optimizaiton</li>
+<li>Ideas for cabinets</li>
+<li>Uploaded QC data to CMSR.. can read from cmsr also</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0bca35a" class="outline-2">
+<h2 id="org0bca35a">Andrew</h2>
+<div class="outline-text-2" id="text-org0bca35a">
+<ul class="org-ul">
+<li>Testing molecular sive &#x2026;</li>
+<li>Shipping boxes&#x2026; shipping us another sample</li>
+<li>Discussion about only short boxes:</li>
+<li>Testing meeting last week: CuT200um</li>
+<li>Trophies hanging&#x2026;</li>
+<li>Noise study when have more data</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8768b7a" class="outline-2">
+<h2 id="org8768b7a">Joy</h2>
+<div class="outline-text-2" id="text-org8768b7a">
+<ul class="org-ul">
+<li>Nice update on getting the create ready</li>
+<li>Update at the next MAC meeting</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1903ab2" class="outline-2">
+<h2 id="org1903ab2">Sindhu</h2>
+<div class="outline-text-2" id="text-org1903ab2">
+<ul class="org-ul">
+<li>Bonder GUI up and  running</li>
+<li>DB is on lxplus</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgafb072b" class="outline-2">
+<h2 id="orgafb072b">Pritam</h2>
+<div class="outline-text-2" id="text-orgafb072b">
+<ul class="org-ul">
+<li>No further updates</li>
+<li>Leak issues solved</li>
+<li>Will test again</li>
+<li>Might need a create</li>
+<li>Need 2 more bottles (?) os ethonal</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1b22d99" class="outline-2">
+<h2 id="org1b22d99">Christian</h2>
+<div class="outline-text-2" id="text-org1b22d99">
+<ul class="org-ul">
+<li>Andrew gave me a quick tour of lab</li>
+<li>Andrew tasked me with thinking about shipping worflow. I haven’t given much thought to it this past week</li>
+<li>Plan for coming weeks is to develop step-by-step plan for shipping and then test it</li>
+<li>Also want to think about what organizational things  we’ll need (e.g. desks, computers) (à la Manami’s slides)</li>
+<li>Cloned HGC<sub>DB</sub><sub>postgres</sub> repository and am playing with it to see how it works</li>
+<li>Can I create a new branch of repository to make edits on my machine?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgec67cd5" class="outline-2">
+<h2 id="orgec67cd5">Valentina</h2>
+<div class="outline-text-2" id="text-orgec67cd5">
+<ul class="org-ul">
+<li>Are we using the photos?</li>
+<li>Will try soon</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

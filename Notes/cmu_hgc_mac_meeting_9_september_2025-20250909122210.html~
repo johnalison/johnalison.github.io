@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 9 September 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 9 September 2025</h1>
+
+
+<div id="outline-container-org93c0ef9" class="outline-2">
+<h2 id="org93c0ef9">News</h2>
+<div class="outline-text-2" id="text-org93c0ef9">
+<ul class="org-ul">
+<li>Foam here.</li>
+<li>Can do 4 modules / day for 5 days.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>(Modules to FNAL)</li>
+<li>(Module to India ?)</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org9a9f7c7" class="outline-2">
+<h2 id="org9a9f7c7">Action</h2>
+<div class="outline-text-2" id="text-org9a9f7c7">
+<ul class="org-ul">
+<li>Boxes ordering today?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4c9b215" class="outline-2">
+<h2 id="org4c9b215">Rain</h2>
+<div class="outline-text-2" id="text-org4c9b215">
+<ul class="org-ul">
+<li>Updates for Graphana</li>
+<li>Tirgger for database.</li>
+<li>Updates for timing.</li>
+<li>Updating the new GIU library</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6f7bd14" class="outline-2">
+<h2 id="org6f7bd14">Jessica</h2>
+<div class="outline-text-2" id="text-org6f7bd14">
+<ul class="org-ul">
+<li>All modules are good: electrically</li>
+<li>Offsets are mostly good</li>
+<li><code>*210</code>: Grade F</li>
+<li><code>*211</code>: Probably used wrong fiducials</li>
+<li><code>*213</code>: Near glue error ? (What was the delta T ?)</li>
+<li>Will build another module and then wait for more baseplates</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org72efc2f" class="outline-2">
+<h2 id="org72efc2f">Jim</h2>
+<div class="outline-text-2" id="text-org72efc2f">
+<ul class="org-ul">
+<li>To blame for scrapped modules</li>
+<li>Time in motion studies</li>
+<li>8 - 10 modules / day given current times.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org487b09f" class="outline-2">
+<h2 id="org487b09f">Jacques</h2>
+<div class="outline-text-2" id="text-org487b09f">
+<ul class="org-ul">
+<li>Encapsulation for 4 modules / day went well.</li>
+<li>2 modules / run</li>
+<li>Looking into scaling up</li>
+<li>Got items from module assembly from techspark</li>
+<li>Testing some trophies</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgea8a433" class="outline-2">
+<h2 id="orgea8a433">Joy</h2>
+<div class="outline-text-2" id="text-orgea8a433">
+<ul class="org-ul">
+<li>None</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc245ec2" class="outline-2">
+<h2 id="orgc245ec2">Manami</h2>
+<div class="outline-text-2" id="text-orgc245ec2">
+<ul class="org-ul">
+<li>scripts to check CERN uploads</li>
+<li>Rain to have time in motion.</li>
+<li>Ras. Pi ?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49401fb" class="outline-2">
+<h2 id="org49401fb">Andrew</h2>
+<div class="outline-text-2" id="text-org49401fb">
+<ul class="org-ul">
+<li>Got the foam&#x2026; need more space</li>
+<li>Will order boxes $1700 300/boxes</li>
+<li>Sending a module for TTU and to UCSB</li>
+<li>Hanging problems for tests</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org676862c" class="outline-2">
+<h2 id="org676862c">Pritam</h2>
+<div class="outline-text-2" id="text-org676862c">
+<ul class="org-ul">
+<li>Leak problems: test -40 -&gt; 0 seems all good</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd5c3fbc" class="outline-2">
+<h2 id="orgd5c3fbc">Sindhu</h2>
+<div class="outline-text-2" id="text-orgd5c3fbc">
+<ul class="org-ul">
+<li>Emails re:DB for noise studies</li>
+<li>new DB loader tool</li>
+<li>read from the DB</li>
+<li>Rain and sindhu testing trigger</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3c694ad" class="outline-2">
+<h2 id="org3c694ad">Arvind</h2>
+<div class="outline-text-2" id="text-org3c694ad">
+<ul class="org-ul">
+<li>Testing and surveying</li>
+<li>Learning labview</li>
+<li>Will help e2e assembly and fiducial finding</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgfeb04aa" class="outline-2">
+<h2 id="orgfeb04aa">Christian</h2>
+<div class="outline-text-2" id="text-orgfeb04aa">
+<ul class="org-ul">
+<li>Discussed shipping with Andrew</li>
+<li>DB on the computer for shipping</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org8915c2e" class="outline-2">
+<h2 id="org8915c2e">Valentina</h2>
+<div class="outline-text-2" id="text-org8915c2e">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:39 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>15 May 2025 Thursday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<nav class="day-nav">
+  <a href="14-May-2025-Wednesday.html">&#8592; Previous</a>
+  <a href="16-May-2025-Friday.html">Next &#8594;</a>
+</nav>
+<h1 class="title">15 May 2025 Thursday</h1>
+<div id="outline-container-org835d2fc" class="outline-2">
+<h2 id="org835d2fc">Time Block</h2>
+<div class="outline-text-2" id="text-org835d2fc">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">---</td>
+<td class="org-left">----------------------</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Setup</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Emacs Email</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Emacs Email</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Emacs Email</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">Stats Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Stats Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Emacs Email</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Faculty Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Faculty Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HGC Slides</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">HGC Slides</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HGC Slides</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">HGC Slides</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">HGC Slides</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">HGC Slides</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Leave for M BBall</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<p>
+<b>W:</b>  8 
+<b>DW:</b> 5
+<b>OT:</b> 3
+<b>No ex</b>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga7138c2" class="outline-2">
+<h2 id="orga7138c2">Up at 7:15</h2>
+</div>
+
+<div id="outline-container-org31fd7f3" class="outline-2">
+<h2 id="org31fd7f3">M &amp; T To school</h2>
+</div>
+
+<div id="outline-container-org5779865" class="outline-2">
+<h2 id="org5779865">Synching gcal&#x2026; turning off prompting</h2>
+</div>
+
+<div id="outline-container-org3b5b326" class="outline-2">
+<h2 id="org3b5b326">Got the preview setup <a href="../../../Notes/org_roam_tips-20250503175045.html#ID-7391CD68-2E3C-4FB0-B1E2-5BDAC7CCF2B9">Org-Roam-Tips</a></h2>
+<div class="outline-text-2" id="text-org3b5b326">
+<ul class="org-ul">
+<li>see above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga47ab91" class="outline-2">
+<h2 id="orga47ab91">Think I now understand <code>C-u</code> and a way to call an interactive function with an argument</h2>
+<div class="outline-text-2" id="text-orga47ab91">
+<ul class="org-ul">
+<li>eg: can type text&#x2026; highlight it. then do <code>C-u CMD-i</code> to insert a note with the name of the highlighted text!</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orga328b65" class="outline-2">
+<h2 id="orga328b65"><a href="../../../Notes/email_on_emacs-20250515091032.html#ID-7F79BE21-46F7-4EB3-85B4-521E433A14E4">Email on Emacs</a></h2>
+<div class="outline-text-2" id="text-orga328b65">
+<ul class="org-ul">
+<li>see above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4e2cb61" class="outline-2">
+<h2 id="org4e2cb61"><a href="../../../Notes/stats_data_driven_sr-20250503141800.html#ID-F4AD8527-8EC6-427C-A28E-C5C58525E87E">Stats-Data-Driven-SR</a></h2>
+<div class="outline-text-2" id="text-org4e2cb61">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org708409a" class="outline-2">
+<h2 id="org708409a">More email setup</h2>
+</div>
+
+<div id="outline-container-org59a7d94" class="outline-2">
+<h2 id="org59a7d94"><a href="../../../Notes/Faculty Meeting.html#ID-7D8B2EA5-0A74-480B-B222-6C7FE09F6A9C">Faculty Meeting</a></h2>
+<div class="outline-text-2" id="text-org59a7d94">
+<ul class="org-ul">
+<li>See above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd69e500" class="outline-2">
+<h2 id="orgd69e500"><a href="../../../Notes/hgc_slides_for_june_2025_review-20250513150709.html#ID-FAC1FE44-7770-4F45-92B9-F8B2645A1340">HGC Slides for June 2025 Review</a></h2>
+</div>
+
+<div id="outline-container-org8dbbea3" class="outline-2">
+<h2 id="org8dbbea3">Got <a href="../../../Notes/king_lear-20250517200742.html#ID-CECC30B0-B0B2-4867-AD6A-B96DCC9009FC">King Lear</a></h2>
+</div>
+
+<div id="outline-container-orgd64c86b" class="outline-2">
+<h2 id="orgd64c86b">Working the slides&#x2026; Getting there&#x2026;Its a slough</h2>
+</div>
+
+<div id="outline-container-orgb6c5933" class="outline-2">
+<h2 id="orgb6c5933">Home with M &amp; T</h2>
+</div>
+
+<div id="outline-container-orge178d2e" class="outline-2">
+<h2 id="orge178d2e">To basketball</h2>
+<div class="outline-text-2" id="text-orge178d2e">
+<ul class="org-ul">
+<li>Cancelled !!</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org092b2a2" class="outline-2">
+<h2 id="org092b2a2">Some <a href="../../../Notes/theroadtoserfdom-20250503233832.html#ID-78ED6B2C-6704-451C-9AB0-AD1B9D8E59E8">TheRoadToSerfdom</a></h2>
+</div>
+</div>
+</body>
+</html>

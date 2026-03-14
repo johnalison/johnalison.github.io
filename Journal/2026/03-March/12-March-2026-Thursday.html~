@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>12 March 2026 Thursday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">12 March 2026 Thursday</h1>
+
+<div id="outline-container-orgbcea2d7" class="outline-2">
+<h2 id="orgbcea2d7">Time Block</h2>
+<div class="outline-text-2" id="text-orgbcea2d7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">setup/mails</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">[BROKEN LINK: 916CA411-DD67-4492-BA3C-8A5780856BC7] /  To campus</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left"><del>4b Meeting</del>  4b Background from Mixed</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><del>4b Meeting</del>  4b Background from Mixed</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">4b Meeting Chat Rachel</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chat Rachel</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">[BROKEN LINK: 916CA411-DD67-4492-BA3C-8A5780856BC7]</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Faculty Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Faculty Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chat Roy</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">4b Background from Mixed</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">4b Background from Mixed</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">4b Background from Mixed</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Advising Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Advising Meeting</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">4b Background from Mixed</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b>  8 
+<b>DW:</b>  5
+<b>OT:</b> 4
+<b>No ex</b>
+</p>
+</div>
+
+<div id="outline-container-orge9f5cfe" class="outline-3">
+<h3 id="orge9f5cfe">The One Thing:</h3>
+<div class="outline-text-3" id="text-orge9f5cfe">
+<p>
+<a href="../../../Notes/4b_background_from_mixed_data-20260226121431.html#ID-4F2BE880-417D-4D98-AE60-D563CF9627C6">4b Background from Mixed-data</a>
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org7474360" class="outline-2">
+<h2 id="org7474360">Up at 8</h2>
+</div>
+
+
+<div id="outline-container-org2f48826" class="outline-2">
+<h2 id="org2f48826">H home sick</h2>
+</div>
+
+
+<div id="outline-container-org635b87f" class="outline-2">
+<h2 id="org635b87f">M &amp; T to school in van</h2>
+</div>
+
+
+<div id="outline-container-orga4cb501" class="outline-2">
+<h2 id="orga4cb501">Start Work by 9</h2>
+</div>
+
+
+<div id="outline-container-org6a7f7b4" class="outline-2">
+<h2 id="org6a7f7b4"><a href="../../../Notes/4b_background_from_mixed_data-20260226121431.html#ID-4F2BE880-417D-4D98-AE60-D563CF9627C6">4b Background from Mixed-data</a></h2>
+<div class="outline-text-2" id="text-org6a7f7b4">
+<ul class="org-ul">
+<li>test script now works!</li>
+<li>Running all on condor&#x2026; no SvB &#x2026; done</li>
+<li><del>[ ] FvT and MvD in same job ?</del> &#x2026; prpobably no .. FvT with data and MvD with mixeddata<sub>all</sub></li>
+<li class="on"><code>[X]</code> Add ttbar from MvD weights</li>
+<li>Added plots and cutflwo from MvD weightfs</li>
+<li>Fixed and issue with mixeddata<sub>all</sub> eras not being merged in the histogram axis</li>
+<li>CI failing &#x2026;</li>
+<li>Rerunning MvD hists</li>
+<li>Seeing nans in MvD&#x2026;</li>
+<li>Debugging the nans&#x2026;.</li>
+<li>Lots of good work on the NaNs&#x2026; there are Nans in the input jets.. probably some cock-up in the boosting</li>
+<li>Adding a script to check</li>
+<li class="on"><code>[X]</code> test mixed CI .. then all</li>
+<li>Fixed jet NaNs &#x2026; Will</li>
+<li>Script to check classifier inputs for Nans</li>
+<li>Fixing CI</li>
+<li>Remaking the the mixeddata<sub>all</sub> dataset  &#x2026; Finished ! &#x2026; NaNs are gone.</li>
+<li>Make script to output datasets from pico*yml output
+<code>./run_container python src/tools/make_dataset_yml.py -i output/mixeddata_make_dataset_Run3_all/picoaod_datasets_mixeddata_Run3_noTT_pz.yml -o coffea4bees/metadata/datasets_HH4b_Run3/mixeddata_all_new.yml  -n mixeddata_all</code></li>
+<li>Documented in the <code>src/tools/README.md</code></li>
+<li>Running classifier inputs&#x2026; DONE</li>
+<li>Running Training on gpu1 (tmux)&#x2026; No more Nans&#x2026;</li>
+<li><p>
+But only see half the number of mixeddata<sub>all</sub> events ! 
+</p>
+
+<p>
+In region SR:    
+</p></li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Class</td>
+<td class="org-right">Count</td>
+<td class="org-right">Weight</td>
+</tr>
+
+<tr>
+<td class="org-left">mix4</td>
+<td class="org-right">711980</td>
+<td class="org-right">63407.54203051966</td>
+</tr>
+
+<tr>
+<td class="org-left">t4</td>
+<td class="org-right">296866</td>
+<td class="org-right">17277.291127487522</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+In region SB:   
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Class</td>
+<td class="org-right">Count</td>
+<td class="org-right">Weight</td>
+</tr>
+
+<tr>
+<td class="org-left">mix4</td>
+<td class="org-right">1456861</td>
+<td class="org-right">127114.66217024108</td>
+</tr>
+
+<tr>
+<td class="org-left">t4</td>
+<td class="org-right">445242</td>
+<td class="org-right">25747.11814690142</td>
+</tr>
+
+<tr>
+<td class="org-left">d4</td>
+<td class="org-right">314250</td>
+<td class="org-right">314250.0</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Need to run study mixed data sets and compare &#x2026; Looks fine</li>
+<li>Its the ERA config in the common.yml&#x2026;rerunning &#x2026;</li>
+<li>Now see</li>
+</ul>
+
+<p>
+In region SR:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Class</td>
+<td class="org-right">Count</td>
+<td class="org-right">Weight</td>
+</tr>
+
+<tr>
+<td class="org-left">t4</td>
+<td class="org-right">296866</td>
+<td class="org-right">17277.29112748752</td>
+</tr>
+
+<tr>
+<td class="org-left">mix4</td>
+<td class="org-right">1595462</td>
+<td class="org-right">142829.63097867527</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+In region SB:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Class</td>
+<td class="org-right">Count</td>
+<td class="org-right">Weight</td>
+</tr>
+
+<tr>
+<td class="org-left">t4</td>
+<td class="org-right">445242</td>
+<td class="org-right">25747.11814690142</td>
+</tr>
+
+<tr>
+<td class="org-left">d4</td>
+<td class="org-right">314250</td>
+<td class="org-right">314250.0</td>
+</tr>
+
+<tr>
+<td class="org-left">mix4</td>
+<td class="org-right">3294015</td>
+<td class="org-right">287123.1425604528</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgeaa178f" class="outline-2">
+<h2 id="orgeaa178f">To Campus&#x2026; H with me</h2>
+</div>
+
+
+<div id="outline-container-org09987fe" class="outline-2">
+<h2 id="org09987fe">Chat Jim</h2>
+</div>
+
+
+<div id="outline-container-org35b4ab8" class="outline-2">
+<h2 id="org35b4ab8">More [BROKEN LINK: 916CA411-DD67-4492-BA3C-8A5780856BC7]</h2>
+</div>
+
+
+<div id="outline-container-org85bd18f" class="outline-2">
+<h2 id="org85bd18f">Chat with Rachel</h2>
+<div class="outline-text-2" id="text-org85bd18f">
+<ul class="org-ul">
+<li>HGC</li>
+<li>Good chat&#x2026; do some of the leadership courses</li>
+<li>10 students / 5 external reviews</li>
+<li>Promotions for my staff</li>
+<li>No worries about tenure case</li>
+<li>Maybe I will do physics of Energy after all ?</li>
+<li>AI committee next fall</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge1e5875" class="outline-2">
+<h2 id="orge1e5875"><a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a></h2>
+<div class="outline-text-2" id="text-orge1e5875">
+<ul class="org-ul">
+<li>Fix summary namings ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge3c7988" class="outline-2">
+<h2 id="orge3c7988"><a href="../../../Notes/Faculty Meeting.html#ID-7D8B2EA5-0A74-480B-B222-6C7FE09F6A9C">Faculty Meeting</a></h2>
+<div class="outline-text-2" id="text-orge3c7988">
+<ul class="org-ul">
+<li>Teachers program going well</li>
+<li>Bio search</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd89bcaf" class="outline-2">
+<h2 id="orgd89bcaf">More [BROKEN LINK: 916CA411-DD67-4492-BA3C-8A5780856BC7]</h2>
+</div>
+
+
+<div id="outline-container-orgaf53d41" class="outline-2">
+<h2 id="orgaf53d41">Chat with Manfred</h2>
+</div>
+
+
+<div id="outline-container-org5485a4d" class="outline-2">
+<h2 id="org5485a4d">Good chat with Fillipe!</h2>
+</div>
+
+
+<div id="outline-container-orgf0f9905" class="outline-2">
+<h2 id="orgf0f9905">Will do Physics of Energy!</h2>
+</div>
+
+
+<div id="outline-container-org05a8713" class="outline-2">
+<h2 id="org05a8713">More [BROKEN LINK: 916CA411-DD67-4492-BA3C-8A5780856BC7]</h2>
+</div>
+
+
+<div id="outline-container-org7c1fcad" class="outline-2">
+<h2 id="org7c1fcad">Home with M&amp;T on bus</h2>
+</div>
+
+
+<div id="outline-container-orgede42fc" class="outline-2">
+<h2 id="orgede42fc">Fixing the CI&#x2026;</h2>
+</div>
+
+
+<div id="outline-container-orgb208065" class="outline-2">
+<h2 id="orgb208065">Did FNAL training</h2>
+</div>
+
+
+<div id="outline-container-org8327e04" class="outline-2">
+<h2 id="org8327e04">Are you a Claude Code Virgin?</h2>
+<div class="outline-text-2" id="text-org8327e04">
+<ul class="org-ul">
+<li>Very good
+<a href="https://homeeconomics.substack.com/p/are-you-a-claude-code-virgin?utm_source=post-email-title&amp;publication_id=337518&amp;post_id=190689171&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=lewoe&amp;triedRedirect=true&amp;utm_medium=email">https://homeeconomics.substack.com/p/are-you-a-claude-code-virgin?utm_source=post-email-title&amp;publication_id=337518&amp;post_id=190689171&amp;utm_campaign=email-post-title&amp;isFreemail=true&amp;r=lewoe&amp;triedRedirect=true&amp;utm_medium=email</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0b821af" class="outline-2">
+<h2 id="org0b821af"><a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a></h2>
+<div class="outline-text-2" id="text-org0b821af">
+<ul class="org-ul">
+<li>Updated /session-summary to use a
+"&lt;slug&gt;-YYYY-MM-DD.md where &lt;slug&gt; is a 2-3 word kebab-case summary of the session (e.g. fix-background-model-2026-03-12.md, issue-bot-testing-2026-03-12.md)"</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2e3446d" class="outline-2">
+<h2 id="org2e3446d">Setup cmu Ready-2-Ride account</h2>
+<div class="outline-text-2" id="text-org2e3446d">
+<p>
+<a href="https://www.cmu.edu/transportation/transport/prt.html?utm_source=sfmc&amp;utm_medium=email&amp;utm_campaign=2026-03-09+Changes+for+PRT+riders&amp;utm_term=Learn+more+about+this+change&amp;utm_id=688848&amp;sfmc_id=213042042">https://www.cmu.edu/transportation/transport/prt.html?utm_source=sfmc&amp;utm_medium=email&amp;utm_campaign=2026-03-09+Changes+for+PRT+riders&amp;utm_term=Learn+more+about+this+change&amp;utm_id=688848&amp;sfmc_id=213042042</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org372f768" class="outline-2">
+<h2 id="org372f768">Mega <a href="../../../Notes/4b_background_from_mixed_data-20260226121431.html#ID-4F2BE880-417D-4D98-AE60-D563CF9627C6">4b Background from Mixed-data</a></h2>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>4b Background from Mixed-data</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">4b Background from Mixed-data</h1>
+<p>
+Should we use <a href="hemispheremixing-20250504111513.html#ID-27209C81-3ED8-4721-B0F6-57FC9FA9BB40">HemisphereMixing</a> data as the backgrond model (Fit MvD weights in the SB, extrapolate to the SR)  ? 
+</p>
+
+<div id="outline-container-orgb88e1e5" class="outline-3">
+<h3 id="orgb88e1e5">Advantages:</h3>
+<div class="outline-text-3" id="text-orgb88e1e5">
+<ul class="org-ul">
+<li>Smaller extrapolation should lead to smaller systematics</li>
+<li>Stats uncertianty not worse than 3b (possibly better)</li>
+<li><del>Better for trigger (no need for 3b)</del> <code>still need 3b to make mixed data</code></li>
+<li>Can then use btagging in the classifier</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org78dea47" class="outline-3">
+<h3 id="org78dea47">How to get systematics ?</h3>
+<div class="outline-text-3" id="text-org78dea47">
+<ul class="org-ul">
+<li>PRobably cant use FvT x 3b which assumes SB-&gt;SR extrapolation</li>
+<li>Do closure in DeClustered ? <a href="jetdeclustering-20250504105905.html#ID-45B93DCC-8159-4FD0-9C05-0B72E63422E6">JetDeClustering</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4ba943e" class="outline-2">
+<h2 id="org4ba943e">Plan</h2>
+<div class="outline-text-2" id="text-org4ba943e">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Datasets</li>
+<li class="on"><code>[X]</code> JCM</li>
+<li class="on"><code>[X]</code> Clasifier inputs for mixed<sub>all</sub></li>
+<li class="on"><code>[X]</code> setup MvD config</li>
+<li class="on"><code>[X]</code> Fit MvD weights</li>
+<li class="off"><code>[&#xa0;]</code> Run closure</li>
+<li class="off"><code>[&#xa0;]</code> Compare to FvT</li>
+<li class="off"><code>[&#xa0;]</code> Evaluate SvB from Evan</li>
+<li class="off"><code>[&#xa0;]</code> SvB gain from adding btagging</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1fc1841" class="outline-2">
+<h2 id="org1fc1841">Ideas</h2>
+<div class="outline-text-2" id="text-org1fc1841">
+<ul class="org-ul">
+<li>Probably just want to use mixed<sub>all</sub> x JCM -&gt; 4b</li>
+<li class="on"><code>[X]</code> What to do about tTbar ?
+Probably just want 3 classes mixed<sub>QCD</sub> + 4b data + 4b ttbar</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgc1d099f" class="outline-2">
+<h2 id="orgc1d099f">Logs</h2>
+<div class="outline-text-2" id="text-orgc1d099f">
+</div>
+<div id="outline-container-org097b836" class="outline-3">
+<h3 id="org097b836"><a href="../Journal/2026/02-February/13-February-2026-Friday.html#ID-3963E211-BA4B-43EB-9B74-C2F7EF9837A5">13 February 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-org097b836">
+<ul class="org-ul">
+<li>Running eval and training&#x2026; finished</li>
+<li>No NaNs in test file!</li>
+<li>Running full files</li>
+<li class="off"><code>[&#xa0;]</code> <p>
+Norm off and nJets == 4 bin 0 for mixed..?!
+</p>
+
+<div id="orge36906c" class="figure">
+<p><img src="Logs/2026-03-13_09-13-49_screenshot.png" alt="2026-03-13_09-13-49_screenshot.png" />
+</p>
+</div></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1d6cf07" class="outline-3">
+<h3 id="org1d6cf07"><a href="../Journal/2026/03-March/11-March-2026-Wednesday.html#ID-90D4A9DE-6A57-4C1E-B7E6-DF32447E897E">11 March 2026 Wednesday</a></h3>
+<div class="outline-text-3" id="text-org1d6cf07">
+<ul class="org-ul">
+<li>Figuring out how to apply the MvD weights</li>
+<li>Claude Coded the results</li>
+<li>Test failed &#x2026; MvD run only on data &#x2026; not on mixeddata<sub>all</sub></li>
+<li>Rerunning evaluate on gpu1 (in Tmux)  &#x2026; done</li>
+<li>Re-testing&#x2026; needed another fix for evaluate</li>
+<li><p>
+Problems with HCR inputs not aligning&#x2026;
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">root://cmseos.fnal.gov//store/user/jda102/XX4b/Run3ClassiferInputs/mixeddata_all_2023_BPix/HCR_input_mixed_all.chunk8.root
+  has     60269
+</pre>
+</div></li>
+<li>[&gt;&gt;] In evaluate the tmp files are stored locally not in eos</li>
+<li>More info &#x2026; look like there are some file collisions during HCR<sub>Input</sub> making&#x2026;</li>
+<li><del>[ ] Script to check that each friend tree is unique</del></li>
+<li>Rain out of daily claude quota&#x2026;</li>
+<li>OK I think this is a problem with not haveing eras in mixeddata<sub>all</sub>&#x2026; Update dataset structure to be just like data.yml</li>
+<li>retraining on gpu1 (tmux) .. errors &#x2026; fixing them with claude</li>
+<li>Training running&#x2026; Still see the damn NaNs.. Finished</li>
+<li>Running Evaluate&#x2026; Fixed !</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org423af36" class="outline-3">
+<h3 id="org423af36"><a href="../Journal/2026/03-March/10-March-2026-Tuesday.html#ID-CA29926F-8A8B-4709-91D4-20FDA65A5215">10 March 2026 Tuesday</a></h3>
+<div class="outline-text-3" id="text-org423af36">
+<ul class="org-ul">
+<li>OK on cmslpcgpu2</li>
+<li><code>./run_container classifier</code></li>
+<li>debugging with Claude</li>
+<li>Training &#x2026;.
+In region SR:</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Class</td>
+<td class="org-right">Count</td>
+<td class="org-right">Weight</td>
+</tr>
+
+<tr>
+<td class="org-left">mix4</td>
+<td class="org-right">1597833</td>
+<td class="org-right">141913.27888556762</td>
+</tr>
+
+<tr>
+<td class="org-left">t4</td>
+<td class="org-right">296866</td>
+<td class="org-right">17277.29112748752</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+In region SB:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Class</td>
+<td class="org-right">Count</td>
+<td class="org-right">Weight</td>
+</tr>
+
+<tr>
+<td class="org-left">mix4</td>
+<td class="org-right">3283568</td>
+<td class="org-right">284153.5537637498</td>
+</tr>
+
+<tr>
+<td class="org-left">t4</td>
+<td class="org-right">445242</td>
+<td class="org-right">25747.11814690142</td>
+</tr>
+
+<tr>
+<td class="org-left">d4</td>
+<td class="org-right">314250</td>
+<td class="org-right">314250.0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>Counts look OK&#x2026;</li>
+<li>NaNs calling JCM fit&#x2026; threeTag ttbar ?</li>
+<li>Seeing NaNs in Ghocst batch embedderfs</li>
+<li><p>
+loss is being reported as a nan
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">* Session Summary
+
+What we built
+
+Implemented the MvD classifier — an alternative to FvT that fits
+ mixeddata_all (4b) vs detector data (4b) + ttbar, producing a
+ per-event weight MvD = (p_d4 - p_t4) / p_mix4.
+
+New files:
+ - src/classifier/config/dataset/HCR/_picoAOD.py — added
+   _mixeddata_all() loader + MixedAllBackground class
+ - src/classifier/config/dataset/HCR/MvD.py — dataset config (labels
+   mix4, t4, d4)
+ - src/classifier/config/model/HCR/MvD/baseline.py — loss, ROCs,
+   output definition
+ - coffea4bees/classifier/config/workflows/HH4b_Run3/MvD/ —
+   train.yml, evaluate.yml, run.sh
+
+ Bugs fixed during testing
+ 1. CollisionData.years → CollisionData.eras in _mixeddata_all()
+    (metadata keys are era-style e.g. 2022_EE)
+ 2. _common_selection returns a boolean mask, not a DataFrame —
+    needed _mixed_all_selection wrapper
+ 3. fourTag has ~35k NaN/chunk in mixed_all (3b events, no friend
+    tree entry) — fixed fillna(False) in JCM
+ 4. xW/xbW have 40 NaN/chunk in mixeddata_all friend tree (failed top
+    reco) — fixed by _fill_nan preprocessor in MvD.py
+ 5. NaN loss — caused by xW/xbW NaN propagating through GBN init —
+    should be resolved by _fill_nan
+
+ Where we left off
+
+ The _fill_nan fix was just applied. Training needs to be re-run to
+ confirm the loss is no longer NaN and that all GBN embedder stats
+ are clean.
+</pre>
+</div></li>
+<li>NotCanJet<sub>mass</sub> is also nan.</li>
+<li>Fixed&#x2026;. now training without any Nans</li>
+<li class="on"><code>[X]</code> Need to understand where these Nans are coming from&#x2026;. <code>Boosts numerical instabilities</code></li>
+<li>Finished training !</li>
+<li>Now running eval &#x2026; on gpu TMUX!!!  &#x2026; worked well</li>
+<li>Looks like the ROC for MvD is higher than for FvT (!?) &#x2026; was expecting the opposite</li>
+<li>Ran Eval  in Tmux &#x2026; Need to keep doing this!</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org6ad6ff2" class="outline-3">
+<h3 id="org6ad6ff2"><a href="../Journal/2026/03-March/06-March-2026-Friday.html#ID-3D4337B2-25CD-4960-94F1-707CE5EEBA64">06 March 2026 Friday</a></h3>
+<div class="outline-text-3" id="text-org6ad6ff2">
+<ul class="org-ul">
+<li>Setting up to make classifier input for mixeddata<sub>4b</sub> &#x2026;</li>
+<li>Claude to write  <code>./run_container source coffea4bees/scripts/classifier-inputs-mixeddata-all-Run3.sh --do-test</code></li>
+<li>Iterating to debug the output directories</li>
+<li>Then it ran the full production job with out really aksing&#x2026;
+<code>Production job completed successfully — 25.6M events processed at ~98k events/s in ~12 minutes via condor. Output files are in output/classifier_inputs_mixeddata_all_Run3/</code></li>
+<li>Chatting about  MvD&#x2026; setting it up&#x2026; AMAZING!!!!</li>
+<li><p>
+Combied classifier inputs file
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">./run_container python -m src.friendtrees.merge_friend_meta -i coffea4bees/metadata/datasets_HH4b_Run3/classifier_inputs_Run3.json  coffea4bees/metadata/datasets_HH4b_Run3/classifier_inputs_mixeddata_all.json  -o coffea4bees/metadata/datasets_HH4b_Run3/classifier_inputs_MvD_Run3.json
+</pre>
+</div></li>
+<li>JCM</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-shell">cp -r output/mixeddata_study/jcm_for_subsampling_Run3_noTT_pz/ coffea4bees/analysis/weights/JCM/Run3_MvD
+</pre>
+</div>
+<ul class="org-ul">
+<li>Debugging CI</li>
+</ul>
+<p>
+Pass
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">config=defaultdict(&lt;function processor_config.&lt;locals&gt;.&lt;lambda&gt; at 0x7f5df0351990&gt;, {'isMC': False, 'isPSData': False, 'isMixedData': False, 'isSignal': False,     split_mixed_data.py:56
+                           'isRun3': False, 'isSyntheticData': False, 'isSyntheticMC': False, 'isDataForMixed': False, 'isTTForMixed': False, 'cut_on_lumimask': True, 'cut_on_HLT_decision':                        
+                           True, 'do_MC_weights': False, 'do_jet_calibration': True, 'do_lepton_jet_cleaning': True, 'override_selected_with_flavor_bit': False, 'use_prestored_btag_SF':                            
+                           False, 'do_jet_veto_maps': False})
+</pre>
+</div>
+<p>
+Fail:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">config=defaultdict(&lt;function processor_config.&lt;locals&gt;.&lt;lambda&gt; at 0x7ff8913bd990&gt;, {'isMC': False, 'isPSData': False, 'isMixedData': True, 'isSignal': False,      split_mixed_data.py:56
+                           'isRun3': False, 'isSyntheticData': False, 'isSyntheticMC': False, 'isDataForMixed': False, 'isTTForMixed': False, 'cut_on_lumimask': False, 'cut_on_HLT_decision':                       
+                           False, 'do_MC_weights': False, 'do_jet_calibration': False, 'do_lepton_jet_cleaning': False, 'override_selected_with_flavor_bit': False, 'use_prestored_btag_SF':                         
+                           False, 'do_jet_veto_maps': False}) 
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+  <li><a href="../Tasks.html">Tasks</a></li>
+  <li><a href="march_2026-20260301100820.html">March 2026</a></li>
+  <li><a href="../Journal/2026/03-March/13-March-2026-Friday.html">13 March 2026 Friday</a></li>
+  <li><a href="../Journal/2026/03-March/12-March-2026-Thursday.html">12 March 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/03-March/11-March-2026-Wednesday.html">11 March 2026 Wednesday</a></li>
+  <li><a href="../Journal/2026/03-March/10-March-2026-Tuesday.html">10 March 2026 Tuesday</a></li>
+  <li><a href="../Journal/2026/03-March/06-March-2026-Friday.html">06 March 2026 Friday</a></li>
+  <li><a href="../Journal/2026/03-March/04-March-2026-Wednesday.html">04 March 2026 Wednesday</a></li>
+  <li><a href="../Journal/2026/02-February/26-February-2026-Thursday.html">26 February 2026 Thursday</a></li>
+  <li><a href="../Journal/2026/02-February/23-February-2026-Monday.html">23 February 2026 Monday</a></li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Probability</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Probability</h1>
+<p>
+:ID:       9M0N1O2P-3Q4R-5S6T-7U8V-9W0X1Y2Z3A4B
+</p>
+
+<div id="outline-container-org0ae4127" class="outline-2">
+<h2 id="org0ae4127">Probability Theory</h2>
+<div class="outline-text-2" id="text-org0ae4127">
+</div>
+<div id="outline-container-orgddfd19c" class="outline-3">
+<h3 id="orgddfd19c">Fundamentals</h3>
+<div class="outline-text-3" id="text-orgddfd19c">
+<ul class="org-ul">
+<li>Axioms</li>
+<li>Random Variables</li>
+<li>Distributions</li>
+<li>Expectation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb530c8c" class="outline-3">
+<h3 id="orgb530c8c">Applications</h3>
+<div class="outline-text-3" id="text-orgb530c8c">
+<ul class="org-ul">
+<li>Statistics</li>
+<li>Machine Learning</li>
+<li>Physics</li>
+<li>Finance</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2f72a93" class="outline-3">
+<h3 id="org2f72a93">Methods</h3>
+<div class="outline-text-3" id="text-org2f72a93">
+<ul class="org-ul">
+<li>Bayesian Inference</li>
+<li>Monte Carlo</li>
+<li>Stochastic Processes</li>
+<li>Information Theory</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf987201" class="outline-3">
+<h3 id="orgf987201">Resources</h3>
+<div class="outline-text-3" id="text-orgf987201">
+<ul class="org-ul">
+<li>Textbooks</li>
+<li>Research Papers</li>
+<li>Online Courses</li>
+<li>Software Tools</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

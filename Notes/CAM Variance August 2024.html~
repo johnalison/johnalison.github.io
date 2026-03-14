@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CAM Variance August 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CAM Variance August 2024</h1>
+<p>
+Two variances:
+</p>
+
+<ul class="org-ul">
+<li>402.04.04.04 CE - Standard Module Assembly Site 2</li>
+<li>402.04.04.05 CE - Module Assembly at UCSB</li>
+</ul>
+
+<div id="outline-container-org6486abe" class="outline-2">
+<h2 id="org6486abe">402.04.04.04 CE - Standard Module Assembly Site 2</h2>
+<div class="outline-text-2" id="text-org6486abe">
+<p>
+There is a cumulative schedule variance of -$215k in the cost account 
+402.04.04.04 CE - Standard Module Assembly at CMU.  The variance has two pieces:
+</p>
+<ol class="org-ol">
+<li>-64k Variance from the Assembly of Proto-2 Modules 51-100</li>
+<li>-140k from the assembly of the first batch of modules (1 - 80)</li>
+</ol>
+
+
+<p>
+For the preseries, although $365k of work has been earned, the schedule is behind the $428 expected. This is due to missing input parts: hexaboards and baseplates. 
+</p>
+
+<p>
+Similarly, the production of the first 80 full-sized modules is delayed because of missing input parts. 
+</p>
+
+<p>
+It is expected that CMU will start the assembly of modules once parts will become available.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5b29381" class="outline-2">
+<h2 id="org5b29381">Impact</h2>
+<div class="outline-text-2" id="text-org5b29381">
+<p>
+The activities contributing to the cumulative SV and CV are due to upstream delay of input parts and will be completed later than scheduled.  When input parts come available the value will be earned and it should not impact the overall schedule.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge582315" class="outline-2">
+<h2 id="orge582315">402.04.04.05 CE - Module Assembly at UCSB</h2>
+<div class="outline-text-2" id="text-orge582315">
+<p>
+There is a cumulative schedule variance of -$333k in the cost account 402.04.04.05 CE - Module Assembly at UCSB. This variance has two main pieces:
+</p>
+<ol class="org-ol">
+<li>-75k from assembly of odd-sized preseries modules</li>
+<li>-245k from the assembly and shipping of the first 8% of odd-sized modules.</li>
+</ol>
+
+
+<p>
+For the preseries, although  $1,342k of work has been earned, the schedule is behind the $1,416 expected. This is due to missing input parts: hexaboards and baseplates. 
+</p>
+
+<p>
+Similarly, the production of the first 8% of partial modules is delayed because of missing input parts. 
+</p>
+
+<p>
+It is expected that UCSB will start the assembly of odd-size modules once parts will become available.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org4d5ecf2" class="outline-2">
+<h2 id="org4d5ecf2">Impact</h2>
+<div class="outline-text-2" id="text-org4d5ecf2">
+<p>
+(same as above)
+</p>
+
+<p>
+Notes
+Cumulative SV of $333k 
+</p>
+<ul class="org-ul">
+<li>75k from Assembly of odd-sized preseries</li>
+<li>245k from assembly/shipping of odd -sized modules (1% - 8%)</li>
+<li>12k  Cleanroom consumables</li>
+</ul>
+
+
+<p>
+Cumulative CV of 190k
+Partial cancellation of 
+$210 earned with prototype-1 mudles
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org922ad5d" class="outline-2">
+<h2 id="org922ad5d">What I did:</h2>
+<div class="outline-text-2" id="text-org922ad5d">
+<ul class="org-ul">
+<li>Clicked on the Dataset link in the var page sent in the email eg: <a href="https://cametoolbox.fnal.gov/Variance/ViewIndividualVAR/9278">https://cametoolbox.fnal.gov/Variance/ViewIndividualVAR/9278</a></li>
+<li>clicked on SPA CTD (CAM)</li>
+<li>clicked on my name</li>
+</ul>
+</div>
+
+<div id="outline-container-org43ee721" class="outline-3">
+<h3 id="org43ee721">Follow-ups</h3>
+</div>
+</div>
+</div>
+</body>
+</html>

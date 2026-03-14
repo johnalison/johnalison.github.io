@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>08 March 2026 Sunday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">08 March 2026 Sunday</h1>
+
+<div id="outline-container-org2024630" class="outline-2">
+<h2 id="org2024630">Up at 8:30</h2>
+</div>
+
+
+<div id="outline-container-org15ffdd8" class="outline-2">
+<h2 id="org15ffdd8">Reading</h2>
+<div class="outline-text-2" id="text-org15ffdd8">
+<p>
+Mega <a href="../../../Notes/measure_for_measure-20260305092249.html#ID-587E8A8B-5685-4650-BCBD-3D7BA205D0DD">Measure for Measure</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfa2959e" class="outline-2">
+<h2 id="orgfa2959e">Signed up H for VO&#x2026;</h2>
+<div class="outline-text-2" id="text-orgfa2959e">
+<ul class="org-ul">
+<li>Only MWF!!! Save ~$150</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5c531f0" class="outline-2">
+<h2 id="org5c531f0"><a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a></h2>
+<div class="outline-text-2" id="text-org5c531f0">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> passwordless ssh to mack-mac</li>
+<li class="off"><code>[&#xa0;]</code> Getting openclaw memory going</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd6b2fd9" class="outline-2">
+<h2 id="orgd6b2fd9">Updating emacs</h2>
+<div class="outline-text-2" id="text-orgd6b2fd9">
+<ul class="org-ul">
+<li>Fix ordering in Emacs</li>
+<li>Fix emacs commands when on 16inMachine</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(string= (system-name) "16inMachine")
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3989217" class="outline-2">
+<h2 id="org3989217">Getting open claw going&#x2026; Created <a href="../../../Notes/jack_nosila-20260216085644.html#ID-E721E683-0008-469A-A3A4-2099B2D0E24F">Jack Nosila</a> workspace</h2>
+<div class="outline-text-2" id="text-org3989217">
+<p>
+<a href="https://github.com/jacknosila/openclaw-workspace">https://github.com/jacknosila/openclaw-workspace</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge909cf0" class="outline-2">
+<h2 id="orge909cf0">Tony at the park</h2>
+<div class="outline-text-2" id="text-orge909cf0">
+<ul class="org-ul">
+<li>Bike there&#x2026; all the way down kentucky</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgdbbb737" class="outline-2">
+<h2 id="orgdbbb737">Cat and Tony over</h2>
+</div>
+
+
+<div id="outline-container-orgea60f65" class="outline-2">
+<h2 id="orgea60f65">Setting up eero 7</h2>
+<div class="outline-text-2" id="text-orgea60f65">
+<ul class="org-ul">
+<li>Got the devices setup</li>
+<li>Turned of the wifi on the FiOS router</li>
+<li>Got signal all the way in the garage</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1b24f0c" class="outline-2">
+<h2 id="org1b24f0c">Finished</h2>
+<div class="outline-text-2" id="text-org1b24f0c">
+<p>
+<a href="../../../Notes/measure_for_measure-20260305092249.html#ID-587E8A8B-5685-4650-BCBD-3D7BA205D0DD">Measure for Measure</a>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

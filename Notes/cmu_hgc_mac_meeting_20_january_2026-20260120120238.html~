@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 20 January 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 20 January 2026</h1>
+
+
+
+<div id="outline-container-org17da32a" class="outline-2">
+<h2 id="org17da32a">News</h2>
+<div class="outline-text-2" id="text-org17da32a">
+<ul class="org-ul">
+<li>Move to noon on Mondays</li>
+<li>Tiawan workshop moved to March&#x2026;?</li>
+<li>Module assembly going well&#x2026; producing grade A modules</li>
+<li>Finding a source of static</li>
+<li>8/day</li>
+
+<li>8 /day for 2 days</li>
+<li>12/day OK 16 is feasible</li>
+<li>Corner grading in the GUI: now  72% -&gt; 97%</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org0859998" class="outline-2">
+<h2 id="org0859998">Action</h2>
+<div class="outline-text-2" id="text-org0859998">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Save data on offsets</li>
+<li class="on"><code>[X]</code> Order the 2nd crate?</li>
+<li class="off"><code>[&#xa0;]</code> Alabama GUI ?</li>
+<li class="off"><code>[&#xa0;]</code> Hire another tech</li>
+<li class="off"><code>[&#xa0;]</code> Add v3d to graphana</li>
+<li class="off"><code>[&#xa0;]</code> Ask about a Si data in management meeting</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgaf88583" class="outline-2">
+<h2 id="orgaf88583">Jessica</h2>
+<div class="outline-text-2" id="text-orgaf88583">
+<ul class="org-ul">
+<li>Lessons learned:
+<ul class="org-ul">
+<li>Position 4 leaking: old pickup tool</li>
+<li>16 v3C boards</li>
+<li>Move to v3D boards</li>
+</ul></li>
+<li>Have done 8/day 5 times.</li>
+<li>Static: Mouse / Fans
+<ul class="org-ul">
+<li>Moved ion fan</li>
+</ul></li>
+<li>Wirebonding
+<ul class="org-ul">
+<li>will change wire and wedge</li>
+</ul></li>
+<li>Sensors incoming
+<ul class="org-ul">
+<li>Talk to Rachel re:storing them vertically</li>
+</ul></li>
+<li>Automating Label Making</li>
+<li>Windows 10 ?
+Ask nuno</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org73cd001" class="outline-2">
+<h2 id="org73cd001">Jim</h2>
+<div class="outline-text-2" id="text-org73cd001">
+<ul class="org-ul">
+<li>emails: static studies</li>
+<li>Pritam?</li>
+<li>Chemicals</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5e7d60b" class="outline-2">
+<h2 id="org5e7d60b">Jacques</h2>
+<div class="outline-text-2" id="text-org5e7d60b">
+<ul class="org-ul">
+<li>Encapsulation is all good</li>
+<li>Julia program good</li>
+<li>Working on Bonding</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org518ac66" class="outline-2">
+<h2 id="org518ac66">Rain</h2>
+<div class="outline-text-2" id="text-org518ac66">
+<ul class="org-ul">
+<li>Dashboard with offsets</li>
+<li>Maybe will help Sam with MMTS</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgca8ae3c" class="outline-2">
+<h2 id="orgca8ae3c">Andrew</h2>
+<div class="outline-text-2" id="text-orgca8ae3c">
+<ul class="org-ul">
+<li>Spreadsheet updating automatically</li>
+<li>Order stuff</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcdb8be4" class="outline-2">
+<h2 id="orgcdb8be4">Sindhu</h2>
+<div class="outline-text-2" id="text-orgcdb8be4">
+<ul class="org-ul">
+<li>New table in local DB to score MMTS inventory</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgdb4ed79" class="outline-2">
+<h2 id="orgdb4ed79">Christian</h2>
+<div class="outline-text-2" id="text-orgdb4ed79">
+<ul class="org-ul">
+<li>Sldies:</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org472d101" class="outline-2">
+<h2 id="org472d101">Arvind</h2>
+<div class="outline-text-2" id="text-org472d101">
+<ul class="org-ul">
+<li>New backery rack. Fixed glue issues</li>
+<li>Running OGP and Gantry end to end</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1e594ce" class="outline-2">
+<h2 id="org1e594ce">Manami</h2>
+<div class="outline-text-2" id="text-org1e594ce">
+<ul class="org-ul">
+<li>Upload status: updated</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgb8960b1" class="outline-2">
+<h2 id="orgb8960b1">Pritam</h2>
+</div>
+</div>
+</body>
+</html>

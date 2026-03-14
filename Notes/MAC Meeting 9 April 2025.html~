@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MAC Meeting 9 April 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">MAC Meeting 9 April 2025</h1>
+<p>
+<a href="https://indico.cern.ch/event/1534689/">https://indico.cern.ch/event/1534689/</a>
+</p>
+
+<div id="outline-container-org00f288a" class="outline-2">
+<h2 id="org00f288a">Baseplates</h2>
+<div class="outline-text-2" id="text-org00f288a">
+<p>
+Estimated to be shipped from KIT ~April 28
+</p>
+<ul class="org-ul">
+<li>CMU: 40 Ti LD Full</li>
+<li>UCSB: 40 CuW HD Full
+<ul class="org-ul">
+<li>12 of each Ti Partial type</li>
+</ul></li>
+<li>TTU: 40 Ti LD Full</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2199b2a" class="outline-2">
+<h2 id="org2199b2a">TTU:</h2>
+<div class="outline-text-2" id="text-org2199b2a">
+<ul class="org-ul">
+<li>Moved to new assembly tooling (Only sensor pickup tools left to swap out)</li>
+<li>Working towards 4 module at a time</li>
+<li>Julabo chiller had to be sent back for repairs</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org443faba" class="outline-2">
+<h2 id="org443faba">CMU</h2>
+<div class="outline-text-2" id="text-org443faba">
+<ul class="org-ul">
+<li>15 V3C modules assembled - 14 are Grade A or B</li>
+<li>Installing new tooling for four modules</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0d6a753" class="outline-2">
+<h2 id="org0d6a753">IHEP</h2>
+<div class="outline-text-2" id="text-org0d6a753">
+<ul class="org-ul">
+<li>All good</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd5bfd47" class="outline-2">
+<h2 id="orgd5bfd47">NTU</h2>
+<div class="outline-text-2" id="text-orgd5bfd47">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc8e3b48" class="outline-2">
+<h2 id="orgc8e3b48">Follow-ups</h2>
+</div>
+
+
+<div id="outline-container-org616321c" class="outline-2">
+<h2 id="org616321c">Links:</h2>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>13 March 2026 Friday</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">13 March 2026 Friday</h1>
+<div id="outline-container-orge8da00e" class="outline-2">
+<h2 id="orge8da00e">Time Block</h2>
+<div class="outline-text-2" id="text-orge8da00e">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Progress Reporting</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Progress Reporting</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">bbWW</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">bbWW</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left"><a href="../../../Notes/4b_background_from_mixed_data-20260226121431.html#ID-4F2BE880-417D-4D98-AE60-D563CF9627C6">4b Background from Mixed-data</a></td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Chat</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<b>W:</b>
+<b>DW:</b>
+<b>OT:</b>
+<b>ex</b> or <b>No ex</b>
+</p>
+</div>
+
+<div id="outline-container-org513d7c7" class="outline-3">
+<h3 id="org513d7c7">The One Thing:</h3>
+</div>
+</div>
+
+
+<div id="outline-container-orge65cc60" class="outline-2">
+<h2 id="orge65cc60">Late night Hacking!!!! So fun&#x2026; Up until 1am</h2>
+</div>
+
+
+<div id="outline-container-org23a7594" class="outline-2">
+<h2 id="org23a7594"><a href="../../../Notes/4b_background_from_mixed_data-20260226121431.html#ID-4F2BE880-417D-4D98-AE60-D563CF9627C6">4b Background from Mixed-data</a></h2>
+<div class="outline-text-2" id="text-org23a7594">
+<ul class="org-ul">
+<li>See Logs</li>
+<li>I tihnk the jet multiplcity is wrong for the JCM evaluation!
+<ul class="org-ul">
+<li>Need to check
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Study</li>
+<li class="on"><code>[X]</code> split</li>
+<li class="off"><code>[&#xa0;]</code> Fit</li>
+<li class="on"><code>[X]</code> MvD</li>
+</ul></li>
+</ul></li>
+<li>Found problem with the JCM&#x2026; its the +1 offset needed for the mixeddata .. This will likely explain the larger AUC I was seeing in the MvD training</li>
+<li>ok But now seeing&#x2026;</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Class</td>
+<td class="org-right">Count</td>
+<td class="org-right">Weight</td>
+</tr>
+
+<tr>
+<td class="org-left">d4</td>
+<td class="org-right">314250</td>
+<td class="org-right">314250.0</td>
+</tr>
+
+<tr>
+<td class="org-left">t4</td>
+<td class="org-right">445242</td>
+<td class="org-right">25747.11814690142</td>
+</tr>
+
+<tr>
+<td class="org-left">mix4</td>
+<td class="org-right">3294015</td>
+<td class="org-right">415850.50449001044</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li>Finished .. Evaluated .. Running</li>
+<li>Ran test.. Now running all</li>
+</ul>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org15cd7bd" class="outline-2">
+<h2 id="org15cd7bd">M and T to campus &#x2026; CMU Bus!</h2>
+</div>
+
+
+<div id="outline-container-org219e433" class="outline-2">
+<h2 id="org219e433">Forgot my coffee &#x2026;</h2>
+</div>
+
+<div id="outline-container-orge3f9f72" class="outline-2">
+<h2 id="orge3f9f72"><a href="../../../Notes/progressreport_13_march_2026-20260313085855.html#ID-2C4270DE-55EC-4933-ABAA-C2395F7CDF70">ProgressReport 13 March 2026</a></h2>
+</div>
+
+<div id="outline-container-orgc1a82bd" class="outline-2">
+<h2 id="orgc1a82bd"><a href="../../../Notes/CMU bbWW.html#ID-D0FFC758-67AD-47A6-BCD7-EF12D43129AE">CMU bbWW</a></h2>
+</div>
+
+<div id="outline-container-org0e37abe" class="outline-2">
+<h2 id="org0e37abe"><a href="../../../Notes/claude_code-20260218092801.html#ID-C3D99636-8CA9-4D7B-A5A5-45E995DC2CC7">Claude Code</a></h2>
+<div class="outline-text-2" id="text-org0e37abe">
+<ul class="org-ul">
+<li>Adding a style guide to  /progress-reports based on my previously written  progress reports</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org485de47" class="outline-2">
+<h2 id="org485de47">Hoops</h2>
+<div class="outline-text-2" id="text-org485de47">
+<ul class="org-ul">
+<li>Weiland &#x2026; Hurt my finger</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd899c6f" class="outline-2">
+<h2 id="orgd899c6f">Chat Cooper..</h2>
+<div class="outline-text-2" id="text-orgd899c6f">
+<ul class="org-ul">
+<li>Interested</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org805ddc7" class="outline-2">
+<h2 id="org805ddc7">Chat Gabriel Pecar</h2>
+<div class="outline-text-2" id="text-org805ddc7">
+<ul class="org-ul">
+<li>Wait list</li>
+<li>Duquesne</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org69630ce" class="outline-2">
+<h2 id="org69630ce">Austin Letter out</h2>
+</div>
+
+
+<div id="outline-container-org64e398c" class="outline-2">
+<h2 id="org64e398c">Chat Sarah Heller</h2>
+<div class="outline-text-2" id="text-org64e398c">
+<p>
+From Montana
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf283537" class="outline-2">
+<h2 id="orgf283537">Chat Lei</h2>
+</div>
+</div>
+</body>
+</html>

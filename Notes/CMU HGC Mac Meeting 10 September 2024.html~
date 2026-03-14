@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 10 September 2024</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 10 September 2024</h1>
+
+
+<div id="outline-container-org0f61f5c" class="outline-2">
+<h2 id="org0f61f5c">Action</h2>
+<div class="outline-text-2" id="text-org0f61f5c">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Get new carrying trays (Jonas: will do with tech spark 30 modules)</li>
+<li class="off"><code>[&#xa0;]</code> Clean lab/change filters soon</li>
+<li class="off"><code>[&#xa0;]</code> UG lab tech ? x 2 ?</li>
+<li class="off"><code>[&#xa0;]</code> Backups on everything</li>
+<li>Ping Rachesl remodules</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbc97461" class="outline-2">
+<h2 id="orgbc97461">News</h2>
+<div class="outline-text-2" id="text-orgbc97461">
+<ul class="org-ul">
+<li>Mac Meeting tomorrow 11</li>
+<li>Started notes for tomorrow</li>
+<li>Submitted order for foam (will get delivery date: ~5k 200x3 / will order boxes soon)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org123d741" class="outline-2">
+<h2 id="org123d741">Jessica</h2>
+<div class="outline-text-2" id="text-org123d741">
+<ul class="org-ul">
+<li>Plan for tomorrow</li>
+<li>Automate test stand power</li>
+<li>Trays almost done</li>
+<li>Will do CuT dummies
+<ul class="org-ul">
+<li>Wait on new glue pattern / Jonas to lead</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1d64736" class="outline-2">
+<h2 id="org1d64736">Jonas</h2>
+<div class="outline-text-2" id="text-org1d64736">
+<ul class="org-ul">
+<li>QR camera</li>
+<li>Playing around with gantry</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org81adc06" class="outline-2">
+<h2 id="org81adc06">Andrew</h2>
+<div class="outline-text-2" id="text-org81adc06">
+<ul class="org-ul">
+<li>Lots of studies about the IV of the one bad module</li>
+<li>Suggest to make noise plot for bad and good module at breakdown of bad module and compare&#x2026;Will tell us if the</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcb35647" class="outline-2">
+<h2 id="orgcb35647">Pritam</h2>
+<div class="outline-text-2" id="text-orgcb35647">
+<ul class="org-ul">
+<li>Testing with andrew</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org35c5933" class="outline-2">
+<h2 id="org35c5933">Sindhu</h2>
+<div class="outline-text-2" id="text-org35c5933">
+<ul class="org-ul">
+<li>DB tool ramp up schedule</li>
+<li>Local backup for DB</li>
+<li>Will do backup for windows machines</li>
+<li>Can update to central DB</li>
+<li>catching dummy runs, so they arent written to DB</li>
+<li>Need: OGP gui / central DB / central -&gt; local</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org00f6d5f" class="outline-2">
+<h2 id="org00f6d5f">Aleesha</h2>
+<div class="outline-text-2" id="text-org00f6d5f">
+<ul class="org-ul">
+<li>Will present next week</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org79065ac" class="outline-3">
+<h3 id="org79065ac">Follow-ups</h3>
+</div>
+
+
+<div id="outline-container-org7109473" class="outline-3">
+<h3 id="org7109473">Links:</h3>
+<div class="outline-text-3" id="text-org7109473">
+<p>
+<a href="CMU HGC Mac Meeting 3 September 2024.html#ID-2012D8AE-F476-48A9-83D5-C4D806D30BC3">CMU HGC Mac Meeting 3 September 2024</a>
+<a href="CMU MAC Meeting.html#ID-9EF6EADB-2F6F-4327-86A2-C991CDC1DE21">CMU MAC Meeting</a>
+</p>
+
+<p>
+202409101157
+</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

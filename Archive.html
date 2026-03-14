@@ -1,0 +1,4996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Archive</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Archive</h1>
+
+<div id="outline-container-org47b482a" class="outline-2">
+<h2 id="org47b482a">March 2026</h2>
+<div class="outline-text-2" id="text-org47b482a">
+</div>
+<div id="outline-container-org0250000" class="outline-3">
+<h3 id="org0250000">CANCEL Signal Skims 22 and 23</h3>
+<div class="outline-text-3" id="text-org0250000">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-03 Tue 14:23]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9af5728" class="outline-3">
+<h3 id="org9af5728">CANCEL Signal Injection Study for mixing</h3>
+<div class="outline-text-3" id="text-org9af5728">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-05 Thu 09:15]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge1b580e" class="outline-3">
+<h3 id="orge1b580e"><span class="done DONE">DONE</span> Setup org-store agenda links</h3>
+<div class="outline-text-3" id="text-orge1b580e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-05 Thu 16:08]</span></span>
+</p>
+
+<p>
+1248 +** Agenda Store Link                                                                                                                                                                                                        
+1249 +                                                                                                                                                                                                                                   
+1250 +From the agenda, create an ID on the task headline and store a link to it.                                                                                                                                                  
+1251 +Bind to <code>C-c s</code> in agenda (shadows the global <code>org-store-link</code> with the                                                                                                                                                     
+1252 +smarter version that ensures an ID exists first).                                                                                                                                                                           
+1253 +                                                                                                                                                                                                                            
+1254 +#+begin<sub>src</sub> emacs-lisp :tangle ~/dotfiles/init-org.el                                                                                                                                                                       
+1255 +                                                                                                                                                                                                                            
+1256 +  (defun my/org-agenda-store-link ()                                                                                                                                                                                        
+1257 +    "Jump to the task at point in org-agenda, create an :ID: if needed,                                                                                                                                                     
+1258 +  store a link to it, then return to the agenda buffer.                                                                                                                                                                     
+1259 +  Use C-c C-l in any org buffer to insert the stored link."                                                                                                                                                                 
+1260 +    (interactive)                                                                                                                                                                                                           
+1261 +    (unless (derived-mode-p 'org-agenda-mode)                                                                                                                                                                               
+1262 +      (user-error "This must be called from an org-agenda buffer"))                                                                                                                                                         
+1263 +    (save-window-excursion                                                                                                                                                                                                  
+1264 +      (org-agenda-switch-to)                                                                                                                                                                                                
+1265 +      (org-id-get-create)                                                                                                                                                                                                   
+1266 +      (org-store-link nil))                                                                                                                                                                                                 
+1267 +    (message "Link stored — use C-c C-l to insert it."))                                                                                                                                                                    
+1268 +                                                                                                                                                                                                                            
+1269 +  (define-key org-agenda-mode-map (kbd "C-c s") #'my/org-agenda-store-link)                                                                                                                                                 
+1270 +                                                                                                                                                                                                                            
+1271 +#+end<sub>src</sub>                                                                                                                                                                                                                   
+1272 +                                                                                                                                                                                                                            
+1273 +
+</p>
+
+<p>
+Done. Here's what was added to ~/dotfiles/Emacs.org in the ** Org Agenda section:
+</p>
+
+<p>
+(defun my/org-agenda-store-link ()                                                                                                                                                                                                           
+  (interactive)
+  (unless (derived-mode-p 'org-agenda-mode)                                                                                                                                                                                                  
+    (user-error "This must be called from an org-agenda buffer"))
+  (save-window-excursion
+    (org-agenda-switch-to)    ; jump to source headline
+    (org-id-get-create)       ; ensure :ID: exists
+    (org-store-link nil))     ; store the link
+  (message "Link stored — use C-c C-l to insert it."))
+</p>
+
+<p>
+(define-key org-agenda-mode-map (kbd "C-c s") #'my/org-agenda-store-link)
+</p>
+
+<p>
+Usage: In the agenda buffer, put point on a task and hit C-c s. Then go to any org note and C-c C-l to insert the stored link.
+</p>
+
+<p>
+Why save-window-excursion: cleanly handles the window navigation — jumps to the source file, does the work, and snaps back to the agenda automatically without needing to track windows manually.
+</p>
+
+<p>
+To load it now: M-x org-babel-tangle in Emacs.org, then M-x load-file ~/dotfiles/init-org.el.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9beaaf7" class="outline-3">
+<h3 id="org9beaaf7"><span class="done DONE">DONE</span> What to do to hire a CMU UG for the summer</h3>
+<div class="outline-text-3" id="text-org9beaaf7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-07 Sat 11:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org942ba57" class="outline-3">
+<h3 id="org942ba57"><span class="done DONE">DONE</span> Add ttbar cut flows using weights</h3>
+<div class="outline-text-3" id="text-org942ba57">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-11 Wed 16:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org63a4b26" class="outline-3">
+<h3 id="org63a4b26"><span class="done DONE">DONE</span> PLB Review</h3>
+<div class="outline-text-3" id="text-org63a4b26">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-02 Mon 09:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf50e68b" class="outline-3">
+<h3 id="orgf50e68b"><span class="done DONE">DONE</span> Clean up Run2 vs Run3 configs</h3>
+<div class="outline-text-3" id="text-orgf50e68b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-05 Thu 09:13]</span></span>
+</p>
+
+<ul class="org-ul">
+<li>FriendTrees  in separatre config</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7a65ee2" class="outline-3">
+<h3 id="org7a65ee2"><span class="done DONE">DONE</span> Recommendtion for Evan</h3>
+<div class="outline-text-3" id="text-org7a65ee2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-05 Thu 09:23]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org555a1eb" class="outline-3">
+<h3 id="org555a1eb"><span class="done DONE">DONE</span> Sam re:Analysis</h3>
+<div class="outline-text-3" id="text-org555a1eb">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 17:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf88f04c" class="outline-3">
+<h3 id="orgf88f04c"><span class="done DONE">DONE</span> Ping Gillian re:Lab Techs</h3>
+<div class="outline-text-3" id="text-orgf88f04c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-03 Tue 11:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3513a8a" class="outline-3">
+<h3 id="org3513a8a"><span class="done DONE">DONE</span> Remake Synthetic datasets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="4b">4b</span></span></h3>
+<div class="outline-text-3" id="text-org3513a8a">
+</div>
+</div>
+
+<div id="outline-container-orgdab6168" class="outline-3">
+<h3 id="orgdab6168"><span class="done DONE">DONE</span> <a href="Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></h3>
+<div class="outline-text-3" id="text-orgdab6168">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-09 Fri 08:58]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd6367b4" class="outline-3">
+<h3 id="orgd6367b4"><span class="done DONE">DONE</span> Mail Austin Offer Letter</h3>
+<div class="outline-text-3" id="text-orgd6367b4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-27 Fri 08:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org37d31d1" class="outline-3">
+<h3 id="org37d31d1"><span class="done DONE">DONE</span> Move Hbb to Falcon</h3>
+<div class="outline-text-3" id="text-org37d31d1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-03 Tue 08:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgde8d584" class="outline-3">
+<h3 id="orgde8d584"><span class="done DONE">DONE</span> Mail re:Mixed Data</h3>
+<div class="outline-text-3" id="text-orgde8d584">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-27 Fri 08:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7f2c3c" class="outline-3">
+<h3 id="orgf7f2c3c"><span class="done DONE">DONE</span> Review Feb</h3>
+<div class="outline-text-3" id="text-orgf7f2c3c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-01 Sun 10:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge66ae35" class="outline-3">
+<h3 id="orge66ae35"><span class="done DONE">DONE</span> Setup March</h3>
+<div class="outline-text-3" id="text-orge66ae35">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-01 Sun 10:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfdde5de" class="outline-3">
+<h3 id="orgfdde5de"><span class="done DONE">DONE</span> Sam re:Analysis</h3>
+<div class="outline-text-3" id="text-orgfdde5de">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 17:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c68386" class="outline-3">
+<h3 id="org5c68386"><span class="done DONE">DONE</span> Ping Gillian re:Lab Techs</h3>
+<div class="outline-text-3" id="text-org5c68386">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-03 Tue 11:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga416b12" class="outline-3">
+<h3 id="orga416b12"><span class="done DONE">DONE</span> Remake Synthetic datasets&#xa0;&#xa0;&#xa0;<span class="tag"><span class="4b">4b</span></span></h3>
+<div class="outline-text-3" id="text-orga416b12">
+</div>
+</div>
+
+<div id="outline-container-org28f4627" class="outline-3">
+<h3 id="org28f4627"><span class="done DONE">DONE</span> <a href="Notes/run3_hemisphere_mixing-20260109085909.html#ID-05E42FB4-D42A-47E8-9303-E8F83EC7089A">Run3 Hemisphere Mixing</a></h3>
+<div class="outline-text-3" id="text-org28f4627">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-09 Fri 08:58]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6661ddc" class="outline-3">
+<h3 id="org6661ddc"><span class="done DONE">DONE</span> Mail Austin Offer Letter</h3>
+<div class="outline-text-3" id="text-org6661ddc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-27 Fri 08:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge44c0ba" class="outline-3">
+<h3 id="orge44c0ba"><span class="done DONE">DONE</span> Move Hbb to Falcon</h3>
+<div class="outline-text-3" id="text-orge44c0ba">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-03 Tue 08:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd34e388" class="outline-3">
+<h3 id="orgd34e388"><span class="done DONE">DONE</span> Mail re:Mixed Data</h3>
+<div class="outline-text-3" id="text-orgd34e388">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-27 Fri 08:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org29d1873" class="outline-3">
+<h3 id="org29d1873"><span class="done DONE">DONE</span> Review Feb</h3>
+<div class="outline-text-3" id="text-org29d1873">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-01 Sun 10:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc967483" class="outline-3">
+<h3 id="orgc967483"><span class="done DONE">DONE</span> Setup March</h3>
+<div class="outline-text-3" id="text-orgc967483">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-01 Sun 10:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3a44aaa" class="outline-3">
+<h3 id="org3a44aaa"><span class="done DONE">DONE</span> Test new Archive function</h3>
+<div class="outline-text-3" id="text-org3a44aaa">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-03-06 Fri 09:32]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9a7f300" class="outline-2">
+<h2 id="org9a7f300">February 2026</h2>
+<div class="outline-text-2" id="text-org9a7f300">
+</div>
+<div id="outline-container-org44e9b4b" class="outline-3">
+<h3 id="org44e9b4b"><span class="done DONE">DONE</span> Ping Austin re:Job</h3>
+<div class="outline-text-3" id="text-org44e9b4b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-24 Tue 18:10]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ec2d45" class="outline-3">
+<h3 id="org8ec2d45"><span class="done DONE">DONE</span> Recover Obsidian plots</h3>
+<div class="outline-text-3" id="text-org8ec2d45">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-26 Thu 14:13]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd01a79e" class="outline-3">
+<h3 id="orgd01a79e"><span class="done DONE">DONE</span> Bitcoin for Fenguie</h3>
+<div class="outline-text-3" id="text-orgd01a79e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-27 Fri 09:05]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a1f0cc" class="outline-3">
+<h3 id="org5a1f0cc"><span class="done DONE">DONE</span> Hotel in Alabama</h3>
+<div class="outline-text-3" id="text-org5a1f0cc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-24 Tue 09:52]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfb94da2" class="outline-3">
+<h3 id="orgfb94da2"><span class="done DONE">DONE</span> Upload Annual Report</h3>
+<div class="outline-text-3" id="text-orgfb94da2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-25 Wed 08:48]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbc458c6" class="outline-3">
+<h3 id="orgbc458c6"><span class="done DONE">DONE</span> Claude code in EMACS!!!</h3>
+<div class="outline-text-3" id="text-orgbc458c6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-13 Fri 09:29]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3de1c52" class="outline-3">
+<h3 id="org3de1c52"><span class="done DONE">DONE</span> Flight to Alabama</h3>
+<div class="outline-text-3" id="text-org3de1c52">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-24 Tue 08:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge114d88" class="outline-3">
+<h3 id="orge114d88"><span class="done DONE">DONE</span> Call Rob</h3>
+<div class="outline-text-3" id="text-orge114d88">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 09:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2a8b888" class="outline-3">
+<h3 id="org2a8b888"><span class="done DONE">DONE</span> Add some slides on synthetic datasets</h3>
+<div class="outline-text-3" id="text-org2a8b888">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-12 Thu 08:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org48f2e8f" class="outline-3">
+<h3 id="org48f2e8f"><span class="done DONE">DONE</span> VARs</h3>
+<div class="outline-text-3" id="text-org48f2e8f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-13 Fri 07:48]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org94b00e4" class="outline-3">
+<h3 id="org94b00e4"><span class="done DONE">DONE</span> Setup Openclaw</h3>
+<div class="outline-text-3" id="text-org94b00e4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-14 Sat 15:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org673bbd5" class="outline-3">
+<h3 id="org673bbd5">CANCEL Update the classifier stash on rogue</h3>
+<div class="outline-text-3" id="text-org673bbd5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-30 Fri 10:48]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb3d3736" class="outline-3">
+<h3 id="orgb3d3736"><span class="done DONE">DONE</span> <a href="Notes/run3_trigger_scale_factors-20260127151855.html#ID-13A75602-EDC2-46B6-8A4E-00E8AD7BE4C8">Run3 Trigger Scale Factors</a></h3>
+<div class="outline-text-3" id="text-orgb3d3736">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-28 Wed 09:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdc01edb" class="outline-3">
+<h3 id="orgdc01edb"><span class="done DONE">DONE</span> Mail to Jeff</h3>
+<div class="outline-text-3" id="text-orgdc01edb">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-11 Wed 10:06]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf94f0b9" class="outline-3">
+<h3 id="orgf94f0b9"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-orgf94f0b9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-13 Fri 07:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org64b21d5" class="outline-3">
+<h3 id="org64b21d5"><span class="done DONE">DONE</span> Chat Lipika</h3>
+<div class="outline-text-3" id="text-org64b21d5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-11 Wed 08:57]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge165c57" class="outline-3">
+<h3 id="orge165c57"><span class="done DONE">DONE</span> Chat Jeff re-restarting the Lab Tech search</h3>
+<div class="outline-text-3" id="text-orge165c57">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 13:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org99e2897" class="outline-3">
+<h3 id="org99e2897"><span class="done DONE">DONE</span> Think more about Heumers Proof of free will</h3>
+<div class="outline-text-3" id="text-org99e2897">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-04 Wed 09:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3cefbd3" class="outline-3">
+<h3 id="org3cefbd3"><span class="done DONE">DONE</span> Follow up on HS student</h3>
+<div class="outline-text-3" id="text-org3cefbd3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-03 Tue 11:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga725d35" class="outline-3">
+<h3 id="orga725d35"><span class="done DONE">DONE</span> Post CMS review comments</h3>
+<div class="outline-text-3" id="text-orga725d35">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-04 Wed 09:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org83c26cc" class="outline-3">
+<h3 id="org83c26cc"><span class="done DONE">DONE</span> Review Jan</h3>
+<div class="outline-text-3" id="text-org83c26cc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-01 Sun 12:22]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57aec1f" class="outline-3">
+<h3 id="org57aec1f"><span class="done DONE">DONE</span> Setup Feb</h3>
+<div class="outline-text-3" id="text-org57aec1f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-01 Sun 12:22]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf696146" class="outline-3">
+<h3 id="orgf696146"><span class="done DONE">DONE</span> Aniket Started on SW project</h3>
+<div class="outline-text-3" id="text-orgf696146">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-09 Tue 14:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80f349d" class="outline-3">
+<h3 id="org80f349d"><span class="done DONE">DONE</span> look into claude code</h3>
+<div class="outline-text-3" id="text-org80f349d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 10:08]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgecf71cf" class="outline-3">
+<h3 id="orgecf71cf"><span class="done DONE">DONE</span> Ping Austin re:Job</h3>
+<div class="outline-text-3" id="text-orgecf71cf">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-24 Tue 18:10]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org056f386" class="outline-3">
+<h3 id="org056f386"><span class="done DONE">DONE</span> Recover Obsidian plots</h3>
+<div class="outline-text-3" id="text-org056f386">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-26 Thu 14:13]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga180962" class="outline-3">
+<h3 id="orga180962"><span class="done DONE">DONE</span> Bitcoin for Fenguie</h3>
+<div class="outline-text-3" id="text-orga180962">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-27 Fri 09:05]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1f44b21" class="outline-3">
+<h3 id="org1f44b21"><span class="done DONE">DONE</span> Hotel in Alabama</h3>
+<div class="outline-text-3" id="text-org1f44b21">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-24 Tue 09:52]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org167f960" class="outline-3">
+<h3 id="org167f960"><span class="done DONE">DONE</span> Upload Annual Report</h3>
+<div class="outline-text-3" id="text-org167f960">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-25 Wed 08:48]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf626d55" class="outline-3">
+<h3 id="orgf626d55"><span class="done DONE">DONE</span> Claude code in EMACS!!!</h3>
+<div class="outline-text-3" id="text-orgf626d55">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-13 Fri 09:29]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge5b7e94" class="outline-3">
+<h3 id="orge5b7e94"><span class="done DONE">DONE</span> Flight to Alabama</h3>
+<div class="outline-text-3" id="text-orge5b7e94">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-24 Tue 08:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6cb3c79" class="outline-3">
+<h3 id="org6cb3c79"><span class="done DONE">DONE</span> Call Rob</h3>
+<div class="outline-text-3" id="text-org6cb3c79">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 09:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb180390" class="outline-3">
+<h3 id="orgb180390"><span class="done DONE">DONE</span> Add some slides on synthetic datasets</h3>
+<div class="outline-text-3" id="text-orgb180390">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-12 Thu 08:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7c19b7" class="outline-3">
+<h3 id="orgf7c19b7"><span class="done DONE">DONE</span> VARs</h3>
+<div class="outline-text-3" id="text-orgf7c19b7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-13 Fri 07:48]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd68e730" class="outline-3">
+<h3 id="orgd68e730"><span class="done DONE">DONE</span> Setup Openclaw</h3>
+<div class="outline-text-3" id="text-orgd68e730">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-14 Sat 15:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33b3970" class="outline-3">
+<h3 id="org33b3970">CANCEL Update the classifier stash on rogue</h3>
+<div class="outline-text-3" id="text-org33b3970">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-30 Fri 10:48]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2643e1a" class="outline-3">
+<h3 id="org2643e1a"><span class="done DONE">DONE</span> <a href="Notes/run3_trigger_scale_factors-20260127151855.html#ID-13A75602-EDC2-46B6-8A4E-00E8AD7BE4C8">Run3 Trigger Scale Factors</a></h3>
+<div class="outline-text-3" id="text-org2643e1a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-28 Wed 09:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgceeba39" class="outline-3">
+<h3 id="orgceeba39"><span class="done DONE">DONE</span> Mail to Jeff</h3>
+<div class="outline-text-3" id="text-orgceeba39">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-11 Wed 10:06]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc914470" class="outline-3">
+<h3 id="orgc914470"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-orgc914470">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-13 Fri 07:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfaa411b" class="outline-3">
+<h3 id="orgfaa411b"><span class="done DONE">DONE</span> Chat Lipika</h3>
+<div class="outline-text-3" id="text-orgfaa411b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-11 Wed 08:57]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1b3678c" class="outline-3">
+<h3 id="org1b3678c"><span class="done DONE">DONE</span> Chat Jeff re-restarting the Lab Tech search</h3>
+<div class="outline-text-3" id="text-org1b3678c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 13:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb7be30b" class="outline-3">
+<h3 id="orgb7be30b"><span class="done DONE">DONE</span> Think more about Heumers Proof of free will</h3>
+<div class="outline-text-3" id="text-orgb7be30b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-04 Wed 09:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb13b5c5" class="outline-3">
+<h3 id="orgb13b5c5"><span class="done DONE">DONE</span> Follow up on HS student</h3>
+<div class="outline-text-3" id="text-orgb13b5c5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-03 Tue 11:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2a42de4" class="outline-3">
+<h3 id="org2a42de4"><span class="done DONE">DONE</span> Post CMS review comments</h3>
+<div class="outline-text-3" id="text-org2a42de4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-04 Wed 09:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org581db73" class="outline-3">
+<h3 id="org581db73"><span class="done DONE">DONE</span> Review Jan</h3>
+<div class="outline-text-3" id="text-org581db73">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-01 Sun 12:22]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a0b60d" class="outline-3">
+<h3 id="org5a0b60d"><span class="done DONE">DONE</span> Setup Feb</h3>
+<div class="outline-text-3" id="text-org5a0b60d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-02-01 Sun 12:22]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org32db6d2" class="outline-3">
+<h3 id="org32db6d2"><span class="done DONE">DONE</span> Aniket Started on SW project</h3>
+<div class="outline-text-3" id="text-org32db6d2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-09 Tue 14:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51f7038" class="outline-3">
+<h3 id="org51f7038"><span class="done DONE">DONE</span> look into claude code</h3>
+<div class="outline-text-3" id="text-org51f7038">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 10:08]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2c58cd5" class="outline-2">
+<h2 id="org2c58cd5">January 2026</h2>
+<div class="outline-text-2" id="text-org2c58cd5">
+</div>
+<div id="outline-container-org9475b66" class="outline-3">
+<h3 id="org9475b66"><span class="done DONE">DONE</span> Call Dentist re:Cracked tooth</h3>
+<div class="outline-text-3" id="text-org9475b66">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-28 Wed 17:21]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6811a72" class="outline-3">
+<h3 id="org6811a72"><span class="done DONE">DONE</span> check TTbar Trigger weights</h3>
+<div class="outline-text-3" id="text-org6811a72">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 10:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge6354ad" class="outline-3">
+<h3 id="orge6354ad">CANCEL Recalculate Flows</h3>
+<div class="outline-text-3" id="text-orge6354ad">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-12 Fri 09:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga63c46e" class="outline-3">
+<h3 id="orga63c46e"><span class="done DONE">DONE</span> Update CI with corrected Run3 skims</h3>
+<div class="outline-text-3" id="text-orga63c46e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-14 Wed 11:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b62f29" class="outline-3">
+<h3 id="org2b62f29"><span class="done DONE">DONE</span> What can Chuyuan work on ?</h3>
+<div class="outline-text-3" id="text-org2b62f29">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-23 Fri 09:10]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9fd4d0" class="outline-3">
+<h3 id="orga9fd4d0"><span class="done DONE">DONE</span> update gptel</h3>
+<div class="outline-text-3" id="text-orga9fd4d0">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 10:09]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1898b41" class="outline-3">
+<h3 id="org1898b41"><span class="done DONE">DONE</span> Aniket Re:MMTS</h3>
+<div class="outline-text-3" id="text-org1898b41">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 17:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f4a78d" class="outline-3">
+<h3 id="org4f4a78d">CANCEL Send around outreach summary</h3>
+<div class="outline-text-3" id="text-org4f4a78d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-23 Fri 09:06]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org683903f" class="outline-3">
+<h3 id="org683903f"><span class="done DONE">DONE</span> Ping Austin</h3>
+<div class="outline-text-3" id="text-org683903f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-23 Fri 19:18]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org55f9850" class="outline-3">
+<h3 id="org55f9850"><span class="done DONE">DONE</span> Mail Mortgage Check</h3>
+<div class="outline-text-3" id="text-org55f9850">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-26 Mon 10:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf3a95a5" class="outline-3">
+<h3 id="orgf3a95a5"><span class="done DONE">DONE</span> Mail re:Institutional review EXO-23-001</h3>
+<div class="outline-text-3" id="text-orgf3a95a5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-26 Mon 11:19]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org469be4c" class="outline-3">
+<h3 id="org469be4c">CANCEL Read EXO-23-001</h3>
+<div class="outline-text-3" id="text-org469be4c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-26 Mon 11:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4001022" class="outline-3">
+<h3 id="org4001022"><span class="done DONE">DONE</span> Update CI with new Run3 loose defintion</h3>
+<div class="outline-text-3" id="text-org4001022">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-15 Thu 16:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcef956e" class="outline-3">
+<h3 id="orgcef956e"><span class="done DONE">DONE</span> In 4bcode: Pass configs not options</h3>
+<div class="outline-text-3" id="text-orgcef956e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 11:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd58fb90" class="outline-3">
+<h3 id="orgd58fb90"><span class="done DONE">DONE</span> Modules Summary</h3>
+<div class="outline-text-3" id="text-orgd58fb90">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-25 Sun 11:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org94189e6" class="outline-3">
+<h3 id="org94189e6"><span class="done DONE">DONE</span> Library book back</h3>
+<div class="outline-text-3" id="text-org94189e6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-21 Wed 15:35]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb8270f2" class="outline-3">
+<h3 id="orgb8270f2"><span class="done DONE">DONE</span> CAM VAR</h3>
+<div class="outline-text-3" id="text-orgb8270f2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-15 Thu 15:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdad7107" class="outline-3">
+<h3 id="orgdad7107"><span class="done DONE">DONE</span> Update Lei Slides</h3>
+<div class="outline-text-3" id="text-orgdad7107">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 15:20]</span></span>
+<a href="https://docs.google.com/presentation/d/1hAP87hOuozlm_WzoxFTHRQ7iyFmZ_TorncdbtGJBkbo/edit?slide=id.p#slide=id.p">https://docs.google.com/presentation/d/1hAP87hOuozlm_WzoxFTHRQ7iyFmZ_TorncdbtGJBkbo/edit?slide=id.p#slide=id.p</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org063964d" class="outline-3">
+<h3 id="org063964d"><span class="done DONE">DONE</span> Add External Monitor to Listing</h3>
+<div class="outline-text-3" id="text-org063964d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-18 Sun 10:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge1d15e0" class="outline-3">
+<h3 id="orge1d15e0"><span class="done DONE">DONE</span> Book room for outreach event</h3>
+<div class="outline-text-3" id="text-orge1d15e0">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 08:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5fba402" class="outline-3">
+<h3 id="org5fba402"><span class="done DONE">DONE</span> Mail re:Outreach committee</h3>
+<div class="outline-text-3" id="text-org5fba402">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 14:34]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ae62df" class="outline-3">
+<h3 id="org4ae62df"><span class="done DONE">DONE</span> Ping Chuyuan for Date</h3>
+<div class="outline-text-3" id="text-org4ae62df">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 15:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcdfbbcf" class="outline-3">
+<h3 id="orgcdfbbcf"><span class="done DONE">DONE</span> Progress Report January</h3>
+<div class="outline-text-3" id="text-orgcdfbbcf">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 08:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org353d489" class="outline-3">
+<h3 id="org353d489"><span class="done DONE">DONE</span> Redo Outreach Mail</h3>
+<div class="outline-text-3" id="text-org353d489">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 08:43]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0720781" class="outline-3">
+<h3 id="org0720781"><span class="done DONE">DONE</span> Ping Chuyuan</h3>
+<div class="outline-text-3" id="text-org0720781">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 09:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8042c71" class="outline-3">
+<h3 id="org8042c71"><span class="done DONE">DONE</span> Add coffee info ot AirBNB listingg</h3>
+<div class="outline-text-3" id="text-org8042c71">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-14 Wed 14:04]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org346870b" class="outline-3">
+<h3 id="org346870b"><span class="done DONE">DONE</span> Undergraduate Ad</h3>
+<div class="outline-text-3" id="text-org346870b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-15 Thu 08:53]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7648c7a" class="outline-3">
+<h3 id="org7648c7a"><span class="done DONE">DONE</span> Setup Hemi-mixing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="4b">4b</span></span></h3>
+<div class="outline-text-3" id="text-org7648c7a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-12 Mon 10:27]</span></span>
+</p>
+
+<p>
+Summer student starts
+Raymond Hmuifoo beginning May 27, 2025 and ending July 19, 2025.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4a9677f" class="outline-3">
+<h3 id="org4a9677f"><span class="done DONE">DONE</span> Message to Dr re: neck</h3>
+<div class="outline-text-3" id="text-org4a9677f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-07 Wed 11:22]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6f9d7da" class="outline-3">
+<h3 id="org6f9d7da"><span class="done DONE">DONE</span> Prep for ORAL</h3>
+<div class="outline-text-3" id="text-org6f9d7da">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-05 Mon 08:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org09fbd91" class="outline-3">
+<h3 id="org09fbd91">CANCEL Write Greg a note</h3>
+<div class="outline-text-3" id="text-org09fbd91">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-19 Fri 14:26]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1ebb32c" class="outline-3">
+<h3 id="org1ebb32c"><span class="done DONE">DONE</span> Setup January</h3>
+<div class="outline-text-3" id="text-org1ebb32c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge55e799" class="outline-3">
+<h3 id="orge55e799"><span class="done DONE">DONE</span> Review DEC</h3>
+<div class="outline-text-3" id="text-orge55e799">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a94865" class="outline-3">
+<h3 id="org1a94865"><span class="done DONE">DONE</span> Review 2025</h3>
+<div class="outline-text-3" id="text-org1a94865">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org443598f" class="outline-3">
+<h3 id="org443598f"><span class="done DONE">DONE</span> Update Parking permit</h3>
+<div class="outline-text-3" id="text-org443598f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 11:43]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd66611e" class="outline-3">
+<h3 id="orgd66611e"><span class="done DONE">DONE</span> Call Dentist re:Cracked tooth</h3>
+<div class="outline-text-3" id="text-orgd66611e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-28 Wed 17:21]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf6a7a57" class="outline-3">
+<h3 id="orgf6a7a57"><span class="done DONE">DONE</span> check TTbar Trigger weights</h3>
+<div class="outline-text-3" id="text-orgf6a7a57">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 10:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfda1d40" class="outline-3">
+<h3 id="orgfda1d40">CANCEL Recalculate Flows</h3>
+<div class="outline-text-3" id="text-orgfda1d40">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-12 Fri 09:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org822c10e" class="outline-3">
+<h3 id="org822c10e"><span class="done DONE">DONE</span> Update CI with corrected Run3 skims</h3>
+<div class="outline-text-3" id="text-org822c10e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-14 Wed 11:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb0ffd36" class="outline-3">
+<h3 id="orgb0ffd36"><span class="done DONE">DONE</span> What can Chuyuan work on ?</h3>
+<div class="outline-text-3" id="text-orgb0ffd36">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-23 Fri 09:10]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc3d6c07" class="outline-3">
+<h3 id="orgc3d6c07"><span class="done DONE">DONE</span> update gptel</h3>
+<div class="outline-text-3" id="text-orgc3d6c07">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-27 Tue 10:09]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0dddd69" class="outline-3">
+<h3 id="org0dddd69"><span class="done DONE">DONE</span> Aniket Re:MMTS</h3>
+<div class="outline-text-3" id="text-org0dddd69">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 17:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb641e90" class="outline-3">
+<h3 id="orgb641e90">CANCEL Send around outreach summary</h3>
+<div class="outline-text-3" id="text-orgb641e90">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-23 Fri 09:06]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org66e66eb" class="outline-3">
+<h3 id="org66e66eb"><span class="done DONE">DONE</span> Ping Austin</h3>
+<div class="outline-text-3" id="text-org66e66eb">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-23 Fri 19:18]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef81915" class="outline-3">
+<h3 id="orgef81915"><span class="done DONE">DONE</span> Mail Mortgage Check</h3>
+<div class="outline-text-3" id="text-orgef81915">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-26 Mon 10:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8d575fc" class="outline-3">
+<h3 id="org8d575fc"><span class="done DONE">DONE</span> Mail re:Institutional review EXO-23-001</h3>
+<div class="outline-text-3" id="text-org8d575fc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-26 Mon 11:19]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge0630b8" class="outline-3">
+<h3 id="orge0630b8">CANCEL Read EXO-23-001</h3>
+<div class="outline-text-3" id="text-orge0630b8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-26 Mon 11:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2eb57ec" class="outline-3">
+<h3 id="org2eb57ec"><span class="done DONE">DONE</span> Update CI with new Run3 loose defintion</h3>
+<div class="outline-text-3" id="text-org2eb57ec">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-15 Thu 16:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgda37a96" class="outline-3">
+<h3 id="orgda37a96"><span class="done DONE">DONE</span> In 4bcode: Pass configs not options</h3>
+<div class="outline-text-3" id="text-orgda37a96">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 11:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3b86cd1" class="outline-3">
+<h3 id="org3b86cd1"><span class="done DONE">DONE</span> Modules Summary</h3>
+<div class="outline-text-3" id="text-org3b86cd1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-25 Sun 11:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org113523c" class="outline-3">
+<h3 id="org113523c"><span class="done DONE">DONE</span> Library book back</h3>
+<div class="outline-text-3" id="text-org113523c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-21 Wed 15:35]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org02e6fb6" class="outline-3">
+<h3 id="org02e6fb6"><span class="done DONE">DONE</span> CAM VAR</h3>
+<div class="outline-text-3" id="text-org02e6fb6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-15 Thu 15:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org066f820" class="outline-3">
+<h3 id="org066f820"><span class="done DONE">DONE</span> Update Lei Slides</h3>
+<div class="outline-text-3" id="text-org066f820">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 15:20]</span></span>
+<a href="https://docs.google.com/presentation/d/1hAP87hOuozlm_WzoxFTHRQ7iyFmZ_TorncdbtGJBkbo/edit?slide=id.p#slide=id.p">https://docs.google.com/presentation/d/1hAP87hOuozlm_WzoxFTHRQ7iyFmZ_TorncdbtGJBkbo/edit?slide=id.p#slide=id.p</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org20bd27c" class="outline-3">
+<h3 id="org20bd27c"><span class="done DONE">DONE</span> Add External Monitor to Listing</h3>
+<div class="outline-text-3" id="text-org20bd27c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-18 Sun 10:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb492289" class="outline-3">
+<h3 id="orgb492289"><span class="done DONE">DONE</span> Book room for outreach event</h3>
+<div class="outline-text-3" id="text-orgb492289">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 08:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org03cde8e" class="outline-3">
+<h3 id="org03cde8e"><span class="done DONE">DONE</span> Mail re:Outreach committee</h3>
+<div class="outline-text-3" id="text-org03cde8e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 14:34]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80fe972" class="outline-3">
+<h3 id="org80fe972"><span class="done DONE">DONE</span> Ping Chuyuan for Date</h3>
+<div class="outline-text-3" id="text-org80fe972">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-20 Tue 15:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org075778d" class="outline-3">
+<h3 id="org075778d"><span class="done DONE">DONE</span> Progress Report January</h3>
+<div class="outline-text-3" id="text-org075778d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 08:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org018318e" class="outline-3">
+<h3 id="org018318e"><span class="done DONE">DONE</span> Redo Outreach Mail</h3>
+<div class="outline-text-3" id="text-org018318e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 08:43]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgab3b2c9" class="outline-3">
+<h3 id="orgab3b2c9"><span class="done DONE">DONE</span> Ping Chuyuan</h3>
+<div class="outline-text-3" id="text-orgab3b2c9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-16 Fri 09:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9906c6e" class="outline-3">
+<h3 id="org9906c6e"><span class="done DONE">DONE</span> Add coffee info ot AirBNB listingg</h3>
+<div class="outline-text-3" id="text-org9906c6e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-14 Wed 14:04]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbc1b637" class="outline-3">
+<h3 id="orgbc1b637"><span class="done DONE">DONE</span> Undergraduate Ad</h3>
+<div class="outline-text-3" id="text-orgbc1b637">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-15 Thu 08:53]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf238bff" class="outline-3">
+<h3 id="orgf238bff"><span class="done DONE">DONE</span> Setup Hemi-mixing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="4b">4b</span></span></h3>
+<div class="outline-text-3" id="text-orgf238bff">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-12 Mon 10:27]</span></span>
+</p>
+
+<p>
+Summer student starts
+Raymond Hmuifoo beginning May 27, 2025 and ending July 19, 2025.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbc9efa8" class="outline-3">
+<h3 id="orgbc9efa8"><span class="done DONE">DONE</span> Message to Dr re: neck</h3>
+<div class="outline-text-3" id="text-orgbc9efa8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-07 Wed 11:22]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7bd0141" class="outline-3">
+<h3 id="org7bd0141"><span class="done DONE">DONE</span> Prep for ORAL</h3>
+<div class="outline-text-3" id="text-org7bd0141">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-05 Mon 08:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcb9df52" class="outline-3">
+<h3 id="orgcb9df52">CANCEL Write Greg a note</h3>
+<div class="outline-text-3" id="text-orgcb9df52">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-19 Fri 14:26]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5dfa178" class="outline-3">
+<h3 id="org5dfa178"><span class="done DONE">DONE</span> Setup January</h3>
+<div class="outline-text-3" id="text-org5dfa178">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4cdd511" class="outline-3">
+<h3 id="org4cdd511"><span class="done DONE">DONE</span> Review DEC</h3>
+<div class="outline-text-3" id="text-org4cdd511">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0ff1d57" class="outline-3">
+<h3 id="org0ff1d57"><span class="done DONE">DONE</span> Review 2025</h3>
+<div class="outline-text-3" id="text-org0ff1d57">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe091d4" class="outline-3">
+<h3 id="orgbe091d4"><span class="done DONE">DONE</span> Update Parking permit</h3>
+<div class="outline-text-3" id="text-orgbe091d4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2026-01-01 Thu 11:43]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdf2fbe9" class="outline-2">
+<h2 id="orgdf2fbe9">December 2025</h2>
+<div class="outline-text-2" id="text-orgdf2fbe9">
+</div>
+<div id="outline-container-org22a8edc" class="outline-3">
+<h3 id="org22a8edc"><span class="done DONE">DONE</span> Pay 5421 Rent</h3>
+<div class="outline-text-3" id="text-org22a8edc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-19 Fri 10:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa7bf78" class="outline-3">
+<h3 id="orgaa7bf78"><span class="done DONE">DONE</span> Mail 5421 Check</h3>
+<div class="outline-text-3" id="text-orgaa7bf78">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-23 Tue 15:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb2054bd" class="outline-3">
+<h3 id="orgb2054bd"><span class="done DONE">DONE</span> Send AirBNB message</h3>
+<div class="outline-text-3" id="text-orgb2054bd">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-18 Thu 20:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcaff683" class="outline-3">
+<h3 id="orgcaff683"><span class="done DONE">DONE</span> Modules Summary</h3>
+<div class="outline-text-3" id="text-orgcaff683">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-16 Tue 09:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb1551f9" class="outline-3">
+<h3 id="orgb1551f9"><span class="done DONE">DONE</span> Move 5421 Payment</h3>
+<div class="outline-text-3" id="text-orgb1551f9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-19 Fri 09:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc9844e1" class="outline-3">
+<h3 id="orgc9844e1"><span class="done DONE">DONE</span> Pay Champion</h3>
+<div class="outline-text-3" id="text-orgc9844e1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-16 Tue 09:29]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d85664" class="outline-3">
+<h3 id="org1d85664"><span class="done DONE">DONE</span> SEtup Friday CMU Party</h3>
+<div class="outline-text-3" id="text-org1d85664">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-08 Mon 08:58]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d11186" class="outline-3">
+<h3 id="org5d11186"><span class="done DONE">DONE</span> Do December VAR</h3>
+<div class="outline-text-3" id="text-org5d11186">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-10 Wed 14:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6efb433" class="outline-3">
+<h3 id="org6efb433">CANCEL Crank up car payments?</h3>
+<div class="outline-text-3" id="text-org6efb433">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-15 Mon 11:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5f25446" class="outline-3">
+<h3 id="org5f25446"><span class="done DONE">DONE</span> Tony Letter</h3>
+<div class="outline-text-3" id="text-org5f25446">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-08 Mon 09:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b8e22d" class="outline-3">
+<h3 id="org7b8e22d"><span class="done DONE">DONE</span> Finances</h3>
+<div class="outline-text-3" id="text-org7b8e22d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-10 Wed 09:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9a9009" class="outline-3">
+<h3 id="orga9a9009"><span class="done DONE">DONE</span> Need to put 1400 into the escrow for 720</h3>
+<div class="outline-text-3" id="text-orga9a9009">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-03 Wed 08:52]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8255e9b" class="outline-3">
+<h3 id="org8255e9b"><span class="done DONE">DONE</span> Read new Stats Draft</h3>
+<div class="outline-text-3" id="text-org8255e9b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-05 Fri 09:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc289a7b" class="outline-3">
+<h3 id="orgc289a7b"><span class="done DONE">DONE</span> Comments on Monday</h3>
+<div class="outline-text-3" id="text-orgc289a7b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-05 Fri 21:03]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6824808" class="outline-3">
+<h3 id="org6824808"><span class="done DONE">DONE</span> Change Addresses</h3>
+<div class="outline-text-3" id="text-org6824808">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 08:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org55a08dc" class="outline-3">
+<h3 id="org55a08dc"><span class="done DONE">DONE</span> Letter for CL</h3>
+<div class="outline-text-3" id="text-org55a08dc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-06 Sat 16:04]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8af8433" class="outline-3">
+<h3 id="org8af8433"><span class="done DONE">DONE</span> Do Rental Registration permit</h3>
+<div class="outline-text-3" id="text-org8af8433">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-08 Mon 08:45]</span></span>
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=HtTpP0lEzkM">https://www.youtube.com/watch?v=HtTpP0lEzkM</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb0d913c" class="outline-3">
+<h3 id="orgb0d913c"><span class="done DONE">DONE</span> Jascques LEtter</h3>
+<div class="outline-text-3" id="text-orgb0d913c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 09:29]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org00d6fa3" class="outline-3">
+<h3 id="org00d6fa3"><span class="done DONE">DONE</span> Arvind Letters</h3>
+<div class="outline-text-3" id="text-org00d6fa3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 08:51]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43ba6f6" class="outline-3">
+<h3 id="org43ba6f6"><span class="done DONE">DONE</span> Tony Letter</h3>
+<div class="outline-text-3" id="text-org43ba6f6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 09:20]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf484050" class="outline-3">
+<h3 id="orgf484050"><span class="done DONE">DONE</span> Look at Schedule of final talks</h3>
+<div class="outline-text-3" id="text-orgf484050">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-01 Mon 09:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org85ca26a" class="outline-3">
+<h3 id="org85ca26a"><span class="done DONE">DONE</span> Setup Dec</h3>
+<div class="outline-text-3" id="text-org85ca26a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-01 Mon 09:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga0aa722" class="outline-3">
+<h3 id="orga0aa722"><span class="done DONE">DONE</span> Review Nov</h3>
+<div class="outline-text-3" id="text-orga0aa722">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-01 Mon 09:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf318a50" class="outline-3">
+<h3 id="orgf318a50"><span class="done DONE">DONE</span> Pay 5421 Rent</h3>
+<div class="outline-text-3" id="text-orgf318a50">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-19 Fri 10:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1b681bc" class="outline-3">
+<h3 id="org1b681bc"><span class="done DONE">DONE</span> Mail 5421 Check</h3>
+<div class="outline-text-3" id="text-org1b681bc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-23 Tue 15:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6012df4" class="outline-3">
+<h3 id="org6012df4"><span class="done DONE">DONE</span> Send AirBNB message</h3>
+<div class="outline-text-3" id="text-org6012df4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-18 Thu 20:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdddc5a4" class="outline-3">
+<h3 id="orgdddc5a4"><span class="done DONE">DONE</span> Modules Summary</h3>
+<div class="outline-text-3" id="text-orgdddc5a4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-16 Tue 09:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd703777" class="outline-3">
+<h3 id="orgd703777"><span class="done DONE">DONE</span> Move 5421 Payment</h3>
+<div class="outline-text-3" id="text-orgd703777">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-19 Fri 09:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25f3f36" class="outline-3">
+<h3 id="org25f3f36"><span class="done DONE">DONE</span> Pay Champion</h3>
+<div class="outline-text-3" id="text-org25f3f36">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-16 Tue 09:29]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org077f5de" class="outline-3">
+<h3 id="org077f5de"><span class="done DONE">DONE</span> SEtup Friday CMU Party</h3>
+<div class="outline-text-3" id="text-org077f5de">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-08 Mon 08:58]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2e7ea56" class="outline-3">
+<h3 id="org2e7ea56"><span class="done DONE">DONE</span> Do December VAR</h3>
+<div class="outline-text-3" id="text-org2e7ea56">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-10 Wed 14:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1d0c13b" class="outline-3">
+<h3 id="org1d0c13b">CANCEL Crank up car payments?</h3>
+<div class="outline-text-3" id="text-org1d0c13b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-15 Mon 11:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5559b5a" class="outline-3">
+<h3 id="org5559b5a"><span class="done DONE">DONE</span> Tony Letter</h3>
+<div class="outline-text-3" id="text-org5559b5a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-08 Mon 09:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd7722f2" class="outline-3">
+<h3 id="orgd7722f2"><span class="done DONE">DONE</span> Finances</h3>
+<div class="outline-text-3" id="text-orgd7722f2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-10 Wed 09:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org442d963" class="outline-3">
+<h3 id="org442d963"><span class="done DONE">DONE</span> Need to put 1400 into the escrow for 720</h3>
+<div class="outline-text-3" id="text-org442d963">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-03 Wed 08:52]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga532b54" class="outline-3">
+<h3 id="orga532b54"><span class="done DONE">DONE</span> Read new Stats Draft</h3>
+<div class="outline-text-3" id="text-orga532b54">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-05 Fri 09:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8cce7f4" class="outline-3">
+<h3 id="org8cce7f4"><span class="done DONE">DONE</span> Comments on Monday</h3>
+<div class="outline-text-3" id="text-org8cce7f4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-05 Fri 21:03]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ab1922" class="outline-3">
+<h3 id="org8ab1922"><span class="done DONE">DONE</span> Change Addresses</h3>
+<div class="outline-text-3" id="text-org8ab1922">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 08:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ef1d0b" class="outline-3">
+<h3 id="org8ef1d0b"><span class="done DONE">DONE</span> Letter for CL</h3>
+<div class="outline-text-3" id="text-org8ef1d0b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-06 Sat 16:04]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org682bd9d" class="outline-3">
+<h3 id="org682bd9d"><span class="done DONE">DONE</span> Do Rental Registration permit</h3>
+<div class="outline-text-3" id="text-org682bd9d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-08 Mon 08:45]</span></span>
+</p>
+
+<p>
+<a href="https://www.youtube.com/watch?v=HtTpP0lEzkM">https://www.youtube.com/watch?v=HtTpP0lEzkM</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb1c6318" class="outline-3">
+<h3 id="orgb1c6318"><span class="done DONE">DONE</span> Jascques LEtter</h3>
+<div class="outline-text-3" id="text-orgb1c6318">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 09:29]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org63e481d" class="outline-3">
+<h3 id="org63e481d"><span class="done DONE">DONE</span> Arvind Letters</h3>
+<div class="outline-text-3" id="text-org63e481d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 08:51]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd7e44ba" class="outline-3">
+<h3 id="orgd7e44ba"><span class="done DONE">DONE</span> Tony Letter</h3>
+<div class="outline-text-3" id="text-orgd7e44ba">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-26 Wed 09:20]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8465cc9" class="outline-3">
+<h3 id="org8465cc9"><span class="done DONE">DONE</span> Look at Schedule of final talks</h3>
+<div class="outline-text-3" id="text-org8465cc9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-01 Mon 09:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1e75cd4" class="outline-3">
+<h3 id="org1e75cd4"><span class="done DONE">DONE</span> Setup Dec</h3>
+<div class="outline-text-3" id="text-org1e75cd4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-01 Mon 09:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ef31d3" class="outline-3">
+<h3 id="org4ef31d3"><span class="done DONE">DONE</span> Review Nov</h3>
+<div class="outline-text-3" id="text-org4ef31d3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-12-01 Mon 09:31]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4a975fb" class="outline-2">
+<h2 id="org4a975fb">November 2025</h2>
+<div class="outline-text-2" id="text-org4a975fb">
+</div>
+<div id="outline-container-org49616c7" class="outline-3">
+<h3 id="org49616c7"><span class="done DONE">DONE</span> Move 26k for furniture</h3>
+<div class="outline-text-3" id="text-org49616c7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-20 Thu 08:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org69e449e" class="outline-3">
+<h3 id="org69e449e"><span class="done DONE">DONE</span> Write up MAC meeting</h3>
+<div class="outline-text-3" id="text-org69e449e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-12 Wed 08:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgde83989" class="outline-3">
+<h3 id="orgde83989"><span class="done DONE">DONE</span> Schedule Visits</h3>
+<div class="outline-text-3" id="text-orgde83989">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-07 Fri 09:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6b3f437" class="outline-3">
+<h3 id="org6b3f437"><span class="done DONE">DONE</span> Finances</h3>
+<div class="outline-text-3" id="text-org6b3f437">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-10 Mon 08:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgadd162e" class="outline-3">
+<h3 id="orgadd162e"><span class="done DONE">DONE</span> VAR</h3>
+<div class="outline-text-3" id="text-orgadd162e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 10:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8e5ae8a" class="outline-3">
+<h3 id="org8e5ae8a"><span class="done DONE">DONE</span> Modules Summary</h3>
+<div class="outline-text-3" id="text-org8e5ae8a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 10:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga5cd2fd" class="outline-3">
+<h3 id="orga5cd2fd"><span class="done DONE">DONE</span> Call Vangaurd re:Wire transfer</h3>
+<div class="outline-text-3" id="text-orga5cd2fd">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-18 Tue 09:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb888e72" class="outline-3">
+<h3 id="orgb888e72"><span class="done DONE">DONE</span> Grade MPL</h3>
+<div class="outline-text-3" id="text-orgb888e72">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 09:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8aa150f" class="outline-3">
+<h3 id="org8aa150f"><span class="done DONE">DONE</span> Return Microwave</h3>
+<div class="outline-text-3" id="text-org8aa150f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-12 Wed 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5507ab7" class="outline-3">
+<h3 id="org5507ab7"><span class="done DONE">DONE</span> Call Sharp Insurance</h3>
+<div class="outline-text-3" id="text-org5507ab7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-13 Thu 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf2a1dca" class="outline-3">
+<h3 id="orgf2a1dca"><span class="done DONE">DONE</span> Call for Utilities</h3>
+<div class="outline-text-3" id="text-orgf2a1dca">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 09:07]</span></span>
+</p>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Electric</li>
+<li class="on"><code>[X]</code> Gas</li>
+<li class="on"><code>[X]</code> H20</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3999645" class="outline-3">
+<h3 id="org3999645"><span class="done DONE">DONE</span> Chuyuan Letter</h3>
+<div class="outline-text-3" id="text-org3999645">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 09:25]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7edb482" class="outline-3">
+<h3 id="org7edb482">CANCEL Merge Leis Code</h3>
+<div class="outline-text-3" id="text-org7edb482">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-01 Wed 15:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga6d51fd" class="outline-3">
+<h3 id="orga6d51fd"><span class="done DONE">DONE</span> Return Label</h3>
+<div class="outline-text-3" id="text-orga6d51fd">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-11 Tue 08:03]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2beb236" class="outline-3">
+<h3 id="org2beb236">CANCEL Guy Berry Wes or Chuyuan</h3>
+<div class="outline-text-3" id="text-org2beb236">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-04 Tue 09:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org25e586e" class="outline-3">
+<h3 id="org25e586e"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-org25e586e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-07 Fri 08:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6acf060" class="outline-3">
+<h3 id="org6acf060"><span class="done DONE">DONE</span> Follow up re:Insurance</h3>
+<div class="outline-text-3" id="text-org6acf060">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-07 Fri 08:39]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcc78bb0" class="outline-3">
+<h3 id="orgcc78bb0"><span class="done DONE">DONE</span> Letter for AE</h3>
+<div class="outline-text-3" id="text-orgcc78bb0">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 09:07]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4998aa3" class="outline-3">
+<h3 id="org4998aa3"><span class="done DONE">DONE</span> Setup Nov</h3>
+<div class="outline-text-3" id="text-org4998aa3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 08:39]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6c50cc4" class="outline-3">
+<h3 id="org6c50cc4"><span class="done DONE">DONE</span> REview Oct</h3>
+<div class="outline-text-3" id="text-org6c50cc4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 08:51]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga38c3bd" class="outline-3">
+<h3 id="orga38c3bd"><span class="done DONE">DONE</span> Ping Chuyuan re:Thesis</h3>
+<div class="outline-text-3" id="text-orga38c3bd">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 09:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16e9f81" class="outline-3">
+<h3 id="org16e9f81"><span class="done DONE">DONE</span> Watch HGC Overview</h3>
+<div class="outline-text-3" id="text-org16e9f81">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-03 Mon 08:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe16e68" class="outline-3">
+<h3 id="orgbe16e68"><span class="done DONE">DONE</span> Call Dons Appliances</h3>
+<div class="outline-text-3" id="text-orgbe16e68">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-03 Mon 09:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org00eabda" class="outline-3">
+<h3 id="org00eabda"><span class="done DONE">DONE</span> Move 26k for furniture</h3>
+<div class="outline-text-3" id="text-org00eabda">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-20 Thu 08:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org566e3b7" class="outline-3">
+<h3 id="org566e3b7"><span class="done DONE">DONE</span> Write up MAC meeting</h3>
+<div class="outline-text-3" id="text-org566e3b7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-12 Wed 08:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org087f191" class="outline-3">
+<h3 id="org087f191"><span class="done DONE">DONE</span> Schedule Visits</h3>
+<div class="outline-text-3" id="text-org087f191">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-07 Fri 09:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org78fc70f" class="outline-3">
+<h3 id="org78fc70f"><span class="done DONE">DONE</span> Finances</h3>
+<div class="outline-text-3" id="text-org78fc70f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-10 Mon 08:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org918ae01" class="outline-3">
+<h3 id="org918ae01"><span class="done DONE">DONE</span> VAR</h3>
+<div class="outline-text-3" id="text-org918ae01">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 10:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2cb314d" class="outline-3">
+<h3 id="org2cb314d"><span class="done DONE">DONE</span> Modules Summary</h3>
+<div class="outline-text-3" id="text-org2cb314d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 10:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc1cc7b2" class="outline-3">
+<h3 id="orgc1cc7b2"><span class="done DONE">DONE</span> Call Vangaurd re:Wire transfer</h3>
+<div class="outline-text-3" id="text-orgc1cc7b2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-18 Tue 09:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6004724" class="outline-3">
+<h3 id="org6004724"><span class="done DONE">DONE</span> Grade MPL</h3>
+<div class="outline-text-3" id="text-org6004724">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 09:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5ae1ab6" class="outline-3">
+<h3 id="org5ae1ab6"><span class="done DONE">DONE</span> Return Microwave</h3>
+<div class="outline-text-3" id="text-org5ae1ab6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-12 Wed 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb25300f" class="outline-3">
+<h3 id="orgb25300f"><span class="done DONE">DONE</span> Call Sharp Insurance</h3>
+<div class="outline-text-3" id="text-orgb25300f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-13 Thu 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaa029ac" class="outline-3">
+<h3 id="orgaa029ac"><span class="done DONE">DONE</span> Call for Utilities</h3>
+<div class="outline-text-3" id="text-orgaa029ac">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 09:07]</span></span>
+</p>
+
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Electric</li>
+<li class="on"><code>[X]</code> Gas</li>
+<li class="on"><code>[X]</code> H20</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge927ee6" class="outline-3">
+<h3 id="orge927ee6"><span class="done DONE">DONE</span> Chuyuan Letter</h3>
+<div class="outline-text-3" id="text-orge927ee6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-17 Mon 09:25]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd9b69e5" class="outline-3">
+<h3 id="orgd9b69e5">CANCEL Merge Leis Code</h3>
+<div class="outline-text-3" id="text-orgd9b69e5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-01 Wed 15:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb9881a6" class="outline-3">
+<h3 id="orgb9881a6"><span class="done DONE">DONE</span> Return Label</h3>
+<div class="outline-text-3" id="text-orgb9881a6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-11 Tue 08:03]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org177267f" class="outline-3">
+<h3 id="org177267f">CANCEL Guy Berry Wes or Chuyuan</h3>
+<div class="outline-text-3" id="text-org177267f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-04 Tue 09:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2754475" class="outline-3">
+<h3 id="org2754475"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-org2754475">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-07 Fri 08:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org074cfec" class="outline-3">
+<h3 id="org074cfec"><span class="done DONE">DONE</span> Follow up re:Insurance</h3>
+<div class="outline-text-3" id="text-org074cfec">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-07 Fri 08:39]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc20558c" class="outline-3">
+<h3 id="orgc20558c"><span class="done DONE">DONE</span> Letter for AE</h3>
+<div class="outline-text-3" id="text-orgc20558c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 09:07]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org178000e" class="outline-3">
+<h3 id="org178000e"><span class="done DONE">DONE</span> Setup Nov</h3>
+<div class="outline-text-3" id="text-org178000e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 08:39]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2205b06" class="outline-3">
+<h3 id="org2205b06"><span class="done DONE">DONE</span> REview Oct</h3>
+<div class="outline-text-3" id="text-org2205b06">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 08:51]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3c4bc07" class="outline-3">
+<h3 id="org3c4bc07"><span class="done DONE">DONE</span> Ping Chuyuan re:Thesis</h3>
+<div class="outline-text-3" id="text-org3c4bc07">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-31 Fri 09:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9b6a464" class="outline-3">
+<h3 id="org9b6a464"><span class="done DONE">DONE</span> Watch HGC Overview</h3>
+<div class="outline-text-3" id="text-org9b6a464">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-03 Mon 08:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf615679" class="outline-3">
+<h3 id="orgf615679"><span class="done DONE">DONE</span> Call Dons Appliances</h3>
+<div class="outline-text-3" id="text-orgf615679">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-11-03 Mon 09:17]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgadb1b12" class="outline-2">
+<h2 id="orgadb1b12">October 2025</h2>
+<div class="outline-text-2" id="text-orgadb1b12">
+</div>
+<div id="outline-container-org6f61182" class="outline-3">
+<h3 id="org6f61182"><span class="done DONE">DONE</span> Get Labs Taken</h3>
+<div class="outline-text-3" id="text-org6f61182">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-23 Thu 08:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgde22835" class="outline-3">
+<h3 id="orgde22835"><span class="done DONE">DONE</span> Ping Sharp re insurance</h3>
+<div class="outline-text-3" id="text-orgde22835">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-28 Tue 09:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a7b5f0" class="outline-3">
+<h3 id="org6a7b5f0"><span class="done DONE">DONE</span> Reinbursements</h3>
+<div class="outline-text-3" id="text-org6a7b5f0">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-30 Thu 08:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56cc12d" class="outline-3">
+<h3 id="org56cc12d"><span class="done DONE">DONE</span> Write Up <a href="Notes/modern_principles_of_economics-20250516214113.html#ID-618D723F-37B2-44D2-8FAC-A95F17DB2903">Modern Principles of Economics</a></h3>
+<div class="outline-text-3" id="text-org56cc12d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-20 Mon 09:16]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae9c215" class="outline-3">
+<h3 id="orgae9c215"><span class="done DONE">DONE</span> Grade Journal Article 1</h3>
+<div class="outline-text-3" id="text-orgae9c215">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-15 Wed 08:41]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc0ffd58" class="outline-3">
+<h3 id="orgc0ffd58"><span class="done DONE">DONE</span> Review Chrisitans DOCs</h3>
+<div class="outline-text-3" id="text-orgc0ffd58">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-22 Wed 10:57]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org94d27b8" class="outline-3">
+<h3 id="org94d27b8"><span class="done DONE">DONE</span> Remove the stacked signal</h3>
+<div class="outline-text-3" id="text-org94d27b8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-24 Fri 08:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org883a6ef" class="outline-3">
+<h3 id="org883a6ef"><span class="done DONE">DONE</span> Iterate on the plots</h3>
+<div class="outline-text-3" id="text-org883a6ef">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-24 Fri 14:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgec9637f" class="outline-3">
+<h3 id="orgec9637f"><span class="done DONE">DONE</span> Get Stuff for Chuyuan's defense</h3>
+<div class="outline-text-3" id="text-orgec9637f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-20 Mon 18:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae52dd6" class="outline-3">
+<h3 id="orgae52dd6"><span class="done DONE">DONE</span> Upload Loan Docs</h3>
+<div class="outline-text-3" id="text-orgae52dd6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-21 Tue 20:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6cf8227" class="outline-3">
+<h3 id="org6cf8227"><span class="done DONE">DONE</span> Read Chuyuans Thesis</h3>
+<div class="outline-text-3" id="text-org6cf8227">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-22 Wed 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef04ba3" class="outline-3">
+<h3 id="orgef04ba3">CANCEL Ping Zoltan</h3>
+<div class="outline-text-3" id="text-orgef04ba3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-21 Tue 13:16]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org124af0c" class="outline-3">
+<h3 id="org124af0c"><span class="done DONE">DONE</span> Read Stat-Data-Driven draft</h3>
+<div class="outline-text-3" id="text-org124af0c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-30 Tue 10:14]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf408296" class="outline-3">
+<h3 id="orgf408296"><span class="done DONE">DONE</span> Send and email re:Jim</h3>
+<div class="outline-text-3" id="text-orgf408296">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-14 Tue 12:51]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org517d39f" class="outline-3">
+<h3 id="org517d39f"><span class="done DONE">DONE</span> CAM VARs</h3>
+<div class="outline-text-3" id="text-org517d39f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-14 Tue 14:43]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8c46741" class="outline-3">
+<h3 id="org8c46741"><span class="done DONE">DONE</span> Follow up with Don Farr</h3>
+<div class="outline-text-3" id="text-org8c46741">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-14 Tue 19:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga937b3e" class="outline-3">
+<h3 id="orga937b3e"><span class="done DONE">DONE</span> Call rosyalyn</h3>
+<div class="outline-text-3" id="text-orga937b3e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-13 Mon 09:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8d17f18" class="outline-3">
+<h3 id="org8d17f18"><span class="done DONE">DONE</span> Review X-&gt;YH bbgg</h3>
+<div class="outline-text-3" id="text-org8d17f18">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-13 Mon 09:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6b644fb" class="outline-3">
+<h3 id="org6b644fb"><span class="done DONE">DONE</span> Review AE docs</h3>
+<div class="outline-text-3" id="text-org6b644fb">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-10 Fri 08:25]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5f77930" class="outline-3">
+<h3 id="org5f77930"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-org5f77930">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-10 Fri 08:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd8376b1" class="outline-3">
+<h3 id="orgd8376b1"><span class="done DONE">DONE</span> Move Long term cash to vangaurd</h3>
+<div class="outline-text-3" id="text-orgd8376b1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-10 Fri 11:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org96b6a0f" class="outline-3">
+<h3 id="org96b6a0f"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-org96b6a0f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-13 Mon 09:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf222df3" class="outline-3">
+<h3 id="orgf222df3"><span class="done DONE">DONE</span> Write Up MAC MEeting</h3>
+<div class="outline-text-3" id="text-orgf222df3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-08 Wed 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org378b906" class="outline-3">
+<h3 id="org378b906">CANCEL Pickup shorts from Patagonia</h3>
+<div class="outline-text-3" id="text-org378b906">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-09 Thu 09:06]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org24658fa" class="outline-3">
+<h3 id="org24658fa"><span class="done DONE">DONE</span> Update Plots for Marina</h3>
+<div class="outline-text-3" id="text-org24658fa">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-07 Tue 11:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4a8e11e" class="outline-3">
+<h3 id="org4a8e11e"><span class="done DONE">DONE</span> ChildPro email</h3>
+<div class="outline-text-3" id="text-org4a8e11e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 08:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org32eb9ab" class="outline-3">
+<h3 id="org32eb9ab"><span class="done DONE">DONE</span> Ping Joey re:Chuyuan</h3>
+<div class="outline-text-3" id="text-org32eb9ab">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 21:26]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd8fe80c" class="outline-3">
+<h3 id="orgd8fe80c"><span class="done DONE">DONE</span> Alejandros Statements</h3>
+<div class="outline-text-3" id="text-orgd8fe80c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-06 Mon 11:14]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbaa529f" class="outline-3">
+<h3 id="orgbaa529f"><span class="done DONE">DONE</span> Docs to Christian</h3>
+<div class="outline-text-3" id="text-orgbaa529f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-03 Fri 08:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc940b76" class="outline-3">
+<h3 id="orgc940b76"><span class="done DONE">DONE</span> Setup Oct</h3>
+<div class="outline-text-3" id="text-orgc940b76">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 09:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9ff6df" class="outline-3">
+<h3 id="orga9ff6df"><span class="done DONE">DONE</span> Review September</h3>
+<div class="outline-text-3" id="text-orga9ff6df">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 09:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7d2a61d" class="outline-3">
+<h3 id="org7d2a61d"><span class="done DONE">DONE</span> Ping Dave and Alabama</h3>
+<div class="outline-text-3" id="text-org7d2a61d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-30 Tue 15:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf92229d" class="outline-3">
+<h3 id="orgf92229d"><span class="done DONE">DONE</span> Get Labs Taken</h3>
+<div class="outline-text-3" id="text-orgf92229d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-23 Thu 08:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org97e384f" class="outline-3">
+<h3 id="org97e384f"><span class="done DONE">DONE</span> Ping Sharp re insurance</h3>
+<div class="outline-text-3" id="text-org97e384f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-28 Tue 09:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3c773e0" class="outline-3">
+<h3 id="org3c773e0"><span class="done DONE">DONE</span> Reinbursements</h3>
+<div class="outline-text-3" id="text-org3c773e0">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-30 Thu 08:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org771b83c" class="outline-3">
+<h3 id="org771b83c"><span class="done DONE">DONE</span> Write Up <a href="Notes/modern_principles_of_economics-20250516214113.html#ID-618D723F-37B2-44D2-8FAC-A95F17DB2903">Modern Principles of Economics</a></h3>
+<div class="outline-text-3" id="text-org771b83c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-20 Mon 09:16]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3dfa6a6" class="outline-3">
+<h3 id="org3dfa6a6"><span class="done DONE">DONE</span> Grade Journal Article 1</h3>
+<div class="outline-text-3" id="text-org3dfa6a6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-15 Wed 08:41]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org198b957" class="outline-3">
+<h3 id="org198b957"><span class="done DONE">DONE</span> Review Chrisitans DOCs</h3>
+<div class="outline-text-3" id="text-org198b957">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-22 Wed 10:57]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1e29acd" class="outline-3">
+<h3 id="org1e29acd"><span class="done DONE">DONE</span> Remove the stacked signal</h3>
+<div class="outline-text-3" id="text-org1e29acd">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-24 Fri 08:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0c241b2" class="outline-3">
+<h3 id="org0c241b2"><span class="done DONE">DONE</span> Iterate on the plots</h3>
+<div class="outline-text-3" id="text-org0c241b2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-24 Fri 14:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7269f9e" class="outline-3">
+<h3 id="org7269f9e"><span class="done DONE">DONE</span> Get Stuff for Chuyuan's defense</h3>
+<div class="outline-text-3" id="text-org7269f9e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-20 Mon 18:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfbf8419" class="outline-3">
+<h3 id="orgfbf8419"><span class="done DONE">DONE</span> Upload Loan Docs</h3>
+<div class="outline-text-3" id="text-orgfbf8419">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-21 Tue 20:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org725ca2c" class="outline-3">
+<h3 id="org725ca2c"><span class="done DONE">DONE</span> Read Chuyuans Thesis</h3>
+<div class="outline-text-3" id="text-org725ca2c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-22 Wed 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf91fac6" class="outline-3">
+<h3 id="orgf91fac6">CANCEL Ping Zoltan</h3>
+<div class="outline-text-3" id="text-orgf91fac6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-21 Tue 13:16]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org89ecdab" class="outline-3">
+<h3 id="org89ecdab"><span class="done DONE">DONE</span> Read Stat-Data-Driven draft</h3>
+<div class="outline-text-3" id="text-org89ecdab">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-30 Tue 10:14]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50ada92" class="outline-3">
+<h3 id="org50ada92"><span class="done DONE">DONE</span> Send and email re:Jim</h3>
+<div class="outline-text-3" id="text-org50ada92">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-14 Tue 12:51]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org81b4953" class="outline-3">
+<h3 id="org81b4953"><span class="done DONE">DONE</span> CAM VARs</h3>
+<div class="outline-text-3" id="text-org81b4953">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-14 Tue 14:43]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc7a682d" class="outline-3">
+<h3 id="orgc7a682d"><span class="done DONE">DONE</span> Follow up with Don Farr</h3>
+<div class="outline-text-3" id="text-orgc7a682d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-14 Tue 19:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org22b94d1" class="outline-3">
+<h3 id="org22b94d1"><span class="done DONE">DONE</span> Call rosyalyn</h3>
+<div class="outline-text-3" id="text-org22b94d1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-13 Mon 09:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgea0c053" class="outline-3">
+<h3 id="orgea0c053"><span class="done DONE">DONE</span> Review X-&gt;YH bbgg</h3>
+<div class="outline-text-3" id="text-orgea0c053">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-13 Mon 09:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb708187" class="outline-3">
+<h3 id="orgb708187"><span class="done DONE">DONE</span> Review AE docs</h3>
+<div class="outline-text-3" id="text-orgb708187">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-10 Fri 08:25]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org72f4184" class="outline-3">
+<h3 id="org72f4184"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-org72f4184">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-10 Fri 08:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9facfce" class="outline-3">
+<h3 id="org9facfce"><span class="done DONE">DONE</span> Move Long term cash to vangaurd</h3>
+<div class="outline-text-3" id="text-org9facfce">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-10 Fri 11:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org061f8c6" class="outline-3">
+<h3 id="org061f8c6"><span class="done DONE">DONE</span> Progress Report</h3>
+<div class="outline-text-3" id="text-org061f8c6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-13 Mon 09:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf729e28" class="outline-3">
+<h3 id="orgf729e28"><span class="done DONE">DONE</span> Write Up MAC MEeting</h3>
+<div class="outline-text-3" id="text-orgf729e28">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-08 Wed 10:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org474269a" class="outline-3">
+<h3 id="org474269a">CANCEL Pickup shorts from Patagonia</h3>
+<div class="outline-text-3" id="text-org474269a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-09 Thu 09:06]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7cdc873" class="outline-3">
+<h3 id="org7cdc873"><span class="done DONE">DONE</span> Update Plots for Marina</h3>
+<div class="outline-text-3" id="text-org7cdc873">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-07 Tue 11:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga1c1096" class="outline-3">
+<h3 id="orga1c1096"><span class="done DONE">DONE</span> ChildPro email</h3>
+<div class="outline-text-3" id="text-orga1c1096">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 08:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7c41ea7" class="outline-3">
+<h3 id="org7c41ea7"><span class="done DONE">DONE</span> Ping Joey re:Chuyuan</h3>
+<div class="outline-text-3" id="text-org7c41ea7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 21:26]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd2976b3" class="outline-3">
+<h3 id="orgd2976b3"><span class="done DONE">DONE</span> Alejandros Statements</h3>
+<div class="outline-text-3" id="text-orgd2976b3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-06 Mon 11:14]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4eb9a14" class="outline-3">
+<h3 id="org4eb9a14"><span class="done DONE">DONE</span> Docs to Christian</h3>
+<div class="outline-text-3" id="text-org4eb9a14">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-03 Fri 08:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb04f32e" class="outline-3">
+<h3 id="orgb04f32e"><span class="done DONE">DONE</span> Setup Oct</h3>
+<div class="outline-text-3" id="text-orgb04f32e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 09:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge596173" class="outline-3">
+<h3 id="orge596173"><span class="done DONE">DONE</span> Review September</h3>
+<div class="outline-text-3" id="text-orge596173">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-10-02 Thu 09:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org31fe33a" class="outline-3">
+<h3 id="org31fe33a"><span class="done DONE">DONE</span> Ping Dave and Alabama</h3>
+<div class="outline-text-3" id="text-org31fe33a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-30 Tue 15:31]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge057487" class="outline-2">
+<h2 id="orge057487">September 2025</h2>
+<div class="outline-text-2" id="text-orge057487">
+</div>
+<div id="outline-container-orgf56cbfc" class="outline-3">
+<h3 id="orgf56cbfc"><span class="done DONE">DONE</span> post Osher Week 4</h3>
+<div class="outline-text-3" id="text-orgf56cbfc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-29 Mon 09:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgee406b4" class="outline-3">
+<h3 id="orgee406b4"><span class="done DONE">DONE</span> post Osher Week 4</h3>
+<div class="outline-text-3" id="text-orgee406b4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-29 Mon 09:59]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9bae8b8" class="outline-2">
+<h2 id="org9bae8b8">August 2025</h2>
+<div class="outline-text-2" id="text-org9bae8b8">
+</div>
+<div id="outline-container-org590211f" class="outline-3">
+<h3 id="org590211f">CANCEL Call Tax man</h3>
+<div class="outline-text-3" id="text-org590211f">
+</div>
+</div>
+
+<div id="outline-container-org31d09e6" class="outline-3">
+<h3 id="org31d09e6"><span class="done DONE">DONE</span> Add PFCand to the subjet objects</h3>
+<div class="outline-text-3" id="text-org31d09e6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-06 Wed 17:04]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge03e495" class="outline-3">
+<h3 id="orge03e495"><span class="done DONE">DONE</span> Add Lei/Christian to the emails</h3>
+<div class="outline-text-3" id="text-orge03e495">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 09:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd13ffd1" class="outline-3">
+<h3 id="orgd13ffd1"><span class="done DONE">DONE</span> Ping again re:Aniket MMTS</h3>
+<div class="outline-text-3" id="text-orgd13ffd1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 10:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f54763" class="outline-3">
+<h3 id="org7f54763"><span class="done DONE">DONE</span> Training for Manfred</h3>
+<div class="outline-text-3" id="text-org7f54763">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-29 Fri 09:04]</span></span>
+</p>
+</div>
+
+
+<div id="outline-container-org6a85e8d" class="outline-4">
+<h4 id="org6a85e8d"><span class="done DONE">DONE</span> Synthetic Dataset Slides</h4>
+<div class="outline-text-4" id="text-org6a85e8d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-05 Thu 09:31]</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-org68933e9" class="outline-4">
+<h4 id="org68933e9"><span class="done DONE">DONE</span> Look into mixeddata cutflow</h4>
+<div class="outline-text-4" id="text-org68933e9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-06 Wed 09:51]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org388f781" class="outline-4">
+<h4 id="org388f781"><span class="done DONE">DONE</span> Read Soehens draft</h4>
+<div class="outline-text-4" id="text-org388f781">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-22 Fri 08:26]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a1cc3b" class="outline-4">
+<h4 id="org6a1cc3b"><span class="done DONE">DONE</span> Setup bbWW code</h4>
+<div class="outline-text-4" id="text-org6a1cc3b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-22 Fri 09:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4b1e421" class="outline-4">
+<h4 id="org4b1e421"><span class="done DONE">DONE</span> CL Letter</h4>
+<div class="outline-text-4" id="text-org4b1e421">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-29 Fri 08:32]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7fb49e8" class="outline-4">
+<h4 id="org7fb49e8"><span class="done DONE">DONE</span> Review August</h4>
+<div class="outline-text-4" id="text-org7fb49e8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-01 Mon 19:36]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a901cc" class="outline-4">
+<h4 id="org1a901cc"><span class="done DONE">DONE</span> Setup September</h4>
+<div class="outline-text-4" id="text-org1a901cc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-01 Mon 19:36]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc195aaf" class="outline-4">
+<h4 id="orgc195aaf"><span class="done DONE">DONE</span> Add Reinhard to MPL Canvas</h4>
+<div class="outline-text-4" id="text-orgc195aaf">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-02 Tue 12:19]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9b03181" class="outline-4">
+<h4 id="org9b03181"><span class="done DONE">DONE</span> Plan Osher</h4>
+<div class="outline-text-4" id="text-org9b03181">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-03 Wed 08:52]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org82df3e9" class="outline-4">
+<h4 id="org82df3e9"><span class="done DONE">DONE</span> Send Osher Mail</h4>
+<div class="outline-text-4" id="text-org82df3e9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-03 Wed 09:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbd89835" class="outline-4">
+<h4 id="orgbd89835"><span class="done DONE">DONE</span> Arrange shipment to India</h4>
+<div class="outline-text-4" id="text-orgbd89835">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-03 Wed 09:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7bb204e" class="outline-4">
+<h4 id="org7bb204e"><span class="done DONE">DONE</span> Outreach followup</h4>
+<div class="outline-text-4" id="text-org7bb204e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-03 Wed 10:45]</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-orgcc4997e" class="outline-4">
+<h4 id="orgcc4997e"><span class="done DONE">DONE</span> Prep Osher Day1</h4>
+<div class="outline-text-4" id="text-orgcc4997e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-08 Mon 08:38]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6e24560" class="outline-4">
+<h4 id="org6e24560"><span class="done DONE">DONE</span> Fix coffea4b plots in head</h4>
+<div class="outline-text-4" id="text-org6e24560">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-09 Tue 09:10]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc2052cf" class="outline-4">
+<h4 id="orgc2052cf"><span class="done DONE">DONE</span> Update bbreww ploting examples / interface</h4>
+<div class="outline-text-4" id="text-orgc2052cf">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-09 Tue 09:43]</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-orgce4fd26" class="outline-4">
+<h4 id="orgce4fd26"><span class="done DONE">DONE</span> Ping Nural Joe and Loncoln re:Thermal Tests</h4>
+<div class="outline-text-4" id="text-orgce4fd26">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-09 Tue 16:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgec140c8" class="outline-4">
+<h4 id="orgec140c8"><span class="done DONE">DONE</span> Ping Seth re:spare electronics racks</h4>
+<div class="outline-text-4" id="text-orgec140c8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-10 Wed 08:35]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4398c30" class="outline-4">
+<h4 id="org4398c30"><span class="done DONE">DONE</span> Send Osher slides</h4>
+<div class="outline-text-4" id="text-org4398c30">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-10 Wed 12:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge4c6f6f" class="outline-4">
+<h4 id="orge4c6f6f"><span class="done DONE">DONE</span> Ping Ben re:rack</h4>
+<div class="outline-text-4" id="text-orge4c6f6f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-12 Fri 08:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2fb6e28" class="outline-4">
+<h4 id="org2fb6e28"><span class="done DONE">DONE</span> Progress Report</h4>
+<div class="outline-text-4" id="text-org2fb6e28">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-12 Fri 09:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb635d35" class="outline-4">
+<h4 id="orgb635d35"><span class="done DONE">DONE</span> Ping Mauro with coffea4bees code</h4>
+<div class="outline-text-4" id="text-orgb635d35">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-12 Fri 10:20]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org80abe16" class="outline-4">
+<h4 id="org80abe16"><span class="done DONE">DONE</span> Send Osher Slides</h4>
+<div class="outline-text-4" id="text-org80abe16">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-15 Mon 08:42]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge0d196d" class="outline-4">
+<h4 id="orge0d196d"><span class="done DONE">DONE</span> Finish Jones Proposal</h4>
+<div class="outline-text-4" id="text-orge0d196d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-15 Mon 08:47]</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-org74e2281" class="outline-4">
+<h4 id="org74e2281"><span class="done DONE">DONE</span> Review Osher Slides</h4>
+<div class="outline-text-4" id="text-org74e2281">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-17 Wed 08:34]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgebc6dff" class="outline-4">
+<h4 id="orgebc6dff">CANCEL Should I start a Blogs links too ?</h4>
+<div class="outline-text-4" id="text-orgebc6dff">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-17 Wed 08:36]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf7284f7" class="outline-4">
+<h4 id="orgf7284f7"><span class="done DONE">DONE</span> Ping Malcom</h4>
+<div class="outline-text-4" id="text-orgf7284f7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-17 Wed 14:36]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org468e4e8" class="outline-4">
+<h4 id="org468e4e8"><span class="done DONE">DONE</span> setup bbreWW  Processor</h4>
+<div class="outline-text-4" id="text-org468e4e8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-17 Wed 15:09]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb57ec92" class="outline-4">
+<h4 id="orgb57ec92"><span class="done DONE">DONE</span> Osher Slides Lecture 3</h4>
+<div class="outline-text-4" id="text-orgb57ec92">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-18 Thu 08:39]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgde122c0" class="outline-4">
+<h4 id="orgde122c0"><span class="done DONE">DONE</span> Mail Andrew and Sam</h4>
+<div class="outline-text-4" id="text-orgde122c0">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-18 Thu 14:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge529c3d" class="outline-4">
+<h4 id="orge529c3d"><span class="done DONE">DONE</span> VARs</h4>
+<div class="outline-text-4" id="text-orge529c3d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-20 Sat 08:16]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge81bc0d" class="outline-4">
+<h4 id="orge81bc0d"><span class="done DONE">DONE</span> Modules Summary</h4>
+<div class="outline-text-4" id="text-orge81bc0d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-20 Sat 08:16]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2d9dad1" class="outline-4">
+<h4 id="org2d9dad1"><span class="done DONE">DONE</span> Start reading Thesis</h4>
+<div class="outline-text-4" id="text-org2d9dad1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-22 Mon 09:13]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f30cc1" class="outline-4">
+<h4 id="org4f30cc1"><span class="done DONE">DONE</span> Captions for AUX figures</h4>
+<div class="outline-text-4" id="text-org4f30cc1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-23 Tue 09:18]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb87901e" class="outline-4">
+<h4 id="orgb87901e"><span class="done DONE">DONE</span> Buy new ledger hadware wallet</h4>
+<div class="outline-text-4" id="text-orgb87901e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-24 Wed 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc0b262b" class="outline-4">
+<h4 id="orgc0b262b"><span class="done DONE">DONE</span> Letter to Peking for Chuyuan</h4>
+<div class="outline-text-4" id="text-orgc0b262b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-24 Wed 09:19]</span></span>
+</p>
+
+<p>
+There is only one that not uses AcademicJobs and need to send via
+email:
+</p>
+<ul class="org-ul">
+<li>Peking University (<a href="https://inspirehep.net/jobs/2954972">https://inspirehep.net/jobs/2954972</a>)
+Chen Zhou chen.zhou@cern.ch
+September 30th</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcdf977d" class="outline-4">
+<h4 id="orgcdf977d"><span class="done DONE">DONE</span> Osher Slides Week 4 (45min)</h4>
+<div class="outline-text-4" id="text-orgcdf977d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-24 Wed 14:55]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org17ce5b1" class="outline-4">
+<h4 id="org17ce5b1"><span class="done DONE">DONE</span> Progress Reporting</h4>
+<div class="outline-text-4" id="text-org17ce5b1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-26 Fri 08:36]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbeaff0c" class="outline-4">
+<h4 id="orgbeaff0c"><span class="done DONE">DONE</span> Send Manfred Commnets</h4>
+<div class="outline-text-4" id="text-orgbeaff0c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-26 Fri 08:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0b0c6e4" class="outline-4">
+<h4 id="org0b0c6e4"><span class="done DONE">DONE</span> Ping Pritam re:Randy Rack</h4>
+<div class="outline-text-4" id="text-org0b0c6e4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-26 Fri 10:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc9b4c86" class="outline-4">
+<h4 id="orgc9b4c86"><span class="done DONE">DONE</span> Child Pro Email</h4>
+<div class="outline-text-4" id="text-orgc9b4c86">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-26 Fri 16:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f969e6" class="outline-4">
+<h4 id="org7f969e6"><span class="done DONE">DONE</span> Apply for Seminar Series</h4>
+<div class="outline-text-4" id="text-org7f969e6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-26 Fri 16:11]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d16a0c" class="outline-4">
+<h4 id="org5d16a0c"><span class="done DONE">DONE</span> Mail Jasper re:Universal Inference</h4>
+<div class="outline-text-4" id="text-org5d16a0c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-09-26 Fri 16:29]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6a35ce6" class="outline-3">
+<h3 id="org6a35ce6"><span class="done DONE">DONE</span> WhenIsGood for MAC Meeting</h3>
+<div class="outline-text-3" id="text-org6a35ce6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-26 Tue 12:06]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org037786d" class="outline-3">
+<h3 id="org037786d"><span class="done DONE">DONE</span> Feedback on table</h3>
+<div class="outline-text-3" id="text-org037786d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-27 Wed 09:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb93ee00" class="outline-3">
+<h3 id="orgb93ee00"><span class="done DONE">DONE</span> CL statement</h3>
+<div class="outline-text-3" id="text-orgb93ee00">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-27 Wed 09:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9034033" class="outline-3">
+<h3 id="org9034033"><span class="done DONE">DONE</span> Plan Outreach Committee Meetings</h3>
+<div class="outline-text-3" id="text-org9034033">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-22 Fri 16:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0162cb6" class="outline-3">
+<h3 id="org0162cb6"><span class="done DONE">DONE</span> UPdate Collaborator Table</h3>
+<div class="outline-text-3" id="text-org0162cb6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 08:15]</span></span>
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1AcOIF8LkYnhbcULLQFCk_LHysxNyrr6J/edit?gid=1840635153#gid=1840635153">https://docs.google.com/spreadsheets/d/1AcOIF8LkYnhbcULLQFCk_LHysxNyrr6J/edit?gid=1840635153#gid=1840635153</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1ceeed2" class="outline-3">
+<h3 id="org1ceeed2"><span class="done DONE">DONE</span> Read Proposal</h3>
+<div class="outline-text-3" id="text-org1ceeed2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 09:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgffa08a1" class="outline-3">
+<h3 id="orgffa08a1"><span class="done DONE">DONE</span> Bold Analysis Titles</h3>
+<div class="outline-text-3" id="text-orgffa08a1">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 14:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb5ce732" class="outline-3">
+<h3 id="orgb5ce732"><span class="done DONE">DONE</span> Current and Pending</h3>
+<div class="outline-text-3" id="text-orgb5ce732">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 14:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf2214bf" class="outline-3">
+<h3 id="orgf2214bf"><span class="done DONE">DONE</span> Synergistic ACtivities</h3>
+<div class="outline-text-3" id="text-orgf2214bf">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 14:49]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6df37a7" class="outline-3">
+<h3 id="org6df37a7">CANCEL DOE Chat</h3>
+<div class="outline-text-3" id="text-org6df37a7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-25 Mon 15:21]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad3a329" class="outline-3">
+<h3 id="orgad3a329"><span class="done DONE">DONE</span> Merge with new HEAD</h3>
+<div class="outline-text-3" id="text-orgad3a329">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-20 Wed 18:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf16fab0" class="outline-3">
+<h3 id="orgf16fab0"><span class="done DONE">DONE</span> Update remote emacs installations to use straight.el</h3>
+<div class="outline-text-3" id="text-orgf16fab0">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-30 Mon 08:53]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7dbfae3" class="outline-3">
+<h3 id="org7dbfae3"><span class="done DONE">DONE</span> Ping Chuyuan re:Graduation</h3>
+<div class="outline-text-3" id="text-org7dbfae3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-21 Thu 15:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org860362c" class="outline-3">
+<h3 id="org860362c"><span class="done DONE">DONE</span> Sketch plan for DOE proposal</h3>
+<div class="outline-text-3" id="text-org860362c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-30 Wed 09:13]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgece5d1b" class="outline-3">
+<h3 id="orgece5d1b"><span class="done DONE">DONE</span> CAM VARs</h3>
+<div class="outline-text-3" id="text-orgece5d1b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-14 Thu 19:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb83e802" class="outline-3">
+<h3 id="orgb83e802"><span class="done DONE">DONE</span> Write up MAC meeting</h3>
+<div class="outline-text-3" id="text-orgb83e802">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-15 Fri 09:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgabfdd8d" class="outline-3">
+<h3 id="orgabfdd8d"><span class="done DONE">DONE</span> Progress Report August 15th</h3>
+<div class="outline-text-3" id="text-orgabfdd8d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-18 Mon 09:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9f1289" class="outline-3">
+<h3 id="orga9f1289"><span class="done DONE">DONE</span> Paragraph re:Database work</h3>
+<div class="outline-text-3" id="text-orga9f1289">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-18 Mon 14:18]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2673c97" class="outline-3">
+<h3 id="org2673c97"><span class="done DONE">DONE</span> DOE Draft due 21 st</h3>
+<div class="outline-text-3" id="text-org2673c97">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-07 Thu 21:20]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org169a59a" class="outline-3">
+<h3 id="org169a59a"><span class="done DONE">DONE</span> Ping B2G re:collaboration</h3>
+<div class="outline-text-3" id="text-org169a59a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-11 Mon 11:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga377cd8" class="outline-3">
+<h3 id="orga377cd8"><span class="done DONE">DONE</span> Push Boosted Synthetic Dataset code</h3>
+<div class="outline-text-3" id="text-orga377cd8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-05 Tue 10:10]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org22c373b" class="outline-3">
+<h3 id="org22c373b"><span class="done DONE">DONE</span> Ping re:HEP proposal</h3>
+<div class="outline-text-3" id="text-org22c373b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-06 Wed 09:19]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org840895c" class="outline-3">
+<h3 id="org840895c"><span class="done DONE">DONE</span> Follow up with MP on Arvind Moving Expenses</h3>
+<div class="outline-text-3" id="text-org840895c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-26 Thu 15:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1041880" class="outline-3">
+<h3 id="org1041880"><span class="done DONE">DONE</span> Turnaround report</h3>
+<div class="outline-text-3" id="text-org1041880">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-04 Mon 08:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org18ede37" class="outline-3">
+<h3 id="org18ede37"><span class="done DONE">DONE</span> Do 720 Interest calculations</h3>
+<div class="outline-text-3" id="text-org18ede37">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-04 Mon 08:53]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e01330" class="outline-3">
+<h3 id="org0e01330"><span class="done DONE">DONE</span> Progress Report August 1st 2025</h3>
+<div class="outline-text-3" id="text-org0e01330">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-01 Fri 08:45]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org40c2bdf" class="outline-3">
+<h3 id="org40c2bdf"><span class="done DONE">DONE</span> AE Letter for LPC</h3>
+<div class="outline-text-3" id="text-org40c2bdf">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-29 Tue 14:02]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4c8eeed" class="outline-3">
+<h3 id="org4c8eeed"><span class="done DONE">DONE</span> Set up August</h3>
+<div class="outline-text-3" id="text-org4c8eeed">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-01 Fri 08:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd3fada" class="outline-3">
+<h3 id="orgfd3fada"><span class="done DONE">DONE</span> Review July</h3>
+<div class="outline-text-3" id="text-orgfd3fada">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-08-01 Fri 08:56]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e26c38" class="outline-3">
+<h3 id="org0e26c38">CANCEL Call Tax man</h3>
+<div class="outline-text-3" id="text-org0e26c38">
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbce380d" class="outline-2">
+<h2 id="orgbce380d">July 2025</h2>
+<div class="outline-text-2" id="text-orgbce380d">
+</div>
+<div id="outline-container-org4c6a072" class="outline-3">
+<h3 id="org4c6a072"><span class="done DONE">DONE</span> Chat Wes about putting in hours to equal his stipend</h3>
+<div class="outline-text-3" id="text-org4c6a072">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-24 Thu 12:24]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org04825d2" class="outline-3">
+<h3 id="org04825d2"><span class="done DONE">DONE</span> Synthetic datasets for boosted&#xa0;&#xa0;&#xa0;<span class="tag"><span class="4b">4b</span></span></h3>
+<div class="outline-text-3" id="text-org04825d2">
+</div>
+</div>
+
+<div id="outline-container-org606c7a3" class="outline-3">
+<h3 id="org606c7a3">CANCEL Make Boosted test code for declustering</h3>
+<div class="outline-text-3" id="text-org606c7a3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-13 Fri 11:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org96e8f93" class="outline-3">
+<h3 id="org96e8f93"><span class="done DONE">DONE</span> Mail re:AE and LDR</h3>
+<div class="outline-text-3" id="text-org96e8f93">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-23 Wed 09:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50463c9" class="outline-3">
+<h3 id="org50463c9"><span class="done DONE">DONE</span> Customize org-download [BROKEN LINK: No match for fuzzy expression: (defcustom org-download-image-org-width 0]</h3>
+<div class="outline-text-3" id="text-org50463c9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-18 Fri 09:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org39b3228" class="outline-3">
+<h3 id="org39b3228"><span class="done DONE">DONE</span> Setup Crypto Sales Strategy</h3>
+<div class="outline-text-3" id="text-org39b3228">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-22 Tue 08:43]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga2242c7" class="outline-3">
+<h3 id="orga2242c7"><span class="done DONE">DONE</span> <a href="Notes/progressreport_18_july_2025-20250718085034.html#ID-B23CC68D-0837-4D6B-8116-3EAB7C342569">ProgressReport 18 July 2025</a></h3>
+<div class="outline-text-3" id="text-orga2242c7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-18 Fri 08:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga30e5ab" class="outline-3">
+<h3 id="orga30e5ab"><span class="done DONE">DONE</span> Push code for Chance</h3>
+<div class="outline-text-3" id="text-orga30e5ab">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-11 Fri 15:18]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4fe514f" class="outline-3">
+<h3 id="org4fe514f"><span class="done DONE">DONE</span> Do Vars</h3>
+<div class="outline-text-3" id="text-org4fe514f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-17 Thu 14:03]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5cf41b8" class="outline-3">
+<h3 id="org5cf41b8"><span class="done DONE">DONE</span> Ping Berman</h3>
+<div class="outline-text-3" id="text-org5cf41b8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-18 Fri 08:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd686437" class="outline-3">
+<h3 id="orgd686437"><span class="done DONE">DONE</span> Write up MAC meeting</h3>
+<div class="outline-text-3" id="text-orgd686437">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-16 Wed 14:23]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga2d8299" class="outline-3">
+<h3 id="orga2d8299"><span class="done DONE">DONE</span> Modules Summary for Harry</h3>
+<div class="outline-text-3" id="text-orga2d8299">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-16 Wed 08:52]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org396e91f" class="outline-3">
+<h3 id="org396e91f"><span class="done DONE">DONE</span> Colored Text in org-mode</h3>
+<div class="outline-text-3" id="text-org396e91f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-11 Wed 09:04]</span></span>
+</p>
+
+<p>
+(require 'org-colored-text)
+[red]This is red text.[/red]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0ad160" class="outline-3">
+<h3 id="orgd0ad160"><span class="done DONE">DONE</span> Follow up with Alabama re:testing boards</h3>
+<div class="outline-text-3" id="text-orgd0ad160">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-15 Tue 15:04]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0092b62" class="outline-3">
+<h3 id="org0092b62"><span class="done DONE">DONE</span> Setup PGSS Zoom link</h3>
+<div class="outline-text-3" id="text-org0092b62">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-14 Mon 10:24]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8ffe9a6" class="outline-3">
+<h3 id="org8ffe9a6"><span class="done DONE">DONE</span> Look at HGC Applicants&#xa0;&#xa0;&#xa0;<span class="tag"><span class="HGC">HGC</span></span></h3>
+<div class="outline-text-3" id="text-org8ffe9a6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-22 Thu 09:20]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8c0c65d" class="outline-3">
+<h3 id="org8c0c65d"><span class="done DONE">DONE</span> PGSS Homework 3</h3>
+<div class="outline-text-3" id="text-org8c0c65d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-11 Fri 15:26]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50157df" class="outline-3">
+<h3 id="org50157df"><span class="done DONE">DONE</span> Write up S/sqrt(B) to mu CL convertion</h3>
+<div class="outline-text-3" id="text-org50157df">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-09 Wed 16:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaf8648b" class="outline-3">
+<h3 id="orgaf8648b"><span class="done DONE">DONE</span> Add option to set z-range in plot2d</h3>
+<div class="outline-text-3" id="text-orgaf8648b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-07 Mon 16:58]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a33e3d" class="outline-3">
+<h3 id="org6a33e3d"><span class="done DONE">DONE</span> Ping Mauro re:4b plans</h3>
+<div class="outline-text-3" id="text-org6a33e3d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-03 Thu 10:21]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2f1738c" class="outline-3">
+<h3 id="org2f1738c"><span class="done DONE">DONE</span> Map somethign to org-metaright</h3>
+<div class="outline-text-3" id="text-org2f1738c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-06 Sun 19:36]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgebdd560" class="outline-3">
+<h3 id="orgebdd560"><span class="done DONE">DONE</span> Ping HGCal conveeners about getting student involved</h3>
+<div class="outline-text-3" id="text-orgebdd560">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-02 Wed 16:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4554ef9" class="outline-3">
+<h3 id="org4554ef9"><span class="done DONE">DONE</span> Clean up paper plots making push</h3>
+<div class="outline-text-3" id="text-org4554ef9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-20 Fri 10:42]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc588a98" class="outline-3">
+<h3 id="orgc588a98"><span class="done DONE">DONE</span> Review 1st Half 2025</h3>
+<div class="outline-text-3" id="text-orgc588a98">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-01 Tue 10:40]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb58c285" class="outline-3">
+<h3 id="orgb58c285"><span class="done DONE">DONE</span> Update public plots to 138/fb</h3>
+<div class="outline-text-3" id="text-orgb58c285">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-01 Tue 13:13]</span></span>
+</p>
+
+<p>
+From:
+<a href="https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded_wdataUL17B/datacards/">https://plotsalgomez.webtest.cern.ch/HH4b/reana/20250605_0dc846dc_unblinded_wdataUL17B/datacards/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4935cef" class="outline-3">
+<h3 id="org4935cef"><span class="done DONE">DONE</span> PGSS Homework</h3>
+<div class="outline-text-3" id="text-org4935cef">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-02 Wed 10:22]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgece2d61" class="outline-3">
+<h3 id="orgece2d61"><span class="done DONE">DONE</span> Config .bashrc to org file</h3>
+<div class="outline-text-3" id="text-orgece2d61">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-02 Wed 17:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4a02587" class="outline-3">
+<h3 id="org4a02587"><span class="done DONE">DONE</span> Group Comments for Displaced sTaus</h3>
+<div class="outline-text-3" id="text-org4a02587">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-19 Thu 17:31]</span></span>
+</p>
+
+<p>
+Re: Institutional Review of CMS paper/analysis EXO-24-020
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb1afdad" class="outline-3">
+<h3 id="orgb1afdad"><span class="done DONE">DONE</span> Do <a href="Notes/CAM Turnaround Report.html#ID-5EE61469-FF33-4191-98A8-0664CFDC4975">CAM Turnaround Report</a> for June</h3>
+<div class="outline-text-3" id="text-orgb1afdad">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-27 Fri 09:25]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5301ef3" class="outline-3">
+<h3 id="org5301ef3"><span class="done DONE">DONE</span> Setup July</h3>
+<div class="outline-text-3" id="text-org5301ef3">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-01 Tue 10:39]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0475cf" class="outline-3">
+<h3 id="orgd0475cf"><span class="done DONE">DONE</span> Review June</h3>
+<div class="outline-text-3" id="text-orgd0475cf">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-07-01 Tue 10:40]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf61ccbd" class="outline-2">
+<h2 id="orgf61ccbd">June 2025</h2>
+<div class="outline-text-2" id="text-orgf61ccbd">
+</div>
+<div id="outline-container-org502d9bb" class="outline-3">
+<h3 id="org502d9bb"><span class="done DONE">DONE</span> Start reviewing <a href="Notes/arc_hig_24_016_tthh_in_l_4b-20250625111920.html#ID-A8624D90-C9A8-4879-9E2B-A7BA270AEB81">ARC HIG-24-016 ttHH in l+4b</a></h3>
+<div class="outline-text-3" id="text-org502d9bb">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-18 Wed 14:03]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc8f20ec" class="outline-3">
+<h3 id="orgc8f20ec"><span class="done DONE">DONE</span> Write up MAC Meeting</h3>
+<div class="outline-text-3" id="text-orgc8f20ec">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-23 Mon 15:03]</span></span>
+</p>
+
+<p>
+<a href="https://indico.cern.ch/event/1558211/">https://indico.cern.ch/event/1558211/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdad3611" class="outline-3">
+<h3 id="orgdad3611"><span class="done DONE">DONE</span> Add 5/fb of 2017 data</h3>
+<div class="outline-text-3" id="text-orgdad3611">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-25 Wed 08:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5f673cb" class="outline-3">
+<h3 id="org5f673cb"><span class="done DONE">DONE</span> Setup straight.el</h3>
+<div class="outline-text-3" id="text-org5f673cb">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-26 Thu 22:52]</span></span>
+</p>
+
+<p>
+<a href="https://systemcrafters.net/advanced-package-management/using-straight-el/">https://systemcrafters.net/advanced-package-management/using-straight-el/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e202bb" class="outline-3">
+<h3 id="org3e202bb"><span class="done DONE">DONE</span> Fix Marginalia</h3>
+<div class="outline-text-3" id="text-org3e202bb">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-30 Mon 21:28]</span></span>
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org8ecd2e9" class="outline-3">
+<h3 id="org8ecd2e9"><span class="done DONE">DONE</span> Setup copilot cylcle completion and remove</h3>
+<div class="outline-text-3" id="text-org8ecd2e9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-16 Fri 11:32]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc09f392" class="outline-3">
+<h3 id="orgc09f392"><span class="done DONE">DONE</span> Update Emacs.org to run smoothly on remote emacs.</h3>
+<div class="outline-text-3" id="text-orgc09f392">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-25 Wed 11:33]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org56fdf62" class="outline-3">
+<h3 id="org56fdf62"><span class="done DONE">DONE</span> Do .aliases config with ORG</h3>
+<div class="outline-text-3" id="text-org56fdf62">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-26 Thu 10:54]</span></span>
+</p>
+
+<p>
+Need to change for falcon
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">
+-alias nemacs='/opt/homebrew/bin/emacs -nw'
+-alias nemcas='/opt/homebrew/bin/emacs -nw'
+-alias neamcs='/opt/homebrew/bin/emacs -nw'
+-alias nemasc='/opt/homebrew/bin/emacs -nw'
+-alias neamsc='/opt/homebrew/bin/emacs -nw'
++alias nemacs='/usr/bin/emacs -nw'
++alias nemcas='/usr/bin/emacs -nw'
++alias neamcs='/usr/bin/emacs -nw'
++alias nemasc='/usr/bin/emacs -nw'
++alias neamsc='/usr/bin/emacs -nw'
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge38af72" class="outline-3">
+<h3 id="orge38af72"><span class="done DONE">DONE</span> Update AN with all unblinding talks</h3>
+<div class="outline-text-3" id="text-orge38af72">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-23 Mon 11:23]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7eef1a7" class="outline-3">
+<h3 id="org7eef1a7"><span class="done DONE">DONE</span> Send Ben Eater Videos to Hy Trac</h3>
+<div class="outline-text-3" id="text-org7eef1a7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-23 Mon 11:27]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge738b73" class="outline-3">
+<h3 id="orge738b73"><span class="done DONE">DONE</span> <a href="Notes/progressreport_20_june_2025-20250620103800.html#ID-742FC9A0-778F-492A-9253-D1E1286C354D">ProgressReport 20 June 2025</a></h3>
+<div class="outline-text-3" id="text-orge738b73">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-20 Fri 10:47]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org431d6a4" class="outline-3">
+<h3 id="org431d6a4"><span class="done DONE">DONE</span> Write up <a href="Notes/mac_meeting_6_june_2025-20250604084605.html#ID-3F0CA6A1-A6CE-423D-AF25-1346C2901238">MAC Meeting 6 June 2025</a></h3>
+<div class="outline-text-3" id="text-org431d6a4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-06 Fri 09:30]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org47b1b07" class="outline-3">
+<h3 id="org47b1b07"><span class="done DONE">DONE</span> Write up comments on theory uncertianties on mu</h3>
+<div class="outline-text-3" id="text-org47b1b07">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-11 Wed 10:17]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org04c9b3b" class="outline-3">
+<h3 id="org04c9b3b"><span class="done DONE">DONE</span> June VAR</h3>
+<div class="outline-text-3" id="text-org04c9b3b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-16 Mon 09:39]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org20e0567" class="outline-3">
+<h3 id="org20e0567"><span class="done DONE">DONE</span> Prepare Words for Jessica</h3>
+<div class="outline-text-3" id="text-org20e0567">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-16 Mon 09:12]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org752ac57" class="outline-3">
+<h3 id="org752ac57"><span class="done DONE">DONE</span> Acc x Eff Plots</h3>
+<div class="outline-text-3" id="text-org752ac57">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-16 Mon 09:32]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org23b6a08" class="outline-3">
+<h3 id="org23b6a08"><span class="done DONE">DONE</span> Migrate Closure Bias and Variance plots to yaml</h3>
+<div class="outline-text-3" id="text-org23b6a08">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-12 Thu 13:24]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7aaba4d" class="outline-3">
+<h3 id="org7aaba4d"><span class="done DONE">DONE</span> Write up Justifcation for Jeff of Endcap calorimeter</h3>
+<div class="outline-text-3" id="text-org7aaba4d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-11 Wed 11:10]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3a6ccf2" class="outline-3">
+<h3 id="org3a6ccf2"><span class="done DONE">DONE</span> Pay IL toll roads</h3>
+<div class="outline-text-3" id="text-org3a6ccf2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-03 Tue 07:24]</span></span>
+</p>
+
+<p>
+Texas: VNY 4132
+</p>
+
+<p>
+<a href="https://getipass.com/overview">https://getipass.com/overview</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org62c49a6" class="outline-3">
+<h3 id="org62c49a6"><span class="done DONE">DONE</span> Update <a href="Notes/Run2 HH4b AN.html#ID-0451C17E-E57B-4E78-963D-F9B56A6A031A">Run2 HH4b AN</a> with unblinded data</h3>
+<div class="outline-text-3" id="text-org62c49a6">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-06 Fri 14:20]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcfa04a4" class="outline-3">
+<h3 id="orgcfa04a4"><span class="done DONE">DONE</span> Make Doctors Appt (Statin)</h3>
+<div class="outline-text-3" id="text-orgcfa04a4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-11 Wed 08:41]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8249713" class="outline-3">
+<h3 id="org8249713"><span class="done DONE">DONE</span> Plot list for HH paper</h3>
+<div class="outline-text-3" id="text-org8249713">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-09 Mon 09:44]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org76e12ed" class="outline-3">
+<h3 id="org76e12ed"><span class="done DONE">DONE</span> Follow up on Overhead Fabrication</h3>
+<div class="outline-text-3" id="text-org76e12ed">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-09 Mon 20:58]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbd72407" class="outline-3">
+<h3 id="orgbd72407">CANCEL write capture template to automatically handle writing of one thing to daily&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-orgbd72407">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-22 Thu 10:33]</span></span>
+</p>
+
+<ul class="org-ul">
+<li>When something is set as "The one thing," it gets added to the "The one thing" section in Daily.</li>
+<li>When something is changed from "one thing," it is enclosed in ? (maybe for later?).</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org508078a" class="outline-3">
+<h3 id="org508078a"><span class="done DONE">DONE</span> Reimbursement for <a href="Notes/fnal_trip_june_2025-20250513124754.html#ID-B8389CBD-FFBC-4E17-8A52-B33C6C354D1F">FNAL Trip June 2025</a></h3>
+<div class="outline-text-3" id="text-org508078a">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-06 Fri 09:24]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3111979" class="outline-3">
+<h3 id="org3111979"><span class="done DONE">DONE</span> Ping Chance</h3>
+<div class="outline-text-3" id="text-org3111979">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-06 Fri 09:46]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcfa365e" class="outline-3">
+<h3 id="orgcfa365e"><span class="done DONE">DONE</span> <a href="Notes/progressreport_6_june_2025-20250606094253.html#ID-EE8D691B-EF6B-4268-A623-28D5593A0E3A">ProgressReport 6 June 2025</a></h3>
+<div class="outline-text-3" id="text-orgcfa365e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-06 Fri 10:31]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org293f1d8" class="outline-3">
+<h3 id="org293f1d8"><span class="done DONE">DONE</span> Xfinitiy</h3>
+<div class="outline-text-3" id="text-org293f1d8">
+</div>
+</div>
+
+<div id="outline-container-org822aad7" class="outline-3">
+<h3 id="org822aad7"><span class="done DONE">DONE</span> Setup June</h3>
+<div class="outline-text-3" id="text-org822aad7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-02 Mon 09:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8f4589e" class="outline-3">
+<h3 id="org8f4589e"><span class="done DONE">DONE</span> Review May</h3>
+<div class="outline-text-3" id="text-org8f4589e">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-06-02 Mon 09:59]</span></span>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd70df78" class="outline-2">
+<h2 id="orgd70df78">May 2025</h2>
+<div class="outline-text-2" id="text-orgd70df78">
+</div>
+<div id="outline-container-org363d7e4" class="outline-3">
+<h3 id="org363d7e4"><span class="done DONE">DONE</span> Synthetic data with relaxed thresholds</h3>
+<div class="outline-text-3" id="text-org363d7e4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-29 Thu 08:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6de8381" class="outline-3">
+<h3 id="org6de8381"><span class="done DONE">DONE</span> Config GPTel to use a more modern model as default</h3>
+<div class="outline-text-3" id="text-org6de8381">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-18 Sun 13:23]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b8febd" class="outline-3">
+<h3 id="org8b8febd"><span class="done DONE">DONE</span> Setup python LSP</h3>
+<div class="outline-text-3" id="text-org8b8febd">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-21 Wed 09:26]</span></span>
+</p>
+
+<p>
+General LSP:
+<a href="https://www.youtube.com/watch?v=E-NAM9U5JYE&amp;list=PLEoMzSkcN8oNvsrtk_iZSb94krGRofFjN&amp;index=1">https://www.youtube.com/watch?v=E-NAM9U5JYE&amp;list=PLEoMzSkcN8oNvsrtk_iZSb94krGRofFjN&amp;index=1</a>
+</p>
+
+<p>
+Python config
+<a href="https://systemcrafters.net/emacs-ide/">https://systemcrafters.net/emacs-ide/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c192ed" class="outline-3">
+<h3 id="org9c192ed"><span class="done DONE">DONE</span> Fine tune gptel</h3>
+<div class="outline-text-3" id="text-org9c192ed">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-21 Wed 11:49]</span></span>
+</p>
+
+<ul class="org-ul">
+<li>Send from minibuffer reply in place</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgda61a5c" class="outline-3">
+<h3 id="orgda61a5c"><span class="done DONE">DONE</span> <a href="Notes/progressreport_23_may_2025-20250523091152.html#ID-B7FF193A-1319-415F-9C8D-7216B8C390AE">ProgressReport 23 May 2025</a></h3>
+<div class="outline-text-3" id="text-orgda61a5c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-23 Fri 09:11]</span></span>
+</p>
+
+<p>
+  ** DONE Merge 4b code
+CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2025-05-28 Wed 17:04]</span></span>
+</p>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-27 Tue 11:00]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e67853" class="outline-3">
+<h3 id="org7e67853"><span class="done DONE">DONE</span> Launch 2nd seed for synthetic data</h3>
+<div class="outline-text-3" id="text-org7e67853">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-22 Thu 09:52]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc27c897" class="outline-3">
+<h3 id="orgc27c897"><span class="done DONE">DONE</span> Buy Dry Air</h3>
+<div class="outline-text-3" id="text-orgc27c897">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-13 Tue 12:13]</span></span>
+</p>
+
+<ul class="org-ul">
+<li>Pinged Seth
+<a href="https://www.aircompressorsdirect.com/Tsunami-21999-1105/p106054.html?gad_source=1">https://www.aircompressorsdirect.com/Tsunami-21999-1105/p106054.html?gad_source=1</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org86f82f8" class="outline-3">
+<h3 id="org86f82f8"><span class="done DONE">DONE</span> Checkout org-download</h3>
+<div class="outline-text-3" id="text-org86f82f8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-20 Tue 16:44]</span></span>
+</p>
+
+<p>
+Org-Download allows you to drag and drop images into Org files.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(use-package org-download
+  :ensure t
+  :after org
+  :hook (org-mode . org-download-enable))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org00a4913" class="outline-3">
+<h3 id="org00a4913"><span class="done DONE">DONE</span> Ping Sussanne</h3>
+<div class="outline-text-3" id="text-org00a4913">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-21 Wed 15:54]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org17a614f" class="outline-3">
+<h3 id="org17a614f"><span class="done DONE">DONE</span> Send Drier to UCSB</h3>
+<div class="outline-text-3" id="text-org17a614f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-22 Thu 13:09]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07b0178" class="outline-3">
+<h3 id="org07b0178">CANCEL Look into /Setup Elpy</h3>
+<div class="outline-text-3" id="text-org07b0178">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-20 Tue 10:27]</span></span>
+</p>
+
+<p>
+<a href="https://elpy.readthedocs.io/en/latest/introduction.html">https://elpy.readthedocs.io/en/latest/introduction.html</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org216c286" class="outline-3">
+<h3 id="org216c286"><span class="done DONE">DONE</span> Iterate on HGC Slides:  20th Final talks 27th. Review June 3-5&#xa0;&#xa0;&#xa0;<span class="tag"><span class="HGC">HGC</span></span></h3>
+<div class="outline-text-3" id="text-org216c286">
+<p>
+<a href="Notes/hgc_slides_for_june_2025_review-20250513150709.html#ID-FAC1FE44-7770-4F45-92B9-F8B2645A1340">HGC Slides for June 2025 Review</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge010247" class="outline-3">
+<h3 id="orge010247"><span class="done DONE">DONE</span> Setup copilot Chat</h3>
+<div class="outline-text-3" id="text-orge010247">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-19 Mon 18:24]</span></span>
+</p>
+
+<p>
+<a href="https://github.com/chep/copilot-chat.el">https://github.com/chep/copilot-chat.el</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgec8d991" class="outline-3">
+<h3 id="orgec8d991"><span class="done DONE">DONE</span> Reply Aniket re:bbWW slides</h3>
+<div class="outline-text-3" id="text-orgec8d991">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-20 Tue 11:29]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07a915b" class="outline-3">
+<h3 id="org07a915b"><span class="done DONE">DONE</span> Post Ad</h3>
+<div class="outline-text-3" id="text-org07a915b">
+</div>
+</div>
+
+<div id="outline-container-org61b2d79" class="outline-3">
+<h3 id="org61b2d79"><span class="done DONE">DONE</span> Get a copy of Modern Principles of Economics</h3>
+<div class="outline-text-3" id="text-org61b2d79">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-14 Wed 09:09]</span></span>
+</p>
+
+<p>
+<a href="https://achieve.macmillanlearning.com/courses/5b5dsz/e-book">https://achieve.macmillanlearning.com/courses/5b5dsz/e-book</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2242ad7" class="outline-3">
+<h3 id="org2242ad7"><span class="done DONE">DONE</span> Setup config with org files</h3>
+<div class="outline-text-3" id="text-org2242ad7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-18 Sun 09:42]</span></span>
+</p>
+
+<p>
+<a href="https://systemcrafters.net/emacs-from-scratch/configure-everything-with-org-babel/">https://systemcrafters.net/emacs-from-scratch/configure-everything-with-org-babel/</a>
+</p>
+
+<p>
+General config.
+Config specific full emacs
+</p>
+<ul class="org-ul">
+<li>Turn on mail</li>
+<li>org</li>
+<li>Auto git</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc32f1de" class="outline-3">
+<h3 id="orgc32f1de"><span class="done DONE">DONE</span> Fix GCAL client secrete with gpg</h3>
+<div class="outline-text-3" id="text-orgc32f1de">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-18 Sun 20:11]</span></span>
+</p>
+
+<p>
+<a href="Notes/using_encrypted_passwords_in_emacs-20250519113050.html#ID-7FCB78BE-A692-4B90-936F-4E7F329776AE">Using Encrypted Passwords in Emacs</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd78e768" class="outline-3">
+<h3 id="orgd78e768"><span class="done DONE">DONE</span> Update CMU Rec Membership</h3>
+<div class="outline-text-3" id="text-orgd78e768">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-10 Sat 11:47]</span></span>
+</p>
+
+<p>
+Your M0000920 membership will expire on 5/15/2025.
+</p>
+
+<p>
+You can log into your account using the link below:
+</p>
+
+<p>
+<a href="https://cmu.dserec.com/online/memberships?dse-widget-url=https%3A%2F%2Fcmu.dserec.com%2Fonline%2Fmemberships_widget%2Fmy-memberships%2F920">https://cmu.dserec.com/online/memberships?dse-widget-url=https%3A%2F%2Fcmu.dserec.com%2Fonline%2Fmemberships_widget%2Fmy-memberships%2F920</a>
+</p>
+
+<p>
+Dont see the towel service from the listed options
+</p>
+
+<p>
+Sent mail
+</p>
+</div>
+</div>
+
+<div id="outline-container-org57f76a9" class="outline-3">
+<h3 id="org57f76a9"><span class="done DONE">DONE</span> Email in Emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org57f76a9">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-12 Mon 15:33]</span></span>
+</p>
+
+<p>
+<a href="https://systemcrafters.net/emacs-mail/">https://systemcrafters.net/emacs-mail/</a>
+</p>
+
+<p>
+Chat GPT instrucitons:
+<a href="https://chatgpt.com/share/6822abe1-4f48-8000-b88f-1e1443c58bf7">https://chatgpt.com/share/6822abe1-4f48-8000-b88f-1e1443c58bf7</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga0a90f7" class="outline-3">
+<h3 id="orga0a90f7"><span class="done DONE">DONE</span> Setup org-contacts</h3>
+<div class="outline-text-3" id="text-orga0a90f7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-15 Thu 19:25]</span></span>
+</p>
+
+<p>
+<a href="https://claude.ai/share/d9ae4242-487a-41ce-bf3b-6b19ab1e0fd7">https://claude.ai/share/d9ae4242-487a-41ce-bf3b-6b19ab1e0fd7</a>
+</p>
+
+<p>
+  ** DONE Ping YKK and Scott re:June FNAL visit
+CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2025-05-16 Fri 19:31]</span></span>
+</p>
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-16 Fri 11:41]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef81815" class="outline-3">
+<h3 id="orgef81815"><span class="done DONE">DONE</span> How to link to an email in a node ?</h3>
+<div class="outline-text-3" id="text-orgef81815">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-16 Fri 13:52]</span></span>
+</p>
+
+
+<p>
+<code>- org-store-line [C-c s]</code> on the mail in view mail
+</p>
+<ul class="org-ul">
+<li><code>C-c C-l</code> where you want to put the link</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdddf05d" class="outline-3">
+<h3 id="orgdddf05d"><span class="done DONE">DONE</span> Re: nominations for partial fellowship (by Monday May 19)</h3>
+<div class="outline-text-3" id="text-orgdddf05d">
+</div>
+</div>
+
+<div id="outline-container-orgc81c6d0" class="outline-3">
+<h3 id="orgc81c6d0"><span class="done DONE">DONE</span> TGIF: The Emir of America</h3>
+<div class="outline-text-3" id="text-orgc81c6d0">
+</div>
+</div>
+
+<div id="outline-container-org81f2a6f" class="outline-3">
+<h3 id="org81f2a6f"><span class="done DONE">DONE</span> Trade, Tariffs, &amp; Make-Work Bias</h3>
+<div class="outline-text-3" id="text-org81f2a6f">
+<p>
+Trade is in the news because of the Trump tariffs. I’ve finally given in and written this    
+post, in case any of you still don’t know why free trade is good.    
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge603955" class="outline-3">
+<h3 id="orge603955"><span class="done DONE">DONE</span> Book June FNAL Trip</h3>
+<div class="outline-text-3" id="text-orge603955">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-12 Mon 09:42]</span></span>
+</p>
+
+<p>
+<a href="Notes/fnal_trip_june_2025-20250513124754.html#ID-B8389CBD-FFBC-4E17-8A52-B33C6C354D1F">FNAL Trip June 2025</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge76d22c" class="outline-3">
+<h3 id="orge76d22c"><span class="done DONE">DONE</span> Schedule Chance Meeting</h3>
+<div class="outline-text-3" id="text-orge76d22c">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-15 Thu 08:59]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf9374a2" class="outline-3">
+<h3 id="orgf9374a2"><span class="done DONE">DONE</span> Look into Projectile&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-orgf9374a2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-13 Tue 09:05]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge5c1769" class="outline-3">
+<h3 id="orge5c1769"><span class="done DONE">DONE</span> Write up 14 May MAC Meeting</h3>
+<div class="outline-text-3" id="text-orge5c1769">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-14 Wed 11:46]</span></span>
+</p>
+
+<p>
+<a href="https://indico.cern.ch/event/1546005/">https://indico.cern.ch/event/1546005/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org36d5f22" class="outline-3">
+<h3 id="org36d5f22"><span class="done DONE">DONE</span> Ping Suzzane Re:Dry air&#xa0;&#xa0;&#xa0;<span class="tag"><span class="HGC">HGC</span></span></h3>
+<div class="outline-text-3" id="text-org36d5f22">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-06 Tue 12:23]</span></span>
+</p>
+
+<p>
+<a href="Notes/HGC Transfer Tape BCR.html#ID-B07B1EF0-8E92-478D-9E31-FFD3A5E8E932">HGC Transfer Tape BCR</a>
+<a href="Notes/Dry Air for MMTS.html#ID-53375128-8643-4B4E-8E42-FA5AA369D869">Dry Air for MMTS</a>
+</p>
+
+<p>
+Mailed Sussane
+<a href="https://www.wilkersoncorp.com/brochure/9cw-aw-220.pdf?utm_source=chatgpt.com">https://www.wilkersoncorp.com/brochure/9cw-aw-220.pdf?utm_source=chatgpt.com</a>
+</p>
+
+<p>
+Re:it looks to me like the Tsunami has all the necessary specs, with a higher flowrate at a lower cost. I'd say let's go with it.
+</p>
+
+<p>
+Pinged seth
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgea32176" class="outline-3">
+<h3 id="orgea32176"><span class="done DONE">DONE</span> Write up P2UG slides&#xa0;&#xa0;&#xa0;<span class="tag"><span class="HGC">HGC</span></span></h3>
+<div class="outline-text-3" id="text-orgea32176">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-06 Tue 15:03]</span></span>
+</p>
+
+<p>
+<a href="https://indico.cern.ch/event/1523635/">https://indico.cern.ch/event/1523635/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd986224" class="outline-3">
+<h3 id="orgd986224"><span class="done DONE">DONE</span> Effortless File Management with Dired&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-orgd986224">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-11 Sun 16:25]</span></span>
+</p>
+
+<p>
+<a href="https://systemcrafters.net/emacs-from-scratch/effortless-file-management-with-dired/">https://systemcrafters.net/emacs-from-scratch/effortless-file-management-with-dired/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2cb5957" class="outline-3">
+<h3 id="org2cb5957"><span class="done DONE">DONE</span> Update CMU HGC mailing list&#xa0;&#xa0;&#xa0;<span class="tag"><span class="HGC">HGC</span></span></h3>
+<div class="outline-text-3" id="text-org2cb5957">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-13 Tue 08:09]</span></span>
+</p>
+
+<p>
+Can you please add for your email invites to the 11.30 am MAC mtg
+Rain Chen &lt;siyuche4@andrew.cmu.edu&gt; and
+Joyce Zhuang &lt;xzhuang2@andrew.cmu.edu&gt;
+I see you already have Carter and Giulia on your list. You can remove Logan and also Nedjma and probably Jonas. Not sure about Harshit &#x2026;
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9908a0b" class="outline-3">
+<h3 id="org9908a0b"><span class="done DONE">DONE</span> Setup Auto commit for RoamNotes&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org9908a0b">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-04 Sun 08:53]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6367ac2" class="outline-3">
+<h3 id="org6367ac2"><span class="done DONE">DONE</span> Create a note using a selected region as the title&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org6367ac2">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-04 Sun 12:17]</span></span>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7482361" class="outline-3">
+<h3 id="org7482361"><span class="done DONE">DONE</span> Fix MD -&gt; ORG in Dialies&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org7482361">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-08 Thu 20:25]</span></span>
+[BROKEN LINK: No match for fuzzy expression: :PROPERTIES:]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga645014" class="outline-3">
+<h3 id="orga645014">CANCEL Understand Terimal with emacs&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-orga645014">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-11 Sun 16:24]</span></span>
+</p>
+
+<p>
+<a href="https://systemcrafters.net/emacs-from-scratch/learn-to-love-the-terminal-modes/">https://systemcrafters.net/emacs-from-scratch/learn-to-love-the-terminal-modes/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org58f62fc" class="outline-3">
+<h3 id="org58f62fc"><span class="done DONE">DONE</span> Projectile and Magit&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org58f62fc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-08 Thu 10:02]</span></span>
+</p>
+
+<p>
+<a href="Notes/magit_in_emacs-20250515085504.html#ID-EA9D0E8D-2793-41D5-922A-B94E32768E96">Magit in emacs</a> 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org058de38" class="outline-3">
+<h3 id="org058de38"><span class="done DONE">DONE</span> Organize FBC2 Meetings&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org058de38">
+</div>
+</div>
+
+<div id="outline-container-orge09dbbc" class="outline-3">
+<h3 id="orge09dbbc"><span class="done DONE">DONE</span> Better search "fuzzy" search  in node&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-orge09dbbc">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-06 Tue 10:12]</span></span>
+</p>
+
+
+<p>
+Vertigo ?
+</p>
+
+<p>
+  From Claude:
+Consult with Orderless - This combination allows for powerful fuzzy matching across your org-roam database. Consult is a general-purpose search framework, and when paired with Orderless (a completion style that supports flexible matching), it becomes very effective for fuzzy searching org-roam nodes.
+</p>
+
+<p>
+<a href="https://protesilaos.com/codelog/2024-02-17-emacs-modern-minibuffer-packages/">https://protesilaos.com/codelog/2024-02-17-emacs-modern-minibuffer-packages/</a>
+</p>
+
+<p>
+Consult Looks Great! 
+Can setup up book marks
+</p>
+
+<p>
+Consult grep can pass options with <code>--</code>
+eg <code>#process -- -i#</code> or <code>#process -- -C 2#</code> or 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3ab9e41" class="outline-3">
+<h3 id="org3ab9e41"><span class="done DONE">DONE</span> Setup dailys with subfolders*</h3>
+<div class="outline-text-3" id="text-org3ab9e41">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-07 Wed 20:53]</span></span>
+</p>
+
+<p>
+For automatic organization by year/month:
+<code>elisp(setq org-roam-dailies-capture-templates</code>
+     '(("d" "default" entry
+         "* %?"
+         :target (file+head "%&lt;%Y/%m/%Y-%m-%d&gt;.org"
+                           "#+title: %&lt;%Y-%m-%d&gt;\n"))))=
+This creates a structure like "2025/05/2025-05-07.org".
+</p>
+
+<p>
+Yes, you can use subdirectories under your org-roam-dailies-directory, but you need to customize your capture templates to specify the subdirectory structure you want. For example, if you want to organize daily notes by year and month (e.g., dailies/2025/05/2025-05-07.org), set your template’s :target to something like:
+</p>
+
+<p>
+text
+<code>:target (file+head "%&lt;%Y/%m/%Y-%m-%d&gt;.org" "#+title: %&lt;%Y-%m-%d&gt;\n")</code>
+</p>
+
+<p>
+Org-roam will then create and use those subdirectories automatically as needed. This approach is flexible and works well for organizing dailies hierarchically.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6835f19" class="outline-3">
+<h3 id="org6835f19"><span class="done DONE">DONE</span> Review HGC Candidates</h3>
+<div class="outline-text-3" id="text-org6835f19">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-05 Mon 10:49]</span></span>
+<a href="file:///home/runner/RoamNotes/Journal/30-April-2025-Wednesday.html">file:///home/runner/RoamNotes/Journal/30-April-2025-Wednesday.html</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org54665bd" class="outline-3">
+<h3 id="org54665bd"><span class="done DONE">DONE</span> Next Note Not respecting Months&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org54665bd">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-05 Mon 10:57]</span></span>
+[BROKEN LINK: No match for fuzzy expression: *Time Block]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7bdf4f5" class="outline-3">
+<h3 id="org7bdf4f5"><span class="done DONE">DONE</span> Fix opening windows when following links&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span></span></h3>
+<div class="outline-text-3" id="text-org7bdf4f5">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-04 Sun 10:07]</span></span>
+</p>
+
+
+<p>
+Should just have it switch to a new buffer&#x2026; Not create a split.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgf914341" class="outline-3">
+<h3 id="orgf914341"><span class="done DONE">DONE</span> Cusor script that copies the dailys&#x2026; adds header &#x2026; # to * ## to *</h3>
+<div class="outline-text-3" id="text-orgf914341">
+</div>
+</div>
+
+<div id="outline-container-org5a58306" class="outline-3">
+<h3 id="org5a58306"><span class="done DONE">DONE</span> Migrate all the book notes</h3>
+<div class="outline-text-3" id="text-org5a58306">
+</div>
+</div>
+
+<div id="outline-container-orgb7a5785" class="outline-3">
+<h3 id="orgb7a5785"><span class="done DONE">DONE</span> How to setup emacs book marks?</h3>
+<div class="outline-text-3" id="text-orgb7a5785">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-06 Tue 23:19]</span></span>
+[BROKEN LINK: No match for fuzzy expression: *Checkingout consult]
+</p>
+
+<p>
+<a href="Notes/emacs_bookmarks-20250507141327.html#ID-8E08A573-25A8-4038-975D-40460517C8A4">Emacs Bookmarks</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org59d21ba" class="outline-3">
+<h3 id="org59d21ba"><span class="done DONE">DONE</span> Write up <a href="Notes/MAC Meeting 30 April 2025.html#ID-ABA08F5C-4046-4A43-9C1F-10D0D6CB3E21">MAC Meeting 30 April 2025</a></h3>
+<div class="outline-text-3" id="text-org59d21ba">
+</div>
+</div>
+
+<div id="outline-container-org3234a6d" class="outline-3">
+<h3 id="org3234a6d"><span class="done DONE">DONE</span> Pick up Cap and Gown</h3>
+<div class="outline-text-3" id="text-org3234a6d">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-05 Mon 22:59]</span></span>
+[BROKEN LINK: No match for fuzzy expression: :PROPERTIES:]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5e09723" class="outline-3">
+<h3 id="org5e09723"><span class="done DONE">DONE</span> How to handle Meetings and Events</h3>
+<div class="outline-text-3" id="text-org5e09723">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-04 Sun 09:23]</span></span>
+[BROKEN LINK: No match for fuzzy expression: *Migrating May]
+</p>
+
+<ul class="org-ul">
+<li><a href="Journal/FutureLog.html#ID-B2EF995D-7593-48DB-93E7-EF5ED0DE4C62">FutureLog</a></li>
+
+<li>Need to set time stamps and durations</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2966468" class="outline-3">
+<h3 id="org2966468"><span class="done DONE">DONE</span> Setup google calendar integration</h3>
+<div class="outline-text-3" id="text-org2966468">
+<p>
+<a href="Notes/setup_gmail_in_emacs-20250513082943.html#ID-12F9ACF8-88D2-4109-AB57-A3ED03463532">Setup Gmail in Emacs</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcc57c1f" class="outline-3">
+<h3 id="orgcc57c1f"><span class="done DONE">DONE</span> Grade Exams</h3>
+<div class="outline-text-3" id="text-orgcc57c1f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-06 Tue 09:58]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33110ea" class="outline-3">
+<h3 id="org33110ea"><span class="done DONE">DONE</span> Need to get calendar selection to open dailies</h3>
+<div class="outline-text-3" id="text-org33110ea">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-05 Mon 10:15]</span></span>
+</p>
+
+<p>
+Works for next and previous note
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf867b37" class="outline-3">
+<h3 id="orgf867b37"><span class="done DONE">DONE</span> Print Exams&#xa0;&#xa0;&#xa0;<span class="tag"><span class="teaching">teaching</span></span></h3>
+<div class="outline-text-3" id="text-orgf867b37">
+</div>
+</div>
+
+<div id="outline-container-org8293556" class="outline-3">
+<h3 id="org8293556"><span class="done DONE">DONE</span> Paragraph for Wes</h3>
+<div class="outline-text-3" id="text-org8293556">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-03 Sat 11:53]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org65bbbf7" class="outline-3">
+<h3 id="org65bbbf7"><span class="done DONE">DONE</span> Migrate Books</h3>
+<div class="outline-text-3" id="text-org65bbbf7">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-04 Sun 00:34]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b4182f" class="outline-3">
+<h3 id="org2b4182f"><span class="done DONE">DONE</span> Mail for Saturday</h3>
+<div class="outline-text-3" id="text-org2b4182f">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-05 Mon 15:50]</span></span>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc351d61" class="outline-3">
+<h3 id="orgc351d61"><span class="done DONE">DONE</span> [BROKEN LINK: ProgressReport 25 April 2025]</h3>
+<div class="outline-text-3" id="text-orgc351d61">
+</div>
+</div>
+
+<div id="outline-container-org4c9a7aa" class="outline-3">
+<h3 id="org4c9a7aa"><span class="done DONE">DONE</span> Keybinding for org-capture</h3>
+<div class="outline-text-3" id="text-org4c9a7aa">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-04 Sun 00:40]</span></span>
+[BROKEN LINK: No match for fuzzy expression: global-set-key (kbd "s-t") (lambda () (interactive) (org-capture nil "tt"))]
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgfacb4f8" class="outline-3">
+<h3 id="orgfacb4f8"><span class="done DONE">DONE</span> How to render pictures in org Notes?</h3>
+<div class="outline-text-3" id="text-orgfacb4f8">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">[2025-05-04 Sun 11:22]</span></span>
+<a href="file:///home/runner/RoamNotes/Notes/jetdeclustering-20250504105905.html">file:///home/runner/RoamNotes/Notes/jetdeclustering-20250504105905.html</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb5bbf99" class="outline-3">
+<h3 id="orgb5bbf99"><span class="done DONE">DONE</span> Setup ORG mode</h3>
+<div class="outline-text-3" id="text-orgb5bbf99">
+</div>
+</div>
+
+<div id="outline-container-org8d73a00" class="outline-3">
+<h3 id="org8d73a00"><span class="done DONE">DONE</span> Test Item</h3>
+<div class="outline-text-3" id="text-org8d73a00">
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

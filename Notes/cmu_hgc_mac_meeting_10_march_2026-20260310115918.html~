@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 10 March 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 10 March 2026</h1>
+
+
+
+
+<div id="outline-container-org28b9f1a" class="outline-2">
+<h2 id="org28b9f1a">News</h2>
+<div class="outline-text-2" id="text-org28b9f1a">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 200 CuT in here</li>
+<li class="off"><code>[&#xa0;]</code> Tiawan trip approval 23 &#x2013; 25th</li>
+<li class="off"><code>[&#xa0;]</code> More Ti baseplates</li>
+<li class="off"><code>[&#xa0;]</code> Offer to Austin</li>
+<li>MAC Meeting tomorrow</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org136dfc4" class="outline-2">
+<h2 id="org136dfc4">Aniket</h2>
+<div class="outline-text-2" id="text-org136dfc4">
+<ul class="org-ul">
+<li>6 tempature sensors</li>
+<li>Alarm output mostly done&#x2026; need to connect to PLC</li>
+<li>Debugging the Vitrex ordered some cables&#x2026; Cant see.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org05b2ea1" class="outline-2">
+<h2 id="org05b2ea1">Sam</h2>
+<div class="outline-text-2" id="text-org05b2ea1">
+<ul class="org-ul">
+<li>HV cables for kiethely</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1fbc32e" class="outline-2">
+<h2 id="org1fbc32e">Pritam</h2>
+<div class="outline-text-2" id="text-org1fbc32e">
+<ul class="org-ul">
+<li>Lots of good progress!!</li>
+<li>Taking a decent amoutn of time to cool down.</li>
+<li>Sldies</li>
+</ul>
+<p>
+<a href="https://docs.google.com/presentation/d/1ru_gz_5bvyI1F5D7DDCIaY1-TmVESH8dSURiSEkfhoU/edit?slide=id.p#slide=id.p">https://docs.google.com/presentation/d/1ru_gz_5bvyI1F5D7DDCIaY1-TmVESH8dSURiSEkfhoU/edit?slide=id.p#slide=id.p</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb064be9" class="outline-2">
+<h2 id="orgb064be9">Jim</h2>
+<div class="outline-text-2" id="text-orgb064be9">
+<ul class="org-ul">
+<li>Goal for week to run one module through the steps log everything.</li>
+<li>B C</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfe94934" class="outline-2">
+<h2 id="orgfe94934">Jessica</h2>
+<div class="outline-text-2" id="text-orgfe94934">
+<ul class="org-ul">
+<li>19 moduels pretty good grades</li>
+<li>Replace the Gantry camera ?</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org1b69291" class="outline-2">
+<h2 id="org1b69291">Jasques</h2>
+<div class="outline-text-2" id="text-org1b69291">
+<ul class="org-ul">
+<li>2nd over</li>
+<li>2k humidifier filters</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org858d2ef" class="outline-2">
+<h2 id="org858d2ef">Arvind</h2>
+<div class="outline-text-2" id="text-org858d2ef">
+<ul class="org-ul">
+<li>From scratch complete a module !</li>
+<li>Tweak fiducial finding</li>
+<li>Very hard to read the QR codes on the baseplates</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb942307" class="outline-2">
+<h2 id="orgb942307">Rain</h2>
+<div class="outline-text-2" id="text-orgb942307">
+<ul class="org-ul">
+<li>Finished upgraded the common QC daskboards</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd1914f6" class="outline-2">
+<h2 id="orgd1914f6">Sindhu</h2>
+<div class="outline-text-2" id="text-orgd1914f6">
+<ul class="org-ul">
+<li>Moduel QC summary uploads started</li>
+<li>cleanup auto upload scripts</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org00281d7" class="outline-2">
+<h2 id="org00281d7">Christian</h2>
+<div class="outline-text-2" id="text-org00281d7">
+<ul class="org-ul">
+<li>Rearaging in the shipping are</li>
+<li>Extra PC /</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd6b1d3f" class="outline-2">
+<h2 id="orgd6b1d3f">MMTS</h2>
+<div class="outline-text-2" id="text-orgd6b1d3f">
+</div>
+<div id="outline-container-orgb7ab039" class="outline-3">
+<h3 id="orgb7ab039">(1) ETA and items to complete for chiller checkout with the shelves.</h3>
+<div class="outline-text-3" id="text-orgb7ab039">
+<ul class="org-ul">
+<li>Shleves need to be moved&#x2026; waiting on UCSB</li>
+<li class="off"><code>[&#xa0;]</code> Dry air being installed now</li>
+<li class="off"><code>[&#xa0;]</code> Needed more fittings</li>
+<li class="off"><code>[&#xa0;]</code> Most of the sensors are mounted</li>
+<li class="off"><code>[&#xa0;]</code> Chiller connection</li>
+<li class="off"><code>[&#xa0;]</code> Magnetic door lock working</li>
+<li>Chiller to shelves : compression fittings ordered for chamber to chiller connection, leak test should be</li>
+</ul>
+<p>
+done in 10 days. 
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org61a3e79" class="outline-3">
+<h3 id="org61a3e79">(2) ETA and items to complete for tray assembly (without Kria)</h3>
+<div class="outline-text-3" id="text-org61a3e79">
+<ul class="org-ul">
+<li>Have all components.</li>
+<li>Build a tray</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org972eda4" class="outline-3">
+<h3 id="org972eda4">(3) Status on wiring, software, etc for IV curve tests</h3>
+<div class="outline-text-3" id="text-org972eda4">
+<ul class="org-ul">
+<li>Andrew is ordering the wires and connectors.
+Connections should be done in 10-14 days as well.
+PLC side should be completed within 10-14 days as well.</li>
+<li>PLC found a few parts which should arrive this week.</li>
+<li>IV was done.. with single module GUI&#x2026; HV switch</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 1 July 2025</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 1 July 2025</h1>
+
+<div id="outline-container-org27be759" class="outline-2">
+<h2 id="org27be759">News:</h2>
+<div class="outline-text-2" id="text-org27be759">
+<ul class="org-ul">
+<li>Lab is dry</li>
+<li>Bunch of sensors arrived / (Think about it&#x2026;)</li>
+
+<li>Boards on hold in FNAL</li>
+<li>Baseplates /Sensor incoming</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3e5700d" class="outline-2">
+<h2 id="org3e5700d">Action</h2>
+<div class="outline-text-2" id="text-org3e5700d">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Tranfer tape</li>
+<li class="on"><code>[X]</code> Ordering tape and boxes</li>
+<li class="off"><code>[&#xa0;]</code> Crates ?</li>
+<li class="on"><code>[X]</code> MMTS</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6c5e502" class="outline-2">
+<h2 id="org6c5e502">Jessica</h2>
+<div class="outline-text-2" id="text-org6c5e502">
+<ul class="org-ul">
+<li>Before lab underwater&#x2026;</li>
+<li>Glue study:
+<ul class="org-ul">
+<li>One syringe per four modules</li>
+</ul></li>
+<li>Consummables OK for rampup</li>
+<li>And/ON light installed</li>
+<li>How to deal with water&#x2026;.?
+Discussion&#x2026;</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd53bbb6" class="outline-2">
+<h2 id="orgd53bbb6">Gullia</h2>
+<div class="outline-text-2" id="text-orgd53bbb6">
+<ul class="org-ul">
+<li>Testing edge cases on mini-gantry</li>
+<li>When gantry runs&#x2026; timing.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6b85586" class="outline-2">
+<h2 id="org6b85586">Jim</h2>
+<div class="outline-text-2" id="text-org6b85586">
+<ul class="org-ul">
+<li>Mounted the new air drier</li>
+<li>Working with Joy on shipping container</li>
+<li>Will design the wooden crate $300</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org028d083" class="outline-2">
+<h2 id="org028d083">Josh</h2>
+<div class="outline-text-2" id="text-org028d083">
+<ul class="org-ul">
+<li>Programming with Jacques</li>
+<li>Related to the camera: should create camera specific program</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49213f7" class="outline-2">
+<h2 id="org49213f7">Jacques</h2>
+<div class="outline-text-2" id="text-org49213f7">
+<ul class="org-ul">
+<li>Progress on 2 slot encapsulation</li>
+<li>Dealt with the incoming Si</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4943b2b" class="outline-2">
+<h2 id="org4943b2b">Joyce</h2>
+<div class="outline-text-2" id="text-org4943b2b">
+<ul class="org-ul">
+<li>with florin.  Got server to be able to send to contact point.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge6600ad" class="outline-2">
+<h2 id="orge6600ad">Rain</h2>
+<div class="outline-text-2" id="text-orge6600ad">
+<ul class="org-ul">
+<li>nice slides</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga84ffa6" class="outline-2">
+<h2 id="orga84ffa6">Andrew</h2>
+<div class="outline-text-2" id="text-orga84ffa6">
+<ul class="org-ul">
+<li>Foam still pending</li>
+<li>Acceleremeter</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc0629ac" class="outline-2">
+<h2 id="orgc0629ac">Pritam</h2>
+<div class="outline-text-2" id="text-orgc0629ac">
+<ul class="org-ul">
+<li>All MMTS components arrived. Will ship to TTU and UCSB.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc3dc6c1" class="outline-2">
+<h2 id="orgc3dc6c1">Carter</h2>
+<div class="outline-text-2" id="text-orgc3dc6c1">
+<ul class="org-ul">
+<li>Tested new kielthley.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org26b49bb" class="outline-2">
+<h2 id="org26b49bb">Sindhu</h2>
+<div class="outline-text-2" id="text-org26b49bb">
+<ul class="org-ul">
+<li>Can upload module data</li>
+<li>New errors with other tables</li>
+<li>Suggest unit tests</li>
+<li>If tables look good</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org10a36e5" class="outline-2">
+<h2 id="org10a36e5">Joy</h2>
+<div class="outline-text-2" id="text-org10a36e5">
+<ul class="org-ul">
+<li>Working with Jim installing into the crate</li>
+<li>Shock log&#x2026; Order tilt indicator</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

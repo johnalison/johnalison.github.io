@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meeting 24 February 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meeting 24 February 2026</h1>
+
+
+<div id="outline-container-org16b0d3e" class="outline-2">
+<h2 id="org16b0d3e">News</h2>
+<div class="outline-text-2" id="text-org16b0d3e">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> 200 CuT in route</li>
+<li class="off"><code>[&#xa0;]</code> Tiawan trip approval 23 &#x2013; 25th</li>
+<li class="off"><code>[&#xa0;]</code> </li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8ccef98" class="outline-2">
+<h2 id="org8ccef98">Action</h2>
+<div class="outline-text-2" id="text-org8ccef98">
+<ul class="org-ul">
+<li>Meeting:
+<ul class="org-ul">
+<li>CuT need to assemble within a year</li>
+<li>100 + 200um Si</li>
+<li>Continue Ti + 300 v3d</li>
+</ul></li>
+<li>MMTS:
+<ul class="org-ul">
+<li></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org99f5d27" class="outline-2">
+<h2 id="org99f5d27">Jessica</h2>
+<div class="outline-text-2" id="text-org99f5d27">
+<ul class="org-ul">
+<li>12/day for 2 days</li>
+<li>Windows 10 -&gt; 2029</li>
+<li>Module assembly going well</li>
+<li>Bonding with Jasques</li>
+<li>Pickup tool leaking</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3c37ffa" class="outline-2">
+<h2 id="org3c37ffa">Jim</h2>
+<div class="outline-text-2" id="text-org3c37ffa">
+<ul class="org-ul">
+<li>Tour of 9th floor:   A lot wrong</li>
+<li>Shoulder injury;</li>
+<li>Chiller:                  Slower progress &#x2026; run the chiller&#x2026;
+(Dry air)</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orga69acd1" class="outline-2">
+<h2 id="orga69acd1">Aniket</h2>
+<div class="outline-text-2" id="text-orga69acd1">
+<ul class="org-ul">
+<li>Analog plut PLC &#x2026;</li>
+<li>IV tests</li>
+<li>GUI software</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgef2118c" class="outline-2">
+<h2 id="orgef2118c">Arvind</h2>
+<div class="outline-text-2" id="text-orgef2118c">
+<ul class="org-ul">
+<li>Testing encapsulated and bonded modulea</li>
+<li>Surveying bonded modules</li>
+<li>12/day per 2 days   &#x2026; 9-5</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org632ae46" class="outline-2">
+<h2 id="org632ae46">Rain</h2>
+<div class="outline-text-2" id="text-org632ae46">
+<ul class="org-ul">
+<li>Help</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org6b41407" class="outline-2">
+<h2 id="org6b41407">Andrew</h2>
+<div class="outline-text-2" id="text-org6b41407">
+<ul class="org-ul">
+<li>Got GUI on windows</li>
+<li>What is "wsl" windows subsystem for linux</li>
+<li>Has wires</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3bf57db" class="outline-2">
+<h2 id="org3bf57db">Jacques</h2>
+<div class="outline-text-2" id="text-org3bf57db">
+<ul class="org-ul">
+<li>encapsulation going good</li>
+<li>hooked up new cabinate</li>
+<li>Get an oven&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org56854fb" class="outline-2">
+<h2 id="org56854fb">Sam</h2>
+<div class="outline-text-2" id="text-org56854fb">
+<ul class="org-ul">
+<li>Temp sensors working</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge32270e" class="outline-2">
+<h2 id="orge32270e">Christian</h2>
+<div class="outline-text-2" id="text-orge32270e">
+<ul class="org-ul">
+<li>Label makers</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org4cc236f" class="outline-2">
+<h2 id="org4cc236f">Sindhu</h2>
+<div class="outline-text-2" id="text-org4cc236f">
+<ul class="org-ul">
+<li>working on automated cmsr uploads for all macs</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd38d06a" class="outline-2">
+<h2 id="orgd38d06a">Pritam</h2>
+<div class="outline-text-2" id="text-orgd38d06a">
+<ul class="org-ul">
+<li>More orders</li>
+<li>DIN rail</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5c928a3" class="outline-2">
+<h2 id="org5c928a3">Manami</h2>
+<div class="outline-text-2" id="text-org5c928a3">
+<ul class="org-ul">
+<li>?</li>
+<li>Surgery</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

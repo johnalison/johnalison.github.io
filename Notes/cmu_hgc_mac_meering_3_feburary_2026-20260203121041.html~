@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-03-14 Sat 04:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CMU HGC Mac Meering 3 Feburary 2026</title>
+<meta name="generator" content="Org Mode" />
+<link rel='stylesheet' type='text/css' href='/style.css'/>
+<script src='/fix-tables.js' defer='defer'></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">CMU HGC Mac Meering 3 Feburary 2026</h1>
+
+
+<div id="outline-container-org989404b" class="outline-2">
+<h2 id="org989404b">News</h2>
+<div class="outline-text-2" id="text-org989404b">
+<ul class="org-ul">
+<li>More Ti baseplates</li>
+<li>TTU SNAFU</li>
+<li>No hands near moving gantry.</li>
+<li>hexaboard</li>
+<li>Trays arrived</li>
+<li>LV power supplies arrived</li>
+<li>12 modules on Friday</li>
+<li class="on"><code>[X]</code> Workshop the week of March 23</li>
+<li class="off"><code>[&#xa0;]</code> MAC Airtag</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcd52f68" class="outline-2">
+<h2 id="orgcd52f68">Action</h2>
+<div class="outline-text-2" id="text-orgcd52f68">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Save data on offsets</li>
+<li class="on"><code>[X]</code> Order the 2nd crate?</li>
+<li class="off"><code>[&#xa0;]</code> Alabama GUI ?</li>
+<li class="off"><code>[&#xa0;]</code> Hire another tech</li>
+<li class="off"><code>[&#xa0;]</code> Add v3d to graphana</li>
+<li class="off"><code>[&#xa0;]</code> Ask about a Si data in management meeting</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orge61baa5" class="outline-2">
+<h2 id="orge61baa5">Jessica</h2>
+<div class="outline-text-2" id="text-orge61baa5">
+<ul class="org-ul">
+<li>Dicussed the incident</li>
+<li>module production has been going well 2 proto 4</li>
+<li>8 + 12 / day</li>
+<li>hexabord not perfect</li>
+<li>Jasques good on bonder</li>
+<li>Pull testing</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbc4ce1e" class="outline-2">
+<h2 id="orgbc4ce1e">Jim</h2>
+<div class="outline-text-2" id="text-orgbc4ce1e">
+<ul class="org-ul">
+<li>Enviromental chamber</li>
+<li>PLC and magnetic doors</li>
+<li>Lot of stuff overcome with the modules !</li>
+<li>Water leak</li>
+<li>Z- axis head</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3f3106a" class="outline-2">
+<h2 id="org3f3106a">Jacques</h2>
+<div class="outline-text-2" id="text-org3f3106a">
+<ul class="org-ul">
+<li>Encapsulation smooth</li>
+<li>bonder good</li>
+<li>16 / day bottle neck minigantry</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgc2726eb" class="outline-2">
+<h2 id="orgc2726eb">Arvind</h2>
+<div class="outline-text-2" id="text-orgc2726eb">
+<ul class="org-ul">
+<li>Working gantry</li>
+<li>End to end gantry work</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgbfbf569" class="outline-2">
+<h2 id="orgbfbf569">Rain</h2>
+<div class="outline-text-2" id="text-orgbfbf569">
+<ul class="org-ul">
+<li>Graphana:</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2921538" class="outline-2">
+<h2 id="org2921538">Andrew</h2>
+<div class="outline-text-2" id="text-org2921538">
+<ul class="org-ul">
+<li>GUI changes</li>
+<li>IHEP weird module</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgab2cc34" class="outline-2">
+<h2 id="orgab2cc34">Christian</h2>
+<div class="outline-text-2" id="text-orgab2cc34">
+<ul class="org-ul">
+<li>Airtag</li>
+<li>chairs</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge1bffd4" class="outline-2">
+<h2 id="orge1bffd4">Pritam</h2>
+<div class="outline-text-2" id="text-orge1bffd4">
+<ul class="org-ul">
+<li>Tools</li>
+<li>Sam: problem solved</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org64051d6" class="outline-2">
+<h2 id="org64051d6">Sindhu</h2>
+<div class="outline-text-2" id="text-org64051d6">
+<ul class="org-ul">
+<li>Try to track obsolete components in the DB</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgecb0013" class="outline-2">
+<h2 id="orgecb0013">Manami</h2>
+</div>
+</div>
+</body>
+</html>

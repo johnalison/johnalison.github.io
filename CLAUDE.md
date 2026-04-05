@@ -2,6 +2,10 @@
 
 Static website generator that publishes `~/RoamNotes` (private org-roam repo) to GitHub Pages at `https://johnalison.github.io`.
 
+## Skills
+
+Do not call `/done` or `/start` — these are top-level skills that write to `~/ClaudeBrain/` and are reserved for the home directory Claude instance.
+
 ## How it works
 
 1. `build.sh` clones/pulls `git@github.com:johnalison/RoamNotes.git` into `RoamNotes/`

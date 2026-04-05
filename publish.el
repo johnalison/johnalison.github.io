@@ -79,15 +79,20 @@
   "Return the absolute filesystem path of the published HTML for ORG-FILE."
   (let ((rel (file-relative-name org-file pw/notes-src-dir)))
     (cond
-     ;; Notes/foo.org  ->  public/notes/foo.html
+     ;; Notes/foo.org  ->  public/Notes/foo.html
      ((string-prefix-p "Notes/" rel)
       (expand-file-name (concat (file-name-base org-file) ".html")
                         (expand-file-name "Notes" pw/output-dir)))
-     ;; Journal/path/to/foo.org  ->  public/journal/path/to/foo.html
+     ;; Journal/path/to/foo.org  ->  public/Journal/path/to/foo.html
      ((string-prefix-p "Journal/" rel)
       (let ((journal-rel (substring rel (length "Journal/"))))
         (expand-file-name (concat (file-name-sans-extension journal-rel) ".html")
                           (expand-file-name "Journal" pw/output-dir))))
+     ;; wiki/path/to/foo.org  ->  public/wiki/path/to/foo.html
+     ((string-prefix-p "wiki/" rel)
+      (let ((wiki-rel (substring rel (length "wiki/"))))
+        (expand-file-name (concat (file-name-sans-extension wiki-rel) ".html")
+                          (expand-file-name "wiki" pw/output-dir))))
      ;; Top-level foo.org  ->  public/foo.html
      (t (expand-file-name (concat (file-name-base org-file) ".html")
                           pw/output-dir)))))
@@ -257,6 +262,29 @@
          :publishing-function  org-publish-attachment
          :recursive            t)
 
+        ;; Wiki entries (nested by category)
+        ("rn-wiki"
+         :base-directory       ,(expand-file-name "wiki" pw/notes-src-dir)
+         :base-extension       "org"
+         :publishing-directory ,(expand-file-name "wiki" pw/output-dir)
+         :publishing-function  pw/html-publish-with-backlinks
+         :recursive            t
+         :with-author          nil
+         :with-creator         nil
+         :with-toc             nil
+         :section-numbers      nil
+         :html-head            ,pw/html-head
+         :html-postamble       nil)
+
+
+        ;; Images embedded in wiki entries
+        ("rn-wiki-images"
+         :base-directory       ,(expand-file-name "wiki" pw/notes-src-dir)
+         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
+         :publishing-directory ,(expand-file-name "wiki" pw/output-dir)
+         :publishing-function  org-publish-attachment
+         :recursive            t)
+
         ;; Images at the top level of the repo
         ("rn-toplevel-images"
          :base-directory       ,pw/notes-src-dir
@@ -274,9 +302,9 @@
          :recursive            t)
 
         ;; Master target — publish everything
-        ("rn-all" :components ("rn-notes" "rn-journal" "rn-toplevel"
+        ("rn-all" :components ("rn-notes" "rn-journal" "rn-toplevel" "rn-wiki"
                                "rn-notes-images" "rn-journal-images" "rn-toplevel-images"
-                               "rn-assets"))))
+                               "rn-wiki-images" "rn-assets"))))
 
 ;;; Index page generation --------------------------------------------------
 

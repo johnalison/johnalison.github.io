@@ -21,6 +21,11 @@
 ;; org-roam uses [[id:UUID]] links. org-publish must know every UUID->file
 ;; mapping before exporting, otherwise links are left unresolved.
 
+;; Keep timestamp cache local to this project so incremental builds work
+;; across sessions without interfering with other org-publish projects.
+(setq org-publish-timestamp-directory
+      (expand-file-name ".org-timestamps/" pw/base-dir))
+
 (message "Scanning org files to build ID locations map...")
 (setq org-id-locations-file
       (expand-file-name ".org-id-locations" pw/base-dir))
@@ -88,11 +93,11 @@
       (let ((journal-rel (substring rel (length "Journal/"))))
         (expand-file-name (concat (file-name-sans-extension journal-rel) ".html")
                           (expand-file-name "Journal" pw/output-dir))))
-     ;; wiki/path/to/foo.org  ->  public/wiki/path/to/foo.html
-     ((string-prefix-p "wiki/" rel)
-      (let ((wiki-rel (substring rel (length "wiki/"))))
-        (expand-file-name (concat (file-name-sans-extension wiki-rel) ".html")
-                          (expand-file-name "wiki" pw/output-dir))))
+     ;; ThirdBrain/path/to/foo.org  ->  public/ThirdBrain/path/to/foo.html
+     ((string-prefix-p "ThirdBrain/" rel)
+      (let ((tb-rel (substring rel (length "ThirdBrain/"))))
+        (expand-file-name (concat (file-name-sans-extension tb-rel) ".html")
+                          (expand-file-name "ThirdBrain" pw/output-dir))))
      ;; Top-level foo.org  ->  public/foo.html
      (t (expand-file-name (concat (file-name-base org-file) ".html")
                           pw/output-dir)))))
@@ -262,11 +267,11 @@
          :publishing-function  org-publish-attachment
          :recursive            t)
 
-        ;; Wiki entries (nested by category)
-        ("rn-wiki"
-         :base-directory       ,(expand-file-name "wiki" pw/notes-src-dir)
+        ;; ThirdBrain entries (nested by category)
+        ("rn-thirdbrain"
+         :base-directory       ,(expand-file-name "ThirdBrain" pw/notes-src-dir)
          :base-extension       "org"
-         :publishing-directory ,(expand-file-name "wiki" pw/output-dir)
+         :publishing-directory ,(expand-file-name "ThirdBrain" pw/output-dir)
          :publishing-function  pw/html-publish-with-backlinks
          :recursive            t
          :with-author          nil
@@ -277,11 +282,11 @@
          :html-postamble       nil)
 
 
-        ;; Images embedded in wiki entries
-        ("rn-wiki-images"
-         :base-directory       ,(expand-file-name "wiki" pw/notes-src-dir)
+        ;; Images embedded in ThirdBrain entries
+        ("rn-thirdbrain-images"
+         :base-directory       ,(expand-file-name "ThirdBrain" pw/notes-src-dir)
          :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
-         :publishing-directory ,(expand-file-name "wiki" pw/output-dir)
+         :publishing-directory ,(expand-file-name "ThirdBrain" pw/output-dir)
          :publishing-function  org-publish-attachment
          :recursive            t)
 
@@ -302,9 +307,9 @@
          :recursive            t)
 
         ;; Master target — publish everything
-        ("rn-all" :components ("rn-notes" "rn-journal" "rn-toplevel" "rn-wiki"
+        ("rn-all" :components ("rn-notes" "rn-journal" "rn-toplevel" "rn-thirdbrain"
                                "rn-notes-images" "rn-journal-images" "rn-toplevel-images"
-                               "rn-wiki-images" "rn-assets"))))
+                               "rn-thirdbrain-images" "rn-assets"))))
 
 ;;; Index page generation --------------------------------------------------
 
@@ -368,9 +373,21 @@
       (write-file out-file))))
 
 (defun pw/build-all ()
-  "Publish everything and generate section index pages."
-  (org-publish "rn-all" t)
-  (pw/generate-notes-index)
-  (pw/generate-journal-index))
+  "Publish everything and generate section index pages.
+Uses org-publish's timestamp cache for incremental builds — only files
+newer than their last-published timestamp are re-exported.  Run
+build.sh --clean to force a full rebuild."
+  (advice-add 'message :around
+              (lambda (orig fmt &rest args)
+                (unless (and (stringp fmt)
+                             (string-match-p "\\`Skipping " fmt))
+                  (apply orig fmt args)))
+              '(:name pw/suppress-skip-messages))
+  (unwind-protect
+      (progn
+        (org-publish "rn-all")
+        (pw/generate-notes-index)
+        (pw/generate-journal-index))
+    (advice-remove 'message 'pw/suppress-skip-messages)))
 
 (message "publish.el loaded — run (pw/build-all) to build.")

@@ -45,6 +45,20 @@
 (org-link-set-parameters "mu4e"
   :export (lambda (_path desc _backend) (or desc "")))
 
+;;; #+begin_AI export -------------------------------------------------------
+;; Render #+begin_AI...#+end_AI exactly like #+begin_quote by delegating to
+;; org's own quote-block exporter. Default org would emit <div class="AI">,
+;; which our CSS doesn't style (and some sanitizers strip).
+;; Mirrors the same advice in ~/dotfiles/Emacs.org → init.el — duplicated here
+;; because emacs --batch doesn't load init.el.
+(require 'ox-html)
+(defun pw/org-html-AI-as-blockquote (orig special-block contents info)
+  (if (string= (org-element-property :type special-block) "AI")
+      (org-html-quote-block special-block contents info)
+    (funcall orig special-block contents info)))
+(advice-add 'org-html-special-block :around
+            #'pw/org-html-AI-as-blockquote)
+
 ;;; Backlinks index --------------------------------------------------------
 ;; Build a reverse map: target-UUID -> list of (source-org-path . title)
 ;; so each page can display which other notes link to it.

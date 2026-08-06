@@ -45,6 +45,105 @@
 (org-link-set-parameters "mu4e"
   :export (lambda (_path desc _backend) (or desc "")))
 
+;;; attachment: link handling ------------------------------------------------
+;; org-download routes screenshots through org-attach into a fixed central
+;; store (RoamNotes/.attach/<first-2-chars-of-ID>/<rest-of-ID>/<file>), and
+;; org files reference them as [[attachment:file.png]].  Resolution needs
+;; org-attach loaded with `org-attach-id-dir' pointing at the clone's store.
+;; org-attach's own export expansion produces absolute local file:// paths,
+;; so replace it with one that rewrites links to site-relative paths under
+;; /attach/ (the store is published there by the "rn-attach" project below).
+(require 'org-attach)
+
+(setq org-attach-id-dir (expand-file-name ".attach/" pw/notes-src-dir))
+;; Resolve the entry ID from parent headlines / the file-level drawer too.
+(setq org-attach-use-inheritance t)
+
+(defvar pw/attach-store (file-name-as-directory org-attach-id-dir)
+  "Absolute path of the central org-attach store in the RoamNotes clone.")
+
+(defun pw/expand-attachment-links (_backend)
+  "Rewrite attachment: links into file: links that resolve on the site.
+Store attachments become paths under attach/ mirroring the store layout;
+the \"rn-attach\" publish project copies the store there.  Runs on
+`org-export-before-parsing-functions' in place of `org-attach-expand-links'."
+  (save-excursion
+    (goto-char (point-min))
+    (while (re-search-forward "attachment:" nil t)
+      (let ((link (org-element-context)))
+        (when (and (eq (org-element-type link) 'link)
+                   (string-equal (org-element-property :type link) "attachment"))
+          (let* ((file (org-element-property :path link))
+                 (desc (and (org-element-property :contents-begin link)
+                            (buffer-substring-no-properties
+                             (org-element-property :contents-begin link)
+                             (org-element-property :contents-end link))))
+                 (attach-dir (save-excursion
+                               (goto-char (org-element-property :begin link))
+                               (org-attach-dir)))
+                 (abs (and attach-dir (expand-file-name file attach-dir)))
+                 (new-path
+                  (cond
+                   ;; Normal case: attachment in the central store.  Link to
+                   ;; the published copy under <site>/attach/, relative to
+                   ;; this org file so it works at any nesting depth.
+                   ((and abs (string-prefix-p pw/attach-store abs))
+                    (file-relative-name
+                     (expand-file-name
+                      (concat "attach/" (file-relative-name abs pw/attach-store))
+                      pw/notes-src-dir)
+                     default-directory))
+                   ;; DIR-property attachment outside the store — leave the
+                   ;; absolute path; renders broken but doesn't abort.
+                   (abs abs)
+                   ;; Unresolvable (no ID/DIR): keep the bare filename.
+                   (t file))))
+            (goto-char (org-element-property :end link))
+            (skip-chars-backward " \t")
+            (delete-region (org-element-property :begin link) (point))
+            (insert (org-link-make-string (concat "file:" new-path) desc))))))))
+
+;;; Absolute file: links into the live repo -----------------------------------
+;; Some notes link images with absolute paths into the author's live repo
+;; (file:~/RoamNotes/images/... or file:/Users/johnda/RoamNotes/attachments/...).
+;; ox-html turns those into dead file:// URIs.  Rewrite them to paths relative
+;; to the exporting org file so they resolve inside the published tree (the
+;; targets are copied by the rn-legacy-images / rn-old-attachments projects).
+(defconst pw/live-repo-prefixes '("~/RoamNotes/" "/Users/johnda/RoamNotes/")
+  "Literal path prefixes, as written in org files, of the live RoamNotes repo.")
+
+(defun pw/rewrite-absolute-roamnotes-links (_backend)
+  "Rewrite file: links pointing into the live RoamNotes repo to relative paths."
+  (save-excursion
+    (goto-char (point-min))
+    (while (re-search-forward "file:" nil t)
+      (let ((link (org-element-context)))
+        (when (and (eq (org-element-type link) 'link)
+                   (string-equal (org-element-property :type link) "file"))
+          (let* ((path (org-element-property :path link))
+                 (prefix (seq-find (lambda (p) (string-prefix-p p path))
+                                   pw/live-repo-prefixes)))
+            (when prefix
+              (let ((desc (and (org-element-property :contents-begin link)
+                               (buffer-substring-no-properties
+                                (org-element-property :contents-begin link)
+                                (org-element-property :contents-end link))))
+                    (new-path (file-relative-name
+                               (expand-file-name (substring path (length prefix))
+                                                 pw/notes-src-dir)
+                               default-directory)))
+                (goto-char (org-element-property :end link))
+                (skip-chars-backward " \t")
+                (delete-region (org-element-property :begin link) (point))
+                (insert (org-link-make-string (concat "file:" new-path) desc))))))))))
+
+(when (boundp 'org-export-before-parsing-functions)   ; org >= 9.6
+  (remove-hook 'org-export-before-parsing-functions #'org-attach-expand-links)
+  (add-hook 'org-export-before-parsing-functions #'pw/expand-attachment-links)
+  (add-hook 'org-export-before-parsing-functions #'pw/rewrite-absolute-roamnotes-links))
+(when (boundp 'org-export-before-parsing-hook)        ; org < 9.6
+  (remove-hook 'org-export-before-parsing-hook #'org-attach-expand-links))
+
 ;;; #+begin_AI export -------------------------------------------------------
 ;; Render #+begin_AI...#+end_AI exactly like #+begin_quote by delegating to
 ;; org's own quote-block exporter. Default org would emit <div class="AI">,
@@ -304,6 +403,35 @@
          :publishing-function  org-publish-attachment
          :recursive            t)
 
+        ;; Central org-attach store (.attach/<id-path>/<file>) -> /attach/
+        ;; Images only — the store also holds PDFs etc. that are deliberately
+        ;; not published.
+        ("rn-attach"
+         :base-directory       ,(expand-file-name ".attach" pw/notes-src-dir)
+         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
+         :publishing-directory ,(expand-file-name "attach" pw/output-dir)
+         :publishing-function  org-publish-attachment
+         :recursive            t)
+
+        ;; Legacy org-download image dir (images/<note-title>/<file>) -> /images/
+        ;; Old notes reference these as [[file:../images/...]].
+        ("rn-legacy-images"
+         :base-directory       ,(expand-file-name "images" pw/notes-src-dir)
+         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
+         :publishing-directory ,(expand-file-name "images" pw/output-dir)
+         :publishing-function  org-publish-attachment
+         :recursive            t)
+
+        ;; Old manual attachments dir (attachments/<file>) -> /attachments/
+        ;; Referenced via absolute file:~/RoamNotes/attachments/... links,
+        ;; rewritten to relative by `pw/rewrite-absolute-roamnotes-links'.
+        ("rn-old-attachments"
+         :base-directory       ,(expand-file-name "attachments" pw/notes-src-dir)
+         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
+         :publishing-directory ,(expand-file-name "attachments" pw/output-dir)
+         :publishing-function  org-publish-attachment
+         :recursive            t)
+
         ;; Images at the top level of the repo
         ("rn-toplevel-images"
          :base-directory       ,pw/notes-src-dir
@@ -323,7 +451,8 @@
         ;; Master target — publish everything
         ("rn-all" :components ("rn-notes" "rn-journal" "rn-toplevel" "rn-thirdbrain"
                                "rn-notes-images" "rn-journal-images" "rn-toplevel-images"
-                               "rn-thirdbrain-images" "rn-assets"))))
+                               "rn-thirdbrain-images" "rn-attach" "rn-legacy-images"
+                               "rn-old-attachments" "rn-assets"))))
 
 ;;; Index page generation --------------------------------------------------
 

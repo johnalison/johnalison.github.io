@@ -50,6 +50,8 @@ Year notes (`2020-TIMESTAMP.org` through `2026-TIMESTAMP.org`) live in `Notes/` 
 - **ID resolution**: `org-id-update-id-locations` scans all 1900+ org files so `[[id:UUID]]` links resolve correctly
 - **Broken links**: `org-export-with-broken-links 'mark` — dead links render as annotated text instead of aborting the build
 - **mu4e links**: `[[mu4e:msgid:...]]` links are stripped (exported as description text or nothing) via a custom `org-link-set-parameters` handler
+- **attachment links**: `[[attachment:file.png]]` links (org-download via org-attach, central store `RoamNotes/.attach/<ID[0:2]>/<ID[2:]>/`) are rewritten by `pw/expand-attachment-links` (replaces `org-attach-expand-links` on `org-export-before-parsing-functions`) into relative paths under `/attach/`; the `rn-attach` project copies the store's images (not PDFs — some are sensitive) to `public/attach/`
+- **absolute repo links**: `file:~/RoamNotes/...` and `file:/Users/johnda/RoamNotes/...` links are rewritten to relative paths by `pw/rewrite-absolute-roamnotes-links`; legacy image dirs `images/` and `attachments/` are published by `rn-legacy-images` / `rn-old-attachments`
 - **Backlinks index**: hash table UUID → [(source-file . title)], built by scanning all files for `[[id:...]]` patterns; injected before `</body>` on every page
 - **Day-nav index**: chronological sorted list of all Journal org files; prev/next links injected above `<h1>` on every journal page
 - **Output paths**: use capital-case (`Notes/`, `Journal/`) to match org-generated inter-file links on case-sensitive Linux filesystems

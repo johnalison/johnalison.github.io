@@ -404,11 +404,12 @@ the \"rn-attach\" publish project copies the store there.  Runs on
          :recursive            t)
 
         ;; Central org-attach store (.attach/<id-path>/<file>) -> /attach/
-        ;; Images only — the store also holds PDFs etc. that are deliberately
-        ;; not published.
+        ;; NOTE: includes PDFs — the store holds confidential documents
+        ;; (promotion letters, referee reports); they become world-readable
+        ;; on deploy unless the site is access-protected.
         ("rn-attach"
          :base-directory       ,(expand-file-name ".attach" pw/notes-src-dir)
-         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
+         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp\\|pdf"
          :publishing-directory ,(expand-file-name "attach" pw/output-dir)
          :publishing-function  org-publish-attachment
          :recursive            t)
@@ -427,7 +428,7 @@ the \"rn-attach\" publish project copies the store there.  Runs on
         ;; rewritten to relative by `pw/rewrite-absolute-roamnotes-links'.
         ("rn-old-attachments"
          :base-directory       ,(expand-file-name "attachments" pw/notes-src-dir)
-         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp"
+         :base-extension       "png\\|jpg\\|jpeg\\|gif\\|svg\\|webp\\|pdf"
          :publishing-directory ,(expand-file-name "attachments" pw/output-dir)
          :publishing-function  org-publish-attachment
          :recursive            t)

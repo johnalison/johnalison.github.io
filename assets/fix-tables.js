@@ -19,13 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var monthIdx = -1, year = -1;
   var path = decodeURIComponent(window.location.pathname);
 
-  var m = path.match(/\/Notes\/([a-z]+)_(\d{4})-\d+\.html$/);
+  // ".html" is optional: Cloudflare Pages serves extensionless pretty URLs,
+  // while local python http.server keeps the extension.
+  var m = path.match(/\/Notes\/([a-z]+)_(\d{4})-\d+(?:\.html)?$/);
   if (m) {
     monthIdx = monthNames.indexOf(m[1]);
     year     = parseInt(m[2], 10);
   } else {
-    // Matches /Journal/May2025.html  AND  /Journal/2024/July 2024.html
-    m = path.match(/\/Journal\/(?:\d{4}\/)?([A-Za-z]+)\s*(\d{4})\.html$/);
+    // Matches /Journal/May2025[.html]  AND  /Journal/2024/July 2024[.html]
+    m = path.match(/\/Journal\/(?:\d{4}\/)?([A-Za-z]+)\s*(\d{4})(?:\.html)?$/);
     if (m) {
       monthIdx = monthNames.indexOf(m[1].toLowerCase());
       year     = parseInt(m[2], 10);

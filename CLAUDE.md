@@ -1,6 +1,6 @@
 # CLAUDE.md — NotesWebpage
 
-Static website generator that publishes `~/RoamNotes` (private org-roam repo) to GitHub Pages at `https://johnalison.github.io`.
+Static website generator that publishes `~/RoamNotes` (private org-roam repo) to Cloudflare Pages at `https://johnalison-notes.pages.dev`, gated behind Cloudflare Access (email login). Formerly public GitHub Pages at `https://johnalison.github.io`.
 
 ## Skills
 
@@ -97,7 +97,9 @@ cd public && python3 -m http.server 8080
 
 - **Trigger**: push to `master`, or daily cron at 4:00 AM UTC, or manual `workflow_dispatch`
 - **SSH key**: deploy key for RoamNotes stored as GitHub Actions secret `ROAMNOTES_SSH_KEY` (base64-encoded ed25519 private key)
-- **Pages source**: `gh-pages` branch, root `/`
+- **Host**: Cloudflare Pages project `johnalison-notes` (`johnalison-notes.pages.dev`), deployed via wrangler; secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`
+- **Auth**: Cloudflare Access policy on the Pages project — email one-time-code login; site is NOT public
+- **Legacy**: previously GitHub Pages (`gh-pages` branch → johnalison.github.io); disable in repo Settings → Pages after Cloudflare is confirmed working, else the old public copy stays live
 
 ## CSS notes
 

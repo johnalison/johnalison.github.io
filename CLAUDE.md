@@ -99,7 +99,7 @@ cd public && python3 -m http.server 8080
 - **SSH key**: deploy key for RoamNotes stored as GitHub Actions secret `ROAMNOTES_SSH_KEY` (base64-encoded ed25519 private key)
 - **Host**: Cloudflare Pages project `johnalison-notes` (`johnalison-notes.pages.dev`), deployed via wrangler; secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`
 - **Auth**: Cloudflare Access policy on the Pages project — email one-time-code login; site is NOT public
-- **Legacy**: previously GitHub Pages (`gh-pages` branch → johnalison.github.io); disable in repo Settings → Pages after Cloudflare is confirmed working, else the old public copy stays live
+- **Legacy**: previously GitHub Pages (`gh-pages` branch → johnalison.github.io); taken offline 2026-09-10 by deleting the `gh-pages` branch (GitHub blocks deactivating Pages on a username.github.io repo directly, but removing the publishing branch deactivates it)
 
 ## CSS notes
 
